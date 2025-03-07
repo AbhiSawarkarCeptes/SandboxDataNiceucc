@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qualified_Date__c</fullName>
+    <formula>IF(
+    NOT( ISNULL( Payment_Date__c ) ) &amp;&amp; NOT( ISNULL( Booking__r.Audit_Approval_Date__c ) ) &amp;&amp; TEXT( Booking__r.Current_Status__c ) = &apos;Audit Accepted&apos;,
+    IF(
+        Booking__r.Audit_Approval_Date__c &gt;= Payment_Date__c,
+        Booking__r.Audit_Approval_Date__c,
+        Payment_Date__c
+    ),
+    NULL
+)</formula>
+    <label>Qualified Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

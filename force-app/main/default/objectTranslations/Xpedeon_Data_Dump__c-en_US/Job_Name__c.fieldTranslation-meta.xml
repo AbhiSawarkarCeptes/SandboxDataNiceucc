@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Job Name --></label>
+    <name>Job_Name__c</name>
+    <picklistValues>
+        <masterLabel>Customer Master</masterLabel>
+        <translation><!-- Customer Master --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phase Code</masterLabel>
+        <translation><!-- Phase Code --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Code</masterLabel>
+        <translation><!-- Project Code --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Code Unit</masterLabel>
+        <translation><!-- Project Code Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unit Type</masterLabel>
+        <translation><!-- Unit Type --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

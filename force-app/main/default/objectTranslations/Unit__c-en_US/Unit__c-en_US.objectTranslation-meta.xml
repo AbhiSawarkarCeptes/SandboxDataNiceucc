@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Unit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Units</value>
+    </caseValues>
+    <layouts>
+        <layout>Admin</layout>
+        <sections>
+            <label><!-- Areas --></label>
+            <section>Areas</section>
+        </sections>
+        <sections>
+            <label><!-- Common Area 1 Details --></label>
+            <section>Common Area 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Common Area 2 Details --></label>
+            <section>Common Area 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Handover Of  Possession Details --></label>
+            <section>Handover Of  Possession Details</section>
+        </sections>
+        <sections>
+            <label><!-- PP Calculation Details --></label>
+            <section>PP Calculation Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Particular Details --></label>
+            <section>SPA Particular Details</section>
+        </sections>
+        <sections>
+            <label><!-- Unit Layout Print Parameters --></label>
+            <section>Unit Layout Print Parameters</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assistance Manager - CMO Layout</layout>
+        <sections>
+            <label><!-- Areas --></label>
+            <section>Areas</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 1 Details --></label>
+            <section>Car Park 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 2 Details --></label>
+            <section>Car Park 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details for SPA Particular --></label>
+            <section>Details for SPA Particular</section>
+        </sections>
+        <sections>
+            <label><!-- Purchase Price Calculation Details --></label>
+            <section>Purchase Price Calculation Details</section>
+        </sections>
+        <sections>
+            <label><!-- Unit Layout Print Parameters --></label>
+            <section>Unit Layout Print Parameters</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Channel Ops Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Copy of Unit Layout with Edit AccessSales Operation With Area Update Access</layout>
+        <sections>
+            <label><!-- Areas --></label>
+            <section>Areas</section>
+        </sections>
+        <sections>
+            <label><!-- Cancellation --></label>
+            <section>Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 1 Details --></label>
+            <section>Car Park 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 2 Details --></label>
+            <section>Car Park 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Purchase Price Calculation Details --></label>
+            <section>Purchase Price Calculation Details</section>
+        </sections>
+        <sections>
+            <label><!-- Unit Layout Print Parameters --></label>
+            <section>Unit Layout Print Parameters</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Empty Profile Layout</layout>
+        <sections>
+            <label><!-- Areas --></label>
+            <section>Areas</section>
+        </sections>
+        <sections>
+            <label><!-- Common Area 1 Details --></label>
+            <section>Common Area 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Common Area 2 Details --></label>
+            <section>Common Area 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Handover Of  Possession Details --></label>
+            <section>Handover Of  Possession Details</section>
+        </sections>
+        <sections>
+            <label><!-- PP Calculation Details --></label>
+            <section>PP Calculation Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Particular Details --></label>
+            <section>SPA Particular Details</section>
+        </sections>
+        <sections>
+            <label><!-- Unit Layout Print Parameters --></label>
+            <section>Unit Layout Print Parameters</section>
+        </sections>
+        <sections>
+            <label><!-- Xpedeon values --></label>
+            <section>Xpedeon values</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>External SOA Verification Vendor</layout>
+        <sections>
+            <label><!-- Areas --></label>
+            <section>Areas</section>
+        </sections>
+        <sections>
+            <label><!-- Common Area 1 Details --></label>
+            <section>Common Area 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Common Area 2 Details --></label>
+            <section>Common Area 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Handover Of  Possession Details --></label>
+            <section>Handover Of  Possession Details</section>
+        </sections>
+        <sections>
+            <label><!-- PP Calculation Details --></label>
+            <section>PP Calculation Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Particular Details --></label>
+            <section>SPA Particular Details</section>
+        </sections>
+        <sections>
+            <label><!-- Unit Layout Print Parameters --></label>
+            <section>Unit Layout Print Parameters</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales Operations with Unit Layout</layout>
+        <sections>
+            <label><!-- Areas --></label>
+            <section>Areas</section>
+        </sections>
+        <sections>
+            <label><!-- Cancellation --></label>
+            <section>Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 1 Details --></label>
+            <section>Car Park 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 2 Details --></label>
+            <section>Car Park 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Purchase Price Calculation Details --></label>
+            <section>Purchase Price Calculation Details</section>
+        </sections>
+        <sections>
+            <label><!-- Unit Layout Print Parameters --></label>
+            <section>Unit Layout Print Parameters</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales RO layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Unit Layout</layout>
+        <sections>
+            <label><!-- Areas --></label>
+            <section>Areas</section>
+        </sections>
+        <sections>
+            <label><!-- Common Area 1 Details --></label>
+            <section>Common Area 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Common Area 2 Details --></label>
+            <section>Common Area 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Handover Of  Possession Details --></label>
+            <section>Handover Of  Possession Details</section>
+        </sections>
+        <sections>
+            <label><!-- PP Calculation Details --></label>
+            <section>PP Calculation Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Particular Details --></label>
+            <section>SPA Particular Details</section>
+        </sections>
+        <sections>
+            <label><!-- Unit Layout Print Parameters --></label>
+            <section>Unit Layout Print Parameters</section>
+        </sections>
+        <sections>
+            <label><!-- Xpedeon values --></label>
+            <section>Xpedeon values</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Unit Layout for minimum access</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Unit Layout for the Sales</layout>
+        <sections>
+            <label><!-- Areas --></label>
+            <section>Areas</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 1 Details --></label>
+            <section>Car Park 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 2 Details --></label>
+            <section>Car Park 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details for SPA Particular --></label>
+            <section>Details for SPA Particular</section>
+        </sections>
+        <sections>
+            <label><!-- Purchase Price Calculation Details --></label>
+            <section>Purchase Price Calculation Details</section>
+        </sections>
+        <sections>
+            <label><!-- Unit Layout Print Parameters --></label>
+            <section>Unit Layout Print Parameters</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Unit Layout with Edit Access</layout>
+        <sections>
+            <label><!-- Areas --></label>
+            <section>Areas</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 1 Details --></label>
+            <section>Car Park 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 2 Details --></label>
+            <section>Car Park 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Purchase Price Calculation Details --></label>
+            <section>Purchase Price Calculation Details</section>
+        </sections>
+        <sections>
+            <label><!-- Unit Layout Print Parameters --></label>
+            <section>Unit Layout Print Parameters</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Initiate Business Process --></label>
+        <name>Initiate_Business_Process</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Unit Hold Request --></label>
+        <name>Unit_Hold_Request</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Unit Status --></label>
+        <name>Update_Unit_Status</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Unit can&apos;t be made available as it has active Booking.. --></errorMessage>
+        <name>Block_Available_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the Reason for Cancellation before making the unit available. --></errorMessage>
+        <name>Reason_for_Cancellation_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unit having purchase price equal or less then AED 1.6 Mn, should hold minimum 10% --></errorMessage>
+        <name>Unit_hold_min_percentage_should_be_10</name>
+    </validationRules>
+</CustomObjectTranslation>

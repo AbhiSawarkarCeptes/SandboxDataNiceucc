@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CRM Call Disposition1 --></label>
+    <name>CRM_Call_Disposition1__c</name>
+    <picklistValues>
+        <masterLabel>CCC</masterLabel>
+        <translation><!-- CCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRM</masterLabel>
+        <translation><!-- CRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collections</masterLabel>
+        <translation><!-- Collections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Management</masterLabel>
+        <translation><!-- Community Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

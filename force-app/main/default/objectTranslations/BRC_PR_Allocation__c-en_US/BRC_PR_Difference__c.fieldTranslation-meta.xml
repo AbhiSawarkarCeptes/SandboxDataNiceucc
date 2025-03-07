@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- BRC-PR Difference --></label>
+    <name>BRC_PR_Difference__c</name>
+</CustomFieldTranslation>

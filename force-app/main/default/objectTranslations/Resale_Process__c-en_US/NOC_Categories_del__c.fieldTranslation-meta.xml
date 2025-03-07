@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NOC Categories --></label>
+    <name>NOC_Categories_del__c</name>
+    <picklistValues>
+        <masterLabel>Mortgage</masterLabel>
+        <translation><!-- Mortgage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oqood</masterLabel>
+        <translation><!-- Oqood --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Deed</masterLabel>
+        <translation><!-- Title Deed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

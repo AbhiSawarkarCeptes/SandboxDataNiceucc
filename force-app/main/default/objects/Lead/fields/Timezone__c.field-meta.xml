@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timezone__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISPICKVAL(RDS_Country_Code__c, &apos;971&apos;),ISPICKVAL(RDS_Country_Code__c, &apos;+971&apos;)), &apos;GST — Gulf Standard Time, UTC/GMT +4 hours&apos;, IF(ISPICKVAL(RDS_Country_Code__c, &apos;91&apos;), &apos;IST — India Standard Time, UTC/GMT +5:30 hours&apos;, &apos;&apos;) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Timezone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

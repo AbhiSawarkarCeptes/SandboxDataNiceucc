@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Site_Visits</fullName>
+    <columns>NAME</columns>
+    <columns>Opportunity_Id__c</columns>
+    <columns>Date__c</columns>
+    <columns>How_Did_You_Hear_About_Us__c</columns>
+    <columns>opportunity__c</columns>
+    <columns>Channel_Partner__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>opportunity__c</field>
+        <operation>notContain</operation>
+        <value>test</value>
+    </filters>
+    <filters>
+        <field>OWNER.FIRST_NAME</field>
+        <operation>notContain</operation>
+        <value>Ankur</value>
+    </filters>
+    <filters>
+        <field>OWNER.LAST_NAME</field>
+        <operation>notContain</operation>
+        <value>Presales</value>
+    </filters>
+    <label>All Site Visits</label>
+    <sharedTo>
+        <role>Head_Channel_Relations</role>
+        <role>Head_Sales_Operations</role>
+        <role>Manager_Sales_Operations</role>
+        <role>Sales_Operations_Executive</role>
+    </sharedTo>
+</ListView>

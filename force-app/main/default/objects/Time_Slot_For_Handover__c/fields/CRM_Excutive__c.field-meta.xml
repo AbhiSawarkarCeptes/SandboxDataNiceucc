@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRM_Excutive__c</fullName>
+    <label>CRM Executive</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sunny Pradhan</fullName>
+                <default>false</default>
+                <label>Sunny Pradhan</label>
+            </value>
+            <value>
+                <fullName>Ahmed Yossry</fullName>
+                <default>false</default>
+                <label>Ahmed Yossry</label>
+            </value>
+            <value>
+                <fullName>Nisha Krishnan</fullName>
+                <default>false</default>
+                <label>Nisha Krishnan</label>
+            </value>
+            <value>
+                <fullName>Racha Dannaoui</fullName>
+                <default>false</default>
+                <label>Racha Dannaoui</label>
+            </value>
+            <value>
+                <fullName>Usman Sheikh</fullName>
+                <default>false</default>
+                <label>Usman Sheikh</label>
+            </value>
+            <value>
+                <fullName>Ali Yousuf Abdulla Qassem Alemadi</fullName>
+                <default>false</default>
+                <label>Ali Yousuf Abdulla Qassem Alemadi</label>
+            </value>
+            <value>
+                <fullName>Priyanka Binil</fullName>
+                <default>false</default>
+                <label>Priyanka Binil</label>
+            </value>
+            <value>
+                <fullName>Sahar Sultan</fullName>
+                <default>false</default>
+                <label>Sahar Sultan</label>
+            </value>
+            <value>
+                <fullName>Laila Nadeer</fullName>
+                <default>false</default>
+                <label>Laila Nadeer</label>
+            </value>
+            <value>
+                <fullName>Abdelrahman Salim Rashid Alzumr Al-Ali</fullName>
+                <default>false</default>
+                <label>Abdelrahman Salim Rashid Alzumr Al-Ali</label>
+            </value>
+            <value>
+                <fullName>Deeksha Poral Lakshminarayana</fullName>
+                <default>false</default>
+                <label>Deeksha Poral Lakshminarayana</label>
+            </value>
+            <value>
+                <fullName>Hadi osama hussain mohamed ghanem</fullName>
+                <default>false</default>
+                <label>Hadi osama hussain mohamed ghanem</label>
+            </value>
+            <value>
+                <fullName>Malak Saleh</fullName>
+                <default>false</default>
+                <label>Malak Saleh</label>
+            </value>
+            <value>
+                <fullName>Juma Khalfan Juma Humaid Al-Ali</fullName>
+                <default>false</default>
+                <label>Juma Khalfan Juma Humaid Al-Ali</label>
+            </value>
+            <value>
+                <fullName>Ummer Farhan</fullName>
+                <default>false</default>
+                <label>Ummer Farhan</label>
+            </value>
+            <value>
+                <fullName>Roopa Nataraj</fullName>
+                <default>false</default>
+                <label>Roopa Nataraj</label>
+            </value>
+            <value>
+                <fullName>Divya Shanthigrama Keshava</fullName>
+                <default>false</default>
+                <label>Divya Shanthigrama Keshava</label>
+            </value>
+            <value>
+                <fullName>Priya Rathi</fullName>
+                <default>false</default>
+                <label>Priya Rathi</label>
+            </value>
+            <value>
+                <fullName>Aruna</fullName>
+                <default>false</default>
+                <label>Aruna</label>
+            </value>
+            <value>
+                <fullName>Davood Sheikh</fullName>
+                <default>false</default>
+                <label>Davood Sheikh</label>
+            </value>
+            <value>
+                <fullName>Aswathi Kumar</fullName>
+                <default>false</default>
+                <label>Aswathi Kumar</label>
+            </value>
+            <value>
+                <fullName>Vivek Sharma</fullName>
+                <default>false</default>
+                <label>Vivek Sharma</label>
+            </value>
+            <value>
+                <fullName>Ruvaid Vani</fullName>
+                <default>false</default>
+                <label>Ruvaid Vani</label>
+            </value>
+            <value>
+                <fullName>Pratyush Kumar Nayak</fullName>
+                <default>false</default>
+                <label>Pratyush Kumar Nayak</label>
+            </value>
+            <value>
+                <fullName>Araba Aln’airat</fullName>
+                <default>false</default>
+                <label>Araba Aln’airat</label>
+            </value>
+            <value>
+                <fullName>Mariia Aleksandrovskaia</fullName>
+                <default>false</default>
+                <label>Mariia Aleksandrovskaia</label>
+            </value>
+            <value>
+                <fullName>Yugeshkumar Sureshkumar</fullName>
+                <default>false</default>
+                <label>Yugeshkumar Sureshkumar</label>
+            </value>
+            <value>
+                <fullName>Qingqin Yang</fullName>
+                <default>false</default>
+                <label>Qingqin Yang</label>
+            </value>
+            <value>
+                <fullName>Abdeldjalil Kamel Bensenada</fullName>
+                <default>false</default>
+                <label>Abdeldjalil Kamel Bensenada</label>
+            </value>
+            <value>
+                <fullName>Kaisar Sabraimov</fullName>
+                <default>false</default>
+                <label>Kaisar Sabraimov</label>
+            </value>
+            <value>
+                <fullName>Angelina Khalilova</fullName>
+                <default>false</default>
+                <label>Angelina Khalilova</label>
+            </value>
+            <value>
+                <fullName>Raghad Kawaf</fullName>
+                <default>false</default>
+                <label>Raghad Kawaf</label>
+            </value>
+            <value>
+                <fullName>Ilyos Abdulloev</fullName>
+                <default>false</default>
+                <label>Ilyos Abdulloev</label>
+            </value>
+            <value>
+                <fullName>Athira Pothan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Athira Pothan</label>
+            </value>
+            <value>
+                <fullName>Boutaina El Hariri</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Boutaina El Hariri</label>
+            </value>
+            <value>
+                <fullName>Deeksha</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Deeksha</label>
+            </value>
+            <value>
+                <fullName>Divya Keshav</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Divya Keshav</label>
+            </value>
+            <value>
+                <fullName>Hadi Ghanem</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hadi Ghanem</label>
+            </value>
+            <value>
+                <fullName>Hadi Osama</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hadi Osama</label>
+            </value>
+            <value>
+                <fullName>Priyanka</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Priyanka</label>
+            </value>
+            <value>
+                <fullName>Roopa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Roopa</label>
+            </value>
+            <value>
+                <fullName>Sara Elbebawy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sara Elbebawy</label>
+            </value>
+            <value>
+                <fullName>Farhan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ummer Farhan</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

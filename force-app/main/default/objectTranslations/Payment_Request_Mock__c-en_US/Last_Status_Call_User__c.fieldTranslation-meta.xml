@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Last Status Call User --></label>
+    <name>Last_Status_Call_User__c</name>
+    <relationshipLabel><!-- Payment Request (Downtime Records) (Last Status Call User) --></relationshipLabel>
+</CustomFieldTranslation>

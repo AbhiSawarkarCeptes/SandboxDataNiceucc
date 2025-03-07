@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DLD_Amount__c</fullName>
+    <description>DLP Paid Amount</description>
+    <externalId>false</externalId>
+    <formula>Collection_Report__r.Total_DLD_Amount_Paid__c</formula>
+    <inlineHelpText>DLP Paid Amount</inlineHelpText>
+    <label>Original DLD Collection</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

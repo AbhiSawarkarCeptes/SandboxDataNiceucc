@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>from_Lead__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Booking__r.Opportunity__r.Lead_Id__c != null &amp;&amp; ISPICKVAL( Applicant_Number__c , &apos;Primary Applicant&apos;) ,Booking__r.Opportunity__r.Lead_Id__c, NULL)</formula>
+    <label>from Lead</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

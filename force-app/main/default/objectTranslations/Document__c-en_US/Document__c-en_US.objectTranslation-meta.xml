@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Authorized Signatory</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Authorized Signatory</value>
+    </caseValues>
+    <layouts>
+        <layout>Company Representative</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Seller Details --></label>
+            <section>Seller Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Seller Representative</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Seller Details --></label>
+            <section>Seller Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Company Representative --></label>
+        <name>Company_Representative</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Seller Representative --></label>
+        <name>Seller_Representative</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

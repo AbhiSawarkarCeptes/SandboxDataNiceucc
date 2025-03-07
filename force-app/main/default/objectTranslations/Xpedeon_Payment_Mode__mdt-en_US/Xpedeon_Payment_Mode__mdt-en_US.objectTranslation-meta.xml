@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Xpedeon Payment Mode</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Xpedeon Payment Modes</value>
+    </caseValues>
+    <layouts>
+        <layout>Xpedeon Payment Mode Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

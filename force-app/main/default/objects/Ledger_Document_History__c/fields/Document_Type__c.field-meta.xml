@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Document_Type__c</fullName>
+    <label>Document Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PR</fullName>
+                <default>false</default>
+                <label>PR</label>
+            </value>
+            <value>
+                <fullName>PO</fullName>
+                <default>false</default>
+                <label>PO</label>
+            </value>
+            <value>
+                <fullName>GRN</fullName>
+                <default>false</default>
+                <label>GRN</label>
+            </value>
+            <value>
+                <fullName>Bank</fullName>
+                <default>false</default>
+                <label>Bank</label>
+            </value>
+            <value>
+                <fullName>Beneficiary Form</fullName>
+                <default>false</default>
+                <label>Beneficiary Form</label>
+            </value>
+            <value>
+                <fullName>Bank A/C Confirmation</fullName>
+                <default>false</default>
+                <label>Bank A/C Confirmation</label>
+            </value>
+            <value>
+                <fullName>Indemnity Letter</fullName>
+                <default>false</default>
+                <label>Indemnity Letter</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Payment Copy</fullName>
+                <default>false</default>
+                <label>Payment Copy</label>
+            </value>
+            <value>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+                <label>Invoice</label>
+            </value>
+            <value>
+                <fullName>Cheque Number</fullName>
+                <default>false</default>
+                <label>Cheque Number</label>
+            </value>
+            <value>
+                <fullName>Cancelled Cheque Copy</fullName>
+                <default>false</default>
+                <label>Cancelled Cheque Copy</label>
+            </value>
+            <value>
+                <fullName>Bank Account Screenshot</fullName>
+                <default>false</default>
+                <label>Bank Account Screenshot</label>
+            </value>
+            <value>
+                <fullName>Invoice sent</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invoice sent</label>
+            </value>
+            <value>
+                <fullName>Signed Invoice Received</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Signed Invoice Received</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

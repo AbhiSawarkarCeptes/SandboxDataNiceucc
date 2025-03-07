@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Attempt_Status_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+ISPICKVAL( Call_Attempt_Status__c , &apos;-- Visit --&apos;),
+ISPICKVAL( Call_Attempt_Status__c , &apos;-- Meeting --&apos;),
+ISPICKVAL( Call_Attempt_Status__c , &apos;-- HP/OP --&apos;),
+ISPICKVAL( Call_Attempt_Status__c , &apos;-- Tele-Meeting --&apos;),
+ISPICKVAL( Call_Attempt_Status__c , &apos;-- No Action --&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>Call_Attempt_Status__c</errorDisplayField>
+    <errorMessage>Please select value under the selected category.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Unit Hold Approval Status --></label>
+    <name>Unit_Hold_Approval_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by SVP</masterLabel>
+        <translation><!-- Approved by SVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by VP</masterLabel>
+        <translation><!-- Approved by VP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with CSO</masterLabel>
+        <translation><!-- Pending with CSO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with SVP</masterLabel>
+        <translation><!-- Pending with SVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with VP</masterLabel>
+        <translation><!-- Pending with VP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by CSO</masterLabel>
+        <translation><!-- Rejected by CSO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by SVP</masterLabel>
+        <translation><!-- Rejected by SVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by VP</masterLabel>
+        <translation><!-- Rejected by VP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted</masterLabel>
+        <translation><!-- Submitted --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

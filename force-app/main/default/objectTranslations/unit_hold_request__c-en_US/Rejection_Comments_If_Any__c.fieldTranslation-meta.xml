@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Rejection Comments ( If Any ) --></label>
+    <name>Rejection_Comments_If_Any__c</name>
+</CustomFieldTranslation>

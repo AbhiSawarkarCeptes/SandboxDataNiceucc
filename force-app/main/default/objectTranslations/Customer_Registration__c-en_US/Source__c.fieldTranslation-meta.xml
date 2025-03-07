@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Source --></label>
+    <name>Source__c</name>
+    <picklistValues>
+        <masterLabel>Channel Partner</masterLabel>
+        <translation><!-- Channel Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Client with Channel Partner</masterLabel>
+        <translation><!-- Client with Channel Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Client with Sobha Connect</masterLabel>
+        <translation><!-- Client with Sobha Connect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporate</masterLabel>
+        <translation><!-- Corporate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loyalty customer</masterLabel>
+        <translation><!-- Loyalty customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing (Digital)</masterLabel>
+        <translation><!-- Marketing (Digital) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referral</masterLabel>
+        <translation><!-- Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Self Initiative</masterLabel>
+        <translation><!-- Self Initiative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walk-in</masterLabel>
+        <translation><!-- Walk-in --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

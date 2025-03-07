@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Broker_Category__c</fullName>
+    <label>Broker Category</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Broker - RERA</fullName>
+                <default>false</default>
+                <label>Broker - RERA</label>
+            </value>
+            <value>
+                <fullName>Broker - UAE</fullName>
+                <default>false</default>
+                <label>Broker - UAE</label>
+            </value>
+            <value>
+                <fullName>Broker - Intnl</fullName>
+                <default>false</default>
+                <label>Broker - Intnl</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect - UAE - Individual</fullName>
+                <default>false</default>
+                <label>Sobha Connect - UAE - Individual</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect - Intnl - Individual</fullName>
+                <default>false</default>
+                <label>Sobha Connect - Intnl - Individual</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect - UAE - Company</fullName>
+                <default>false</default>
+                <label>Sobha Connect - UAE - Company</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect - Intnl - Company</fullName>
+                <default>false</default>
+                <label>Sobha Connect - Intnl - Company</label>
+            </value>
+            <value>
+                <fullName>Broker – Intnl</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Broker – Intnl</label>
+            </value>
+            <value>
+                <fullName>Broker – RERA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Broker – RERA</label>
+            </value>
+            <value>
+                <fullName>Broker – UAE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Broker – UAE</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect – Intnl – Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sobha Connect – Intnl – Company</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect – Intnl – Individual</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sobha Connect – Intnl – Individual</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect – Intnl– Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sobha Connect – Intnl– Company</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect – UAE – Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sobha Connect – UAE – Company</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect – UAE – Individual</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sobha Connect – UAE – Individual</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

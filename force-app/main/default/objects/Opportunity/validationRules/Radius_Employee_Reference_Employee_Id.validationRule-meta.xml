@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Radius_Employee_Reference_Employee_Id</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(ISPICKVAL(Detailed_Sub_Source__c, &apos;Radius Employee Reference&apos;), ISBLANK(Employee_Id__c))</errorConditionFormula>
+    <errorDisplayField>Employee_Id__c</errorDisplayField>
+    <errorMessage>You must select a value</errorMessage>
+</ValidationRule>

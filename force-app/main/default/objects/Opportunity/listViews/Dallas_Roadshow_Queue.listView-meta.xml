@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dallas_Roadshow_Queue</fullName>
+    <booleanFilter>2 AND ( 1 OR 3 OR 4 OR 5) AND 7 AND 6</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Account_Mobile_Number__c</columns>
+    <columns>Presales_Agent__c</columns>
+    <columns>Account_Email__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Walk_in_Source__c</columns>
+    <columns>Sales_Manager_lookup__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>UTM_Campaign__c</field>
+        <operation>contains</operation>
+        <value>Dallas</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Site Visit Done</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER.ALIAS</field>
+        <operation>equals</operation>
+        <value>sajra</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER.ALIAS</field>
+        <operation>equals</operation>
+        <value>bpras</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER.ALIAS</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>6/19/2024 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>lessThan</operation>
+        <value>6/24/2024 12:00 AM</value>
+    </filters>
+    <label>Dallas Roadshow Queue July 2024</label>
+    <sharedTo>
+        <group>NJ_Roadshow_June_2024</group>
+    </sharedTo>
+</ListView>

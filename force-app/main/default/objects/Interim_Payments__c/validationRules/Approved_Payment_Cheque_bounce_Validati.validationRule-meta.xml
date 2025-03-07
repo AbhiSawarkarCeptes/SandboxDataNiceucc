@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Payment_Cheque_bounce_Validati</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Cheque_Bounced_Interim__c = TRUE, ISPICKVAL(Approval_Status_Interim__c, &apos;Approved&apos;))</errorConditionFormula>
+    <errorMessage>If payment is approved, Cheque cannot be bounced.</errorMessage>
+</ValidationRule>

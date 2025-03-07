@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zone_O__c</fullName>
+    <label>Zone (O)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Suburb_O__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NAVI MUMBAI</fullName>
+                <default>false</default>
+                <label>NAVI MUMBAI</label>
+            </value>
+            <value>
+                <fullName>SOUTH CENTRAL</fullName>
+                <default>false</default>
+                <label>SOUTH CENTRAL</label>
+            </value>
+            <value>
+                <fullName>EASTERN SUBURBS</fullName>
+                <default>false</default>
+                <label>EASTERN SUBURBS</label>
+            </value>
+            <value>
+                <fullName>CENTRAL SUBURBS</fullName>
+                <default>false</default>
+                <label>CENTRAL SUBURBS</label>
+            </value>
+            <value>
+                <fullName>SOUTH MUMBAI</fullName>
+                <default>false</default>
+                <label>SOUTH MUMBAI</label>
+            </value>
+            <value>
+                <fullName>THANE</fullName>
+                <default>false</default>
+                <label>THANE</label>
+            </value>
+            <value>
+                <fullName>WESTERN SUBURBS</fullName>
+                <default>false</default>
+                <label>WESTERN SUBURBS</label>
+            </value>
+            <value>
+                <fullName>FAR WESTERN</fullName>
+                <default>false</default>
+                <label>FAR WESTERN</label>
+            </value>
+            <value>
+                <fullName>FAR CENTRAL</fullName>
+                <default>false</default>
+                <label>FAR CENTRAL</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Kasarvadavali</controllingFieldValue>
+            <controllingFieldValue>Khopat</controllingFieldValue>
+            <controllingFieldValue>Kolshet</controllingFieldValue>
+            <controllingFieldValue>Kopri</controllingFieldValue>
+            <controllingFieldValue>Majiwada</controllingFieldValue>
+            <controllingFieldValue>Manpada</controllingFieldValue>
+            <controllingFieldValue>Naupada</controllingFieldValue>
+            <controllingFieldValue>Off Pokhran Road</controllingFieldValue>
+            <controllingFieldValue>Owale</controllingFieldValue>
+            <controllingFieldValue>Panchpakhadi</controllingFieldValue>
+            <controllingFieldValue>Patlipada</controllingFieldValue>
+            <controllingFieldValue>Pokhran Road</controllingFieldValue>
+            <controllingFieldValue>Station Road</controllingFieldValue>
+            <controllingFieldValue>Teen Hath Naka</controllingFieldValue>
+            <controllingFieldValue>Tikuji ni wadi</controllingFieldValue>
+            <controllingFieldValue>Vartak Nagar</controllingFieldValue>
+            <controllingFieldValue>Vasant Vihar</controllingFieldValue>
+            <controllingFieldValue>Waghbil Road</controllingFieldValue>
+            <controllingFieldValue>Wagle Estate</controllingFieldValue>
+            <controllingFieldValue>Azad Nagar</controllingFieldValue>
+            <controllingFieldValue>Balkum</controllingFieldValue>
+            <controllingFieldValue>Dhokali</controllingFieldValue>
+            <controllingFieldValue>Ghodbunder Road</controllingFieldValue>
+            <controllingFieldValue>Hiranandani Estates</controllingFieldValue>
+            <controllingFieldValue>Hiranandani Meadows</controllingFieldValue>
+            <controllingFieldValue>Kalwa</controllingFieldValue>
+            <controllingFieldValue>Kapurbawdi</controllingFieldValue>
+            <valueName>THANE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Khar(W)</controllingFieldValue>
+            <controllingFieldValue>Andheri Kurla Road</controllingFieldValue>
+            <controllingFieldValue>Andheri(E)</controllingFieldValue>
+            <controllingFieldValue>Andheri(W)</controllingFieldValue>
+            <controllingFieldValue>Borivali(E)</controllingFieldValue>
+            <controllingFieldValue>Borivali(W)</controllingFieldValue>
+            <controllingFieldValue>Dahisar(E)</controllingFieldValue>
+            <controllingFieldValue>Dahisar(W)</controllingFieldValue>
+            <controllingFieldValue>Goregaon(E)</controllingFieldValue>
+            <controllingFieldValue>Goregaon(W)</controllingFieldValue>
+            <controllingFieldValue>Jogeshwari(E)</controllingFieldValue>
+            <controllingFieldValue>Jogeshwari(W)</controllingFieldValue>
+            <controllingFieldValue>Juhu</controllingFieldValue>
+            <controllingFieldValue>Kandivali(E)</controllingFieldValue>
+            <controllingFieldValue>Kandivali(W)</controllingFieldValue>
+            <controllingFieldValue>Madh Island</controllingFieldValue>
+            <controllingFieldValue>Malad(E)</controllingFieldValue>
+            <controllingFieldValue>Malad(W)</controllingFieldValue>
+            <controllingFieldValue>Malvani</controllingFieldValue>
+            <controllingFieldValue>Sakinaka</controllingFieldValue>
+            <controllingFieldValue>Santacruz(E)</controllingFieldValue>
+            <controllingFieldValue>Santacruz(W)</controllingFieldValue>
+            <controllingFieldValue>Versova</controllingFieldValue>
+            <controllingFieldValue>Vile Parle(E)</controllingFieldValue>
+            <controllingFieldValue>Vile Parle(W)</controllingFieldValue>
+            <controllingFieldValue>Bandra Kurla Complex</controllingFieldValue>
+            <controllingFieldValue>Bandra(E)</controllingFieldValue>
+            <controllingFieldValue>Bandra(W)</controllingFieldValue>
+            <valueName>WESTERN SUBURBS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jacob circle</controllingFieldValue>
+            <controllingFieldValue>Lower Parel</controllingFieldValue>
+            <controllingFieldValue>Mahalakshmi</controllingFieldValue>
+            <controllingFieldValue>Mumbai Central</controllingFieldValue>
+            <controllingFieldValue>Parel</controllingFieldValue>
+            <controllingFieldValue>Prabhadevi</controllingFieldValue>
+            <controllingFieldValue>Sewri</controllingFieldValue>
+            <controllingFieldValue>Sion(E)</controllingFieldValue>
+            <controllingFieldValue>King Circle</controllingFieldValue>
+            <controllingFieldValue>Byculla</controllingFieldValue>
+            <controllingFieldValue>Lalbaug</controllingFieldValue>
+            <controllingFieldValue>Dadar(E)</controllingFieldValue>
+            <controllingFieldValue>Dadar(W)</controllingFieldValue>
+            <controllingFieldValue>Mahim</controllingFieldValue>
+            <controllingFieldValue>Matunga</controllingFieldValue>
+            <controllingFieldValue>Mazagaon</controllingFieldValue>
+            <controllingFieldValue>Nagpada</controllingFieldValue>
+            <controllingFieldValue>Chinchpokli (E)</controllingFieldValue>
+            <valueName>SOUTH CENTRAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GTB Nagar</controllingFieldValue>
+            <controllingFieldValue>Chunabhatti</controllingFieldValue>
+            <controllingFieldValue>Chembur</controllingFieldValue>
+            <controllingFieldValue>Govandi</controllingFieldValue>
+            <controllingFieldValue>MANKHURD</controllingFieldValue>
+            <controllingFieldValue>Tilak Nagar</controllingFieldValue>
+            <controllingFieldValue>Wadala</controllingFieldValue>
+            <valueName>EASTERN SUBURBS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vidyavihar</controllingFieldValue>
+            <controllingFieldValue>Ghatkopar</controllingFieldValue>
+            <controllingFieldValue>Vikhroli</controllingFieldValue>
+            <controllingFieldValue>Bhandup(E)</controllingFieldValue>
+            <controllingFieldValue>Bhandup(W)</controllingFieldValue>
+            <controllingFieldValue>Chandivali</controllingFieldValue>
+            <controllingFieldValue>Eastern Exp. Hwy.</controllingFieldValue>
+            <controllingFieldValue>Ghatkopar(E)</controllingFieldValue>
+            <controllingFieldValue>Ghatkopar(W)</controllingFieldValue>
+            <controllingFieldValue>Kalina</controllingFieldValue>
+            <controllingFieldValue>Kanjurmarg (E)</controllingFieldValue>
+            <controllingFieldValue>Kanjurmarg (W)</controllingFieldValue>
+            <controllingFieldValue>Kurla (E)</controllingFieldValue>
+            <controllingFieldValue>Kurla (W)</controllingFieldValue>
+            <controllingFieldValue>Mulund(E)</controllingFieldValue>
+            <controllingFieldValue>Mulund(W)</controllingFieldValue>
+            <controllingFieldValue>Nahur (E)</controllingFieldValue>
+            <controllingFieldValue>Nahur (W)</controllingFieldValue>
+            <controllingFieldValue>JVLR</controllingFieldValue>
+            <controllingFieldValue>Powai</controllingFieldValue>
+            <controllingFieldValue>Vidya Vihar</controllingFieldValue>
+            <controllingFieldValue>Vikhroli(E)</controllingFieldValue>
+            <controllingFieldValue>Vikhroli(W)</controllingFieldValue>
+            <valueName>CENTRAL SUBURBS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mira Road</controllingFieldValue>
+            <controllingFieldValue>Bhayander East</controllingFieldValue>
+            <controllingFieldValue>Bhayander West</controllingFieldValue>
+            <controllingFieldValue>Naigaon East</controllingFieldValue>
+            <controllingFieldValue>Naigaon West</controllingFieldValue>
+            <controllingFieldValue>Vasai</controllingFieldValue>
+            <controllingFieldValue>Nalasopara East</controllingFieldValue>
+            <controllingFieldValue>Nalasopara West</controllingFieldValue>
+            <controllingFieldValue>Virar</controllingFieldValue>
+            <controllingFieldValue>Palghar</controllingFieldValue>
+            <controllingFieldValue>Boisar</controllingFieldValue>
+            <controllingFieldValue>Dahanu</controllingFieldValue>
+            <valueName>FAR WESTERN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mumbra</controllingFieldValue>
+            <controllingFieldValue>Diva</controllingFieldValue>
+            <controllingFieldValue>Kopar</controllingFieldValue>
+            <controllingFieldValue>Dombivali</controllingFieldValue>
+            <controllingFieldValue>Thakurli</controllingFieldValue>
+            <controllingFieldValue>Kalyan</controllingFieldValue>
+            <controllingFieldValue>Badlapur</controllingFieldValue>
+            <controllingFieldValue>Bhiwandi</controllingFieldValue>
+            <controllingFieldValue>Vithalwadi</controllingFieldValue>
+            <controllingFieldValue>Ulhasnagar</controllingFieldValue>
+            <controllingFieldValue>Ambernath</controllingFieldValue>
+            <controllingFieldValue>Badlapur East</controllingFieldValue>
+            <controllingFieldValue>Badlapur West</controllingFieldValue>
+            <controllingFieldValue>Vangani</controllingFieldValue>
+            <controllingFieldValue>Shelu</controllingFieldValue>
+            <controllingFieldValue>Neral</controllingFieldValue>
+            <controllingFieldValue>Bhivpuri Road</controllingFieldValue>
+            <controllingFieldValue>Karjat</controllingFieldValue>
+            <controllingFieldValue>Shahad</controllingFieldValue>
+            <controllingFieldValue>Ambivali</controllingFieldValue>
+            <controllingFieldValue>Titwala</controllingFieldValue>
+            <controllingFieldValue>Khadavli</controllingFieldValue>
+            <controllingFieldValue>Vasind</controllingFieldValue>
+            <controllingFieldValue>Asangaon</controllingFieldValue>
+            <controllingFieldValue>Kasara</controllingFieldValue>
+            <valueName>FAR CENTRAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Altamount Road</controllingFieldValue>
+            <controllingFieldValue>Charni Road</controllingFieldValue>
+            <controllingFieldValue>Colaba</controllingFieldValue>
+            <controllingFieldValue>Cuffe Parade</controllingFieldValue>
+            <controllingFieldValue>Grant Road</controllingFieldValue>
+            <controllingFieldValue>Hughes Road</controllingFieldValue>
+            <controllingFieldValue>Kalbadevi</controllingFieldValue>
+            <controllingFieldValue>Malabar Hill</controllingFieldValue>
+            <controllingFieldValue>Churchgate</controllingFieldValue>
+            <controllingFieldValue>Marine Lines</controllingFieldValue>
+            <controllingFieldValue>Mahalaxmi</controllingFieldValue>
+            <controllingFieldValue>Elphinstone Road</controllingFieldValue>
+            <controllingFieldValue>Mumbai CST</controllingFieldValue>
+            <controllingFieldValue>Mazgaon</controllingFieldValue>
+            <controllingFieldValue>Nariman Point</controllingFieldValue>
+            <controllingFieldValue>Girgaon</controllingFieldValue>
+            <controllingFieldValue>Breach Candy</controllingFieldValue>
+            <controllingFieldValue>Haji Ali</controllingFieldValue>
+            <controllingFieldValue>Fort</controllingFieldValue>
+            <controllingFieldValue>Babulnath Road</controllingFieldValue>
+            <controllingFieldValue>Bhulabhai Desai Road</controllingFieldValue>
+            <controllingFieldValue>Bhuleshwar</controllingFieldValue>
+            <controllingFieldValue>C.P. Tank</controllingFieldValue>
+            <controllingFieldValue>Dongri</controllingFieldValue>
+            <controllingFieldValue>Kalachowki</controllingFieldValue>
+            <controllingFieldValue>Kemps Corner</controllingFieldValue>
+            <controllingFieldValue>Nepean Sea Road</controllingFieldValue>
+            <controllingFieldValue>Tardeo</controllingFieldValue>
+            <controllingFieldValue>V. P. Road</controllingFieldValue>
+            <controllingFieldValue>Walkeshwar</controllingFieldValue>
+            <controllingFieldValue>Worli</controllingFieldValue>
+            <valueName>SOUTH MUMBAI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vashi</controllingFieldValue>
+            <controllingFieldValue>Turbhe</controllingFieldValue>
+            <controllingFieldValue>Koparkhairane</controllingFieldValue>
+            <controllingFieldValue>Ghansoli</controllingFieldValue>
+            <controllingFieldValue>Rabale</controllingFieldValue>
+            <controllingFieldValue>Airoli</controllingFieldValue>
+            <controllingFieldValue>Sanpada</controllingFieldValue>
+            <controllingFieldValue>Jui Nagar</controllingFieldValue>
+            <controllingFieldValue>Nerul</controllingFieldValue>
+            <controllingFieldValue>Seawood</controllingFieldValue>
+            <controllingFieldValue>Belapur</controllingFieldValue>
+            <controllingFieldValue>Kharghar</controllingFieldValue>
+            <controllingFieldValue>Khandeshwar</controllingFieldValue>
+            <controllingFieldValue>Kalamboli</controllingFieldValue>
+            <controllingFieldValue>Taloja</controllingFieldValue>
+            <controllingFieldValue>Panvel</controllingFieldValue>
+            <valueName>NAVI MUMBAI</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

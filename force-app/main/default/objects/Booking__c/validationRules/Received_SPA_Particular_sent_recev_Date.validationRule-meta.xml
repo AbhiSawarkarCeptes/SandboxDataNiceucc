@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Received_SPA_Particular_sent_recev_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+ISCHANGED(SPA_Executed__c),
+OR(
+ISPICKVAL(SPA_Executed__c, &quot;Revised SPA Particular Sent&quot;),
+ISPICKVAL (SPA_Executed__c, &quot;Revised SPA Particular received - SPA Copy Pending&quot;)),
+ISBLANK( Received_SPA_Particular_sent_recev_date__c))</errorConditionFormula>
+    <errorMessage>Please enter Received SPA Particular sent / received date</errorMessage>
+</ValidationRule>

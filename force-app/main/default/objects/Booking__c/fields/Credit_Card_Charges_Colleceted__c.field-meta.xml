@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Card_Charges_Colleceted__c</fullName>
+    <label>Other Charges Collected Rollup</label>
+    <summarizedField>Receipt__c.Credit_Card_Charges__c</summarizedField>
+    <summaryFilterItems>
+        <field>Receipt__c.Receipt_Status__c</field>
+        <operation>equals</operation>
+        <value>Cleared</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Receipt__c.Other_Charges_Type__c</field>
+        <operation>notEqual</operation>
+        <value>Late Payment Charges</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Receipt__c.Booking__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

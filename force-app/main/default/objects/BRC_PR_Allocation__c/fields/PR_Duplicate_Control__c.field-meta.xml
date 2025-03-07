@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PR_Duplicate_Control__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>This field is stores PR Id and is unique to prevent a PR getting tagged to multiple BRCs.</description>
+    <externalId>false</externalId>
+    <label>PR Duplicate Control</label>
+    <length>18</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SM SD Change Status --></label>
+    <name>SM_SD_Change_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved by Saima</masterLabel>
+        <translation><!-- Approved by Saima --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending by Saima</masterLabel>
+        <translation><!-- Pending by Saima --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Saima</masterLabel>
+        <translation><!-- Rejected by Saima --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submit to Saima</masterLabel>
+        <translation><!-- Submit to Saima --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

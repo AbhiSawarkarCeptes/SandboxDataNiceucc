@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_status_cannot_be_made_Lost</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(AND(Count_of_Non_Contactable_Calls__c &lt;= 6, ISCHANGED(Status), ISPICKVAL(Status, &quot;Lost&quot;)),
+			Last_Call_Attempt_Status__c  &lt;&gt; &quot;No action needed&quot;,
+			Sales_Call_Attempt_Status__c &lt;&gt; &quot;No action needed&quot;,
+Last_Call_Attempt_Status__c  &lt;&gt; &quot;Not Interested&quot;)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>You cannot make Lead Status &apos;Lost&apos;</errorMessage>
+</ValidationRule>

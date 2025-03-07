@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Nationality --></label>
+    <name>Nationality3__c</name>
+    <picklistValues>
+        <masterLabel>Afghans</masterLabel>
+        <translation><!-- Afghans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Albanians</masterLabel>
+        <translation><!-- Albanians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Algerians</masterLabel>
+        <translation><!-- Algerians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Americans</masterLabel>
+        <translation><!-- Americans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Andorrans</masterLabel>
+        <translation><!-- Andorrans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Angolans</masterLabel>
+        <translation><!-- Angolans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Antiguans and Barbudans</masterLabel>
+        <translation><!-- Antiguans and Barbudans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Argentines</masterLabel>
+        <translation><!-- Argentines --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Armenians</masterLabel>
+        <translation><!-- Armenians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arubans</masterLabel>
+        <translation><!-- Arubans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Australians</masterLabel>
+        <translation><!-- Australians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Austrians</masterLabel>
+        <translation><!-- Austrians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Azerbaijanis</masterLabel>
+        <translation><!-- Azerbaijanis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bahamians</masterLabel>
+        <translation><!-- Bahamians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bahrainis</masterLabel>
+        <translation><!-- Bahrainis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Baltic Russians</masterLabel>
+        <translation><!-- Baltic Russians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bangladeshis</masterLabel>
+        <translation><!-- Bangladeshis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Barbadians</masterLabel>
+        <translation><!-- Barbadians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Basques</masterLabel>
+        <translation><!-- Basques --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belarusians</masterLabel>
+        <translation><!-- Belarusians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belgians</masterLabel>
+        <translation><!-- Belgians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belizeans</masterLabel>
+        <translation><!-- Belizeans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beninese</masterLabel>
+        <translation><!-- Beninese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bermudians</masterLabel>
+        <translation><!-- Bermudians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bhutanese</masterLabel>
+        <translation><!-- Bhutanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bolivians</masterLabel>
+        <translation><!-- Bolivians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bosniaks</masterLabel>
+        <translation><!-- Bosniaks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bosnians and Herzegovinians</masterLabel>
+        <translation><!-- Bosnians and Herzegovinians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Botswana</masterLabel>
+        <translation><!-- Botswana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brazilians</masterLabel>
+        <translation><!-- Brazilians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bretons</masterLabel>
+        <translation><!-- Bretons --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>British</masterLabel>
+        <translation><!-- British --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>British Virgin Islanders</masterLabel>
+        <translation><!-- British Virgin Islanders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bruneians</masterLabel>
+        <translation><!-- Bruneians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bulgarians</masterLabel>
+        <translation><!-- Bulgarians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Burkinabés</masterLabel>
+        <translation><!-- Burkinabés --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Burmese</masterLabel>
+        <translation><!-- Burmese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Burundians</masterLabel>
+        <translation><!-- Burundians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cambodians</masterLabel>
+        <translation><!-- Cambodians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cameroonians</masterLabel>
+        <translation><!-- Cameroonians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canadians</masterLabel>
+        <translation><!-- Canadians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cape Verdeans</masterLabel>
+        <translation><!-- Cape Verdeans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Catalans</masterLabel>
+        <translation><!-- Catalans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chadians</masterLabel>
+        <translation><!-- Chadians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chileans</masterLabel>
+        <translation><!-- Chileans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chinese</masterLabel>
+        <translation><!-- Chinese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colombians</masterLabel>
+        <translation><!-- Colombians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comorians</masterLabel>
+        <translation><!-- Comorians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Congolese</masterLabel>
+        <translation><!-- Congolese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Costa Ricans</masterLabel>
+        <translation><!-- Costa Ricans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Croatians</masterLabel>
+        <translation><!-- Croatians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cubans</masterLabel>
+        <translation><!-- Cubans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cypriots</masterLabel>
+        <translation><!-- Cypriots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Czechs</masterLabel>
+        <translation><!-- Czechs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Danes</masterLabel>
+        <translation><!-- Danes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Djiboutians</masterLabel>
+        <translation><!-- Djiboutians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dominicans (Commonwealth)</masterLabel>
+        <translation><!-- Dominicans (Commonwealth) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dominicans (Republic)</masterLabel>
+        <translation><!-- Dominicans (Republic) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dutch</masterLabel>
+        <translation><!-- Dutch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>East Timorese</masterLabel>
+        <translation><!-- East Timorese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ecuadorians</masterLabel>
+        <translation><!-- Ecuadorians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Egyptians</masterLabel>
+        <translation><!-- Egyptians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emiratis</masterLabel>
+        <translation><!-- Emiratis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>English</masterLabel>
+        <translation><!-- English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equatoguineans</masterLabel>
+        <translation><!-- Equatoguineans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eritreans</masterLabel>
+        <translation><!-- Eritreans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estonians</masterLabel>
+        <translation><!-- Estonians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ethiopians</masterLabel>
+        <translation><!-- Ethiopians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falkland Islanders</masterLabel>
+        <translation><!-- Falkland Islanders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Faroese</masterLabel>
+        <translation><!-- Faroese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fijians</masterLabel>
+        <translation><!-- Fijians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Filipinos</masterLabel>
+        <translation><!-- Filipinos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finnish Swedish</masterLabel>
+        <translation><!-- Finnish Swedish --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finns</masterLabel>
+        <translation><!-- Finns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>French citizens</masterLabel>
+        <translation><!-- French citizens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gabonese</masterLabel>
+        <translation><!-- Gabonese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gambians</masterLabel>
+        <translation><!-- Gambians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Georgians</masterLabel>
+        <translation><!-- Georgians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Germans</masterLabel>
+        <translation><!-- Germans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ghanaians</masterLabel>
+        <translation><!-- Ghanaians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gibraltarians</masterLabel>
+        <translation><!-- Gibraltarians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greeks</masterLabel>
+        <translation><!-- Greeks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greenlanders</masterLabel>
+        <translation><!-- Greenlanders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grenadians</masterLabel>
+        <translation><!-- Grenadians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guatemalans</masterLabel>
+        <translation><!-- Guatemalans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guianese (French)</masterLabel>
+        <translation><!-- Guianese (French) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guinea-Bissau nationals</masterLabel>
+        <translation><!-- Guinea-Bissau nationals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guineans</masterLabel>
+        <translation><!-- Guineans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guyanese</masterLabel>
+        <translation><!-- Guyanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Haitians</masterLabel>
+        <translation><!-- Haitians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hondurans</masterLabel>
+        <translation><!-- Hondurans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hong Kongers</masterLabel>
+        <translation><!-- Hong Kongers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hungarians</masterLabel>
+        <translation><!-- Hungarians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I-Kiribati</masterLabel>
+        <translation><!-- I-Kiribati --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Icelanders</masterLabel>
+        <translation><!-- Icelanders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indians</masterLabel>
+        <translation><!-- Indians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indonesians</masterLabel>
+        <translation><!-- Indonesians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Iranians</masterLabel>
+        <translation><!-- Iranians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Iraqis</masterLabel>
+        <translation><!-- Iraqis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Irish</masterLabel>
+        <translation><!-- Irish --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Israelis</masterLabel>
+        <translation><!-- Israelis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Italians</masterLabel>
+        <translation><!-- Italians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ivoirians</masterLabel>
+        <translation><!-- Ivoirians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jamaicans</masterLabel>
+        <translation><!-- Jamaicans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Japanese</masterLabel>
+        <translation><!-- Japanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jordanians</masterLabel>
+        <translation><!-- Jordanians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kazakhs</masterLabel>
+        <translation><!-- Kazakhs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kenyans</masterLabel>
+        <translation><!-- Kenyans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Koreans</masterLabel>
+        <translation><!-- Koreans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kosovars</masterLabel>
+        <translation><!-- Kosovars --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kuwaitis</masterLabel>
+        <translation><!-- Kuwaitis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kyrgyzs</masterLabel>
+        <translation><!-- Kyrgyzs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lao</masterLabel>
+        <translation><!-- Lao --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Latvians</masterLabel>
+        <translation><!-- Latvians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lebanese</masterLabel>
+        <translation><!-- Lebanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liberians</masterLabel>
+        <translation><!-- Liberians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Libyans</masterLabel>
+        <translation><!-- Libyans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liechtensteiners</masterLabel>
+        <translation><!-- Liechtensteiners --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lithuanians</masterLabel>
+        <translation><!-- Lithuanians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Luxembourgers</masterLabel>
+        <translation><!-- Luxembourgers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Macao</masterLabel>
+        <translation><!-- Macao --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Macedonians</masterLabel>
+        <translation><!-- Macedonians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Malagasy</masterLabel>
+        <translation><!-- Malagasy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Malawians</masterLabel>
+        <translation><!-- Malawians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Malaysians</masterLabel>
+        <translation><!-- Malaysians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maldivians</masterLabel>
+        <translation><!-- Maldivians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Malians</masterLabel>
+        <translation><!-- Malians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maltese</masterLabel>
+        <translation><!-- Maltese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manx</masterLabel>
+        <translation><!-- Manx --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marshallese</masterLabel>
+        <translation><!-- Marshallese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mauritanians</masterLabel>
+        <translation><!-- Mauritanians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mauritians</masterLabel>
+        <translation><!-- Mauritians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mexicans</masterLabel>
+        <translation><!-- Mexicans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Micronesians</masterLabel>
+        <translation><!-- Micronesians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moldovans</masterLabel>
+        <translation><!-- Moldovans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mongolians</masterLabel>
+        <translation><!-- Mongolians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Montenegrins</masterLabel>
+        <translation><!-- Montenegrins --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monégasque</masterLabel>
+        <translation><!-- Monégasque --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moroccans</masterLabel>
+        <translation><!-- Moroccans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mozambicans</masterLabel>
+        <translation><!-- Mozambicans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Namibians</masterLabel>
+        <translation><!-- Namibians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Naurans</masterLabel>
+        <translation><!-- Naurans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nepalese</masterLabel>
+        <translation><!-- Nepalese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Zealanders</masterLabel>
+        <translation><!-- New Zealanders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nicaraguans</masterLabel>
+        <translation><!-- Nicaraguans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nigerians</masterLabel>
+        <translation><!-- Nigerians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nigeriens</masterLabel>
+        <translation><!-- Nigeriens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Norwegians</masterLabel>
+        <translation><!-- Norwegians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Omani</masterLabel>
+        <translation><!-- Omani --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pakistanis</masterLabel>
+        <translation><!-- Pakistanis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Palauans</masterLabel>
+        <translation><!-- Palauans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Palestinians</masterLabel>
+        <translation><!-- Palestinians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Panamanians</masterLabel>
+        <translation><!-- Panamanians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Papua New Guineans</masterLabel>
+        <translation><!-- Papua New Guineans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paraguayans</masterLabel>
+        <translation><!-- Paraguayans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peruvians</masterLabel>
+        <translation><!-- Peruvians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poles</masterLabel>
+        <translation><!-- Poles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portuguese</masterLabel>
+        <translation><!-- Portuguese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Puerto Ricans</masterLabel>
+        <translation><!-- Puerto Ricans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Qatari</masterLabel>
+        <translation><!-- Qatari --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quebecers</masterLabel>
+        <translation><!-- Quebecers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Romanians</masterLabel>
+        <translation><!-- Romanians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Russians</masterLabel>
+        <translation><!-- Russians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rwandans</masterLabel>
+        <translation><!-- Rwandans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Réunionnais</masterLabel>
+        <translation><!-- Réunionnais --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Saint Kitts and Nevis</masterLabel>
+        <translation><!-- Saint Kitts and Nevis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Saint Lucians</masterLabel>
+        <translation><!-- Saint Lucians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salvadorans</masterLabel>
+        <translation><!-- Salvadorans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sammarinese</masterLabel>
+        <translation><!-- Sammarinese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Samoans</masterLabel>
+        <translation><!-- Samoans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Saudis</masterLabel>
+        <translation><!-- Saudis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scots</masterLabel>
+        <translation><!-- Scots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Senegalese</masterLabel>
+        <translation><!-- Senegalese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Serbs</masterLabel>
+        <translation><!-- Serbs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seychellois</masterLabel>
+        <translation><!-- Seychellois --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sierra Leoneans</masterLabel>
+        <translation><!-- Sierra Leoneans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Singaporeans</masterLabel>
+        <translation><!-- Singaporeans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slovaks</masterLabel>
+        <translation><!-- Slovaks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slovenes</masterLabel>
+        <translation><!-- Slovenes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solomon Islanders</masterLabel>
+        <translation><!-- Solomon Islanders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Somalilanders</masterLabel>
+        <translation><!-- Somalilanders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Somalis</masterLabel>
+        <translation><!-- Somalis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sotho</masterLabel>
+        <translation><!-- Sotho --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South Africans</masterLabel>
+        <translation><!-- South Africans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spaniards</masterLabel>
+        <translation><!-- Spaniards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sri Lankans</masterLabel>
+        <translation><!-- Sri Lankans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sudanese</masterLabel>
+        <translation><!-- Sudanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surinamese</masterLabel>
+        <translation><!-- Surinamese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swazi</masterLabel>
+        <translation><!-- Swazi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swedes</masterLabel>
+        <translation><!-- Swedes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swiss</masterLabel>
+        <translation><!-- Swiss --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Syriacs</masterLabel>
+        <translation><!-- Syriacs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Syrians</masterLabel>
+        <translation><!-- Syrians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>São Tomé and Príncipe</masterLabel>
+        <translation><!-- São Tomé and Príncipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Taiwanese</masterLabel>
+        <translation><!-- Taiwanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tajik</masterLabel>
+        <translation><!-- Tajik --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tamils</masterLabel>
+        <translation><!-- Tamils --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tanzanians</masterLabel>
+        <translation><!-- Tanzanians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thais</masterLabel>
+        <translation><!-- Thais --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tibetans</masterLabel>
+        <translation><!-- Tibetans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobagonians</masterLabel>
+        <translation><!-- Tobagonians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Togolese</masterLabel>
+        <translation><!-- Togolese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tongans</masterLabel>
+        <translation><!-- Tongans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trinidadians</masterLabel>
+        <translation><!-- Trinidadians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tunisians</masterLabel>
+        <translation><!-- Tunisians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turks</masterLabel>
+        <translation><!-- Turks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tuvaluans</masterLabel>
+        <translation><!-- Tuvaluans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ugandans</masterLabel>
+        <translation><!-- Ugandans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ukrainians</masterLabel>
+        <translation><!-- Ukrainians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uruguayans</masterLabel>
+        <translation><!-- Uruguayans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uzbeks</masterLabel>
+        <translation><!-- Uzbeks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vanuatuans</masterLabel>
+        <translation><!-- Vanuatuans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Venezuelans</masterLabel>
+        <translation><!-- Venezuelans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vietnamese</masterLabel>
+        <translation><!-- Vietnamese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vincentians</masterLabel>
+        <translation><!-- Vincentians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Welsh</masterLabel>
+        <translation><!-- Welsh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yemenis</masterLabel>
+        <translation><!-- Yemenis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zambians</masterLabel>
+        <translation><!-- Zambians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zimbabweans</masterLabel>
+        <translation><!-- Zimbabweans --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

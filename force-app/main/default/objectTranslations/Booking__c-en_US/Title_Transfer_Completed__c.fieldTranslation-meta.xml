@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Title Transfer --></label>
+    <name>Title_Transfer_Completed__c</name>
+    <picklistValues>
+        <masterLabel>Additional Docs Required</masterLabel>
+        <translation><!-- Additional Docs Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completed</masterLabel>
+        <translation><!-- Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSR Pending with Customer</masterLabel>
+        <translation><!-- DSR Pending with Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSR Received from Customer</masterLabel>
+        <translation><!-- DSR Received from Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Initiated</masterLabel>
+        <translation><!-- Not Initiated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request to initiate Title transfer</masterLabel>
+        <translation><!-- Request to initiate Title transfer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sent for Authorized signatory</masterLabel>
+        <translation><!-- Sent for Authorized signatory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sent for accounts/Audit review</masterLabel>
+        <translation><!-- Sent for accounts/Audit review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Process</masterLabel>
+        <translation><!-- Under Process --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

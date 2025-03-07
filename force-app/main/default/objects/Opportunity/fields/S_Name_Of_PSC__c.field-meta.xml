@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>S_Name_Of_PSC__c</fullName>
+    <label>Name Of PSC</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asim Khan</fullName>
+                <default>false</default>
+                <label>Asim Khan</label>
+            </value>
+            <value>
+                <fullName>Adam Sayyed</fullName>
+                <default>false</default>
+                <label>Adam Sayyed</label>
+            </value>
+            <value>
+                <fullName>Shourya Mahindra Sharma</fullName>
+                <default>false</default>
+                <label>Shourya Mahindra Sharma</label>
+            </value>
+            <value>
+                <fullName>Nimisha Panchal</fullName>
+                <default>false</default>
+                <label>Nimisha Panchal</label>
+            </value>
+            <value>
+                <fullName>Pooja Birla</fullName>
+                <default>false</default>
+                <label>Pooja Birla</label>
+            </value>
+            <value>
+                <fullName>Sumeet Sanjan Pawar</fullName>
+                <default>false</default>
+                <label>Sumeet Sanjan Pawar</label>
+            </value>
+            <value>
+                <fullName>Shikha Vijay Poojari</fullName>
+                <default>false</default>
+                <label>Shikha Vijay Poojari</label>
+            </value>
+            <value>
+                <fullName>Shahid Chunawala</fullName>
+                <default>false</default>
+                <label>Shahid Chunawala</label>
+            </value>
+            <value>
+                <fullName>Akshay Varma</fullName>
+                <default>false</default>
+                <label>Akshay Varma</label>
+            </value>
+            <value>
+                <fullName>Vishal Rajendra Agrawal</fullName>
+                <default>false</default>
+                <label>Vishal Rajendra Agrawal</label>
+            </value>
+            <value>
+                <fullName>Eram Siddiqui</fullName>
+                <default>false</default>
+                <label>Eram Siddiqui</label>
+            </value>
+            <value>
+                <fullName>Sherina Maben</fullName>
+                <default>false</default>
+                <label>Sherina Maben</label>
+            </value>
+            <value>
+                <fullName>Yusuf Shaikh</fullName>
+                <default>false</default>
+                <label>Yusuf Shaikh</label>
+            </value>
+            <value>
+                <fullName>Ashalata Nayak</fullName>
+                <default>false</default>
+                <label>Ashalata Nayak</label>
+            </value>
+            <value>
+                <fullName>Mohammed Sharif Hanif Shaikh</fullName>
+                <default>false</default>
+                <label>Mohammed Sharif Hanif Shaikh</label>
+            </value>
+            <value>
+                <fullName>Salman Salim Shaikh</fullName>
+                <default>false</default>
+                <label>Salman Salim Shaikh</label>
+            </value>
+            <value>
+                <fullName>Heena Pathare</fullName>
+                <default>false</default>
+                <label>Heena Pathare</label>
+            </value>
+            <value>
+                <fullName>Rizwan Mirza</fullName>
+                <default>false</default>
+                <label>Rizwan Mirza</label>
+            </value>
+            <value>
+                <fullName>Divya Singh</fullName>
+                <default>false</default>
+                <label>Divya Singh</label>
+            </value>
+            <value>
+                <fullName>Bhaskar Kanchan</fullName>
+                <default>false</default>
+                <label>Bhaskar Kanchan</label>
+            </value>
+            <value>
+                <fullName>Abhishek Chavan</fullName>
+                <default>false</default>
+                <label>Abhishek Chavan</label>
+            </value>
+            <value>
+                <fullName>Naresh Daryanani</fullName>
+                <default>false</default>
+                <label>Naresh Daryanani</label>
+            </value>
+            <value>
+                <fullName>Sachin Punia</fullName>
+                <default>false</default>
+                <label>Sachin Punia</label>
+            </value>
+            <value>
+                <fullName>Neha Singh</fullName>
+                <default>false</default>
+                <label>Neha Singh</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

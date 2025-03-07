@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>Name_as_per_trade_license__c</columns>
+    <columns>NAME</columns>
+    <columns>Broker_Category__c</columns>
+    <columns>Registration_Number__c</columns>
+    <columns>Status__c</columns>
+    <columns>Mobile__c</columns>
+    <columns>Email__c</columns>
+    <columns>CHRM_Manager_Email__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <sharedTo>
+        <group>CHRM_Manager</group>
+        <group>CHRM_Ops</group>
+        <group>CHRM_Team</group>
+        <group>Channel_Operations_Executive</group>
+        <group>ERF_BRF_Broker_Meeting_Tracker</group>
+    </sharedTo>
+</ListView>

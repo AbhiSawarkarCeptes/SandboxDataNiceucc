@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Source_is_Customer_Reference</fullName>
+    <active>false</active>
+    <description>If Lead Source Value is Customer Reference then Name of Person Field Mandatory</description>
+    <errorConditionFormula>AND 
+( 
+ISPICKVAL( LeadSource , &quot;Customer Reference&quot;), 
+ISBLANK(Name_of_Person__c) 
+)</errorConditionFormula>
+    <errorMessage>Please fill Name of Person</errorMessage>
+</ValidationRule>

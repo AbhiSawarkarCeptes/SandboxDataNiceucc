@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Delete files older than the number of days defined here. If this is set to 0 or blank, no files will be deleted. This should be optimized for your org&apos;s file storage limits, as it will count against those. --></help>
+    <label><!-- Delete Run Files Older than N Days --></label>
+    <name>uar__Delete_Run_Files_Older_than_N_Days__c</name>
+</CustomFieldTranslation>

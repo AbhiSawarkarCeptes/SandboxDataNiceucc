@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Date_Should_2_day_broker_training</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( Bypass_Validation_Rule__c == false,  OR($User.Username != &apos;maria.lobo@sobharealty.com&apos;,$User.Username != &apos;shailesh.dsouza@sobharealty.com&apos;), $RecordType.Name = &quot;Brokers Training&quot;,
+Date_Of_Event__c &lt;= today() + 1, OR(IsNEw(),IsChanged(Date_Of_Event__c)))</errorConditionFormula>
+    <errorDisplayField>Date_Of_Event__c</errorDisplayField>
+    <errorMessage>Broker Training : Start date of event should not be less then today + 1 days.</errorMessage>
+</ValidationRule>

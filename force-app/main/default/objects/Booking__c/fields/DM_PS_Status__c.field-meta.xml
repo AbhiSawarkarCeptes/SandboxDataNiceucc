@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DM_PS_Status__c</fullName>
+    <description>This field is used for PS Data Migration</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    ISPICKVAL(Status__c, &quot;Booking In Process&quot;) &amp;&amp; ISPICKVAL(Current_Status__c, &quot;Submitted to Audit&quot;),
+    &quot;Application Form Filled&quot;,
+    IF(
+        ISPICKVAL(Status__c, &quot;Cancelled&quot;) &amp;&amp; (
+            ISPICKVAL(Current_Status__c, &quot;Audit Accepted&quot;) ||
+            ISPICKVAL(Current_Status__c, &quot;Audit Rejected&quot;) ||
+            ISPICKVAL(Current_Status__c, &quot;Document Verification Accepted&quot;) ||
+            ISPICKVAL(Current_Status__c, &quot;Returned to Submitter&quot;) ||
+            ISPICKVAL(Current_Status__c, &quot;Sent to Client&quot;) ||
+            ISPICKVAL(Current_Status__c, &quot;Signed by Client&quot;) ||
+            ISPICKVAL(Current_Status__c, &quot;Submitted to Audit&quot;) ||
+            ISPICKVAL(Current_Status__c, &quot;Submitted to Sales Ops&quot;) ||
+            ISPICKVAL(Current_Status__c, &quot;&quot;)
+        ),
+        &quot;Booking_Cancelled&quot;,
+        IF(
+            ISPICKVAL(Status__c, &quot;Processed&quot;) &amp;&amp; (
+                ISPICKVAL(Current_Status__c, &quot;Audit Accepted&quot;) ||
+                ISPICKVAL(Current_Status__c, &quot;Sent to Client&quot;) ||
+                ISPICKVAL(Current_Status__c, &quot;Signed by Client&quot;) ||
+                ISPICKVAL(Current_Status__c, &quot;Submitted to Sales Ops&quot;) ||
+                ISPICKVAL(Current_Status__c, &quot;&quot;)
+            ),
+            IF(
+                ISPICKVAL(Current_Status__c, &quot;Audit Accepted&quot;),
+                &quot;Audit Approved&quot;,
+                &quot;Application Form Filled&quot;
+            ),
+            IF(
+                ISPICKVAL(Status__c, &quot;UnProcessed&quot;) &amp;&amp; (
+                    ISPICKVAL(Current_Status__c, &quot;Document Verification Rejected&quot;) ||
+                    ISPICKVAL(Current_Status__c, &quot;Sent to Client&quot;) ||
+                    ISPICKVAL(Current_Status__c, &quot;Signed by Client&quot;)
+                ),
+                &quot;Application Form Filled&quot;,
+                NULL 
+            )
+        )
+    )
+)</formula>
+    <label>DM-PS Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

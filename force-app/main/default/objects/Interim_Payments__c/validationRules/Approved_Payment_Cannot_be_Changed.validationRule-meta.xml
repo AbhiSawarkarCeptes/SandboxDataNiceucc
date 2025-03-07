@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Payment_Cannot_be_Changed</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL( Approval_Status_Interim__c , &apos;Approved&apos; ),
+  ISCHANGED( Approval_Status_Interim__c )
+)</errorConditionFormula>
+    <errorDisplayField>Approval_Status_Interim__c</errorDisplayField>
+    <errorMessage>Once Payment is Approved, Cannot be changed</errorMessage>
+</ValidationRule>

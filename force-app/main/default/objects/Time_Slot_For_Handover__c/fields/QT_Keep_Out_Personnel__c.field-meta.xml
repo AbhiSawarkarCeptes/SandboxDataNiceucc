@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QT_Keep_Out_Personnel__c</fullName>
+    <label>QT Keep Out Personnel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Olaf Wagner</fullName>
+                <default>false</default>
+                <label>Olaf Wagner</label>
+            </value>
+            <value>
+                <fullName>Dirk Heyne</fullName>
+                <default>false</default>
+                <label>Dirk Heyne</label>
+            </value>
+            <value>
+                <fullName>Roland Gotsch</fullName>
+                <default>false</default>
+                <label>Roland Gotsch</label>
+            </value>
+            <value>
+                <fullName>Ralf Goedecke</fullName>
+                <default>false</default>
+                <label>Ralf Goedecke</label>
+            </value>
+            <value>
+                <fullName>Harald Frei</fullName>
+                <default>false</default>
+                <label>Harald Frei</label>
+            </value>
+            <value>
+                <fullName>Karthikeyan Ranganathan</fullName>
+                <default>false</default>
+                <label>Karthikeyan Ranganathan</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

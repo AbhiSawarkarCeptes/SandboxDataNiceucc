@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Document Type --></label>
+    <name>Document_Type__c</name>
+    <picklistValues>
+        <masterLabel>Credit Note</masterLabel>
+        <translation><!-- Credit Note --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Debit Note</masterLabel>
+        <translation><!-- Debit Note --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demand - ASI</masterLabel>
+        <translation><!-- Demand - ASI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demand - DLD</masterLabel>
+        <translation><!-- Demand - DLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demand - PSI</masterLabel>
+        <translation><!-- Demand - PSI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receipt</masterLabel>
+        <translation><!-- Receipt --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

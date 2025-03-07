@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payment Plan Milestones</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payment Plan Milestones</value>
+    </caseValues>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Payment Plan Milestones Layout</layout>
+        <sections>
+            <label><!-- Charge 1 --></label>
+            <section>Charge 1</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 10 --></label>
+            <section>Charge 10</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 2 --></label>
+            <section>Charge 2</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 3 --></label>
+            <section>Charge 3</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 4 --></label>
+            <section>Charge 4</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 5 --></label>
+            <section>Charge 5</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 6 --></label>
+            <section>Charge 6</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 7 --></label>
+            <section>Charge 7</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 8 --></label>
+            <section>Charge 8</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 9 --></label>
+            <section>Charge 9</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SM PPM Layout</layout>
+        <sections>
+            <label><!-- Charge 1 --></label>
+            <section>Charge 1</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 10 --></label>
+            <section>Charge 10</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 2 --></label>
+            <section>Charge 2</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 3 --></label>
+            <section>Charge 3</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 4 --></label>
+            <section>Charge 4</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 5 --></label>
+            <section>Charge 5</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 6 --></label>
+            <section>Charge 6</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 7 --></label>
+            <section>Charge 7</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 8 --></label>
+            <section>Charge 8</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 9 --></label>
+            <section>Charge 9</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter the token amount to be deducted. --></errorMessage>
+        <name>DeductTokenCheckedtTokenAmtNotBlank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In first milestone, Milestone Name Picklist should be &quot;Token&quot; and Milestone Type should be &quot;Date Linked&quot; --></errorMessage>
+        <name>First_Milestone_is_Token</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Is Combination Milestone is True, then Project Construction Stage, Number of Days and Milestone Type = &apos;Date Linked&apos; is mandatory --></errorMessage>
+        <name>Is_Combination_Milestone</name>
+    </validationRules>
+</CustomObjectTranslation>

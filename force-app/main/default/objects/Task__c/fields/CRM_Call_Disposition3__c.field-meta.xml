@@ -1,0 +1,3021 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRM_Call_Disposition3__c</fullName>
+    <label>CRM Call Disposition3</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>CRM_Call_Disposition2__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Welcome Email</fullName>
+                <default>false</default>
+                <label>Welcome Email</label>
+            </value>
+            <value>
+                <fullName>No Contact Email</fullName>
+                <default>false</default>
+                <label>No Contact Email</label>
+            </value>
+            <value>
+                <fullName>Customer Information Update</fullName>
+                <default>false</default>
+                <label>Customer Information Update</label>
+            </value>
+            <value>
+                <fullName>SPA Received</fullName>
+                <default>false</default>
+                <label>SPA Received</label>
+            </value>
+            <value>
+                <fullName>SPA Signed</fullName>
+                <default>false</default>
+                <label>SPA Signed</label>
+            </value>
+            <value>
+                <fullName>Issue SPA (registered project)</fullName>
+                <default>false</default>
+                <label>Issue SPA (registered project)</label>
+            </value>
+            <value>
+                <fullName>Issue SPA (unregistered project)</fullName>
+                <default>false</default>
+                <label>Issue SPA (unregistered project)</label>
+            </value>
+            <value>
+                <fullName>Loss of SPA</fullName>
+                <default>false</default>
+                <label>Loss of SPA</label>
+            </value>
+            <value>
+                <fullName>Changes in customer detail</fullName>
+                <default>false</default>
+                <label>Changes in customer detail</label>
+            </value>
+            <value>
+                <fullName>Technical error</fullName>
+                <default>false</default>
+                <label>Technical error</label>
+            </value>
+            <value>
+                <fullName>Documents expired</fullName>
+                <default>false</default>
+                <label>Documents expired</label>
+            </value>
+            <value>
+                <fullName>Upgrade of the unit</fullName>
+                <default>false</default>
+                <label>Upgrade of the unit</label>
+            </value>
+            <value>
+                <fullName>Oqood Request</fullName>
+                <default>false</default>
+                <label>Oqood Request</label>
+            </value>
+            <value>
+                <fullName>Non RERA registered project</fullName>
+                <default>false</default>
+                <label>Non RERA registered project</label>
+            </value>
+            <value>
+                <fullName>NOC related - blocked unit</fullName>
+                <default>false</default>
+                <label>NOC related - blocked unit</label>
+            </value>
+            <value>
+                <fullName>Expired customer docs</fullName>
+                <default>false</default>
+                <label>Expired customer docs</label>
+            </value>
+            <value>
+                <fullName>DLD fees reallocation issue (DP to DLD and vice versa)</fullName>
+                <default>false</default>
+                <label>DLD fees reallocation issue (DP to DLD and vice versa)</label>
+            </value>
+            <value>
+                <fullName>DLD fees shortfall</fullName>
+                <default>false</default>
+                <label>DLD fees shortfall</label>
+            </value>
+            <value>
+                <fullName>Ownership changes</fullName>
+                <default>false</default>
+                <label>Ownership changes</label>
+            </value>
+            <value>
+                <fullName>Area changes</fullName>
+                <default>false</default>
+                <label>Area changes</label>
+            </value>
+            <value>
+                <fullName>Rebate issue</fullName>
+                <default>false</default>
+                <label>Rebate issue</label>
+            </value>
+            <value>
+                <fullName>Package promised</fullName>
+                <default>false</default>
+                <label>Package promised</label>
+            </value>
+            <value>
+                <fullName>Wrong customer details</fullName>
+                <default>false</default>
+                <label>Wrong customer details</label>
+            </value>
+            <value>
+                <fullName>NOC related for Title Deed</fullName>
+                <default>false</default>
+                <label>NOC related for Title Deed</label>
+            </value>
+            <value>
+                <fullName>NOC related for Oqood</fullName>
+                <default>false</default>
+                <label>NOC related for Oqood</label>
+            </value>
+            <value>
+                <fullName>Non RERA registered</fullName>
+                <default>false</default>
+                <label>Non RERA registered</label>
+            </value>
+            <value>
+                <fullName>Document issue</fullName>
+                <default>false</default>
+                <label>Document issue</label>
+            </value>
+            <value>
+                <fullName>Payment related (NOC, service charge, dues)</fullName>
+                <default>false</default>
+                <label>Payment related (NOC, service charge, dues)</label>
+            </value>
+            <value>
+                <fullName>Resale update in Salesforce</fullName>
+                <default>false</default>
+                <label>Resale update in Salesforce</label>
+            </value>
+            <value>
+                <fullName>NOC related (blocked units)</fullName>
+                <default>false</default>
+                <label>NOC related (blocked units)</label>
+            </value>
+            <value>
+                <fullName>PCC related</fullName>
+                <default>false</default>
+                <label>PCC related</label>
+            </value>
+            <value>
+                <fullName>DLD issue related to non clearance of service charge (Sobha/Customer)</fullName>
+                <default>false</default>
+                <label>DLD issue related to non clearance of service charge (Sobha/Customer)</label>
+            </value>
+            <value>
+                <fullName>DSR related</fullName>
+                <default>false</default>
+                <label>DSR related</label>
+            </value>
+            <value>
+                <fullName>Title Deed Fees</fullName>
+                <default>false</default>
+                <label>Title Deed Fees</label>
+            </value>
+            <value>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <fullName>Bank issue</fullName>
+                <default>false</default>
+                <label>Bank issue</label>
+            </value>
+            <value>
+                <fullName>NOC</fullName>
+                <default>false</default>
+                <label>NOC</label>
+            </value>
+            <value>
+                <fullName>Supplier Details</fullName>
+                <default>false</default>
+                <label>Supplier Details</label>
+            </value>
+            <value>
+                <fullName>Business Proposal</fullName>
+                <default>false</default>
+                <label>Business Proposal</label>
+            </value>
+            <value>
+                <fullName>Admin Fee</fullName>
+                <default>false</default>
+                <label>Admin Fee</label>
+            </value>
+            <value>
+                <fullName>Refurbishment</fullName>
+                <default>false</default>
+                <label>Refurbishment</label>
+            </value>
+            <value>
+                <fullName>Inspection/Snagging</fullName>
+                <default>false</default>
+                <label>Inspection/Snagging</label>
+            </value>
+            <value>
+                <fullName>Home Orienation Booking</fullName>
+                <default>false</default>
+                <label>Home Orienation Booking</label>
+            </value>
+            <value>
+                <fullName>Home Orientations Reschedule</fullName>
+                <default>false</default>
+                <label>Home Orientations Reschedule</label>
+            </value>
+            <value>
+                <fullName>Home Orientation Notice</fullName>
+                <default>false</default>
+                <label>Home Orientation Notice</label>
+            </value>
+            <value>
+                <fullName>Home Orienation Confirmation</fullName>
+                <default>false</default>
+                <label>Home Orienation Confirmation</label>
+            </value>
+            <value>
+                <fullName>Handover Notification</fullName>
+                <default>false</default>
+                <label>Handover Notification</label>
+            </value>
+            <value>
+                <fullName>Inspection</fullName>
+                <default>false</default>
+                <label>Inspection</label>
+            </value>
+            <value>
+                <fullName>DLP Notice</fullName>
+                <default>false</default>
+                <label>DLP Notice</label>
+            </value>
+            <value>
+                <fullName>Early Handover Request</fullName>
+                <default>false</default>
+                <label>Early Handover Request</label>
+            </value>
+            <value>
+                <fullName>Revised Handover</fullName>
+                <default>false</default>
+                <label>Revised Handover</label>
+            </value>
+            <value>
+                <fullName>Post Handover Payment Plan</fullName>
+                <default>false</default>
+                <label>Post Handover Payment Plan</label>
+            </value>
+            <value>
+                <fullName>Access and Parking Cards</fullName>
+                <default>false</default>
+                <label>Access and Parking Cards</label>
+            </value>
+            <value>
+                <fullName>Key Issues</fullName>
+                <default>false</default>
+                <label>Key Issues</label>
+            </value>
+            <value>
+                <fullName>White Goods Provided with Handover</fullName>
+                <default>false</default>
+                <label>White Goods Provided with Handover</label>
+            </value>
+            <value>
+                <fullName>Notice of Delay</fullName>
+                <default>false</default>
+                <label>Notice of Delay</label>
+            </value>
+            <value>
+                <fullName>Notice of Completion</fullName>
+                <default>false</default>
+                <label>Notice of Completion</label>
+            </value>
+            <value>
+                <fullName>Estimated Completion Date</fullName>
+                <default>false</default>
+                <label>Estimated Completion Date</label>
+            </value>
+            <value>
+                <fullName>Construction Updates</fullName>
+                <default>false</default>
+                <label>Construction Updates</label>
+            </value>
+            <value>
+                <fullName>Extension of Construction Time</fullName>
+                <default>false</default>
+                <label>Extension of Construction Time</label>
+            </value>
+            <value>
+                <fullName>Designated Completion Date</fullName>
+                <default>false</default>
+                <label>Designated Completion Date</label>
+            </value>
+            <value>
+                <fullName>Delay Compensation</fullName>
+                <default>false</default>
+                <label>Delay Compensation</label>
+            </value>
+            <value>
+                <fullName>Handover with Incomplete Snags</fullName>
+                <default>false</default>
+                <label>Handover with Incomplete Snags</label>
+            </value>
+            <value>
+                <fullName>Snag Rectification</fullName>
+                <default>false</default>
+                <label>Snag Rectification</label>
+            </value>
+            <value>
+                <fullName>PCC</fullName>
+                <default>false</default>
+                <label>PCC</label>
+            </value>
+            <value>
+                <fullName>DEWA Registrations</fullName>
+                <default>false</default>
+                <label>DEWA Registrations</label>
+            </value>
+            <value>
+                <fullName>Dewa Account Transfer</fullName>
+                <default>false</default>
+                <label>Dewa Account Transfer</label>
+            </value>
+            <value>
+                <fullName>Dewa Refund</fullName>
+                <default>false</default>
+                <label>Dewa Refund</label>
+            </value>
+            <value>
+                <fullName>DEWA Number</fullName>
+                <default>false</default>
+                <label>DEWA Number</label>
+            </value>
+            <value>
+                <fullName>Warranty Letters</fullName>
+                <default>false</default>
+                <label>Warranty Letters</label>
+            </value>
+            <value>
+                <fullName>Parking Swap</fullName>
+                <default>false</default>
+                <label>Parking Swap</label>
+            </value>
+            <value>
+                <fullName>Parking Change</fullName>
+                <default>false</default>
+                <label>Parking Change</label>
+            </value>
+            <value>
+                <fullName>Additional Parking</fullName>
+                <default>false</default>
+                <label>Additional Parking</label>
+            </value>
+            <value>
+                <fullName>FedEx</fullName>
+                <default>false</default>
+                <label>FedEx</label>
+            </value>
+            <value>
+                <fullName>Name Addition</fullName>
+                <default>false</default>
+                <label>Name Addition</label>
+            </value>
+            <value>
+                <fullName>Name Deletion</fullName>
+                <default>false</default>
+                <label>Name Deletion</label>
+            </value>
+            <value>
+                <fullName>Viewing Request</fullName>
+                <default>false</default>
+                <label>Viewing Request</label>
+            </value>
+            <value>
+                <fullName>Floor Plan</fullName>
+                <default>false</default>
+                <label>Floor Plan</label>
+            </value>
+            <value>
+                <fullName>Internal Cancellation</fullName>
+                <default>false</default>
+                <label>Internal Cancellation</label>
+            </value>
+            <value>
+                <fullName>Cancelled Unit</fullName>
+                <default>false</default>
+                <label>Cancelled Unit</label>
+            </value>
+            <value>
+                <fullName>Service Fee Payments</fullName>
+                <default>false</default>
+                <label>Service Fee Payments</label>
+            </value>
+            <value>
+                <fullName>Legal Complaint</fullName>
+                <default>false</default>
+                <label>Legal Complaint</label>
+            </value>
+            <value>
+                <fullName>MD/CM office escalation</fullName>
+                <default>false</default>
+                <label>MD/CM office escalation</label>
+            </value>
+            <value>
+                <fullName>Update/Request</fullName>
+                <default>false</default>
+                <label>Update/Request</label>
+            </value>
+            <value>
+                <fullName>Dispute</fullName>
+                <default>false</default>
+                <label>Dispute</label>
+            </value>
+            <value>
+                <fullName>Area Change</fullName>
+                <default>false</default>
+                <label>Area Change</label>
+            </value>
+            <value>
+                <fullName>Shortfall</fullName>
+                <default>false</default>
+                <label>Shortfall</label>
+            </value>
+            <value>
+                <fullName>Payment Receipt</fullName>
+                <default>false</default>
+                <label>Payment Receipt</label>
+            </value>
+            <value>
+                <fullName>Payment Link Request</fullName>
+                <default>false</default>
+                <label>Payment Link Request</label>
+            </value>
+            <value>
+                <fullName>Payment Plan Explanation</fullName>
+                <default>false</default>
+                <label>Payment Plan Explanation</label>
+            </value>
+            <value>
+                <fullName>Promise to Pay</fullName>
+                <default>false</default>
+                <label>Promise to Pay</label>
+            </value>
+            <value>
+                <fullName>Payment Plan Extension</fullName>
+                <default>false</default>
+                <label>Payment Plan Extension</label>
+            </value>
+            <value>
+                <fullName>Missing payment</fullName>
+                <default>false</default>
+                <label>Missing payment</label>
+            </value>
+            <value>
+                <fullName>Advance payment A</fullName>
+                <default>false</default>
+                <label>Advance payment A</label>
+            </value>
+            <value>
+                <fullName>POP/3rd party docs</fullName>
+                <default>false</default>
+                <label>POP/3rd party docs</label>
+            </value>
+            <value>
+                <fullName>Late payment</fullName>
+                <default>false</default>
+                <label>Late payment</label>
+            </value>
+            <value>
+                <fullName>Reallocation of funds</fullName>
+                <default>false</default>
+                <label>Reallocation of funds</label>
+            </value>
+            <value>
+                <fullName>NPV benefit</fullName>
+                <default>false</default>
+                <label>NPV benefit</label>
+            </value>
+            <value>
+                <fullName>PDC Hold</fullName>
+                <default>false</default>
+                <label>PDC Hold</label>
+            </value>
+            <value>
+                <fullName>PDC Return</fullName>
+                <default>false</default>
+                <label>PDC Return</label>
+            </value>
+            <value>
+                <fullName>Cheque Dishonoured</fullName>
+                <default>false</default>
+                <label>Cheque Dishonoured</label>
+            </value>
+            <value>
+                <fullName>Bank Details Request</fullName>
+                <default>false</default>
+                <label>Bank Details Request</label>
+            </value>
+            <value>
+                <fullName>Query</fullName>
+                <default>false</default>
+                <label>Query</label>
+            </value>
+            <value>
+                <fullName>DSR</fullName>
+                <default>false</default>
+                <label>DSR</label>
+            </value>
+            <value>
+                <fullName>Request</fullName>
+                <default>false</default>
+                <label>Request</label>
+            </value>
+            <value>
+                <fullName>Update</fullName>
+                <default>false</default>
+                <label>Update</label>
+            </value>
+            <value>
+                <fullName>Instalment invoice</fullName>
+                <default>false</default>
+                <label>Instalment invoice</label>
+            </value>
+            <value>
+                <fullName>Tax invoice</fullName>
+                <default>false</default>
+                <label>Tax invoice</label>
+            </value>
+            <value>
+                <fullName>Status</fullName>
+                <default>false</default>
+                <label>Status</label>
+            </value>
+            <value>
+                <fullName>Hold request</fullName>
+                <default>false</default>
+                <label>Hold request</label>
+            </value>
+            <value>
+                <fullName>Cancellation Request</fullName>
+                <default>false</default>
+                <label>Cancellation Request</label>
+            </value>
+            <value>
+                <fullName>DLD Termination</fullName>
+                <default>false</default>
+                <label>DLD Termination</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Call Back Request</fullName>
+                <default>false</default>
+                <label>Call Back Request</label>
+            </value>
+            <value>
+                <fullName>New Access Cards</fullName>
+                <default>false</default>
+                <label>New Access Cards</label>
+            </value>
+            <value>
+                <fullName>Lost/Damaged Cards</fullName>
+                <default>false</default>
+                <label>Lost/Damaged Cards</label>
+            </value>
+            <value>
+                <fullName>Replacement Cards</fullName>
+                <default>false</default>
+                <label>Replacement Cards</label>
+            </value>
+            <value>
+                <fullName>Card not working</fullName>
+                <default>false</default>
+                <label>Card not working</label>
+            </value>
+            <value>
+                <fullName>Access Card Activation</fullName>
+                <default>false</default>
+                <label>Access Card Activation</label>
+            </value>
+            <value>
+                <fullName>Service Provider Access</fullName>
+                <default>false</default>
+                <label>Service Provider Access</label>
+            </value>
+            <value>
+                <fullName>Visitors Access to Community</fullName>
+                <default>false</default>
+                <label>Visitors Access to Community</label>
+            </value>
+            <value>
+                <fullName>Access to Amenities</fullName>
+                <default>false</default>
+                <label>Access to Amenities</label>
+            </value>
+            <value>
+                <fullName>Amenity Booking</fullName>
+                <default>false</default>
+                <label>Amenity Booking</label>
+            </value>
+            <value>
+                <fullName>Private Events Booking</fullName>
+                <default>false</default>
+                <label>Private Events Booking</label>
+            </value>
+            <value>
+                <fullName>Move in Permits</fullName>
+                <default>false</default>
+                <label>Move in Permits</label>
+            </value>
+            <value>
+                <fullName>Documents</fullName>
+                <default>false</default>
+                <label>Documents</label>
+            </value>
+            <value>
+                <fullName>Move out Permits</fullName>
+                <default>false</default>
+                <label>Move out Permits</label>
+            </value>
+            <value>
+                <fullName>Errors</fullName>
+                <default>false</default>
+                <label>Errors</label>
+            </value>
+            <value>
+                <fullName>Log-in - Errors, not working,  enquiry or complaint</fullName>
+                <default>false</default>
+                <label>Log-in - Errors, not working,  enquiry or complaint</label>
+            </value>
+            <value>
+                <fullName>Follow Up</fullName>
+                <default>false</default>
+                <label>Follow Up</label>
+            </value>
+            <value>
+                <fullName>Guest Registerations</fullName>
+                <default>false</default>
+                <label>Guest Registerations</label>
+            </value>
+            <value>
+                <fullName>Guests not Registered</fullName>
+                <default>false</default>
+                <label>Guests not Registered</label>
+            </value>
+            <value>
+                <fullName>Proffessional</fullName>
+                <default>false</default>
+                <label>Proffessional</label>
+            </value>
+            <value>
+                <fullName>Personal</fullName>
+                <default>false</default>
+                <label>Personal</label>
+            </value>
+            <value>
+                <fullName>Elevators not workings</fullName>
+                <default>false</default>
+                <label>Elevators not workings</label>
+            </value>
+            <value>
+                <fullName>Noise from Elevators</fullName>
+                <default>false</default>
+                <label>Noise from Elevators</label>
+            </value>
+            <value>
+                <fullName>DEWA electricity and water- disruption, enquiries or complaints</fullName>
+                <default>false</default>
+                <label>DEWA electricity and water- disruption, enquiries or complaints</label>
+            </value>
+            <value>
+                <fullName>Inside Units</fullName>
+                <default>false</default>
+                <label>Inside Units</label>
+            </value>
+            <value>
+                <fullName>Above Units</fullName>
+                <default>false</default>
+                <label>Above Units</label>
+            </value>
+            <value>
+                <fullName>Between Units</fullName>
+                <default>false</default>
+                <label>Between Units</label>
+            </value>
+            <value>
+                <fullName>Water Leakage in common area, toilets, amenities</fullName>
+                <default>false</default>
+                <label>Water Leakage in common area, toilets, amenities</label>
+            </value>
+            <value>
+                <fullName>Leakage between or from above or Below Units</fullName>
+                <default>false</default>
+                <label>Leakage between or from above or Below Units</label>
+            </value>
+            <value>
+                <fullName>Noise and Nuisance</fullName>
+                <default>false</default>
+                <label>Noise and Nuisance</label>
+            </value>
+            <value>
+                <fullName>Party Loud Sound</fullName>
+                <default>false</default>
+                <label>Party Loud Sound</label>
+            </value>
+            <value>
+                <fullName>Kids</fullName>
+                <default>false</default>
+                <label>Kids</label>
+            </value>
+            <value>
+                <fullName>Drilling Sound</fullName>
+                <default>false</default>
+                <label>Drilling Sound</label>
+            </value>
+            <value>
+                <fullName>Door Slamming</fullName>
+                <default>false</default>
+                <label>Door Slamming</label>
+            </value>
+            <value>
+                <fullName>Water Leakage</fullName>
+                <default>false</default>
+                <label>Water Leakage</label>
+            </value>
+            <value>
+                <fullName>No proper Irrigation</fullName>
+                <default>false</default>
+                <label>No proper Irrigation</label>
+            </value>
+            <value>
+                <fullName>Landscaping</fullName>
+                <default>false</default>
+                <label>Landscaping</label>
+            </value>
+            <value>
+                <fullName>NOV</fullName>
+                <default>false</default>
+                <label>NOV</label>
+            </value>
+            <value>
+                <fullName>Community Rules Violation</fullName>
+                <default>false</default>
+                <label>Community Rules Violation</label>
+            </value>
+            <value>
+                <fullName>Internal Alterations</fullName>
+                <default>false</default>
+                <label>Internal Alterations</label>
+            </value>
+            <value>
+                <fullName>External Alterations</fullName>
+                <default>false</default>
+                <label>External Alterations</label>
+            </value>
+            <value>
+                <fullName>Amenity Reservations Error</fullName>
+                <default>false</default>
+                <label>Amenity Reservations Error</label>
+            </value>
+            <value>
+                <fullName>New Request</fullName>
+                <default>false</default>
+                <label>New Request</label>
+            </value>
+            <value>
+                <fullName>Not Working</fullName>
+                <default>false</default>
+                <label>Not Working</label>
+            </value>
+            <value>
+                <fullName>Pest Control- Rodents</fullName>
+                <default>false</default>
+                <label>Pest Control- Rodents</label>
+            </value>
+            <value>
+                <fullName>Pest Control- Flies/Mosquitos</fullName>
+                <default>false</default>
+                <label>Pest Control- Flies/Mosquitos</label>
+            </value>
+            <value>
+                <fullName>Civil Works</fullName>
+                <default>false</default>
+                <label>Civil Works</label>
+            </value>
+            <value>
+                <fullName>Drain Blockages</fullName>
+                <default>false</default>
+                <label>Drain Blockages</label>
+            </value>
+            <value>
+                <fullName>Pipe Blockages</fullName>
+                <default>false</default>
+                <label>Pipe Blockages</label>
+            </value>
+            <value>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+                <label>Electrical</label>
+            </value>
+            <value>
+                <fullName>LPG</fullName>
+                <default>false</default>
+                <label>LPG</label>
+            </value>
+            <value>
+                <fullName>Glass Shattered</fullName>
+                <default>false</default>
+                <label>Glass Shattered</label>
+            </value>
+            <value>
+                <fullName>Security Staff Behavior</fullName>
+                <default>false</default>
+                <label>Security Staff Behavior</label>
+            </value>
+            <value>
+                <fullName>Community Staff Behavior</fullName>
+                <default>false</default>
+                <label>Community Staff Behavior</label>
+            </value>
+            <value>
+                <fullName>Construction Noise</fullName>
+                <default>false</default>
+                <label>Construction Noise</label>
+            </value>
+            <value>
+                <fullName>Customer Appreciation</fullName>
+                <default>false</default>
+                <label>Customer Appreciation</label>
+            </value>
+            <value>
+                <fullName>Damaged Pavements or Roads</fullName>
+                <default>false</default>
+                <label>Damaged Pavements or Roads</label>
+            </value>
+            <value>
+                <fullName>Interlocks</fullName>
+                <default>false</default>
+                <label>Interlocks</label>
+            </value>
+            <value>
+                <fullName>Walkways</fullName>
+                <default>false</default>
+                <label>Walkways</label>
+            </value>
+            <value>
+                <fullName>Damaged Roads</fullName>
+                <default>false</default>
+                <label>Damaged Roads</label>
+            </value>
+            <value>
+                <fullName>Gate Barrier</fullName>
+                <default>false</default>
+                <label>Gate Barrier</label>
+            </value>
+            <value>
+                <fullName>Malfunction</fullName>
+                <default>false</default>
+                <label>Malfunction</label>
+            </value>
+            <value>
+                <fullName>Request for private event permission</fullName>
+                <default>false</default>
+                <label>Request for private event permission</label>
+            </value>
+            <value>
+                <fullName>Fire Alarm</fullName>
+                <default>false</default>
+                <label>Fire Alarm</label>
+            </value>
+            <value>
+                <fullName>Flood Water/Accumulation</fullName>
+                <default>false</default>
+                <label>Flood Water/Accumulation</label>
+            </value>
+            <value>
+                <fullName>Foul Smell/Odor</fullName>
+                <default>false</default>
+                <label>Foul Smell/Odor</label>
+            </value>
+            <value>
+                <fullName>Garbage Bin Request</fullName>
+                <default>false</default>
+                <label>Garbage Bin Request</label>
+            </value>
+            <value>
+                <fullName>Damaged</fullName>
+                <default>false</default>
+                <label>Damaged</label>
+            </value>
+            <value>
+                <fullName>Cleaning</fullName>
+                <default>false</default>
+                <label>Cleaning</label>
+            </value>
+            <value>
+                <fullName>General Cleaning, litter picking, spillage , dirty floors, dust etc</fullName>
+                <default>false</default>
+                <label>General Cleaning, litter picking, spillage , dirty floors, dust etc</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Health and Safety</fullName>
+                <default>false</default>
+                <label>Health and Safety</label>
+            </value>
+            <value>
+                <fullName>Insurance Claims</fullName>
+                <default>false</default>
+                <label>Insurance Claims</label>
+            </value>
+            <value>
+                <fullName>Intercom</fullName>
+                <default>false</default>
+                <label>Intercom</label>
+            </value>
+            <value>
+                <fullName>Kids Play Area</fullName>
+                <default>false</default>
+                <label>Kids Play Area</label>
+            </value>
+            <value>
+                <fullName>Paint Color Code Request</fullName>
+                <default>false</default>
+                <label>Paint Color Code Request</label>
+            </value>
+            <value>
+                <fullName>Stains</fullName>
+                <default>false</default>
+                <label>Stains</label>
+            </value>
+            <value>
+                <fullName>Peeling Off</fullName>
+                <default>false</default>
+                <label>Peeling Off</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Dog Waste</fullName>
+                <default>false</default>
+                <label>Dog Waste</label>
+            </value>
+            <value>
+                <fullName>Not Leashed</fullName>
+                <default>false</default>
+                <label>Not Leashed</label>
+            </value>
+            <value>
+                <fullName>Barking Noise</fullName>
+                <default>false</default>
+                <label>Barking Noise</label>
+            </value>
+            <value>
+                <fullName>Stray Cats</fullName>
+                <default>false</default>
+                <label>Stray Cats</label>
+            </value>
+            <value>
+                <fullName>Ducks and Birds</fullName>
+                <default>false</default>
+                <label>Ducks and Birds</label>
+            </value>
+            <value>
+                <fullName>Rain/Wind Damages</fullName>
+                <default>false</default>
+                <label>Rain/Wind Damages</label>
+            </value>
+            <value>
+                <fullName>Waste Collection</fullName>
+                <default>false</default>
+                <label>Waste Collection</label>
+            </value>
+            <value>
+                <fullName>Waster Disposal</fullName>
+                <default>false</default>
+                <label>Waster Disposal</label>
+            </value>
+            <value>
+                <fullName>Improper Waster Disposal</fullName>
+                <default>false</default>
+                <label>Improper Waster Disposal</label>
+            </value>
+            <value>
+                <fullName>Recycle Waste Collection</fullName>
+                <default>false</default>
+                <label>Recycle Waste Collection</label>
+            </value>
+            <value>
+                <fullName>Report Accident</fullName>
+                <default>false</default>
+                <label>Report Accident</label>
+            </value>
+            <value>
+                <fullName>Theft/Intruders</fullName>
+                <default>false</default>
+                <label>Theft/Intruders</label>
+            </value>
+            <value>
+                <fullName>Signage</fullName>
+                <default>false</default>
+                <label>Signage</label>
+            </value>
+            <value>
+                <fullName>Storage Cage</fullName>
+                <default>false</default>
+                <label>Storage Cage</label>
+            </value>
+            <value>
+                <fullName>Swimming Pool</fullName>
+                <default>false</default>
+                <label>Swimming Pool</label>
+            </value>
+            <value>
+                <fullName>Equipment Damaged</fullName>
+                <default>false</default>
+                <label>Equipment Damaged</label>
+            </value>
+            <value>
+                <fullName>Vehicle Speeding</fullName>
+                <default>false</default>
+                <label>Vehicle Speeding</label>
+            </value>
+            <value>
+                <fullName>Window Cleaning</fullName>
+                <default>false</default>
+                <label>Window Cleaning</label>
+            </value>
+            <value>
+                <fullName>Covid Cases</fullName>
+                <default>false</default>
+                <label>Covid Cases</label>
+            </value>
+            <value>
+                <fullName>Enquiries</fullName>
+                <default>false</default>
+                <label>Enquiries</label>
+            </value>
+            <value>
+                <fullName>Complaints</fullName>
+                <default>false</default>
+                <label>Complaints</label>
+            </value>
+            <value>
+                <fullName>Clarification</fullName>
+                <default>false</default>
+                <label>Clarification</label>
+            </value>
+            <value>
+                <fullName>General Notices</fullName>
+                <default>false</default>
+                <label>General Notices</label>
+            </value>
+            <value>
+                <fullName>No Water - Common Area</fullName>
+                <default>false</default>
+                <label>No Water - Common Area</label>
+            </value>
+            <value>
+                <fullName>No Hot Water Supply - Common Area</fullName>
+                <default>false</default>
+                <label>No Hot Water Supply - Common Area</label>
+            </value>
+            <value>
+                <fullName>Online Services</fullName>
+                <default>false</default>
+                <label>Online Services</label>
+            </value>
+            <value>
+                <fullName>Community Service Fees</fullName>
+                <default>false</default>
+                <label>Community Service Fees</label>
+            </value>
+            <value>
+                <fullName>Chilled Water Charges</fullName>
+                <default>false</default>
+                <label>Chilled Water Charges</label>
+            </value>
+            <value>
+                <fullName>Lights not working</fullName>
+                <default>false</default>
+                <label>Lights not working</label>
+            </value>
+            <value>
+                <fullName>Flickering</fullName>
+                <default>false</default>
+                <label>Flickering</label>
+            </value>
+            <value>
+                <fullName>Dark</fullName>
+                <default>false</default>
+                <label>Dark</label>
+            </value>
+            <value>
+                <fullName>Color Change</fullName>
+                <default>false</default>
+                <label>Color Change</label>
+            </value>
+            <value>
+                <fullName>Not Cooling</fullName>
+                <default>false</default>
+                <label>Not Cooling</label>
+            </value>
+            <value>
+                <fullName>Noise</fullName>
+                <default>false</default>
+                <label>Noise</label>
+            </value>
+            <value>
+                <fullName>Smell</fullName>
+                <default>false</default>
+                <label>Smell</label>
+            </value>
+            <value>
+                <fullName>Common Area</fullName>
+                <default>false</default>
+                <label>Common Area</label>
+            </value>
+            <value>
+                <fullName>Amenities</fullName>
+                <default>false</default>
+                <label>Amenities</label>
+            </value>
+            <value>
+                <fullName>Lobby Area</fullName>
+                <default>false</default>
+                <label>Lobby Area</label>
+            </value>
+            <value>
+                <fullName>Noisy</fullName>
+                <default>false</default>
+                <label>Noisy</label>
+            </value>
+            <value>
+                <fullName>Shuttle Bus Timings</fullName>
+                <default>false</default>
+                <label>Shuttle Bus Timings</label>
+            </value>
+            <value>
+                <fullName>Enquiries or Complaints</fullName>
+                <default>false</default>
+                <label>Enquiries or Complaints</label>
+            </value>
+            <value>
+                <fullName>Common Area AC Noise</fullName>
+                <default>false</default>
+                <label>Common Area AC Noise</label>
+            </value>
+            <value>
+                <fullName>Pump Noise</fullName>
+                <default>false</default>
+                <label>Pump Noise</label>
+            </value>
+            <value>
+                <fullName>Unknown Noise</fullName>
+                <default>false</default>
+                <label>Unknown Noise</label>
+            </value>
+            <value>
+                <fullName>Parking Violations</fullName>
+                <default>false</default>
+                <label>Parking Violations</label>
+            </value>
+            <value>
+                <fullName>Parking in Common Area</fullName>
+                <default>false</default>
+                <label>Parking in Common Area</label>
+            </value>
+            <value>
+                <fullName>Blocking Access</fullName>
+                <default>false</default>
+                <label>Blocking Access</label>
+            </value>
+            <value>
+                <fullName>Misuse of Parking Area</fullName>
+                <default>false</default>
+                <label>Misuse of Parking Area</label>
+            </value>
+            <value>
+                <fullName>Games Room</fullName>
+                <default>false</default>
+                <label>Games Room</label>
+            </value>
+            <value>
+                <fullName>Sauna</fullName>
+                <default>false</default>
+                <label>Sauna</label>
+            </value>
+            <value>
+                <fullName>Sports Facilities</fullName>
+                <default>false</default>
+                <label>Sports Facilities</label>
+            </value>
+            <value>
+                <fullName>Community Hall</fullName>
+                <default>false</default>
+                <label>Community Hall</label>
+            </value>
+            <value>
+                <fullName>Canopy</fullName>
+                <default>false</default>
+                <label>Canopy</label>
+            </value>
+            <value>
+                <fullName>Committee Foundation</fullName>
+                <default>false</default>
+                <label>Committee Foundation</label>
+            </value>
+            <value>
+                <fullName>Nominations</fullName>
+                <default>false</default>
+                <label>Nominations</label>
+            </value>
+            <value>
+                <fullName>Lost and Found</fullName>
+                <default>false</default>
+                <label>Lost and Found</label>
+            </value>
+            <value>
+                <fullName>Suggestions</fullName>
+                <default>false</default>
+                <label>Suggestions</label>
+            </value>
+            <value>
+                <fullName>Drain Blockage</fullName>
+                <default>false</default>
+                <label>Drain Blockage</label>
+            </value>
+            <value>
+                <fullName>No water</fullName>
+                <default>false</default>
+                <label>No water</label>
+            </value>
+            <value>
+                <fullName>Water Pump issue</fullName>
+                <default>false</default>
+                <label>Water Pump issue</label>
+            </value>
+            <value>
+                <fullName>Foul Smell drain</fullName>
+                <default>false</default>
+                <label>Foul Smell drain</label>
+            </value>
+            <value>
+                <fullName>Plumbing noise</fullName>
+                <default>false</default>
+                <label>Plumbing noise</label>
+            </value>
+            <value>
+                <fullName>Low water pressure</fullName>
+                <default>false</default>
+                <label>Low water pressure</label>
+            </value>
+            <value>
+                <fullName>Water colour change</fullName>
+                <default>false</default>
+                <label>Water colour change</label>
+            </value>
+            <value>
+                <fullName>Minor Water Leakage</fullName>
+                <default>false</default>
+                <label>Minor Water Leakage</label>
+            </value>
+            <value>
+                <fullName>Fittings</fullName>
+                <default>false</default>
+                <label>Fittings</label>
+            </value>
+            <value>
+                <fullName>Water Heater leakage</fullName>
+                <default>false</default>
+                <label>Water Heater leakage</label>
+            </value>
+            <value>
+                <fullName>Cooling issues</fullName>
+                <default>false</default>
+                <label>Cooling issues</label>
+            </value>
+            <value>
+                <fullName>Water Leak</fullName>
+                <default>false</default>
+                <label>Water Leak</label>
+            </value>
+            <value>
+                <fullName>Foul Smell</fullName>
+                <default>false</default>
+                <label>Foul Smell</label>
+            </value>
+            <value>
+                <fullName>Exhaust Not Working</fullName>
+                <default>false</default>
+                <label>Exhaust Not Working</label>
+            </value>
+            <value>
+                <fullName>Thermostat</fullName>
+                <default>false</default>
+                <label>Thermostat</label>
+            </value>
+            <value>
+                <fullName>Noise issues</fullName>
+                <default>false</default>
+                <label>Noise issues</label>
+            </value>
+            <value>
+                <fullName>LPG Connection issues</fullName>
+                <default>false</default>
+                <label>LPG Connection issues</label>
+            </value>
+            <value>
+                <fullName>Gas Leak</fullName>
+                <default>false</default>
+                <label>Gas Leak</label>
+            </value>
+            <value>
+                <fullName>Fire Alarm (Villas)</fullName>
+                <default>false</default>
+                <label>Fire Alarm (Villas)</label>
+            </value>
+            <value>
+                <fullName>Garage Door Issue</fullName>
+                <default>false</default>
+                <label>Garage Door Issue</label>
+            </value>
+            <value>
+                <fullName>Lift Issue (Villas)</fullName>
+                <default>false</default>
+                <label>Lift Issue (Villas)</label>
+            </value>
+            <value>
+                <fullName>Telecom Issue</fullName>
+                <default>false</default>
+                <label>Telecom Issue</label>
+            </value>
+            <value>
+                <fullName>Power trip/DB related issues</fullName>
+                <default>false</default>
+                <label>Power trip/DB related issues</label>
+            </value>
+            <value>
+                <fullName>No Power</fullName>
+                <default>false</default>
+                <label>No Power</label>
+            </value>
+            <value>
+                <fullName>Burning smell</fullName>
+                <default>false</default>
+                <label>Burning smell</label>
+            </value>
+            <value>
+                <fullName>Noise from electrical systems</fullName>
+                <default>false</default>
+                <label>Noise from electrical systems</label>
+            </value>
+            <value>
+                <fullName>Water Heater not working</fullName>
+                <default>false</default>
+                <label>Water Heater not working</label>
+            </value>
+            <value>
+                <fullName>Intercom Issues</fullName>
+                <default>false</default>
+                <label>Intercom Issues</label>
+            </value>
+            <value>
+                <fullName>Home Automation System issues</fullName>
+                <default>false</default>
+                <label>Home Automation System issues</label>
+            </value>
+            <value>
+                <fullName>Light fixtures</fullName>
+                <default>false</default>
+                <label>Light fixtures</label>
+            </value>
+            <value>
+                <fullName>Switches and sockets issue</fullName>
+                <default>false</default>
+                <label>Switches and sockets issue</label>
+            </value>
+            <value>
+                <fullName>Internet cable issues</fullName>
+                <default>false</default>
+                <label>Internet cable issues</label>
+            </value>
+            <value>
+                <fullName>Escalation</fullName>
+                <default>false</default>
+                <label>Escalation</label>
+            </value>
+            <value>
+                <fullName>Dishwasher</fullName>
+                <default>false</default>
+                <label>Dishwasher</label>
+            </value>
+            <value>
+                <fullName>Refrigerator</fullName>
+                <default>false</default>
+                <label>Refrigerator</label>
+            </value>
+            <value>
+                <fullName>Oven</fullName>
+                <default>false</default>
+                <label>Oven</label>
+            </value>
+            <value>
+                <fullName>Washing Machine</fullName>
+                <default>false</default>
+                <label>Washing Machine</label>
+            </value>
+            <value>
+                <fullName>Hood</fullName>
+                <default>false</default>
+                <label>Hood</label>
+            </value>
+            <value>
+                <fullName>Hob</fullName>
+                <default>false</default>
+                <label>Hob</label>
+            </value>
+            <value>
+                <fullName>Pool Overflow (Villas)</fullName>
+                <default>false</default>
+                <label>Pool Overflow (Villas)</label>
+            </value>
+            <value>
+                <fullName>Pool Temperature issue (Villas)</fullName>
+                <default>false</default>
+                <label>Pool Temperature issue (Villas)</label>
+            </value>
+            <value>
+                <fullName>Decking Issue  (Villas)</fullName>
+                <default>false</default>
+                <label>Decking Issue  (Villas)</label>
+            </value>
+            <value>
+                <fullName>Main Door</fullName>
+                <default>false</default>
+                <label>Main Door</label>
+            </value>
+            <value>
+                <fullName>Internal Paint issue</fullName>
+                <default>false</default>
+                <label>Internal Paint issue</label>
+            </value>
+            <value>
+                <fullName>External Paint issue</fullName>
+                <default>false</default>
+                <label>External Paint issue</label>
+            </value>
+            <value>
+                <fullName>External Cracks</fullName>
+                <default>false</default>
+                <label>External Cracks</label>
+            </value>
+            <value>
+                <fullName>Internal Cracks</fullName>
+                <default>false</default>
+                <label>Internal Cracks</label>
+            </value>
+            <value>
+                <fullName>Mirror</fullName>
+                <default>false</default>
+                <label>Mirror</label>
+            </value>
+            <value>
+                <fullName>Ceiling damaged</fullName>
+                <default>false</default>
+                <label>Ceiling damaged</label>
+            </value>
+            <value>
+                <fullName>Floor grouting</fullName>
+                <default>false</default>
+                <label>Floor grouting</label>
+            </value>
+            <value>
+                <fullName>Tiles</fullName>
+                <default>false</default>
+                <label>Tiles</label>
+            </value>
+            <value>
+                <fullName>Balcony doors/ Windows</fullName>
+                <default>false</default>
+                <label>Balcony doors/ Windows</label>
+            </value>
+            <value>
+                <fullName>Façade Glass</fullName>
+                <default>false</default>
+                <label>Façade Glass</label>
+            </value>
+            <value>
+                <fullName>Kitchen counter top</fullName>
+                <default>false</default>
+                <label>Kitchen counter top</label>
+            </value>
+            <value>
+                <fullName>Marble</fullName>
+                <default>false</default>
+                <label>Marble</label>
+            </value>
+            <value>
+                <fullName>Waterproofing damage</fullName>
+                <default>false</default>
+                <label>Waterproofing damage</label>
+            </value>
+            <value>
+                <fullName>Internal Doors</fullName>
+                <default>false</default>
+                <label>Internal Doors</label>
+            </value>
+            <value>
+                <fullName>Cabinets/Wardrobe</fullName>
+                <default>false</default>
+                <label>Cabinets/Wardrobe</label>
+            </value>
+            <value>
+                <fullName>Shower Cubicle</fullName>
+                <default>false</default>
+                <label>Shower Cubicle</label>
+            </value>
+            <value>
+                <fullName>Sealant</fullName>
+                <default>false</default>
+                <label>Sealant</label>
+            </value>
+            <value>
+                <fullName>Window/glass Sealant</fullName>
+                <default>false</default>
+                <label>Window/glass Sealant</label>
+            </value>
+            <value>
+                <fullName>Wet walls/ ceiling</fullName>
+                <default>false</default>
+                <label>Wet walls/ ceiling</label>
+            </value>
+            <value>
+                <fullName>Drawing submissions review</fullName>
+                <default>false</default>
+                <label>Drawing submissions review</label>
+            </value>
+            <value>
+                <fullName>NOC issuance</fullName>
+                <default>false</default>
+                <label>NOC issuance</label>
+            </value>
+            <value>
+                <fullName>Additional requests</fullName>
+                <default>false</default>
+                <label>Additional requests</label>
+            </value>
+            <value>
+                <fullName>Brand approval</fullName>
+                <default>false</default>
+                <label>Brand approval</label>
+            </value>
+            <value>
+                <fullName>Plot enquiry</fullName>
+                <default>false</default>
+                <label>Plot enquiry</label>
+            </value>
+            <value>
+                <fullName>Plot requests</fullName>
+                <default>false</default>
+                <label>Plot requests</label>
+            </value>
+            <value>
+                <fullName>Site visit request</fullName>
+                <default>false</default>
+                <label>Site visit request</label>
+            </value>
+            <value>
+                <fullName>NOC submissions ( Currently mentioned as Design submission in system )</fullName>
+                <default>false</default>
+                <label>NOC submissions ( Currently mentioned as Design submission in system )</label>
+            </value>
+            <value>
+                <fullName>Permit submissions ( Currently mentioned as soil investigation  in system )</fullName>
+                <default>false</default>
+                <label>Permit submissions ( Currently mentioned as soil investigation  in system )</label>
+            </value>
+            <value>
+                <fullName>Submission follow up ( Currently mentioned as plot NOC  in system )</fullName>
+                <default>false</default>
+                <label>Submission follow up ( Currently mentioned as plot NOC  in system )</label>
+            </value>
+            <value>
+                <fullName>Booking</fullName>
+                <default>false</default>
+                <label>Booking</label>
+            </value>
+            <value>
+                <fullName>Channel Relations</fullName>
+                <default>false</default>
+                <label>Channel Relations</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>SPAM</fullName>
+                <default>false</default>
+                <label>SPAM</label>
+            </value>
+            <value>
+                <fullName>Test</fullName>
+                <default>false</default>
+                <label>Test</label>
+            </value>
+            <value>
+                <fullName>Unregistered Email Id</fullName>
+                <default>false</default>
+                <label>Unregistered Email Id</label>
+            </value>
+            <value>
+                <fullName>Employee Verification</fullName>
+                <default>false</default>
+                <label>Employee Verification</label>
+            </value>
+            <value>
+                <fullName>Resume</fullName>
+                <default>false</default>
+                <label>Resume</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Pet Management</controllingFieldValue>
+            <valueName>Dog Waste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pet Management</controllingFieldValue>
+            <valueName>Not Leashed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pet Management</controllingFieldValue>
+            <valueName>Barking Noise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pet Management</controllingFieldValue>
+            <valueName>Stray Cats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pet Management</controllingFieldValue>
+            <valueName>Ducks and Birds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rain/Wind Damages</controllingFieldValue>
+            <valueName>Rain/Wind Damages</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AC Cooling - Common Area</controllingFieldValue>
+            <controllingFieldValue>AC Cooling - Inside Units</controllingFieldValue>
+            <valueName>Not Cooling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AC Cooling - Common Area</controllingFieldValue>
+            <controllingFieldValue>AC Cooling - Inside Units</controllingFieldValue>
+            <valueName>Noise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AC Cooling - Common Area</controllingFieldValue>
+            <controllingFieldValue>AC Cooling - Inside Units</controllingFieldValue>
+            <valueName>Smell</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AC Cooling - Common Area</controllingFieldValue>
+            <valueName>Common Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AC Cooling - Common Area</controllingFieldValue>
+            <valueName>Amenities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AC Cooling - Common Area</controllingFieldValue>
+            <valueName>Lobby Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Common Area Doors</controllingFieldValue>
+            <controllingFieldValue>AC</controllingFieldValue>
+            <controllingFieldValue>Registration Request (REG)</controllingFieldValue>
+            <controllingFieldValue>Renewal of app account (REN)</controllingFieldValue>
+            <controllingFieldValue>Household Staff Registration</controllingFieldValue>
+            <controllingFieldValue>Amenity Reservations</controllingFieldValue>
+            <valueName>Not Working</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Common Area Doors</controllingFieldValue>
+            <controllingFieldValue>Garbage Chute</controllingFieldValue>
+            <valueName>Damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Common Area Doors</controllingFieldValue>
+            <valueName>Noisy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Shuttle Bus Timings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <controllingFieldValue>Owner&apos;s Association</controllingFieldValue>
+            <controllingFieldValue>Gymnasium</controllingFieldValue>
+            <controllingFieldValue>Registration Request (REG)</controllingFieldValue>
+            <controllingFieldValue>Renewal of app account (REN)</controllingFieldValue>
+            <controllingFieldValue>Household Staff Registration</controllingFieldValue>
+            <controllingFieldValue>Communication</controllingFieldValue>
+            <valueName>Enquiries or Complaints</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEP Noise</controllingFieldValue>
+            <valueName>Common Area AC Noise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEP Noise</controllingFieldValue>
+            <valueName>Pump Noise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MEP Noise</controllingFieldValue>
+            <valueName>Unknown Noise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other community amenities</controllingFieldValue>
+            <valueName>Games Room</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other community amenities</controllingFieldValue>
+            <valueName>Sauna</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other community amenities</controllingFieldValue>
+            <valueName>Sports Facilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other community amenities</controllingFieldValue>
+            <valueName>Community Hall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other community amenities</controllingFieldValue>
+            <valueName>Canopy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Owner&apos;s Association</controllingFieldValue>
+            <valueName>Committee Foundation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Owner&apos;s Association</controllingFieldValue>
+            <valueName>Nominations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost and Found</controllingFieldValue>
+            <valueName>Lost and Found</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waste Collection</controllingFieldValue>
+            <valueName>Waste Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waste Collection</controllingFieldValue>
+            <valueName>Waster Disposal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waste Collection</controllingFieldValue>
+            <valueName>Improper Waster Disposal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community Improvements</controllingFieldValue>
+            <valueName>Suggestions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recycle Waste</controllingFieldValue>
+            <valueName>Recycle Waste Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <controllingFieldValue>Irrigation water leakage</controllingFieldValue>
+            <valueName>Water Leakage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <valueName>Drain Blockage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <valueName>No water</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <valueName>Water Pump issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <valueName>Foul Smell drain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <valueName>Plumbing noise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <controllingFieldValue>Low Water Pressure</controllingFieldValue>
+            <valueName>Low water pressure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <valueName>Water colour change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <valueName>Minor Water Leakage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <valueName>Fittings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <valueName>Water Heater leakage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Report Accident</controllingFieldValue>
+            <valueName>Report Accident</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AC</controllingFieldValue>
+            <valueName>Cooling issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AC</controllingFieldValue>
+            <valueName>Water Leak</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AC</controllingFieldValue>
+            <valueName>Foul Smell</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AC</controllingFieldValue>
+            <valueName>Exhaust Not Working</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AC</controllingFieldValue>
+            <valueName>Thermostat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AC</controllingFieldValue>
+            <valueName>Noise issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Theft/Intruders</controllingFieldValue>
+            <valueName>Theft/Intruders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Signage</controllingFieldValue>
+            <valueName>Signage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Storage Cage</controllingFieldValue>
+            <valueName>Storage Cage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Swimming Pool</controllingFieldValue>
+            <valueName>Swimming Pool</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Swimming Pool</controllingFieldValue>
+            <valueName>Pool Overflow (Villas)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Swimming Pool</controllingFieldValue>
+            <valueName>Pool Temperature issue (Villas)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Swimming Pool</controllingFieldValue>
+            <valueName>Decking Issue  (Villas)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gymnasium</controllingFieldValue>
+            <valueName>Equipment Damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Admin Fee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Refurbishment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Speeding</controllingFieldValue>
+            <valueName>Vehicle Speeding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Orientation</controllingFieldValue>
+            <valueName>Inspection/Snagging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Orientation</controllingFieldValue>
+            <valueName>Home Orienation Booking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Orientation</controllingFieldValue>
+            <valueName>Home Orientations Reschedule</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Orientation</controllingFieldValue>
+            <valueName>Home Orientation Notice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Orientation</controllingFieldValue>
+            <valueName>Home Orienation Confirmation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Window Cleaning</controllingFieldValue>
+            <valueName>Window Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Handover</controllingFieldValue>
+            <valueName>Handover Notification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Handover</controllingFieldValue>
+            <valueName>Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Handover</controllingFieldValue>
+            <valueName>DLP Notice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Handover</controllingFieldValue>
+            <valueName>Early Handover Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Handover</controllingFieldValue>
+            <valueName>Revised Handover</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Handover</controllingFieldValue>
+            <valueName>Post Handover Payment Plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Handover</controllingFieldValue>
+            <valueName>Access and Parking Cards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Handover</controllingFieldValue>
+            <valueName>Key Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Handover</controllingFieldValue>
+            <valueName>White Goods Provided with Handover</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Notices</controllingFieldValue>
+            <valueName>Notice of Delay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Notices</controllingFieldValue>
+            <valueName>Notice of Completion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction Update</controllingFieldValue>
+            <valueName>Estimated Completion Date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction Update</controllingFieldValue>
+            <valueName>Construction Updates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction Update</controllingFieldValue>
+            <valueName>Extension of Construction Time</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction Update</controllingFieldValue>
+            <valueName>Designated Completion Date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compensations</controllingFieldValue>
+            <valueName>Delay Compensation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Snag Rectification</controllingFieldValue>
+            <valueName>Handover with Incomplete Snags</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Snag Rectification</controllingFieldValue>
+            <valueName>Snag Rectification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment Completion Certificate</controllingFieldValue>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>PCC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DEWA</controllingFieldValue>
+            <valueName>DEWA Registrations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DEWA</controllingFieldValue>
+            <valueName>Dewa Account Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DEWA</controllingFieldValue>
+            <valueName>Dewa Refund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DEWA</controllingFieldValue>
+            <valueName>DEWA Number</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Warranty Letters</controllingFieldValue>
+            <valueName>Warranty Letters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fire System</controllingFieldValue>
+            <valueName>Fire Alarm (Villas)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electromechanical</controllingFieldValue>
+            <valueName>Garage Door Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electromechanical</controllingFieldValue>
+            <valueName>Lift Issue (Villas)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electromechanical</controllingFieldValue>
+            <valueName>Telecom Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Welcome</controllingFieldValue>
+            <valueName>Welcome Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Welcome</controllingFieldValue>
+            <valueName>No Contact Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Welcome</controllingFieldValue>
+            <valueName>Customer Information Update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appliances</controllingFieldValue>
+            <valueName>Escalation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appliances</controllingFieldValue>
+            <valueName>Dishwasher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appliances</controllingFieldValue>
+            <valueName>Refrigerator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appliances</controllingFieldValue>
+            <valueName>Oven</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appliances</controllingFieldValue>
+            <valueName>Washing Machine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appliances</controllingFieldValue>
+            <valueName>Hood</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appliances</controllingFieldValue>
+            <valueName>Hob</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>SPA Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>SPA Signed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>Issue SPA (registered project)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>Issue SPA (unregistered project)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>Loss of SPA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>Changes in customer detail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>Technical error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>Documents expired</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>Upgrade of the unit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Main Door</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Internal Paint issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>External Paint issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>External Cracks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Internal Cracks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Mirror</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Ceiling damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Floor grouting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Tiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Balcony doors/ Windows</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Façade Glass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Kitchen counter top</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Marble</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Waterproofing damage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Internal Doors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Cabinets/Wardrobe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Shower Cubicle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Sealant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Window/glass Sealant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Wet walls/ ceiling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre registration</controllingFieldValue>
+            <valueName>Oqood Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre registration</controllingFieldValue>
+            <valueName>Non RERA registered project</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre registration</controllingFieldValue>
+            <valueName>NOC related - blocked unit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre registration</controllingFieldValue>
+            <valueName>Expired customer docs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre registration</controllingFieldValue>
+            <valueName>DLD fees reallocation issue (DP to DLD and vice versa)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre registration</controllingFieldValue>
+            <valueName>DLD fees shortfall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Apartment / Townhouse modification request</controllingFieldValue>
+            <controllingFieldValue>Villa modification request</controllingFieldValue>
+            <controllingFieldValue>Retail modification request</controllingFieldValue>
+            <controllingFieldValue>Household Staff Registration</controllingFieldValue>
+            <controllingFieldValue>Amenity Reservations</controllingFieldValue>
+            <valueName>Follow Up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Apartment / Townhouse modification request</controllingFieldValue>
+            <controllingFieldValue>Villa modification request</controllingFieldValue>
+            <controllingFieldValue>Retail modification request</controllingFieldValue>
+            <controllingFieldValue>Pandemic</controllingFieldValue>
+            <valueName>Enquiries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Apartment / Townhouse modification request</controllingFieldValue>
+            <controllingFieldValue>Villa modification request</controllingFieldValue>
+            <controllingFieldValue>Retail modification request</controllingFieldValue>
+            <valueName>Drawing submissions review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Apartment / Townhouse modification request</controllingFieldValue>
+            <controllingFieldValue>Villa modification request</controllingFieldValue>
+            <controllingFieldValue>Retail modification request</controllingFieldValue>
+            <valueName>NOC issuance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Booking related</controllingFieldValue>
+            <controllingFieldValue>Name Change</controllingFieldValue>
+            <valueName>Ownership changes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Booking related</controllingFieldValue>
+            <valueName>Area changes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Booking related</controllingFieldValue>
+            <valueName>Rebate issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Booking related</controllingFieldValue>
+            <valueName>Package promised</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Booking related</controllingFieldValue>
+            <valueName>Wrong customer details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resale</controllingFieldValue>
+            <valueName>NOC related for Title Deed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resale</controllingFieldValue>
+            <valueName>NOC related for Oqood</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resale</controllingFieldValue>
+            <valueName>Non RERA registered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resale</controllingFieldValue>
+            <valueName>Document issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resale</controllingFieldValue>
+            <valueName>Payment related (NOC, service charge, dues)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resale</controllingFieldValue>
+            <valueName>Resale update in Salesforce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail modification request</controllingFieldValue>
+            <valueName>Additional requests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail modification request</controllingFieldValue>
+            <valueName>Brand approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Title Deed</controllingFieldValue>
+            <valueName>NOC related (blocked units)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Title Deed</controllingFieldValue>
+            <valueName>PCC related</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Title Deed</controllingFieldValue>
+            <valueName>DLD issue related to non clearance of service charge (Sobha/Customer)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Title Deed</controllingFieldValue>
+            <controllingFieldValue>Mortgage</controllingFieldValue>
+            <valueName>DSR related</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Title Deed</controllingFieldValue>
+            <valueName>Title Deed Fees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Title Deed</controllingFieldValue>
+            <valueName>Documentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plots</controllingFieldValue>
+            <valueName>Plot enquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plots</controllingFieldValue>
+            <valueName>Plot requests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plots</controllingFieldValue>
+            <valueName>Site visit request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plots</controllingFieldValue>
+            <valueName>NOC submissions ( Currently mentioned as Design submission in system )</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plots</controllingFieldValue>
+            <valueName>Permit submissions ( Currently mentioned as soil investigation  in system )</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plots</controllingFieldValue>
+            <valueName>Submission follow up ( Currently mentioned as plot NOC  in system )</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mortgage</controllingFieldValue>
+            <valueName>Bank issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mortgage</controllingFieldValue>
+            <valueName>NOC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mortgage</controllingFieldValue>
+            <valueName>Query</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mortgage</controllingFieldValue>
+            <valueName>DSR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mortgage</controllingFieldValue>
+            <controllingFieldValue>Move in Permits (MIP)</controllingFieldValue>
+            <valueName>Documents</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Booking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Channel Relations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Supplier Details</controllingFieldValue>
+            <valueName>Supplier Details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Proposal</controllingFieldValue>
+            <valueName>Business Proposal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parking</controllingFieldValue>
+            <valueName>Parking Swap</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parking</controllingFieldValue>
+            <valueName>Parking Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parking</controllingFieldValue>
+            <valueName>Additional Parking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parking</controllingFieldValue>
+            <valueName>Parking Violations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parking</controllingFieldValue>
+            <valueName>Parking in Common Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parking</controllingFieldValue>
+            <valueName>Blocking Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parking</controllingFieldValue>
+            <valueName>Misuse of Parking Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FedEx</controllingFieldValue>
+            <valueName>FedEx</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Name Change</controllingFieldValue>
+            <valueName>Name Addition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Name Change</controllingFieldValue>
+            <valueName>Name Deletion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unit Related</controllingFieldValue>
+            <valueName>Viewing Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unit Related</controllingFieldValue>
+            <valueName>Floor Plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Termination/ Cancellation</controllingFieldValue>
+            <valueName>Internal Cancellation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Termination/ Cancellation</controllingFieldValue>
+            <valueName>Cancelled Unit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Termination/ Cancellation</controllingFieldValue>
+            <controllingFieldValue>SOA</controllingFieldValue>
+            <valueName>Dispute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Termination/ Cancellation</controllingFieldValue>
+            <valueName>Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Termination/ Cancellation</controllingFieldValue>
+            <valueName>Hold request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Termination/ Cancellation</controllingFieldValue>
+            <valueName>Cancellation Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Termination/ Cancellation</controllingFieldValue>
+            <valueName>DLD Termination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Charges</controllingFieldValue>
+            <valueName>Service Fee Payments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Legal</controllingFieldValue>
+            <valueName>Legal Complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD/CM office escalation</controllingFieldValue>
+            <valueName>MD/CM office escalation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOA</controllingFieldValue>
+            <valueName>Update/Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOA</controllingFieldValue>
+            <valueName>Area Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOA</controllingFieldValue>
+            <valueName>Shortfall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Payment Receipt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Payment Link Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Payment Plan Explanation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Promise to Pay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Payment Plan Extension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Missing payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Advance payment A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>POP/3rd party docs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Late payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Reallocation of funds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>NPV benefit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Test</controllingFieldValue>
+            <valueName>Test</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unregistered Email Id</controllingFieldValue>
+            <valueName>Unregistered Email Id</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR</controllingFieldValue>
+            <valueName>Employee Verification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR</controllingFieldValue>
+            <valueName>Resume</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <valueName>PDC Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <valueName>PDC Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <valueName>Cheque Dishonoured</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Escrow Details</controllingFieldValue>
+            <valueName>Bank Details Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Refund</controllingFieldValue>
+            <valueName>Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Refund</controllingFieldValue>
+            <valueName>Update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invoice</controllingFieldValue>
+            <valueName>Instalment invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invoice</controllingFieldValue>
+            <valueName>Tax invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPAM</controllingFieldValue>
+            <valueName>SPAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Duplicate</controllingFieldValue>
+            <valueName>Duplicate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Access Cards</controllingFieldValue>
+            <controllingFieldValue>Community Access Cards</controllingFieldValue>
+            <valueName>New Access Cards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Access Cards</controllingFieldValue>
+            <controllingFieldValue>Community Access Cards</controllingFieldValue>
+            <valueName>Lost/Damaged Cards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Access Cards</controllingFieldValue>
+            <controllingFieldValue>Community Access Cards</controllingFieldValue>
+            <valueName>Replacement Cards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Access Cards</controllingFieldValue>
+            <controllingFieldValue>Community Access Cards</controllingFieldValue>
+            <valueName>Card not working</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Access Cards</controllingFieldValue>
+            <controllingFieldValue>Community Access Cards</controllingFieldValue>
+            <valueName>Access Card Activation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Provider Access Permit</controllingFieldValue>
+            <valueName>Service Provider Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visitors Access</controllingFieldValue>
+            <valueName>Visitors Access to Community</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community Amenities Access</controllingFieldValue>
+            <valueName>Access to Amenities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community Amenities Access</controllingFieldValue>
+            <valueName>Amenity Booking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community Amenities Access</controllingFieldValue>
+            <valueName>Private Events Booking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Move in Permits (MIP)</controllingFieldValue>
+            <valueName>Move in Permits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Move out Permits (MOP)</controllingFieldValue>
+            <valueName>Move out Permits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registration Request (REG)</controllingFieldValue>
+            <controllingFieldValue>Renewal of app account (REN)</controllingFieldValue>
+            <controllingFieldValue>Household Staff Registration</controllingFieldValue>
+            <valueName>Errors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile App Log-in</controllingFieldValue>
+            <valueName>Log-in - Errors, not working,  enquiry or complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Holiday Home</controllingFieldValue>
+            <valueName>Guest Registerations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Holiday Home</controllingFieldValue>
+            <valueName>Guests not Registered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photography or Photoshoot Permissions</controllingFieldValue>
+            <valueName>Proffessional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photography or Photoshoot Permissions</controllingFieldValue>
+            <valueName>Personal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elevators</controllingFieldValue>
+            <valueName>Elevators not workings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elevators</controllingFieldValue>
+            <valueName>Noise from Elevators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elevators</controllingFieldValue>
+            <controllingFieldValue>Lights - Common Area</controllingFieldValue>
+            <valueName>Lights not working</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DEWA electricity and water - Common area</controllingFieldValue>
+            <valueName>DEWA electricity and water- disruption, enquiries or complaints</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Leakage (Neighbor Issues)</controllingFieldValue>
+            <controllingFieldValue>AC Cooling - Inside Units</controllingFieldValue>
+            <valueName>Inside Units</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Leakage (Neighbor Issues)</controllingFieldValue>
+            <valueName>Above Units</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Leakage (Neighbor Issues)</controllingFieldValue>
+            <valueName>Between Units</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Leakage - Common Area</controllingFieldValue>
+            <valueName>Water Leakage in common area, toilets, amenities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Neighbor Disputes</controllingFieldValue>
+            <valueName>Leakage between or from above or Below Units</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Neighbor Disputes</controllingFieldValue>
+            <valueName>Noise and Nuisance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Neighbor Disputes</controllingFieldValue>
+            <valueName>Party Loud Sound</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Neighbor Disputes</controllingFieldValue>
+            <valueName>Kids</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Neighbor Disputes</controllingFieldValue>
+            <valueName>Drilling Sound</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Neighbor Disputes</controllingFieldValue>
+            <valueName>Door Slamming</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Irrigation water leakage</controllingFieldValue>
+            <valueName>No proper Irrigation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Landscaping</controllingFieldValue>
+            <valueName>Landscaping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Notice of Violations</controllingFieldValue>
+            <valueName>NOV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community Rules Violation</controllingFieldValue>
+            <valueName>Community Rules Violation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alterations</controllingFieldValue>
+            <valueName>Internal Alterations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alterations</controllingFieldValue>
+            <valueName>External Alterations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Amenity Reservations</controllingFieldValue>
+            <valueName>Amenity Reservations Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Amenity Reservations</controllingFieldValue>
+            <valueName>New Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pest Control- Rodents</controllingFieldValue>
+            <valueName>Pest Control- Rodents</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pest Control- Flies/Mosquitos</controllingFieldValue>
+            <valueName>Pest Control- Flies/Mosquitos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil Works</controllingFieldValue>
+            <valueName>Civil Works</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blockage</controllingFieldValue>
+            <valueName>Drain Blockages</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blockage</controllingFieldValue>
+            <valueName>Pipe Blockages</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Electrical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Power trip/DB related issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>No Power</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Burning smell</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Noise from electrical systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Water Heater not working</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Intercom Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Home Automation System issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Light fixtures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Switches and sockets issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Internet cable issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LPG</controllingFieldValue>
+            <valueName>LPG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LPG</controllingFieldValue>
+            <valueName>LPG Connection issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LPG</controllingFieldValue>
+            <valueName>Gas Leak</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Broken Glass</controllingFieldValue>
+            <valueName>Glass Shattered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security Staff Behavior</controllingFieldValue>
+            <valueName>Security Staff Behavior</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community Staff Behavior</controllingFieldValue>
+            <valueName>Community Staff Behavior</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction Noise</controllingFieldValue>
+            <valueName>Construction Noise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Appreciation</controllingFieldValue>
+            <valueName>Customer Appreciation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged Pavements or Roads</controllingFieldValue>
+            <valueName>Damaged Pavements or Roads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged Pavements or Roads</controllingFieldValue>
+            <valueName>Interlocks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged Pavements or Roads</controllingFieldValue>
+            <valueName>Walkways</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged Pavements or Roads</controllingFieldValue>
+            <valueName>Damaged Roads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gate/Entrance Barrier</controllingFieldValue>
+            <valueName>Gate Barrier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gate/Entrance Barrier</controllingFieldValue>
+            <controllingFieldValue>Garbage Chute</controllingFieldValue>
+            <valueName>Malfunction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Private events permission</controllingFieldValue>
+            <valueName>Request for private event permission</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fire Alarm</controllingFieldValue>
+            <valueName>Fire Alarm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flood Water/Accumulation</controllingFieldValue>
+            <valueName>Flood Water/Accumulation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foul Smell/Odor</controllingFieldValue>
+            <valueName>Foul Smell/Odor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Garbage Bin Request</controllingFieldValue>
+            <valueName>Garbage Bin Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Garbage Chute</controllingFieldValue>
+            <valueName>Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Cleaning</controllingFieldValue>
+            <valueName>General Cleaning, litter picking, spillage , dirty floors, dust etc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pandemic</controllingFieldValue>
+            <valueName>Covid Cases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pandemic</controllingFieldValue>
+            <valueName>Complaints</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Communication</controllingFieldValue>
+            <valueName>Clarification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Communication</controllingFieldValue>
+            <valueName>General Notices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Call Back Request</controllingFieldValue>
+            <valueName>Call Back Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Water - Common Area</controllingFieldValue>
+            <controllingFieldValue>No Electricity - Common Area</controllingFieldValue>
+            <valueName>No Water - Common Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Hot Water Supply - Common Area</controllingFieldValue>
+            <valueName>No Hot Water Supply - Common Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Online Services</controllingFieldValue>
+            <valueName>Online Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community Service Fees</controllingFieldValue>
+            <valueName>Community Service Fees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community Service Fees</controllingFieldValue>
+            <valueName>Chilled Water Charges</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health and Safety</controllingFieldValue>
+            <valueName>Health and Safety</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lights - Common Area</controllingFieldValue>
+            <valueName>Flickering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lights - Common Area</controllingFieldValue>
+            <valueName>Dark</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lights - Common Area</controllingFieldValue>
+            <valueName>Color Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insurance Claims</controllingFieldValue>
+            <valueName>Insurance Claims</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intercom</controllingFieldValue>
+            <valueName>Intercom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kids Play Area</controllingFieldValue>
+            <valueName>Kids Play Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Paint Color Code Request</controllingFieldValue>
+            <valueName>Paint Color Code Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Painting Damage – Common area</controllingFieldValue>
+            <valueName>Stains</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Painting Damage – Common area</controllingFieldValue>
+            <valueName>Peeling Off</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Painting Damage – Common area</controllingFieldValue>
+            <valueName>Others</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

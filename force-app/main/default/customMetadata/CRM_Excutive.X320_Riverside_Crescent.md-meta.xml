@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>320 Riverside Crescent</label>
+    <protected>false</protected>
+    <values>
+        <field>CRM_Excutive__c</field>
+        <value xsi:type="xsd:string">Younes Kahlouch</value>
+    </values>
+    <values>
+        <field>Sub_Projects__c</field>
+        <value xsi:type="xsd:string">320 Riverside Crescent</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejection_Cause__c</fullName>
+    <label>Rejection Cause</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cheque Bounced</fullName>
+                <default>false</default>
+                <label>Cheque Bounced</label>
+            </value>
+            <value>
+                <fullName>Customer Recalled</fullName>
+                <default>false</default>
+                <label>Customer Recalled</label>
+            </value>
+            <value>
+                <fullName>Reallocation Required</fullName>
+                <default>false</default>
+                <label>Reallocation Required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

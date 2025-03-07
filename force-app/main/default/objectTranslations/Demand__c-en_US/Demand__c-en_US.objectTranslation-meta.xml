@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Demand</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Demands</value>
+    </caseValues>
+    <layouts>
+        <layout>Collection Demand Layout</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Agreement Value --></label>
+            <section>Agreement Value</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 1 --></label>
+            <section>Charge 1</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 10 --></label>
+            <section>Charge 10</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 2 --></label>
+            <section>Charge 2</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 3 --></label>
+            <section>Charge 3</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 4 --></label>
+            <section>Charge 4</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 5 --></label>
+            <section>Charge 5</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 6 --></label>
+            <section>Charge 6</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 7 --></label>
+            <section>Charge 7</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 8 --></label>
+            <section>Charge 8</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 9 --></label>
+            <section>Charge 9</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Debit Details --></label>
+            <section>Debit Details</section>
+        </sections>
+        <sections>
+            <label><!-- Interest Details --></label>
+            <section>Interest Details</section>
+        </sections>
+        <sections>
+            <label><!-- Interest Grand Total --></label>
+            <section>Interest Grand Total</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Totals --></label>
+            <section>Overall Totals</section>
+        </sections>
+        <sections>
+            <label><!-- PTP Details --></label>
+            <section>PTP Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Demand Layout</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Agreement Value --></label>
+            <section>Agreement Value</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Debit Details --></label>
+            <section>Debit Details</section>
+        </sections>
+        <sections>
+            <label><!-- Interest Details --></label>
+            <section>Interest Details</section>
+        </sections>
+        <sections>
+            <label><!-- Interest Grand Total --></label>
+            <section>Interest Grand Total</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Totals --></label>
+            <section>Overall Totals</section>
+        </sections>
+        <sections>
+            <label><!-- PTP Details --></label>
+            <section>PTP Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>External SOA Verification Vendor</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Agreement Value --></label>
+            <section>Agreement Value</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 1 --></label>
+            <section>Charge 1</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 10 --></label>
+            <section>Charge 10</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 2 --></label>
+            <section>Charge 2</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 3 --></label>
+            <section>Charge 3</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 4 --></label>
+            <section>Charge 4</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 5 --></label>
+            <section>Charge 5</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 6 --></label>
+            <section>Charge 6</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 7 --></label>
+            <section>Charge 7</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 8 --></label>
+            <section>Charge 8</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 9 --></label>
+            <section>Charge 9</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Debit Details --></label>
+            <section>Debit Details</section>
+        </sections>
+        <sections>
+            <label><!-- Interest Details --></label>
+            <section>Interest Details</section>
+        </sections>
+        <sections>
+            <label><!-- Interest Grand Total --></label>
+            <section>Interest Grand Total</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Totals --></label>
+            <section>Overall Totals</section>
+        </sections>
+        <sections>
+            <label><!-- PTP Details --></label>
+            <section>PTP Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Feed Demand Layout</layout>
+        <sections>
+            <label><!-- Agreement Value --></label>
+            <section>Agreement Value</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 1 --></label>
+            <section>Charge 1</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 10 --></label>
+            <section>Charge 10</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 11 --></label>
+            <section>Charge 11</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 12 --></label>
+            <section>Charge 12</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 13 --></label>
+            <section>Charge 13</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 14 --></label>
+            <section>Charge 14</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 15 --></label>
+            <section>Charge 15</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 2 --></label>
+            <section>Charge 2</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 3 --></label>
+            <section>Charge 3</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 4 --></label>
+            <section>Charge 4</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 5 --></label>
+            <section>Charge 5</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 6 --></label>
+            <section>Charge 6</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 7 --></label>
+            <section>Charge 7</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 8 --></label>
+            <section>Charge 8</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 9 --></label>
+            <section>Charge 9</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Debit Details --></label>
+            <section>Debit Details</section>
+        </sections>
+        <sections>
+            <label><!-- Other Charges --></label>
+            <section>Other Charges</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Totals --></label>
+            <section>Overall Totals</section>
+        </sections>
+        <sections>
+            <label><!-- Society Charges --></label>
+            <section>Society Charges</section>
+        </sections>
+        <sections>
+            <label><!-- Stamp Duty and Registration Charges --></label>
+            <section>Stamp Duty and Registration Charges</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Finance Demand Layout</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Agreement Value --></label>
+            <section>Agreement Value</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 1 --></label>
+            <section>Charge 1</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 10 --></label>
+            <section>Charge 10</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 2 --></label>
+            <section>Charge 2</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 3 --></label>
+            <section>Charge 3</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 4 --></label>
+            <section>Charge 4</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 5 --></label>
+            <section>Charge 5</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 6 --></label>
+            <section>Charge 6</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 7 --></label>
+            <section>Charge 7</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 8 --></label>
+            <section>Charge 8</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 9 --></label>
+            <section>Charge 9</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Debit Details --></label>
+            <section>Debit Details</section>
+        </sections>
+        <sections>
+            <label><!-- Interest Details --></label>
+            <section>Interest Details</section>
+        </sections>
+        <sections>
+            <label><!-- Interest Grand Total --></label>
+            <section>Interest Grand Total</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Totals --></label>
+            <section>Overall Totals</section>
+        </sections>
+        <sections>
+            <label><!-- PTP Details --></label>
+            <section>PTP Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Finance with Edit Access</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Agreement Value --></label>
+            <section>Agreement Value</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 1 --></label>
+            <section>Charge 1</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 10 --></label>
+            <section>Charge 10</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 2 --></label>
+            <section>Charge 2</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 3 --></label>
+            <section>Charge 3</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 4 --></label>
+            <section>Charge 4</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 5 --></label>
+            <section>Charge 5</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 6 --></label>
+            <section>Charge 6</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 7 --></label>
+            <section>Charge 7</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 8 --></label>
+            <section>Charge 8</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 9 --></label>
+            <section>Charge 9</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Debit Details --></label>
+            <section>Debit Details</section>
+        </sections>
+        <sections>
+            <label><!-- Interest Details --></label>
+            <section>Interest Details</section>
+        </sections>
+        <sections>
+            <label><!-- Interest Grand Total --></label>
+            <section>Interest Grand Total</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Totals --></label>
+            <section>Overall Totals</section>
+        </sections>
+        <sections>
+            <label><!-- PTP Details --></label>
+            <section>PTP Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Generate LP Waiver --></label>
+        <name>Generate_LP_Waiver</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Sum of Registration Collection Control Report Amount and Corporate Collection Control Report Amount should not be greater than Total Amount with VAT Demanded --></errorMessage>
+        <name>CorpANDRegAmtShouldNotBeGreaterthanTotal</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Actions --></label>
+        <name>Actions</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Demand_Letter --></label>
+        <name>Demand_Letter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reverse_Demand --></label>
+        <name>Reverse_Demand</name>
+    </webLinks>
+</CustomObjectTranslation>

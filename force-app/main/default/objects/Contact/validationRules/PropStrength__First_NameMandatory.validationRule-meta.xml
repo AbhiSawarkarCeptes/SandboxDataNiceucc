@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PropStrength__First_NameMandatory</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK(FirstName)</errorConditionFormula>
+    <errorDisplayField>FirstName</errorDisplayField>
+    <errorMessage>Please Enter First Name and Enter Middle Name in Last Name field.</errorMessage>
+</ValidationRule>

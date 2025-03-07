@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Status__c</fullName>
+    <label>Approval Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+                <label>Submitted</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Approved by Collection Manager</fullName>
+                <default>false</default>
+                <label>Approved by Collection Manager</label>
+            </value>
+            <value>
+                <fullName>Approved by HOD</fullName>
+                <default>false</default>
+                <label>Approved by HOD</label>
+            </value>
+            <value>
+                <fullName>Approved by Accounts</fullName>
+                <default>false</default>
+                <label>Approved by Accounts</label>
+            </value>
+            <value>
+                <fullName>Approved by Audit</fullName>
+                <default>false</default>
+                <label>Approved by Audit</label>
+            </value>
+            <value>
+                <fullName>Resubmitted to Accounts by Audit</fullName>
+                <default>false</default>
+                <label>Resubmitted to Accounts by Audit</label>
+            </value>
+            <value>
+                <fullName>Resubmitted to Collections</fullName>
+                <default>false</default>
+                <label>Resubmitted to Collections</label>
+            </value>
+            <value>
+                <fullName>Submitted to Accounts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Submitted to Accounts</label>
+            </value>
+            <value>
+                <fullName>Submitted to Audit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Submitted to Audit</label>
+            </value>
+            <value>
+                <fullName>Submitted to HOD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Submitted to HOD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Stakeholder --></label>
+    <name>Stakeholder__c</name>
+    <picklistValues>
+        <masterLabel>Audit</masterLabel>
+        <translation><!-- Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRM</masterLabel>
+        <translation><!-- CRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collection</masterLabel>
+        <translation><!-- Collection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD</masterLabel>
+        <translation><!-- DLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Development</masterLabel>
+        <translation><!-- Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance</masterLabel>
+        <translation><!-- Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal IT</masterLabel>
+        <translation><!-- Internal IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MIS</masterLabel>
+        <translation><!-- MIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Management</masterLabel>
+        <translation><!-- Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation><!-- Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-sales</masterLabel>
+        <translation><!-- Pre-sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales</masterLabel>
+        <translation><!-- Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Ops</masterLabel>
+        <translation><!-- Sales Ops --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

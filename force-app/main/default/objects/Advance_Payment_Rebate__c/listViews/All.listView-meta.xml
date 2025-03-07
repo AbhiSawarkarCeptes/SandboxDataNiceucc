@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Unit__c</columns>
+    <columns>Customer_Name__c</columns>
+    <columns>Advance_Amount_Paid__c</columns>
+    <columns>NPV__c</columns>
+    <columns>Sale_Value__c</columns>
+    <columns>Total_of_Receipts__c</columns>
+    <columns>Eligible_Rebate__c</columns>
+    <columns>Discount_Amount__c</columns>
+    <columns>Paid_As_of_Today__c</columns>
+    <columns>Approval_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>SOA_Link__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

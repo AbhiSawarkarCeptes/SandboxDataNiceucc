@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Media_Type__c</fullName>
+    <label>Media Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+                <label>Social Media</label>
+            </value>
+            <value>
+                <fullName>Property Portal</fullName>
+                <default>false</default>
+                <label>Property Portal</label>
+            </value>
+            <value>
+                <fullName>Email Campaign</fullName>
+                <default>false</default>
+                <label>Email Campaign</label>
+            </value>
+            <value>
+                <fullName>SEO/SEM</fullName>
+                <default>false</default>
+                <label>SEO/SEM</label>
+            </value>
+            <value>
+                <fullName>Print Media</fullName>
+                <default>false</default>
+                <label>Print Media</label>
+            </value>
+            <value>
+                <fullName>Broadcast Media</fullName>
+                <default>false</default>
+                <label>Broadcast Media</label>
+            </value>
+            <value>
+                <fullName>Outdoor Display</fullName>
+                <default>false</default>
+                <label>Outdoor Display</label>
+            </value>
+            <value>
+                <fullName>Exhibit</fullName>
+                <default>false</default>
+                <label>Exhibit</label>
+            </value>
+            <value>
+                <fullName>Event</fullName>
+                <default>false</default>
+                <label>Event</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>BTL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BTL</label>
+            </value>
+            <value>
+                <fullName>Digital Media</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Digital Media</label>
+            </value>
+            <value>
+                <fullName>Exhibition</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Exhibition</label>
+            </value>
+            <value>
+                <fullName>Non-Lead Generation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non-Lead Generation</label>
+            </value>
+            <value>
+                <fullName>OOH</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OOH</label>
+            </value>
+            <value>
+                <fullName>Outbound</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Outbound</label>
+            </value>
+            <value>
+                <fullName>Property consultant</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Property consultant</label>
+            </value>
+            <value>
+                <fullName>Radio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Radio</label>
+            </value>
+            <value>
+                <fullName>Reference</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reference</label>
+            </value>
+            <value>
+                <fullName>TV</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TV</label>
+            </value>
+            <value>
+                <fullName>Telemarketing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Telemarketing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

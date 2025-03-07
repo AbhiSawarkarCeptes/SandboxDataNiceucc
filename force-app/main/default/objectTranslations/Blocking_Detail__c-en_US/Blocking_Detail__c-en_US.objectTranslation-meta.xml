@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Blocking Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Blocking Details</value>
+    </caseValues>
+    <layouts>
+        <layout>Blocking Detail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot block this unit. Only units in &apos;Available&apos; status can be blocked. --></errorMessage>
+        <name>PreventDuplicateBlocking</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unit details can&apos;t be modified --></errorMessage>
+        <name>Prevent_Modification_Of_Unit_Details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Restricting to one blocking request per unit --></errorMessage>
+        <name>Restricting_multiblocking_of_a_unit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Check Opportunity Stage It Must Not Be [Booked,Sold,Cancelled,Closed Lost]. --></errorMessage>
+        <name>UnBlock_Unit</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Bank Account Type --></label>
+    <name>Bank_Account_Type__c</name>
+    <picklistValues>
+        <masterLabel>Corporate Account</masterLabel>
+        <translation><!-- Corporate Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escrow Account</masterLabel>
+        <translation><!-- Escrow Account --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

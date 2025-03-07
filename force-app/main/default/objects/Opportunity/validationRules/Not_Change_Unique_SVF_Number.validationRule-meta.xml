@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_Change_Unique_SVF_Number</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(PRIORVALUE(Unique_SVF_Number__c) != null, ISCHANGED(Unique_SVF_Number__c), OR($Profile.Name != &quot;Admin&quot;), $Profile.Name != &quot;System Administrator&quot;,
+$Profile.Name != &quot;Administrator&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Unique_SVF_Number__c</errorDisplayField>
+    <errorMessage>You are not eligible to change the SVF number</errorMessage>
+</ValidationRule>

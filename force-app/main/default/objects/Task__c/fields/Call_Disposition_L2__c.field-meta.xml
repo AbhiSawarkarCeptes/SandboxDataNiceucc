@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Disposition_L2__c</fullName>
+    <label>Call Disposition L2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Call_Disposition_L1__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NPV benefit Customer interested</fullName>
+                <default>false</default>
+                <label>NPV benefit Customer interested</label>
+            </value>
+            <value>
+                <fullName>Not interested in NPV</fullName>
+                <default>false</default>
+                <label>Not interested in NPV</label>
+            </value>
+            <value>
+                <fullName>NPV dispute</fullName>
+                <default>false</default>
+                <label>NPV dispute</label>
+            </value>
+            <value>
+                <fullName>Non NPV disputes</fullName>
+                <default>false</default>
+                <label>Non NPV disputes</label>
+            </value>
+            <value>
+                <fullName>PCC</fullName>
+                <default>false</default>
+                <label>PCC</label>
+            </value>
+            <value>
+                <fullName>No contact / unable to reach</fullName>
+                <default>false</default>
+                <label>No contact / unable to reach</label>
+            </value>
+            <value>
+                <fullName>PTP</fullName>
+                <default>false</default>
+                <label>PTP</label>
+            </value>
+            <value>
+                <fullName>SPA/pre-reg required by customer</fullName>
+                <default>false</default>
+                <label>SPA/pre-reg required by customer</label>
+            </value>
+            <value>
+                <fullName>Adjustment/transfer funds</fullName>
+                <default>false</default>
+                <label>Adjustment/transfer funds</label>
+            </value>
+            <value>
+                <fullName>Paid not realised in SOA</fullName>
+                <default>false</default>
+                <label>Paid not realised in SOA</label>
+            </value>
+            <value>
+                <fullName>Cancellation/termination</fullName>
+                <default>false</default>
+                <label>Cancellation/termination</label>
+            </value>
+            <value>
+                <fullName>New sales overdue</fullName>
+                <default>false</default>
+                <label>New sales overdue</label>
+            </value>
+            <value>
+                <fullName>Mortgage</fullName>
+                <default>false</default>
+                <label>Mortgage</label>
+            </value>
+            <value>
+                <fullName>Disputes / delays / deviation case</fullName>
+                <default>false</default>
+                <label>Disputes / delays / deviation case</label>
+            </value>
+            <value>
+                <fullName>Resale</fullName>
+                <default>false</default>
+                <label>Resale</label>
+            </value>
+            <value>
+                <fullName>3rd party payments representative</fullName>
+                <default>false</default>
+                <label>3rd party payments representative</label>
+            </value>
+            <value>
+                <fullName>Fraud related</fullName>
+                <default>false</default>
+                <label>Fraud related</label>
+            </value>
+            <value>
+                <fullName>Call Transfer / Case transfer</fullName>
+                <default>false</default>
+                <label>Call Transfer / Case transfer</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Advance collections</controllingFieldValue>
+            <valueName>NPV benefit Customer interested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advance collections</controllingFieldValue>
+            <valueName>Not interested in NPV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advance collections</controllingFieldValue>
+            <valueName>NPV dispute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advance collections</controllingFieldValue>
+            <valueName>Non NPV disputes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advance collections</controllingFieldValue>
+            <controllingFieldValue>Dues collection</controllingFieldValue>
+            <valueName>PCC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advance collections</controllingFieldValue>
+            <controllingFieldValue>Dues collection</controllingFieldValue>
+            <valueName>No contact / unable to reach</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advance collections</controllingFieldValue>
+            <controllingFieldValue>Dues collection</controllingFieldValue>
+            <valueName>Mortgage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advance collections</controllingFieldValue>
+            <controllingFieldValue>Dues collection</controllingFieldValue>
+            <valueName>Resale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dues collection</controllingFieldValue>
+            <valueName>PTP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dues collection</controllingFieldValue>
+            <valueName>SPA/pre-reg required by customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dues collection</controllingFieldValue>
+            <valueName>Adjustment/transfer funds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dues collection</controllingFieldValue>
+            <valueName>Paid not realised in SOA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dues collection</controllingFieldValue>
+            <valueName>Cancellation/termination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dues collection</controllingFieldValue>
+            <valueName>New sales overdue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dues collection</controllingFieldValue>
+            <valueName>Disputes / delays / deviation case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dues collection</controllingFieldValue>
+            <valueName>3rd party payments representative</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dues collection</controllingFieldValue>
+            <valueName>Fraud related</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dues collection</controllingFieldValue>
+            <valueName>Call Transfer / Case transfer</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

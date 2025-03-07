@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- Name Field Update Includes (Name as per passport, Name as per trade license)
+Other Field Update Includes (Email ID, phone number, Address, sales manager, sales director) -->
+    </help>
+    <label><!-- Field Update Type --></label>
+    <name>Field_Update_Type__c</name>
+    <picklistValues>
+        <masterLabel>Name Field Update</masterLabel>
+        <translation><!-- Name Field Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

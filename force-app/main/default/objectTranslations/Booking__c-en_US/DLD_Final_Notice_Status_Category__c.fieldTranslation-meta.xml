@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DLD Final Notice Status Category --></label>
+    <name>DLD_Final_Notice_Status_Category__c</name>
+    <picklistValues>
+        <masterLabel>Approved by DLD</masterLabel>
+        <translation><!-- Approved by DLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Objected</masterLabel>
+        <translation><!-- Customer Objected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Paid/Settled</masterLabel>
+        <translation><!-- Customer Paid/Settled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Procedure Cancelled by DLD</masterLabel>
+        <translation><!-- Procedure Cancelled by DLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Announcement</masterLabel>
+        <translation><!-- Public Announcement --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

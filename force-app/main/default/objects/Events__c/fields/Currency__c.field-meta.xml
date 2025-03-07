@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Currency__c</fullName>
+    <label>Currency</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>United States dollar</fullName>
+                <default>false</default>
+                <label>United States dollar</label>
+            </value>
+            <value>
+                <fullName>Euro</fullName>
+                <default>false</default>
+                <label>Euro</label>
+            </value>
+            <value>
+                <fullName>Japanese yen</fullName>
+                <default>false</default>
+                <label>Japanese yen</label>
+            </value>
+            <value>
+                <fullName>Pound sterling</fullName>
+                <default>false</default>
+                <label>Pound sterling</label>
+            </value>
+            <value>
+                <fullName>Australian dollar</fullName>
+                <default>false</default>
+                <label>Australian dollar</label>
+            </value>
+            <value>
+                <fullName>Canadian dollar</fullName>
+                <default>false</default>
+                <label>Canadian dollar</label>
+            </value>
+            <value>
+                <fullName>Swiss franc</fullName>
+                <default>false</default>
+                <label>Swiss franc</label>
+            </value>
+            <value>
+                <fullName>Renminbi</fullName>
+                <default>false</default>
+                <label>Renminbi</label>
+            </value>
+            <value>
+                <fullName>Hong Kong dollar</fullName>
+                <default>false</default>
+                <label>Hong Kong dollar</label>
+            </value>
+            <value>
+                <fullName>New Zealand dollar</fullName>
+                <default>false</default>
+                <label>New Zealand dollar</label>
+            </value>
+            <value>
+                <fullName>Swedish krona</fullName>
+                <default>false</default>
+                <label>Swedish krona</label>
+            </value>
+            <value>
+                <fullName>South Korean wo</fullName>
+                <default>false</default>
+                <label>South Korean wo</label>
+            </value>
+            <value>
+                <fullName>Singapore dollar</fullName>
+                <default>false</default>
+                <label>Singapore dollar</label>
+            </value>
+            <value>
+                <fullName>Norwegian krone</fullName>
+                <default>false</default>
+                <label>Norwegian krone</label>
+            </value>
+            <value>
+                <fullName>Mexican peso</fullName>
+                <default>false</default>
+                <label>Mexican peso</label>
+            </value>
+            <value>
+                <fullName>Indian rupee</fullName>
+                <default>false</default>
+                <label>Indian rupee</label>
+            </value>
+            <value>
+                <fullName>Russian ruble</fullName>
+                <default>false</default>
+                <label>Russian ruble</label>
+            </value>
+            <value>
+                <fullName>South African rand</fullName>
+                <default>false</default>
+                <label>South African rand</label>
+            </value>
+            <value>
+                <fullName>Turkish lira</fullName>
+                <default>false</default>
+                <label>Turkish lira</label>
+            </value>
+            <value>
+                <fullName>Brazilian real</fullName>
+                <default>false</default>
+                <label>Brazilian real</label>
+            </value>
+            <value>
+                <fullName>New Taiwan dollar</fullName>
+                <default>false</default>
+                <label>New Taiwan dollar</label>
+            </value>
+            <value>
+                <fullName>Danish krone</fullName>
+                <default>false</default>
+                <label>Danish krone</label>
+            </value>
+            <value>
+                <fullName>Polish złoty</fullName>
+                <default>false</default>
+                <label>Polish złoty</label>
+            </value>
+            <value>
+                <fullName>Thai baht</fullName>
+                <default>false</default>
+                <label>Thai baht</label>
+            </value>
+            <value>
+                <fullName>Indonesian rupiah</fullName>
+                <default>false</default>
+                <label>Indonesian rupiah</label>
+            </value>
+            <value>
+                <fullName>Hungarian forint</fullName>
+                <default>false</default>
+                <label>Hungarian forint</label>
+            </value>
+            <value>
+                <fullName>Czech koruna</fullName>
+                <default>false</default>
+                <label>Czech koruna</label>
+            </value>
+            <value>
+                <fullName>Israeli new shekel</fullName>
+                <default>false</default>
+                <label>Israeli new shekel</label>
+            </value>
+            <value>
+                <fullName>Chilean peso</fullName>
+                <default>false</default>
+                <label>Chilean peso</label>
+            </value>
+            <value>
+                <fullName>Philippine peso</fullName>
+                <default>false</default>
+                <label>Philippine peso</label>
+            </value>
+            <value>
+                <fullName>UAE dirham</fullName>
+                <default>false</default>
+                <label>UAE dirham</label>
+            </value>
+            <value>
+                <fullName>Colombian peso</fullName>
+                <default>false</default>
+                <label>Colombian peso</label>
+            </value>
+            <value>
+                <fullName>Saudi riyal</fullName>
+                <default>false</default>
+                <label>Saudi riyal</label>
+            </value>
+            <value>
+                <fullName>Malaysian ringgit</fullName>
+                <default>false</default>
+                <label>Malaysian ringgit</label>
+            </value>
+            <value>
+                <fullName>Romanian leu</fullName>
+                <default>false</default>
+                <label>Romanian leu</label>
+            </value>
+            <value>
+                <fullName>Nigerian naira</fullName>
+                <default>false</default>
+                <label>Nigerian naira</label>
+            </value>
+            <value>
+                <fullName>Central African CFA franc(Cameroon Currency)</fullName>
+                <default>false</default>
+                <label>Central African CFA franc(Cameroon Currency)</label>
+            </value>
+            <value>
+                <fullName>Ghanaian Cedi (Ghana Currency)</fullName>
+                <default>false</default>
+                <label>Ghanaian Cedi (Ghana Currency)</label>
+            </value>
+            <value>
+                <fullName>Tanzanian Shilling (Tanzania currency)</fullName>
+                <default>false</default>
+                <label>Tanzanian Shilling (Tanzania currency)</label>
+            </value>
+            <value>
+                <fullName>Bangladeshi Taka (Bangladesh Currency)</fullName>
+                <default>false</default>
+                <label>Bangladeshi Taka (Bangladesh Currency)</label>
+            </value>
+            <value>
+                <fullName>Congolese franc (Congo Currency)</fullName>
+                <default>false</default>
+                <label>Congolese franc (Congo Currency)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

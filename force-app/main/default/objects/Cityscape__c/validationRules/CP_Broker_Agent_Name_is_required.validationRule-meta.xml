@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CP_Broker_Agent_Name_is_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( Channel_Partner__c  ==   $Label.Temp_Channel_Partner_Id  , CP_Broker_Agent_Name__c == null)</errorConditionFormula>
+    <errorDisplayField>CP_Broker_Agent_Name__c</errorDisplayField>
+    <errorMessage>CP Broker Agent Name is required</errorMessage>
+</ValidationRule>

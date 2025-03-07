@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPA_Executed__c</fullName>
+    <label>SPA Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Blocked Sales</fullName>
+                <default>true</default>
+                <label>Blocked Sales</label>
+            </value>
+            <value>
+                <fullName>To be Issued</fullName>
+                <default>false</default>
+                <label>To be Issued</label>
+            </value>
+            <value>
+                <fullName>SPA Issued But Not Sent</fullName>
+                <default>false</default>
+                <label>SPA Issued But Not Sent</label>
+            </value>
+            <value>
+                <fullName>SPA Sent But Not Returned</fullName>
+                <default>false</default>
+                <label>SPA Sent But Not Returned</label>
+            </value>
+            <value>
+                <fullName>SPA Received and sent to Audit for Review</fullName>
+                <default>false</default>
+                <label>SPA Received and sent to CRM OPS Assurance for Review</label>
+            </value>
+            <value>
+                <fullName>SPA Executed</fullName>
+                <default>false</default>
+                <label>SPA Executed</label>
+            </value>
+            <value>
+                <fullName>SPA Particulars Received</fullName>
+                <default>false</default>
+                <label>SPA Particulars Received</label>
+            </value>
+            <value>
+                <fullName>Revised SPA Particular Sent</fullName>
+                <default>false</default>
+                <label>Revised SPA Particular Sent</label>
+            </value>
+            <value>
+                <fullName>Revised SPA Particular Received - SPA Copy Pending</fullName>
+                <default>false</default>
+                <label>Revised SPA Particular Received - SPA Copy Pending</label>
+            </value>
+            <value>
+                <fullName>SPA Issued But Not Sent  - Customer to Collect</fullName>
+                <default>false</default>
+                <label>SPA Issued But Not Sent - Customer to Collect</label>
+            </value>
+            <value>
+                <fullName>SPA Sent through DocuSign</fullName>
+                <default>false</default>
+                <label>SPA Sent through DocuSign</label>
+            </value>
+            <value>
+                <fullName>Executed copy sent through DocuSign</fullName>
+                <default>false</default>
+                <label>Executed copy sent through DocuSign</label>
+            </value>
+            <value>
+                <fullName>Audit Review completed</fullName>
+                <default>false</default>
+                <label>CRM OPS Assurance Review completed</label>
+            </value>
+            <value>
+                <fullName>SPA Signed by Seller</fullName>
+                <default>false</default>
+                <label>SPA Signed by Seller</label>
+            </value>
+            <value>
+                <fullName>SPA is Voided in Docusign</fullName>
+                <default>false</default>
+                <label>SPA is Voided in Docusign</label>
+            </value>
+            <value>
+                <fullName>Audit rejected</fullName>
+                <default>false</default>
+                <label>CRM OPS Assurance rejected</label>
+            </value>
+            <value>
+                <fullName>Issue ? Under discussion</fullName>
+                <default>false</default>
+                <label>Issue ? Under discussion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

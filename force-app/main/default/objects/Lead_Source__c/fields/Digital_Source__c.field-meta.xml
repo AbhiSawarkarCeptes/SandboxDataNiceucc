@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Digital_Source__c</fullName>
+    <label>Digital Source</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>facebook-lead-ad</fullName>
+                <default>false</default>
+                <label>facebook-lead-ad</label>
+            </value>
+            <value>
+                <fullName>instagram-lead-ad</fullName>
+                <default>false</default>
+                <label>instagram-lead-ad</label>
+            </value>
+            <value>
+                <fullName>instagram-story-ads</fullName>
+                <default>false</default>
+                <label>instagram-story-ads</label>
+            </value>
+            <value>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+                <label>Social Media</label>
+            </value>
+            <value>
+                <fullName>affiliate</fullName>
+                <default>false</default>
+                <label>affiliate</label>
+            </value>
+            <value>
+                <fullName>google</fullName>
+                <default>false</default>
+                <label>google</label>
+            </value>
+            <value>
+                <fullName>pogrammatic</fullName>
+                <default>false</default>
+                <label>pogrammatic</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

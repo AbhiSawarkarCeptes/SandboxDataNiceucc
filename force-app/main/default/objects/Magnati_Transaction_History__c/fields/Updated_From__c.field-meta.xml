@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Updated_From__c</fullName>
+    <label>Updated From</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Webhook</fullName>
+                <default>false</default>
+                <label>Webhook</label>
+            </value>
+            <value>
+                <fullName>Update Status</fullName>
+                <default>false</default>
+                <label>Update Status</label>
+            </value>
+            <value>
+                <fullName>Retry batch</fullName>
+                <default>false</default>
+                <label>Retry batch</label>
+            </value>
+            <value>
+                <fullName>Finalization API</fullName>
+                <default>false</default>
+                <label>Finalization API</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_For_Unable_to_Pay__c</fullName>
+    <label>Reason For Unable to Pay</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Payment Plan Extension</fullName>
+                <default>false</default>
+                <label>Payment Plan Extension</label>
+            </value>
+            <value>
+                <fullName>Resale</fullName>
+                <default>false</default>
+                <label>Resale</label>
+            </value>
+            <value>
+                <fullName>Waiver Requested</fullName>
+                <default>false</default>
+                <label>Waiver Requested</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

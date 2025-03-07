@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Walk_in_Source</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(AND(PRIORVALUE(Walk_in_Source__c) != null, ISCHANGED(Walk_in_Source__c)), AND(PRIORVALUE(Walk_in_Sub_Source__c) != null, ISCHANGED(Walk_in_Sub_Source__c)), AND(PRIORVALUE(Walk_in_Detailed_Sub_Source__c) != null, ISCHANGED(Walk_in_Detailed_Sub_Source__c))), OR($Profile.Name != &quot;Admin&quot;), $Profile.Name != &quot;System Administrator&quot;, $Profile.Name != &quot;Integration User&quot;)</errorConditionFormula>
+    <errorMessage>Your profile cannot change the Walk-in Source, Walk-in Sub Source, Walk-in Detailed Sub Source.</errorMessage>
+</ValidationRule>

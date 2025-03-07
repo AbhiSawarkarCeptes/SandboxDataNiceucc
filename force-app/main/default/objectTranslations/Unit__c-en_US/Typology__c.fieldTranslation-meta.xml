@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Typology --></label>
+    <name>Typology__c</name>
+    <picklistValues>
+        <masterLabel>1 BHK</masterLabel>
+        <translation><!-- 1 BHK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 BHK + study (large)</masterLabel>
+        <translation><!-- 1 BHK + study (large) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 BHK + study (small)</masterLabel>
+        <translation><!-- 1 BHK + study (small) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 RHK</masterLabel>
+        <translation><!-- 1 RHK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 BHK</masterLabel>
+        <translation><!-- 2 BHK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 BHK + study</masterLabel>
+        <translation><!-- 2 BHK + study --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 RHK</masterLabel>
+        <translation><!-- 2 RHK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2.5 BHK</masterLabel>
+        <translation><!-- 2.5 BHK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2DP</masterLabel>
+        <translation><!-- 2DP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 BHK</masterLabel>
+        <translation><!-- 3 BHK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 RHK</masterLabel>
+        <translation><!-- 3 RHK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3.5 BHK</masterLabel>
+        <translation><!-- 3.5 BHK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3DP</masterLabel>
+        <translation><!-- 3DP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4DP</masterLabel>
+        <translation><!-- 4DP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ST</masterLabel>
+        <translation><!-- ST --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

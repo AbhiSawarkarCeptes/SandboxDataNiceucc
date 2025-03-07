@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>N_Opportunity_Lightning_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>N_Opportunity_Lightning_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Mall Stand Lead</label>
+    <navType>Standard</navType>
+    <tabs>Mall_Stand_Lead_Capture</tabs>
+    <tabs>Mall_Stand_Roaster__c</tabs>
+    <tabs>Collection_Report__c</tabs>
+    <tabs>Client_Information__c</tabs>
+    <tabs>Lead_Capture__c</tabs>
+    <tabs>Broker_Meeting_Tracker__c</tabs>
+    <tabs>Advance_Amount__c</tabs>
+    <tabs>Channel_Partners__c</tabs>
+    <tabs>Resale_Process__c</tabs>
+    <tabs>Milestone_Ageing__c</tabs>
+    <tabs>VarDescription__c</tabs>
+    <tabs>Unit_Hold__c</tabs>
+    <tabs>SBTR__c</tabs>
+    <tabs>Sales_Meeting_Tracker__c</tabs>
+    <tabs>Payment_Plan__c</tabs>
+    <tabs>Visitor_Registration__c</tabs>
+    <tabs>Management_Approval_Request__c</tabs>
+    <tabs>Payment_Plan_Milestones__c</tabs>
+    <tabs>Customer_Offers__c</tabs>
+    <tabs>Case_link__c</tabs>
+    <tabs>Payment_Request__c</tabs>
+    <tabs>Inventory_Page</tabs>
+    <tabs>Broker_Empanelment_Form</tabs>
+    <tabs>Broker_Renewal__c</tabs>
+    <tabs>Bank_GL__c</tabs>
+    <tabs>BRC_PR_Allocation__c</tabs>
+    <tabs>Collector_Assignment__c</tabs>
+    <tabs>Campaign__c</tabs>
+    <tabs>API_Callout_Log__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Mall_Stand_Lead_UtilityBar</utilityBar>
+</CustomApplication>

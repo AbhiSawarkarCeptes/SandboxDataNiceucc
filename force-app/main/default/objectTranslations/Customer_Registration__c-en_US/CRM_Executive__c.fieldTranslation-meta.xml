@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CRM Executive --></label>
+    <name>CRM_Executive__c</name>
+    <relationshipLabel><!-- Site Visit Forms (CRM Executive) --></relationshipLabel>
+</CustomFieldTranslation>

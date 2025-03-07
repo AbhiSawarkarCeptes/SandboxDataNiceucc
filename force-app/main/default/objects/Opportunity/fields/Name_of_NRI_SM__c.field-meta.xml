@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_of_NRI_SM__c</fullName>
+    <label>Name of NRI SM</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chandrashekhar Arelly</fullName>
+                <default>false</default>
+                <label>Chandrashekhar Arelly</label>
+            </value>
+            <value>
+                <fullName>Forum Gandhi</fullName>
+                <default>false</default>
+                <label>Forum Gandhi</label>
+            </value>
+            <value>
+                <fullName>Kastrell Rawat</fullName>
+                <default>false</default>
+                <label>Kastrell Rawat</label>
+            </value>
+            <value>
+                <fullName>Maurya Krishna</fullName>
+                <default>false</default>
+                <label>Maurya Krishna</label>
+            </value>
+            <value>
+                <fullName>Sahaj Arora</fullName>
+                <default>false</default>
+                <label>Sahaj Arora</label>
+            </value>
+            <value>
+                <fullName>Sahil Bhatia</fullName>
+                <default>false</default>
+                <label>Sahil Bhatia</label>
+            </value>
+            <value>
+                <fullName>Vivek Venkateswar</fullName>
+                <default>false</default>
+                <label>Vivek Venkateswar</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

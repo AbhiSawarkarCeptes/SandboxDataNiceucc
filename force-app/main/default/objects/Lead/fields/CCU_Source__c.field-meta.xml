@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CCU_Source__c</fullName>
+    <label>Initial Inquiry Source (Manual)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>Bulk Upload</fullName>
+                <default>false</default>
+                <label>Bulk Upload</label>
+            </value>
+            <value>
+                <fullName>Customer Reference</fullName>
+                <default>false</default>
+                <label>Customer Reference</label>
+            </value>
+            <value>
+                <fullName>Digital</fullName>
+                <default>false</default>
+                <label>Digital</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Event</fullName>
+                <default>false</default>
+                <label>Event</label>
+            </value>
+            <value>
+                <fullName>Exhibition</fullName>
+                <default>false</default>
+                <label>Exhibition</label>
+            </value>
+            <value>
+                <fullName>Existing customer</fullName>
+                <default>false</default>
+                <label>Existing customer</label>
+            </value>
+            <value>
+                <fullName>Hoardings</fullName>
+                <default>false</default>
+                <label>Hoardings</label>
+            </value>
+            <value>
+                <fullName>Magazines</fullName>
+                <default>false</default>
+                <label>Magazines</label>
+            </value>
+            <value>
+                <fullName>Mailers</fullName>
+                <default>false</default>
+                <label>Mailers</label>
+            </value>
+            <value>
+                <fullName>Management Reference</fullName>
+                <default>false</default>
+                <label>Management Reference</label>
+            </value>
+            <value>
+                <fullName>Newspapers</fullName>
+                <default>false</default>
+                <label>Newspapers</label>
+            </value>
+            <value>
+                <fullName>Radio</fullName>
+                <default>false</default>
+                <label>Radio</label>
+            </value>
+            <value>
+                <fullName>Short Code</fullName>
+                <default>false</default>
+                <label>Short Code</label>
+            </value>
+            <value>
+                <fullName>Site Branding</fullName>
+                <default>false</default>
+                <label>Site Branding</label>
+            </value>
+            <value>
+                <fullName>SMS</fullName>
+                <default>false</default>
+                <label>SMS</label>
+            </value>
+            <value>
+                <fullName>Toll Free</fullName>
+                <default>false</default>
+                <label>Toll Free</label>
+            </value>
+            <value>
+                <fullName>TV</fullName>
+                <default>false</default>
+                <label>TV</label>
+            </value>
+            <value>
+                <fullName>TWG Staff</fullName>
+                <default>false</default>
+                <label>TWG Staff</label>
+            </value>
+            <value>
+                <fullName>TWG Website</fullName>
+                <default>false</default>
+                <label>TWG Website</label>
+            </value>
+            <value>
+                <fullName>Prospect Reference</fullName>
+                <default>false</default>
+                <label>Prospect Reference</label>
+            </value>
+            <value>
+                <fullName>Word of Mouth</fullName>
+                <default>false</default>
+                <label>Word of Mouth</label>
+            </value>
+            <value>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+                <label>Corporate</label>
+            </value>
+            <value>
+                <fullName>CPW</fullName>
+                <default>false</default>
+                <label>CPW</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

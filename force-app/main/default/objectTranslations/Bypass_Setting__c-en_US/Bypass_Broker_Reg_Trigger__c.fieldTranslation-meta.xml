@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Bypass Broker Reg Trigger --></label>
+    <name>Bypass_Broker_Reg_Trigger__c</name>
+</CustomFieldTranslation>

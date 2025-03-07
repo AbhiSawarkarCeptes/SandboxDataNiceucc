@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category_B_Arabic</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>B-6649,B-8105,B-6648,B-0493,B-2247</value>
+    </filters>
+    <label>Category B -  Arabic</label>
+    <sharedTo>
+        <group>NPS_Agents</group>
+    </sharedTo>
+</ListView>

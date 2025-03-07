@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Profile_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF($Profile.Name==&apos;Sales user profile&apos;,&apos;/apex/SM_S_InventoryMatrixview?oppid=&apos;, &apos;/apex/S_InventoryMatrixview?&apos;+Id+&apos;&amp;stageName=&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Profile Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

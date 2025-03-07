@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_For_Lost__c</fullName>
+    <label>Reason For Lost</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Non contactable</fullName>
+                <default>false</default>
+                <label>Non contactable</label>
+            </value>
+            <value>
+                <fullName>Not interested</fullName>
+                <default>false</default>
+                <label>Not interested</label>
+            </value>
+            <value>
+                <fullName>Location not prefered</fullName>
+                <default>false</default>
+                <label>Location not prefered</label>
+            </value>
+            <value>
+                <fullName>Project not in the preferred locality</fullName>
+                <default>false</default>
+                <label>Project not in the preferred locality</label>
+            </value>
+            <value>
+                <fullName>Booked with competition</fullName>
+                <default>false</default>
+                <label>Booked with competition</label>
+            </value>
+            <value>
+                <fullName>Duplicate Lead</fullName>
+                <default>false</default>
+                <label>Duplicate Lead</label>
+            </value>
+            <value>
+                <fullName>Did not confirm the visit</fullName>
+                <default>false</default>
+                <label>Did not confirm the visit</label>
+            </value>
+            <value>
+                <fullName>BrokerBroker Enquiry</fullName>
+                <default>false</default>
+                <label>BrokerBroker Enquiry</label>
+            </value>
+            <value>
+                <fullName>Competitor enquiry</fullName>
+                <default>false</default>
+                <label>Competitor enquiry</label>
+            </value>
+            <value>
+                <fullName>Already invested</fullName>
+                <default>false</default>
+                <label>Already invested</label>
+            </value>
+            <value>
+                <fullName>Desired configuration unavailable</fullName>
+                <default>false</default>
+                <label>Desired configuration unavailable</label>
+            </value>
+            <value>
+                <fullName>Choice of inventory not available</fullName>
+                <default>false</default>
+                <label>Choice of inventory not available</label>
+            </value>
+            <value>
+                <fullName>Customer interested in ready properties</fullName>
+                <default>false</default>
+                <label>Customer interested in ready properties</label>
+            </value>
+            <value>
+                <fullName>Apartment size small</fullName>
+                <default>false</default>
+                <label>Apartment size small</label>
+            </value>
+            <value>
+                <fullName>Low budget</fullName>
+                <default>false</default>
+                <label>Low budget</label>
+            </value>
+            <value>
+                <fullName>Out of budget</fullName>
+                <default>false</default>
+                <label>Out of budget</label>
+            </value>
+            <value>
+                <fullName>Timelines don’t match</fullName>
+                <default>false</default>
+                <label>Timelines don’t match</label>
+            </value>
+            <value>
+                <fullName>Require early possession</fullName>
+                <default>false</default>
+                <label>Require early possession</label>
+            </value>
+            <value>
+                <fullName>Require delayed possession</fullName>
+                <default>false</default>
+                <label>Require delayed possession</label>
+            </value>
+            <value>
+                <fullName>Invalid enquiry</fullName>
+                <default>false</default>
+                <label>Invalid enquiry</label>
+            </value>
+            <value>
+                <fullName>Wrong number</fullName>
+                <default>false</default>
+                <label>Wrong number</label>
+            </value>
+            <value>
+                <fullName>Did not enquire</fullName>
+                <default>false</default>
+                <label>Did not enquire</label>
+            </value>
+            <value>
+                <fullName>Enquired by mistake</fullName>
+                <default>false</default>
+                <label>Enquired by mistake</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Non contactable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Not interested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Location not prefered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Project not in the preferred locality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Booked with competition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Duplicate Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Did not confirm the visit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>BrokerBroker Enquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Competitor enquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Already invested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Desired configuration unavailable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Choice of inventory not available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Customer interested in ready properties</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Apartment size small</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Low budget</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Out of budget</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Timelines don’t match</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Require early possession</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Require delayed possession</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Invalid enquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Wrong number</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Did not enquire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Enquired by mistake</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Others</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

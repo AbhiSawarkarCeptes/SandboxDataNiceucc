@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Floor No. to print In Arabic --></label>
+    <name>Floor_No_to_print_In_Arabic__c</name>
+</CustomFieldTranslation>

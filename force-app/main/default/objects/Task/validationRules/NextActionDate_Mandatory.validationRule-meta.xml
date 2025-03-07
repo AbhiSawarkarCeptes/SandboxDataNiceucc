@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NextActionDate_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND ( 
+     (
+      (ISPICKVAL(Call_Attempt_Status__c , &apos;Follow up&apos;))  || 
+      (ISPICKVAL(Call_Attempt_Status__c , &apos;Open&apos;))
+     ),  
+      (
+       ISBLANK(TEXT( Next_Action_Date__c )) ||  
+       ISNULL( TEXT( Next_Action_Date__c )) 
+      )
+    )</errorConditionFormula>
+    <errorDisplayField>Next_Action_Date__c</errorDisplayField>
+    <errorMessage>Please Enter Next Action Date</errorMessage>
+</ValidationRule>

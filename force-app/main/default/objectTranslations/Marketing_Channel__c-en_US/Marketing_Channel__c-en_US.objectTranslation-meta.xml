@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Marketing Channel</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Marketing Channels</value>
+    </caseValues>
+    <layouts>
+        <layout>Marketing Channel Layout</layout>
+        <sections>
+            <label><!-- Budget and Costing --></label>
+            <section>Budget and Costing</section>
+        </sections>
+        <sections>
+            <label><!-- Count of Enquiry/Offer/Booking --></label>
+            <section>Count of Enquiry/Offer/Booking</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Budget Utilization Till Date can&apos;t be greater than Budget Allotted --></errorMessage>
+        <name>Budget_Utilization_Till_Date_not_exceed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Associated Marketing Plan Is Either Rejected or Pending For approval, Hence New Marketing Channel Can Not Be Created --></errorMessage>
+        <name>Marketing_Plan_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End Date can&apos;t be less than Start Date --></errorMessage>
+        <name>Start_date_less_than_End_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

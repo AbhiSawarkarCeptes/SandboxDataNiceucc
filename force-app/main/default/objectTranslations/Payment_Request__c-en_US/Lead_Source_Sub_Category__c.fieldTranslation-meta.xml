@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Lead Source – Sub Category --></label>
+    <name>Lead_Source_Sub_Category__c</name>
+    <picklistValues>
+        <masterLabel>Channel Partner (Broker)</masterLabel>
+        <translation><!-- Channel Partner (Broker) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporate Tie-ups</masterLabel>
+        <translation><!-- Corporate Tie-ups --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital</masterLabel>
+        <translation><!-- Digital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee</masterLabel>
+        <translation><!-- Employee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee referral</masterLabel>
+        <translation><!-- Employee referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Influencer</masterLabel>
+        <translation><!-- Influencer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loyalty</masterLabel>
+        <translation><!-- Loyalty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loyalty Customer reference</masterLabel>
+        <translation><!-- Loyalty Customer reference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mall Stands</masterLabel>
+        <translation><!-- Mall Stands --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Management referral</masterLabel>
+        <translation><!-- Management referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation><!-- Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referral</masterLabel>
+        <translation><!-- Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retention</masterLabel>
+        <translation><!-- Retention --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesperson initiative</masterLabel>
+        <translation><!-- Salesperson initiative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Connect</masterLabel>
+        <translation><!-- Sobha Connect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walk-in</masterLabel>
+        <translation><!-- Walk-in --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

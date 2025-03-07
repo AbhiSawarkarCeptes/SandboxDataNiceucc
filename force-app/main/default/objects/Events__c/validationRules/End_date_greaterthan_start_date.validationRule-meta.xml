@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_date_greaterthan_start_date</fullName>
+    <active>true</active>
+    <description>End date greaterthan start date</description>
+    <errorConditionFormula>AND( Bypass_Validation_Rule__c == false,  $User.Username != &apos;maria.lobo@sobharealty.com&apos;,$User.Username != &apos;shailesh.dsouza@sobharealty.com&apos;, Stay_End_Date__c &lt;= Stay_Start_Date__c )</errorConditionFormula>
+    <errorDisplayField>Stay_End_Date__c</errorDisplayField>
+    <errorMessage>End date should be greaterthan start date</errorMessage>
+</ValidationRule>

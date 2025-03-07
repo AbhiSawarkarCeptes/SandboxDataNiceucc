@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Receipt__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Receipt</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Receipt__c.Booking__c</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </filterItems>
+        <filterItems>
+            <field>Receipt__c.Other_Charges_Type__c</field>
+            <operation>notEqual</operation>
+            <value>DEWA Charges, NOC Charges, Admin Charges, Late Payment Charges, DEWA Charges, NOC Charges, Admin Charges, Late Payment Charges</value>
+        </filterItems>
+        <filterItems>
+            <field>Receipt__c.Mode__c</field>
+            <operation>notEqual</operation>
+            <value>Credit Note</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Receipt__c</referenceTo>
+    <relationshipLabel>Advance Payment Rebates</relationshipLabel>
+    <relationshipName>Advance_Payment_Rebates</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

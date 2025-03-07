@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Attempt_Status__c</fullName>
+    <label>Last Attempt Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Contact - Follow-up</fullName>
+                <default>false</default>
+                <label>No Contact - Follow-up</label>
+            </value>
+            <value>
+                <fullName>Sobha Landline - Contacted</fullName>
+                <default>false</default>
+                <label>Sobha Landline - Contacted</label>
+            </value>
+            <value>
+                <fullName>WhatsApp - Contacted</fullName>
+                <default>false</default>
+                <label>WhatsApp - Contacted</label>
+            </value>
+            <value>
+                <fullName>Email - Contacted</fullName>
+                <default>false</default>
+                <label>Email - Contacted</label>
+            </value>
+            <value>
+                <fullName>Official Mobile - Contacted</fullName>
+                <default>false</default>
+                <label>Official Mobile - Contacted</label>
+            </value>
+            <value>
+                <fullName>Official Landline - Contacted</fullName>
+                <default>false</default>
+                <label>Official Landline - Contacted</label>
+            </value>
+            <value>
+                <fullName>WhatsApp Not Available</fullName>
+                <default>false</default>
+                <label>WhatsApp Not Available</label>
+            </value>
+            <value>
+                <fullName>Actioned</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Actioned</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Contacted</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contacted</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Invalid Number</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invalid Number</label>
+            </value>
+            <value>
+                <fullName>Junk Lead</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Junk Lead</label>
+            </value>
+            <value>
+                <fullName>No Contact</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No Contact</label>
+            </value>
+            <value>
+                <fullName>Not Actioned</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not Actioned</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not Interested</label>
+            </value>
+            <value>
+                <fullName>Tele-Meeting Fixed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tele-Meeting Fixed</label>
+            </value>
+            <value>
+                <fullName>Visit Proposed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Visit Proposed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payload Section --></label>
+    <name>Payload_Section__c</name>
+    <picklistValues>
+        <masterLabel>Attribute</masterLabel>
+        <translation><!-- Attribute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Main</masterLabel>
+        <translation><!-- Main --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eventData</masterLabel>
+        <translation><!-- eventData --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

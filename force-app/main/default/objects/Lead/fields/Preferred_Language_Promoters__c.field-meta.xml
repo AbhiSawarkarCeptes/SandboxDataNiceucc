@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preferred_Language_Promoters__c</fullName>
+    <label>Preferred Language</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ar</fullName>
+                <default>false</default>
+                <label>ar</label>
+            </value>
+            <value>
+                <fullName>cn</fullName>
+                <default>false</default>
+                <label>cn</label>
+            </value>
+            <value>
+                <fullName>en</fullName>
+                <default>false</default>
+                <label>en</label>
+            </value>
+            <value>
+                <fullName>ru</fullName>
+                <default>false</default>
+                <label>ru</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

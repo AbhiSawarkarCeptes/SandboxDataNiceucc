@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blocked_email_addresses</fullName>
+    <active>true</active>
+    <description>Case cannot be accepted from this emails</description>
+    <errorConditionFormula>AND(
+OR(SuppliedEmail=&apos;dse@eumail.docusign.net&apos;,
+   CONTAINS(SuppliedEmail, &apos;sobharealty.com&apos;),
+   CONTAINS(SuppliedEmail, &apos;salesforce.com&apos;),
+   CONTAINS(SuppliedEmail, &apos;ashishmp369@yahoo.com&apos;)
+   ),
+			NOT(is_QMS_Case__c)
+)</errorConditionFormula>
+    <errorMessage>Case cannot be accepted from this email - (sobharealty.com &amp; docusign &amp; salesforce.com ) {!SuppliedEmail}</errorMessage>
+</ValidationRule>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Complaint</masterLabel>
+        <translation><!-- Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD Complaint</masterLabel>
+        <translation><!-- DLD Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Case</masterLabel>
+        <translation><!-- Legal Case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Notice</masterLabel>
+        <translation><!-- Legal Notice --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

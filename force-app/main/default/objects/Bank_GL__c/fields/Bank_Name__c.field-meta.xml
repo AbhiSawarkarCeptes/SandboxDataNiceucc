@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bank_Name__c</fullName>
+    <label>Bank Name (Flat Cost)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Emirates Islamic Bank</fullName>
+                <default>false</default>
+                <label>Emirates Islamic Bank</label>
+            </value>
+            <value>
+                <fullName>FAB (First Abu Dhabi Bank)</fullName>
+                <default>false</default>
+                <label>FAB (First Abu Dhabi Bank)</label>
+            </value>
+            <value>
+                <fullName>RAKBANK</fullName>
+                <default>false</default>
+                <label>RAKBANK</label>
+            </value>
+            <value>
+                <fullName>Emirates ND</fullName>
+                <default>false</default>
+                <label>Emirates ND</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

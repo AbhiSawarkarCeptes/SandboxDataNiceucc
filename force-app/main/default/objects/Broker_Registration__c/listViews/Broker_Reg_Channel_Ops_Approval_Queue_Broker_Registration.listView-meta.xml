@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Broker_Reg_Channel_Ops_Approval_Queue_Broker_Registration</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Broker Reg Channel Ops Approval Queue</label>
+    <queue>Broker_Reg_Channel_Ops_Approval_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

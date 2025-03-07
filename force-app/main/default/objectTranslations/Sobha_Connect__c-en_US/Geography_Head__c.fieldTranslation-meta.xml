@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Geography Head --></label>
+    <name>Geography_Head__c</name>
+    <relationshipLabel><!-- Sobha Connect (Geography Head) --></relationshipLabel>
+</CustomFieldTranslation>

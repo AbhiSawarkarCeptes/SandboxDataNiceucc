@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- City --></label>
+    <name>City__c</name>
+    <picklistValues>
+        <masterLabel>Agra</masterLabel>
+        <translation><!-- Agra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ahmedabad</masterLabel>
+        <translation><!-- Ahmedabad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ajmer</masterLabel>
+        <translation><!-- Ajmer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Akola</masterLabel>
+        <translation><!-- Akola --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aligarh</masterLabel>
+        <translation><!-- Aligarh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Allahabad</masterLabel>
+        <translation><!-- Allahabad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ambattu</masterLabel>
+        <translation><!-- Ambattu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amravati</masterLabel>
+        <translation><!-- Amravati --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amritsar</masterLabel>
+        <translation><!-- Amritsar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asansol</masterLabel>
+        <translation><!-- Asansol --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aurangabad</masterLabel>
+        <translation><!-- Aurangabad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bangalore</masterLabel>
+        <translation><!-- Bangalore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bareily</masterLabel>
+        <translation><!-- Bareily --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belgaum</masterLabel>
+        <translation><!-- Belgaum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bhavnagar</masterLabel>
+        <translation><!-- Bhavnagar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bhilai</masterLabel>
+        <translation><!-- Bhilai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bhiwandi</masterLabel>
+        <translation><!-- Bhiwandi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bhopal</masterLabel>
+        <translation><!-- Bhopal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bhubaneswar</masterLabel>
+        <translation><!-- Bhubaneswar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bikaner</masterLabel>
+        <translation><!-- Bikaner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chandigarh</masterLabel>
+        <translation><!-- Chandigarh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chennai</masterLabel>
+        <translation><!-- Chennai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coimbatore</masterLabel>
+        <translation><!-- Coimbatore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cuttack</masterLabel>
+        <translation><!-- Cuttack --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dehradun</masterLabel>
+        <translation><!-- Dehradun --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deir Al-Assad</masterLabel>
+        <translation><!-- Deir Al-Assad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delhi</masterLabel>
+        <translation><!-- Delhi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dhanbad</masterLabel>
+        <translation><!-- Dhanbad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Durgapur</masterLabel>
+        <translation><!-- Durgapur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Erode</masterLabel>
+        <translation><!-- Erode --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Faridabad</masterLabel>
+        <translation><!-- Faridabad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firozabad</masterLabel>
+        <translation><!-- Firozabad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ghaziabad</masterLabel>
+        <translation><!-- Ghaziabad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gorakhpur</masterLabel>
+        <translation><!-- Gorakhpur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gulbarga</masterLabel>
+        <translation><!-- Gulbarga --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guntur[25]</masterLabel>
+        <translation><!-- Guntur[25] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gurgaon</masterLabel>
+        <translation><!-- Gurgaon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guwahati</masterLabel>
+        <translation><!-- Guwahati --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gwalior</masterLabel>
+        <translation><!-- Gwalior --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Howrah</masterLabel>
+        <translation><!-- Howrah --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hubballi-Dharwad</masterLabel>
+        <translation><!-- Hubballi-Dharwad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hyderabad</masterLabel>
+        <translation><!-- Hyderabad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indore</masterLabel>
+        <translation><!-- Indore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jabalpur</masterLabel>
+        <translation><!-- Jabalpur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jaipur</masterLabel>
+        <translation><!-- Jaipur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jalandhar</masterLabel>
+        <translation><!-- Jalandhar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jammu</masterLabel>
+        <translation><!-- Jammu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jamnagar</masterLabel>
+        <translation><!-- Jamnagar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jamshedpur</masterLabel>
+        <translation><!-- Jamshedpur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jhansi</masterLabel>
+        <translation><!-- Jhansi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jodhpur</masterLabel>
+        <translation><!-- Jodhpur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kalyan-Dombivali</masterLabel>
+        <translation><!-- Kalyan-Dombivali --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kanpur</masterLabel>
+        <translation><!-- Kanpur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kochi</masterLabel>
+        <translation><!-- Kochi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kolhapur</masterLabel>
+        <translation><!-- Kolhapur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kolkata</masterLabel>
+        <translation><!-- Kolkata --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kota</masterLabel>
+        <translation><!-- Kota --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loni</masterLabel>
+        <translation><!-- Loni --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lucknow</masterLabel>
+        <translation><!-- Lucknow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ludhiana</masterLabel>
+        <translation><!-- Ludhiana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Madurai</masterLabel>
+        <translation><!-- Madurai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Malegaon</masterLabel>
+        <translation><!-- Malegaon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mangalore</masterLabel>
+        <translation><!-- Mangalore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meerut</masterLabel>
+        <translation><!-- Meerut --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mira-Bhayandar</masterLabel>
+        <translation><!-- Mira-Bhayandar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moradabad</masterLabel>
+        <translation><!-- Moradabad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mumbai</masterLabel>
+        <translation><!-- Mumbai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mysore</masterLabel>
+        <translation><!-- Mysore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nagpur</masterLabel>
+        <translation><!-- Nagpur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nanded</masterLabel>
+        <translation><!-- Nanded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nashik</masterLabel>
+        <translation><!-- Nashik --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Navi Mumbai</masterLabel>
+        <translation><!-- Navi Mumbai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nellore</masterLabel>
+        <translation><!-- Nellore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noida</masterLabel>
+        <translation><!-- Noida --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patna</masterLabel>
+        <translation><!-- Patna --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pimpri-Chinchwad</masterLabel>
+        <translation><!-- Pimpri-Chinchwad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pune</masterLabel>
+        <translation><!-- Pune --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raipur</masterLabel>
+        <translation><!-- Raipur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rajkot</masterLabel>
+        <translation><!-- Rajkot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ranchi</masterLabel>
+        <translation><!-- Ranchi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rourkela</masterLabel>
+        <translation><!-- Rourkela --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Saharanpur</masterLabel>
+        <translation><!-- Saharanpur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salem</masterLabel>
+        <translation><!-- Salem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sangli-Miraj &amp; Kupwad</masterLabel>
+        <translation><!-- Sangli-Miraj &amp; Kupwad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siliguri</masterLabel>
+        <translation><!-- Siliguri --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solapur</masterLabel>
+        <translation><!-- Solapur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Srinagar</masterLabel>
+        <translation><!-- Srinagar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surat</masterLabel>
+        <translation><!-- Surat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thane</masterLabel>
+        <translation><!-- Thane --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thiruvananthapuram</masterLabel>
+        <translation><!-- Thiruvananthapuram --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tiruchirappalli[23]</masterLabel>
+        <translation><!-- Tiruchirappalli[23] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tirunelveli</masterLabel>
+        <translation><!-- Tirunelveli --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tiruppur</masterLabel>
+        <translation><!-- Tiruppur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ujjain</masterLabel>
+        <translation><!-- Ujjain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ulhasnagar</masterLabel>
+        <translation><!-- Ulhasnagar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vadodara</masterLabel>
+        <translation><!-- Vadodara --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Varanasi</masterLabel>
+        <translation><!-- Varanasi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vasai-Virar</masterLabel>
+        <translation><!-- Vasai-Virar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vijayawada</masterLabel>
+        <translation><!-- Vijayawada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Villeurbanne</masterLabel>
+        <translation><!-- Villeurbanne --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visakhapatnam</masterLabel>
+        <translation><!-- Visakhapatnam --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warangal[24]</masterLabel>
+        <translation><!-- Warangal[24] --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

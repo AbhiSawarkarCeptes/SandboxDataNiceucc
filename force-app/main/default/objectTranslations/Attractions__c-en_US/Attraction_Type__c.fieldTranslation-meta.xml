@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Attraction Type --></label>
+    <name>Attraction_Type__c</name>
+    <picklistValues>
+        <masterLabel>Bus Station</masterLabel>
+        <translation><!-- Bus Station --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cinemas</masterLabel>
+        <translation><!-- Cinemas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinics</masterLabel>
+        <translation><!-- Clinics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community</masterLabel>
+        <translation><!-- Community --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ferris Wheel</masterLabel>
+        <translation><!-- Ferris Wheel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harbour</masterLabel>
+        <translation><!-- Harbour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospitals</masterLabel>
+        <translation><!-- Hospitals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ice Rink</masterLabel>
+        <translation><!-- Ice Rink --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Island</masterLabel>
+        <translation><!-- Island --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mall</masterLabel>
+        <translation><!-- Mall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Play Area</masterLabel>
+        <translation><!-- Play Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Residential</masterLabel>
+        <translation><!-- Residential --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>River</masterLabel>
+        <translation><!-- River --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schools</masterLabel>
+        <translation><!-- Schools --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shopping</masterLabel>
+        <translation><!-- Shopping --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

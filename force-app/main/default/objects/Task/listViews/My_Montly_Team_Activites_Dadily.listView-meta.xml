@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Montly_Team_Activites_Dadily</fullName>
+    <columns>Task_Type__c</columns>
+    <columns>WHAT_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>Communication_Type__c</columns>
+    <columns>Call_Status__c</columns>
+    <columns>Call_Attempt_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER.ALIAS</field>
+        <operation>equals</operation>
+        <value>crm,Alder,skesh,Ashok</value>
+    </filters>
+    <label>My Montly Team Activites(Dadily)</label>
+    <sharedTo>
+        <role>CRm_TL_2</role>
+    </sharedTo>
+</ListView>

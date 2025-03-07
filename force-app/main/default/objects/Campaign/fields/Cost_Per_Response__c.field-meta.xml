@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_Per_Response__c</fullName>
+    <formula>IF(AND( HierarchyNumberOfResponses &lt;&gt; 0, NOT(ISNULL(HierarchyNumberOfResponses))), HierarchyActualCost / HierarchyNumberOfResponses , 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Cost Per Response in Hierarchy</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

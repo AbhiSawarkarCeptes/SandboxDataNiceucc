@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Core_Premium_Charge_Percent_Temp_For_PS__c</fullName>
+    <formula>IF((Charge1Name__c = &apos;Core Premium&apos;) , Charge1Percentage__c, IF((Charge2Name__c = &apos;Core Premium&apos;) , Charge2Percentage__c, IF((Charge3Name__c = &apos;Core Premium&apos;) , Charge3Percentage__c, IF((Charge4Name__c = &apos;Core Premium&apos;) , Charge4Percentage__c, IF((Charge5Name__c = &apos;Core Premium&apos;) , Charge5Percentage__c, IF((Charge6Name__c = &apos;Core Premium&apos;) , Charge6Percentage__c, IF((Charge7Name__c = &apos;Core Premium&apos;) , Charge7Percentage__c, IF((Charge8Name__c = &apos;Core Premium&apos;) , Charge8Percentage__c, IF((Charge9Name__c = &apos;Core Premium&apos;) , Charge9Percentage__c, IF((Charge10Name__c = &apos;Core Premium&apos;) , Charge10Percentage__c, 0))))))))))</formula>
+    <label>Core Premium Charge Percent Temp For PS</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

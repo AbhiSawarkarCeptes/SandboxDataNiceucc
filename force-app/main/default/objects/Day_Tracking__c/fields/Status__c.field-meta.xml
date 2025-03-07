@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Contact - Follow-up</fullName>
+                <default>false</default>
+                <label>No Contact - Follow-up</label>
+            </value>
+            <value>
+                <fullName>Sobha Landline - Contacted</fullName>
+                <default>false</default>
+                <label>Sobha Landline - Contacted</label>
+            </value>
+            <value>
+                <fullName>WhatsApp - Contacted</fullName>
+                <default>false</default>
+                <label>WhatsApp - Contacted</label>
+            </value>
+            <value>
+                <fullName>Email - Contacted</fullName>
+                <default>false</default>
+                <label>Email - Contacted</label>
+            </value>
+            <value>
+                <fullName>Official Mobile - Contacted</fullName>
+                <default>false</default>
+                <label>Official Mobile - Contacted</label>
+            </value>
+            <value>
+                <fullName>Official Landline - Contacted</fullName>
+                <default>false</default>
+                <label>Official Landline - Contacted</label>
+            </value>
+            <value>
+                <fullName>WhatsApp Not Available</fullName>
+                <default>false</default>
+                <label>WhatsApp Not Available</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

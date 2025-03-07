@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Name__c</fullName>
+    <label>Job Name</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer Master</fullName>
+                <default>false</default>
+                <label>Customer Master</label>
+            </value>
+            <value>
+                <fullName>Project Code</fullName>
+                <default>false</default>
+                <label>Project Code</label>
+            </value>
+            <value>
+                <fullName>Unit Type</fullName>
+                <default>false</default>
+                <label>Unit Type</label>
+            </value>
+            <value>
+                <fullName>Phase Code</fullName>
+                <default>false</default>
+                <label>Phase Code</label>
+            </value>
+            <value>
+                <fullName>Project Code Unit</fullName>
+                <default>false</default>
+                <label>Project Code Unit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Created for payment plan editing --></help>
+    <label><!-- Milestone Type --></label>
+    <name>Milestone_Type_edit__c</name>
+    <picklistValues>
+        <masterLabel>Construction Linked</masterLabel>
+        <translation><!-- Construction Linked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date Linked</masterLabel>
+        <translation><!-- Date Linked --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

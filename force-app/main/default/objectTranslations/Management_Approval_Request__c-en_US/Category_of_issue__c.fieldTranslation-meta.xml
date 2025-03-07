@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category of issue --></label>
+    <name>Category_of_issue__c</name>
+    <picklistValues>
+        <masterLabel>Approval For Early Handover</masterLabel>
+        <translation><!-- Approval For Early Handover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approval For Waiver</masterLabel>
+        <translation><!-- Approval For Waiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approval for Movement of Funds/Reallocation</masterLabel>
+        <translation><!-- Approval for Movement of Funds/Reallocation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approval for Ownership Change</masterLabel>
+        <translation><!-- Approval for Ownership Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approval for Payment Plan Change</masterLabel>
+        <translation><!-- Approval for Payment Plan Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approval for Rebate/Discount</masterLabel>
+        <translation><!-- Approval for Rebate/Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approval for Refund/Reimbursement/Compensation</masterLabel>
+        <translation><!-- Approval for Refund/Reimbursement/Compensation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approval of Name Addition/Deletion</masterLabel>
+        <translation><!-- Approval of Name Addition/Deletion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation and Forfeiture</masterLabel>
+        <translation><!-- Cancellation and Forfeiture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation and Refund</masterLabel>
+        <translation><!-- Cancellation and Refund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation and Swap</masterLabel>
+        <translation><!-- Cancellation and Swap --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

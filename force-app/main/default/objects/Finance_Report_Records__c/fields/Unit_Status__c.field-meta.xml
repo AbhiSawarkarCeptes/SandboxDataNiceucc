@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(NOT(ISBLANK(Transfer_Amount__c)), TEXT(Transfer_Amount__r.Unit__r.Unit_Status__c),
+If(NOT(ISBLANK(Registration_Payment_Account__c)), TEXT(Registration_Payment_Account__r.Unit__r.Unit_Status__c),
+If(NOT(ISBLANK(Demand__c)), TEXT(Demand__r.Unit__r.Unit_Status__c),
+If(NOT(ISBLANK(Receipt__c)), TEXT(Receipt__r.Project_Unit__r.Unit_Status__c),
+&apos;&apos;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Unit Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

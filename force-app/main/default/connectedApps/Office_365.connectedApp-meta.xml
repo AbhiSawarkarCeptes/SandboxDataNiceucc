@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>neha.pandey@stetig.in</contactEmail>
+    <label>Office 365</label>
+    <samlConfig>
+        <acsUrl>https://login.microsoftonline.com/login.srf</acsUrl>
+        <encryptionType>AES_128</encryptionType>
+        <entityUrl>urn:federation:MicrosoftOnline</entityUrl>
+        <issuer>https://sobha-dubai.my.salesforce.com</issuer>
+        <samlNameIdFormat>Unspecified</samlNameIdFormat>
+        <samlSigningAlgoType>SHA1</samlSigningAlgoType>
+        <samlSubjectType>FederationId</samlSubjectType>
+    </samlConfig>
+    <startUrl>https://login.microsoftonline.com/PostToIDP.srf?msg=AuthnReq&amp;realm=sobharealty.my.salesforce.com&amp;wa=wsignin1.0&amp;wtrealm=urn:federation:MicrosoftOnline&amp;wctx=bk%3D1367916313%26LoginOptions%3D3</startUrl>
+</ConnectedApp>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clash_Case_Type__c</fullName>
+    <label>Clash Case Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CHANNEL PARTNER VS CHANNEL PARTNER</fullName>
+                <default>false</default>
+                <label>CHANNEL PARTNER VS CHANNEL PARTNER</label>
+            </value>
+            <value>
+                <fullName>CHANNEL PARTNER VS DIRECT</fullName>
+                <default>false</default>
+                <label>CHANNEL PARTNER VS DIRECT</label>
+            </value>
+            <value>
+                <fullName>DIRECT VS DIRECT</fullName>
+                <default>false</default>
+                <label>DIRECT VS DIRECT</label>
+            </value>
+            <value>
+                <fullName>VALIDATION</fullName>
+                <default>false</default>
+                <label>VALIDATION</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

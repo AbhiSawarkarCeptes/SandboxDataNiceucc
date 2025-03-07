@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>BSP To Update</masterLabel>
+        <translation><!-- BSP To Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation/Surrender</masterLabel>
+        <translation><!-- Cancellation/Surrender --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change Customer Status</masterLabel>
+        <translation><!-- Change Customer Status --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demand Reversal</masterLabel>
+        <translation><!-- Demand Reversal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interest Waiver</masterLabel>
+        <translation><!-- Interest Waiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Normal Credit Note</masterLabel>
+        <translation><!-- Normal Credit Note --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Plan Approval</masterLabel>
+        <translation><!-- Payment Plan Approval --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

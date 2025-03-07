@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Residential_Status1__c</fullName>
+    <label>Residential Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>UAE Resident</fullName>
+                <default>false</default>
+                <label>UAE Resident</label>
+            </value>
+            <value>
+                <fullName>Non – UAE Resident</fullName>
+                <default>false</default>
+                <label>Non – UAE Resident</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

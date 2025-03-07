@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Head_for_Reporting__c</fullName>
+    <externalId>false</externalId>
+    <formula>if ( CreatedBy.Email = &apos;natalie.deadman@sobha-me.com&apos; , &apos;London Office&apos;, 
+if ( Owner:User.Email = &apos;anna.voitiuk@sobha-me.com&apos; || Owner:User.Email = &apos;daniela.cosman@sobha-me.com&apos;, &apos;Others&apos;, Owner_Manager__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sales Head for Reporting</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QT_Keepout_Date_Not_Equal_to_Empty</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(ISNULL(QT_Keepout_Date__c), true,false  )</errorConditionFormula>
+    <errorMessage>QT Keepout Date is not yet Scheduled</errorMessage>
+</ValidationRule>

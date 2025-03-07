@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Booking Validation Status --></label>
+    <name>Booking_Validation_Status__c</name>
+    <picklistValues>
+        <masterLabel>New Booking</masterLabel>
+        <translation><!-- New Booking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Started</masterLabel>
+        <translation><!-- Not Started --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Verified and Approved</masterLabel>
+        <translation><!-- Verified and Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Verified and Rejected</masterLabel>
+        <translation><!-- Verified and Rejected --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

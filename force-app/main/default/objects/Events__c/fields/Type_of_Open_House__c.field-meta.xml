@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Open_House__c</fullName>
+    <label>Type of Open House</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Direct Open House</fullName>
+                <default>false</default>
+                <label>Direct Open House</label>
+            </value>
+            <value>
+                <fullName>Channel Partner Open House</fullName>
+                <default>false</default>
+                <label>Channel Partner Open House</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

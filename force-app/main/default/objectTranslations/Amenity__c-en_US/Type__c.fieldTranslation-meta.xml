@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Amenity Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>18 Hole Golf course</masterLabel>
+        <translation><!-- 18 Hole Golf course --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Barbeque Area</masterLabel>
+        <translation><!-- Barbeque Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Basketball Court</masterLabel>
+        <translation><!-- Basketball Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beachfront</masterLabel>
+        <translation><!-- Beachfront --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Club House</masterLabel>
+        <translation><!-- Club House --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Daycare Centre</masterLabel>
+        <translation><!-- Daycare Centre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Event Space</masterLabel>
+        <translation><!-- Event Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GYM</masterLabel>
+        <translation><!-- GYM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Game Room</masterLabel>
+        <translation><!-- Game Room --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garden</masterLabel>
+        <translation><!-- Garden --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health Club</masterLabel>
+        <translation><!-- Health Club --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indoor &amp; Outdoor Gym</masterLabel>
+        <translation><!-- Indoor &amp; Outdoor Gym --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indoor Game room</masterLabel>
+        <translation><!-- Indoor Game room --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infinity Edge pool</masterLabel>
+        <translation><!-- Infinity Edge pool --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infinity Pool</masterLabel>
+        <translation><!-- Infinity Pool --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jacuzzi</masterLabel>
+        <translation><!-- Jacuzzi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kids Play Area</masterLabel>
+        <translation><!-- Kids Play Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kids Swimming Pool</masterLabel>
+        <translation><!-- Kids Swimming Pool --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lagoons</masterLabel>
+        <translation><!-- Lagoons --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Library &amp; Lounge</masterLabel>
+        <translation><!-- Library &amp; Lounge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Library Reading Room</masterLabel>
+        <translation><!-- Library Reading Room --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lounge</masterLabel>
+        <translation><!-- Lounge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mall</masterLabel>
+        <translation><!-- Mall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Music Room</masterLabel>
+        <translation><!-- Music Room --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open Amphitheater</masterLabel>
+        <translation><!-- Open Amphitheater --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outdoor Cinema</masterLabel>
+        <translation><!-- Outdoor Cinema --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outdoor Games Area</masterLabel>
+        <translation><!-- Outdoor Games Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paddle</masterLabel>
+        <translation><!-- Paddle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pentanque Boules Lawn</masterLabel>
+        <translation><!-- Pentanque Boules Lawn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pet parks</masterLabel>
+        <translation><!-- Pet parks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail Spaces</masterLabel>
+        <translation><!-- Retail Spaces --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rooftop Terrace</masterLabel>
+        <translation><!-- Rooftop Terrace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sauna</masterLabel>
+        <translation><!-- Sauna --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>School</masterLabel>
+        <translation><!-- School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensory Garden</masterLabel>
+        <translation><!-- Sensory Garden --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sky Deck</masterLabel>
+        <translation><!-- Sky Deck --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sky Garden</masterLabel>
+        <translation><!-- Sky Garden --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spin Studio</masterLabel>
+        <translation><!-- Spin Studio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sports Court</masterLabel>
+        <translation><!-- Sports Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steam</masterLabel>
+        <translation><!-- Steam --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steam and Sauna</masterLabel>
+        <translation><!-- Steam and Sauna --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sun Lounger</masterLabel>
+        <translation><!-- Sun Lounger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swimming Pool</masterLabel>
+        <translation><!-- Swimming Pool --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swimming Pool Cabana</masterLabel>
+        <translation><!-- Swimming Pool Cabana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tai Chi Terrace</masterLabel>
+        <translation><!-- Tai Chi Terrace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tennis</masterLabel>
+        <translation><!-- Tennis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terrace</masterLabel>
+        <translation><!-- Terrace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Theatre</masterLabel>
+        <translation><!-- Theatre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walking &amp; Jogging track</masterLabel>
+        <translation><!-- Walking &amp; Jogging track --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walking and Jogging Track</masterLabel>
+        <translation><!-- Walking and Jogging Track --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yoga Zone</masterLabel>
+        <translation><!-- Yoga Zone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zen Garden</masterLabel>
+        <translation><!-- Zen Garden --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Content Type --></label>
+    <name>CLE__Content_Type__c</name>
+    <picklistValues>
+        <masterLabel>audio</masterLabel>
+        <translation><!-- audio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>button</masterLabel>
+        <translation><!-- button --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>document</masterLabel>
+        <translation><!-- document --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>image</masterLabel>
+        <translation><!-- image --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>location</masterLabel>
+        <translation><!-- location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sticker</masterLabel>
+        <translation><!-- sticker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>template</masterLabel>
+        <translation><!-- template --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>text</masterLabel>
+        <translation><!-- text --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>video</masterLabel>
+        <translation><!-- video --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>voice</masterLabel>
+        <translation><!-- voice --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

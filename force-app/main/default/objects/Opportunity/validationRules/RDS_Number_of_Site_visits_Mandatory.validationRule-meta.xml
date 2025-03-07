@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RDS_Number_of_Site_visits_Mandatory</fullName>
+    <active>true</active>
+    <description>Fire when Stage value is revisit done.</description>
+    <errorConditionFormula>IF(ISPICKVAL(StageName, &apos;Revisit Done&apos;), 
+IF(ISPICKVAL(Number_of_Site_Visits__c, &apos;&apos;), true, false), false)</errorConditionFormula>
+    <errorDisplayField>Number_of_Site_Visits__c</errorDisplayField>
+    <errorMessage>Select a value for Number of Visit Done</errorMessage>
+</ValidationRule>

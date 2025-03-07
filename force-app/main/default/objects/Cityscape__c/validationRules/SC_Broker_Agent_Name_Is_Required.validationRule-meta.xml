@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_Broker_Agent_Name_Is_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Sobha_Connect__c ==  $Label.Temp_Sobha_Connect_ID , SC_Broker_Agent_Name__c == null)</errorConditionFormula>
+    <errorDisplayField>SC_Broker_Agent_Name__c</errorDisplayField>
+    <errorMessage>SC Broker Agent Name is Required</errorMessage>
+</ValidationRule>

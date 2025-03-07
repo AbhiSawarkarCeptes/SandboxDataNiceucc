@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Current Residence Status --></label>
+    <name>Rent_Current_Residence__c</name>
+    <picklistValues>
+        <masterLabel>Hotel</masterLabel>
+        <translation><!-- Hotel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Sure</masterLabel>
+        <translation><!-- Not Sure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Own apartment</masterLabel>
+        <translation><!-- Own apartment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renting</masterLabel>
+        <translation><!-- Renting --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

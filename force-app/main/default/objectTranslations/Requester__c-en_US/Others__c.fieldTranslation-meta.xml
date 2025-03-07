@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Others --></label>
+    <name>Others__c</name>
+    <picklistValues>
+        <masterLabel>Admin Charges</masterLabel>
+        <translation><!-- Admin Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation Charges</masterLabel>
+        <translation><!-- Cancellation Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheque Dishonoured Charges</masterLabel>
+        <translation><!-- Cheque Dishonoured Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEWA Charges</masterLabel>
+        <translation><!-- DEWA Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Payment Charges</masterLabel>
+        <translation><!-- Late Payment Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC Charges</masterLabel>
+        <translation><!-- NOC Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upkeep/refurbishment Charges</masterLabel>
+        <translation><!-- Upkeep/refurbishment Charges --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

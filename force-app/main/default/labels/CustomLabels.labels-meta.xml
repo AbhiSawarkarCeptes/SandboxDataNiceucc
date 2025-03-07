@@ -1,0 +1,2128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AbdulRahmanEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AbdulRahmanEmail</shortDescription>
+        <value>sfc.abdul@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>AccountExecutiveRefundDashboardUrl</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountExecutiveRefundDashboardUrl</shortDescription>
+        <value>https://sobharealty--devcs.sandbox.lightning.force.com/lightning/n/Account_Executive_Refund_Dashboard?0.source=alohaHeader</value>
+    </labels>
+    <labels>
+        <fullName>AccountManagerDashboardUrl</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountManagerDashboardUrl</shortDescription>
+        <value>https://sobharealty--devcs.sandbox.lightning.force.com/lightning/n/Account_Manager_Refund_Dashboard?0.source=alohaHeader</value>
+    </labels>
+    <labels>
+        <fullName>AddSecondaryModePreventionMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AddSecondaryModePreventionMessage</shortDescription>
+        <value>Cannot create PR as another secondary mode PR existing for this record.</value>
+    </labels>
+    <labels>
+        <fullName>Ali_Shaikh_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ali_Shaikh_Email</shortDescription>
+        <value>ali.shaikh@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>Anuj_User_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Anuj_User_Id</shortDescription>
+        <value>0057S000000tLHs</value>
+    </labels>
+    <labels>
+        <fullName>Ashish_Parakh_User_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ashish Parakh User Id</shortDescription>
+        <value>0051t000002fYH0AAM</value>
+    </labels>
+    <labels>
+        <fullName>AsyncLeadCreation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AsyncLeadCreation</shortDescription>
+        <value>true</value>
+    </labels>
+    <labels>
+        <fullName>AuditApprovalEmals_BrokerReg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AuditApprovalEmals_BrokerReg</shortDescription>
+        <value>amit.mishra@sobharealty.com.Invalid;padmesh.rajan.c@sobharealty.com.Invalid; ajay.misal+audit@ceptes.com</value>
+    </labels>
+    <labels>
+        <fullName>AuditRefundDashboard</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AuditRefundDashboard</shortDescription>
+        <value>https://sobharealty--devcs.sandbox.lightning.force.com/lightning/n/Audit_Refund_Dashboard?0.source=alohaHeader</value>
+    </labels>
+    <labels>
+        <fullName>Audit_Head_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Audit Head Email</shortDescription>
+        <value>hardik.doshi@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>Audit_Manager_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Audit Manager Email</shortDescription>
+        <value>suraj.surendran@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>Audit_Team_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Audit Team Email</shortDescription>
+        <value>hiranmai.venna.c@sobharealty.com</value>
+    </labels>
+    <labels>
+        <fullName>AuthorisedrepresentativeSOBHAforBrokerDocusign</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AuthorisedrepresentativeSOBHAforBrokerDocusign</shortDescription>
+        <value>divyansh@cloudsteer.com</value>
+    </labels>
+    <labels>
+        <fullName>Auto_Cancel_Booking_Paid_Percentage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Auto Cancel Booking Paid Percentage</shortDescription>
+        <value>30</value>
+    </labels>
+    <labels>
+        <fullName>Auto_Cancellation_Booking</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Auto Cancellation Booking</shortDescription>
+        <value>14</value>
+    </labels>
+    <labels>
+        <fullName>Automated_Case_User_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Automated Case User ID</shortDescription>
+        <value>0057S000003DVmkQAG</value>
+    </labels>
+    <labels>
+        <fullName>Avin_Anil_UserID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Avin Anil UserID</shortDescription>
+        <value>0057S000003MSkRQAW</value>
+    </labels>
+    <labels>
+        <fullName>BCC_for_Creek_Vista</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BCC for Creek Vista</shortDescription>
+        <value>Sobha Creek Vistas Reserve DM Completion Certificate</value>
+    </labels>
+    <labels>
+        <fullName>BRC_PR_Mandatory_Enabled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BRC_PR_Mandatory_Enabled</shortDescription>
+        <value>false</value>
+    </labels>
+    <labels>
+        <fullName>BRF_site_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BRF site Link</shortDescription>
+        <value>https://sobharealty.my.site.com/newbrokeraccount1/s/</value>
+    </labels>
+    <labels>
+        <fullName>BR_no_reply_email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BR No Reply Email</shortDescription>
+        <value>noreply@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>BhavishyaMuradiaEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BhavishyaMuradiaEmail</shortDescription>
+        <value>bhavishya.muradia@ceptes.com</value>
+    </labels>
+    <labels>
+        <fullName>BookingDefaultCRMDocumentController</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BookingDefaultCRMDocumentController</shortDescription>
+        <value>005TX000002bhCvYAI</value>
+    </labels>
+    <labels>
+        <fullName>BookingDefaultCRMSellerRepresentative</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BookingDefaultCRMSellerRepresentative</shortDescription>
+        <value>005TX000002bhCvYAI</value>
+    </labels>
+    <labels>
+        <fullName>BookingNameTemp</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BookingNameTemp</shortDescription>
+        <value>&apos;B-0000&apos;</value>
+    </labels>
+    <labels>
+        <fullName>BookingPccNotificationToAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BookingPccNotificationToAddress</shortDescription>
+        <value>ryan.fernandes@sobharealty.com.Invalid,sadaf.kazi@sobharealty.com.Invalid,betsy.george@sobharealty.com.Invalid,anirudh.sharma@sobharealty.com.Invalid,rohan.nair@sobharealty.com.Invalid,melvin.job@sobharealty.com.Invalid,solomon.george@sobharealty.com.Invalid,julius.noronha@sobharealty.com.Invalid,zafaryab.haider@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>BookingSiniyaCRMSellerRepresentative</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BookingSiniyaCRMSellerRepresentative</shortDescription>
+        <value>0057S000000tXNdQAM</value>
+    </labels>
+    <labels>
+        <fullName>BookingTerminationOrgEmailAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BookingTerminationOrgEmailAddress</shortDescription>
+        <value>collections@sobharealty.com.invalid</value>
+    </labels>
+    <labels>
+        <fullName>BookingTerminationToCCAddressValue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BookingTerminationToCCAddressValue</shortDescription>
+        <value>ajay.misal@ceptes.com</value>
+    </labels>
+    <labels>
+        <fullName>Booking_Terms_and_Conditions</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Booking Terms and Conditions</shortDescription>
+        <value>VIP Booking: Not to do any communication with respect to any transactions, spa, pre-registrations follow ups, collections, loyalty marketing and sales.</value>
+    </labels>
+    <labels>
+        <fullName>Broker_Account_Audit_Head</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Broker Account Audit Head</shortDescription>
+        <value>gouravgour@cloudsteer.com</value>
+    </labels>
+    <labels>
+        <fullName>Broker_Account_Audit_Manager</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Broker Account Audit Manager</shortDescription>
+        <value>Sushil@cloudsteer.com</value>
+    </labels>
+    <labels>
+        <fullName>Broker_Registration_Link_Expiry_Days</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Broker Registration Link Expiry Days</shortDescription>
+        <value>3</value>
+    </labels>
+    <labels>
+        <fullName>Broker_Registration_Link_Expiry_Hours</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Broker Registration Link Expiry Hours</shortDescription>
+        <value>72</value>
+    </labels>
+    <labels>
+        <fullName>Broker_Registration_Site_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Broker Registration Site URL</shortDescription>
+        <value>https://sobharealty--niceucc.sandbox.my.site.com/cpregistration/s/</value>
+    </labels>
+    <labels>
+        <fullName>Bulk_Fee_Clearance_Utility_Threshold</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bulk Fee Clearance Utility Threshold</shortDescription>
+        <value>24</value>
+    </labels>
+    <labels>
+        <fullName>Bulk_Receipt_Clearance_Limit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bulk Receipt  Clearance Limit</shortDescription>
+        <value>50</value>
+    </labels>
+    <labels>
+        <fullName>Bypass_BrokerTrigger</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bypass_BrokerTrigger</shortDescription>
+        <value>false</value>
+    </labels>
+    <labels>
+        <fullName>CHRM_Ops_Email_Broker_Registration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CHRM Ops Email - Broker Registration</shortDescription>
+        <value>krishna.kishore.c@sobharealty.com</value>
+    </labels>
+    <labels>
+        <fullName>CRMDashboardURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRMDashboardURL</shortDescription>
+        <value>https://sobharealty--devcs.sandbox.lightning.force.com/lightning/n/Termination_CRM_Dashboard_LWC?0.source=alohaHeader</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Document_Controller</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM Document Controller</shortDescription>
+        <value>0057S000003EIVZQA4</value>
+    </labels>
+    <labels>
+        <fullName>CVR_PS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CVR_PS</shortDescription>
+        <value>Creek Vista Reserve,Sobha Creek vistas Reserve</value>
+    </labels>
+    <labels>
+        <fullName>Case_Escalation_Recipient_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Escalation Recipient Id</shortDescription>
+        <value>chaitali.chaudhari@ceptes.onmicrosoft.com</value>
+    </labels>
+    <labels>
+        <fullName>ChiefAuditOfficerEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ChiefAuditOfficerEmail</shortDescription>
+        <value>bala.mohan@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>ClashCaseFeatureFlag</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ClashCaseFeatureFlag</shortDescription>
+        <value>true</value>
+    </labels>
+    <labels>
+        <fullName>Collateral_Approval_From_CHRM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Collateral Approval From CHRM</shortDescription>
+        <value>Collateral_Approval_V10</value>
+    </labels>
+    <labels>
+        <fullName>Collateral_Broker</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Collateral Broker</shortDescription>
+        <value>Collateral_Approval_V10</value>
+    </labels>
+    <labels>
+        <fullName>CollectionTeamEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CollectionTeamEmail</shortDescription>
+        <value>collectionteam@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>Collection_Broadcast_Template</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Collection Broadcast Template</shortDescription>
+        <value>00XTX000001FW8g2AG</value>
+    </labels>
+    <labels>
+        <fullName>Collection_Siniya_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Collection Siniya Email</shortDescription>
+        <value>test@gmail.com</value>
+    </labels>
+    <labels>
+        <fullName>Construction_Commencement_Penalty_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Construction Commencement Penalty Error</shortDescription>
+        <value>Construction Commencement Penalties can&apos;t be taken in Cash.</value>
+    </labels>
+    <labels>
+        <fullName>Contact_From_Address_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact From Address Email</shortDescription>
+        <value>Sobha Realty Helpdesk</value>
+    </labels>
+    <labels>
+        <fullName>CrmDocumentController</fullName>
+        <categories>CRM_Document_Controller__c</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CrmDocumentController</shortDescription>
+        <value>divyansh@cloudsteer.com</value>
+    </labels>
+    <labels>
+        <fullName>Customer_Verification_Question_Count</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Verification Question Count</shortDescription>
+        <value>3</value>
+    </labels>
+    <labels>
+        <fullName>DLD_Charge</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DLD Charge</shortDescription>
+        <value>1160</value>
+    </labels>
+    <labels>
+        <fullName>Demand_TotalAmountAccount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Demand TotalAmountAccount</shortDescription>
+        <value>a182o00001KVkQPAA1</value>
+    </labels>
+    <labels>
+        <fullName>Demand_TotalAmountWithTaxAccount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Demand TotalAmountWithTaxAccount</shortDescription>
+        <value>a182o00001KVkQPAA1</value>
+    </labels>
+    <labels>
+        <fullName>Did_You_Know</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Did You Know</shortDescription>
+        <value>069TX000002f5YtYAI</value>
+    </labels>
+    <labels>
+        <fullName>Direct_Lead_Sources</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Direct_Lead_Sources</shortDescription>
+        <value>Digital</value>
+    </labels>
+    <labels>
+        <fullName>DocuSign_SPA_Template_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DocuSign SPA Template Id</shortDescription>
+        <value>3bf46389-17e3-4317-be0a-671accb9982a</value>
+    </labels>
+    <labels>
+        <fullName>DocumentExpiryDays</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DocumentExpiryDays</shortDescription>
+        <value>15</value>
+    </labels>
+    <labels>
+        <fullName>DocumentExpiryNotifier</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DocumentExpiryNotifier</shortDescription>
+        <value>salesops@sobharealty.com.invalid,helpdesk@sobharealty.com.invalid</value>
+    </labels>
+    <labels>
+        <fullName>DocusignAuditEmail</fullName>
+        <categories>Docusign_Audit_Email__c</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DocusignAuditEmail</shortDescription>
+        <value>divyansh@cloudsteer.com</value>
+    </labels>
+    <labels>
+        <fullName>DocusignAuditTeamEmail</fullName>
+        <categories>mohan.shanmugam@sobharealty.com</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DocusignAuditTeamEmail</shortDescription>
+        <value>mohan.shanmugam@sobharealty.com</value>
+    </labels>
+    <labels>
+        <fullName>DocusignCRMAssuranceEmail</fullName>
+        <categories>DocuSign</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DocusignCRMAssuranceEmail</shortDescription>
+        <value>chaitali.chaudhari@ceptes.onmicrosoft.com</value>
+    </labels>
+    <labels>
+        <fullName>DocusignCRMAssuranceName</fullName>
+        <categories>DocuSign</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DocusignCRMAssuranceName</shortDescription>
+        <value>CRM Assurance Team</value>
+    </labels>
+    <labels>
+        <fullName>DocusignSalesOperationsEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DocusignSalesOperationsEmail</shortDescription>
+        <value>chaitali.chaudhari@ceptes.onmicrosoft.com</value>
+    </labels>
+    <labels>
+        <fullName>DocusignSalesOpsEmail</fullName>
+        <categories>Docusign_Sales_Ops_Email__c</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DocusignSalesOpsEmail</shortDescription>
+        <value>divyansh@cloudsteer.com</value>
+    </labels>
+    <labels>
+        <fullName>Docusign_Admin</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Docusign Admin</shortDescription>
+        <value>helpdesk@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>Docusign_Template_id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Docusign Template id</shortDescription>
+        <value>a2e73c7d-007f-4514-9cc7-393fea3d0455</value>
+    </labels>
+    <labels>
+        <fullName>Docusign_Void_Switch</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Docusign Void Switch</shortDescription>
+        <value>ON</value>
+    </labels>
+    <labels>
+        <fullName>Dummy_Booking_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dummy Booking Name</shortDescription>
+        <value>B-27094</value>
+    </labels>
+    <labels>
+        <fullName>EmailValidationAPIKey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailValidationAPIKey</shortDescription>
+        <value>638cee72da574a52bd49a7e125f8bec2</value>
+    </labels>
+    <labels>
+        <fullName>Email_Address_For_BCC_ComposeEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BCC Address for ComposeEmail VF Page</shortDescription>
+        <value>test1@cloudsteer.com, test2@cloudsteer.com, test3@cloudsteer.com</value>
+    </labels>
+    <labels>
+        <fullName>Email_Address_For_CC_ComposeEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CC Address for ComposeEmail VF Page</shortDescription>
+        <value>test1@cloudsteer.com, test2@cloudsteer.com, test3@cloudsteer.com</value>
+    </labels>
+    <labels>
+        <fullName>Email_Id_For_Receipt_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Id For Receipt Error</shortDescription>
+        <value>mohan.shanmugam@sobharealty.com.Invalid;sfc.abdul@sobharealty.com.Invalid;sfnotifications@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>End_Date_Error_Message</fullName>
+        <categories>Validation msg</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>End Date Error Message</shortDescription>
+        <value>You can not create Lead capture for this event, as this event is already completed</value>
+    </labels>
+    <labels>
+        <fullName>Enquiry_Validation_For_Sales_Profile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enquiry Validation For Sales Profile</shortDescription>
+        <value>Sales Profile-PS</value>
+    </labels>
+    <labels>
+        <fullName>EscrowAccountMapError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EscrowAccountMapError</shortDescription>
+        <value>As ESCROW Account not mapped for selected Unit, Please select Corporate Account.</value>
+    </labels>
+    <labels>
+        <fullName>EsealEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EsealEmail</shortDescription>
+        <value>chaitali.chaudhari@ceptes.onmicrosoft.com</value>
+    </labels>
+    <labels>
+        <fullName>EsealHandoverTemplateId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EsealHandoverTemplateId</shortDescription>
+        <value>3f18d32f-40ae-4960-9f23-b920d5a6596f</value>
+    </labels>
+    <labels>
+        <fullName>EsealTemplateId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EsealTemplateId</shortDescription>
+        <value>e3da45b7-1575-4b39-944b-c57f20c9131c</value>
+    </labels>
+    <labels>
+        <fullName>Event_AVP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Event AVP</shortDescription>
+        <value>0051t000002gP0PAAU</value>
+    </labels>
+    <labels>
+        <fullName>Event_Approved_Status</fullName>
+        <categories>Event Picklist value</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Event Approved Status</shortDescription>
+        <value>The event has been approved by Ashish Parakh</value>
+    </labels>
+    <labels>
+        <fullName>Event_Invoice_Approval_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Event_Invoice_Approval_Email</shortDescription>
+        <value>mary.gonzales@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>Event_Share_for_Digital_show</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Event Share for Digital show</shortDescription>
+        <value>avin.anil@sobharealty.com.Invalid,ashish.parakh@sobharealty.com.Invalid,manish.goenka@sobharealty.com.Invalid,khodr.elmasri@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>Event_Share_for_Non_Digital_show</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Event Share for Non Digital show</shortDescription>
+        <value>avin.anil@sobharealty.com.Invalid,ashish.parakh@sobharealty.com.Invalid,khodr.elmasri@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>Event_Validation_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Event_Validation_Error</shortDescription>
+        <value>An event cannot be scheduled within 14 days of another event in the same city.</value>
+    </labels>
+    <labels>
+        <fullName>ExcemtionTower</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExcemtionTower</shortDescription>
+        <value>Novalue</value>
+    </labels>
+    <labels>
+        <fullName>Excluded_Project</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Excluded Project</shortDescription>
+        <value>Sobha Siniya Island</value>
+    </labels>
+    <labels>
+        <fullName>Francis_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Francis Email</shortDescription>
+        <value>tejaswini.dharanikota@ceptes.onmicrosoft.com</value>
+    </labels>
+    <labels>
+        <fullName>General_Instructions</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General Instructions</shortDescription>
+        <value>&lt;p&gt;Website Payment Link--- 30 mins --- Payment link once generated and sent to client by raising PR will be active for 30 mins, you can raise multiple PRs depending on the client&apos;s daily card limit.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;Multimode PR --- 3 Hrs--- For Multimode PRs - 2 PRs should be completed to book the unit. Second PR should be done with in 3hrs failing which the unit will be released back to the inventory/daily availability.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;New sale submission--24 Hrs---- Once the single or multimode PR is completed,new sale should be submitted within 24 hrs else the unit will be released back to inventory/daily availability.(same unit cannot be booked by the same SD and his team for the next 24 hrs).&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;Booking form signing ----7 days----After the new sale is done,booking form should be signed within 7 days else the unit will be cancelled and released back to the inventory/daily availability. {same unit cannot be booked by the same SD and his team for the next</value>
+    </labels>
+    <labels>
+        <fullName>Gm_Hospitality_User_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Gm Hospitality User ID</shortDescription>
+        <value>0057S0000038lHrQAI</value>
+    </labels>
+    <labels>
+        <fullName>HandOverNoticeCCList</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HandOverNoticeCCList</shortDescription>
+        <value>helpdesk@sobharealty.com.Invalid,sfnotifications@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>HandoverContactId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HandoverContactId</shortDescription>
+        <value>0037S00000KJpsy</value>
+    </labels>
+    <labels>
+        <fullName>IncomeChargeDue_AmountType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IncomeChargeDue_AmountType</shortDescription>
+        <value>DLD Fees</value>
+    </labels>
+    <labels>
+        <fullName>IncomeChargeReceived_AmountType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IncomeChargeReceived_AmountType</shortDescription>
+        <value>DLD Fees,Mortgage,</value>
+    </labels>
+    <labels>
+        <fullName>Know_Your_Journey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Know Your Journey</shortDescription>
+        <value>069TX000005O4kPYAS</value>
+    </labels>
+    <labels>
+        <fullName>LP_Threshold_Overdue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LP Threshold Overdue</shortDescription>
+        <value>10000</value>
+    </labels>
+    <labels>
+        <fullName>LPcalculationDays</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LPcalculationDays</shortDescription>
+        <value>15,30, 45,60 ,90,120,180</value>
+    </labels>
+    <labels>
+        <fullName>Late_Payment_Dynamic_Query</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Late Payment Dynamic Query</shortDescription>
+        <value>null</value>
+    </labels>
+    <labels>
+        <fullName>LeadIdleDaysToNotify</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadIdleDaysToNotify</shortDescription>
+        <value>10</value>
+    </labels>
+    <labels>
+        <fullName>LeadNurturingFeatureFlag</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadNurturingFeatureFlag</shortDescription>
+        <value>true</value>
+    </labels>
+    <labels>
+        <fullName>LeadOwnerLogicFlg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadOwnerLogicFlg</shortDescription>
+        <value>False</value>
+    </labels>
+    <labels>
+        <fullName>LeadTesting</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadTesting</shortDescription>
+        <value>2022-10-15 19:59:59</value>
+    </labels>
+    <labels>
+        <fullName>LeemaDhalEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeemaDhalEmail</shortDescription>
+        <value>leema.dhal@ceptes.com</value>
+    </labels>
+    <labels>
+        <fullName>Logic_statement</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Logic statement</shortDescription>
+        <value>OPA - Project Statements</value>
+    </labels>
+    <labels>
+        <fullName>Logic_statement_for_OPA</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Logic_statement_for_OPA</shortDescription>
+        <value>Project Statements Document - CVR</value>
+    </labels>
+    <labels>
+        <fullName>MCDDocument</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MCDDocument</shortDescription>
+        <value>Master Community Declaration (MCD) 2024</value>
+    </labels>
+    <labels>
+        <fullName>Magnati_Meta_Data</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Magnati Meta Data</shortDescription>
+        <value>MagnatiIntegration</value>
+    </labels>
+    <labels>
+        <fullName>Mall_Stand_Lead_Sources</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mall_Stand_Lead_Sources</shortDescription>
+        <value>Mall Stands,Stand Leads</value>
+    </labels>
+    <labels>
+        <fullName>Mall_Stand_Queue_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mall_Stand_Queue_Id</shortDescription>
+        <value>00G7S000001BvXEUA0</value>
+    </labels>
+    <labels>
+        <fullName>Manish_Goyanka_UserId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Manish Goyanka UserId</shortDescription>
+        <value>0057S000003CIELQA4</value>
+    </labels>
+    <labels>
+        <fullName>MaskEmailPhoneObjectsLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MaskEmailPhoneObjectsLabel</shortDescription>
+        <value>Applicant_Details__c</value>
+    </labels>
+    <labels>
+        <fullName>Maximum_Lead_To_Be_Assigned</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Maximum Lead To Be Assigned</shortDescription>
+        <value>2</value>
+    </labels>
+    <labels>
+        <fullName>Maximun_Quotation_Discount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Maximun Quotation Discount Percentage</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>Min_Days_Gap</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Min_Days_Gap</shortDescription>
+        <value>14</value>
+    </labels>
+    <labels>
+        <fullName>Modes_for_Managers_cheque</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Modes for Managers cheque</shortDescription>
+        <value>Cheque,CDM Cheque</value>
+    </labels>
+    <labels>
+        <fullName>MohanShanmugamEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MohanShanmugamEmail</shortDescription>
+        <value>mohan.shanmugam@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>NICE_Click_To_View_Accessible_Profiles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NICE Click To View Accessible Profiles</shortDescription>
+        <value>Audit</value>
+    </labels>
+    <labels>
+        <fullName>NPS_Call_Gap</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NPS_Call_Gap</shortDescription>
+        <value>0</value>
+    </labels>
+    <labels>
+        <fullName>NPS_Overall_Call</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NPS_Overall_ Call</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>NPS_Per_Day_Call</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NPS_Per_Day_Call</shortDescription>
+        <value>2</value>
+    </labels>
+    <labels>
+        <fullName>NSA_EligibilityError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NSA_EligibilityError</shortDescription>
+        <value>The Payment Request is either rejected or not eligible for New Sale Approval submission.</value>
+    </labels>
+    <labels>
+        <fullName>NSA_Intimation_CC_Address_List</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NSA Intimation CC Address List</shortDescription>
+        <value>ashish.parakh@sobharealty.com.invalid; aa@sobharealty.com.invalid; sipan.keshishian@sobharealty.com.invalid; ayaz.anis@ceptes.onmicrosoft.com; sfnotifications@sobharealty.com.invalid</value>
+    </labels>
+    <labels>
+        <fullName>NSA_Intimation_To_Address_List</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NSA Intimation To Address List</shortDescription>
+        <value>salesops.team@sobharealty.com.invalid; salesops@sobharealty.com.invalid; crmteam@sobharealty.com.invalid; collectionteam@sobharealty.com.invalid; hiranmai.venna.c@sobharealty.com;</value>
+    </labels>
+    <labels>
+        <fullName>NSA_PrimaryModeError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NSA_PrimaryModeError</shortDescription>
+        <value>This is a Multi-mode PR, please create NSA from Secondary Approved PR.</value>
+    </labels>
+    <labels>
+        <fullName>Nice_Apilayer_net_API_key</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Nice_Apilayer.net_API key</shortDescription>
+        <value>2887fb441dc25407cd84a83cb5f993a7</value>
+    </labels>
+    <labels>
+        <fullName>Nice_LeadMobileBatch_Limit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Nice_LeadMobileBatch_Limit</shortDescription>
+        <value>ORDER By CreatedDate DESC LIMIT 2</value>
+    </labels>
+    <labels>
+        <fullName>NoContact_ManagerBasedAssignmentSources</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoContact_ManagerBasedAssignmentSources</shortDescription>
+        <value>Marketing,Digital</value>
+    </labels>
+    <labels>
+        <fullName>NoContact_ManagerBasedAssignmentUTMCampaignExclusion</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoContact_ManagerBasedAssignmentUTMCampaignExclusion</shortDescription>
+        <value>OPEN-HOUSE,Open House,open-house, SR_RS_,Roadshow,RS,ROADSHOW</value>
+    </labels>
+    <labels>
+        <fullName>NoContact_QueueBasedAssignmentSources</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoContact_QueueBasedAssignmentSources</shortDescription>
+        <value>Roadshow</value>
+    </labels>
+    <labels>
+        <fullName>NoReplyOrgWideDisplayName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoReplyOrgWideDisplayName</shortDescription>
+        <value>NoReply Sobha</value>
+    </labels>
+    <labels>
+        <fullName>No_Reply_OWA_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Reply OWA Id</shortDescription>
+        <value>0D27S000000k9tdSAA</value>
+    </labels>
+    <labels>
+        <fullName>No_reply_display_name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No reply display name</shortDescription>
+        <value>NoReply Sobha</value>
+    </labels>
+    <labels>
+        <fullName>OrgAddressUrl</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OrgAddressUrl</shortDescription>
+        <value>https://sobharealty--sobhadev.sandbox.my.salesforce.com/</value>
+    </labels>
+    <labels>
+        <fullName>OrgUrlLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OrgUrlLabel</shortDescription>
+        <value>https://sobharealty--devcs.sandbox.my.salesforce.com/</value>
+    </labels>
+    <labels>
+        <fullName>PDF_statement_For_The_Crest_PS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PDF statement For The Crest PS</shortDescription>
+        <value>Project Statement - without storage</value>
+    </labels>
+    <labels>
+        <fullName>PDF_statement_For_Waves_Grande_PS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PDF statement For Waves Grande PS</shortDescription>
+        <value>Project Statement - Waves Grande</value>
+    </labels>
+    <labels>
+        <fullName>PDF_statement_For_Waves_PS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PDF statement For Waves PS</shortDescription>
+        <value>WAVES PROJECT STATEMENT-FINAL</value>
+    </labels>
+    <labels>
+        <fullName>PR_Cancelllation_1Hour_Project</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR_Cancelllation_1Hour_Project</shortDescription>
+        <value>a0R5t000001O46vEAC</value>
+    </labels>
+    <labels>
+        <fullName>PR_Cancelllation_1Hour_SubProject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR_Cancelllation_1Hour_SubProject</shortDescription>
+        <value>a0A5t000004KnlNEAS</value>
+    </labels>
+    <labels>
+        <fullName>PR_Debit_Note_Percent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR_Debit_Note_Percent</shortDescription>
+        <value>.05</value>
+    </labels>
+    <labels>
+        <fullName>PR_Mortgage_Extra_Charges</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR_Mortgage_Extra_Charges</shortDescription>
+        <value>2500</value>
+    </labels>
+    <labels>
+        <fullName>PR_Mortgage_Validation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR_Mortgage_Validation</shortDescription>
+        <value>.0025</value>
+    </labels>
+    <labels>
+        <fullName>PR_OTC_14_Percent_Validation_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR_OTC_14_Percent_Validation_Msg</shortDescription>
+        <value>A maximum of 14% of the unit purchase price can be made through the OTC Deposits.</value>
+    </labels>
+    <labels>
+        <fullName>PR_OTC_Booking_Level_Restriction_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR_OTC_Booking_Level_Restriction_Msg</shortDescription>
+        <value>OTC Deposits cannot be created from Booking.</value>
+    </labels>
+    <labels>
+        <fullName>PR_OTC_MAX_Amount_Percentage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR_OTC_MAX_Amount_Percentage</shortDescription>
+        <value>14</value>
+    </labels>
+    <labels>
+        <fullName>PR_OTC_Skip_Validation_Usernames</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR_OTC_Skip_Validation_Usernames</shortDescription>
+        <value>sfc.furkan@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>PR_Unit_Conflict_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR_Unit_Conflict_Error</shortDescription>
+        <value>Payment request approval is blocked as this unit is already booked in</value>
+    </labels>
+    <labels>
+        <fullName>Payment_Amount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment Amount</shortDescription>
+        <value>25000</value>
+    </labels>
+    <labels>
+        <fullName>Payment_Amount_For_Less_Than_2_Percent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment_Amount_For_Less_Than_2_Percent</shortDescription>
+        <value>10000</value>
+    </labels>
+    <labels>
+        <fullName>Payment_Expiration_Time</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment Expiration Time(in Minutes)</shortDescription>
+        <value>50</value>
+    </labels>
+    <labels>
+        <fullName>Payment_Gateway</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment Gateway</shortDescription>
+        <value>Magnati</value>
+    </labels>
+    <labels>
+        <fullName>Payment_Plan_Profile_validation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment Plan Profile validation</shortDescription>
+        <value>Sales Profile-PS</value>
+    </labels>
+    <labels>
+        <fullName>Payment_Request_Creation_Note</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment Request Creation Note</shortDescription>
+        <value>&lt;div style=&quot;color:red&quot;&gt;&lt;b&gt;NOTE:&lt;/b&gt; &lt;br&gt;1. OTC deposit is allowed at the time of booking the unit. &lt;br&gt;2. Maximum limit for OTC Deposit towards downpayment is 10% of Purchase Price.  &lt;br&gt;3. Maximum Limit for OTC Deposit towards DLD Fee is 4% of Puchase price plus DLD Admin fee of AED 1150.  &lt;br&gt;4. In Multimode paymnet requests, the combined limit of OTC deposit PR cannot cross the limit of 14%.&lt;/div&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Payment_Request_Unit_Restriction_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment Request Unit Restriction Message</shortDescription>
+        <value>Payment Requet cannot be created for the selected unit at this time, Please try again later.</value>
+    </labels>
+    <labels>
+        <fullName>Payment_Status_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment Status Email</shortDescription>
+        <value>NoReply Sobha</value>
+    </labels>
+    <labels>
+        <fullName>Payment_Template</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment Template</shortDescription>
+        <value>Payment_Status</value>
+    </labels>
+    <labels>
+        <fullName>Plot_Title_Deed_Charges</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Plot Title Deed Charges</shortDescription>
+        <value>1660</value>
+    </labels>
+    <labels>
+        <fullName>Pre_Registration_Booking_CC_email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pre Registration Booking CC email</shortDescription>
+        <value>salesops@sobharealty.com.Invalid;sfnotifications@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>Pre_Sales_Head_Emails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pre-Sales Head Emails</shortDescription>
+        <value>srinivas.pradeep@sobharealty.com.Invalid.invalid</value>
+    </labels>
+    <labels>
+        <fullName>ProformaToCCAddressValue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ProformaToCCAddressValue</shortDescription>
+        <value>tesy</value>
+    </labels>
+    <labels>
+        <fullName>Projects_To_Bypass_BookingCancellation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Projects To Bypass BookingCancellation</shortDescription>
+        <value>Sobha Siniya Island</value>
+    </labels>
+    <labels>
+        <fullName>QMSQueueCollection</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QMSQueueCollection</shortDescription>
+        <value>CRM,Collection</value>
+    </labels>
+    <labels>
+        <fullName>QMSQueueName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QMSQueueName</shortDescription>
+        <value>Collection Main Queue</value>
+    </labels>
+    <labels>
+        <fullName>QR_API</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QR_API</shortDescription>
+        <value>http://api.qrserver.com/v1/create-qr-code/?data=</value>
+    </labels>
+    <labels>
+        <fullName>QR_Code_Acknowledge_Expiry</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QR_Code_Acknowledge_Expiry</shortDescription>
+        <value>60</value>
+    </labels>
+    <labels>
+        <fullName>QR_Code_Acknowledge_Site_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QR_Code_Acknowledge_Site_URL</shortDescription>
+        <value>https://sobharealty--sobhadev.sandbox.my.site.com</value>
+    </labels>
+    <labels>
+        <fullName>QR_Code_OrgWideEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QR_Code_OrgWideEmail</shortDescription>
+        <value>welcome@sobharealty.com</value>
+    </labels>
+    <labels>
+        <fullName>QuotationProfile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuotationProfile</shortDescription>
+        <value>Sales</value>
+    </labels>
+    <labels>
+        <fullName>QuotationProfile2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuotationProfile2</shortDescription>
+        <value>VP-Profile</value>
+    </labels>
+    <labels>
+        <fullName>QuotationProfile3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuotationProfile3</shortDescription>
+        <value>VP-Data Entry Operator</value>
+    </labels>
+    <labels>
+        <fullName>QuotationProfile4</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuotationProfile4</shortDescription>
+        <value>MD Office - Management Trainee</value>
+    </labels>
+    <labels>
+        <fullName>ReEnquiryTaskSubject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ReEnquiryTaskSubject</shortDescription>
+        <value>New Re-enquiry Received from: Stand Leads</value>
+    </labels>
+    <labels>
+        <fullName>Reason_for_Rejection_Label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reason for Rejection Label</shortDescription>
+        <value>Operation Cancelled: Please provide a rejection reason!</value>
+    </labels>
+    <labels>
+        <fullName>Receipt_CreditAccount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Receipt CreditAccount</shortDescription>
+        <value>a182o00001KVkQPAA1</value>
+    </labels>
+    <labels>
+        <fullName>Receipt_DebitAccount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Receipt DebitAccount</shortDescription>
+        <value>a182o00001KVkQPAA1</value>
+    </labels>
+    <labels>
+        <fullName>Receptionist_Profile_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Receptionist Profile ID</shortDescription>
+        <value>00e1t000000VQX3AAO</value>
+    </labels>
+    <labels>
+        <fullName>RecycleLead_Cycle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RecycleLead Cycle</shortDescription>
+        <value>21</value>
+    </labels>
+    <labels>
+        <fullName>Reprocess_Booking_Cancellation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reprocess Booking Cancellation</shortDescription>
+        <value>B-17447</value>
+    </labels>
+    <labels>
+        <fullName>Resale_Audit_Signatory</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Resale_Audit_Signatory</shortDescription>
+        <value>pooja.nair.c@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>Resale_Authorized_Signatory</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Resale Authorized Signatory</shortDescription>
+        <value>pooja.nair@sobharealty.com</value>
+    </labels>
+    <labels>
+        <fullName>Resale_CRM_Document_Controller</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Resale CRM Document Controller</shortDescription>
+        <value>0057S000003EIVZ</value>
+    </labels>
+    <labels>
+        <fullName>Resale_DocuSign_CRM_Ops</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Resale DocuSign CRM Ops</shortDescription>
+        <value>pooja.nair@sobharealty.com</value>
+    </labels>
+    <labels>
+        <fullName>Roadshow_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Roadshow Details</shortDescription>
+        <value>The clock is ticking!  It’s the FINAL DAY to unlock the biggest property investment opportunities in Dubai. Don&apos;t miss out on FREE ENTRY &amp; PARKING—get here before it’s too late!  &lt;br/&gt;&lt;br/&gt;
+Marriot Hotel EPIP Zone, Whitefield &lt;br/&gt;
+11 AM - 7 PM &lt;br/&gt;
+ Exclusive deals waiting JUST for you!  &lt;br/&gt;
+ Call us now at +91 99864 42255 to know more. &lt;br/&gt;
+ Hurry Up! Your dream investment awaits.</value>
+    </labels>
+    <labels>
+        <fullName>SF_Channel_Operations</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SF Channel Operations</shortDescription>
+        <value>channeloperations@sobharealty.com</value>
+    </labels>
+    <labels>
+        <fullName>SF_Notifications</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SF_Notifications</shortDescription>
+        <value>sfnotifications@sobharealty.com</value>
+    </labels>
+    <labels>
+        <fullName>SOAAuthority</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOAAuthority</shortDescription>
+        <value>0057S000002YlDDQA0,0052o00000ACFiUAAX,005TX0000007TEzYAM,00e1t000001CBXGAA4,0057S000000tQJjQAM,0057S000000KMnvQAG,005TX000000Sc0jYAC,0057S000003MjNKQA0,0057S000000tcBhQAI</value>
+    </labels>
+    <labels>
+        <fullName>SPA_Not_Signed_Status_CRM_Dashboard</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPA_Not__Signed_Status_CRM_Dashboard</shortDescription>
+        <value>Blocked Sales,To be Issued,SPA Issued But Not Sent,SPA Sent But Not Returned,SPA Sent through Docusign</value>
+    </labels>
+    <labels>
+        <fullName>SPA_Signed_Status_CRM_Dashboard</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPA_Signed_Status_CRM_Dashboard</shortDescription>
+        <value>SPA Executed</value>
+    </labels>
+    <labels>
+        <fullName>SalesOperationsEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SalesOperationsEmail</shortDescription>
+        <value>shivam.verma@ceptes.com</value>
+    </labels>
+    <labels>
+        <fullName>Sales_Ops_Profile_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales Ops Profile Id</shortDescription>
+        <value>00e5t000000UFGTAA4</value>
+    </labels>
+    <labels>
+        <fullName>Sales_Profiles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales_Profiles</shortDescription>
+        <value>Sales Profile-PS</value>
+    </labels>
+    <labels>
+        <fullName>Salesops_Assurance_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Salesops Assurance Email</shortDescription>
+        <value>hiranmai.venna.c@sobharealty.com</value>
+    </labels>
+    <labels>
+        <fullName>Salesops_Assurance_Team</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Salesops Assurance Team</shortDescription>
+        <value>Salesops Assurance Team</value>
+    </labels>
+    <labels>
+        <fullName>SellerRepresentative</fullName>
+        <categories>Seller_Representative__c</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SellerRepresentative</shortDescription>
+        <value>divyansh@cloudsteer.com</value>
+    </labels>
+    <labels>
+        <fullName>Seller_Representative</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Seller Representative</shortDescription>
+        <value>0057S000000tLHsQAM</value>
+    </labels>
+    <labels>
+        <fullName>SiniyaCustomerCare</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OweCustomerCare</shortDescription>
+        <value>OWE</value>
+    </labels>
+    <labels>
+        <fullName>Siniya_Contact_From_Address_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Siniya_Contact_From_Address_Email</shortDescription>
+        <value>NoReply Sobha</value>
+    </labels>
+    <labels>
+        <fullName>Siniya_Island_Authorized_Signatory</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Siniya Island Authorized Signatory</shortDescription>
+        <value>krishna.kishore.c@sobharealty.com</value>
+    </labels>
+    <labels>
+        <fullName>Siniya_Island_Customer_Comm_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Siniya Island Customer Comm Email</shortDescription>
+        <value>sfnotifications@sobharealty.com</value>
+    </labels>
+    <labels>
+        <fullName>Siniya_Island_Final_Signatory</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Siniya_Island_Final_Signatory</shortDescription>
+        <value>francis.alfred@sobharealty.com</value>
+    </labels>
+    <labels>
+        <fullName>Siniya_Island_Final_Signatory_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Siniya_Island_Final_Signatory_Name</shortDescription>
+        <value>Mr. Francis Alfred</value>
+    </labels>
+    <labels>
+        <fullName>Sipan_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sipan Email</shortDescription>
+        <value>dheeraj.gurbani.c@sobharealty.com</value>
+    </labels>
+    <labels>
+        <fullName>Site_Visit_Notification_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Site Visit Notification Email</shortDescription>
+        <value>ajay.misal+livodup@ceptes.com</value>
+    </labels>
+    <labels>
+        <fullName>Skip_Validation_for_Broker</fullName>
+        <categories>test</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Skip Validation for Broker</shortDescription>
+        <value>helpdesk@sobharealty.com.Invalid, mira.chehab@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>SobhaAR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SobhaAR</shortDescription>
+        <value>ar@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>SobhaBrokerPortalNetworkId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SobhaBrokerPortalNetworkId</shortDescription>
+        <value>0DBTX000000O1UP4A0</value>
+    </labels>
+    <labels>
+        <fullName>SobhaCRMTeam</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SobhaCRMTeam</shortDescription>
+        <value>crmteam@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>SobhaCollectionTeamMe</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SobhaCollectionTeamMe</shortDescription>
+        <value>collectionteam@sobha-me.com</value>
+    </labels>
+    <labels>
+        <fullName>SobhaHelpDeskMe</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SobhaHelpDeskMe</shortDescription>
+        <value>helpdesk@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>SobhaHelpDeskTest</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SobhaHelpDeskTest</shortDescription>
+        <value>helpdesk.test@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>SobhaHelpdesk</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SobhaHelpdesk</shortDescription>
+        <value>helpdesk@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>SobhaRealtyCustomerSiteBaseUrl</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SobhaRealtyCustomerSiteBaseUrl</shortDescription>
+        <value>https://sobharealty.my.site.com/Customer/SRCustomer?erId=</value>
+    </labels>
+    <labels>
+        <fullName>SobhaRealtyCustomerSiteBaseUrlCopy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SobhaRealtyCustomerSiteBaseUrlCopy</shortDescription>
+        <value>https://sobharealty--devcs.sandbox.my.site.com/customer/SRCustomer_Copy?erId=</value>
+    </labels>
+    <labels>
+        <fullName>SobhaSalesOp</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SobhaSalesOp</shortDescription>
+        <value>salesops@sobharealty.com.invalid</value>
+    </labels>
+    <labels>
+        <fullName>SobhaSolisMCDLink</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SobhaSolisMCDLink</shortDescription>
+        <value>https://url.uk.m.mimecastprotect.com/s/GTJRCJY8gFy9XlXiVfBIyaaSY?domain=sobharealty--sobhadev.sandbox.my.salesforce.com</value>
+    </labels>
+    <labels>
+        <fullName>Sobha_Hartland_Project_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sobha Hartland Project Id</shortDescription>
+        <value>a0R1t000000QhInEAK</value>
+    </labels>
+    <labels>
+        <fullName>Sobha_Project_Names</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sobha Project Names</shortDescription>
+        <value>Sobha Hartland -II,Sobha Orbis</value>
+    </labels>
+    <labels>
+        <fullName>Sobha_Realty_Circular_document</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sobha Realty Circular document</shortDescription>
+        <value>069TX000001jv4oYAA</value>
+    </labels>
+    <labels>
+        <fullName>Sobha_Reserve_Term_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sobha Reserve Term 1</shortDescription>
+        <value>&lt;span style=&apos;font-family:&quot;Tahoma&quot;,sans-serif;font-size:12px;&apos;&gt;The first Purchaser and any additional Purchasers (if applicable) will hereinafter be referred to as the &amp;ldquo;&lt;/span&gt;&lt;strong&gt;&lt;span style=&apos;font-family:&quot;Tahoma&quot;,sans-serif;&apos;&gt;Purchaser&lt;/span&gt;&lt;/strong&gt;&lt;span style=&apos;font-family:&quot;Tahoma&quot;,sans-serif;font-size:12px;&apos;&gt;&amp;rdquo; collectively. Joint Purchasers will be jointly and severally liable under the terms and conditions of this Booking Form. Where there is more than one Purchaser, any notice properly served on the first Purchaser named in this Booking Form shall be deemed to have been properly served on all of the Purchasers. &amp;nbsp;&amp;nbsp;&lt;/span&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Sobha_Siniya_ProjNames</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sobha Siniya ProjNames</shortDescription>
+        <value>Sobha Siniya Island</value>
+    </labels>
+    <labels>
+        <fullName>Supplemental_Document_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Supplemental Document Id</shortDescription>
+        <value>NA</value>
+    </labels>
+    <labels>
+        <fullName>Supplemental_Document_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Supplemental Document Name</shortDescription>
+        <value>dummy</value>
+    </labels>
+    <labels>
+        <fullName>TaskSubject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EnquiryTaskSubject</shortDescription>
+        <value>New Enquiry Received from: Stand Leads</value>
+    </labels>
+    <labels>
+        <fullName>TeleSalesCTI_AgentNotAvailable_FeatureFlag</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TeleSalesCTI_AgentNotAvailable_FeatureFlag</shortDescription>
+        <value>true</value>
+    </labels>
+    <labels>
+        <fullName>Temp_Channel_Partner_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Temp Channel Partner Id</shortDescription>
+        <value>a091t000005ie40</value>
+    </labels>
+    <labels>
+        <fullName>Temp_Sobha_Connect_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Temp Sobha Connect ID</shortDescription>
+        <value>a0s7S000003bM14</value>
+    </labels>
+    <labels>
+        <fullName>The_Crest</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The Crest</shortDescription>
+        <value>The Crest</value>
+    </labels>
+    <labels>
+        <fullName>Towards_Deed_Charges</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Towards Deed Charges</shortDescription>
+        <value>1410</value>
+    </labels>
+    <labels>
+        <fullName>TowerException_For_Demand</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TowerException For Demand</shortDescription>
+        <value>One Park Avenue Tower,Sobha Creek vistas Reserve,Phase I,Phase II,Townhouse</value>
+    </labels>
+    <labels>
+        <fullName>TreasuryRefundDashboardUrl</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TreasuryRefundDashboardUrl</shortDescription>
+        <value>https://sobharealty--devcs.sandbox.lightning.force.com/lightning/n/Treasury_Refund_Dashboard?0.source=alohaHeader</value>
+    </labels>
+    <labels>
+        <fullName>Twilio_Verify_Api_SMS_Service_SID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twilio Verify Api SMS Service SID</shortDescription>
+        <value>VA1f19bab4bf0ff55cc43b044e4135ee5f</value>
+    </labels>
+    <labels>
+        <fullName>Twilio_Verify_Api_Service_SID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twilio Verify Api  Service SID</shortDescription>
+        <value>VA3a541dc39fc3a1056d8d2cc661384010</value>
+    </labels>
+    <labels>
+        <fullName>UAE_Category_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UAE Category Email</shortDescription>
+        <value>krishna.kishore.c@sobharealty.com</value>
+    </labels>
+    <labels>
+        <fullName>UAE_Category_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UAE Category Name</shortDescription>
+        <value>Narayanan VR</value>
+    </labels>
+    <labels>
+        <fullName>UUID_Label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UUID Label</shortDescription>
+        <value>CVH-A1009</value>
+    </labels>
+    <labels>
+        <fullName>UnitAutoCancellationDays</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnitAutoCancellationDays</shortDescription>
+        <value>14</value>
+    </labels>
+    <labels>
+        <fullName>UnitAutoCancellationLimit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnitAutoCancellationLimit</shortDescription>
+        <value>9.5</value>
+    </labels>
+    <labels>
+        <fullName>UnitAutoCancellationPaidPer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnitAutoCancellationPaidPer</shortDescription>
+        <value>10</value>
+    </labels>
+    <labels>
+        <fullName>UnitAutoCancellationReason</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnitAutoCancellationReason</shortDescription>
+        <value>Auto cancellation (14 days policy)</value>
+    </labels>
+    <labels>
+        <fullName>UnitAutoCancellationRecDebAccount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnitAutoCancellationRecDebAccount</shortDescription>
+        <value>a182o00001KVlXqAAL</value>
+    </labels>
+    <labels>
+        <fullName>UnitAutoCancellationRecMode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnitAutoCancellationRecMode</shortDescription>
+        <value>Credit Note</value>
+    </labels>
+    <labels>
+        <fullName>UnitAutoCancellationRecStatus</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnitAutoCancellationRecStatus</shortDescription>
+        <value>Cleared</value>
+    </labels>
+    <labels>
+        <fullName>UpdateMilestoneDueTillDateOnBookingBatchSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UpdateMilestoneDueTillDateOnBookingBatchSize</shortDescription>
+        <value>25</value>
+    </labels>
+    <labels>
+        <fullName>Users_for_LeadConvesionValidation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Users for LeadConvesionValidation</shortDescription>
+        <value>hiranmai.venna.c@sobharealty.com.sobhadev,mohit.moryani@sobharealty.com.sobhadev,hatem.elghandour@sobharealty.com.sobhadev</value>
+    </labels>
+    <labels>
+        <fullName>VP_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VP Email - Ashish Parakh</shortDescription>
+        <value>tejaswini.dharanikota@ceptes.onmicrosoft.com</value>
+    </labels>
+    <labels>
+        <fullName>VP_First_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VP First Name</shortDescription>
+        <value>Ashish</value>
+    </labels>
+    <labels>
+        <fullName>VP_Last_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VP Last Name</shortDescription>
+        <value>Parakh</value>
+    </labels>
+    <labels>
+        <fullName>VamsiModepalliEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VamsiModepalliEmail</shortDescription>
+        <value>vamsi.modepalli@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>Verloop_Auth_Token</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Verloop Auth Token</shortDescription>
+        <value>10732bef-a19e-4751-b4df-6459c8964f19</value>
+    </labels>
+    <labels>
+        <fullName>Verloop_Campaign_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Verloop Campaign ID</shortDescription>
+        <value>e53e39b5-22d6-4316-9413-2ce189eb5b84</value>
+    </labels>
+    <labels>
+        <fullName>Verloop_Endpoint_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Verloop Endpoint URL</shortDescription>
+        <value>https://sobha.mena.verloop.io/api/v1/Campaign/SendMessage</value>
+    </labels>
+    <labels>
+        <fullName>Video_Shoot_Development_Team_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Video_Shoot_Development_Team_Email</shortDescription>
+        <value>ashish.parakh@sobharealty.com.Invalid;swapnil.lal@sobharealty.com.Invalid;khodr.elmasri@sobharealty.com.Invalid;sipan.keshishian@sobharealty.com.Invalid;vishnu.parambil@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>Vinit_ManishBhai_UserId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vinit_ManishBhai_UserId</shortDescription>
+        <value>0051t000002fFbYAAU</value>
+    </labels>
+    <labels>
+        <fullName>WarningLetterEmailCCEmailAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WarningLetterEmailCCEmailAddress</shortDescription>
+        <value>helpdesk@sobharealty.com.Invalid,collectionteam@sobha-me.com</value>
+    </labels>
+    <labels>
+        <fullName>Waves_Grande_Project_Statement</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Waves Grande Project Statement</shortDescription>
+        <value>Waves Grande</value>
+    </labels>
+    <labels>
+        <fullName>Waves_Project_Statement</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Waves Project Statement</shortDescription>
+        <value>Waves</value>
+    </labels>
+    <labels>
+        <fullName>Waybeo_Mobile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Waybeo Mobile</shortDescription>
+        <value>44238064</value>
+    </labels>
+    <labels>
+        <fullName>WelcomeEmailFeatureFlag</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WelcomeEmailFeatureFlag</shortDescription>
+        <value>false</value>
+    </labels>
+    <labels>
+        <fullName>WelcomeEmailOrgWideId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WelcomeEmailOrgWideId</shortDescription>
+        <value>welcome@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>WelcomeLetterStyle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WelcomeLetterStyle</shortDescription>
+        <value>&lt;/li&gt;&lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Admin_Charges</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Admin Charges</shortDescription>
+        <value>5000</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Admin_Charges_General</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Admin Charges (General)</shortDescription>
+        <value>5000</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Concept_drawing_NOC</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Concept drawing NOC</shortDescription>
+        <value>1000</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Construction_NOC</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Construction NOC</shortDescription>
+        <value>2000</value>
+    </labels>
+    <labels>
+        <fullName>X15k_DLD_Cancellation_Charges</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k DLD Cancellation Charges</shortDescription>
+        <value>3225</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Detailed_design_NOC</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Detailed design NOC</shortDescription>
+        <value>1000</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Limit_for_per_day_transactions</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k - Limit for per day transactions</shortDescription>
+        <value>15000</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Name_addition_deletion</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Name addition/deletion</shortDescription>
+        <value>5000</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Ownership_changes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Ownership changes</shortDescription>
+        <value>5000</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Plot_title_Deed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Plot title Deed</shortDescription>
+        <value>1660</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Pre_registration_To_Pre_title_Deed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Pre-registration To Pre-title Deed</shortDescription>
+        <value>330</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Pre_registration_to_pre_title_deed_completed_projects</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Pre-registration to pre-title deed (completed projects)</shortDescription>
+        <value>330</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Reissue_of_Plot_NOC_construction</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Reissue of Plot NOC (construction)</shortDescription>
+        <value>1000</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Reissue_of_Plot_NOC_other_than_construction</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Reissue of Plot NOC (other than construction)</shortDescription>
+        <value>500</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Resale_NOC_Oqood</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Resale NOC (Oqood)</shortDescription>
+        <value>5000</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Resale_NOC_Title_Deed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Resale NOC (Title Deed)</shortDescription>
+        <value>500</value>
+    </labels>
+    <labels>
+        <fullName>X15k_SPA_Reissuance_Fees</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k SPA Reissuance Fees</shortDescription>
+        <value>500</value>
+    </labels>
+    <labels>
+        <fullName>X15k_SPA_reissuance_fees_per_book</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k SPA reissuance fees (per book)</shortDescription>
+        <value>500</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Title_Deed_Charges</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Title Deed Charges</shortDescription>
+        <value>500</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Title_Deed_Fees_Plots</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Title Deed Fees (Plots)</shortDescription>
+        <value>1660</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Title_Deed_Fees_Units</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Title Deed Fees (Units)</shortDescription>
+        <value>1410</value>
+    </labels>
+    <labels>
+        <fullName>X15k_Title_Deed_Fees_Villas</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15k Title Deed Fees (Villas)</shortDescription>
+        <value>1500</value>
+    </labels>
+    <labels>
+        <fullName>X1st_Approval</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>1st Approval</shortDescription>
+        <value>0055t000003OMMNAA4</value>
+    </labels>
+    <labels>
+        <fullName>ZeroBounceApiKey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ZeroBounceApiKey</shortDescription>
+        <value>46263cc572d94ef9a652a1b4ec4648a1</value>
+    </labels>
+    <labels>
+        <fullName>baseUrl</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>baseUrl</shortDescription>
+        <value>https://sobharealty.lightning.force.com/</value>
+    </labels>
+    <labels>
+        <fullName>byPass_opp_SalesManager_Validation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>byPass opp SalesManager Validation</shortDescription>
+        <value>false</value>
+    </labels>
+    <labels>
+        <fullName>collection_email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>collection_email</shortDescription>
+        <value>collections@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>completionNoticeSender</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>completionNoticeSender</shortDescription>
+        <value>helpdesk@sobharealty.com</value>
+    </labels>
+    <labels>
+        <fullName>credit_Note_for_Paid_Percentage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>credit Note for Paid Percentage</shortDescription>
+        <value>UNEARNED REVENUE,Demand reversal credit note</value>
+    </labels>
+    <labels>
+        <fullName>domainURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>domainURL</shortDescription>
+        <value>https://sobharealty--sobhadev.sandbox.my.site.com</value>
+    </labels>
+    <labels>
+        <fullName>genericUtilityObject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>genericUtilityObject</shortDescription>
+        <value>Account,Booking__c,Applicant_Details__c, Broker_Registration__c, Stand_Lead__c,Visitor_Registration__c,Magnati_Transaction_History__c, Channel_Partner__c,Contact,Event,Incoming_Call__c,Lead_Capture__c,lead, Legal_Entity__c, MissedCall__c, NPS_Survey__c,Opportunity,Payment_Request_Wrapper__c, Payment_Request__c,Resale_Process__c, Sobha_Connect__c,Social_Media_Lead__c,Broker_Meeting_Tracker__c,Client_Information__c,Offers__c,PropStrength__Offer__c,PropStrength__Application_Booking__c,Case,unit_hold_request__c,Customer_Registration__c,Magnati_Transaction_History__c,Quotation__c,dfsle__RecipientStatus__c,Docusign_Recipient_Status_Sobha__c, Task, Task__c,PropStrength__Request__c,File_Note__c,PropStrength__Offer__c,PropStrength__Application_Booking__c,Payment_Request__c,unit_hold_request__c,Customer_Registration__c,Quotation__c,Time_Slot_For_Handover__c,CDR_Temp__c, dfsle__Recipient__c, Receipt__c, Demand__c</value>
+    </labels>
+    <labels>
+        <fullName>handoverNoticeSender</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>handoverNoticeSender</shortDescription>
+        <value>helpdesk@sobharealty.com.Invalid</value>
+    </labels>
+    <labels>
+        <fullName>isAllowToSendAutoDemandRaiseEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>isAllowToSendAutoDemandRaiseEmail</shortDescription>
+        <value>Send Email</value>
+    </labels>
+    <labels>
+        <fullName>isAllowToSendBulkSOAEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>isAllowToSendBulkSOAEmail</shortDescription>
+        <value>Send Email</value>
+    </labels>
+    <labels>
+        <fullName>isAllowToSendLatePaneltyEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>isAllowToSendLatePaneltyEmail</shortDescription>
+        <value>Sent Email</value>
+    </labels>
+    <labels>
+        <fullName>one_park_PS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>one park PS</shortDescription>
+        <value>One Park Avenue</value>
+    </labels>
+    <labels>
+        <fullName>preventAuditApprovalEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>preventAuditApprovalEmail</shortDescription>
+        <value>False</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_with_CHRM_OPS</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Name_as_per_trade_license__c</columns>
+    <columns>NAME</columns>
+    <columns>Broker_Category__c</columns>
+    <columns>Status__c</columns>
+    <columns>Mobile__c</columns>
+    <columns>Email__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Pending with CHRM OPS</value>
+    </filters>
+    <label>Pending with CHRM OPS</label>
+    <sharedTo>
+        <group>CHRM_Ops</group>
+        <group>CHRM_Team</group>
+        <group>ERF_BRF_Broker_Meeting_Tracker</group>
+    </sharedTo>
+</ListView>

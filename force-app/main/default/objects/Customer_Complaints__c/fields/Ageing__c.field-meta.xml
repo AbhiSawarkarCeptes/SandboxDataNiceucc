@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ageing__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( TEXT(Complaint_Closure_Status__c) = &quot;Closed&quot;,  Closure_Date__c -  Complaint_Date__c , Today() -  Complaint_Date__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Ageing</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

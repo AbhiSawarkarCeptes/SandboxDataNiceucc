@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_not_convert_if_project_is_blank</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISCHANGED(IsConverted) &amp;&amp; IsConverted = true &amp;&amp;   ISBLANK(Project__c)</errorConditionFormula>
+    <errorMessage>Project should be populated on lead before converting.</errorMessage>
+</ValidationRule>

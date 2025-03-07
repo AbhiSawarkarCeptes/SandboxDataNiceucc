@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Agreement_Value_Demanded__c</fullName>
+    <label>Total Purchase Price Demanded</label>
+    <summarizedField>Demand__c.Agreement_Value_Demanded_New__c</summarizedField>
+    <summaryFilterItems>
+        <field>Demand__c.Demand_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Reversed</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Demand__c.Booking__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

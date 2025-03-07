@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Step5__c</fullName>
+    <formula>IF(
+	AND(
+		OR(
+			Document_Category_New__c=&apos;Credit Note&apos;,Document_Category_New__c=&apos;Debit Note&apos;,Document_Category_New__c=&apos;Receipt&apos;
+		), 
+		OR(
+			CONTAINS(LOWER(Customer_Name__c),&apos; test &apos;),
+			BEGINS(LOWER(Customer_Name__c),&apos;test &apos;),
+			BEGINS(REVERSE(LOWER(Customer_Name__c)),&apos;tset &apos;)
+		)
+	),
+	TRUE,
+	FALSE
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Step5</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

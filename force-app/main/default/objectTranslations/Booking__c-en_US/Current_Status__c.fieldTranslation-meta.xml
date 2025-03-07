@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Current Status --></label>
+    <name>Current_Status__c</name>
+    <picklistValues>
+        <masterLabel>Audit Accepted</masterLabel>
+        <translation><!-- Audit Accepted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audit Rejected</masterLabel>
+        <translation><!-- Audit Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document Verification Accepted</masterLabel>
+        <translation><!-- Document Verification Accepted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document Verification Not Started</masterLabel>
+        <translation><!-- Document Verification Not Started --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document Verification Rejected</masterLabel>
+        <translation><!-- Document Verification Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted to Audit</masterLabel>
+        <translation><!-- Submitted to Audit --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Today_s_New_Sale_Approval</fullName>
+    <columns>NAME</columns>
+    <columns>Approval_Status__c</columns>
+    <columns>Payment_Request__c</columns>
+    <columns>DLD_Amount__c</columns>
+    <columns>DP_Amount__c</columns>
+    <columns>DLD_Amount_2__c</columns>
+    <columns>DP_Amount_2__c</columns>
+    <columns>Mode__c</columns>
+    <columns>Approved_Date__c</columns>
+    <columns>Booking__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>YESTERDAY,TODAY</value>
+    </filters>
+    <label>Today&apos;s New Sale Approval</label>
+</ListView>

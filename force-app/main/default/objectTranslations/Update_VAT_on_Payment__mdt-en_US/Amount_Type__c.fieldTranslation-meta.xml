@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Amount Type --></label>
+    <name>Amount_Type__c</name>
+    <picklistValues>
+        <masterLabel>Addition/Deletion Charges</masterLabel>
+        <translation><!-- Addition/Deletion Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adjustment</masterLabel>
+        <translation><!-- Adjustment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advance Amount</masterLabel>
+        <translation><!-- Advance Amount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation Charges</masterLabel>
+        <translation><!-- Cancellation Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheque Bouncing Charges</masterLabel>
+        <translation><!-- Cheque Bouncing Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Management Fees</masterLabel>
+        <translation><!-- Community Management Fees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Management Services</masterLabel>
+        <translation><!-- Community Management Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conversion Charges</masterLabel>
+        <translation><!-- Conversion Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Note</masterLabel>
+        <translation><!-- Credit Note --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Waiver</masterLabel>
+        <translation><!-- Credit Waiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEWA Charges</masterLabel>
+        <translation><!-- DEWA Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD</masterLabel>
+        <translation><!-- DLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD Fees</masterLabel>
+        <translation><!-- DLD Fees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Due Allotment</masterLabel>
+        <translation><!-- Due Allotment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Due Area Change</masterLabel>
+        <translation><!-- Due Area Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Due ReAllotment</masterLabel>
+        <translation><!-- Due ReAllotment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Input Tax Credit</masterLabel>
+        <translation><!-- Input Tax Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installment</masterLabel>
+        <translation><!-- Installment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interest</masterLabel>
+        <translation><!-- Interest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Payment Fee</masterLabel>
+        <translation><!-- Late Payment Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mortgage</masterLabel>
+        <translation><!-- Mortgage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mortgage Fee</masterLabel>
+        <translation><!-- Mortgage Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Normal Credit Note</masterLabel>
+        <translation><!-- Normal Credit Note --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ownership Change Admin Charges</masterLabel>
+        <translation><!-- Ownership Change Admin Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Due Allotment</masterLabel>
+        <translation><!-- Payment Due Allotment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Due Area Change</masterLabel>
+        <translation><!-- Payment Due Area Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Due OC</masterLabel>
+        <translation><!-- Payment Due OC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Due ReAllotment</masterLabel>
+        <translation><!-- Payment Due ReAllotment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-registration To Pre-title Deed</masterLabel>
+        <translation><!-- Pre-registration To Pre-title Deed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-registration to pre-title deed (completed projects)</masterLabel>
+        <translation><!-- Pre-registration to pre-title deed (completed projects) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reallocation Charges</masterLabel>
+        <translation><!-- Reallocation Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rebate</masterLabel>
+        <translation><!-- Rebate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Received Reversal</masterLabel>
+        <translation><!-- Received Reversal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refurbishment Charges</masterLabel>
+        <translation><!-- Refurbishment Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale NOC Charges - Oqood</masterLabel>
+        <translation><!-- Resale NOC Charges - Oqood --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reversal Input Tax Credit</masterLabel>
+        <translation><!-- Reversal Input Tax Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reversal Payment</masterLabel>
+        <translation><!-- Reversal Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reversal Payment Due_Change In Payment Plan</masterLabel>
+        <translation><!-- Reversal Payment Due_Change In Payment Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reversal Payment Due_Reallocation</masterLabel>
+        <translation><!-- Reversal Payment Due_Reallocation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reversal Payment Rece_Change In Payment Plan</masterLabel>
+        <translation><!-- Reversal Payment Rece_Change In Payment Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reversal Payment Rece_Reallocation</masterLabel>
+        <translation><!-- Reversal Payment Rece_Reallocation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reversal payment due</masterLabel>
+        <translation><!-- Reversal payment due --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Tax Added</masterLabel>
+        <translation><!-- Service Tax Added --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Tax Reversal</masterLabel>
+        <translation><!-- Service Tax Reversal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service charge</masterLabel>
+        <translation><!-- Service charge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TPD</masterLabel>
+        <translation><!-- TPD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TPD Reversal</masterLabel>
+        <translation><!-- TPD Reversal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Deed Charges</masterLabel>
+        <translation><!-- Title Deed Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Deed Fees (Units)</masterLabel>
+        <translation><!-- Title Deed Fees (Units) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Deed Fees (Villas)</masterLabel>
+        <translation><!-- Title Deed Fees (Villas) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transaction Fee</masterLabel>
+        <translation><!-- Transaction Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer Charges</masterLabel>
+        <translation><!-- Transfer Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer Fee</masterLabel>
+        <translation><!-- Transfer Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transferred from Booking</masterLabel>
+        <translation><!-- Transferred from Booking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upkeep Charges</masterLabel>
+        <translation><!-- Upkeep Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VAT</masterLabel>
+        <translation><!-- VAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Verification Charges</masterLabel>
+        <translation><!-- Verification Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiver Adjustment</masterLabel>
+        <translation><!-- Waiver Adjustment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

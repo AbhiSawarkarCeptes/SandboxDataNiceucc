@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Rate per sq.ft. (AED/sq.ft.) --></label>
+    <name>Rate_per_sq_ft_AED_sq_ft__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PCC_Rejects_to_Accounts</fullName>
+    <columns>NAME</columns>
+    <columns>Unit__c</columns>
+    <columns>PCC_Status__c</columns>
+    <columns>PCC_Rejection_Comments__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PCC_Status__c</field>
+        <operation>equals</operation>
+        <value>Pending for Accounts Approval,Rejected by Audit Submitted to Accounts,Re-Submitted to Accounts</value>
+    </filters>
+    <label>PCC Rejects to Accounts</label>
+    <sharedTo>
+        <role>Finance</role>
+    </sharedTo>
+</ListView>

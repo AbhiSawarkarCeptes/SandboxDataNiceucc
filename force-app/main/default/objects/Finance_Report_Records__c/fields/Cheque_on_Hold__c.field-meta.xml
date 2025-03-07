@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cheque_on_Hold__c</fullName>
+    <formula>ISPICKVAL(Receipt__r.Receipt_Status__c,&apos;Cheque Hold&apos;)</formula>
+    <label>Cheque on Hold?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

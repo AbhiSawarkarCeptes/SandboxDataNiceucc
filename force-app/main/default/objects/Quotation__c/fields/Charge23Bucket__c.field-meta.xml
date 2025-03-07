@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Charge23Bucket__c</fullName>
+    <label>Charge 23 Bucket</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agreement Value</fullName>
+                <default>false</default>
+                <label>Agreement Value</label>
+            </value>
+            <value>
+                <fullName>Society Charges</fullName>
+                <default>false</default>
+                <label>Society Charges</label>
+            </value>
+            <value>
+                <fullName>Other Charges</fullName>
+                <default>false</default>
+                <label>Other Charges</label>
+            </value>
+            <value>
+                <fullName>Stamp dute</fullName>
+                <default>false</default>
+                <label>Stamp dute</label>
+            </value>
+            <value>
+                <fullName>Registration</fullName>
+                <default>false</default>
+                <label>Registration</label>
+            </value>
+            <value>
+                <fullName>MSEB Charge</fullName>
+                <default>false</default>
+                <label>MSEB Charge</label>
+            </value>
+            <value>
+                <fullName>MVAT</fullName>
+                <default>false</default>
+                <label>MVAT</label>
+            </value>
+            <value>
+                <fullName>Water Connection Charge</fullName>
+                <default>false</default>
+                <label>Water Connection Charge</label>
+            </value>
+            <value>
+                <fullName>Infrastructure Charge</fullName>
+                <default>false</default>
+                <label>Infrastructure Charge</label>
+            </value>
+            <value>
+                <fullName>Development Charge</fullName>
+                <default>false</default>
+                <label>Development Charge</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Presales_Agent_role_should_be_Presales</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(
+AND(ISCHANGED(Presales_Agent__c ), NOT(ISBLANK(Presales_Agent__c ))),
+Presales_Agent__r.Profile.Name  &lt;&gt; &apos;Presales&apos;,False)</errorConditionFormula>
+    <errorDisplayField>Presales_Agent__c</errorDisplayField>
+    <errorMessage>Please select Presales Agent</errorMessage>
+</ValidationRule>

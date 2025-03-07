@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- BR Document History Id --></label>
+    <name>BR_doc_history_id__c</name>
+</CustomFieldTranslation>

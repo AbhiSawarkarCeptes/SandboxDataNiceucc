@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Area Type --></label>
+    <name>Area_Type__c</name>
+    <picklistValues>
+        <masterLabel>Carpet Area</masterLabel>
+        <translation><!-- Carpet Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chargeable Area</masterLabel>
+        <translation><!-- Chargeable Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Courtyard Area</masterLabel>
+        <translation><!-- Courtyard Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garden Area</masterLabel>
+        <translation><!-- Garden Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terrace Area</masterLabel>
+        <translation><!-- Terrace Area --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

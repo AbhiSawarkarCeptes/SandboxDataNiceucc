@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Multi Unit Quote Approval Status --></label>
+    <name>Multi_Unit_Quote_Approval_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved by Sales Ops</masterLabel>
+        <translation><!-- Approved by Sales Ops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Draft</masterLabel>
+        <translation><!-- Draft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for Sales Ops Approval</masterLabel>
+        <translation><!-- Pending for Sales Ops Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Sales Ops</masterLabel>
+        <translation><!-- Rejected by Sales Ops --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

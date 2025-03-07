@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pre-registration --></label>
+    <name>Pre_registration__c</name>
+    <picklistValues>
+        <masterLabel>Additional Docs required</masterLabel>
+        <translation><!-- Additional Docs required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completed</masterLabel>
+        <translation><!-- Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Docs Required</masterLabel>
+        <translation><!-- Customer Docs Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Initiated</masterLabel>
+        <translation><!-- Not Initiated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request to Initiate Pre-Registration</masterLabel>
+        <translation><!-- Request to Initiate Pre-Registration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted To DLD</masterLabel>
+        <translation><!-- Submitted To DLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Process - Paid</masterLabel>
+        <translation><!-- Under Process - Paid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With Audit</masterLabel>
+        <translation><!-- With Audit --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

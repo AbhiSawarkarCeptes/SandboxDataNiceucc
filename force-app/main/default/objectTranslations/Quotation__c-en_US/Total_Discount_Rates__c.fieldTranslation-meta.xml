@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Discounts given by Sales Manager on the Basic and Floor Rise and PLC --></help>
+    <label><!-- Total Discounted Rates --></label>
+    <name>Total_Discount_Rates__c</name>
+</CustomFieldTranslation>

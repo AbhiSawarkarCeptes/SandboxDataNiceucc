@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refund_Status__c</fullName>
+    <label>Refund Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Refund is to be made</fullName>
+                <default>false</default>
+                <label>Refund is to be made</label>
+            </value>
+            <value>
+                <fullName>Refund is to be processed</fullName>
+                <default>false</default>
+                <label>Refund is to be processed</label>
+            </value>
+            <value>
+                <fullName>Refund completed</fullName>
+                <default>false</default>
+                <label>Refund completed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

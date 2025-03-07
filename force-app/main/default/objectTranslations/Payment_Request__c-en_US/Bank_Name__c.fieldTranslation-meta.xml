@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Bank Name --></label>
+    <name>Bank_Name__c</name>
+    <picklistValues>
+        <masterLabel>Asia Commercial Bank Ltd</masterLabel>
+        <translation><!-- Asia Commercial Bank Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Australia &amp; New Zealand Banking Group</masterLabel>
+        <translation><!-- Australia &amp; New Zealand Banking Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Axis Bank</masterLabel>
+        <translation><!-- Axis Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank Of America</masterLabel>
+        <translation><!-- Bank Of America --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank Of China(Hong Kong)</masterLabel>
+        <translation><!-- Bank Of China(Hong Kong) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank Of India</masterLabel>
+        <translation><!-- Bank Of India --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank Of Taiwan</masterLabel>
+        <translation><!-- Bank Of Taiwan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank Of Tokyo-Mitsubishi UFJ, Ltd.</masterLabel>
+        <translation><!-- Bank Of Tokyo-Mitsubishi UFJ, Ltd. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Barclays Bank Plc</masterLabel>
+        <translation><!-- Barclays Bank Plc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citibank</masterLabel>
+        <translation><!-- Citibank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DBS Bank Ltd</masterLabel>
+        <translation><!-- DBS Bank Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deutsche Bank AG</masterLabel>
+        <translation><!-- Deutsche Bank AG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HSBC Holdings</masterLabel>
+        <translation><!-- HSBC Holdings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hong Leong Bank</masterLabel>
+        <translation><!-- Hong Leong Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICICI Bank</masterLabel>
+        <translation><!-- ICICI Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial &amp; Commercial Bank of China (ICBC)</masterLabel>
+        <translation><!-- Industrial &amp; Commercial Bank of China (ICBC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JPMorgan Chase Bank</masterLabel>
+        <translation><!-- JPMorgan Chase Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Malayan Banking Berhad (Maybank)</masterLabel>
+        <translation><!-- Malayan Banking Berhad (Maybank) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Royal Bank Of Canada</masterLabel>
+        <translation><!-- Royal Bank Of Canada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Royal Bank Of Scotland</masterLabel>
+        <translation><!-- Royal Bank Of Scotland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Societe Generale</masterLabel>
+        <translation><!-- Societe Generale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard Chartered</masterLabel>
+        <translation><!-- Standard Chartered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State Bank Of India</masterLabel>
+        <translation><!-- State Bank Of India --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wells Fargo</masterLabel>
+        <translation><!-- Wells Fargo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

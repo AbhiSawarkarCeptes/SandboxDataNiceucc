@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Status__c</fullName>
+    <label>Approval Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Approved by Sales VP</fullName>
+                <default>false</default>
+                <label>Approved by Sales VP</label>
+            </value>
+            <value>
+                <fullName>Approved by Sales Ops</fullName>
+                <default>false</default>
+                <label>Approved by Sales Ops</label>
+            </value>
+            <value>
+                <fullName>Rejected by Sales VP</fullName>
+                <default>false</default>
+                <label>Rejected by Sales VP</label>
+            </value>
+            <value>
+                <fullName>Rejected by Sales Ops</fullName>
+                <default>false</default>
+                <label>Rejected by Sales Ops</label>
+            </value>
+            <value>
+                <fullName>Approved by Sales Head</fullName>
+                <default>false</default>
+                <label>Approved by Sales Head</label>
+            </value>
+            <value>
+                <fullName>Rejected by Sales Head</fullName>
+                <default>false</default>
+                <label>Rejected by Sales Head</label>
+            </value>
+            <value>
+                <fullName>Approved by SVP</fullName>
+                <default>false</default>
+                <label>Approved by SVP</label>
+            </value>
+            <value>
+                <fullName>Rejected by SVP</fullName>
+                <default>false</default>
+                <label>Rejected by SVP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

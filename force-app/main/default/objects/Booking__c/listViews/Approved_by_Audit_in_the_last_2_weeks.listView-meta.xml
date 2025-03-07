@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_by_Audit_in_the_last_2_weeks</fullName>
+    <columns>NAME</columns>
+    <columns>Unit__c</columns>
+    <columns>Booking_Date__c</columns>
+    <columns>Current_Status__c</columns>
+    <columns>Booking_Approver_Audit__c</columns>
+    <columns>Stage_of_Booking__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Booking_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2020 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Stage_of_Booking__c</field>
+        <operation>equals</operation>
+        <value>Blocked,Booked</value>
+    </filters>
+    <label>Approved by Audit in the last 2 weeks</label>
+    <sharedTo>
+        <role>CRM</role>
+    </sharedTo>
+</ListView>

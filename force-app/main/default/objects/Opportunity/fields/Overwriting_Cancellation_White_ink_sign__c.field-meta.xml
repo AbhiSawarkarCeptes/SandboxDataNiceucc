@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overwriting_Cancellation_White_ink_sign__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Overwriting/Cancellation/White Ink-Sign</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

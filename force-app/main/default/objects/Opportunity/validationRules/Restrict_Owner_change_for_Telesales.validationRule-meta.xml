@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Owner_change_for_Telesales</fullName>
+    <active>true</active>
+    <description>Presales profile cannot change the &quot;OwnerId&quot; filed of opportunity record and Sales profile cannot change the &quot;Name&quot; and &quot;Closedate&quot; fields.</description>
+    <errorConditionFormula>AND(
+ $Permission.Bypass_Validation_Rules = FALSE,
+OR(
+    AND(
+        ISCHANGED(OwnerId),
+        $Profile.Name = &apos;Presales&apos;
+    ),
+    AND(
+        OR(
+            ISCHANGED(Name),
+            ISCHANGED(CloseDate),
+			 ISCHANGED(StageName)
+        ),
+        $Profile.Name = &apos;Sales&apos;
+    )
+)
+)</errorConditionFormula>
+    <errorMessage>You don&apos;t have enough permissions to change the owner. Please contact your manager.</errorMessage>
+</ValidationRule>

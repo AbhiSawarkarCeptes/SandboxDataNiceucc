@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Milestone Name Picklist --></label>
+    <name>Milestone_Name_Picklist__c</name>
+    <picklistValues>
+        <masterLabel>12 Months from Completion</masterLabel>
+        <translation><!-- 12 Months from Completion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>18 Months from Completion</masterLabel>
+        <translation><!-- 18 Months from Completion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>24 Months from Completion</masterLabel>
+        <translation><!-- 24 Months from Completion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6 Months from Completion</masterLabel>
+        <translation><!-- 6 Months from Completion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&lt;&lt;Construction Stage Name&gt;&gt;</masterLabel>
+        <translation><!-- &lt;&lt;Construction Stage Name&gt;&gt; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Booking Amount</masterLabel>
+        <translation><!-- Booking Amount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fifth Installment</masterLabel>
+        <translation><!-- Fifth Installment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Final Installment</masterLabel>
+        <translation><!-- Final Installment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Installment</masterLabel>
+        <translation><!-- First Installment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fourth Installment</masterLabel>
+        <translation><!-- Fourth Installment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Booking date</masterLabel>
+        <translation><!-- On Booking date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Completion</masterLabel>
+        <translation><!-- On Completion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Handover</masterLabel>
+        <translation><!-- On Handover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Second Installment</masterLabel>
+        <translation><!-- Second Installment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sixth Installment</masterLabel>
+        <translation><!-- Sixth Installment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Installment</masterLabel>
+        <translation><!-- Third Installment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Token</masterLabel>
+        <translation><!-- Token --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>from booking date</masterLabel>
+        <translation><!-- from booking date --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

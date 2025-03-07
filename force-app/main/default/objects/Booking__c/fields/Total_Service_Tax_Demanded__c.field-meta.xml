@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Service_Tax_Demanded__c</fullName>
+    <label>Total PP VAT Demanded</label>
+    <summarizedField>Demand__c.Service_Tax_on_Agreement_Value_Demanded__c</summarizedField>
+    <summaryForeignKey>Demand__c.Booking__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

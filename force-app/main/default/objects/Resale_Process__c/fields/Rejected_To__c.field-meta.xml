@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejected_To__c</fullName>
+    <label>Rejected To</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Approval_Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Audit Rejected to Accounts</fullName>
+                <default>false</default>
+                <label>Audit Rejected to Accounts</label>
+            </value>
+            <value>
+                <fullName>Audit Rejected to Collections</fullName>
+                <default>false</default>
+                <label>Audit Rejected to Collections</label>
+            </value>
+            <value>
+                <fullName>Audit Rejected to CRM</fullName>
+                <default>false</default>
+                <label>Audit Rejected to CRM</label>
+            </value>
+            <value>
+                <fullName>Accounts Rejected to Collections</fullName>
+                <default>false</default>
+                <label>Accounts Rejected to Collections</label>
+            </value>
+            <value>
+                <fullName>Accounts Rejected to CRM</fullName>
+                <default>false</default>
+                <label>Accounts Rejected to CRM</label>
+            </value>
+            <value>
+                <fullName>Audit Rejected to Collections &amp; Accounts</fullName>
+                <default>false</default>
+                <label>Audit Rejected to Collections &amp; Accounts</label>
+            </value>
+            <value>
+                <fullName>Audit Rejected to CRM &amp; Collections &amp; Accounts</fullName>
+                <default>false</default>
+                <label>Audit Rejected to CRM &amp; Collections &amp; Accounts</label>
+            </value>
+            <value>
+                <fullName>Audit Rejected to CRM &amp; Accounts</fullName>
+                <default>false</default>
+                <label>Audit Rejected to CRM &amp; Accounts</label>
+            </value>
+            <value>
+                <fullName>Audit Rejected To CRM &amp; Collection</fullName>
+                <default>false</default>
+                <label>Audit Rejected To CRM &amp; Collection</label>
+            </value>
+            <value>
+                <fullName>Audit Rejected To CRM and Collection</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Audit Rejected To CRM and Collection</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Pending for Accounts Approval</controllingFieldValue>
+            <controllingFieldValue>Rejected by Accounts</controllingFieldValue>
+            <valueName>Accounts Rejected to Collections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending for Accounts Approval</controllingFieldValue>
+            <controllingFieldValue>Rejected by Accounts</controllingFieldValue>
+            <valueName>Accounts Rejected to CRM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending for Audit Approval</controllingFieldValue>
+            <controllingFieldValue>Rejected by Audit</controllingFieldValue>
+            <valueName>Audit Rejected to Accounts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending for Audit Approval</controllingFieldValue>
+            <controllingFieldValue>Rejected by Audit</controllingFieldValue>
+            <valueName>Audit Rejected to Collections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending for Audit Approval</controllingFieldValue>
+            <controllingFieldValue>Rejected by Audit</controllingFieldValue>
+            <valueName>Audit Rejected to CRM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending for Audit Approval</controllingFieldValue>
+            <controllingFieldValue>Rejected by Audit</controllingFieldValue>
+            <valueName>Audit Rejected to Collections &amp; Accounts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending for Audit Approval</controllingFieldValue>
+            <controllingFieldValue>Rejected by Audit</controllingFieldValue>
+            <valueName>Audit Rejected to CRM &amp; Collections &amp; Accounts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending for Audit Approval</controllingFieldValue>
+            <controllingFieldValue>Rejected by Audit</controllingFieldValue>
+            <valueName>Audit Rejected to CRM &amp; Accounts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending for Audit Approval</controllingFieldValue>
+            <valueName>Audit Rejected To CRM &amp; Collection</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

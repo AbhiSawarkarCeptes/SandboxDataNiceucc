@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Twenty-Fourth Installment</label>
+    <protected>false</protected>
+    <values>
+        <field>Arabic__c</field>
+        <value xsi:type="xsd:string">القسط الرابع والعشرون</value>
+    </values>
+    <values>
+        <field>English__c</field>
+        <value xsi:type="xsd:string">Twenty-Fourth Installment</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- VAT On Interest on Late Amount Paid --></label>
+    <name>Tax_On_Interest_on_Late_Amount_Paid__c</name>
+</CustomFieldTranslation>

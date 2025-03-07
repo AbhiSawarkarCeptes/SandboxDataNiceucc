@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Amount of PDC to be collected from Buyer --></label>
+    <name>Amount_of_PDC_to_be_collected_from_Buyer__c</name>
+</CustomFieldTranslation>

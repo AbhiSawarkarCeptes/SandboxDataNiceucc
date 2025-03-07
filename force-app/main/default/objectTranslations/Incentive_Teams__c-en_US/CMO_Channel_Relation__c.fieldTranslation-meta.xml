@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CMO - Channel Relation --></label>
+    <name>CMO_Channel_Relation__c</name>
+    <relationshipLabel><!-- Incentive Teams (CMO - Channel Relation) --></relationshipLabel>
+</CustomFieldTranslation>

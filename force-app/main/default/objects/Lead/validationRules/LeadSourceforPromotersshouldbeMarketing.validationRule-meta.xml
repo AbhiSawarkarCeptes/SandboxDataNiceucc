@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadSourceforPromotersshouldbeMarketing</fullName>
+    <active>true</active>
+    <description>LeadSource for Promoters should be Marketing</description>
+    <errorConditionFormula>AND(
+				OR($Profile.Name = &apos;Promoters&apos;, 
+							$Profile.Name = &apos;Promoters Head&apos;),
+		   NOT(ISBLANK(TEXT(Lead_Sub_Source__c))),
+			  NOT(ISPICKVAL(Lead_Sub_Source__c, &apos;Mall Leads&apos;)),
+				 NOT(ISPICKVAL(Lead_Sub_Source__c, &apos;Mall&apos;)),
+NOT(ISPICKVAL(Lead_Sub_Source__c, &apos;Mall 1&apos;)),
+NOT(ISPICKVAL(Lead_Sub_Source__c, &apos;Mall 2&apos;)))</errorConditionFormula>
+    <errorMessage>You must select Lead Sub-Source as &apos;Mall&apos;</errorMessage>
+</ValidationRule>

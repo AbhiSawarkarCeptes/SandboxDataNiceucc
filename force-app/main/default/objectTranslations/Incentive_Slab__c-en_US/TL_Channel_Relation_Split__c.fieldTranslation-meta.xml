@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- TL Channel Relation Split % --></label>
+    <name>TL_Channel_Relation_Split__c</name>
+</CustomFieldTranslation>

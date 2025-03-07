@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_for_Accounts_approval</fullName>
+    <booleanFilter>1 OR 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Customer_Name__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Sale_Value__c</columns>
+    <columns>Total_Amount_On_Account__c</columns>
+    <columns>Eligible_Rebate__c</columns>
+    <columns>Advance_Amount_Paid__c</columns>
+    <columns>Total_of_Receipts__c</columns>
+    <columns>SOA_Link__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Approval_Status__c</field>
+        <operation>equals</operation>
+        <value>Approved by Collection Manager</value>
+    </filters>
+    <filters>
+        <field>Audit_Resubmitted_to__c</field>
+        <operation>equals</operation>
+        <value>Resubmit to accounts,Resubmit to Collections and Accounts</value>
+    </filters>
+    <label>Pending for Accounts approval</label>
+    <sharedTo>
+        <role>Finance</role>
+    </sharedTo>
+</ListView>

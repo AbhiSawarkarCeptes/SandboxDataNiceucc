@@ -1,0 +1,2846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collection</fullName>
+    <active>true</active>
+    <businessProcess>Collection Support Process</businessProcess>
+    <label>Collection</label>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AC Cooling - Common Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AC Cooling - Inside Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alterations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amenity Reservations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blockage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booking Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booking related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Glass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%2EV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Back Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheque Bounce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheque Deposit%2FRealization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chilled Water Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chilled Water Charges%2FCoolings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil Works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collections%2F Payments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Common Area Doors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Access Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Amenities Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Developments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Improvements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Rules Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Service Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Staff Behavior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compensations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Noise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Updates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Appreciation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Info Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEWA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEWA Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEWA electricity and water - Common area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLD Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DSR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged Pavements or Roads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dewa Premise Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electromechanical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elevators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escrow Account Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escrow Detail Confirmation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extension of Payment %2FChange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FED EX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>File Note Approvals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire Alarm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flood Water%2FAccumulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floor Plans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foul Smell%2FOdor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garbage Bin Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garbage Chute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gate%2FEntrance Barrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gymnasium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health and Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holiday Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Orientation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Owner%27s Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Household Staff Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IWT%2FDWT%2FCDM - CHEQUE%2FCASH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection%2FHandover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Claims</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intercom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice - Collections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation water leakage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Key Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kids Play Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LPG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscaping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Payment Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lights - Common Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost and Found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Water Pressure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEP Noise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual SOA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material Specifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile App Log-in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mortgage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mortgage - Collections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Move in Permits %28MIP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Move out Permits %28MOP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Name Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Naqoodi Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neighbor Disputes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Electrictity - Common Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Hot Water Supply - Common Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Water - Common Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Violations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other community amenities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner%27s Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCC Mortgage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCC not Raised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR Approvals - Cash%2FCheque%2FCredit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paint Color Code Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Painting Damage %E2%80%93 Common area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pandemic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parking Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Completion Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Realization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Updates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest Control- Flies%2FMosquitos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest Control- Rodents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pet Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photography or Photshoot Permissions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plots</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plumbing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private events permission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rain%2FWind Damages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebate Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recycle Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund - Collections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refurbishment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registration Request %28REG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regularization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal of app account %28REN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report Accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOA Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPA Readiness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPA Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales and Broker Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Staff Behavior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Provider Access Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size related to the Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Snag Rectification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Statement of Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storage Cage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swimming Pool</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Termination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Termination - Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Termination%2F Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Termination%2FCancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Theft%2FIntruders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Title Deed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tranfer and Assisgnment Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unit Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unregistered Email Id</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Access Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Speeding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visitors Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warranty Letters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leakage %28Neighbor Issues%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leakage - Common Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Welcome Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window Cleaning</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Department__c</picklist>
+        <values>
+            <fullName>CRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unregistered Email Id</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Walk-In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PropStrength__Case_Issue__c</picklist>
+        <values>
+            <fullName>Address Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agreement Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Allotments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank Loans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Notices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Car Parking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Committments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Updates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extension for payment due date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extension of Payment Dates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leads - Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leads - Residential</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lease Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Plans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Possessions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post Possesion Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reallocations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receipt of payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rentals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Visit %2F Site Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TDS Certificates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PropStrength__Escalation_Level__c</picklist>
+        <values>
+            <fullName>Level 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PropStrength__PotentialLiability__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PropStrength__Product__c</picklist>
+        <values>
+            <fullName>GC1020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC1040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC1060</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC3020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC3040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC3060</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC5020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC5040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC5060</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PropStrength__SLAViolation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PropStrength__Type__c</picklist>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Routine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subjective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Category__c</picklist>
+        <values>
+            <fullName>Above Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Access Card Activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Access Code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Access and Parking Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Access to Amenities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Additional Parking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advance payment A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amenity Booking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amenity Booking%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amenity Reservations Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ammenities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Area changes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Balcony doors%2F Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Barking Noise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Between Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blocking Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booking Form%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brand of Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broker Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broker Contract%2FAgreement%2FRegistration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burning smell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%2EV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cabinets%2FWardrobe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cabinets%2FWardrobe%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Back Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Back Request%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation and Refund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canopy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Car Parking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Card not working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceiling damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changes in customer detail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheque bounce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chilled Water Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil Works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clarification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Color Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Committee Foundation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Common Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Common Area AC Noise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Hall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Rules Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Service Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Staff Behavior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compensation cases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Noise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Updates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cooling issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Covid Cases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Appreciation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Info Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEWA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEWA Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEWA Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEWA Registrations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEWA electricity and water- disruption%2C enquiries or complaints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLD Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLD fees paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLD fees reallocation issue %28DP to DLD and vice versa%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLD fees shortfall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLD fees unpaid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLD issue related to non clearance of service charge %28Sobha%2FCustomer%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLP Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLP Notice%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DSPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DSR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DSR related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DSR signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged Pavements or Roads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged Roads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decking Issue%C2%A0 %28Villas%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delay Compensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delayed Handover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design Submission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Designated Completion Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dewa Account Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dewa Refund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dishwasher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dispute cases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Document issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dog Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Door Slamming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain Blockage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain Blockages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drilling Sound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ducks and Birds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Early Handover Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elevators not workings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enquiries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enquiries or Complaints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enquiries or Complaints%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error in Registration - Oqood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Errors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escrow Account Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estimated Completion Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exhaust Not Working%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired customer docs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extension of Construction Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extension of Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Alterations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Cracks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Paint issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FED EX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Façade Glass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire Alarm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire Alarm %28Villas%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fittings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flickering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flood Water%2FAccumulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floor Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floor grouting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foul Smell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foul Smell drain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foul Smell%2FOdor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Games Room</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garage Door Issue%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garbage Bin Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Leak%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gate Barrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Cleaning%2C litter picking%2C spillage %2C dirty floors%2C dust etc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Notices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glass Shattered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guest Registerations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guests not Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handover Booking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handover Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handover Confirmation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handover Notification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handover Reschedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handover manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handover with Incomplete Snags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handover%2C Final Notices%2C completion%2C DLP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health and Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hob</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Automation System issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Orienation Booking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Orienation Confirmation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Orientation Booking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Orientation Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Orientation Confirmation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Orientation Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Orientation Notification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Orientation Reschedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Orientations Reschedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Orientations Reschedule%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Owner%27s Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hood%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Humanitarian issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improper Waster Disposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indemnity Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inside Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inside Units%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection%2FSnagging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instalment invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Claims</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intercom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intercom Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interlocks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Alterations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Cracks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Doors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Paint issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet cable issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issue SPA %28registered project%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issue SPA %28unregistered project%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Key Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kids</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kids Play Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kitchen counter top</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LPG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LPG Connection issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LPG%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscaping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscaping%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leakage between or from above or Below Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leakage between or from above or Below Units%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lift Issue %28Villas%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Light fixtures%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lights not working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lobby Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Log-in - Errors%2C not working%2C%C2%A0 enquiry or complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loss of SPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost and Found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost%2FDamaged Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Water Pressure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Door</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malfunction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marble</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor Water Leakage%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mirror</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mis-sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Payments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misuse of Parking Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mortage Updates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Move in Permits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Move out Permits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Move out Permits%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC %28Oqood%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC %28Title Deed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC related %28blocked units%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC related - blocked unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC related for Oqood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC related for Title Deed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPV benefit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Name Addition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Name Deletion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Naqoodi Transfer%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Access Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Projects %28Off Plan%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Electricity - Common Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Hot Water Supply - Common Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Water - Common Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No proper Irrigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noise and Nuisance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noise and Nuisance%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noise from Elevators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noise from electrical systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noise issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noisy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noisy%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nominations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non RERA registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non RERA registered project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Cooling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Leashed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Completion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offer%2FVoucher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oqood Copy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oqood Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Services%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oven</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ownership changes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCC Mortgage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCC related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCC to be Raised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCC%2FMortgage%2FResale%2FNOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POP%2F3rd party docs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Package promised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paint Color Code Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parking Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parking Changes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parking Remote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parking Swap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parking Violations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parking in Common Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Party Loud Sound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Request Initiated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Updates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment related %28NOC%2C service charge%2C dues%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peeling Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Rebates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest Control- Flies%2FMosquitos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest Control- Rodents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest Control- Rodents%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe Blockages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plots NOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plumbing noise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pool Overflow %28Villas%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pool Temperature issue %28Villas%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post Handover Payment Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power trip%2FDB related issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Events Booking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Events Booking%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proffessional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump Noise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Query</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rain%2FWind Damages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reallocation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reallocation of funds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebate %2F Discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebate issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receipts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recycle Waste Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refrigerator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refurbishment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refurbishment Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refurbishment ChargesHandover Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regularization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replacement Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report Accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request for Pre-registration %28registered project%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request for Pre-registration %28unregistered project%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request for SPA Executed Copy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request for private event permission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request for private event permission%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resale %28before Oqood for registered project%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resale %28unregistered project%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resale case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resale update in Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resend Booking Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resend SPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revised Handover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPA Not Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPA Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPA Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPA Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPA not received %28registered project%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPA not received %28unregistered project%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Input Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sauna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sealant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Staff Behavior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Provider Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shower Cubicle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shuttle Bus Timings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slot Booking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slot Confirmation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slot Reschedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Snag Rectification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Snags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Snags Rectification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soil Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports Facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stains</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stamped SOA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Statement of Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storage Cage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stray Cats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suggestions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swimming Pool</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switches and sockets issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecom Issue%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Termination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Termination%2F Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Termination%2FCancellation Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Theft%2FIntruders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermostat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Title Deed Copy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Title Deed Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tranfer and Assisgnment Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unit Upgrade%2F Swap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown Noise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unregistered Email Id</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update%2FRequest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade of the unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upkeep Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Speeding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>View</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>View Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viewing Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visitors Access to Community</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visitors Access to Community%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voluntary cancellation cases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Walkways</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warranty Letters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washing Machine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waster Disposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Heater leakage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Heater not working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leak%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leakage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leakage in common area%2C toilets%2C amenities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leakage in common area%2C toilets%2C amenities%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leakage%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Pump issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water color change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water colour change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waterproofing damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wet walls%2F ceiling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White Goods Provided with Handover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window%2Fglass Sealant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong allocation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong customer details</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Query</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestone_Type_Report__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(Milestone_Type_edit__c) == &apos;Date Linked&apos; &amp;&amp; Is_Combination_Milestone__c == False, &apos;Date Linked&apos;,
+IF(TEXT(Milestone_Type_edit__c) == &apos;Date Linked&apos; &amp;&amp; Is_Combination_Milestone__c == True, &apos;Combination Milestones&apos;,
+IF(TEXT(Milestone_Type_edit__c) == &apos;Construction Linked&apos;, &apos;Construction Linked&apos;, &apos;&apos; )))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Milestone Type Report</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

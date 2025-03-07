@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Broker_Name__c</fullName>
+    <label>Broker Name</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Campaign_Code__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DAX REAL ESTATE ONE PERSON COMPANY LLC</fullName>
+                <default>false</default>
+                <label>DAX REAL ESTATE ONE PERSON COMPANY LLC</label>
+            </value>
+            <value>
+                <fullName>ONE GLOBAL REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>ONE GLOBAL REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>BRICKS N WOODS REAL ESTATE BROKERAGE L.L.C</fullName>
+                <default>false</default>
+                <label>BRICKS N WOODS REAL ESTATE BROKERAGE L.L.C</label>
+            </value>
+            <value>
+                <fullName>CITY HEIGHTS PROPERTIES</fullName>
+                <default>false</default>
+                <label>CITY HEIGHTS PROPERTIES</label>
+            </value>
+            <value>
+                <fullName>UNIQUE ZONE REAL ESTATE</fullName>
+                <default>false</default>
+                <label>UNIQUE ZONE REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>FOOT PRINT REAL ESTATE BROKER</fullName>
+                <default>false</default>
+                <label>FOOT PRINT REAL ESTATE BROKER</label>
+            </value>
+            <value>
+                <fullName>ARTEGO REALESTATE</fullName>
+                <default>false</default>
+                <label>ARTEGO REALESTATE</label>
+            </value>
+            <value>
+                <fullName>SAMSUN GODWIN CONSULTING - F.Z.E</fullName>
+                <default>false</default>
+                <label>SAMSUN GODWIN CONSULTING - F.Z.E</label>
+            </value>
+            <value>
+                <fullName>MONOLITH REAL ESTATE</fullName>
+                <default>false</default>
+                <label>MONOLITH REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>I B I A REALTY L.L.C</fullName>
+                <default>false</default>
+                <label>I B I A REALTY L.L.C</label>
+            </value>
+            <value>
+                <fullName>RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY LLC</fullName>
+                <default>false</default>
+                <label>RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY LLC</label>
+            </value>
+            <value>
+                <fullName>VARTUR REAL ESTATE BROKERAGE</fullName>
+                <default>false</default>
+                <label>VARTUR REAL ESTATE BROKERAGE</label>
+            </value>
+            <value>
+                <fullName>SPRING FIELD REAL ESTATE</fullName>
+                <default>false</default>
+                <label>SPRING FIELD REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>STONE HOUSE REAL ESTATE BROKERAGE LLC</fullName>
+                <default>false</default>
+                <label>STONE HOUSE REAL ESTATE BROKERAGE LLC</label>
+            </value>
+            <value>
+                <fullName>CORNERSTONE REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>CORNERSTONE REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>DRE HOMES REAL ESTATE BROKER</fullName>
+                <default>false</default>
+                <label>DRE HOMES REAL ESTATE BROKER</label>
+            </value>
+            <value>
+                <fullName>PROVIDENT REAL ESTATE BROKER</fullName>
+                <default>false</default>
+                <label>PROVIDENT REAL ESTATE BROKER</label>
+            </value>
+            <value>
+                <fullName>DOMINANTA REAL ESTATE</fullName>
+                <default>false</default>
+                <label>DOMINANTA REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>AVALON PROPERTIES</fullName>
+                <default>false</default>
+                <label>AVALON PROPERTIES</label>
+            </value>
+            <value>
+                <fullName>WAY ROYAL REAL ESTATE</fullName>
+                <default>false</default>
+                <label>WAY ROYAL REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>Kuruvilla World Wide AG</fullName>
+                <default>false</default>
+                <label>Kuruvilla World Wide AG</label>
+            </value>
+            <value>
+                <fullName>AWS REAL ESTATE</fullName>
+                <default>false</default>
+                <label>AWS REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>BK REAL ESTATE</fullName>
+                <default>false</default>
+                <label>BK REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>UNIQUE PROPERTIES L L C</fullName>
+                <default>false</default>
+                <label>UNIQUE PROPERTIES L L C</label>
+            </value>
+            <value>
+                <fullName>ROOFS AND ROOTS REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>ROOFS AND ROOTS REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>DESEA GLOBAL PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>DESEA GLOBAL PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>TURNKEY PROPERTIES</fullName>
+                <default>false</default>
+                <label>TURNKEY PROPERTIES</label>
+            </value>
+            <value>
+                <fullName>2F PROPERTIES</fullName>
+                <default>false</default>
+                <label>2F PROPERTIES</label>
+            </value>
+            <value>
+                <fullName>S Y CAPITAL ESTATES L.L.C</fullName>
+                <default>false</default>
+                <label>S Y CAPITAL ESTATES L.L.C</label>
+            </value>
+            <value>
+                <fullName>BEST LUXURY PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>BEST LUXURY PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>T V G REALTORS REAL ESTATE BROKERAGE</fullName>
+                <default>false</default>
+                <label>T V G REALTORS REAL ESTATE BROKERAGE</label>
+            </value>
+            <value>
+                <fullName>SEVEN CENTURY REAL ESTATE BROKERS</fullName>
+                <default>false</default>
+                <label>SEVEN CENTURY REAL ESTATE BROKERS</label>
+            </value>
+            <value>
+                <fullName>BLUE BELLS LUXURY REAL ESTATE</fullName>
+                <default>false</default>
+                <label>BLUE BELLS LUXURY REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>ANALIZA CHUMACERA</fullName>
+                <default>false</default>
+                <label>ANALIZA CHUMACERA</label>
+            </value>
+            <value>
+                <fullName>H &amp; S REAL ESTATE</fullName>
+                <default>false</default>
+                <label>H &amp; S REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>PROSPER HOMES REAL ESTATE BROKERAGE</fullName>
+                <default>false</default>
+                <label>PROSPER HOMES REAL ESTATE BROKERAGE</label>
+            </value>
+            <value>
+                <fullName>SIGNATURE LUXURY REAL ESTATE</fullName>
+                <default>false</default>
+                <label>SIGNATURE LUXURY REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>SUCCESS VENUE REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>SUCCESS VENUE REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>PROSPER INTL REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>PROSPER INTL REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>TOP PRIORITY REAL ESTATE</fullName>
+                <default>false</default>
+                <label>TOP PRIORITY REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>CONQUER PLANETARIO REAL ESTATE</fullName>
+                <default>false</default>
+                <label>CONQUER PLANETARIO REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>EVA REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>EVA REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>NESTWOOD REALTY REAL ESTATE L.L.C-Bangalore-2023-10-28</fullName>
+                <default>false</default>
+                <label>NESTWOOD REALTY REAL ESTATE L.L.C-Bangalore-2023-10-28</label>
+            </value>
+            <value>
+                <fullName>GOOD REPUTATION REAL ESTATE BROKER-CHENGDU</fullName>
+                <default>false</default>
+                <label>GOOD REPUTATION REAL ESTATE BROKER-CHENGDU</label>
+            </value>
+            <value>
+                <fullName>RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY LLC-Singapore-2023-11-04</fullName>
+                <default>false</default>
+                <label>RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY LLC-Singapore-2023-11-04</label>
+            </value>
+            <value>
+                <fullName>RAINBOW PROPERTIES LLC-Mumbai-2023-11-04</fullName>
+                <default>false</default>
+                <label>RAINBOW PROPERTIES LLC-Mumbai-2023-11-04</label>
+            </value>
+            <value>
+                <fullName>SEQUOIA PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>SEQUOIA PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>PHONEIX HOMES REAL ESTATE</fullName>
+                <default>false</default>
+                <label>PHONEIX HOMES REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>KNIGHTSBRIDGE &amp; PARTNERS (HK) LIMITED-Shanghai-2023-11-11</fullName>
+                <default>false</default>
+                <label>KNIGHTSBRIDGE &amp; PARTNERS (HK) LIMITED-Shanghai-2023-11-11</label>
+            </value>
+            <value>
+                <fullName>UNION SQUARE HOUSE REAL ESTATE BROKER</fullName>
+                <default>false</default>
+                <label>UNION SQUARE HOUSE REAL ESTATE BROKER</label>
+            </value>
+            <value>
+                <fullName>7 TEPE INSAAT DEKORASYON VE GAYRIMENKUL DANISMANLIK LIMITED SIRKETI</fullName>
+                <default>false</default>
+                <label>7 TEPE INSAAT DEKORASYON VE GAYRIMENKUL DANISMANLIK LIMITED SIRKETI</label>
+            </value>
+            <value>
+                <fullName>KREDIUM TECHNOLOGIES L L C - DUBAI BRANCH</fullName>
+                <default>false</default>
+                <label>KREDIUM TECHNOLOGIES L L C - DUBAI BRANCH</label>
+            </value>
+            <value>
+                <fullName>GOLD PILLARS STAR PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>GOLD PILLARS STAR PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>ARK VISION INTERNATIONAL REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>ARK VISION INTERNATIONAL REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>HUAXIA REAL ESTATE BROKER</fullName>
+                <default>false</default>
+                <label>HUAXIA REAL ESTATE BROKER</label>
+            </value>
+            <value>
+                <fullName>SEVEN CENTURY REAL ESTATE BROKERS L.L.C</fullName>
+                <default>false</default>
+                <label>SEVEN CENTURY REAL ESTATE BROKERS L.L.C</label>
+            </value>
+            <value>
+                <fullName>TANAMI PROPERTIES LLC</fullName>
+                <default>false</default>
+                <label>TANAMI PROPERTIES LLC</label>
+            </value>
+            <value>
+                <fullName>ELEVEN STREET REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>ELEVEN STREET REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>CORAZON REAL ESTATE BROKRAGE</fullName>
+                <default>false</default>
+                <label>CORAZON REAL ESTATE BROKRAGE</label>
+            </value>
+            <value>
+                <fullName>DREAM DESIGN REAL ESTATE BROKER</fullName>
+                <default>false</default>
+                <label>DREAM DESIGN REAL ESTATE BROKER</label>
+            </value>
+            <value>
+                <fullName>HOME LIGA REAL ESTATE</fullName>
+                <default>false</default>
+                <label>HOME LIGA REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>F A M REAL ESTATE BROKER L.L.C</fullName>
+                <default>false</default>
+                <label>F A M REAL ESTATE BROKER L.L.C</label>
+            </value>
+            <value>
+                <fullName>PROPERTY JUNCTION INTERNATIONAL REAL ESTATE BROKER L.L.C</fullName>
+                <default>false</default>
+                <label>PROPERTY JUNCTION INTERNATIONAL REAL ESTATE BROKER L.L.C</label>
+            </value>
+            <value>
+                <fullName>D O P REAL ESTATE</fullName>
+                <default>false</default>
+                <label>D O P REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>DSEVEN PROPERTIES</fullName>
+                <default>false</default>
+                <label>DSEVEN PROPERTIES</label>
+            </value>
+            <value>
+                <fullName>KATALYST PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>KATALYST PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>HOMES PARTNER REAL ESTATE MANAGEMENT SUPERVISION SERVICES LLC</fullName>
+                <default>false</default>
+                <label>HOMES PARTNER REAL ESTATE MANAGEMENT SUPERVISION SERVICES LLC</label>
+            </value>
+            <value>
+                <fullName>KURUVILLA WORLDWIDE AG</fullName>
+                <default>false</default>
+                <label>KURUVILLA WORLDWIDE AG</label>
+            </value>
+            <value>
+                <fullName>ARTHA REALTY L.L.C</fullName>
+                <default>false</default>
+                <label>ARTHA REALTY L.L.C</label>
+            </value>
+            <value>
+                <fullName>RAZVAN-SEBASTIAN PASCU</fullName>
+                <default>false</default>
+                <label>RAZVAN-SEBASTIAN PASCU</label>
+            </value>
+            <value>
+                <fullName>SMART CONCEPT REAL ESTATES - DUBAI BRANCH</fullName>
+                <default>false</default>
+                <label>SMART CONCEPT REAL ESTATES - DUBAI BRANCH</label>
+            </value>
+            <value>
+                <fullName>NESTWOOD REALTY REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>NESTWOOD REALTY REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>I C PREMIERE PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>I C PREMIERE PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>HOUSE AND HEDGES REAL ESTATE</fullName>
+                <default>false</default>
+                <label>HOUSE AND HEDGES REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>ALLEGIANCE REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>ALLEGIANCE REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>ANG REZIDENTIAL SRL</fullName>
+                <default>false</default>
+                <label>ANG REZIDENTIAL SRL</label>
+            </value>
+            <value>
+                <fullName>SILVER OAK PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>SILVER OAK PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>ANWA PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>ANWA PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>BANKE INTERNATIONAL PROPERTIES LLC</fullName>
+                <default>false</default>
+                <label>BANKE INTERNATIONAL PROPERTIES LLC</label>
+            </value>
+            <value>
+                <fullName>SKY VIEW REAL ESTATE BROKERS LLC</fullName>
+                <default>false</default>
+                <label>SKY VIEW REAL ESTATE BROKERS LLC</label>
+            </value>
+            <value>
+                <fullName>EV REAL ESTATE BROKERAGE LLC</fullName>
+                <default>false</default>
+                <label>EV REAL ESTATE BROKERAGE LLC</label>
+            </value>
+            <value>
+                <fullName>RAMZIN ESTATE BROKER L.L.C</fullName>
+                <default>false</default>
+                <label>RAMZIN ESTATE BROKER L.L.C</label>
+            </value>
+            <value>
+                <fullName>BANKE INTERNATIONAL PROPERTIES LTD</fullName>
+                <default>false</default>
+                <label>BANKE INTERNATIONAL PROPERTIES LTD</label>
+            </value>
+            <value>
+                <fullName>PROP DUB REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>PROP DUB REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>S R M INTERNATIONAL REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>S R M INTERNATIONAL REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>Broker Event</fullName>
+                <default>false</default>
+                <label>Broker Event</label>
+            </value>
+            <value>
+                <fullName>MARISAN PROPERTIES</fullName>
+                <default>false</default>
+                <label>MARISAN PROPERTIES</label>
+            </value>
+            <value>
+                <fullName>F L X PROPERTY L.L.C</fullName>
+                <default>false</default>
+                <label>F L X PROPERTY L.L.C</label>
+            </value>
+            <value>
+                <fullName>H J REAL ESTATES</fullName>
+                <default>false</default>
+                <label>H J REAL ESTATES</label>
+            </value>
+            <value>
+                <fullName>D &amp; S HOMES REAL ESTATE BROKERS L.L.C</fullName>
+                <default>false</default>
+                <label>D &amp; S HOMES REAL ESTATE BROKERS L.L.C</label>
+            </value>
+            <value>
+                <fullName>FAST WAY REAL ESTATE BROKER</fullName>
+                <default>false</default>
+                <label>FAST WAY REAL ESTATE BROKER</label>
+            </value>
+            <value>
+                <fullName>PROVIDENT REAL ESTATE BROKER L.L.C</fullName>
+                <default>false</default>
+                <label>PROVIDENT REAL ESTATE BROKER L.L.C</label>
+            </value>
+            <value>
+                <fullName>MARRFA DISCOVERY REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>MARRFA DISCOVERY REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>EMAX PROPERTIES</fullName>
+                <default>false</default>
+                <label>EMAX PROPERTIES</label>
+            </value>
+            <value>
+                <fullName>LUXURY HUB PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>LUXURY HUB PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>SUPER MODA REAL ESTATE LLC</fullName>
+                <default>false</default>
+                <label>SUPER MODA REAL ESTATE LLC</label>
+            </value>
+            <value>
+                <fullName>RESELL GAYRIMENKUL KIRALAMA ALIM SATIM ARACILIK HIZMETLERI LIMITED SIRKETI</fullName>
+                <default>false</default>
+                <label>RESELL GAYRIMENKUL KIRALAMA ALIM SATIM ARACILIK HIZMETLERI LIMITED SIRKETI</label>
+            </value>
+            <value>
+                <fullName>D I A REAL ESTATE</fullName>
+                <default>false</default>
+                <label>D I A REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>MANSION AND HOMES GAYRIMENKUL</fullName>
+                <default>false</default>
+                <label>MANSION AND HOMES GAYRIMENKUL</label>
+            </value>
+            <value>
+                <fullName>EMPIRE HILLS REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>EMPIRE HILLS REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>NEST HUNTERS REAL ESTATE LLC</fullName>
+                <default>false</default>
+                <label>NEST HUNTERS REAL ESTATE LLC</label>
+            </value>
+            <value>
+                <fullName>RAINBOW PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>RAINBOW PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>DIVINE BRICKS REAL ESTATE</fullName>
+                <default>false</default>
+                <label>DIVINE BRICKS REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>J S S REAL ESTATE BUYING &amp; SELLING BROKERAGE</fullName>
+                <default>false</default>
+                <label>J S S REAL ESTATE BUYING &amp; SELLING BROKERAGE</label>
+            </value>
+            <value>
+                <fullName>RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY L.L.C</fullName>
+                <default>false</default>
+                <label>RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY L.L.C</label>
+            </value>
+            <value>
+                <fullName>VILA L.L.C-FZ</fullName>
+                <default>false</default>
+                <label>VILA L.L.C-FZ</label>
+            </value>
+            <value>
+                <fullName>ISIDEX MARKETING MANAGEMENT</fullName>
+                <default>false</default>
+                <label>ISIDEX MARKETING MANAGEMENT</label>
+            </value>
+            <value>
+                <fullName>A D S REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>A D S REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>AREIS REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>AREIS REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>HOMES 4 LIFE REAL ESTATE BROKER (L.L.C)</fullName>
+                <default>false</default>
+                <label>HOMES 4 LIFE REAL ESTATE BROKER (L.L.C)</label>
+            </value>
+            <value>
+                <fullName>REAL TREE PROPERTIES</fullName>
+                <default>false</default>
+                <label>REAL TREE PROPERTIES</label>
+            </value>
+            <value>
+                <fullName>STOREYS REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>STOREYS REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>ELIT STROY PROPERTY L.L.C</fullName>
+                <default>false</default>
+                <label>ELIT STROY PROPERTY L.L.C</label>
+            </value>
+            <value>
+                <fullName>BEACH &amp; SAND PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>BEACH &amp; SAND PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>LIFER REALTY REAL ESTATE BROKERS L.L.C</fullName>
+                <default>false</default>
+                <label>LIFER REALTY REAL ESTATE BROKERS L.L.C</label>
+            </value>
+            <value>
+                <fullName>R V N PROPERTIES</fullName>
+                <default>false</default>
+                <label>R V N PROPERTIES</label>
+            </value>
+            <value>
+                <fullName>STONE HOUSE REAL ESTATE BROKERAGE L.L.C</fullName>
+                <default>false</default>
+                <label>STONE HOUSE REAL ESTATE BROKERAGE L.L.C</label>
+            </value>
+            <value>
+                <fullName>N E X HOME PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>N E X HOME PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>VALOREM REAL ESTATE BROKERS L.L.C</fullName>
+                <default>false</default>
+                <label>VALOREM REAL ESTATE BROKERS L.L.C</label>
+            </value>
+            <value>
+                <fullName>MEGA HOMES REAL ESTATE BROKERS (LLC)</fullName>
+                <default>false</default>
+                <label>MEGA HOMES REAL ESTATE BROKERS (LLC)</label>
+            </value>
+            <value>
+                <fullName>MAULIK  MERCHANT</fullName>
+                <default>false</default>
+                <label>MAULIK  MERCHANT</label>
+            </value>
+            <value>
+                <fullName>STAR 5 REALTY REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>STAR 5 REALTY REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>A I CAPITAL REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>A I CAPITAL REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>R E M REAL ESTATE BROKER OWNED BY MUNA SAYED SAEED ALHASHEMI ONE PERSON CO L.L.C</fullName>
+                <default>false</default>
+                <label>R E M REAL ESTATE BROKER OWNED BY MUNA SAYED SAEED ALHASHEMI ONE PERSON CO L.L.C</label>
+            </value>
+            <value>
+                <fullName>HOMES 4 LIFE REAL ESTATE BROKER (LLC)</fullName>
+                <default>false</default>
+                <label>HOMES 4 LIFE REAL ESTATE BROKER (LLC)</label>
+            </value>
+            <value>
+                <fullName>K &amp; S  PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>K &amp; S  PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>GREHA PRAVESH REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>GREHA PRAVESH REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>LUMINARY REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>LUMINARY REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>SWAP REAL ESTATE BROKERS L.L.C</fullName>
+                <default>false</default>
+                <label>SWAP REAL ESTATE BROKERS L.L.C</label>
+            </value>
+            <value>
+                <fullName>COLLECT PROPERTIES</fullName>
+                <default>false</default>
+                <label>COLLECT PROPERTIES</label>
+            </value>
+            <value>
+                <fullName>TOPNOTCH REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>TOPNOTCH REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>NEW WAY REAL ESTATE BROKER</fullName>
+                <default>false</default>
+                <label>NEW WAY REAL ESTATE BROKER</label>
+            </value>
+            <value>
+                <fullName>A B C PROPERTIES BROKERAGE - SOLE PROPRIETORSHIP L.L.C</fullName>
+                <default>false</default>
+                <label>A B C PROPERTIES BROKERAGE - SOLE PROPRIETORSHIP L.L.C</label>
+            </value>
+            <value>
+                <fullName>SPADES REAL ESTATE BROKERS</fullName>
+                <default>false</default>
+                <label>SPADES REAL ESTATE BROKERS</label>
+            </value>
+            <value>
+                <fullName>HEIGHTS AVENUE REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>HEIGHTS AVENUE REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>GHIZLANE REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>GHIZLANE REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>THE LUXURY REAL ESTATE BROKER L.L.C</fullName>
+                <default>false</default>
+                <label>THE LUXURY REAL ESTATE BROKER L.L.C</label>
+            </value>
+            <value>
+                <fullName>UP TOWN HOME REALEASTATE L.L.C</fullName>
+                <default>false</default>
+                <label>UP TOWN HOME REALEASTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>AE REALTY GROUP</fullName>
+                <default>false</default>
+                <label>AE REALTY GROUP</label>
+            </value>
+            <value>
+                <fullName>NORTH POINTE REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>NORTH POINTE REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>ANASTI REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>ANASTI REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>NANO REAL ESTATE</fullName>
+                <default>false</default>
+                <label>NANO REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>D G HOMES REAL ESTATE BROKER L.L.C</fullName>
+                <default>false</default>
+                <label>D G HOMES REAL ESTATE BROKER L.L.C</label>
+            </value>
+            <value>
+                <fullName>ANWA PROPERTIES LTD</fullName>
+                <default>false</default>
+                <label>ANWA PROPERTIES LTD</label>
+            </value>
+            <value>
+                <fullName>SQUAREA GULF REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>SQUAREA GULF REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>LUXURY LIVING HOMES INTERNATIONAL LTD</fullName>
+                <default>false</default>
+                <label>LUXURY LIVING HOMES INTERNATIONAL LTD</label>
+            </value>
+            <value>
+                <fullName>ELAN REAL ESTATE</fullName>
+                <default>false</default>
+                <label>ELAN REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>J A Z REAL ESTATE</fullName>
+                <default>false</default>
+                <label>J A Z REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>CASA REGAL PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>CASA REGAL PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>FIFTY SIX REALTY L.L.C</fullName>
+                <default>false</default>
+                <label>FIFTY SIX REALTY L.L.C</label>
+            </value>
+            <value>
+                <fullName>BENCHMARK PROPERTIES</fullName>
+                <default>false</default>
+                <label>BENCHMARK PROPERTIES</label>
+            </value>
+            <value>
+                <fullName>KNIGHTSBRIDGE &amp; PARTNERS (HK) LIMITED</fullName>
+                <default>false</default>
+                <label>KNIGHTSBRIDGE &amp; PARTNERS (HK) LIMITED</label>
+            </value>
+            <value>
+                <fullName>M G L REALESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>M G L REALESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>RAYNA PROPERTIES</fullName>
+                <default>false</default>
+                <label>RAYNA PROPERTIES</label>
+            </value>
+            <value>
+                <fullName>JAPSONS REALTY L.L.C</fullName>
+                <default>false</default>
+                <label>JAPSONS REALTY L.L.C</label>
+            </value>
+            <value>
+                <fullName>THE G O A T REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>THE G O A T REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>AEON TRISL INVESTMENTS LIMITED</fullName>
+                <default>false</default>
+                <label>AEON TRISL INVESTMENTS LIMITED</label>
+            </value>
+            <value>
+                <fullName>ELEVATION INTERNATIONAL REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>ELEVATION INTERNATIONAL REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>EMINENCE REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>EMINENCE REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>MYFUTURE PROPERTIES REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>MYFUTURE PROPERTIES REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>EMPIRE CITY REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>EMPIRE CITY REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>ELYSIAN REAL ESTATE BROKER L.L.C</fullName>
+                <default>false</default>
+                <label>ELYSIAN REAL ESTATE BROKER L.L.C</label>
+            </value>
+            <value>
+                <fullName>ORIGINAL BULL AND BEAR PROPERTIES</fullName>
+                <default>false</default>
+                <label>ORIGINAL BULL AND BEAR PROPERTIES</label>
+            </value>
+            <value>
+                <fullName>SAIRABH VENTURES REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>SAIRABH VENTURES REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>PLATINUM SQUARE REAL ESTATE BROKERS</fullName>
+                <default>false</default>
+                <label>PLATINUM SQUARE REAL ESTATE BROKERS</label>
+            </value>
+            <value>
+                <fullName>OPENCUBE GROUP LTD</fullName>
+                <default>false</default>
+                <label>OPENCUBE GROUP LTD</label>
+            </value>
+            <value>
+                <fullName>ACE CAPITAL REAL ESTATE BROKERAGE L.L.C</fullName>
+                <default>false</default>
+                <label>ACE CAPITAL REAL ESTATE BROKERAGE L.L.C</label>
+            </value>
+            <value>
+                <fullName>LUXURY CONCIERGE REAL ESTATE BROKER L. L. C</fullName>
+                <default>false</default>
+                <label>LUXURY CONCIERGE REAL ESTATE BROKER L. L. C</label>
+            </value>
+            <value>
+                <fullName>CLASSIC PARAMOUNT REAL ESTATE</fullName>
+                <default>false</default>
+                <label>CLASSIC PARAMOUNT REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>A K G REAL ESTATE BROKERAGE L.L.C</fullName>
+                <default>false</default>
+                <label>A K G REAL ESTATE BROKERAGE L.L.C</label>
+            </value>
+            <value>
+                <fullName>HOME HUSTLER REAL ESTATE L.L.C.</fullName>
+                <default>false</default>
+                <label>HOME HUSTLER REAL ESTATE L.L.C.</label>
+            </value>
+            <value>
+                <fullName>AX PREMIUM PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>AX PREMIUM PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>SKY FIVE REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>SKY FIVE REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>RISE UP REAL ESTATE</fullName>
+                <default>false</default>
+                <label>RISE UP REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>OIA PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>OIA PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>IMKAAN AL AWAL REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>IMKAAN AL AWAL REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>M R ONE PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>M R ONE PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>EXCEED REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>EXCEED REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>HESTIA HOMES REAL ESTATE</fullName>
+                <default>false</default>
+                <label>HESTIA HOMES REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>BLUE VELVET REAL ESTATE BROKERAGE</fullName>
+                <default>false</default>
+                <label>BLUE VELVET REAL ESTATE BROKERAGE</label>
+            </value>
+            <value>
+                <fullName>GOLDEN INFINITY PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>GOLDEN INFINITY PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>INVESPY PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>INVESPY PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>EXP REAL ESTATE (BR OF EXP INTERNATIONAL HOLDINGS INC )(DUBAI BRANCH)</fullName>
+                <default>false</default>
+                <label>EXP REAL ESTATE (BR OF EXP INTERNATIONAL HOLDINGS INC )(DUBAI BRANCH)</label>
+            </value>
+            <value>
+                <fullName>PREMIA LIVINGS REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>PREMIA LIVINGS REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>D M A X X PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>D M A X X PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>P J INTERNATIONAL REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>P J INTERNATIONAL REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>CREATIVE HOMES REAL ESTATE BROKER L.L.C</fullName>
+                <default>false</default>
+                <label>CREATIVE HOMES REAL ESTATE BROKER L.L.C</label>
+            </value>
+            <value>
+                <fullName>SUPERIOR AND SERENDIPITY REAL ESTATE BUYING &amp; SELLING BROKERAGE L.L.C</fullName>
+                <default>false</default>
+                <label>SUPERIOR AND SERENDIPITY REAL ESTATE BUYING &amp; SELLING BROKERAGE L.L.C</label>
+            </value>
+            <value>
+                <fullName>BUILDCAPS REAL ESTATE L.L.C</fullName>
+                <default>false</default>
+                <label>BUILDCAPS REAL ESTATE L.L.C</label>
+            </value>
+            <value>
+                <fullName>ZEAL WAY REAL ESTATE</fullName>
+                <default>false</default>
+                <label>ZEAL WAY REAL ESTATE</label>
+            </value>
+            <value>
+                <fullName>RICHMOND PROPERTIES L.L.C</fullName>
+                <default>false</default>
+                <label>RICHMOND PROPERTIES L.L.C</label>
+            </value>
+            <value>
+                <fullName>SOBHA GROUP CHANNEL BROKER</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SOBHA GROUP CHANNEL BROKER</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>2024-09-14/Houston/Road Shows/RAYNA PROPERTIES</controllingFieldValue>
+            <valueName>RAYNA PROPERTIES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-14/Miami/Road Shows/JAPSONS REALTY L.L.C</controllingFieldValue>
+            <valueName>JAPSONS REALTY L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-14/CAPETOWN/Road Shows/RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY L.L.C</controllingFieldValue>
+            <valueName>RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-14/Frankfurt/Road Shows/KREDIUM TECHNOLOGIES L L C - DUBAI BRANCH</controllingFieldValue>
+            <valueName>KREDIUM TECHNOLOGIES L L C - DUBAI BRANCH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-21/Coimbatore/Road Shows/THE G O A T REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>THE G O A T REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-21/Hyderabad/Road Shows/HOMES 4 LIFE REAL ESTATE BROKER (LLC)</controllingFieldValue>
+            <controllingFieldValue>2024-10-05/Indore/Road Shows/HOMES 4 LIFE REAL ESTATE BROKER (LLC)</controllingFieldValue>
+            <valueName>HOMES 4 LIFE REAL ESTATE BROKER (LLC)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-21/London/Road Shows/AEON TRISL INVESTMENTS LIMITED</controllingFieldValue>
+            <controllingFieldValue>2024-11-02/London/Road Shows/AEON TRISL INVESTMENTS LIMITED</controllingFieldValue>
+            <valueName>AEON TRISL INVESTMENTS LIMITED</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-21/Manchester/Road Shows/ELEVATION INTERNATIONAL REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>ELEVATION INTERNATIONAL REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-12/Los Angeles/Road Shows/ALLEGIANCE REAL ESTATE L.L.C</controllingFieldValue>
+            <controllingFieldValue>2024-09-21/Stuttgart/Road Shows/ALLEGIANCE REAL ESTATE L.L.C</controllingFieldValue>
+            <controllingFieldValue>2024-11-02/Amsterdam/Road Shows/ALLEGIANCE REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>ALLEGIANCE REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-21/Mumbai/Road Shows/FOOT PRINT REAL ESTATE BROKER</controllingFieldValue>
+            <controllingFieldValue>2024-09-21/SINGAPORE/Road Shows/FOOT PRINT REAL ESTATE BROKER</controllingFieldValue>
+            <controllingFieldValue>2024-09-28/Amsterdam/Road Shows/FOOT PRINT REAL ESTATE BROKER</controllingFieldValue>
+            <controllingFieldValue>2024-08-31/SINGAPORE/Road Shows/FOOT PRINT REAL ESTATE BROKER</controllingFieldValue>
+            <controllingFieldValue>2024-09-07/Hamburg/Road Shows/FOOT PRINT REAL ESTATE BROKER</controllingFieldValue>
+            <controllingFieldValue>2024-11-09/SINGAPORE/Road Shows/FOOT PRINT REAL ESTATE BROKER</controllingFieldValue>
+            <controllingFieldValue>2024-09-14/Dallas/Road Shows/FOOT PRINT REAL ESTATE BROKER</controllingFieldValue>
+            <controllingFieldValue>2024-10-05/SINGAPORE/Road Shows/FOOT PRINT REAL ESTATE BROKER</controllingFieldValue>
+            <valueName>FOOT PRINT REAL ESTATE BROKER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-19/Chicago/Road Shows/AX PREMIUM PROPERTIES L.L.C</controllingFieldValue>
+            <valueName>AX PREMIUM PROPERTIES L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-19/Hengzhou/Road Shows/DESEA GLOBAL PROPERTIES L.L.C</controllingFieldValue>
+            <valueName>DESEA GLOBAL PROPERTIES L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-19/Hyderabad/Road Shows/SKY FIVE REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>SKY FIVE REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-19/Mumbai/Road Shows/RISE UP REAL ESTATE</controllingFieldValue>
+            <valueName>RISE UP REAL ESTATE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-20/DUBAI/Open Houses/R E M REAL ESTATE BROKER OWNED BY MUNA SAYED SAEED ALHASHEMI ONE PERSON CO L.L.C</controllingFieldValue>
+            <valueName>R E M REAL ESTATE BROKER OWNED BY MUNA SAYED SAEED ALHASHEMI ONE PERSON CO L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-18/Cairo/Business Trip/OIA PROPERTIES L.L.C</controllingFieldValue>
+            <valueName>OIA PROPERTIES L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-21/Ulaanbaatar/Road Shows/NANO REAL ESTATE</controllingFieldValue>
+            <valueName>NANO REAL ESTATE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-24/Dusseldorf/Road Shows/I B I A REALTY L.L.C</controllingFieldValue>
+            <valueName>I B I A REALTY L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-26/Vienna/Road Shows/EMINENCE REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>EMINENCE REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-27/Istanbul/Road Shows/MYFUTURE PROPERTIES REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>MYFUTURE PROPERTIES REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-28/Chennai/Road Shows/D &amp; S HOMES REAL ESTATE BROKERS L.L.C</controllingFieldValue>
+            <valueName>D &amp; S HOMES REAL ESTATE BROKERS L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-28/Kolkata/Road Shows/NESTWOOD REALTY REAL ESTATE L.L.C</controllingFieldValue>
+            <controllingFieldValue>2024-11-09/Lucknow/Road Shows/NESTWOOD REALTY REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>NESTWOOD REALTY REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-24/Tashkent/Road Shows/IMKAAN AL AWAL REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>IMKAAN AL AWAL REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-29/Bishkek/Road Shows/EMPIRE CITY REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>EMPIRE CITY REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-25/Kuwait/Road Shows/M R ONE PROPERTIES L.L.C</controllingFieldValue>
+            <valueName>M R ONE PROPERTIES L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-01/Tirana/Road Shows/ELYSIAN REAL ESTATE BROKER L.L.C</controllingFieldValue>
+            <controllingFieldValue>2024-10-04/Dubrovnik/Road Shows/ELYSIAN REAL ESTATE BROKER L.L.C</controllingFieldValue>
+            <valueName>ELYSIAN REAL ESTATE BROKER L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-25/Tokyo/Road Shows/EXCEED REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>EXCEED REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-26/Lagos/Road Shows/CORNERSTONE REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>CORNERSTONE REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-26/SINGAPORE/Road Shows/LUMINARY REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>LUMINARY REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-26/Yerevan/Road Shows/HESTIA HOMES REAL ESTATE</controllingFieldValue>
+            <valueName>HESTIA HOMES REAL ESTATE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-26/Colombo/Road Shows/BLUE VELVET REAL ESTATE BROKERAGE</controllingFieldValue>
+            <valueName>BLUE VELVET REAL ESTATE BROKERAGE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-26/Johannesburg/Road Shows/STONE HOUSE REAL ESTATE BROKERAGE L.L.C</controllingFieldValue>
+            <valueName>STONE HOUSE REAL ESTATE BROKERAGE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-31/DUBAI/Open Houses/D G HOMES REAL ESTATE BROKER L.L.C</controllingFieldValue>
+            <valueName>D G HOMES REAL ESTATE BROKER L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-31/DUBAI/Open Houses/GOLDEN INFINITY PROPERTIES L.L.C</controllingFieldValue>
+            <valueName>GOLDEN INFINITY PROPERTIES L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-28/London/Road Shows/ANWA PROPERTIES LTD</controllingFieldValue>
+            <valueName>ANWA PROPERTIES LTD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-04/Dallas/Road Shows/ORIGINAL BULL AND BEAR PROPERTIES</controllingFieldValue>
+            <valueName>ORIGINAL BULL AND BEAR PROPERTIES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-05/Delhi/Road Shows/SAIRABH VENTURES REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>SAIRABH VENTURES REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-05/Helsinki/Road Shows/PLATINUM SQUARE REAL ESTATE BROKERS</controllingFieldValue>
+            <valueName>PLATINUM SQUARE REAL ESTATE BROKERS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-08-25/Pune/Business Trip/SQUAREA GULF REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>SQUAREA GULF REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-05/Houston/Road Shows/ARTHA REALTY L.L.C</controllingFieldValue>
+            <valueName>ARTHA REALTY L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-05/Hyderabad/Road Shows/BLUE BELLS LUXURY REAL ESTATE</controllingFieldValue>
+            <valueName>BLUE BELLS LUXURY REAL ESTATE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-08-31/London/Road Shows/LUXURY LIVING HOMES INTERNATIONAL LTD</controllingFieldValue>
+            <valueName>LUXURY LIVING HOMES INTERNATIONAL LTD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-11-02/Dallas/Road Shows/INVESPY PROPERTIES L.L.C</controllingFieldValue>
+            <valueName>INVESPY PROPERTIES L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-08-31/Hyderabad/Road Shows/NEST HUNTERS REAL ESTATE LLC</controllingFieldValue>
+            <valueName>NEST HUNTERS REAL ESTATE LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-05/London/Road Shows/OPENCUBE GROUP LTD</controllingFieldValue>
+            <valueName>OPENCUBE GROUP LTD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-11-02/Miami/Road Shows/EXP REAL ESTATE (BR OF EXP INTERNATIONAL HOLDINGS INC )(DUBAI BRANCH)</controllingFieldValue>
+            <valueName>EXP REAL ESTATE (BR OF EXP INTERNATIONAL HOLDINGS INC )(DUBAI BRANCH)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-08-31/Baku/Road Shows/H J REAL ESTATES</controllingFieldValue>
+            <valueName>H J REAL ESTATES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-05/Ludhiana/Road Shows/ACE CAPITAL REAL ESTATE BROKERAGE L.L.C</controllingFieldValue>
+            <valueName>ACE CAPITAL REAL ESTATE BROKERAGE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-11-02/Mumbai/Road Shows/PREMIA LIVINGS REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>PREMIA LIVINGS REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-01/Birmingham/Road Shows/ELAN REAL ESTATE</controllingFieldValue>
+            <valueName>ELAN REAL ESTATE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-11-02/DUBAI/Open Houses/D M A X X PROPERTIES L.L.C</controllingFieldValue>
+            <valueName>D M A X X PROPERTIES L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-05/Bogota/Road Shows/J A Z REAL ESTATE</controllingFieldValue>
+            <valueName>J A Z REAL ESTATE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-07/Delhi/Road Shows/CASA REGAL PROPERTIES L.L.C</controllingFieldValue>
+            <valueName>CASA REGAL PROPERTIES L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-07/Lagos/Road Shows/EMPIRE HILLS REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>EMPIRE HILLS REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-11-02/Denizli/Road Shows/MANSION AND HOMES GAYRIMENKUL</controllingFieldValue>
+            <valueName>MANSION AND HOMES GAYRIMENKUL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-11-09/Delhi/Road Shows/P J INTERNATIONAL REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>P J INTERNATIONAL REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-11-09/Hyderabad/Road Shows/CREATIVE HOMES REAL ESTATE BROKER L.L.C</controllingFieldValue>
+            <valueName>CREATIVE HOMES REAL ESTATE BROKER L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-07/Ludhiana/Road Shows/GREHA PRAVESH REAL ESTATE L.L.C</controllingFieldValue>
+            <valueName>GREHA PRAVESH REAL ESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-07/Cochin/Road Shows/FIFTY SIX REALTY L.L.C</controllingFieldValue>
+            <valueName>FIFTY SIX REALTY L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-07/Baghdad/Road Shows/VILA L.L.C-FZ</controllingFieldValue>
+            <valueName>VILA L.L.C-FZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-11-09/Hanoi/Road Shows/KNIGHTSBRIDGE &amp; PARTNERS (HK) LIMITED</controllingFieldValue>
+            <controllingFieldValue>2024-09-14/Hong Kong/Road Shows/KNIGHTSBRIDGE &amp; PARTNERS (HK) LIMITED</controllingFieldValue>
+            <valueName>KNIGHTSBRIDGE &amp; PARTNERS (HK) LIMITED</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-07/Chicago/Road Shows/PROVIDENT REAL ESTATE BROKER L.L.C</controllingFieldValue>
+            <valueName>PROVIDENT REAL ESTATE BROKER L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-07/Colombo/Road Shows/BENCHMARK PROPERTIES</controllingFieldValue>
+            <valueName>BENCHMARK PROPERTIES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-13/Abuja/Road Shows/SPRING FIELD REAL ESTATE</controllingFieldValue>
+            <valueName>SPRING FIELD REAL ESTATE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-11-11/Shanghai/Road Shows/SUPERIOR AND SERENDIPITY REAL ESTATE BUYING &amp; SELLING BROKERAGE L.L.C</controllingFieldValue>
+            <valueName>SUPERIOR AND SERENDIPITY REAL ESTATE BUYING &amp; SELLING BROKERAGE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-05/Mumbai/Road Shows/SILVER OAK PROPERTIES L.L.C</controllingFieldValue>
+            <valueName>SILVER OAK PROPERTIES L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-05/New York/Road Shows/LUXURY CONCIERGE REAL ESTATE BROKER L. L. C</controllingFieldValue>
+            <valueName>LUXURY CONCIERGE REAL ESTATE BROKER L. L. C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-09-14/Zurich/Road Shows/M G L REALESTATE L.L.C</controllingFieldValue>
+            <valueName>M G L REALESTATE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-11-11/Riyadh/Business Trip/ZEAL WAY REAL ESTATE</controllingFieldValue>
+            <valueName>ZEAL WAY REAL ESTATE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-11-09/Oslo/Business Trip/RICHMOND PROPERTIES L.L.C</controllingFieldValue>
+            <valueName>RICHMOND PROPERTIES L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-12/Ahmedabad/Road Shows/CLASSIC PARAMOUNT REAL ESTATE</controllingFieldValue>
+            <valueName>CLASSIC PARAMOUNT REAL ESTATE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-12/BERLIN/Road Shows/A K G REAL ESTATE BROKERAGE L.L.C</controllingFieldValue>
+            <valueName>A K G REAL ESTATE BROKERAGE L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-12/Chennai/Road Shows/HOUSE AND HEDGES REAL ESTATE</controllingFieldValue>
+            <valueName>HOUSE AND HEDGES REAL ESTATE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-12/Gammarth/Road Shows/THE LUXURY REAL ESTATE BROKER L.L.C</controllingFieldValue>
+            <valueName>THE LUXURY REAL ESTATE BROKER L.L.C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2024-10-12/London/Road Shows/BANKE INTERNATIONAL PROPERTIES LTD</controllingFieldValue>
+            <valueName>BANKE INTERNATIONAL PROPERTIES LTD</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

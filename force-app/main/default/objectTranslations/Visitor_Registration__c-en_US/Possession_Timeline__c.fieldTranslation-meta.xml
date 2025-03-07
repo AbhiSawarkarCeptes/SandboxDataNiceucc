@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Possession Timeline --></label>
+    <name>Possession_Timeline__c</name>
+    <picklistValues>
+        <masterLabel>Ready to Live In (RTLI)</masterLabel>
+        <translation><!-- Ready to Live In (RTLI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ready to Move in (RTMI)</masterLabel>
+        <translation><!-- Ready to Move in (RTMI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Construction (UC – 1 to 2 years)</masterLabel>
+        <translation><!-- Under Construction (UC – 1 to 2 years) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Construction (UC – 2 to 3 years)</masterLabel>
+        <translation><!-- Under Construction (UC – 2 to 3 years) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Construction (UC – More than 3 years)</masterLabel>
+        <translation><!-- Under Construction (UC – More than 3 years) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

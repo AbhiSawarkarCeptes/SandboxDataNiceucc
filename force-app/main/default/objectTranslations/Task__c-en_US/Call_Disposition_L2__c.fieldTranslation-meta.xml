@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Disposition L2 --></label>
+    <name>Call_Disposition_L2__c</name>
+    <picklistValues>
+        <masterLabel>3rd party payments representative</masterLabel>
+        <translation><!-- 3rd party payments representative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adjustment/transfer funds</masterLabel>
+        <translation><!-- Adjustment/transfer funds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Call Transfer / Case transfer</masterLabel>
+        <translation><!-- Call Transfer / Case transfer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation/termination</masterLabel>
+        <translation><!-- Cancellation/termination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disputes / delays / deviation case</masterLabel>
+        <translation><!-- Disputes / delays / deviation case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fraud related</masterLabel>
+        <translation><!-- Fraud related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mortgage</masterLabel>
+        <translation><!-- Mortgage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPV benefit Customer interested</masterLabel>
+        <translation><!-- NPV benefit Customer interested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPV dispute</masterLabel>
+        <translation><!-- NPV dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New sales overdue</masterLabel>
+        <translation><!-- New sales overdue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No contact / unable to reach</masterLabel>
+        <translation><!-- No contact / unable to reach --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non NPV disputes</masterLabel>
+        <translation><!-- Non NPV disputes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not interested in NPV</masterLabel>
+        <translation><!-- Not interested in NPV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCC</masterLabel>
+        <translation><!-- PCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTP</masterLabel>
+        <translation><!-- PTP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid not realised in SOA</masterLabel>
+        <translation><!-- Paid not realised in SOA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale</masterLabel>
+        <translation><!-- Resale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA/pre-reg required by customer</masterLabel>
+        <translation><!-- SPA/pre-reg required by customer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

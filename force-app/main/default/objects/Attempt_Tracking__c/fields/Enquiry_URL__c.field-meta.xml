@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enquiry_URL__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;https://sobharealty--devcs.sandbox.lightning.force.com/lightning/r/PropStrength__Request__c/&quot;+ Day_Tracking__r.Enquiry__c + &quot;/view&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Enquiry URL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

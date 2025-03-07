@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_Broker_Not_Registered_Choose_the_Brok__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>If Broker Not Registered Choose from BR</label>
+    <referenceTo>Broker_Registration__c</referenceTo>
+    <relationshipLabel>Broker Meeting Tracker</relationshipLabel>
+    <relationshipName>Broker_Meeting_Tracker</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,1321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CRM Call Disposition3 --></label>
+    <name>CRM_Call_Disposition3__c</name>
+    <picklistValues>
+        <masterLabel>Above Units</masterLabel>
+        <translation><!-- Above Units --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Access Card Activation</masterLabel>
+        <translation><!-- Access Card Activation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Access and Parking Cards</masterLabel>
+        <translation><!-- Access and Parking Cards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Access to Amenities</masterLabel>
+        <translation><!-- Access to Amenities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Additional Parking</masterLabel>
+        <translation><!-- Additional Parking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Additional requests</masterLabel>
+        <translation><!-- Additional requests --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Fee</masterLabel>
+        <translation><!-- Admin Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advance payment A</masterLabel>
+        <translation><!-- Advance payment A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amenities</masterLabel>
+        <translation><!-- Amenities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amenity Booking</masterLabel>
+        <translation><!-- Amenity Booking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amenity Reservations Error</masterLabel>
+        <translation><!-- Amenity Reservations Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Area Change</masterLabel>
+        <translation><!-- Area Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Area changes</masterLabel>
+        <translation><!-- Area changes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Balcony doors/ Windows</masterLabel>
+        <translation><!-- Balcony doors/ Windows --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank Details Request</masterLabel>
+        <translation><!-- Bank Details Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank issue</masterLabel>
+        <translation><!-- Bank issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Barking Noise</masterLabel>
+        <translation><!-- Barking Noise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Between Units</masterLabel>
+        <translation><!-- Between Units --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blocking Access</masterLabel>
+        <translation><!-- Blocking Access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Booking</masterLabel>
+        <translation><!-- Booking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brand approval</masterLabel>
+        <translation><!-- Brand approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Burning smell</masterLabel>
+        <translation><!-- Burning smell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Proposal</masterLabel>
+        <translation><!-- Business Proposal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cabinets/Wardrobe</masterLabel>
+        <translation><!-- Cabinets/Wardrobe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Call Back Request</masterLabel>
+        <translation><!-- Call Back Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation Request</masterLabel>
+        <translation><!-- Cancellation Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled Unit</masterLabel>
+        <translation><!-- Cancelled Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canopy</masterLabel>
+        <translation><!-- Canopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Card not working</masterLabel>
+        <translation><!-- Card not working --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceiling damaged</masterLabel>
+        <translation><!-- Ceiling damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Changes in customer detail</masterLabel>
+        <translation><!-- Changes in customer detail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel Relations</masterLabel>
+        <translation><!-- Channel Relations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheque Dishonoured</masterLabel>
+        <translation><!-- Cheque Dishonoured --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chilled Water Charges</masterLabel>
+        <translation><!-- Chilled Water Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Civil Works</masterLabel>
+        <translation><!-- Civil Works --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clarification</masterLabel>
+        <translation><!-- Clarification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleaning</masterLabel>
+        <translation><!-- Cleaning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Color Change</masterLabel>
+        <translation><!-- Color Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Committee Foundation</masterLabel>
+        <translation><!-- Committee Foundation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Common Area</masterLabel>
+        <translation><!-- Common Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Common Area AC Noise</masterLabel>
+        <translation><!-- Common Area AC Noise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Hall</masterLabel>
+        <translation><!-- Community Hall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Rules Violation</masterLabel>
+        <translation><!-- Community Rules Violation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Service Fees</masterLabel>
+        <translation><!-- Community Service Fees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Staff Behavior</masterLabel>
+        <translation><!-- Community Staff Behavior --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaints</masterLabel>
+        <translation><!-- Complaints --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction Noise</masterLabel>
+        <translation><!-- Construction Noise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction Updates</masterLabel>
+        <translation><!-- Construction Updates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cooling issues</masterLabel>
+        <translation><!-- Cooling issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Covid Cases</masterLabel>
+        <translation><!-- Covid Cases --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Appreciation</masterLabel>
+        <translation><!-- Customer Appreciation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Information Update</masterLabel>
+        <translation><!-- Customer Information Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEWA Number</masterLabel>
+        <translation><!-- DEWA Number --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEWA Registrations</masterLabel>
+        <translation><!-- DEWA Registrations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEWA electricity and water- disruption, enquiries or complaints</masterLabel>
+        <translation><!-- DEWA electricity and water- disruption, enquiries or complaints --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD Termination</masterLabel>
+        <translation><!-- DLD Termination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD fees reallocation issue (DP to DLD and vice versa)</masterLabel>
+        <translation><!-- DLD fees reallocation issue (DP to DLD and vice versa) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD fees shortfall</masterLabel>
+        <translation><!-- DLD fees shortfall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD issue related to non clearance of service charge (Sobha/Customer)</masterLabel>
+        <translation><!-- DLD issue related to non clearance of service charge (Sobha/Customer) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLP Notice</masterLabel>
+        <translation><!-- DLP Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSR</masterLabel>
+        <translation><!-- DSR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSR related</masterLabel>
+        <translation><!-- DSR related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damaged</masterLabel>
+        <translation><!-- Damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damaged Pavements or Roads</masterLabel>
+        <translation><!-- Damaged Pavements or Roads --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damaged Roads</masterLabel>
+        <translation><!-- Damaged Roads --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dark</masterLabel>
+        <translation><!-- Dark --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decking Issue  (Villas)</masterLabel>
+        <translation><!-- Decking Issue  (Villas) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delay Compensation</masterLabel>
+        <translation><!-- Delay Compensation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Designated Completion Date</masterLabel>
+        <translation><!-- Designated Completion Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dewa Account Transfer</masterLabel>
+        <translation><!-- Dewa Account Transfer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dewa Refund</masterLabel>
+        <translation><!-- Dewa Refund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dishwasher</masterLabel>
+        <translation><!-- Dishwasher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispute</masterLabel>
+        <translation><!-- Dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document issue</masterLabel>
+        <translation><!-- Document issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Documentation</masterLabel>
+        <translation><!-- Documentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Documents</masterLabel>
+        <translation><!-- Documents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Documents expired</masterLabel>
+        <translation><!-- Documents expired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dog Waste</masterLabel>
+        <translation><!-- Dog Waste --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Door Slamming</masterLabel>
+        <translation><!-- Door Slamming --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drain Blockage</masterLabel>
+        <translation><!-- Drain Blockage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drain Blockages</masterLabel>
+        <translation><!-- Drain Blockages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drawing submissions review</masterLabel>
+        <translation><!-- Drawing submissions review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drilling Sound</masterLabel>
+        <translation><!-- Drilling Sound --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ducks and Birds</masterLabel>
+        <translation><!-- Ducks and Birds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate</masterLabel>
+        <translation><!-- Duplicate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Early Handover Request</masterLabel>
+        <translation><!-- Early Handover Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrical</masterLabel>
+        <translation><!-- Electrical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elevators not workings</masterLabel>
+        <translation><!-- Elevators not workings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee Verification</masterLabel>
+        <translation><!-- Employee Verification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enquiries</masterLabel>
+        <translation><!-- Enquiries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enquiries or Complaints</masterLabel>
+        <translation><!-- Enquiries or Complaints --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Damaged</masterLabel>
+        <translation><!-- Equipment Damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Errors</masterLabel>
+        <translation><!-- Errors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escalation</masterLabel>
+        <translation><!-- Escalation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estimated Completion Date</masterLabel>
+        <translation><!-- Estimated Completion Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exhaust Not Working</masterLabel>
+        <translation><!-- Exhaust Not Working --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Expired customer docs</masterLabel>
+        <translation><!-- Expired customer docs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extension of Construction Time</masterLabel>
+        <translation><!-- Extension of Construction Time --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Alterations</masterLabel>
+        <translation><!-- External Alterations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Cracks</masterLabel>
+        <translation><!-- External Cracks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Paint issue</masterLabel>
+        <translation><!-- External Paint issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Façade Glass</masterLabel>
+        <translation><!-- Façade Glass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FedEx</masterLabel>
+        <translation><!-- FedEx --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire Alarm</masterLabel>
+        <translation><!-- Fire Alarm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire Alarm (Villas)</masterLabel>
+        <translation><!-- Fire Alarm (Villas) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fittings</masterLabel>
+        <translation><!-- Fittings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flickering</masterLabel>
+        <translation><!-- Flickering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flood Water/Accumulation</masterLabel>
+        <translation><!-- Flood Water/Accumulation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Floor Plan</masterLabel>
+        <translation><!-- Floor Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Floor grouting</masterLabel>
+        <translation><!-- Floor grouting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Follow Up</masterLabel>
+        <translation><!-- Follow Up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foul Smell</masterLabel>
+        <translation><!-- Foul Smell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foul Smell drain</masterLabel>
+        <translation><!-- Foul Smell drain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foul Smell/Odor</masterLabel>
+        <translation><!-- Foul Smell/Odor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Games Room</masterLabel>
+        <translation><!-- Games Room --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garage Door Issue</masterLabel>
+        <translation><!-- Garage Door Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garbage Bin Request</masterLabel>
+        <translation><!-- Garbage Bin Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas Leak</masterLabel>
+        <translation><!-- Gas Leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gate Barrier</masterLabel>
+        <translation><!-- Gate Barrier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Cleaning, litter picking, spillage , dirty floors, dust etc</masterLabel>
+        <translation><!-- General Cleaning, litter picking, spillage , dirty floors, dust etc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Notices</masterLabel>
+        <translation><!-- General Notices --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glass Shattered</masterLabel>
+        <translation><!-- Glass Shattered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guest Registerations</masterLabel>
+        <translation><!-- Guest Registerations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guests not Registered</masterLabel>
+        <translation><!-- Guests not Registered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Handover Notification</masterLabel>
+        <translation><!-- Handover Notification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Handover with Incomplete Snags</masterLabel>
+        <translation><!-- Handover with Incomplete Snags --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health and Safety</masterLabel>
+        <translation><!-- Health and Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hob</masterLabel>
+        <translation><!-- Hob --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hold request</masterLabel>
+        <translation><!-- Hold request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Automation System issues</masterLabel>
+        <translation><!-- Home Automation System issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Orienation Booking</masterLabel>
+        <translation><!-- Home Orienation Booking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Orienation Confirmation</masterLabel>
+        <translation><!-- Home Orienation Confirmation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Orientation Notice</masterLabel>
+        <translation><!-- Home Orientation Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Orientations Reschedule</masterLabel>
+        <translation><!-- Home Orientations Reschedule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hood</masterLabel>
+        <translation><!-- Hood --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Improper Waster Disposal</masterLabel>
+        <translation><!-- Improper Waster Disposal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inside Units</masterLabel>
+        <translation><!-- Inside Units --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection</masterLabel>
+        <translation><!-- Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection/Snagging</masterLabel>
+        <translation><!-- Inspection/Snagging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instalment invoice</masterLabel>
+        <translation><!-- Instalment invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Claims</masterLabel>
+        <translation><!-- Insurance Claims --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intercom</masterLabel>
+        <translation><!-- Intercom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intercom Issues</masterLabel>
+        <translation><!-- Intercom Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interlocks</masterLabel>
+        <translation><!-- Interlocks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Alterations</masterLabel>
+        <translation><!-- Internal Alterations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Cancellation</masterLabel>
+        <translation><!-- Internal Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Cracks</masterLabel>
+        <translation><!-- Internal Cracks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Doors</masterLabel>
+        <translation><!-- Internal Doors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Paint issue</masterLabel>
+        <translation><!-- Internal Paint issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internet cable issues</masterLabel>
+        <translation><!-- Internet cable issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Issue SPA (registered project)</masterLabel>
+        <translation><!-- Issue SPA (registered project) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Issue SPA (unregistered project)</masterLabel>
+        <translation><!-- Issue SPA (unregistered project) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Issues</masterLabel>
+        <translation><!-- Key Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kids</masterLabel>
+        <translation><!-- Kids --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kids Play Area</masterLabel>
+        <translation><!-- Kids Play Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kitchen counter top</masterLabel>
+        <translation><!-- Kitchen counter top --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LPG</masterLabel>
+        <translation><!-- LPG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LPG Connection issues</masterLabel>
+        <translation><!-- LPG Connection issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landscaping</masterLabel>
+        <translation><!-- Landscaping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late payment</masterLabel>
+        <translation><!-- Late payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leakage between or from above or Below Units</masterLabel>
+        <translation><!-- Leakage between or from above or Below Units --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Complaint</masterLabel>
+        <translation><!-- Legal Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lift Issue (Villas)</masterLabel>
+        <translation><!-- Lift Issue (Villas) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light fixtures</masterLabel>
+        <translation><!-- Light fixtures --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lights not working</masterLabel>
+        <translation><!-- Lights not working --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lobby Area</masterLabel>
+        <translation><!-- Lobby Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Log-in - Errors, not working,  enquiry or complaint</masterLabel>
+        <translation><!-- Log-in - Errors, not working,  enquiry or complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loss of SPA</masterLabel>
+        <translation><!-- Loss of SPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lost and Found</masterLabel>
+        <translation><!-- Lost and Found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lost/Damaged Cards</masterLabel>
+        <translation><!-- Lost/Damaged Cards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low water pressure</masterLabel>
+        <translation><!-- Low water pressure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MD/CM office escalation</masterLabel>
+        <translation><!-- MD/CM office escalation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Main Door</masterLabel>
+        <translation><!-- Main Door --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Malfunction</masterLabel>
+        <translation><!-- Malfunction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marble</masterLabel>
+        <translation><!-- Marble --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation><!-- Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minor Water Leakage</masterLabel>
+        <translation><!-- Minor Water Leakage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mirror</masterLabel>
+        <translation><!-- Mirror --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing payment</masterLabel>
+        <translation><!-- Missing payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misuse of Parking Area</masterLabel>
+        <translation><!-- Misuse of Parking Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Move in Permits</masterLabel>
+        <translation><!-- Move in Permits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Move out Permits</masterLabel>
+        <translation><!-- Move out Permits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC</masterLabel>
+        <translation><!-- NOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC issuance</masterLabel>
+        <translation><!-- NOC issuance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC related (blocked units)</masterLabel>
+        <translation><!-- NOC related (blocked units) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC related - blocked unit</masterLabel>
+        <translation><!-- NOC related - blocked unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC related for Oqood</masterLabel>
+        <translation><!-- NOC related for Oqood --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC related for Title Deed</masterLabel>
+        <translation><!-- NOC related for Title Deed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC submissions ( Currently mentioned as Design submission in system )</masterLabel>
+        <translation><!-- NOC submissions ( Currently mentioned as Design submission in system ) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOV</masterLabel>
+        <translation><!-- NOV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPV benefit</masterLabel>
+        <translation><!-- NPV benefit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Name Addition</masterLabel>
+        <translation><!-- Name Addition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Name Deletion</masterLabel>
+        <translation><!-- Name Deletion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Access Cards</masterLabel>
+        <translation><!-- New Access Cards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Request</masterLabel>
+        <translation><!-- New Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Contact Email</masterLabel>
+        <translation><!-- No Contact Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Hot Water Supply - Common Area</masterLabel>
+        <translation><!-- No Hot Water Supply - Common Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Power</masterLabel>
+        <translation><!-- No Power --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Water - Common Area</masterLabel>
+        <translation><!-- No Water - Common Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No proper Irrigation</masterLabel>
+        <translation><!-- No proper Irrigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No water</masterLabel>
+        <translation><!-- No water --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noise</masterLabel>
+        <translation><!-- Noise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noise and Nuisance</masterLabel>
+        <translation><!-- Noise and Nuisance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noise from Elevators</masterLabel>
+        <translation><!-- Noise from Elevators --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noise from electrical systems</masterLabel>
+        <translation><!-- Noise from electrical systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noise issues</masterLabel>
+        <translation><!-- Noise issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noisy</masterLabel>
+        <translation><!-- Noisy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nominations</masterLabel>
+        <translation><!-- Nominations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non RERA registered</masterLabel>
+        <translation><!-- Non RERA registered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non RERA registered project</masterLabel>
+        <translation><!-- Non RERA registered project --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Cooling</masterLabel>
+        <translation><!-- Not Cooling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Leashed</masterLabel>
+        <translation><!-- Not Leashed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Working</masterLabel>
+        <translation><!-- Not Working --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Completion</masterLabel>
+        <translation><!-- Notice of Completion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Delay</masterLabel>
+        <translation><!-- Notice of Delay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Online Services</masterLabel>
+        <translation><!-- Online Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oqood Request</masterLabel>
+        <translation><!-- Oqood Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oven</masterLabel>
+        <translation><!-- Oven --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ownership changes</masterLabel>
+        <translation><!-- Ownership changes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCC</masterLabel>
+        <translation><!-- PCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCC related</masterLabel>
+        <translation><!-- PCC related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PDC Hold</masterLabel>
+        <translation><!-- PDC Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PDC Return</masterLabel>
+        <translation><!-- PDC Return --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POP/3rd party docs</masterLabel>
+        <translation><!-- POP/3rd party docs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Package promised</masterLabel>
+        <translation><!-- Package promised --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paint Color Code Request</masterLabel>
+        <translation><!-- Paint Color Code Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parking Change</masterLabel>
+        <translation><!-- Parking Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parking Swap</masterLabel>
+        <translation><!-- Parking Swap --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parking Violations</masterLabel>
+        <translation><!-- Parking Violations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parking in Common Area</masterLabel>
+        <translation><!-- Parking in Common Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Party Loud Sound</masterLabel>
+        <translation><!-- Party Loud Sound --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Link Request</masterLabel>
+        <translation><!-- Payment Link Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Plan Explanation</masterLabel>
+        <translation><!-- Payment Plan Explanation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Plan Extension</masterLabel>
+        <translation><!-- Payment Plan Extension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Receipt</masterLabel>
+        <translation><!-- Payment Receipt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment related (NOC, service charge, dues)</masterLabel>
+        <translation><!-- Payment related (NOC, service charge, dues) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peeling Off</masterLabel>
+        <translation><!-- Peeling Off --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Permit submissions ( Currently mentioned as soil investigation  in system )</masterLabel>
+        <translation><!-- Permit submissions ( Currently mentioned as soil investigation  in system ) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal</masterLabel>
+        <translation><!-- Personal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pest Control- Flies/Mosquitos</masterLabel>
+        <translation><!-- Pest Control- Flies/Mosquitos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pest Control- Rodents</masterLabel>
+        <translation><!-- Pest Control- Rodents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipe Blockages</masterLabel>
+        <translation><!-- Pipe Blockages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plot enquiry</masterLabel>
+        <translation><!-- Plot enquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plot requests</masterLabel>
+        <translation><!-- Plot requests --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plumbing noise</masterLabel>
+        <translation><!-- Plumbing noise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pool Overflow (Villas)</masterLabel>
+        <translation><!-- Pool Overflow (Villas) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pool Temperature issue (Villas)</masterLabel>
+        <translation><!-- Pool Temperature issue (Villas) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post Handover Payment Plan</masterLabel>
+        <translation><!-- Post Handover Payment Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power trip/DB related issues</masterLabel>
+        <translation><!-- Power trip/DB related issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Events Booking</masterLabel>
+        <translation><!-- Private Events Booking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proffessional</masterLabel>
+        <translation><!-- Proffessional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Promise to Pay</masterLabel>
+        <translation><!-- Promise to Pay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pump Noise</masterLabel>
+        <translation><!-- Pump Noise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Query</masterLabel>
+        <translation><!-- Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rain/Wind Damages</masterLabel>
+        <translation><!-- Rain/Wind Damages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reallocation of funds</masterLabel>
+        <translation><!-- Reallocation of funds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rebate issue</masterLabel>
+        <translation><!-- Rebate issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recycle Waste Collection</masterLabel>
+        <translation><!-- Recycle Waste Collection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refrigerator</masterLabel>
+        <translation><!-- Refrigerator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refurbishment</masterLabel>
+        <translation><!-- Refurbishment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replacement Cards</masterLabel>
+        <translation><!-- Replacement Cards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Report Accident</masterLabel>
+        <translation><!-- Report Accident --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request</masterLabel>
+        <translation><!-- Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request for private event permission</masterLabel>
+        <translation><!-- Request for private event permission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale update in Salesforce</masterLabel>
+        <translation><!-- Resale update in Salesforce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resume</masterLabel>
+        <translation><!-- Resume --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revised Handover</masterLabel>
+        <translation><!-- Revised Handover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA Received</masterLabel>
+        <translation><!-- SPA Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA Signed</masterLabel>
+        <translation><!-- SPA Signed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPAM</masterLabel>
+        <translation><!-- SPAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sauna</masterLabel>
+        <translation><!-- Sauna --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sealant</masterLabel>
+        <translation><!-- Sealant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Security</masterLabel>
+        <translation><!-- Security --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Security Staff Behavior</masterLabel>
+        <translation><!-- Security Staff Behavior --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Fee Payments</masterLabel>
+        <translation><!-- Service Fee Payments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Provider Access</masterLabel>
+        <translation><!-- Service Provider Access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shortfall</masterLabel>
+        <translation><!-- Shortfall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shower Cubicle</masterLabel>
+        <translation><!-- Shower Cubicle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shuttle Bus Timings</masterLabel>
+        <translation><!-- Shuttle Bus Timings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signage</masterLabel>
+        <translation><!-- Signage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site visit request</masterLabel>
+        <translation><!-- Site visit request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smell</masterLabel>
+        <translation><!-- Smell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Snag Rectification</masterLabel>
+        <translation><!-- Snag Rectification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sports Facilities</masterLabel>
+        <translation><!-- Sports Facilities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stains</masterLabel>
+        <translation><!-- Stains --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Status</masterLabel>
+        <translation><!-- Status --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage Cage</masterLabel>
+        <translation><!-- Storage Cage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stray Cats</masterLabel>
+        <translation><!-- Stray Cats --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submission follow up ( Currently mentioned as plot NOC  in system )</masterLabel>
+        <translation><!-- Submission follow up ( Currently mentioned as plot NOC  in system ) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suggestions</masterLabel>
+        <translation><!-- Suggestions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supplier Details</masterLabel>
+        <translation><!-- Supplier Details --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swimming Pool</masterLabel>
+        <translation><!-- Swimming Pool --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Switches and sockets issue</masterLabel>
+        <translation><!-- Switches and sockets issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tax invoice</masterLabel>
+        <translation><!-- Tax invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical error</masterLabel>
+        <translation><!-- Technical error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telecom Issue</masterLabel>
+        <translation><!-- Telecom Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test</masterLabel>
+        <translation><!-- Test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Theft/Intruders</masterLabel>
+        <translation><!-- Theft/Intruders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thermostat</masterLabel>
+        <translation><!-- Thermostat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tiles</masterLabel>
+        <translation><!-- Tiles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Deed Fees</masterLabel>
+        <translation><!-- Title Deed Fees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown Noise</masterLabel>
+        <translation><!-- Unknown Noise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unregistered Email Id</masterLabel>
+        <translation><!-- Unregistered Email Id --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Update</masterLabel>
+        <translation><!-- Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Update/Request</masterLabel>
+        <translation><!-- Update/Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upgrade of the unit</masterLabel>
+        <translation><!-- Upgrade of the unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vehicle Speeding</masterLabel>
+        <translation><!-- Vehicle Speeding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Viewing Request</masterLabel>
+        <translation><!-- Viewing Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visitors Access to Community</masterLabel>
+        <translation><!-- Visitors Access to Community --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walkways</masterLabel>
+        <translation><!-- Walkways --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warranty Letters</masterLabel>
+        <translation><!-- Warranty Letters --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Washing Machine</masterLabel>
+        <translation><!-- Washing Machine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste Collection</masterLabel>
+        <translation><!-- Waste Collection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waster Disposal</masterLabel>
+        <translation><!-- Waster Disposal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Heater leakage</masterLabel>
+        <translation><!-- Water Heater leakage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Heater not working</masterLabel>
+        <translation><!-- Water Heater not working --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Leak</masterLabel>
+        <translation><!-- Water Leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Leakage</masterLabel>
+        <translation><!-- Water Leakage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Leakage in common area, toilets, amenities</masterLabel>
+        <translation><!-- Water Leakage in common area, toilets, amenities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Pump issue</masterLabel>
+        <translation><!-- Water Pump issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water colour change</masterLabel>
+        <translation><!-- Water colour change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waterproofing damage</masterLabel>
+        <translation><!-- Waterproofing damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Welcome Email</masterLabel>
+        <translation><!-- Welcome Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wet walls/ ceiling</masterLabel>
+        <translation><!-- Wet walls/ ceiling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White Goods Provided with Handover</masterLabel>
+        <translation><!-- White Goods Provided with Handover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Window Cleaning</masterLabel>
+        <translation><!-- Window Cleaning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Window/glass Sealant</masterLabel>
+        <translation><!-- Window/glass Sealant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong customer details</masterLabel>
+        <translation><!-- Wrong customer details --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

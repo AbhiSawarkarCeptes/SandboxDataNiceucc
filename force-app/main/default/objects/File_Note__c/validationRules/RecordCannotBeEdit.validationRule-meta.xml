@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RecordCannotBeEdit</fullName>
+    <active>false</active>
+    <description>Record cannot be edited, after it is approved</description>
+    <errorConditionFormula>Is_Approved__c</errorConditionFormula>
+    <errorMessage>You cannot edit record once it is approved</errorMessage>
+</ValidationRule>

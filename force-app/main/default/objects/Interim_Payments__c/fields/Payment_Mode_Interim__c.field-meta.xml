@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Mode_Interim__c</fullName>
+    <label>Payment Mode</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+                <label>Cheque</label>
+            </value>
+            <value>
+                <fullName>Credit Card</fullName>
+                <default>false</default>
+                <label>Credit Card</label>
+            </value>
+            <value>
+                <fullName>OTC Deposits(Cash counter)</fullName>
+                <default>false</default>
+                <label>OTC Deposits(Cash counter)</label>
+            </value>
+            <value>
+                <fullName>Website</fullName>
+                <default>false</default>
+                <label>Website</label>
+            </value>
+            <value>
+                <fullName>CDM Cash (Cash Deposit in Machine)</fullName>
+                <default>false</default>
+                <label>CDM Cash (Cash Deposit in Machine)</label>
+            </value>
+            <value>
+                <fullName>CDM Cheque (Cheque Deposit in Machine)</fullName>
+                <default>false</default>
+                <label>CDM Cheque (Cheque Deposit in Machine)</label>
+            </value>
+            <value>
+                <fullName>IWT(International)</fullName>
+                <default>false</default>
+                <label>IWT(International)</label>
+            </value>
+            <value>
+                <fullName>DWT(Domestic)</fullName>
+                <default>false</default>
+                <label>DWT(Domestic)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

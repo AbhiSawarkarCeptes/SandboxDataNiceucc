@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If parent Booking&apos;s Title Transfer is Completed or not --></help>
+    <label><!-- Title Deed Completed --></label>
+    <name>Title_Deed_Completed__c</name>
+</CustomFieldTranslation>

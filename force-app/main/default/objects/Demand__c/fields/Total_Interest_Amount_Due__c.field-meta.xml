@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Interest_Amount_Due__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Milestone_Name__c == &apos;Late Payment Charges&apos;,( Debit_Demanded__c +Debit_Tax_Demanded__c), (Interest_On_Paid_Amount__c + Interest_on_Balance_Amount__c -  (Total_Interest_Amount_Paid__c  +  Total_Interest_Amount_Waived__c )))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Interest Amount Due</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

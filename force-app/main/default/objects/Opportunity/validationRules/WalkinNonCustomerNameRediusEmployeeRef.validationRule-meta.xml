@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WalkinNonCustomerNameRediusEmployeeRef</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Walk_in_Detailed_Sub_Source__c, &apos;Non-Customer&apos;), ISBLANK(Walk_in_Name_of_Refree__c))</errorConditionFormula>
+    <errorDisplayField>Walk_in_Name_of_Refree__c</errorDisplayField>
+    <errorMessage>You must enter a value</errorMessage>
+</ValidationRule>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SPA Addendum Status --></label>
+    <name>SPA_Addendum_Status__c</name>
+    <picklistValues>
+        <masterLabel>Addendum Sent through docusign</masterLabel>
+        <translation><!-- Addendum Sent through docusign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Addendum audit review completed</masterLabel>
+        <translation><!-- Addendum audit review completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Addendum audit review rejected</masterLabel>
+        <translation><!-- Addendum audit review rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Addendum executed</masterLabel>
+        <translation><!-- Addendum executed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Addendum resent through docusign</masterLabel>
+        <translation><!-- Addendum resent through docusign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Addendum sent is expired</masterLabel>
+        <translation><!-- Addendum sent is expired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Addendum signed and sent to audit review</masterLabel>
+        <translation><!-- Addendum signed and sent to audit review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Addendum voided</masterLabel>
+        <translation><!-- Addendum voided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Addendum – seller signature completed</masterLabel>
+        <translation><!-- Addendum – seller signature completed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

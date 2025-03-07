@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field_Update_Type__c</fullName>
+    <description>Name Field Update Includes (Name as per passport, Name as per trade license)
+Other Field Update Includes (Email ID, phone number, Address, sales manager, sales director)</description>
+    <inlineHelpText>Name Field Update Includes (Name as per passport, Name as per trade license)
+Other Field Update Includes (Email ID, phone number, Address, sales manager, sales director)</inlineHelpText>
+    <label>Field Update Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Name Field Update</fullName>
+                <default>false</default>
+                <label>Name Field Update</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

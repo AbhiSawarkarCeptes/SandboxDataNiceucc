@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Trip Plan --></label>
+    <name>Trip_Plan__c</name>
+    <picklistValues>
+        <masterLabel>Multiple City</masterLabel>
+        <translation><!-- Multiple City --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>One City</masterLabel>
+        <translation><!-- One City --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

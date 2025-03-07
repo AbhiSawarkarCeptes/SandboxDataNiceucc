@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Disposition L5 --></label>
+    <name>Call_Disposition_L5__c</name>
+    <picklistValues>
+        <masterLabel>Flexibility for SDR Payment</masterLabel>
+        <translation><!-- Flexibility for SDR Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flexible Payment Option</masterLabel>
+        <translation><!-- Flexible Payment Option --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sale of Property</masterLabel>
+        <translation><!-- Sale of Property --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

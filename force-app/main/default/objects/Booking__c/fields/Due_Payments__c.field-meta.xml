@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Due_Payments__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Milestone_Due_Till_Date__c &gt;= Total_On_Account_Money_With_Registration__c , 
+(Milestone_Due_Till_Date__c -  Total_On_Account_Money_With_Registration__c), 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Due Payments</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

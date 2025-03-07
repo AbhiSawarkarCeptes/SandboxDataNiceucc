@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AGENT BUSY</fullName>
+                <default>false</default>
+                <label>AGENT BUSY</label>
+            </value>
+            <value>
+                <fullName>ANSWERED</fullName>
+                <default>false</default>
+                <label>ANSWERED</label>
+            </value>
+            <value>
+                <fullName>BUSY</fullName>
+                <default>false</default>
+                <label>BUSY</label>
+            </value>
+            <value>
+                <fullName>CANCEL</fullName>
+                <default>false</default>
+                <label>CANCEL</label>
+            </value>
+            <value>
+                <fullName>DISCONNECTED</fullName>
+                <default>false</default>
+                <label>DISCONNECTED</label>
+            </value>
+            <value>
+                <fullName>FAILD</fullName>
+                <default>false</default>
+                <label>FAILD</label>
+            </value>
+            <value>
+                <fullName>IVR TIMEOUT</fullName>
+                <default>false</default>
+                <label>IVR TIMEOUT</label>
+            </value>
+            <value>
+                <fullName>NO AGENTS</fullName>
+                <default>false</default>
+                <label>NO AGENTS</label>
+            </value>
+            <value>
+                <fullName>NO ANSWER</fullName>
+                <default>false</default>
+                <label>NO ANSWER</label>
+            </value>
+            <value>
+                <fullName>QUEUE TIMEOUT</fullName>
+                <default>false</default>
+                <label>QUEUE TIMEOUT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

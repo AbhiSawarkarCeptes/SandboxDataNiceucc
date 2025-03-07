@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Configuration_SM__c</name>
+    <picklistValues>
+        <masterLabel>1 BR</masterLabel>
+        <translation><!-- 1 BR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 BR</masterLabel>
+        <translation><!-- 2 BR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2DP</masterLabel>
+        <translation><!-- 2DP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 BR</masterLabel>
+        <translation><!-- 3 BR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3DP</masterLabel>
+        <translation><!-- 3DP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4BR Villa</masterLabel>
+        <translation><!-- 4BR Villa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4DP</masterLabel>
+        <translation><!-- 4DP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5BR Villa</masterLabel>
+        <translation><!-- 5BR Villa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canal Villa</masterLabel>
+        <translation><!-- Canal Villa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gardenia</masterLabel>
+        <translation><!-- Gardenia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plot</masterLabel>
+        <translation><!-- Plot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restaurant</masterLabel>
+        <translation><!-- Restaurant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail</masterLabel>
+        <translation><!-- Retail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ST</masterLabel>
+        <translation><!-- ST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Townhouse</masterLabel>
+        <translation><!-- Townhouse --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

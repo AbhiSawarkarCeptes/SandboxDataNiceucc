@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CP_OR_SC_IS_Mandatory_Video_Shoot</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (RecordType.Name == &apos;Video Shoot&apos;, Channel_Partner__c == null, Sobha_Connect__c = null)</errorConditionFormula>
+    <errorMessage>CP or SC is mandatory for video shoot.</errorMessage>
+</ValidationRule>

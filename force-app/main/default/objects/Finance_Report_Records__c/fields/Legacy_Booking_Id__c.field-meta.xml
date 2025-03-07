@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legacy_Booking_Id__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(Not(ISBLANK(Demand__c)), Demand__r.Legacy_Booking_Id__c,
+If(Not(ISBLANK(Receipt__c)), Receipt__r.Legacy_Booking_Id__c,
+If(Not(ISBLANK(Transfer_Amount__c)), &apos;&apos;,
+If(Not(ISBLANK(Registration_Payment_Account__c)), &apos;&apos;, &apos;&apos;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Legacy Booking Id</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

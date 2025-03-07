@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Show Send Renewal Link Button --></label>
+    <name>Show_Send_Renewal_Link_Button__c</name>
+</CustomFieldTranslation>

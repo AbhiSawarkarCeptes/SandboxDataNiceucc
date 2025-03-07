@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NPS_Survey_Status__c</fullName>
+    <label>NPS Survey Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Call Completed</fullName>
+                <default>false</default>
+                <label>Call Completed</label>
+            </value>
+            <value>
+                <fullName>Did Not Pick</fullName>
+                <default>false</default>
+                <label>Did Not Pick</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+            <value>
+                <fullName>Wrong Number / Non-Contactable</fullName>
+                <default>false</default>
+                <label>Wrong Number / Non-Contactable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enquiry_Mode_System__c</fullName>
+    <label>Inquiry Mode</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Call</fullName>
+                <default>false</default>
+                <label>Call</label>
+            </value>
+            <value>
+                <fullName>SMS</fullName>
+                <default>false</default>
+                <label>SMS</label>
+            </value>
+            <value>
+                <fullName>Internet</fullName>
+                <default>false</default>
+                <label>Internet</label>
+            </value>
+            <value>
+                <fullName>Personal Visit - Site</fullName>
+                <default>false</default>
+                <label>Personal Visit - Site</label>
+            </value>
+            <value>
+                <fullName>Personal Visit - HO</fullName>
+                <default>false</default>
+                <label>Personal Visit - HO</label>
+            </value>
+            <value>
+                <fullName>Personal Visit - Exhibition</fullName>
+                <default>false</default>
+                <label>Personal Visit - Exhibition</label>
+            </value>
+            <value>
+                <fullName>Personal Visit - Commercial Site</fullName>
+                <default>false</default>
+                <label>Personal Visit - Commercial Site</label>
+            </value>
+            <value>
+                <fullName>Historical Data - Sell.do</fullName>
+                <default>false</default>
+                <label>Historical Data - Sell.do</label>
+            </value>
+            <value>
+                <fullName>Personal Visit - Event</fullName>
+                <default>false</default>
+                <label>Personal Visit - Event</label>
+            </value>
+            <value>
+                <fullName>Database</fullName>
+                <default>false</default>
+                <label>Database</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- File Type --></label>
+    <name>File_Type__c</name>
+    <picklistValues>
+        <masterLabel>Emirates Id</masterLabel>
+        <translation><!-- Emirates Id --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Passport</masterLabel>
+        <translation><!-- Passport --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RERA Certificate</masterLabel>
+        <translation><!-- RERA Certificate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary Document</masterLabel>
+        <translation><!-- Secondary Document --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vat Excemption</masterLabel>
+        <translation><!-- Vat Excemption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visa Copy</masterLabel>
+        <translation><!-- Visa Copy --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

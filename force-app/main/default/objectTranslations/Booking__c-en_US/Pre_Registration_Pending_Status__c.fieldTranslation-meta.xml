@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pre-Registration Pending Status --></label>
+    <name>Pre_Registration_Pending_Status__c</name>
+    <picklistValues>
+        <masterLabel>DLD fees not paid by customer</masterLabel>
+        <translation><!-- DLD fees not paid by customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance to Transfer to Naqoodi</masterLabel>
+        <translation><!-- Finance to Transfer to Naqoodi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for SPA</masterLabel>
+        <translation><!-- Pending for SPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-registration under process</masterLabel>
+        <translation><!-- Pre-registration under process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under investor</masterLabel>
+        <translation><!-- Under investor --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

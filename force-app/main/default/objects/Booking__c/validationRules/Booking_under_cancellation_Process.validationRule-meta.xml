@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booking_under_cancellation_Process</fullName>
+    <active>false</active>
+    <description>Booking is in cancellation process. No updates are allowed on the record for collection team</description>
+    <errorConditionFormula>(TEXT(Termination_Status__c) = &apos;Submitted to Raise the Internal DLD team&apos; ||  TEXT(Termination_Status__c) = &apos;Raised to DLD Team&apos; ) &amp;&amp;  ($Profile.Name = &apos;Collection&apos;  || $Profile.Name = &apos;Collection with Payment plan Edit Access&apos;)</errorConditionFormula>
+    <errorMessage>Booking is in cancellation process. No updates are allowed on the record</errorMessage>
+</ValidationRule>

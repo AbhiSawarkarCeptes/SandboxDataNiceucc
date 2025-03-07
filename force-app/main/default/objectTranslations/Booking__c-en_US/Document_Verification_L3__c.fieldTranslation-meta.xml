@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Document Verification L3 --></label>
+    <name>Document_Verification_L3__c</name>
+    <picklistValues>
+        <masterLabel>3rd Party Cheque/Payment</masterLabel>
+        <translation><!-- 3rd Party Cheque/Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aadhar</masterLabel>
+        <translation><!-- Aadhar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement Value Mismatch</masterLabel>
+        <translation><!-- Agreement Value Mismatch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement Value Missing</masterLabel>
+        <translation><!-- Agreement Value Missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Booking Date Missing</masterLabel>
+        <translation><!-- Booking Date Missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CP Name Mismatch (BF v/s Enquiry Form)</masterLabel>
+        <translation><!-- CP Name Mismatch (BF v/s Enquiry Form) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carpet Area Incorrect</masterLabel>
+        <translation><!-- Carpet Area Incorrect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carpet Area Missing</masterLabel>
+        <translation><!-- Carpet Area Missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change of Ink</masterLabel>
+        <translation><!-- Change of Ink --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel Partner Address</masterLabel>
+        <translation><!-- Channel Partner Address --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel Partner Email ID</masterLabel>
+        <translation><!-- Channel Partner Email ID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel Partner Name and RERA Reg. No.</masterLabel>
+        <translation><!-- Channel Partner Name and RERA Reg. No. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel Partner No.</masterLabel>
+        <translation><!-- Channel Partner No. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Signature Missing</masterLabel>
+        <translation><!-- Customer Signature Missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Signature not matching ID proof</masterLabel>
+        <translation><!-- Customer Signature not matching ID proof --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Does not match with Enquiry Form</masterLabel>
+        <translation><!-- Does not match with Enquiry Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Does not match with ID Proof</masterLabel>
+        <translation><!-- Does not match with ID Proof --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email ID</masterLabel>
+        <translation><!-- Email ID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enquiry Form Incomplete</masterLabel>
+        <translation><!-- Enquiry Form Incomplete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flat Details Missing</masterLabel>
+        <translation><!-- Flat Details Missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flat not available for sale</masterLabel>
+        <translation><!-- Flat not available for sale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>For further clarification</masterLabel>
+        <translation><!-- For further clarification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incomplete Address</masterLabel>
+        <translation><!-- Incomplete Address --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect Details</masterLabel>
+        <translation><!-- Incorrect Details --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non CTS Cheque</masterLabel>
+        <translation><!-- Non CTS Cheque --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overwriting/White Ink (without cross signature by customer)</masterLabel>
+        <translation><!-- Overwriting/White Ink (without cross signature by customer) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAN</masterLabel>
+        <translation><!-- PAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone No.</masterLabel>
+        <translation><!-- Phone No. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SM Signature Missing</masterLabel>
+        <translation><!-- SM Signature Missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signature Missing on Cost Sheet</masterLabel>
+        <translation><!-- Signature Missing on Cost Sheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Head Signature Missing</masterLabel>
+        <translation><!-- Site Head Signature Missing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

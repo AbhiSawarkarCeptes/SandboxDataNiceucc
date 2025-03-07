@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>When_Do_You_Want_to_Buy__c</fullName>
+    <label>When Do You Want to Buy</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>WDB 1</fullName>
+                <default>false</default>
+                <label>WDB 1</label>
+            </value>
+            <value>
+                <fullName>WDB 2</fullName>
+                <default>false</default>
+                <label>WDB 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

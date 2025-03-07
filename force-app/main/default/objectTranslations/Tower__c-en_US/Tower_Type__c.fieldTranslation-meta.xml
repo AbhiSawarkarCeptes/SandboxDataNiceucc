@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tower Type --></label>
+    <name>Tower_Type__c</name>
+    <picklistValues>
+        <masterLabel>Apartments</masterLabel>
+        <translation><!-- Apartments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plots</masterLabel>
+        <translation><!-- Plots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Townhouses</masterLabel>
+        <translation><!-- Townhouses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Villas</masterLabel>
+        <translation><!-- Villas --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

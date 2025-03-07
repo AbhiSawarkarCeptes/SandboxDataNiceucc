@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRM_Ops_Pending_Status__c</fullName>
+    <label>CRM Ops Pending Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer documents pending</fullName>
+                <default>false</default>
+                <label>Customer documents pending</label>
+            </value>
+            <value>
+                <fullName>Floor plan pending</fullName>
+                <default>false</default>
+                <label>Floor plan pending</label>
+            </value>
+            <value>
+                <fullName>Area update pending</fullName>
+                <default>false</default>
+                <label>Area update pending</label>
+            </value>
+            <value>
+                <fullName>IT error</fullName>
+                <default>false</default>
+                <label>IT error</label>
+            </value>
+            <value>
+                <fullName>Booking form under process</fullName>
+                <default>false</default>
+                <label>Booking form under process</label>
+            </value>
+            <value>
+                <fullName>Issue under discussion</fullName>
+                <default>false</default>
+                <label>Issue under discussion</label>
+            </value>
+            <value>
+                <fullName>To be issued</fullName>
+                <default>false</default>
+                <label>To be issued</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

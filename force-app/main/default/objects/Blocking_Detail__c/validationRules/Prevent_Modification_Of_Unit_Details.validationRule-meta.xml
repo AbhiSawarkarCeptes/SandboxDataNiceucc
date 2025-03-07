@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Modification_Of_Unit_Details</fullName>
+    <active>true</active>
+    <description>Stop the users from modifying the unit details on existing blocking details record</description>
+    <errorConditionFormula>AND(
+PRIORVALUE(Unit__c) &lt;&gt; null,
+ISCHANGED(Unit__c) 
+)</errorConditionFormula>
+    <errorMessage>Unit details can&apos;t be modified</errorMessage>
+</ValidationRule>

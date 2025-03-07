@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source__c</fullName>
+    <label>Source</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Marketing (Digital)</fullName>
+                <default>false</default>
+                <label>Marketing (Digital)</label>
+            </value>
+            <value>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+                <label>Walk-in</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>Client with Sobha Connect</fullName>
+                <default>false</default>
+                <label>Client with Sobha Connect</label>
+            </value>
+            <value>
+                <fullName>Client with Channel Partner</fullName>
+                <default>false</default>
+                <label>Client with Channel Partner</label>
+            </value>
+            <value>
+                <fullName>Loyalty customer</fullName>
+                <default>false</default>
+                <label>Loyalty customer</label>
+            </value>
+            <value>
+                <fullName>Self Initiative</fullName>
+                <default>false</default>
+                <label>Self Initiative</label>
+            </value>
+            <value>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+                <label>Corporate</label>
+            </value>
+            <value>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+                <label>Channel Partner</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Client with Broker</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Client with Broker</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marketing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

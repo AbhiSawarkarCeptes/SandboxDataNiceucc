@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cancellation Allocation --></label>
+    <name>Cancellation_Allocation__c</name>
+    <picklistValues>
+        <masterLabel>Allocate to CRM Team</masterLabel>
+        <translation><!-- Allocate to CRM Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Allocate to DLD Team</masterLabel>
+        <translation><!-- Allocate to DLD Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Cancellation</masterLabel>
+        <translation><!-- Internal Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re Allocated To CRM By Collection</masterLabel>
+        <translation><!-- Re Allocated To CRM By Collection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Send it to Legal team</masterLabel>
+        <translation><!-- Send it to Legal team --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

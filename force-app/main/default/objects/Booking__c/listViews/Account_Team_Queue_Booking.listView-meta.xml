@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Team_Queue_Booking</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Account Team Queue</label>
+    <queue>Account_Team_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

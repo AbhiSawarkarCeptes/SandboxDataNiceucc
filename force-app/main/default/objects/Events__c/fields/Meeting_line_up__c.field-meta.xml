@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meeting_line_up__c</fullName>
+    <label>Meeting line up</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>One Channel Partner</fullName>
+                <default>false</default>
+                <label>One Channel Partner</label>
+            </value>
+            <value>
+                <fullName>Multiple Channel Partner</fullName>
+                <default>false</default>
+                <label>Multiple Channel Partner</label>
+            </value>
+            <value>
+                <fullName>Channel Partner with Customer</fullName>
+                <default>false</default>
+                <label>Channel Partner with Customer</label>
+            </value>
+            <value>
+                <fullName>Customers</fullName>
+                <default>false</default>
+                <label>Customers</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

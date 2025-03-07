@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Rejected To --></label>
+    <name>Rejected_To__c</name>
+    <picklistValues>
+        <masterLabel>Accounts Rejected to CRM</masterLabel>
+        <translation><!-- Accounts Rejected to CRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Accounts Rejected to Collections</masterLabel>
+        <translation><!-- Accounts Rejected to Collections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audit Rejected To CRM &amp; Collection</masterLabel>
+        <translation><!-- Audit Rejected To CRM &amp; Collection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audit Rejected to Accounts</masterLabel>
+        <translation><!-- Audit Rejected to Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audit Rejected to CRM</masterLabel>
+        <translation><!-- Audit Rejected to CRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audit Rejected to CRM &amp; Accounts</masterLabel>
+        <translation><!-- Audit Rejected to CRM &amp; Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audit Rejected to CRM &amp; Collections &amp; Accounts</masterLabel>
+        <translation><!-- Audit Rejected to CRM &amp; Collections &amp; Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audit Rejected to Collections</masterLabel>
+        <translation><!-- Audit Rejected to Collections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audit Rejected to Collections &amp; Accounts</masterLabel>
+        <translation><!-- Audit Rejected to Collections &amp; Accounts --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

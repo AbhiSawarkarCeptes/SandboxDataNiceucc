@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRM_Finance_Audit_CFO_are_mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ TEXT(Team_Type__c) = &apos;File Note Approver Team&apos;,
+ OR(
+     ISBLANK(CFO__c),
+     ISBLANK(CRM__c),
+     ISBLANK(Finance__c),
+     ISBLANK(Audit__c)
+ )
+)</errorConditionFormula>
+    <errorMessage>Please select CRM, CFO, Audit and Finance for approval</errorMessage>
+</ValidationRule>

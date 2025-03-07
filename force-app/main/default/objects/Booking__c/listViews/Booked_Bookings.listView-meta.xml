@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booked_Bookings</fullName>
+    <columns>NAME</columns>
+    <columns>Receipts__c</columns>
+    <columns>Opportunity__c</columns>
+    <columns>Tower__c</columns>
+    <columns>Unit__c</columns>
+    <columns>Quotation__c</columns>
+    <columns>Stage_of_Booking__c</columns>
+    <columns>Current_Status__c</columns>
+    <columns>Status__c</columns>
+    <columns>Agreement_Value__c</columns>
+    <columns>Paid_Percentage__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage_of_Booking__c</field>
+        <operation>equals</operation>
+        <value>Booked</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelled,Cancellation In Progress</value>
+    </filters>
+    <filters>
+        <field>Legacy_Booking_Id__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Opportunity__c</field>
+        <operation>notContain</operation>
+        <value>test</value>
+    </filters>
+    <label>1.3 Booked Bookings</label>
+    <sharedTo>
+        <group>Booking_Group</group>
+    </sharedTo>
+</ListView>

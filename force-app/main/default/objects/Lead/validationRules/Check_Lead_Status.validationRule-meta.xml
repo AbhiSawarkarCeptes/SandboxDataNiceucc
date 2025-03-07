@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Lead_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Status , 
+                       &apos;Lost&apos;),ISBLANK(TEXT(Reason_For_Lost__c)))</errorConditionFormula>
+    <errorDisplayField>Reason_For_Lost__c</errorDisplayField>
+    <errorMessage>Reason for lost is mandatory</errorMessage>
+</ValidationRule>

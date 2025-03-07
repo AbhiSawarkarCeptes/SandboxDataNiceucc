@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Of_Meeting_can_not_be_changed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Not(IsNew()) , Ischanged(Time_Of_Meeting__c))</errorConditionFormula>
+    <errorDisplayField>Time_Of_Meeting__c</errorDisplayField>
+    <errorMessage>Time Of Meeting can not be changed</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancellation_Reason_cannot_be_changed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+				$Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+				NOT( ISPICKVAL( PRIORVALUE(Cancellation_Reason__c), &apos;&apos;) ),
+				ISCHANGED(Cancellation_Reason__c) 
+)</errorConditionFormula>
+    <errorDisplayField>Cancellation_Reason__c</errorDisplayField>
+    <errorMessage>Cannot change the cancellation reason once it&apos;s set. Please contact the system administrator if you need to update the cancellation reason on this receipt.</errorMessage>
+</ValidationRule>

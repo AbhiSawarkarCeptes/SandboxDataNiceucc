@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Advance Payment Rebate</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Advance Payment Rebates</value>
+    </caseValues>
+    <layouts>
+        <layout>Advance Payment Rebate Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Calculate Rebate --></label>
+        <name>Calculate_Rebate</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Resubmit for Approval --></label>
+        <name>Resubmit_for_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Upload Calculation Sheet --></label>
+        <name>Upload_Calculation_Sheet</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- APR cannot be raise because of booking source is Employee Reference --></errorMessage>
+        <name>Booking_Source</name>
+    </validationRules>
+</CustomObjectTranslation>

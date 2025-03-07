@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cancellation Reason --></label>
+    <name>Cancellation_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Cheque Replacement</masterLabel>
+        <translation><!-- Cheque Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Difference in Amount/Words</masterLabel>
+        <translation><!-- Difference in Amount/Words --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dormant / Closed Account</masterLabel>
+        <translation><!-- Dormant / Closed Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insufficient Fund</masterLabel>
+        <translation><!-- Insufficient Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PR Rejection</masterLabel>
+        <translation><!-- PR Rejection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signature Irregular</masterLabel>
+        <translation><!-- Signature Irregular --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

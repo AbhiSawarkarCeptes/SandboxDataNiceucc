@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>RDS_Country_Code__c</columns>
+    <columns>LEAD.MOBILE_PHONE</columns>
+    <columns>Presales_Agent__c</columns>
+    <columns>Last_Call_Attempt_Status__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>My Leads</label>
+    <sharedTo>
+        <group>My_Leads_View_Access_for_SM_s</group>
+        <group>Sales_International</group>
+    </sharedTo>
+</ListView>

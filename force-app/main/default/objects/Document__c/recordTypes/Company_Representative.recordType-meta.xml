@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Representative</fullName>
+    <active>true</active>
+    <label>Company Representative</label>
+    <picklistValues>
+        <picklist>Document_Type__c</picklist>
+        <values>
+            <fullName>All</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booking Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DSPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

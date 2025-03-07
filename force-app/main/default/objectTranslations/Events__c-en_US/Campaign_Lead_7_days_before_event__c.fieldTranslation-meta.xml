@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Campaign Lead 7 days before event --></label>
+    <name>Campaign_Lead_7_days_before_event__c</name>
+</CustomFieldTranslation>

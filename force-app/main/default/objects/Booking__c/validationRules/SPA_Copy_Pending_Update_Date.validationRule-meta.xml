@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPA_Copy_Pending_Update_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ISCHANGED(SPA_Executed__c)  || ISCHANGED(Received_SPA_Particular_sent_recev_date__c ) ) &amp;&amp;  ISPICKVAL(SPA_Executed__c, &apos;Revised SPA Particular received - SPA Copy Pending&apos;) &amp;&amp; 
+ (Received_SPA_Particular_sent_recev_date__c &lt; 
+ PRIORVALUE(Received_SPA_Particular_sent_recev_date__c) || (PRIORVALUE(Received_SPA_Particular_sent_recev_date__c)&lt; TODAY()
+&amp;&amp; Received_SPA_Particular_sent_recev_date__c == PRIORVALUE(Received_SPA_Particular_sent_recev_date__c)  )
+)</errorConditionFormula>
+    <errorMessage>Received SPA Particular sent/receive date should be greater than previous date when SPA Status is Revised SPA Particular Received - SPA Copy Pending.</errorMessage>
+</ValidationRule>

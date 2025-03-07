@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Disposition L3 --></label>
+    <name>Call_Disposition_L3__c</name>
+    <picklistValues>
+        <masterLabel>100% payments shortfall</masterLabel>
+        <translation><!-- 100% payments shortfall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd party docs pending</masterLabel>
+        <translation><!-- 3rd party docs pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd party not responding</masterLabel>
+        <translation><!-- 3rd party not responding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd party payments representative</masterLabel>
+        <translation><!-- 3rd party payments representative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank transfer beneficiary wrong</masterLabel>
+        <translation><!-- Bank transfer beneficiary wrong --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank transfer issue</masterLabel>
+        <translation><!-- Bank transfer issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRM related</masterLabel>
+        <translation><!-- CRM related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Call Transfer / Case transfer</masterLabel>
+        <translation><!-- Call Transfer / Case transfer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancel-swap movement of funds</masterLabel>
+        <translation><!-- Cancel-swap movement of funds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community/Facilities related</masterLabel>
+        <translation><!-- Community/Facilities related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract and cheque copy received</masterLabel>
+        <translation><!-- Contract and cheque copy received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conversion rate foreign currency dispute</masterLabel>
+        <translation><!-- Conversion rate foreign currency dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer documentation complete - title deed under process</masterLabel>
+        <translation><!-- Customer documentation complete - title deed under process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer finalising bank for mortgage</masterLabel>
+        <translation><!-- Customer finalising bank for mortgage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer misunderstanding NPV benefit</masterLabel>
+        <translation><!-- Customer misunderstanding NPV benefit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD related</masterLabel>
+        <translation><!-- DLD related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD termination ongoing</masterLabel>
+        <translation><!-- DLD termination ongoing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discrepancy in SPA</masterLabel>
+        <translation><!-- Discrepancy in SPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email ID/phone number update</masterLabel>
+        <translation><!-- Email ID/phone number update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excess commitments to customer</masterLabel>
+        <translation><!-- Excess commitments to customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>False commitments to customer</masterLabel>
+        <translation><!-- False commitments to customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>False communication via sales / brokers</masterLabel>
+        <translation><!-- False communication via sales / brokers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect escrow payments - transfer requested</masterLabel>
+        <translation><!-- Incorrect escrow payments - transfer requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Initiate cancellation processes</masterLabel>
+        <translation><!-- Initiate cancellation processes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal cancellation - CRM ongoing</masterLabel>
+        <translation><!-- Internal cancellation - CRM ongoing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LP related</masterLabel>
+        <translation><!-- LP related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LP to be charged</masterLabel>
+        <translation><!-- LP to be charged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LP waiver requested</masterLabel>
+        <translation><!-- LP waiver requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LPF calculation incorrect</masterLabel>
+        <translation><!-- LPF calculation incorrect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal related</masterLabel>
+        <translation><!-- Legal related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal termination</masterLabel>
+        <translation><!-- Legal termination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Less than 30 days since booking</masterLabel>
+        <translation><!-- Less than 30 days since booking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loyalty rebate pending</masterLabel>
+        <translation><!-- Loyalty rebate pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mishandling payment instrument</masterLabel>
+        <translation><!-- Mishandling payment instrument --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing payment in SOA</masterLabel>
+        <translation><!-- Missing payment in SOA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Money not realised in accounts report</masterLabel>
+        <translation><!-- Money not realised in accounts report --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>More than 30 days since booking - LP to be charged</masterLabel>
+        <translation><!-- More than 30 days since booking - LP to be charged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple units advance payment</masterLabel>
+        <translation><!-- Multiple units advance payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPV interested buyer/seller</masterLabel>
+        <translation><!-- NPV interested buyer/seller --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPV interested customer</masterLabel>
+        <translation><!-- NPV interested customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No repsonse on all channels</masterLabel>
+        <translation><!-- No repsonse on all channels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oqood document requested</masterLabel>
+        <translation><!-- Oqood document requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oqood pending</masterLabel>
+        <translation><!-- Oqood pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCC requested / under process</masterLabel>
+        <translation><!-- PCC requested / under process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POP documents pending</masterLabel>
+        <translation><!-- POP documents pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POP supporting info required</masterLabel>
+        <translation><!-- POP supporting info required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PR submitted - receipt pending</masterLabel>
+        <translation><!-- PR submitted - receipt pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTP next month</masterLabel>
+        <translation><!-- PTP next month --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTP this month</masterLabel>
+        <translation><!-- PTP this month --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTP this week</masterLabel>
+        <translation><!-- PTP this week --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment default notice sent</masterLabel>
+        <translation><!-- Payment default notice sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment link request</masterLabel>
+        <translation><!-- Payment link request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-approval / Offer letter received</masterLabel>
+        <translation><!-- Pre-approval / Offer letter received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-allocation of funds - different units</masterLabel>
+        <translation><!-- Re-allocation of funds - different units --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-allocation of funds -within same SOA</masterLabel>
+        <translation><!-- Re-allocation of funds -within same SOA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale SOA dispute</masterLabel>
+        <translation><!-- Resale SOA dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale under process</masterLabel>
+        <translation><!-- Resale under process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOA disputes for mortgage</masterLabel>
+        <translation><!-- SOA disputes for mortgage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA required</masterLabel>
+        <translation><!-- SPA required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales related</masterLabel>
+        <translation><!-- Sales related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales related misselling</masterLabel>
+        <translation><!-- Sales related misselling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales team commitment - PTP</masterLabel>
+        <translation><!-- Sales team commitment - PTP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single unit advance</masterLabel>
+        <translation><!-- Single unit advance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha staff fraud</masterLabel>
+        <translation><!-- Sobha staff fraud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title deed complete</masterLabel>
+        <translation><!-- Title deed complete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valuation under process</masterLabel>
+        <translation><!-- Valuation under process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>booking related</masterLabel>
+        <translation><!-- booking related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>call back no</masterLabel>
+        <translation><!-- call back no --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>call back request</masterLabel>
+        <translation><!-- call back request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>call back yes</masterLabel>
+        <translation><!-- call back yes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>cancel-refund requested</masterLabel>
+        <translation><!-- cancel-refund requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>excess amounts refund related</masterLabel>
+        <translation><!-- excess amounts refund related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>not qualified booking - 10% not paid</masterLabel>
+        <translation><!-- not qualified booking - 10% not paid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>payment plan extension request</masterLabel>
+        <translation><!-- payment plan extension request --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

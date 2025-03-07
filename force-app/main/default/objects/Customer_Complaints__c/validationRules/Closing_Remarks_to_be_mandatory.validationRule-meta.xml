@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closing_Remarks_to_be_mandatory</fullName>
+    <active>true</active>
+    <description>This rule is used to make the closing remarks mandatory when the closure status is set to closed.</description>
+    <errorConditionFormula>AND(
+TEXT(Complaint_Closure_Status__c) = &quot;Closed&quot;,
+ISBLANK(Closing_Remarks__c))</errorConditionFormula>
+    <errorMessage>Please enter the Closing Remarks</errorMessage>
+</ValidationRule>

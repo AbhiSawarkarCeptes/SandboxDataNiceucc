@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Offer Applicable Projects --></label>
+    <name>Offer_Applicable_Projects__c</name>
+    <picklistValues>
+        <masterLabel>CVG</masterLabel>
+        <translation><!-- CVG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>One Park Avenue Tower</masterLabel>
+        <translation><!-- One Park Avenue Tower --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phase I</masterLabel>
+        <translation><!-- Phase I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phase I - Building 1</masterLabel>
+        <translation><!-- Phase I - Building 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phase I - Building 4</masterLabel>
+        <translation><!-- Phase I - Building 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phase II</masterLabel>
+        <translation><!-- Phase II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phase II - Building 2</masterLabel>
+        <translation><!-- Phase II - Building 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phase II - Building 3</masterLabel>
+        <translation><!-- Phase II - Building 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phase III</masterLabel>
+        <translation><!-- Phase III --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phase III - Building 5</masterLabel>
+        <translation><!-- Phase III - Building 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phase III - Building 6</masterLabel>
+        <translation><!-- Phase III - Building 6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCVR - A</masterLabel>
+        <translation><!-- SCVR - A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCVR - B</masterLabel>
+        <translation><!-- SCVR - B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Creek vistas Reserve</masterLabel>
+        <translation><!-- Sobha Creek vistas Reserve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Tranquility</masterLabel>
+        <translation><!-- Sobha Tranquility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The S</masterLabel>
+        <translation><!-- The S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower A</masterLabel>
+        <translation><!-- Tower A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower B</masterLabel>
+        <translation><!-- Tower B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Townhouse</masterLabel>
+        <translation><!-- Townhouse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waterside Plots</masterLabel>
+        <translation><!-- Waterside Plots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waves</masterLabel>
+        <translation><!-- Waves --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waves Grande</masterLabel>
+        <translation><!-- Waves Grande --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

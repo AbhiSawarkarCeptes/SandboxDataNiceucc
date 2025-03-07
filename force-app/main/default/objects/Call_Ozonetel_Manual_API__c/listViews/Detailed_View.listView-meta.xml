@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Detailed_View</fullName>
+    <columns>NAME</columns>
+    <columns>Manual_API_to_be_called__c</columns>
+    <columns>Scheduler_API_to_be_Called__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>Detailed View</label>
+</ListView>

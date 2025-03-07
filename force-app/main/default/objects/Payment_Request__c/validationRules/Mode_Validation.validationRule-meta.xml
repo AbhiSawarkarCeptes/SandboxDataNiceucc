@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mode_Validation</fullName>
+    <active>true</active>
+    <description>This is for Treasury profile to restrict the access</description>
+    <errorConditionFormula>AND(ISCHANGED(Mode__c),
+CONTAINS($Profile.Name,&apos;Treasury&apos;))</errorConditionFormula>
+    <errorMessage>You dont have access to change this value. Please contact SF Admin</errorMessage>
+</ValidationRule>

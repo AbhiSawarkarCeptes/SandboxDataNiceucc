@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VCC1__MobileNumber__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(
+ BEGINS(VCC1__Mobile_Number__c, &apos;00&apos;),
+ MID( VCC1__Mobile_Number__c , 3, 10),
+ IF(
+  BEGINS(VCC1__Mobile_Number__c, &apos;0&apos;),
+  MID( VCC1__Mobile_Number__c, 2, 10),
+  IF(
+   BEGINS(VCC1__Mobile_Number__c, VCC1__Country_ISO_Code__c),
+   MID(VCC1__Mobile_Number__c , LEN(VCC1__Country_ISO_Code__c)+1, LEN(VCC1__Mobile_Number__c)-LEN(VCC1__Country_ISO_Code__c)+1),
+   VCC1__Mobile_Number__c
+  )
+ )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Mobile Number</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

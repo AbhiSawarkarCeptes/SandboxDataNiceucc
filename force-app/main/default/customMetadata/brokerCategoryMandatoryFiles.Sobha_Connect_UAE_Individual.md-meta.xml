@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Sobha Connect - UAE - Individual</label>
+    <protected>false</protected>
+    <values>
+        <field>MandatoryFiles__c</field>
+        <value xsi:type="xsd:string">Passport,</value>
+    </values>
+    <values>
+        <field>OptionalFiles__c</field>
+        <value xsi:type="xsd:string">Emirates id,Visa</value>
+    </values>
+</CustomMetadata>

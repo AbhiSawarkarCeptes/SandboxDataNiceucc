@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>New Sale Approval</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>New Sale Approvals</value>
+    </caseValues>
+    <layouts>
+        <layout>Admin</layout>
+        <sections>
+            <label><!-- Approval Submission Information --></label>
+            <section>Approval Submission Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fifth Applicant Details --></label>
+            <section>Fifth Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- First Applicant Details --></label>
+            <section>First Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fourth Applicant Details --></label>
+            <section>Fourth Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Second Applicant Details --></label>
+            <section>Second Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Third Applicant Details --></label>
+            <section>Third Applicant Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Sale Approval Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Sale Approval VP Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>unit hold request Layout</layout>
+        <sections>
+            <label><!-- Approval Submission Information --></label>
+            <section>Approval Submission Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fifth Applicant Details --></label>
+            <section>Fifth Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- First Applicant Details --></label>
+            <section>First Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fourth Applicant Details --></label>
+            <section>Fourth Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Second Applicant Details --></label>
+            <section>Second Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Third Applicant Details --></label>
+            <section>Third Applicant Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>unit hold request Layout For SO</layout>
+        <sections>
+            <label><!-- Approval Submission Information --></label>
+            <section>Approval Submission Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fifth Applicant Details --></label>
+            <section>Fifth Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- First Applicant Details --></label>
+            <section>First Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fourth Applicant Details --></label>
+            <section>Fourth Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Second Applicant Details --></label>
+            <section>Second Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Third Applicant Details --></label>
+            <section>Third Applicant Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select an opportunity without booking --></errorMessage>
+        <name>Opportunity_booking_should_be_blank</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Charge_Type__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Charge Type</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Upkeep/refurbishment Charges</fullName>
+                <default>true</default>
+                <label>Upkeep/refurbishment Charges</label>
+            </value>
+            <value>
+                <fullName>DEWA Charges</fullName>
+                <default>false</default>
+                <label>DEWA Charges</label>
+            </value>
+            <value>
+                <fullName>Title Deed Charges</fullName>
+                <default>false</default>
+                <label>Title Deed Charges</label>
+            </value>
+            <value>
+                <fullName>NOC Charges</fullName>
+                <default>false</default>
+                <label>NOC Charges</label>
+            </value>
+            <value>
+                <fullName>Admin Charges</fullName>
+                <default>false</default>
+                <label>Admin Charges</label>
+            </value>
+            <value>
+                <fullName>Late Payment Charges</fullName>
+                <default>false</default>
+                <label>Late Payment Charges</label>
+            </value>
+            <value>
+                <fullName>Oqood Charges</fullName>
+                <default>false</default>
+                <label>Oqood Charges</label>
+            </value>
+            <value>
+                <fullName>Cancellation Charges</fullName>
+                <default>false</default>
+                <label>Cancellation Charges</label>
+            </value>
+            <value>
+                <fullName>Cheque Dishonored Charges</fullName>
+                <default>false</default>
+                <label>Cheque Dishonored Charges</label>
+            </value>
+            <value>
+                <fullName>Community Management Service fees</fullName>
+                <default>false</default>
+                <label>Community Management Service fees</label>
+            </value>
+            <value>
+                <fullName>Resale – NOC (Title Deed)</fullName>
+                <default>false</default>
+                <label>Resale – NOC (Title Deed)</label>
+            </value>
+            <value>
+                <fullName>Resale – NOC (Off plan)</fullName>
+                <default>false</default>
+                <label>Resale – NOC (Off plan)</label>
+            </value>
+            <value>
+                <fullName>Mortgage Fees</fullName>
+                <default>false</default>
+                <label>Mortgage Fees</label>
+            </value>
+            <value>
+                <fullName>SPA Reissuance Fees</fullName>
+                <default>false</default>
+                <label>SPA Reissuance Fees</label>
+            </value>
+            <value>
+                <fullName>Ownership Change</fullName>
+                <default>false</default>
+                <label>Ownership Change</label>
+            </value>
+            <value>
+                <fullName>Pre-registration To Pre-title Deed</fullName>
+                <default>false</default>
+                <label>Pre-registration To Pre-title Deed</label>
+            </value>
+            <value>
+                <fullName>Plot title Deed</fullName>
+                <default>false</default>
+                <label>Plot title Deed</label>
+            </value>
+            <value>
+                <fullName>Plot Resale NOC</fullName>
+                <default>false</default>
+                <label>Plot Resale NOC</label>
+            </value>
+            <value>
+                <fullName>Service charges</fullName>
+                <default>false</default>
+                <label>Service charges</label>
+            </value>
+            <value>
+                <fullName>Resale NOC (Title Deed)</fullName>
+                <default>false</default>
+                <label>Resale NOC (Title Deed)</label>
+            </value>
+            <value>
+                <fullName>Resale NOC (Oqood)</fullName>
+                <default>false</default>
+                <label>Resale NOC (Oqood)</label>
+            </value>
+            <value>
+                <fullName>Title Deed Fees (Units)</fullName>
+                <default>false</default>
+                <label>Title Deed Fees (Units)</label>
+            </value>
+            <value>
+                <fullName>Title Deed Fees (Villas)</fullName>
+                <default>false</default>
+                <label>Title Deed Fees (Villas)</label>
+            </value>
+            <value>
+                <fullName>Title Deed Fees (Plots)</fullName>
+                <default>false</default>
+                <label>Title Deed Fees (Plots)</label>
+            </value>
+            <value>
+                <fullName>Mortgage Fees (Ejara)</fullName>
+                <default>false</default>
+                <label>Mortgage Fees (Ejara)</label>
+            </value>
+            <value>
+                <fullName>Mortgage Fees (Traditonal)</fullName>
+                <default>false</default>
+                <label>Mortgage Fees (Traditonal)</label>
+            </value>
+            <value>
+                <fullName>SPA reissuance fees (per book)</fullName>
+                <default>false</default>
+                <label>SPA reissuance fees (per book)</label>
+            </value>
+            <value>
+                <fullName>Name addition/deletion</fullName>
+                <default>false</default>
+                <label>Name addition/deletion</label>
+            </value>
+            <value>
+                <fullName>Ownership changes</fullName>
+                <default>false</default>
+                <label>Ownership changes</label>
+            </value>
+            <value>
+                <fullName>DLD Cancellation Charges</fullName>
+                <default>false</default>
+                <label>DLD Cancellation Charges</label>
+            </value>
+            <value>
+                <fullName>Admin Charges (General)</fullName>
+                <default>false</default>
+                <label>Admin Charges (General)</label>
+            </value>
+            <value>
+                <fullName>Pre-registration to pre-title deed (completed projects)</fullName>
+                <default>false</default>
+                <label>Pre-registration to pre-title deed (completed projects)</label>
+            </value>
+            <value>
+                <fullName>Concept drawing NOC</fullName>
+                <default>false</default>
+                <label>Concept drawing NOC</label>
+            </value>
+            <value>
+                <fullName>Detailed design NOC</fullName>
+                <default>false</default>
+                <label>Detailed design NOC</label>
+            </value>
+            <value>
+                <fullName>Construction NOC</fullName>
+                <default>false</default>
+                <label>Construction NOC</label>
+            </value>
+            <value>
+                <fullName>Reissue of Plot NOC (other than construction)</fullName>
+                <default>false</default>
+                <label>Reissue of Plot NOC (other than construction)</label>
+            </value>
+            <value>
+                <fullName>Reissue of Plot NOC (construction)</fullName>
+                <default>false</default>
+                <label>Reissue of Plot NOC (construction)</label>
+            </value>
+            <value>
+                <fullName>Maintenance Charges</fullName>
+                <default>false</default>
+                <label>Maintenance Charges</label>
+            </value>
+            <value>
+                <fullName>1% Delayed Handover Charges</fullName>
+                <default>false</default>
+                <label>1% Delayed Handover Charges</label>
+            </value>
+            <value>
+                <fullName>Soil Investigation</fullName>
+                <default>false</default>
+                <label>Soil Investigation</label>
+            </value>
+            <value>
+                <fullName>Security Deposit</fullName>
+                <default>false</default>
+                <label>Security Deposit</label>
+            </value>
+            <value>
+                <fullName>Advance Forfeited</fullName>
+                <default>false</default>
+                <label>Advance Forfeited</label>
+            </value>
+            <value>
+                <fullName>Advance payment rebate</fullName>
+                <default>false</default>
+                <label>Advance payment rebate</label>
+            </value>
+            <value>
+                <fullName>Area change</fullName>
+                <default>false</default>
+                <label>Area change</label>
+            </value>
+            <value>
+                <fullName>Area excess</fullName>
+                <default>false</default>
+                <label>Area excess</label>
+            </value>
+            <value>
+                <fullName>Broker Spot</fullName>
+                <default>false</default>
+                <label>Broker Spot</label>
+            </value>
+            <value>
+                <fullName>Broker commission</fullName>
+                <default>false</default>
+                <label>Broker commission</label>
+            </value>
+            <value>
+                <fullName>Cancel &amp; Swap</fullName>
+                <default>false</default>
+                <label>Cancel &amp; Swap</label>
+            </value>
+            <value>
+                <fullName>Change of ownership</fullName>
+                <default>false</default>
+                <label>Change of ownership</label>
+            </value>
+            <value>
+                <fullName>Commission Adjustment Credit</fullName>
+                <default>false</default>
+                <label>Commission Adjustment Credit</label>
+            </value>
+            <value>
+                <fullName>Credit Card Charge</fullName>
+                <default>false</default>
+                <label>Credit Card Charge</label>
+            </value>
+            <value>
+                <fullName>Customer Refund</fullName>
+                <default>false</default>
+                <label>Customer Refund</label>
+            </value>
+            <value>
+                <fullName>Employee discount / rebate</fullName>
+                <default>false</default>
+                <label>Employee discount / rebate</label>
+            </value>
+            <value>
+                <fullName>Late Payment Charges Demands</fullName>
+                <default>false</default>
+                <label>Late Payment Charges Demands</label>
+            </value>
+            <value>
+                <fullName>Late Payment Waiver / DLD Waiver</fullName>
+                <default>false</default>
+                <label>Late Payment Waiver / DLD Waiver</label>
+            </value>
+            <value>
+                <fullName>Late Payment Charges Reversal</fullName>
+                <default>false</default>
+                <label>Late Payment Charges Reversal</label>
+            </value>
+            <value>
+                <fullName>Milestone Demand Reversal</fullName>
+                <default>false</default>
+                <label>Milestone Demand Reversal</label>
+            </value>
+            <value>
+                <fullName>Milestone Demands</fullName>
+                <default>false</default>
+                <label>Milestone Demands</label>
+            </value>
+            <value>
+                <fullName>Other Charges Demand Reversal</fullName>
+                <default>false</default>
+                <label>Other Charges Demand Reversal</label>
+            </value>
+            <value>
+                <fullName>Plot - Construction Commencement/ Completion Delay Penalty</fullName>
+                <default>false</default>
+                <label>Plot - Construction Commencement/ Completion Delay Penalty</label>
+            </value>
+            <value>
+                <fullName>Pre-registration</fullName>
+                <default>false</default>
+                <label>Pre-registration</label>
+            </value>
+            <value>
+                <fullName>Receipt (Credit Swap)</fullName>
+                <default>false</default>
+                <label>Receipt (Credit Swap)</label>
+            </value>
+            <value>
+                <fullName>Renewal of Resale NOC (expired in 30 days)</fullName>
+                <default>false</default>
+                <label>Renewal of Resale NOC (expired in 30 days)</label>
+            </value>
+            <value>
+                <fullName>Sales Spot</fullName>
+                <default>false</default>
+                <label>Sales Spot</label>
+            </value>
+            <value>
+                <fullName>Sales incentive / commission</fullName>
+                <default>false</default>
+                <label>Sales incentive / commission</label>
+            </value>
+            <value>
+                <fullName>Selling Expenses</fullName>
+                <default>false</default>
+                <label>Selling Expenses</label>
+            </value>
+            <value>
+                <fullName>Title Deed</fullName>
+                <default>false</default>
+                <label>Title Deed</label>
+            </value>
+            <value>
+                <fullName>DLD Fees</fullName>
+                <default>false</default>
+                <label>DLD Fees</label>
+            </value>
+            <value>
+                <fullName>Installment</fullName>
+                <default>false</default>
+                <label>Installment</label>
+            </value>
+            <value>
+                <fullName>Cheque Bouncing Charges</fullName>
+                <default>false</default>
+                <label>Cheque Bouncing Charges</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

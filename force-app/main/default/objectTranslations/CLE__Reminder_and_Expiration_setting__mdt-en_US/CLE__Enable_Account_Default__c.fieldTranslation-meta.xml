@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enable setting mention on the account --></help>
+    <label><!-- Enable Account Default --></label>
+    <name>CLE__Enable_Account_Default__c</name>
+</CustomFieldTranslation>

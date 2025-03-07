@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Field Track Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Field Analysis Scope --></label>
+            <section>Field Analysis Scope</section>
+        </sections>
+        <sections>
+            <label><!-- Object Details --></label>
+            <section>Object Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Analyze --></label>
+        <name>cwbtool__Analyze</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Export_to_Excel --></label>
+        <name>cwbtool__Export_to_Excel</name>
+    </webLinks>
+</CustomObjectTranslation>

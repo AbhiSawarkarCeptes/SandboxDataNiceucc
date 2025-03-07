@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason For Cancellation --></label>
+    <name>Reason_For_Cancellation_D__c</name>
+    <picklistValues>
+        <masterLabel>14Days - Not Qualified</masterLabel>
+        <translation><!-- 14Days - Not Qualified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15 days - 0%</masterLabel>
+        <translation><!-- 15 days - 0% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15 days - 2%</masterLabel>
+        <translation><!-- 15 days - 2% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>30 days - unit not qualified</masterLabel>
+        <translation><!-- 30 days - unit not qualified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto cancellation (14 days policy)</masterLabel>
+        <translation><!-- Auto cancellation (14 days policy) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto cancellation (7 days policy)</masterLabel>
+        <translation><!-- Auto cancellation (7 days policy) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancel &amp; Rebook</masterLabel>
+        <translation><!-- Cancel &amp; Rebook --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancel &amp; Swap</masterLabel>
+        <translation><!-- Cancel &amp; Swap --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation &amp; Transfer</masterLabel>
+        <translation><!-- Cancellation &amp; Transfer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled by CRM</masterLabel>
+        <translation><!-- Cancelled by CRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Client request for cancellation</masterLabel>
+        <translation><!-- Client request for cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low Funds</masterLabel>
+        <translation><!-- Low Funds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Management Instruction</masterLabel>
+        <translation><!-- Management Instruction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PR rejected due to non-submission of NSA</masterLabel>
+        <translation><!-- PR rejected due to non-submission of NSA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

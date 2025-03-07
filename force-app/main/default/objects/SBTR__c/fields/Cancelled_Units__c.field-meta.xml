@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancelled_Units__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISNULL( Booking__r.Cancellation_Date__c)) ||  TEXT(Booking__r.Status__c)=&apos;Cancelled&apos;, &apos;Yes&apos;,&apos;No&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Cancelled Units</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

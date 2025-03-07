@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_Available_Status</fullName>
+    <active>true</active>
+    <description>Once the Unit is tagged to a Booking, Block users to update the status to Available</description>
+    <errorConditionFormula>AND
+(
+				NOT(ISNEW()),
+				NOT(ISBLANK(Booking_Status__c)), 
+				Booking_Status__c &lt;&gt; &apos;Cancelled&apos;,
+				ISPICKVAL(Unit_Status__c,&apos;Available&apos;),
+				ISCHANGED(Unit_Status__c),
+				$Profile.Name &lt;&gt; &apos;System Administrator&apos;
+)</errorConditionFormula>
+    <errorMessage>Unit can&apos;t be made available as it has active Booking..</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Update Unit --></label>
+    <name>Update_Unit__c</name>
+    <relationshipLabel><!-- Payment Requests (Update Unit) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Media Type --></label>
+    <name>Media_Type__c</name>
+    <picklistValues>
+        <masterLabel>Broadcast Media</masterLabel>
+        <translation><!-- Broadcast Media --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email Campaign</masterLabel>
+        <translation><!-- Email Campaign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Event</masterLabel>
+        <translation><!-- Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exhibit</masterLabel>
+        <translation><!-- Exhibit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outdoor Display</masterLabel>
+        <translation><!-- Outdoor Display --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Print Media</masterLabel>
+        <translation><!-- Print Media --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property Portal</masterLabel>
+        <translation><!-- Property Portal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEO/SEM</masterLabel>
+        <translation><!-- SEO/SEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Media</masterLabel>
+        <translation><!-- Social Media --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

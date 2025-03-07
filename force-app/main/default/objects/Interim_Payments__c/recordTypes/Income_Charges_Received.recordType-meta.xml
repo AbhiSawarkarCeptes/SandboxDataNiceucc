@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Income_Charges_Received</fullName>
+    <active>true</active>
+    <label>Income Charges Received</label>
+    <picklistValues>
+        <picklist>Amount_Type__c</picklist>
+        <values>
+            <fullName>Addition%2FDeletion Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheque Bouncing Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Management Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conversion Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLD Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Payment Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mortgage Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-registration To Pre-title Deed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-registration to pre-title deed %28completed projects%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reallocation Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service charge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Title Deed Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Title Deed Fees %28Units%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Title Deed Fees %28Villas%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transaction Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verification Charges</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approval_Status_Interim__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheque Dishonoured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheque Hold Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheque Replacement Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PDC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted for Cheque Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted for Cheque Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UnProcessed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bank_Name_Interim__c</picklist>
+        <values>
+            <fullName>Asia Commercial Bank Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia %26 New Zealand Banking Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Axis Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank Of America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank Of China%28Hong Kong%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank Of India</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank Of Taiwan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank Of Tokyo-Mitsubishi UFJ%2C Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Barclays Bank Plc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citibank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBS Bank Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deutsche Bank AG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HSBC Holdings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hong Leong Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICICI Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial %26 Commercial Bank of China %28ICBC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JPMorgan Chase Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malayan Banking Berhad %28Maybank%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Royal Bank Of Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Royal Bank Of Scotland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Societe Generale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Chartered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State Bank Of India</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Bank Of Nova Scotia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wells Fargo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bounced_Reason__c</picklist>
+        <values>
+            <fullName>Amount not matching words</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheque drawn irregularly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient Funds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signature not matching</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Interim_Payment_Type__c</picklist>
+        <values>
+            <fullName>Payment Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Request</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Mode_Interim__c</picklist>
+        <values>
+            <fullName>CDM Cash %28Cash Deposit in Machine%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDM Cheque %28Cheque Deposit in Machine%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DWT%28Domestic%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IWT%28International%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTC Deposits%28Cash counter%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rejection_Cause__c</picklist>
+        <values>
+            <fullName>Cheque Bounced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Recalled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reallocation Required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

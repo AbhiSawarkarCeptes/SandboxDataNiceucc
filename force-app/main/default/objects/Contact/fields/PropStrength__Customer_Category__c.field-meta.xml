@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PropStrength__Customer_Category__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Customer Behaviour</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Normal</fullName>
+                <default>false</default>
+                <label>Normal</label>
+            </value>
+            <value>
+                <fullName>Easy</fullName>
+                <default>false</default>
+                <label>Easy</label>
+            </value>
+            <value>
+                <fullName>Difficult</fullName>
+                <default>false</default>
+                <label>Difficult</label>
+            </value>
+            <value>
+                <fullName>Irate</fullName>
+                <default>false</default>
+                <label>Irate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

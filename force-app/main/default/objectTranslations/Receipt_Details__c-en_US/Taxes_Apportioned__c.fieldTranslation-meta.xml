@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Doesn&apos;t include the tax interest amount if any apportioned using this receipt. --></help>
+    <label><!-- VATs Apportioned --></label>
+    <name>Taxes_Apportioned__c</name>
+</CustomFieldTranslation>

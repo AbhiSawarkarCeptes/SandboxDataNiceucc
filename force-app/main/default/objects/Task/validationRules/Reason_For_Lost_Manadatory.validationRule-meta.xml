@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_For_Lost_Manadatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Event_Status__c , &apos;Lost&apos;), ISBLANK( TEXT(Reason_For_Lost__c )) || ISNULL( TEXT( Reason_For_Lost__c )))</errorConditionFormula>
+    <errorMessage>Please Select Reason For Lost</errorMessage>
+</ValidationRule>

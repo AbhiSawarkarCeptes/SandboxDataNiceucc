@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Notice Status --></label>
+    <name>Notice_Status__c</name>
+    <picklistValues>
+        <masterLabel>Ads To Be Placed</masterLabel>
+        <translation><!-- Ads To Be Placed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audited By The DLD Legal Team</masterLabel>
+        <translation><!-- Audited By The DLD Legal Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD Notice Delivery</masterLabel>
+        <translation><!-- DLD Notice Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD Notice To Be Sent</masterLabel>
+        <translation><!-- DLD Notice To Be Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Final Notice (Developer Notice)</masterLabel>
+        <translation><!-- Final Notice (Developer Notice) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reminder Notice</masterLabel>
+        <translation><!-- Reminder Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unit Is Terminated</masterLabel>
+        <translation><!-- Unit Is Terminated --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

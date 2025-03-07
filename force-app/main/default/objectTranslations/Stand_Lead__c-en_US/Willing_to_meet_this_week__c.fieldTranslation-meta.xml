@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Willing to meet --></label>
+    <name>Willing_to_meet_this_week__c</name>
+    <picklistValues>
+        <masterLabel>Assign RM on Stand</masterLabel>
+        <translation><!-- Assign RM on Stand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Later</masterLabel>
+        <translation><!-- Later --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category_C_Russian</fullName>
+    <columns>NAME</columns>
+    <columns>PrimaryMobileNumber__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>equals</operation>
+        <value>B-6557,B-6646,B-2599,B-1936</value>
+    </filters>
+    <label>Category C -  Russian</label>
+    <sharedTo>
+        <group>NPS_Agents</group>
+    </sharedTo>
+</ListView>

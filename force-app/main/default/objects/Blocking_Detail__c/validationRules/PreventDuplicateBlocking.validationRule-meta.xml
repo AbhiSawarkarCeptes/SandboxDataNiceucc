@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreventDuplicateBlocking</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+OR( 
+ISPICKVAL(Unit__r.Unit_Status__c,&apos;Blocked&apos;), 
+ISPICKVAL(Unit__r.Unit_Status__c,&apos;Booked&apos;), 
+ISPICKVAL(Unit__r.Unit_Status__c,&apos;Sold&apos;), 
+ISPICKVAL(Unit__r.Unit_Status__c,&apos;Reserved&apos;) 
+), 
+ISPICKVAL(Status__c, &apos;Blocked&apos;) 
+)</errorConditionFormula>
+    <errorMessage>You cannot block this unit. Only units in &apos;Available&apos; status can be blocked.</errorMessage>
+</ValidationRule>

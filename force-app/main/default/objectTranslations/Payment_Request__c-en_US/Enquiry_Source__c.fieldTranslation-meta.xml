@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Enquiry Source --></label>
+    <name>Enquiry_Source__c</name>
+    <picklistValues>
+        <masterLabel>Advertisement</masterLabel>
+        <translation><!-- Advertisement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel Partner</masterLabel>
+        <translation><!-- Channel Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact Centre</masterLabel>
+        <translation><!-- Contact Centre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Marketing Sales (Inc. Influencer)</masterLabel>
+        <translation><!-- Digital Marketing Sales (Inc. Influencer) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direct Mail</masterLabel>
+        <translation><!-- Direct Mail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hoarding</masterLabel>
+        <translation><!-- Hoarding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loyalty Sales</masterLabel>
+        <translation><!-- Loyalty Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mall Stands/Kiosks Sales</masterLabel>
+        <translation><!-- Mall Stands/Kiosks Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Newspaper</masterLabel>
+        <translation><!-- Newspaper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone Enquiry</masterLabel>
+        <translation><!-- Phone Enquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Print Media</masterLabel>
+        <translation><!-- Print Media --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property Portal</masterLabel>
+        <translation><!-- Property Portal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radio</masterLabel>
+        <translation><!-- Radio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Connect</masterLabel>
+        <translation><!-- Sobha Connect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telesales</masterLabel>
+        <translation><!-- Telesales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade Show/ Exhibition</masterLabel>
+        <translation><!-- Trade Show/ Exhibition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unified Messaging</masterLabel>
+        <translation><!-- Unified Messaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walk-in</masterLabel>
+        <translation><!-- Walk-in --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web</masterLabel>
+        <translation><!-- Web --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Word of Mouth</masterLabel>
+        <translation><!-- Word of Mouth --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

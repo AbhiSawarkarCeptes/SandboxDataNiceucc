@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Sobha Siniya Island</label>
+    <protected>false</protected>
+    <values>
+        <field>BookingForm_Siniya_Seller_Representative__c</field>
+        <value xsi:type="xsd:string">0057S000000tXNdQAM</value>
+    </values>
+    <values>
+        <field>Booking_Cancellation_Days_for_2__c</field>
+        <value xsi:type="xsd:double">14.0</value>
+    </values>
+    <values>
+        <field>Booking_Form_Seller_Representative__c</field>
+        <value xsi:type="xsd:string">0057S000000tLHsQAM</value>
+    </values>
+    <values>
+        <field>Collection_Report_Account_Names__c</field>
+        <value xsi:type="xsd:string">Pre-registration,DLD Charges,UNEARNED REVENUE,TRADE RECEIVABLE,Interest charges,Demand reversal credit note,Demand reversal debit,OPENING BALANCE</value>
+    </values>
+    <values>
+        <field>Credit_Note_Account_Type__c</field>
+        <value xsi:type="xsd:string">OPENING BALANCE,Demand reversal debit,Demand reversal credit note,UNEARNED REVENUE,TRADE RECEIVABLE,DLD Charges,Interest charges</value>
+    </values>
+    <values>
+        <field>Debit_Note_Account_Type__c</field>
+        <value xsi:type="xsd:string">DLD Charges,Interest charges,OPENING BALANCE,Demand reversal debit,UNEARNED REVENUE</value>
+    </values>
+    <values>
+        <field>Default_Layout_Object__c</field>
+        <value xsi:type="xsd:string">Unit</value>
+    </values>
+    <values>
+        <field>Mall_Stand_Manager_Id__c</field>
+        <value xsi:type="xsd:string">0057S0000028UQXQA2</value>
+    </values>
+    <values>
+        <field>Payment_Community_Url__c</field>
+        <value xsi:type="xsd:string">https://sobharealty--sobhadev.sandbox.my.site.com/payments/?prwId=</value>
+    </values>
+    <values>
+        <field>Payment_Public_Page_URL_Copy__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Tele_Sales_Head_User_Id__c</field>
+        <value xsi:type="xsd:string">0057S0000028UQXQA2</value>
+    </values>
+    <values>
+        <field>booking_cancellation_days__c</field>
+        <value xsi:type="xsd:double">4.0</value>
+    </values>
+</CustomMetadata>

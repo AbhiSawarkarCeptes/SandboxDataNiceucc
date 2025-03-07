@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Team_Sobha_Connects</fullName>
+    <columns>NAME</columns>
+    <columns>Sobha_Connect_Category__c</columns>
+    <columns>Name__c</columns>
+    <columns>Mobile_No__c</columns>
+    <columns>Channel_Relationship_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Channel_Relationship_Manager__c</field>
+        <operation>equals</operation>
+        <value>Parth Pradeep Gaglani,Rita Taher Yahia,Varun Khanna,Ashok Yadav</value>
+    </filters>
+    <label>My Team Sobha Connects</label>
+    <sharedTo>
+        <role>Head_Digital_Marketing</role>
+    </sharedTo>
+</ListView>

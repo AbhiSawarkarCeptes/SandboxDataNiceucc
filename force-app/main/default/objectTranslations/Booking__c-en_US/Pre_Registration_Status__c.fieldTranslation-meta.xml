@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pre Registration Status --></label>
+    <name>Pre_Registration_Status__c</name>
+    <picklistValues>
+        <masterLabel>Pre Registration Completed</masterLabel>
+        <translation><!-- Pre Registration Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Registration Pending</masterLabel>
+        <translation><!-- Pre-Registration Pending --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

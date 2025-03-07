@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_hold_min_percentage_should_be_10</fullName>
+    <active>true</active>
+    <description>For any unit that comes in common availability equal or under unit price AED 1.6 Mn, then the minimum hold should be 10%</description>
+    <errorConditionFormula>AND( Bypass_10_Validation__c == false,Or(IsNew(), OR(isChanged(Puchase_Price__c),isChanged(Unit_Hold_min_percentage__c))),AND(Puchase_Price__c&lt;=1600000, Unit_Hold_min_percentage__c != 0.10))</errorConditionFormula>
+    <errorDisplayField>Unit_Hold_min_percentage__c</errorDisplayField>
+    <errorMessage>Unit having purchase price equal or less then AED 1.6 Mn, should hold minimum 10%</errorMessage>
+</ValidationRule>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Envelope_Type__c</fullName>
+    <label>Envelope Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Booking Form</fullName>
+                <default>false</default>
+                <label>Booking Form</label>
+            </value>
+            <value>
+                <fullName>SPA</fullName>
+                <default>false</default>
+                <label>SPA</label>
+            </value>
+            <value>
+                <fullName>SPA Addendum</fullName>
+                <default>false</default>
+                <label>SPA Addendum</label>
+            </value>
+            <value>
+                <fullName>Broker Registration - Agreement</fullName>
+                <default>false</default>
+                <label>Broker Registration - Agreement</label>
+            </value>
+            <value>
+                <fullName>Broker Registration - NOC</fullName>
+                <default>false</default>
+                <label>Broker Registration - NOC</label>
+            </value>
+            <value>
+                <fullName>Resale NOC</fullName>
+                <default>false</default>
+                <label>Resale NOC</label>
+            </value>
+            <value>
+                <fullName>Resale process</fullName>
+                <default>false</default>
+                <label>Resale process</label>
+            </value>
+            <value>
+                <fullName>Broker Agreement</fullName>
+                <default>false</default>
+                <label>Broker Agreement</label>
+            </value>
+            <value>
+                <fullName>MOU</fullName>
+                <default>false</default>
+                <label>MOU</label>
+            </value>
+            <value>
+                <fullName>DSPA</fullName>
+                <default>false</default>
+                <label>DSPA</label>
+            </value>
+            <value>
+                <fullName>Transfer &amp; Assignment</fullName>
+                <default>false</default>
+                <label>Transfer &amp; Assignment</label>
+            </value>
+            <value>
+                <fullName>NOC TR</fullName>
+                <default>false</default>
+                <label>NOC TR</label>
+            </value>
+            <value>
+                <fullName>Handover of Possession</fullName>
+                <default>false</default>
+                <label>Handover of Possession</label>
+            </value>
+            <value>
+                <fullName>Undertaking Letter</fullName>
+                <default>false</default>
+                <label>Undertaking Letter</label>
+            </value>
+            <value>
+                <fullName>Home Orientation Undertaking Letter</fullName>
+                <default>false</default>
+                <label>Home Orientation Undertaking Letter</label>
+            </value>
+            <value>
+                <fullName>DSR</fullName>
+                <default>false</default>
+                <label>DSR</label>
+            </value>
+            <value>
+                <fullName>NOC</fullName>
+                <default>false</default>
+                <label>NOC</label>
+            </value>
+            <value>
+                <fullName>Amendment Letter</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Amendment Letter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_Type__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Amount Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Installment</fullName>
+                <default>true</default>
+                <label>Installment</label>
+            </value>
+            <value>
+                <fullName>Transaction Fee</fullName>
+                <default>false</default>
+                <label>Transaction Fee</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Credit Waiver</fullName>
+                <default>false</default>
+                <label>Credit Waiver</label>
+            </value>
+            <value>
+                <fullName>Adjustment</fullName>
+                <default>false</default>
+                <label>Adjustment</label>
+            </value>
+            <value>
+                <fullName>TPD</fullName>
+                <default>false</default>
+                <label>TPD</label>
+            </value>
+            <value>
+                <fullName>Service Tax Reversal</fullName>
+                <default>false</default>
+                <label>Service Tax Reversal</label>
+            </value>
+            <value>
+                <fullName>Received Reversal</fullName>
+                <default>false</default>
+                <label>Received Reversal</label>
+            </value>
+            <value>
+                <fullName>TPD Reversal</fullName>
+                <default>false</default>
+                <label>TPD Reversal</label>
+            </value>
+            <value>
+                <fullName>Service Tax Added</fullName>
+                <default>false</default>
+                <label>Service Tax Added</label>
+            </value>
+            <value>
+                <fullName>Reversal payment due</fullName>
+                <default>false</default>
+                <label>Reversal payment due</label>
+            </value>
+            <value>
+                <fullName>Reversal Payment</fullName>
+                <default>false</default>
+                <label>Reversal Payment</label>
+            </value>
+            <value>
+                <fullName>Payment Due Area Change</fullName>
+                <default>false</default>
+                <label>Payment Due Area Change</label>
+            </value>
+            <value>
+                <fullName>Due Area Change</fullName>
+                <default>false</default>
+                <label>Due Area Change</label>
+            </value>
+            <value>
+                <fullName>Payment Due OC</fullName>
+                <default>false</default>
+                <label>Payment Due OC</label>
+            </value>
+            <value>
+                <fullName>Payment Due Allotment</fullName>
+                <default>false</default>
+                <label>Payment Due Allotment</label>
+            </value>
+            <value>
+                <fullName>Due Allotment</fullName>
+                <default>false</default>
+                <label>Due Allotment</label>
+            </value>
+            <value>
+                <fullName>Payment Due ReAllotment</fullName>
+                <default>false</default>
+                <label>Payment Due ReAllotment</label>
+            </value>
+            <value>
+                <fullName>Due ReAllotment</fullName>
+                <default>false</default>
+                <label>Due ReAllotment</label>
+            </value>
+            <value>
+                <fullName>Transferred from Booking</fullName>
+                <default>false</default>
+                <label>Transferred from Booking</label>
+            </value>
+            <value>
+                <fullName>Verification Charges</fullName>
+                <default>false</default>
+                <label>Verification Charges</label>
+            </value>
+            <value>
+                <fullName>Advance Amount</fullName>
+                <default>false</default>
+                <label>Advance Amount</label>
+            </value>
+            <value>
+                <fullName>Interest</fullName>
+                <default>false</default>
+                <label>Interest</label>
+            </value>
+            <value>
+                <fullName>Cheque Bouncing Charges</fullName>
+                <default>false</default>
+                <label>Cheque Bouncing Charges</label>
+            </value>
+            <value>
+                <fullName>Transfer Charges</fullName>
+                <default>false</default>
+                <label>Transfer Charges</label>
+            </value>
+            <value>
+                <fullName>Reversal Payment Rece_Change In Payment Plan</fullName>
+                <default>false</default>
+                <label>Reversal Payment Rece_Change In Payment Plan</label>
+            </value>
+            <value>
+                <fullName>Reversal Payment Rece_Reallocation</fullName>
+                <default>false</default>
+                <label>Reversal Payment Rece_Reallocation</label>
+            </value>
+            <value>
+                <fullName>Waiver Adjustment</fullName>
+                <default>false</default>
+                <label>Waiver Adjustment</label>
+            </value>
+            <value>
+                <fullName>Reversal Payment Due_Change In Payment Plan</fullName>
+                <default>false</default>
+                <label>Reversal Payment Due_Change In Payment Plan</label>
+            </value>
+            <value>
+                <fullName>Reversal Payment Due_Reallocation</fullName>
+                <default>false</default>
+                <label>Reversal Payment Due_Reallocation</label>
+            </value>
+            <value>
+                <fullName>Conversion Charges</fullName>
+                <default>false</default>
+                <label>Conversion Charges</label>
+            </value>
+            <value>
+                <fullName>VAT</fullName>
+                <default>false</default>
+                <label>VAT</label>
+            </value>
+            <value>
+                <fullName>Reallocation Charges</fullName>
+                <default>false</default>
+                <label>Reallocation Charges</label>
+            </value>
+            <value>
+                <fullName>Credit Note</fullName>
+                <default>false</default>
+                <label>Credit Note</label>
+            </value>
+            <value>
+                <fullName>Transfer Fee</fullName>
+                <default>false</default>
+                <label>Transfer Fee</label>
+            </value>
+            <value>
+                <fullName>Reversal Input Tax Credit</fullName>
+                <default>false</default>
+                <label>Reversal Input Tax Credit</label>
+            </value>
+            <value>
+                <fullName>Input Tax Credit</fullName>
+                <default>false</default>
+                <label>Input Tax Credit</label>
+            </value>
+            <value>
+                <fullName>Addition/Deletion Charges</fullName>
+                <default>false</default>
+                <label>Addition/Deletion Charges</label>
+            </value>
+            <value>
+                <fullName>Rebate</fullName>
+                <default>false</default>
+                <label>Rebate</label>
+            </value>
+            <value>
+                <fullName>Normal Credit Note</fullName>
+                <default>false</default>
+                <label>Normal Credit Note</label>
+            </value>
+            <value>
+                <fullName>Mortgage Fee</fullName>
+                <default>false</default>
+                <label>Mortgage Fee</label>
+            </value>
+            <value>
+                <fullName>Refurbishment Charges</fullName>
+                <default>false</default>
+                <label>Refurbishment Charges</label>
+            </value>
+            <value>
+                <fullName>Upkeep Charges</fullName>
+                <default>false</default>
+                <label>Upkeep Charges</label>
+            </value>
+            <value>
+                <fullName>Cancellation Charges</fullName>
+                <default>false</default>
+                <label>Cancellation Charges</label>
+            </value>
+            <value>
+                <fullName>Late Payment Fee</fullName>
+                <default>false</default>
+                <label>Late Payment Fee</label>
+            </value>
+            <value>
+                <fullName>Resale NOC Charges - Oqood</fullName>
+                <default>false</default>
+                <label>Resale NOC Charges - Oqood</label>
+            </value>
+            <value>
+                <fullName>Ownership Change Admin Charges</fullName>
+                <default>false</default>
+                <label>Ownership Change Admin Charges</label>
+            </value>
+            <value>
+                <fullName>DEWA Charges</fullName>
+                <default>false</default>
+                <label>DEWA Charges</label>
+            </value>
+            <value>
+                <fullName>Community Management Fees</fullName>
+                <default>false</default>
+                <label>Community Management Fees</label>
+            </value>
+            <value>
+                <fullName>DLD Fees</fullName>
+                <default>false</default>
+                <label>DLD Fees</label>
+            </value>
+            <value>
+                <fullName>DLD</fullName>
+                <default>false</default>
+                <label>DLD</label>
+            </value>
+            <value>
+                <fullName>Title Deed Charges</fullName>
+                <default>false</default>
+                <label>Title Deed Charges</label>
+            </value>
+            <value>
+                <fullName>Mortgage</fullName>
+                <default>false</default>
+                <label>Mortgage</label>
+            </value>
+            <value>
+                <fullName>Title Deed Fees (Units)</fullName>
+                <default>false</default>
+                <label>Title Deed Fees (Units)</label>
+            </value>
+            <value>
+                <fullName>Pre-registration To Pre-title Deed</fullName>
+                <default>false</default>
+                <label>Pre-registration To Pre-title Deed</label>
+            </value>
+            <value>
+                <fullName>Pre-registration to pre-title deed (completed projects)</fullName>
+                <default>false</default>
+                <label>Pre-registration to pre-title deed (completed projects)</label>
+            </value>
+            <value>
+                <fullName>Title Deed Fees (Villas)</fullName>
+                <default>false</default>
+                <label>Title Deed Fees (Villas)</label>
+            </value>
+            <value>
+                <fullName>Community Management Services</fullName>
+                <default>false</default>
+                <label>Community Management Services</label>
+            </value>
+            <value>
+                <fullName>Service charge</fullName>
+                <default>false</default>
+                <label>Service charge</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

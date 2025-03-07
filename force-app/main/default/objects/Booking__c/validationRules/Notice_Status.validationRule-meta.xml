@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notice_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>And($Profile.Name &lt;&gt; &quot;System Administrator&quot;,ISCHANGED(Notice_Status__c),
+
+OR(
+	AND
+	( ISPICKVAL( Notice_Status__c , &quot;Reminder Notice&quot;),
+		OR(ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Final Notice (Developer Notice)&quot;),
+		   ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;DLD Notice To Be Sent&quot;),
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;DLD Notice Delivery&quot;),
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Ads To Be Placed&quot;),
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Audited By The DLD Legal Team&quot;),
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Unit Is Terminated&quot;)
+		)
+	),
+	AND
+	( ISPICKVAL( Notice_Status__c , &quot;Final Notice (Developer Notice)&quot;),
+		OR(
+		   ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;DLD Notice To Be Sent&quot;),
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;DLD Notice Delivery&quot;),
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Ads To Be Placed&quot;),
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Audited By The DLD Legal Team&quot;),
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Unit Is Terminated&quot;)
+		)
+	),
+	AND
+	( ISPICKVAL( Notice_Status__c , &quot;DLD Notice To Be Sent&quot;),
+		OR(
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;DLD Notice Delivery&quot;),
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Ads To Be Placed&quot;),
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Audited By The DLD Legal Team&quot;),
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Unit Is Terminated&quot;)
+		)
+	),
+	AND
+	( ISPICKVAL( Notice_Status__c , &quot;DLD Notice Delivery&quot;),
+		OR(
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Ads To Be Placed&quot;),
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Audited By The DLD Legal Team&quot;),
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Unit Is Terminated&quot;)
+		)
+	),
+	AND
+	( ISPICKVAL( Notice_Status__c , &quot;Ads To Be Placed&quot;),
+		OR(
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Audited By The DLD Legal Team&quot;),
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Unit Is Terminated&quot;)
+		)
+	),
+	AND
+	( ISPICKVAL( Notice_Status__c , &quot;Audited By The DLD Legal Team&quot;),
+		OR(
+	       ISPICKVAL(PRIORVALUE(Notice_Status__c ),&quot;Unit Is Terminated&quot;)
+		)
+	)
+  )
+)</errorConditionFormula>
+    <errorMessage>Should not select the prior status</errorMessage>
+</ValidationRule>

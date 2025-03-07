@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entered_Amount_AED__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(NOT(ISBLANK(Transfer_Amount__c)), Transfer_Amount__r.Amount__c, 
+If(NOT(ISBLANK(Registration_Payment_Account__c)), Registration_Payment_Account__r.Amount__c,  
+If(NOT(ISBLANK(Demand__c)), (Demand__r.Total_Amount_Demanded__c + Demand__r.Total_Tax_Demanded__c),  
+If(NOT(ISBLANK(Receipt__c)), Receipt__r.Amount_Rs__c,  
+0))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Entered Amount (AED)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

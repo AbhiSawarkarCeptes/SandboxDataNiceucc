@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manager_field_is_mandatory</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK(ManagerId)</errorConditionFormula>
+    <errorMessage>Manager cannot be left blank</errorMessage>
+</ValidationRule>

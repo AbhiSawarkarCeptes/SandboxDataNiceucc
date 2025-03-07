@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Broker_Sub_Type__c</fullName>
+    <label>Broker Sub Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Broker_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Broker RERA</fullName>
+                <default>false</default>
+                <label>Broker RERA</label>
+            </value>
+            <value>
+                <fullName>Broker UAE</fullName>
+                <default>false</default>
+                <label>Broker UAE</label>
+            </value>
+            <value>
+                <fullName>Broker International</fullName>
+                <default>false</default>
+                <label>Broker International</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect UAE</fullName>
+                <default>false</default>
+                <label>Sobha Connect UAE</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect International</fullName>
+                <default>false</default>
+                <label>Sobha Connect International</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Standard</controllingFieldValue>
+            <valueName>Broker RERA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard</controllingFieldValue>
+            <valueName>Broker UAE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard</controllingFieldValue>
+            <valueName>Broker International</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sobha Connect</controllingFieldValue>
+            <valueName>Sobha Connect UAE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sobha Connect</controllingFieldValue>
+            <valueName>Sobha Connect International</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

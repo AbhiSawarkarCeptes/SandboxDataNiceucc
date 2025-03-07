@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Book_Site_Visit_from_Website__c</fullName>
+    <formula>IF(
+OR( 
+ISBLANK(HH__c),  
+ISBLANK(MM__c),  
+ISBLANK(TEXT(Interested_In__c)),  
+ISBLANK(TEXT(Date_Of_Visit__c)) ), False, True)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Book Site Visit from Website</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

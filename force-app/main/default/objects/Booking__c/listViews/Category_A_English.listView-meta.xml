@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category_A_English</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>equals</operation>
+        <value>B-6478,B-1876,B-2085,B-2015,B-1951</value>
+    </filters>
+    <label>Category A - English</label>
+    <sharedTo>
+        <group>NPS_Agents</group>
+    </sharedTo>
+</ListView>

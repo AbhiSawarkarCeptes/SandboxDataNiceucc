@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Late_Payment_Charges_Roll_Up__c</fullName>
+    <label>Late Payment Charges (Roll Up)</label>
+    <summarizedField>Demand__c.Total_Amount_with_Tax_Demanded__c</summarizedField>
+    <summaryFilterItems>
+        <field>Demand__c.Demand_Types__c</field>
+        <operation>equals</operation>
+        <value>Consider</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Demand__c.Booking__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cheque_Cannot_be_Blank</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+   ISPICKVAL(Payment_Mode_Interim__c, &quot;Cheque&quot;),
+   ISPICKVAL(Payment_Mode_Interim__c, &quot;CDM-Cheque&quot;)
+) &amp;&amp; ISBLANK(Instrument_Number__c)</errorConditionFormula>
+    <errorDisplayField>Instrument_Number__c</errorDisplayField>
+    <errorMessage>Instrument number cannot be blank if the payment mode is Cheque.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- No Video Reminder After 4 Days --></label>
+    <name>No_Video_Reminder_After_4_Days__c</name>
+</CustomFieldTranslation>

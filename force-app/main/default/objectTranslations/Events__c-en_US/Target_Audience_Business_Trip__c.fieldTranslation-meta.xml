@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Target Audience Business Trip --></label>
+    <name>Target_Audience_Business_Trip__c</name>
+    <picklistValues>
+        <masterLabel>Both</masterLabel>
+        <translation><!-- Both --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel Partner</masterLabel>
+        <translation><!-- Channel Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Client</masterLabel>
+        <translation><!-- Client --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

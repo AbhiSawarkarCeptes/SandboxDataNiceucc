@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- New Sale Verification by SO --></label>
+    <name>New_Sale_Verification_by_SO__c</name>
+    <picklistValues>
+        <masterLabel>Clash/Dispute</masterLabel>
+        <translation><!-- Clash/Dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing Approval</masterLabel>
+        <translation><!-- Missing Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing Documents</masterLabel>
+        <translation><!-- Missing Documents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Sales Verified</masterLabel>
+        <translation><!-- New Sales Verified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for verification</masterLabel>
+        <translation><!-- Pending for verification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

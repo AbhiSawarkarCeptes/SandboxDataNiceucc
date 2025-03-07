@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SMS_Templete__c</fullName>
+    <description>Please use $ before the name of variables.
+For Eg: $ProjectName, $Date, $Time, $DateTIme, $LeadName, $LeadMobile, $LeadMobileAlt, $SalesRepName, $SalesRepContact, $AssistantContact,</description>
+    <inlineHelpText>Please use $ before the name of variables.
+For Eg: $ProjectName, $Date, $Time, $DateTIme, $LeadName, $LeadMobile, $LeadMobileAlt, $SalesRepName, $SalesRepContact, $AssistantContact,</inlineHelpText>
+    <label>SMS Templete</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

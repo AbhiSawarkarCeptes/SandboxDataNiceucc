@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRM_Site_Visit</fullName>
+    <columns>NAME</columns>
+    <columns>Booking__c</columns>
+    <columns>Unit__c</columns>
+    <columns>First_Name__c</columns>
+    <columns>Last_Name__c</columns>
+    <columns>Mobile_Number__c</columns>
+    <columns>Email_Address__c</columns>
+    <columns>Status__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Token__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Customer_Registration__c.CRM_Site_Visit</value>
+    </filters>
+    <label>CRM Site Visit</label>
+    <sharedTo>
+        <group>All_Cases_Access_Group</group>
+    </sharedTo>
+</ListView>

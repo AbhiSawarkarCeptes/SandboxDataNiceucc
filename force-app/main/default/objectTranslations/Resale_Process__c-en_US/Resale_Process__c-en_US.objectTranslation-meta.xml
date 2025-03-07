@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Resale Process</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Resale Process</value>
+    </caseValues>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Resale Process Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Resale Collection Checklist --></label>
+        <name>Resale_Collection_Checklist</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send NOC for Docusign --></label>
+        <name>Send_NOC_for_Docusign</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send NOC to Client --></label>
+        <name>Send_NOC_to_Client1</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Resale for DocuSign --></label>
+        <name>Send_Resale_for_DocuSign</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- resalecollectionchecklist --></label>
+        <name>resalecollectionchecklist</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t reject Title Deed to Collections, Please select different team --></errorMessage>
+        <name>Title_Deed_Validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Run_DDP --></label>
+        <name>Run_DDP</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Broker_Name_for_CP</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( OR( Channel_Partner__r.Name =&apos;New_CP&apos;,  Channel_Partner__r.Name =&apos;CP_ID_INPROCESS&apos;), Broker_Name__c=&apos;&apos; )</errorConditionFormula>
+    <errorDisplayField>Broker_Name__c</errorDisplayField>
+    <errorMessage>Broker Name is required if the CP ID is &apos;New_CP*&apos; or &apos;CP_ID_INPROCESS&apos;</errorMessage>
+</ValidationRule>

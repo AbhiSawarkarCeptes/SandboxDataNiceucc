@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Score_Sign__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Lead_Score__c = 4 ,  IMAGE(&apos;/resource/1539782261000/Green&apos;,&apos;Green&apos;, 10, 10),
+
+IF( Lead_Score__c = 3 ,  IMAGE(&apos;/resource/1539782704000/Amber&apos;,&apos;Amber&apos;, 10, 10) , 
+
+IF( Lead_Score__c &lt;= 2 ,  IMAGE(&apos;/resource/1539782550000/Red&apos;,&apos;Red&apos;, 10, 10),&apos;&apos;)
+)
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Score Sign</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

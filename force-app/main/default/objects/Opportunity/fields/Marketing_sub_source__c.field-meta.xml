@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_sub_source__c</fullName>
+    <label>Marketing Sub-Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Xanadu Contact Center</fullName>
+                <default>false</default>
+                <label>Xanadu Contact Center</label>
+            </value>
+            <value>
+                <fullName>Presales</fullName>
+                <default>false</default>
+                <label>Presales</label>
+            </value>
+            <value>
+                <fullName>Business Development</fullName>
+                <default>false</default>
+                <label>Business Development</label>
+            </value>
+            <value>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+                <label>Channel Partner</label>
+            </value>
+            <value>
+                <fullName>Event</fullName>
+                <default>false</default>
+                <label>Event</label>
+            </value>
+            <value>
+                <fullName>Employee Referal</fullName>
+                <default>false</default>
+                <label>Employee Referal</label>
+            </value>
+            <value>
+                <fullName>Prospect Referal</fullName>
+                <default>false</default>
+                <label>Prospect Referal</label>
+            </value>
+            <value>
+                <fullName>Magazine</fullName>
+                <default>false</default>
+                <label>Magazine</label>
+            </value>
+            <value>
+                <fullName>Loyalty Referal</fullName>
+                <default>false</default>
+                <label>Loyalty Referal</label>
+            </value>
+            <value>
+                <fullName>Radio</fullName>
+                <default>false</default>
+                <label>Radio</label>
+            </value>
+            <value>
+                <fullName>Corporate Tie Ups</fullName>
+                <default>false</default>
+                <label>Corporate Tie Ups</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Exhibition</fullName>
+                <default>false</default>
+                <label>Exhibition</label>
+            </value>
+            <value>
+                <fullName>Existing Customer</fullName>
+                <default>false</default>
+                <label>Existing Customer</label>
+            </value>
+            <value>
+                <fullName>Hoarding</fullName>
+                <default>false</default>
+                <label>Hoarding</label>
+            </value>
+            <value>
+                <fullName>Direct Mailer</fullName>
+                <default>false</default>
+                <label>Direct Mailer</label>
+            </value>
+            <value>
+                <fullName>Newspaper</fullName>
+                <default>false</default>
+                <label>Newspaper</label>
+            </value>
+            <value>
+                <fullName>SMS Blast</fullName>
+                <default>false</default>
+                <label>SMS Blast</label>
+            </value>
+            <value>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+                <label>Social Media</label>
+            </value>
+            <value>
+                <fullName>Web</fullName>
+                <default>false</default>
+                <label>Web</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Cross Project</fullName>
+                <default>false</default>
+                <label>Cross Project</label>
+            </value>
+            <value>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+                <label>Word of mouth</label>
+            </value>
+            <value>
+                <fullName>Direct</fullName>
+                <default>false</default>
+                <label>Direct</label>
+            </value>
+            <value>
+                <fullName>SM Data</fullName>
+                <default>false</default>
+                <label>SM Data</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

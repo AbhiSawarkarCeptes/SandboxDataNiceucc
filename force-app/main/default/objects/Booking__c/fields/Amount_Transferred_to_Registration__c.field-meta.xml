@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_Transferred_to_Registration__c</fullName>
+    <label>Amount Transferred to Registration</label>
+    <summarizedField>Registration_Payment_Account__c.Amount__c</summarizedField>
+    <summaryForeignKey>Registration_Payment_Account__c.Booking__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

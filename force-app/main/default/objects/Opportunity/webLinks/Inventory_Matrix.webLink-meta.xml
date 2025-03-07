@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inventory_Matrix</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Inventory Matrix</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/26.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)} 
+
+var url =&apos;/apex/S_InventoryMatrixview?oppid=&apos;+&apos;{!Opportunity.Id}&apos;+&apos;&amp;optyProject=&apos;+&apos;{!Opportunity.ProjectId__c}&apos;;
+var stageName = &apos;{!Opportunity.StageName}&apos;; 
+var projectId = &apos;{!Opportunity.Project__c}&apos;; 
+var activeOpty = &apos;{!Opportunity.Active_Opt__c}&apos;;
+
+if(activeOpty == false || stageName == &apos;Closed Lost&apos; || stageName == &apos;Token Amount Received - BIP&apos; || stageName == &apos;Booking Confirmed&apos; || projectId == &apos;&apos;) { 
+alert(&apos;You Cannot go to Inventory Matrix from this Opportunity&apos;); 
+} 
+else {
+window.open(url,&apos;_blank&apos;);
+}</url>
+</WebLink>

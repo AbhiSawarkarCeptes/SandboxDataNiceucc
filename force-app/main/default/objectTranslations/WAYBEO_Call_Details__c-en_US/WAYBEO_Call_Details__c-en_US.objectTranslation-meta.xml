@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>WAYBEO Call Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>WAYBEO Call Details</value>
+    </caseValues>
+    <layouts>
+        <layout>WAYBEO Call Detail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Landing Page Details --></label>
+            <section>Landing Page Details</section>
+        </sections>
+        <sections>
+            <label><!-- URL Details --></label>
+            <section>URL Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

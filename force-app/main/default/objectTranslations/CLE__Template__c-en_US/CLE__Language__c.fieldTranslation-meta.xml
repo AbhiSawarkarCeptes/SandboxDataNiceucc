@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Language --></label>
+    <name>CLE__Language__c</name>
+    <picklistValues>
+        <masterLabel>af</masterLabel>
+        <translation><!-- af --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ar</masterLabel>
+        <translation><!-- ar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>az</masterLabel>
+        <translation><!-- az --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>bg</masterLabel>
+        <translation><!-- bg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>bn</masterLabel>
+        <translation><!-- bn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ca</masterLabel>
+        <translation><!-- ca --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>cs</masterLabel>
+        <translation><!-- cs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>da</masterLabel>
+        <translation><!-- da --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>de</masterLabel>
+        <translation><!-- de --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>el</masterLabel>
+        <translation><!-- el --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>en</masterLabel>
+        <translation><!-- en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>en_GB</masterLabel>
+        <translation><!-- en_GB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>en_US</masterLabel>
+        <translation><!-- en_US --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>es</masterLabel>
+        <translation><!-- es --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>es_AR</masterLabel>
+        <translation><!-- es_AR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>es_ES</masterLabel>
+        <translation><!-- es_ES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>es_MX</masterLabel>
+        <translation><!-- es_MX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>et</masterLabel>
+        <translation><!-- et --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>fa</masterLabel>
+        <translation><!-- fa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>fi</masterLabel>
+        <translation><!-- fi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>fil</masterLabel>
+        <translation><!-- fil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>fr</masterLabel>
+        <translation><!-- fr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ga</masterLabel>
+        <translation><!-- ga --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>gu</masterLabel>
+        <translation><!-- gu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ha</masterLabel>
+        <translation><!-- ha --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>he</masterLabel>
+        <translation><!-- he --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>hi</masterLabel>
+        <translation><!-- hi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>hr</masterLabel>
+        <translation><!-- hr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>hu</masterLabel>
+        <translation><!-- hu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>id</masterLabel>
+        <translation><!-- id --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>it</masterLabel>
+        <translation><!-- it --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ja</masterLabel>
+        <translation><!-- ja --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ka</masterLabel>
+        <translation><!-- ka --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>kk</masterLabel>
+        <translation><!-- kk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>kn</masterLabel>
+        <translation><!-- kn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ko</masterLabel>
+        <translation><!-- ko --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ky_KG</masterLabel>
+        <translation><!-- ky_KG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>lo</masterLabel>
+        <translation><!-- lo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>lt</masterLabel>
+        <translation><!-- lt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>lv</masterLabel>
+        <translation><!-- lv --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>mk</masterLabel>
+        <translation><!-- mk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ml</masterLabel>
+        <translation><!-- ml --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>mr</masterLabel>
+        <translation><!-- mr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ms</masterLabel>
+        <translation><!-- ms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>nb</masterLabel>
+        <translation><!-- nb --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>nl</masterLabel>
+        <translation><!-- nl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pa</masterLabel>
+        <translation><!-- pa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pl</masterLabel>
+        <translation><!-- pl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pt_BR</masterLabel>
+        <translation><!-- pt_BR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pt_PT</masterLabel>
+        <translation><!-- pt_PT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ro</masterLabel>
+        <translation><!-- ro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ru</masterLabel>
+        <translation><!-- ru --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>rw_RW</masterLabel>
+        <translation><!-- rw_RW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sk</masterLabel>
+        <translation><!-- sk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sl</masterLabel>
+        <translation><!-- sl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sq</masterLabel>
+        <translation><!-- sq --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sr</masterLabel>
+        <translation><!-- sr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sv</masterLabel>
+        <translation><!-- sv --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sw</masterLabel>
+        <translation><!-- sw --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ta</masterLabel>
+        <translation><!-- ta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>te</masterLabel>
+        <translation><!-- te --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>th</masterLabel>
+        <translation><!-- th --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tr</masterLabel>
+        <translation><!-- tr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>uk</masterLabel>
+        <translation><!-- uk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>unknown</masterLabel>
+        <translation><!-- unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ur</masterLabel>
+        <translation><!-- ur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>uz</masterLabel>
+        <translation><!-- uz --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vi</masterLabel>
+        <translation><!-- vi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>zh_CN</masterLabel>
+        <translation><!-- zh_CN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>zh_HK</masterLabel>
+        <translation><!-- zh_HK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>zh_TW</masterLabel>
+        <translation><!-- zh_TW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>zu</masterLabel>
+        <translation><!-- zu --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

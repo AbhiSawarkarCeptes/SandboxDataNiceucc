@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Applicant_Signing_Order__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  ISPICKVAL(Applicant_Number__c, &apos;Primary Applicant&apos;) , 1, IF(ISPICKVAL(Applicant_Number__c, &apos;Second Applicant&apos;), 2, IF(ISPICKVAL(Applicant_Number__c, &apos;Third Applicant&apos;), 3 , IF(ISPICKVAL(Applicant_Number__c, &apos;Fourth Applicant&apos;), 4, 5) ) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Applicant Signing Order</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

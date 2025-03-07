@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_For_Lost__c</fullName>
+    <label>Reason For Lost</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Event_Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>Expecting correction in the market</fullName>
+                <default>false</default>
+                <label>Expecting correction in the market</label>
+            </value>
+            <value>
+                <fullName>Product Specification</fullName>
+                <default>false</default>
+                <label>Product Specification</label>
+            </value>
+            <value>
+                <fullName>Inventory Choice Availability</fullName>
+                <default>false</default>
+                <label>Inventory Choice Availability</label>
+            </value>
+            <value>
+                <fullName>Budget / Price / Possession</fullName>
+                <default>false</default>
+                <label>Budget / Price / Possession</label>
+            </value>
+            <value>
+                <fullName>Payment Schedule</fullName>
+                <default>false</default>
+                <label>Payment Schedule</label>
+            </value>
+            <value>
+                <fullName>Site Experience</fullName>
+                <default>false</default>
+                <label>Site Experience</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>Invalid Enquiry</fullName>
+                <default>false</default>
+                <label>Invalid Enquiry</label>
+            </value>
+            <value>
+                <fullName>Not interested in real estate</fullName>
+                <default>false</default>
+                <label>Not interested in real estate</label>
+            </value>
+            <value>
+                <fullName>Competition</fullName>
+                <default>false</default>
+                <label>Competition</label>
+            </value>
+            <value>
+                <fullName>Committee Disapproved</fullName>
+                <default>false</default>
+                <label>Committee Disapproved</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Expecting correction in the market</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Product Specification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Inventory Choice Availability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Budget / Price / Possession</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Payment Schedule</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Site Experience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Broker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Invalid Enquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Not interested in real estate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Competition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Committee Disapproved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Others</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

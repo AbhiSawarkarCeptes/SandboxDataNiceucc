@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blocked_Booking_with_PP_greater_than_2</fullName>
+    <active>false</active>
+    <description>If Paid Purchase is greater than or equal to 2%, then only Stage of Booking can be changed to Blocked.</description>
+    <errorConditionFormula>AND(Paid_Percentage__c &lt; 0.02, 
+ISCHANGED(Stage_of_Booking__c), 
+TEXT(Stage_of_Booking__c) == &apos;Blocked&apos;)</errorConditionFormula>
+    <errorMessage>You cannot change the Stage of Booking to Blocked as paid percentage is less than 2%</errorMessage>
+</ValidationRule>

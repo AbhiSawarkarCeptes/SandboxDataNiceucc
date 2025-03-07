@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Active_basis_close_date__c</fullName>
+    <formula>If(
+ISPICKVAL(StageName, &apos;Closed Lost&apos;), False, 
+If(ISBLANK(EDC__c), Today() &lt;=  CloseDate, Today() &lt;= EDC__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Active basis close date</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

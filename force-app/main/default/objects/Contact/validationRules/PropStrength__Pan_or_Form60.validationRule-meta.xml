@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PropStrength__Pan_or_Form60</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(NOT(ISPICKVAL( PropStrength__Resident_Status__c ,&apos;NRI&apos;)),
+AND(AND(OR(ISNULL(PropStrength__Income_Tax_permanent_Account_No__c), ISBLANK(PropStrength__Income_Tax_permanent_Account_No__c)), PropStrength__Form_60__c == false),RecordType.Name == &apos;Customer&apos;), false)</errorConditionFormula>
+    <errorMessage>Please Fill PAN No OR Form60</errorMessage>
+</ValidationRule>

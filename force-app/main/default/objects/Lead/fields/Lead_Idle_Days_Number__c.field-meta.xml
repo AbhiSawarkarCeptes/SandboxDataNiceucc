@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Idle_Days_Number__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(ISBLANK(Last_Call_Attempt_Date__c), ISBLANK(Sales_Call_Attempt_Date__c)), now() - CreatedDate,  
+			IF(Last_Call_Attempt_Date__c &gt; Sales_Call_Attempt_Date__c, now() - Last_Call_Attempt_Date__c,
+					IF(Sales_Call_Attempt_Date__c &gt; Last_Call_Attempt_Date__c, now() - Sales_Call_Attempt_Date__c, 
+								IF(AND(ISBLANK(Last_Call_Attempt_Date__c), NOT(ISBLANK(Sales_Call_Attempt_Date__c))), now() - Sales_Call_Attempt_Date__c,
+								IF(AND(NOT(ISBLANK(Last_Call_Attempt_Date__c)), ISBLANK(Sales_Call_Attempt_Date__c)), now() - Last_Call_Attempt_Date__c,			
+								0)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lead Idle Days Number</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

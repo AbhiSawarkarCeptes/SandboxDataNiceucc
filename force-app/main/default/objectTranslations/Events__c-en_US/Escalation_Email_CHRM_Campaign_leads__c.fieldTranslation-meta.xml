@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Escalation Email CHRM - Campaign leads --></label>
+    <name>Escalation_Email_CHRM_Campaign_leads__c</name>
+</CustomFieldTranslation>

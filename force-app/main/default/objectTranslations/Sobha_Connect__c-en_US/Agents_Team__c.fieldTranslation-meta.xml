@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Agents Team --></label>
+    <name>Agents_Team__c</name>
+    <relationshipLabel><!-- Sobha Connect (Agents Team) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payment Milestones</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payment Milestones</value>
+    </caseValues>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Payment Milestones Layout</layout>
+        <sections>
+            <label><!-- Audit Approval Details --></label>
+            <section>Audit Approval Details</section>
+        </sections>
+        <sections>
+            <label><!-- CFO Approval Details --></label>
+            <section>CFO Approval Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 1 --></label>
+            <section>Charge 1</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 10 --></label>
+            <section>Charge 10</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 2 --></label>
+            <section>Charge 2</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 3 --></label>
+            <section>Charge 3</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 4 --></label>
+            <section>Charge 4</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 5 --></label>
+            <section>Charge 5</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 6 --></label>
+            <section>Charge 6</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 7 --></label>
+            <section>Charge 7</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 8 --></label>
+            <section>Charge 8</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 9 --></label>
+            <section>Charge 9</section>
+        </sections>
+        <sections>
+            <label><!-- Collection Approval Details --></label>
+            <section>Collection Approval Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Approval Details --></label>
+            <section>Finance Approval Details</section>
+        </sections>
+        <sections>
+            <label><!-- Invoice Details --></label>
+            <section>Invoice Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SM Payment Milestone Layout</layout>
+        <sections>
+            <label><!-- Charge 1 --></label>
+            <section>Charge 1</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 10 --></label>
+            <section>Charge 10</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 2 --></label>
+            <section>Charge 2</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 3 --></label>
+            <section>Charge 3</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 4 --></label>
+            <section>Charge 4</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 5 --></label>
+            <section>Charge 5</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 6 --></label>
+            <section>Charge 6</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 7 --></label>
+            <section>Charge 7</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 8 --></label>
+            <section>Charge 8</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 9 --></label>
+            <section>Charge 9</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Invoice Details --></label>
+            <section>Invoice Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales Operation with Area update</layout>
+        <sections>
+            <label><!-- Audit Approval Details --></label>
+            <section>Audit Approval Details</section>
+        </sections>
+        <sections>
+            <label><!-- CFO Approval Details --></label>
+            <section>CFO Approval Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 1 --></label>
+            <section>Charge 1</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 10 --></label>
+            <section>Charge 10</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 2 --></label>
+            <section>Charge 2</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 3 --></label>
+            <section>Charge 3</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 4 --></label>
+            <section>Charge 4</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 5 --></label>
+            <section>Charge 5</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 6 --></label>
+            <section>Charge 6</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 7 --></label>
+            <section>Charge 7</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 8 --></label>
+            <section>Charge 8</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 9 --></label>
+            <section>Charge 9</section>
+        </sections>
+        <sections>
+            <label><!-- Collection Approval Details --></label>
+            <section>Collection Approval Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Approval Details --></label>
+            <section>Finance Approval Details</section>
+        </sections>
+        <sections>
+            <label><!-- Invoice Details --></label>
+            <section>Invoice Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>payment Milestone Layout with PM Edit Access</layout>
+        <sections>
+            <label><!-- Audit Approval Details --></label>
+            <section>Audit Approval Details</section>
+        </sections>
+        <sections>
+            <label><!-- CFO Approval Details --></label>
+            <section>CFO Approval Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 1 --></label>
+            <section>Charge 1</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 10 --></label>
+            <section>Charge 10</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 2 --></label>
+            <section>Charge 2</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 3 --></label>
+            <section>Charge 3</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 4 --></label>
+            <section>Charge 4</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 5 --></label>
+            <section>Charge 5</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 6 --></label>
+            <section>Charge 6</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 7 --></label>
+            <section>Charge 7</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 8 --></label>
+            <section>Charge 8</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 9 --></label>
+            <section>Charge 9</section>
+        </sections>
+        <sections>
+            <label><!-- Collection Approval Details --></label>
+            <section>Collection Approval Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Approval Details --></label>
+            <section>Finance Approval Details</section>
+        </sections>
+        <sections>
+            <label><!-- Invoice Details --></label>
+            <section>Invoice Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

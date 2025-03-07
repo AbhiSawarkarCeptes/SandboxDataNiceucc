@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Towards__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(NOT(ISBLANK(Transfer_Amount__c)), &apos;ESCROW Account&apos;, 
+If(NOT(ISBLANK(Registration_Payment_Account__c)), &apos;&apos;,  
+If(NOT(ISBLANK(Demand__c)), TEXT(Demand__r.Payment_Towards__c),  
+If(NOT(ISBLANK(Receipt__c)), TEXT(Receipt__r.Payment_Towards__c),  
+&apos;&apos;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Payment Towards</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

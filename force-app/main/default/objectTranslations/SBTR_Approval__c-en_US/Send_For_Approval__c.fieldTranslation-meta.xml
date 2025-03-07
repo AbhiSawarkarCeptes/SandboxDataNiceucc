@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Send For Approval --></label>
+    <name>Send_For_Approval__c</name>
+    <picklistValues>
+        <masterLabel>Approval 3</masterLabel>
+        <translation><!-- Approval 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approver 1</masterLabel>
+        <translation><!-- Approver 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approver 2</masterLabel>
+        <translation><!-- Approver 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

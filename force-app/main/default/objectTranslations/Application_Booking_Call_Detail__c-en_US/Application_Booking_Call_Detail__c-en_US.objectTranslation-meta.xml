@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Application/ Booking Call Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Application/ Booking Call Details</value>
+    </caseValues>
+    <layouts>
+        <layout>Application/ Booking Call Detail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Non-Contactable Email --></label>
+        <name>Non_Contactable_Email</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

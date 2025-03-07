@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Document_Verification_L3__c</fullName>
+    <label>Document Verification L3</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Document_Verification_L2__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>Does not match with ID Proof</fullName>
+                <default>false</default>
+                <label>Does not match with ID Proof</label>
+            </value>
+            <value>
+                <fullName>Does not match with Enquiry Form</fullName>
+                <default>false</default>
+                <label>Does not match with Enquiry Form</label>
+            </value>
+            <value>
+                <fullName>Agreement Value Mismatch</fullName>
+                <default>false</default>
+                <label>Agreement Value Mismatch</label>
+            </value>
+            <value>
+                <fullName>Agreement Value Missing</fullName>
+                <default>false</default>
+                <label>Agreement Value Missing</label>
+            </value>
+            <value>
+                <fullName>Flat Details Missing</fullName>
+                <default>false</default>
+                <label>Flat Details Missing</label>
+            </value>
+            <value>
+                <fullName>Flat not available for sale</fullName>
+                <default>false</default>
+                <label>Flat not available for sale</label>
+            </value>
+            <value>
+                <fullName>Booking Date Missing</fullName>
+                <default>false</default>
+                <label>Booking Date Missing</label>
+            </value>
+            <value>
+                <fullName>Carpet Area Missing</fullName>
+                <default>false</default>
+                <label>Carpet Area Missing</label>
+            </value>
+            <value>
+                <fullName>Carpet Area Incorrect</fullName>
+                <default>false</default>
+                <label>Carpet Area Incorrect</label>
+            </value>
+            <value>
+                <fullName>Enquiry Form Incomplete</fullName>
+                <default>false</default>
+                <label>Enquiry Form Incomplete</label>
+            </value>
+            <value>
+                <fullName>Change of Ink</fullName>
+                <default>false</default>
+                <label>Change of Ink</label>
+            </value>
+            <value>
+                <fullName>Overwriting/White Ink (without cross signature by customer)</fullName>
+                <default>false</default>
+                <label>Overwriting/White Ink (without cross signature by customer)</label>
+            </value>
+            <value>
+                <fullName>3rd Party Cheque/Payment</fullName>
+                <default>false</default>
+                <label>3rd Party Cheque/Payment</label>
+            </value>
+            <value>
+                <fullName>Non CTS Cheque</fullName>
+                <default>false</default>
+                <label>Non CTS Cheque</label>
+            </value>
+            <value>
+                <fullName>Incorrect Details</fullName>
+                <default>false</default>
+                <label>Incorrect Details</label>
+            </value>
+            <value>
+                <fullName>CP Name Mismatch (BF v/s Enquiry Form)</fullName>
+                <default>false</default>
+                <label>CP Name Mismatch (BF v/s Enquiry Form)</label>
+            </value>
+            <value>
+                <fullName>Channel Partner Name and RERA Reg. No.</fullName>
+                <default>false</default>
+                <label>Channel Partner Name and RERA Reg. No.</label>
+            </value>
+            <value>
+                <fullName>Customer Signature Missing</fullName>
+                <default>false</default>
+                <label>Customer Signature Missing</label>
+            </value>
+            <value>
+                <fullName>Customer Signature not matching ID proof</fullName>
+                <default>false</default>
+                <label>Customer Signature not matching ID proof</label>
+            </value>
+            <value>
+                <fullName>SM Signature Missing</fullName>
+                <default>false</default>
+                <label>SM Signature Missing</label>
+            </value>
+            <value>
+                <fullName>Site Head Signature Missing</fullName>
+                <default>false</default>
+                <label>Site Head Signature Missing</label>
+            </value>
+            <value>
+                <fullName>Signature Missing on Cost Sheet</fullName>
+                <default>false</default>
+                <label>Signature Missing on Cost Sheet</label>
+            </value>
+            <value>
+                <fullName>PAN</fullName>
+                <default>false</default>
+                <label>PAN</label>
+            </value>
+            <value>
+                <fullName>Phone No.</fullName>
+                <default>false</default>
+                <label>Phone No.</label>
+            </value>
+            <value>
+                <fullName>Email ID</fullName>
+                <default>false</default>
+                <label>Email ID</label>
+            </value>
+            <value>
+                <fullName>Incomplete Address</fullName>
+                <default>false</default>
+                <label>Incomplete Address</label>
+            </value>
+            <value>
+                <fullName>Aadhar</fullName>
+                <default>false</default>
+                <label>Aadhar</label>
+            </value>
+            <value>
+                <fullName>Channel Partner Address</fullName>
+                <default>false</default>
+                <label>Channel Partner Address</label>
+            </value>
+            <value>
+                <fullName>Channel Partner Email ID</fullName>
+                <default>false</default>
+                <label>Channel Partner Email ID</label>
+            </value>
+            <value>
+                <fullName>Channel Partner No.</fullName>
+                <default>false</default>
+                <label>Channel Partner No.</label>
+            </value>
+            <value>
+                <fullName>For further clarification</fullName>
+                <default>false</default>
+                <label>For further clarification</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Management Approved</controllingFieldValue>
+            <controllingFieldValue>PDC</controllingFieldValue>
+            <valueName>NA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Name</controllingFieldValue>
+            <valueName>Does not match with ID Proof</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Name</controllingFieldValue>
+            <valueName>Does not match with Enquiry Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial Details Incorrect/Incomplete</controllingFieldValue>
+            <valueName>Agreement Value Mismatch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial Details Incorrect/Incomplete</controllingFieldValue>
+            <valueName>Agreement Value Missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial Details Incorrect/Incomplete</controllingFieldValue>
+            <valueName>Flat Details Missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial Details Incorrect/Incomplete</controllingFieldValue>
+            <valueName>Flat not available for sale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial Details Incorrect/Incomplete</controllingFieldValue>
+            <valueName>Booking Date Missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial Details Incorrect/Incomplete</controllingFieldValue>
+            <valueName>Carpet Area Missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial Details Incorrect/Incomplete</controllingFieldValue>
+            <valueName>Carpet Area Incorrect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial Details Incorrect/Incomplete</controllingFieldValue>
+            <valueName>Enquiry Form Incomplete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial Details Incorrect/Incomplete</controllingFieldValue>
+            <valueName>Change of Ink</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial Details Incorrect/Incomplete</controllingFieldValue>
+            <valueName>Overwriting/White Ink (without cross signature by customer)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>3rd Party Cheque/Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Non CTS Cheque</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Incorrect Details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Source Verifications</controllingFieldValue>
+            <valueName>CP Name Mismatch (BF v/s Enquiry Form)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Source Verifications</controllingFieldValue>
+            <valueName>Channel Partner Name and RERA Reg. No.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Signature</controllingFieldValue>
+            <valueName>Customer Signature Missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Signature</controllingFieldValue>
+            <valueName>Customer Signature not matching ID proof</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Signature</controllingFieldValue>
+            <valueName>SM Signature Missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Signature</controllingFieldValue>
+            <valueName>Site Head Signature Missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Signature</controllingFieldValue>
+            <valueName>Signature Missing on Cost Sheet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KYC Details Missing</controllingFieldValue>
+            <controllingFieldValue>KYC Document Missing</controllingFieldValue>
+            <valueName>PAN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KYC Details Missing</controllingFieldValue>
+            <valueName>Phone No.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KYC Details Missing</controllingFieldValue>
+            <valueName>Email ID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KYC Details Missing</controllingFieldValue>
+            <valueName>Incomplete Address</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KYC Document Missing</controllingFieldValue>
+            <valueName>Aadhar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Dependancy</controllingFieldValue>
+            <valueName>For further clarification</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

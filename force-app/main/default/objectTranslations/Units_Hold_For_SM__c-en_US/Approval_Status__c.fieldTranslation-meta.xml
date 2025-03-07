@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Approval Status --></label>
+    <name>Approval_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by Accounts Team</masterLabel>
+        <translation><!-- Approved by Accounts Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by SO Head</masterLabel>
+        <translation><!-- Approved by SO Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by Sales Head</masterLabel>
+        <translation><!-- Approved by Sales Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by Sales VP</masterLabel>
+        <translation><!-- Approved by Sales VP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for Accounts Team Approval</masterLabel>
+        <translation><!-- Pending for Accounts Team Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for Approval</masterLabel>
+        <translation><!-- Pending for Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for CP Head Approval</masterLabel>
+        <translation><!-- Pending for CP Head Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected By Accounts Team</masterLabel>
+        <translation><!-- Rejected By Accounts Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by CP Head</masterLabel>
+        <translation><!-- Rejected by CP Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by SO Head</masterLabel>
+        <translation><!-- Rejected by SO Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Sales Head</masterLabel>
+        <translation><!-- Rejected by Sales Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Sales VP</masterLabel>
+        <translation><!-- Rejected by Sales VP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yet to Submit</masterLabel>
+        <translation><!-- Yet to Submit --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

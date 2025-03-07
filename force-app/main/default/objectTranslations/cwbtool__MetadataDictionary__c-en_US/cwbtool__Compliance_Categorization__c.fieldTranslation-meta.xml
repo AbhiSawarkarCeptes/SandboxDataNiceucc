@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Compliance Categorization --></label>
+    <name>cwbtool__Compliance_Categorization__c</name>
+    <picklistValues>
+        <masterLabel>CCPA</masterLabel>
+        <translation><!-- CCPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COPPA</masterLabel>
+        <translation><!-- COPPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GDPR</masterLabel>
+        <translation><!-- GDPR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HIPAA</masterLabel>
+        <translation><!-- HIPAA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCI</masterLabel>
+        <translation><!-- PCI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PII</masterLabel>
+        <translation><!-- PII --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PersonalInfo</masterLabel>
+        <translation><!-- PersonalInfo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

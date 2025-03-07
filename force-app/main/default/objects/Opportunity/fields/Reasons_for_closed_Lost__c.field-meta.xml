@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reasons_for_closed_Lost__c</fullName>
+    <label>Reasons For Closed (Lost)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Expecting correction in the market</fullName>
+                <default>false</default>
+                <label>Expecting correction in the market</label>
+            </value>
+            <value>
+                <fullName>Product Specification</fullName>
+                <default>false</default>
+                <label>Product Specification</label>
+            </value>
+            <value>
+                <fullName>Inventory Choice Availability</fullName>
+                <default>false</default>
+                <label>Inventory Choice Availability</label>
+            </value>
+            <value>
+                <fullName>Budget / Price / Possession</fullName>
+                <default>false</default>
+                <label>Budget / Price / Possession</label>
+            </value>
+            <value>
+                <fullName>Payment Schedule</fullName>
+                <default>false</default>
+                <label>Payment Schedule</label>
+            </value>
+            <value>
+                <fullName>Site Experience</fullName>
+                <default>false</default>
+                <label>Site Experience</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>Invalid Enquiry</fullName>
+                <default>false</default>
+                <label>Invalid Enquiry</label>
+            </value>
+            <value>
+                <fullName>Not interested in real estate</fullName>
+                <default>false</default>
+                <label>Not interested in real estate</label>
+            </value>
+            <value>
+                <fullName>competition</fullName>
+                <default>false</default>
+                <label>competition</label>
+            </value>
+            <value>
+                <fullName>committee disapproved</fullName>
+                <default>false</default>
+                <label>committee disapproved</label>
+            </value>
+            <value>
+                <fullName>Others with free text option</fullName>
+                <default>false</default>
+                <label>Others with free text option</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

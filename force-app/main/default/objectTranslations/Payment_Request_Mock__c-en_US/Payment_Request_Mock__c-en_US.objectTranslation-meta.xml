@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payment Request (Downtime Record)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payment Request (Downtime Records)</value>
+    </caseValues>
+    <layouts>
+        <layout>Payment Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Sale Approval --></label>
+        <name>New_Sale_Approval</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

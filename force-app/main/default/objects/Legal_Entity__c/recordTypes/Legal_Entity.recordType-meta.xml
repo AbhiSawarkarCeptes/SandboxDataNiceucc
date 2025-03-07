@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_Entity</fullName>
+    <active>true</active>
+    <label>Parent Legal Entity</label>
+    <picklistValues>
+        <picklist>RDS_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InActive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

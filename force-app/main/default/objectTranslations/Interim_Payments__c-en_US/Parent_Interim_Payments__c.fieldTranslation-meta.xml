@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cheque Replacement Record 1 --></label>
+    <name>Parent_Interim_Payments__c</name>
+    <relationshipLabel><!-- Interim Payments (Cheque Replacement Record 1) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRM_Name_is_mandatiry</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(ISPICKVAL(Visit_Type__c , &apos;Broker&apos;) ,    ISPICKVAL(Visit_Type__c , &apos;Customer with Broker&apos;)),OR( AND( Channel_Partner__c == null,  Sobha_Connect__c == null)))</errorConditionFormula>
+    <errorMessage>Please give value in Sobha Connect or Channel Partner</errorMessage>
+</ValidationRule>

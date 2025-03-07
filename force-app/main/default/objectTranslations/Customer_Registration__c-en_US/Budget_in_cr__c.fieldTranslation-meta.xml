@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Indicative Budget (In Mn) --></label>
+    <name>Budget_in_cr__c</name>
+    <picklistValues>
+        <masterLabel>0.7 Mil – 1.5 Mil</masterLabel>
+        <translation><!-- 0.7 Mil – 1.5 Mil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1.5 Mil – 3 Mil</masterLabel>
+        <translation><!-- 1.5 Mil – 3 Mil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>12.5 Mil &amp; above</masterLabel>
+        <translation><!-- 12.5 Mil &amp; above --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 Mil – 5.5 Mil</masterLabel>
+        <translation><!-- 3 Mil – 5.5 Mil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5.5 Mil – 8 Mil</masterLabel>
+        <translation><!-- 5.5 Mil – 8 Mil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8 Mil – 12.5 Mil</masterLabel>
+        <translation><!-- 8 Mil – 12.5 Mil --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View_All</fullName>
+    <columns>NAME</columns>
+    <columns>SETUP_OWNER_NAME</columns>
+    <columns>Allow_Update_Records__c</columns>
+    <columns>Skip_CP_SC_Registration_No_Validation__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>View All</label>
+</ListView>

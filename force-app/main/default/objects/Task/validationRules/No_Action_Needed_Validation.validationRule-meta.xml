@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Action_Needed_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+AND(
+NOT(ISPICKVAL(Call_Status__c  , &apos;Non Contactable - Invalid number&apos;)) ,
+NOT(ISPICKVAL(Call_Status__c  , &apos;Non Contactable - Wrong number&apos;)),
+NOT(ISPICKVAL(Call_Status__c  , &apos;Call Complete&apos;)
+ )),
+ISPICKVAL(Call_Attempt_Status__c, &apos;No Action Needed&apos;) 
+)</errorConditionFormula>
+    <errorDisplayField>Call_Attempt_Status__c</errorDisplayField>
+    <errorMessage>&quot;No Action Needed&quot; can only be selected if the customer phone is Invalid or Wrong Number or the Call is Complete and customer is not interested.</errorMessage>
+</ValidationRule>

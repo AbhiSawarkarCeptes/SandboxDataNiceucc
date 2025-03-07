@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Disposition L2 --></label>
+    <name>Call_Disposition_L2__c</name>
+    <picklistValues>
+        <masterLabel>Cannot Proceed</masterLabel>
+        <translation><!-- Cannot Proceed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Detail Mismatch</masterLabel>
+        <translation><!-- Commercial Detail Mismatch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misselling</masterLabel>
+        <translation><!-- Misselling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non - Contactable</masterLabel>
+        <translation><!-- Non - Contactable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Dependency</masterLabel>
+        <translation><!-- Sales Dependency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Source Verification</masterLabel>
+        <translation><!-- Source Verification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stop Payment</masterLabel>
+        <translation><!-- Stop Payment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

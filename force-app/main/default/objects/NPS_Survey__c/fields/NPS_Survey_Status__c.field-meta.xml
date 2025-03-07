@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NPS_Survey_Status__c</fullName>
+    <label>NPS Survey Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Call Completed</fullName>
+                <default>false</default>
+                <label>Call Completed / اكتملت المكالمة</label>
+            </value>
+            <value>
+                <fullName>Call Scheduled</fullName>
+                <default>false</default>
+                <label>Call Back / أتصل مرة أخرى</label>
+            </value>
+            <value>
+                <fullName>Did Not Pick</fullName>
+                <default>false</default>
+                <label>Did not Pick / لم اختر</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested / غير مهتم</label>
+            </value>
+            <value>
+                <fullName>Wrong Number / Non-Contactable</fullName>
+                <default>false</default>
+                <label>Wrong Number or Not Responding / رقم خاطئ أو لا يستجيب</label>
+            </value>
+            <value>
+                <fullName>Number busy / الرقم مشغول</fullName>
+                <default>false</default>
+                <label>Number busy / الرقم مشغول</label>
+            </value>
+            <value>
+                <fullName>Out of Reach / صعب المنال</fullName>
+                <default>false</default>
+                <label>Out of Reach / صعب المنال</label>
+            </value>
+            <value>
+                <fullName>Switched Off / مغلق</fullName>
+                <default>false</default>
+                <label>Switched Off / مغلق</label>
+            </value>
+            <value>
+                <fullName>Ineligible</fullName>
+                <default>false</default>
+                <label>Ineligible</label>
+            </value>
+            <value>
+                <fullName>Cannot Call-Only Initials</fullName>
+                <default>false</default>
+                <label>Cannot Call-Only Initials</label>
+            </value>
+            <value>
+                <fullName>Language Problem English</fullName>
+                <default>false</default>
+                <label>Language Problem English</label>
+            </value>
+            <value>
+                <fullName>Language Problem Arabic</fullName>
+                <default>false</default>
+                <label>Language Problem Arabic</label>
+            </value>
+            <value>
+                <fullName>Language Problem Russian</fullName>
+                <default>false</default>
+                <label>Language Problem Russian</label>
+            </value>
+            <value>
+                <fullName>Language Problem Others</fullName>
+                <default>false</default>
+                <label>Language Problem Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

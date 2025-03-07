@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Mall_Name__c</columns>
+    <columns>Promoter_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Promoter_Name__c</field>
+        <operation>contains</operation>
+        <value>Mohammed Zaid Siraj</value>
+    </filters>
+    <label>All</label>
+</ListView>

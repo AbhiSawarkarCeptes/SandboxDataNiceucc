@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Is Rera Catg and Not Renewal --></label>
+    <name>Is_Rera_Catg_and_Not_Renewal__c</name>
+</CustomFieldTranslation>

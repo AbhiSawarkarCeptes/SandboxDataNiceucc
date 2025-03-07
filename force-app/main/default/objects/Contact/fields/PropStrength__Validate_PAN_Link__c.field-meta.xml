@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PropStrength__Validate_PAN_Link__c</fullName>
+    <defaultValue>&quot;https://incometaxindiaefiling.gov.in/e-Filing/Services/KnowYourJurisdictionLink.html&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <label>Validate PAN (Link)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Url</type>
+</CustomField>

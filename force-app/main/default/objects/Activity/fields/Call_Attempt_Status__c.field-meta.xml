@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Attempt_Status__c</fullName>
+    <label>Call Attempt Status</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Follow Up -Qualified</fullName>
+                <default>false</default>
+                <label>Follow Up -Qualified</label>
+            </value>
+            <value>
+                <fullName>No Contact</fullName>
+                <default>false</default>
+                <label>No Contact</label>
+            </value>
+            <value>
+                <fullName>Follow up</fullName>
+                <default>false</default>
+                <label>Follow Up</label>
+            </value>
+            <value>
+                <fullName>Follow up - email</fullName>
+                <default>false</default>
+                <label>Follow up - email</label>
+            </value>
+            <value>
+                <fullName>Follow up - social</fullName>
+                <default>false</default>
+                <label>Follow up - social</label>
+            </value>
+            <value>
+                <fullName>Visit proposed</fullName>
+                <default>false</default>
+                <label>Visit Proposed</label>
+            </value>
+            <value>
+                <fullName>Visit confirmed</fullName>
+                <default>false</default>
+                <label>Visit Confirmed</label>
+            </value>
+            <value>
+                <fullName>Visit Done</fullName>
+                <default>false</default>
+                <label>Visit Done</label>
+            </value>
+            <value>
+                <fullName>Meeting Proposed</fullName>
+                <default>false</default>
+                <label>Meeting Proposed</label>
+            </value>
+            <value>
+                <fullName>Meeting Done</fullName>
+                <default>false</default>
+                <label>Meeting Done</label>
+            </value>
+            <value>
+                <fullName>Meeting Cancelled</fullName>
+                <default>false</default>
+                <label>Meeting Cancelled</label>
+            </value>
+            <value>
+                <fullName>Home Presentation</fullName>
+                <default>false</default>
+                <label>Home Presentation</label>
+            </value>
+            <value>
+                <fullName>Office Presentation</fullName>
+                <default>false</default>
+                <label>Office Presentation</label>
+            </value>
+            <value>
+                <fullName>Tele-Meeting Fixed</fullName>
+                <default>false</default>
+                <label>Tele-Meeting Fixed</label>
+            </value>
+            <value>
+                <fullName>Tele-Meeting Done</fullName>
+                <default>false</default>
+                <label>Tele-Meeting Done</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+            <value>
+                <fullName>Invalid Enquiry</fullName>
+                <default>false</default>
+                <label>Invalid Enquiry</label>
+            </value>
+            <value>
+                <fullName>Invalid Number</fullName>
+                <default>false</default>
+                <label>Invalid Number</label>
+            </value>
+            <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <label>Paid</label>
+            </value>
+            <value>
+                <fullName>PTP</fullName>
+                <default>false</default>
+                <label>PTP</label>
+            </value>
+            <value>
+                <fullName>RTP</fullName>
+                <default>false</default>
+                <label>RTP</label>
+            </value>
+            <value>
+                <fullName>Payment Plan Change</fullName>
+                <default>false</default>
+                <label>Payment Plan Change</label>
+            </value>
+            <value>
+                <fullName>Cancellation Request</fullName>
+                <default>false</default>
+                <label>Cancellation Request</label>
+            </value>
+            <value>
+                <fullName>No booking form</fullName>
+                <default>false</default>
+                <label>No booking form</label>
+            </value>
+            <value>
+                <fullName>Issue Case</fullName>
+                <default>false</default>
+                <label>Issue Case</label>
+            </value>
+            <value>
+                <fullName>MSO</fullName>
+                <default>false</default>
+                <label>MSO</label>
+            </value>
+            <value>
+                <fullName>RNR</fullName>
+                <default>false</default>
+                <label>RNR</label>
+            </value>
+            <value>
+                <fullName>Language barrier</fullName>
+                <default>false</default>
+                <label>Language barrier</label>
+            </value>
+            <value>
+                <fullName>Junk Lead</fullName>
+                <default>false</default>
+                <label>Junk Lead</label>
+            </value>
+            <value>
+                <fullName>Prospect - Budget</fullName>
+                <default>false</default>
+                <label>Prospect - Budget</label>
+            </value>
+            <value>
+                <fullName>Prospect - Locality</fullName>
+                <default>false</default>
+                <label>Prospect - Locality</label>
+            </value>
+            <value>
+                <fullName>Prospect - Type</fullName>
+                <default>false</default>
+                <label>Prospect - Type</label>
+            </value>
+            <value>
+                <fullName>Prospect - Construction Timeline</fullName>
+                <default>false</default>
+                <label>Prospect - Construction Timeline</label>
+            </value>
+            <value>
+                <fullName>Tele-Meeting Proposed</fullName>
+                <default>false</default>
+                <label>Tele-Meeting Proposed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

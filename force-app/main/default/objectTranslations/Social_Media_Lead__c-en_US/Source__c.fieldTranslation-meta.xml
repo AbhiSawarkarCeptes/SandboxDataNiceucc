@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Source --></label>
+    <name>Source__c</name>
+    <picklistValues>
+        <masterLabel>AFF - YX</masterLabel>
+        <translation><!-- AFF - YX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AFF-NABD</masterLabel>
+        <translation><!-- AFF-NABD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AZ-AFF</masterLabel>
+        <translation><!-- AZ-AFF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bayt</masterLabel>
+        <translation><!-- Bayt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ETERNITY CHINA</masterLabel>
+        <translation><!-- ETERNITY CHINA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ETQ</masterLabel>
+        <translation><!-- ETQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXCHSH2</masterLabel>
+        <translation><!-- EXCHSH2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Facebook</masterLabel>
+        <translation><!-- Facebook --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GFN</masterLabel>
+        <translation><!-- GFN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HF</masterLabel>
+        <translation><!-- HF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HFLRS</masterLabel>
+        <translation><!-- HFLRS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HFSH2</masterLabel>
+        <translation><!-- HFSH2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HFSO</masterLabel>
+        <translation><!-- HFSO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HOD</masterLabel>
+        <translation><!-- HOD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEAF</masterLabel>
+        <translation><!-- JEAF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LGMRU</masterLabel>
+        <translation><!-- LGMRU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LinkedIn</masterLabel>
+        <translation><!-- LinkedIn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PropertyGuru</masterLabel>
+        <translation><!-- PropertyGuru --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TTRU</masterLabel>
+        <translation><!-- TTRU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Xiongma</masterLabel>
+        <translation><!-- Xiongma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>google-search</masterLabel>
+        <translation><!-- google-search --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>propertyfinder</masterLabel>
+        <translation><!-- propertyfinder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>toutiao</masterLabel>
+        <translation><!-- toutiao --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>yallacompare</masterLabel>
+        <translation><!-- yallacompare --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

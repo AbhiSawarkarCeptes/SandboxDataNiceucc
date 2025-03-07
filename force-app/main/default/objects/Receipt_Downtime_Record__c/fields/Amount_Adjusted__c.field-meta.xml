@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_Adjusted__c</fullName>
+    <label>Amount Adjusted</label>
+    <summarizedField>Receipt_Details__c.Total_Amount_adjusted__c</summarizedField>
+    <summaryForeignKey>Receipt_Details__c.Receipt_Downtime_Record__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

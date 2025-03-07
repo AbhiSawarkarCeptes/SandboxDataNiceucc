@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Step3__c</fullName>
+    <formula>IF(AND(OR(
+Document_Category_New__c=&apos;Credit Note&apos;,
+Document_Category_New__c=&apos;Debit Note&apos;), 
+OR(Debit_Account_Name__c=&apos;DLD Charges&apos;,Debit_Account_Name__c=&apos;Pre-registration&apos;,Debit_Account_Name__c=&apos;TRADE RECEIVABLE&apos;,Debit_Account_Name__c=&apos;UNEARNED REVENUE&apos;,Debit_Account_Name__c=&apos;Interest charges&apos;,Debit_Account_Name__c=&apos;Demand reversal credit note&apos;,Debit_Account_Name__c=&apos;Demand reversal debit&apos;)),TRUE, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Step3</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

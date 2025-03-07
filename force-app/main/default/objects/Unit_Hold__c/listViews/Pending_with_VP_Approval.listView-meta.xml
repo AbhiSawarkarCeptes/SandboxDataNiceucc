@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_with_VP_Approval</fullName>
+    <columns>NAME</columns>
+    <columns>First_Name__c</columns>
+    <columns>Last_Name__c</columns>
+    <columns>Unit_Hold_Approval_Status__c</columns>
+    <columns>Request_Time__c</columns>
+    <columns>Unit_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Unit_Hold_Approval_Status__c</field>
+        <operation>equals</operation>
+        <value>Pending with VP</value>
+    </filters>
+    <label>Pending with VP Approval</label>
+    <sharedTo>
+        <role>Vice_President_1</role>
+        <role>Vice_President_2</role>
+        <role>Vice_President_3</role>
+        <role>Vice_President_4</role>
+        <role>Vice_President_5</role>
+        <role>Vice_President_6</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Time Slot For Handover</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Time Slot For Handover</value>
+    </caseValues>
+    <layouts>
+        <layout>Handover For Latinem</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>System Admin Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Time Slot For HL For CRM</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Time Slot For Handover Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Time Slot For Handover Layout For Collection</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Time Slot for handover QT date edit access only</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- HandOver --></label>
+        <name>HandOver</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Home Orientation --></label>
+        <name>Home_Orientation</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- QT Keepout Date is not yet Scheduled --></errorMessage>
+        <name>QT_Keepout_Date_Not_Equal_to_Empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- QT date is greater than Scheduled Date. Please change the Date --></errorMessage>
+        <name>SD_should_not_Lessthan_QT_Keepout_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Web_Eng_Sync_Field__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Web Eng Sync Field</label>
+    <referenceTo>WebEng_Sync_Fields__mdt</referenceTo>
+    <relationshipLabel>WebEng Field Transformations</relationshipLabel>
+    <relationshipName>WebEng_Field_Transformations</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

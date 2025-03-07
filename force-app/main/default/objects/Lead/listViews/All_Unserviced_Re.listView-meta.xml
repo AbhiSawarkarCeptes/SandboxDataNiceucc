@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Unserviced_Re</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
+    <columns>Lead_Id__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>FULL_NAME</columns>
+    <columns>RDS_Country_Code__c</columns>
+    <columns>LEAD.MOBILE_PHONE</columns>
+    <columns>Presales_Agent__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>Date_and_Time_of_Unserviced_Lead__c</columns>
+    <columns>Last_Call_Attempt_Status__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Lost,Open,Book Site Visit - Visit Confirmed,Qualified</value>
+    </filters>
+    <filters>
+        <field>is_serviced__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Lead_Sub_Source__c</field>
+        <operation>notContain</operation>
+        <value>mall</value>
+    </filters>
+    <filters>
+        <field>Date_and_Time_of_Unserviced_Lead__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2022 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>FULL_NAME</field>
+        <operation>notContain</operation>
+        <value>test</value>
+    </filters>
+    <filters>
+        <field>Last_Call_Attempt_Status__c</field>
+        <operation>contains</operation>
+        <value>Follow up,No Contact,Junk,Invalid Number,Invalid Enquiry</value>
+    </filters>
+    <filters>
+        <field>Lead_Sub_Source__c</field>
+        <operation>notContain</operation>
+        <value>social-facebook-gurugram-en,social-instagram-gurugram-en</value>
+    </filters>
+    <label>VS3: All Unserviced Re-enquiry Leads</label>
+    <sharedTo>
+        <role>GM_Digital_Marketing_Telesales</role>
+        <role>Presales_Agent</role>
+    </sharedTo>
+</ListView>

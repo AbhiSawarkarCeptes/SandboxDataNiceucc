@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CRM Executive --></label>
+    <name>CRM_Excutive__c</name>
+    <picklistValues>
+        <masterLabel>Abdeldjalil Kamel Bensenada</masterLabel>
+        <translation><!-- Abdeldjalil Kamel Bensenada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Abdelrahman Salim Rashid Alzumr Al-Ali</masterLabel>
+        <translation><!-- Abdelrahman Salim Rashid Alzumr Al-Ali --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ahmed Yossry</masterLabel>
+        <translation><!-- Ahmed Yossry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ali Yousuf Abdulla Qassem Alemadi</masterLabel>
+        <translation><!-- Ali Yousuf Abdulla Qassem Alemadi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Angelina Khalilova</masterLabel>
+        <translation><!-- Angelina Khalilova --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Araba Aln’airat</masterLabel>
+        <translation><!-- Araba Aln’airat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aruna</masterLabel>
+        <translation><!-- Aruna --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aswathi Kumar</masterLabel>
+        <translation><!-- Aswathi Kumar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Davood Sheikh</masterLabel>
+        <translation><!-- Davood Sheikh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deeksha Poral Lakshminarayana</masterLabel>
+        <translation><!-- Deeksha Poral Lakshminarayana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Divya Shanthigrama Keshava</masterLabel>
+        <translation><!-- Divya Shanthigrama Keshava --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hadi osama hussain mohamed ghanem</masterLabel>
+        <translation><!-- Hadi osama hussain mohamed ghanem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ilyos Abdulloev</masterLabel>
+        <translation><!-- Ilyos Abdulloev --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Juma Khalfan Juma Humaid Al-Ali</masterLabel>
+        <translation><!-- Juma Khalfan Juma Humaid Al-Ali --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kaisar Sabraimov</masterLabel>
+        <translation><!-- Kaisar Sabraimov --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laila Nadeer</masterLabel>
+        <translation><!-- Laila Nadeer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Malak Saleh</masterLabel>
+        <translation><!-- Malak Saleh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mariia Aleksandrovskaia</masterLabel>
+        <translation><!-- Mariia Aleksandrovskaia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nisha Krishnan</masterLabel>
+        <translation><!-- Nisha Krishnan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pratyush Kumar Nayak</masterLabel>
+        <translation><!-- Pratyush Kumar Nayak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Priya Rathi</masterLabel>
+        <translation><!-- Priya Rathi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Priyanka Binil</masterLabel>
+        <translation><!-- Priyanka Binil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Qingqin Yang</masterLabel>
+        <translation><!-- Qingqin Yang --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Racha Dannaoui</masterLabel>
+        <translation><!-- Racha Dannaoui --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raghad Kawaf</masterLabel>
+        <translation><!-- Raghad Kawaf --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roopa Nataraj</masterLabel>
+        <translation><!-- Roopa Nataraj --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ruvaid Vani</masterLabel>
+        <translation><!-- Ruvaid Vani --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sahar Sultan</masterLabel>
+        <translation><!-- Sahar Sultan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sunny Pradhan</masterLabel>
+        <translation><!-- Sunny Pradhan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ummer Farhan</masterLabel>
+        <translation><!-- Ummer Farhan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Usman Sheikh</masterLabel>
+        <translation><!-- Usman Sheikh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vivek Sharma</masterLabel>
+        <translation><!-- Vivek Sharma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yugeshkumar Sureshkumar</masterLabel>
+        <translation><!-- Yugeshkumar Sureshkumar --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

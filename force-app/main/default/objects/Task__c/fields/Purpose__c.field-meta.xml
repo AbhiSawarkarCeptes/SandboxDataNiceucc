@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purpose__c</fullName>
+    <label>Purpose</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Welcome</fullName>
+                <default>false</default>
+                <label>Welcome</label>
+            </value>
+            <value>
+                <fullName>Courtesy</fullName>
+                <default>false</default>
+                <label>Courtesy</label>
+            </value>
+            <value>
+                <fullName>Birthday</fullName>
+                <default>false</default>
+                <label>Birthday</label>
+            </value>
+            <value>
+                <fullName>SPA</fullName>
+                <default>false</default>
+                <label>SPA</label>
+            </value>
+            <value>
+                <fullName>Handover</fullName>
+                <default>false</default>
+                <label>Handover</label>
+            </value>
+            <value>
+                <fullName>Inspection</fullName>
+                <default>false</default>
+                <label>Inspection</label>
+            </value>
+            <value>
+                <fullName>Title Deed</fullName>
+                <default>false</default>
+                <label>Title Deed</label>
+            </value>
+            <value>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+                <label>Cancellation</label>
+            </value>
+            <value>
+                <fullName>Swap</fullName>
+                <default>false</default>
+                <label>Swap</label>
+            </value>
+            <value>
+                <fullName>Booking</fullName>
+                <default>false</default>
+                <label>Booking</label>
+            </value>
+            <value>
+                <fullName>Pre- Registration</fullName>
+                <default>false</default>
+                <label>Pre- Registration</label>
+            </value>
+            <value>
+                <fullName>Re-Sale</fullName>
+                <default>false</default>
+                <label>Re-Sale</label>
+            </value>
+            <value>
+                <fullName>Mortgage</fullName>
+                <default>false</default>
+                <label>Mortgage</label>
+            </value>
+            <value>
+                <fullName>Offers – Hospitality Packages</fullName>
+                <default>false</default>
+                <label>Offers – Hospitality Packages</label>
+            </value>
+            <value>
+                <fullName>Design Related</fullName>
+                <default>false</default>
+                <label>Design Related</label>
+            </value>
+            <value>
+                <fullName>Dimensions Related</fullName>
+                <default>false</default>
+                <label>Dimensions Related</label>
+            </value>
+            <value>
+                <fullName>KYC</fullName>
+                <default>false</default>
+                <label>KYC</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Stay by Latinem</fullName>
+                <default>false</default>
+                <label>Stay by Latinem</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

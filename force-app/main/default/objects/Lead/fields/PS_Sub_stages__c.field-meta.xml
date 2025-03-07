@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PS_Sub_stages__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Last_Call_Attempt_Status__c, &apos;Not Actioned&apos;, &apos;Not Actioned&apos;, &apos;Not Actioned - No Shuffle&apos;,&apos;Not Actioned&apos;,&apos;No Contact&apos;,&apos;No Contact&apos;,&apos;No contact - Follow-up&apos;,&apos;No Contact&apos;,&apos;Follow up&apos;,&apos;Follow-up&apos;,&apos;Follow up - email&apos;,&apos;Follow-up&apos;,&apos;Follow up - social&apos;,&apos;Follow-up&apos;,&apos;Processing&apos;,&apos;Follow-up&apos;,&apos;Follow up - Qualified&apos;,&apos;Qualified - Follow-up&apos;,&apos;Tele-Meeting Fixed&apos;,&apos;Qualified - Follow-up&apos;,&apos;Tele-Meeting Proposed&apos;,&apos;Qualified - Follow-up&apos;,&apos;Visit Confirmed&apos;,&apos;Qualified - Follow-up&apos;,&apos;Visit Proposed&apos;,&apos;Qualified - Follow-up&apos;,&apos;Prospect - Budget&apos;,&apos;Budget Constraint&apos;,&apos;Prospect - Type&apos;,&apos;Unit Type Constraint&apos;,&apos;Prospect - Construction Timeline&apos;,&apos; Construction Timelines&apos;,&apos;Junk Lead&apos;,&apos;No Longer Interested&apos;,&apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PS Sub-stages</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

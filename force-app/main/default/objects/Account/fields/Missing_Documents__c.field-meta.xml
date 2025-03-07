@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missing_Documents__c</fullName>
+    <label>Missing Documents</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Registration Form</fullName>
+                <default>false</default>
+                <label>Registration Form</label>
+            </value>
+            <value>
+                <fullName>RERA Certificate</fullName>
+                <default>false</default>
+                <label>RERA Certificate</label>
+            </value>
+            <value>
+                <fullName>Trade License</fullName>
+                <default>false</default>
+                <label>Trade License</label>
+            </value>
+            <value>
+                <fullName>VAT Certificate</fullName>
+                <default>false</default>
+                <label>VAT Certificate</label>
+            </value>
+            <value>
+                <fullName>Identification Documents</fullName>
+                <default>false</default>
+                <label>Identification Documents</label>
+            </value>
+            <value>
+                <fullName>Passport Copy</fullName>
+                <default>false</default>
+                <label>Passport Copy</label>
+            </value>
+            <value>
+                <fullName>Visa Copy</fullName>
+                <default>false</default>
+                <label>Visa Copy</label>
+            </value>
+            <value>
+                <fullName>Emirates ID</fullName>
+                <default>false</default>
+                <label>Emirates ID</label>
+            </value>
+            <value>
+                <fullName>POA/MOA</fullName>
+                <default>false</default>
+                <label>POA/MOA</label>
+            </value>
+            <value>
+                <fullName>Translated Company Documents</fullName>
+                <default>false</default>
+                <label>Translated Company Documents</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

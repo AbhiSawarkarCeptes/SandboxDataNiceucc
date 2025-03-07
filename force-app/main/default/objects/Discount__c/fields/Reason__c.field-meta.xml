@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason__c</fullName>
+    <label>Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Armed Forces</fullName>
+                <default>false</default>
+                <label>Armed Forces</label>
+            </value>
+            <value>
+                <fullName>Floor Rise</fullName>
+                <default>false</default>
+                <label>Floor Rise</label>
+            </value>
+            <value>
+                <fullName>GST</fullName>
+                <default>false</default>
+                <label>GST</label>
+            </value>
+            <value>
+                <fullName>Spin the wheel</fullName>
+                <default>false</default>
+                <label>Spin the wheel</label>
+            </value>
+            <value>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+                <label>Corporate - Percentage of Basic</label>
+            </value>
+            <value>
+                <fullName>Input Tax Credit</fullName>
+                <default>false</default>
+                <label>Input Tax Credit</label>
+            </value>
+            <value>
+                <fullName>Other Discount</fullName>
+                <default>false</default>
+                <label>Other Discount</label>
+            </value>
+            <value>
+                <fullName>Card Swipe Discount</fullName>
+                <default>false</default>
+                <label>Card Swipe Discount</label>
+            </value>
+            <value>
+                <fullName>Employee Discount</fullName>
+                <default>false</default>
+                <label>Employee Discount</label>
+            </value>
+            <value>
+                <fullName>Modular Kit</fullName>
+                <default>false</default>
+                <label>Modular Kit</label>
+            </value>
+            <value>
+                <fullName>2.5% of final CV</fullName>
+                <default>false</default>
+                <label>2.5% of final CV</label>
+            </value>
+            <value>
+                <fullName>Referral Discount</fullName>
+                <default>false</default>
+                <label>Referral Discount</label>
+            </value>
+            <value>
+                <fullName>Corporate - Percentage</fullName>
+                <default>false</default>
+                <label>Corporate - Percentage</label>
+            </value>
+            <value>
+                <fullName>Corporate - Lumsum</fullName>
+                <default>false</default>
+                <label>Corporate - Lumsum</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

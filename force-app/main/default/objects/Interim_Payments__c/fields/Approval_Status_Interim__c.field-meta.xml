@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Status_Interim__c</fullName>
+    <label>Approval Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>UnProcessed</fullName>
+                <default>false</default>
+                <label>UnProcessed</label>
+            </value>
+            <value>
+                <fullName>PDC</fullName>
+                <default>false</default>
+                <label>PDC</label>
+            </value>
+            <value>
+                <fullName>Cheque Dishonoured</fullName>
+                <default>false</default>
+                <label>Cheque Dishonoured</label>
+            </value>
+            <value>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+                <label>Submitted</label>
+            </value>
+            <value>
+                <fullName>Submitted for Cheque Hold</fullName>
+                <default>false</default>
+                <label>Submitted for Cheque Hold</label>
+            </value>
+            <value>
+                <fullName>Cheque Hold Approved</fullName>
+                <default>false</default>
+                <label>Cheque Hold Approved</label>
+            </value>
+            <value>
+                <fullName>Submitted for Cheque Replacement</fullName>
+                <default>false</default>
+                <label>Submitted for Cheque Replacement</label>
+            </value>
+            <value>
+                <fullName>Cheque Replacement Approved</fullName>
+                <default>false</default>
+                <label>Cheque Replacement Approved</label>
+            </value>
+            <value>
+                <fullName>Auto-Rejected - Payment not made</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Auto-Rejected - Payment not made</label>
+            </value>
+            <value>
+                <fullName>Hold</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hold</label>
+            </value>
+            <value>
+                <fullName>Sent for Banking</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sent for Banking</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

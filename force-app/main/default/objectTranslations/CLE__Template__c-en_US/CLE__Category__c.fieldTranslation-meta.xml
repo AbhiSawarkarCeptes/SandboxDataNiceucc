@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Must be in uppercase --></help>
+    <label><!-- Category --></label>
+    <name>CLE__Category__c</name>
+    <picklistValues>
+        <masterLabel>AUTHENTICATION</masterLabel>
+        <translation><!-- AUTHENTICATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MARKETING</masterLabel>
+        <translation><!-- MARKETING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITY</masterLabel>
+        <translation><!-- UTILITY --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

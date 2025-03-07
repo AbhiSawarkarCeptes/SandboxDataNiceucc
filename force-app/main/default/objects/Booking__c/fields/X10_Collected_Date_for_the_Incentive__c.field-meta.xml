@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X10_Collected_Date_for_the_Incentive__c</fullName>
+    <formula>IF( X10_Collected_Date__c &lt;  X10_Collected_Date_as_Per_Receipt_Date__c,X10_Collected_Date__c ,X10_Collected_Date_as_Per_Receipt_Date__c)</formula>
+    <label>Fina10% Collected Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

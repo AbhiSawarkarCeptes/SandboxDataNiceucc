@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Field Update Requested By --></label>
+    <name>Field_Update_Requested_By__c</name>
+    <relationshipLabel><!-- Broker Registrations (Field Update Requested By) --></relationshipLabel>
+</CustomFieldTranslation>

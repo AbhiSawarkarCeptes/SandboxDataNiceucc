@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Amount Confirmed by Accounts</masterLabel>
+        <translation><!-- Amount Confirmed by Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by Accounts</masterLabel>
+        <translation><!-- Approved by Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by Sales Ops</masterLabel>
+        <translation><!-- Approved by Sales Ops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PR was Approved- Booking is cancelled</masterLabel>
+        <translation><!-- PR was Approved- Booking is cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partially Approved</masterLabel>
+        <translation><!-- Partially Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Link sent to Customer</masterLabel>
+        <translation><!-- Payment Link sent to Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for Accounts Approval</masterLabel>
+        <translation><!-- Pending for Accounts Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for Sales Ops Approval</masterLabel>
+        <translation><!-- Pending for Sales Ops Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Accounts</masterLabel>
+        <translation><!-- Rejected by Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Sales Ops</masterLabel>
+        <translation><!-- Rejected by Sales Ops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by System</masterLabel>
+        <translation><!-- Rejected by System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resubmitted to SM/SD</masterLabel>
+        <translation><!-- Resubmitted to SM/SD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted to Accounts for Amount Confirmation</masterLabel>
+        <translation><!-- Submitted to Accounts for Amount Confirmation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

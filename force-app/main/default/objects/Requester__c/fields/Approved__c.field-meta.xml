@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved__c</fullName>
+    <formula>IF(text(Status__c)  == &quot;Approved from Account &amp; Receipt is Created&quot;,true,false)</formula>
+    <label>Approved</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

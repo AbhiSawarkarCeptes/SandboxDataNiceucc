@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Plan of Meeting --></label>
+    <name>Plan_of_Meeting__c</name>
+    <picklistValues>
+        <masterLabel>Follow-Up</masterLabel>
+        <translation><!-- Follow-Up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Introduction</masterLabel>
+        <translation><!-- Introduction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Training</masterLabel>
+        <translation><!-- Training --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

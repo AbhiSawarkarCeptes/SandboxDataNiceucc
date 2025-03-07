@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Plan of Meeting --></label>
+    <name>Plan_of_Meeting__c</name>
+    <picklistValues>
+        <masterLabel>Client meeting in broker office</masterLabel>
+        <translation><!-- Client meeting in broker office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General meeting.</masterLabel>
+        <translation><!-- General meeting. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Introductory meeting</masterLabel>
+        <translation><!-- Introductory meeting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meeting new agent</masterLabel>
+        <translation><!-- Meeting new agent --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

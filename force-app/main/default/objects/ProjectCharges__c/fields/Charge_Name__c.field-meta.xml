@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Charge_Name__c</fullName>
+    <label>Charge Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advance Building Maintenance Charges</fullName>
+                <default>false</default>
+                <label>Advance Building Maintenance Charges</label>
+            </value>
+            <value>
+                <fullName>Advance Maintanence Charges for 1 Year</fullName>
+                <default>false</default>
+                <label>Advance Maintanence Charges for 1 Year</label>
+            </value>
+            <value>
+                <fullName>Advance Maintenance Charges</fullName>
+                <default>false</default>
+                <label>Advance Maintenance Charges</label>
+            </value>
+            <value>
+                <fullName>Association Formation Charges</fullName>
+                <default>false</default>
+                <label>Association Formation Charges</label>
+            </value>
+            <value>
+                <fullName>Basic</fullName>
+                <default>false</default>
+                <label>Basic</label>
+            </value>
+            <value>
+                <fullName>Campus Maintenance Corpus Fund</fullName>
+                <default>false</default>
+                <label>Campus Maintenance Corpus Fund</label>
+            </value>
+            <value>
+                <fullName>Club Development Charges</fullName>
+                <default>false</default>
+                <label>Club Development Charges</label>
+            </value>
+            <value>
+                <fullName>Club House Corpus fund towards Association (per unit)</fullName>
+                <default>false</default>
+                <label>Club House Corpus fund towards Association (per unit)</label>
+            </value>
+            <value>
+                <fullName>Club House Development Charges</fullName>
+                <default>false</default>
+                <label>Club House Development Charges</label>
+            </value>
+            <value>
+                <fullName>Condominium Entry Fees</fullName>
+                <default>false</default>
+                <label>Condominium Entry Fees</label>
+            </value>
+            <value>
+                <fullName>Corpus Fund for Building Maintenance</fullName>
+                <default>false</default>
+                <label>Corpus Fund for Building Maintenance</label>
+            </value>
+            <value>
+                <fullName>Corpus Fund Subscription</fullName>
+                <default>false</default>
+                <label>Corpus Fund Subscription</label>
+            </value>
+            <value>
+                <fullName>Development Charges</fullName>
+                <default>false</default>
+                <label>Development Charges</label>
+            </value>
+            <value>
+                <fullName>Floor Rise</fullName>
+                <default>false</default>
+                <label>Floor Rise</label>
+            </value>
+            <value>
+                <fullName>Infra Cost</fullName>
+                <default>false</default>
+                <label>Infra Cost</label>
+            </value>
+            <value>
+                <fullName>Infrastructure Development Charges</fullName>
+                <default>false</default>
+                <label>Infrastructure Development Charges</label>
+            </value>
+            <value>
+                <fullName>Legal Charges</fullName>
+                <default>false</default>
+                <label>Legal Charges</label>
+            </value>
+            <value>
+                <fullName>Legal Fees</fullName>
+                <default>false</default>
+                <label>Legal Fees</label>
+            </value>
+            <value>
+                <fullName>Legal Service and Documentation Charges</fullName>
+                <default>false</default>
+                <label>Legal Service and Documentation Charges</label>
+            </value>
+            <value>
+                <fullName>One-time Club House Development Charge</fullName>
+                <default>false</default>
+                <label>One-time Club House Development Charge</label>
+            </value>
+            <value>
+                <fullName>PLC</fullName>
+                <default>false</default>
+                <label>PLC</label>
+            </value>
+            <value>
+                <fullName>Registrar Fees</fullName>
+                <default>false</default>
+                <label>Registrar Fees</label>
+            </value>
+            <value>
+                <fullName>Registration charges</fullName>
+                <default>false</default>
+                <label>Registration charges</label>
+            </value>
+            <value>
+                <fullName>Stamp Duty</fullName>
+                <default>false</default>
+                <label>Stamp Duty</label>
+            </value>
+            <value>
+                <fullName>Water, Electricity, Drainage, Sewerage Connection</fullName>
+                <default>false</default>
+                <label>Water, Electricity, Drainage, Sewerage Connection</label>
+            </value>
+            <value>
+                <fullName>Share Application Money Subscription</fullName>
+                <default>false</default>
+                <label>Share Application Money Subscription</label>
+            </value>
+            <value>
+                <fullName>Society Formation Charges</fullName>
+                <default>false</default>
+                <label>Society Formation Charges</label>
+            </value>
+            <value>
+                <fullName>Advance Maintenance Charges (For 18 months)</fullName>
+                <default>false</default>
+                <label>Advance Maintenance Charges (For 18 months)</label>
+            </value>
+            <value>
+                <fullName>Mahanagar Gas Connection Charges (MGL)</fullName>
+                <default>false</default>
+                <label>Mahanagar Gas Connection Charges (MGL)</label>
+            </value>
+            <value>
+                <fullName>Club house, amenities and infrastructure charges</fullName>
+                <default>false</default>
+                <label>Club house, amenities and infrastructure charges</label>
+            </value>
+            <value>
+                <fullName>Legal Service Charges</fullName>
+                <default>false</default>
+                <label>Legal Service Charges</label>
+            </value>
+            <value>
+                <fullName>Documentation Service Charges</fullName>
+                <default>false</default>
+                <label>Documentation Service Charges</label>
+            </value>
+            <value>
+                <fullName>Advance Building Maintenance Charges (estimated for 12 months)</fullName>
+                <default>false</default>
+                <label>Advance Building Maintenance Charges (estimated for 12 months)</label>
+            </value>
+            <value>
+                <fullName>Legal Fees (per unit)</fullName>
+                <default>false</default>
+                <label>Legal Fees (per unit)</label>
+            </value>
+            <value>
+                <fullName>Water, Electricity, Drainage Connection</fullName>
+                <default>false</default>
+                <label>Water, Electricity, Drainage Connection</label>
+            </value>
+            <value>
+                <fullName>Club House Corpus Fund Contribution</fullName>
+                <default>false</default>
+                <label>Club House Corpus Fund Contribution</label>
+            </value>
+            <value>
+                <fullName>Infra Charges</fullName>
+                <default>false</default>
+                <label>Infra Charges</label>
+            </value>
+            <value>
+                <fullName>Corner Premium</fullName>
+                <default>false</default>
+                <label>Corner Premium</label>
+            </value>
+            <value>
+                <fullName>Base Premium</fullName>
+                <default>false</default>
+                <label>Base Premium</label>
+            </value>
+            <value>
+                <fullName>DLD</fullName>
+                <default>false</default>
+                <label>DLD</label>
+            </value>
+            <value>
+                <fullName>DLD Admin Fees</fullName>
+                <default>false</default>
+                <label>DLD Admin Fees</label>
+            </value>
+            <value>
+                <fullName>Knowledge Fees</fullName>
+                <default>false</default>
+                <label>Knowledge Fees</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

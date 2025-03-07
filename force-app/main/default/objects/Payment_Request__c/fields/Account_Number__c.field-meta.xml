@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Number__c</fullName>
+    <label>Account</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ENBD-CA-AED-SLLC-1014691785004</fullName>
+                <default>false</default>
+                <label>ENBD-CA-AED-SLLC-1014691785004</label>
+            </value>
+            <value>
+                <fullName>PNCI-USD-AE49 0260 0010 2485 4250 002</fullName>
+                <default>false</default>
+                <label>PNCI-USD-AE49 0260 0010 2485 4250 002</label>
+            </value>
+            <value>
+                <fullName>UNB-CA-AED-SLLC-014464193303</fullName>
+                <default>false</default>
+                <label>UNB-CA-AED-SLLC-014464193303</label>
+            </value>
+            <value>
+                <fullName>UNB-ES-AED-SLLC-14464193484</fullName>
+                <default>false</default>
+                <label>UNB-ES-AED-SLLC-14464193484</label>
+            </value>
+            <value>
+                <fullName>UNB-ES-AED-SLLC-014464193623</fullName>
+                <default>false</default>
+                <label>UNB-ES-AED-SLLC-014464193623</label>
+            </value>
+            <value>
+                <fullName>UNB-ES-AED-SLLC-014464193009</fullName>
+                <default>false</default>
+                <label>UNB-ES-AED-SLLC-014464193009</label>
+            </value>
+            <value>
+                <fullName>United Arab Bank-ALQUOZ-CORPORATE-CURRENT A/C-1034024947001</fullName>
+                <default>false</default>
+                <label>United Arab Bank-ALQUOZ-CORPORATE-CURRENT A/C-1034024947001</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi Islamic Bank-ARENCO - DIC BR-AED-Escrow-SOBHA HARTLAND GREENS - PHASE</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Islamic Bank-ARENCO - DIC BR-AED-Escrow-SOBHA HARTLAND GREENS - PHASE</label>
+            </value>
+            <value>
+                <fullName>AM-ES-MAIN-AED-SLLC-CVR-994000001956</fullName>
+                <default>false</default>
+                <label>AM-ES-MAIN-AED-SLLC-CVR-994000001956</label>
+            </value>
+            <value>
+                <fullName>ADCB-ES-MAIN-AED-SLLC-CV-11423450820001</fullName>
+                <default>false</default>
+                <label>ADCB-ES-MAIN-AED-SLLC-CV-11423450820001</label>
+            </value>
+            <value>
+                <fullName>UAB-CA-AED-SLLC-1034024947001</fullName>
+                <default>false</default>
+                <label>UAB-CA-AED-SLLC-1034024947001</label>
+            </value>
+            <value>
+                <fullName>ADCB-ES-AED-SLLC-11423450820003</fullName>
+                <default>false</default>
+                <label>ADCB-ES-AED-SLLC-11423450820003</label>
+            </value>
+            <value>
+                <fullName>ADCB-RT-AED-SLLC-11423450820004</fullName>
+                <default>false</default>
+                <label>ADCB-RT-AED-SLLC-11423450820004</label>
+            </value>
+            <value>
+                <fullName>DIB–AED–ES–CV–Main A/c–SLLC - 001582194865001</fullName>
+                <default>false</default>
+                <label>DIB–AED–ES–CV–Main A/c–SLLC - 001582194865001</label>
+            </value>
+            <value>
+                <fullName>DIB–AED–ES–OPA–Main A/c–SLLC - 001582194866401</fullName>
+                <default>false</default>
+                <label>DIB–AED–ES–OPA–Main A/c–SLLC - 001582194866401</label>
+            </value>
+            <value>
+                <fullName>DIB–AED–ES–CVR–Main A/c–SLLC - 001582194862601</fullName>
+                <default>false</default>
+                <label>DIB–AED–ES–CVR–Main A/c–SLLC - 001582194862601</label>
+            </value>
+            <value>
+                <fullName>CBD-CA-AED-SLLC-1002472494</fullName>
+                <default>false</default>
+                <label>CBD-CA-AED-SLLC-1002472494</label>
+            </value>
+            <value>
+                <fullName>MB-CA-AED-SLLC-019000034998</fullName>
+                <default>false</default>
+                <label>MB-CA-AED-SLLC-019000034998</label>
+            </value>
+            <value>
+                <fullName>FAB-CA-AED-SLLC-1031324613244001</fullName>
+                <default>false</default>
+                <label>FAB-CA-AED-SLLC-1031324613244001</label>
+            </value>
+            <value>
+                <fullName>PNCI-CBD-CA-AED-PNCI-1002466736</fullName>
+                <default>false</default>
+                <label>PNCI-CBD-CA-AED-PNCI-1002466736</label>
+            </value>
+            <value>
+                <fullName>CBD-AED-ES-SHW-MainnA/c-SLLC</fullName>
+                <default>false</default>
+                <label>CBD-AED-ES-SHW-MainnA/c-SLLC</label>
+            </value>
+            <value>
+                <fullName>Waves Grande - CBD - DIB - Escrow</fullName>
+                <default>false</default>
+                <label>Waves Grande - CBD - DIB - Escrow</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi Islamic Bank-Arenco - DIC Branch-AED-Current</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Islamic Bank-Arenco - DIC Branch-AED-Current</label>
+            </value>
+            <value>
+                <fullName>ADIB-ES-AED-SLLC-27467383</fullName>
+                <default>false</default>
+                <label>ADIB-ES-AED-SLLC-27467383</label>
+            </value>
+            <value>
+                <fullName>ADIB-ES-AED-SLLC-27716157</fullName>
+                <default>false</default>
+                <label>ADIB-ES-AED-SLLC-27716157</label>
+            </value>
+            <value>
+                <fullName>ADIB-ES-AED-SLLC-16640027</fullName>
+                <default>false</default>
+                <label>ADIB-ES-AED-SLLC-16640027</label>
+            </value>
+            <value>
+                <fullName>ADIB-ES-AED-SLLC-28052098</fullName>
+                <default>false</default>
+                <label>ADIB-ES-AED-SLLC-28052098</label>
+            </value>
+            <value>
+                <fullName>ADIB-ES-AED-SLLC-25407167</fullName>
+                <default>false</default>
+                <label>ADIB-ES-AED-SLLC-25407167</label>
+            </value>
+            <value>
+                <fullName>ADIB-ES-AED-SLLC-25407170</fullName>
+                <default>false</default>
+                <label>ADIB-ES-AED-SLLC-25407170</label>
+            </value>
+            <value>
+                <fullName>ADIB-ES-AED-SLLC-27467451</fullName>
+                <default>false</default>
+                <label>ADIB-ES-AED-SLLC-27467451</label>
+            </value>
+            <value>
+                <fullName>ADIB-DIC ARENCO-ESCROW-GREENS PHASE III RETENTION A/C-28052124</fullName>
+                <default>false</default>
+                <label>ADIB-DIC ARENCO-ESCROW-GREENS PHASE III RETENTION A/C-28052124</label>
+            </value>
+            <value>
+                <fullName>UNB-ES-AED-SLLC-14464193639</fullName>
+                <default>false</default>
+                <label>UNB-ES-AED-SLLC-14464193639</label>
+            </value>
+            <value>
+                <fullName>BOB-DEIRA-ESCROW-GREENS INFRA-90030600003819</fullName>
+                <default>false</default>
+                <label>BOB-DEIRA-ESCROW-GREENS INFRA-90030600003819</label>
+            </value>
+            <value>
+                <fullName>MASHREQ-RIGGA BR-CORPORATE-USD-DISBURSEMENT SLLC (DO NOT USE)-019000034999</fullName>
+                <default>false</default>
+                <label>MASHREQ-RIGGA BR-CORPORATE-USD-DISBURSEMENT SLLC (DO NOT USE)-019000034999</label>
+            </value>
+            <value>
+                <fullName>BOB-DEIRA-ESCROW-GREENS PHASE III-9003060003820</fullName>
+                <default>false</default>
+                <label>BOB-DEIRA-ESCROW-GREENS PHASE III-9003060003820</label>
+            </value>
+            <value>
+                <fullName>BOB-ES-AED-SLLC-90030200019148</fullName>
+                <default>false</default>
+                <label>BOB-ES-AED-SLLC-90030200019148</label>
+            </value>
+            <value>
+                <fullName>BOB-ES-AED-SLLC-90030200019062</fullName>
+                <default>false</default>
+                <label>BOB-ES-AED-SLLC-90030200019062</label>
+            </value>
+            <value>
+                <fullName>BOB-ES-AED-SLLC-90030200019064</fullName>
+                <default>false</default>
+                <label>BOB-ES-AED-SLLC-90030200019064</label>
+            </value>
+            <value>
+                <fullName>BOB-ES-AED-SLLC-90030200019065</fullName>
+                <default>false</default>
+                <label>BOB-ES-AED-SLLC-90030200019065</label>
+            </value>
+            <value>
+                <fullName>BOB-ES-AED-SLLC-90030200019066</fullName>
+                <default>false</default>
+                <label>BOB-ES-AED-SLLC-90030200019066</label>
+            </value>
+            <value>
+                <fullName>BOB-DUBAI MAIN-CORPORATE-CURRENT ACCOUNT-90010200016189</fullName>
+                <default>false</default>
+                <label>BOB-DUBAI MAIN-CORPORATE-CURRENT ACCOUNT-90010200016189</label>
+            </value>
+            <value>
+                <fullName>BOB-ES-AED-SLLC-90030200019063</fullName>
+                <default>false</default>
+                <label>BOB-ES-AED-SLLC-90030200019063</label>
+            </value>
+            <value>
+                <fullName>BOB-ES-AED-SLLC-90030200019067</fullName>
+                <default>false</default>
+                <label>BOB-ES-AED-SLLC-90030200019067</label>
+            </value>
+            <value>
+                <fullName>DIB-ES-AED-SLLC-1582116190701</fullName>
+                <default>false</default>
+                <label>DIB-ES-AED-SLLC-1582116190701</label>
+            </value>
+            <value>
+                <fullName>DIB-ES-AED-SLLC-1582116190702</fullName>
+                <default>false</default>
+                <label>DIB-ES-AED-SLLC-1582116190702</label>
+            </value>
+            <value>
+                <fullName>ENBD-CA-AED-SLLC-1014691785001</fullName>
+                <default>false</default>
+                <label>ENBD-CA-AED-SLLC-1014691785001</label>
+            </value>
+            <value>
+                <fullName>MASHREQ-RIGGA BR-CORPORATE-COLLECTION SLLC-019000034998</fullName>
+                <default>false</default>
+                <label>MASHREQ-RIGGA BR-CORPORATE-COLLECTION SLLC-019000034998</label>
+            </value>
+            <value>
+                <fullName>MASHREQ-RIGGA BR-CORPORATE-USD-DISBURSEMENT SLLC-019000034999</fullName>
+                <default>false</default>
+                <label>MASHREQ-RIGGA BR-CORPORATE-USD-DISBURSEMENT SLLC-019000034999</label>
+            </value>
+            <value>
+                <fullName>NOOR BANK-SZR-ESCROW-VILLAS PHASE I MAIN A/C-00110543700010</fullName>
+                <default>false</default>
+                <label>NOOR BANK-SZR-ESCROW-VILLAS PHASE I MAIN A/C-00110543700010</label>
+            </value>
+            <value>
+                <fullName>NOOR BANK-SZR-ESCROW-VILLAS PHASE I RETENTION A/C-00110543700032</fullName>
+                <default>false</default>
+                <label>NOOR BANK-SZR-ESCROW-VILLAS PHASE I RETENTION A/C-00110543700032</label>
+            </value>
+            <value>
+                <fullName>ENBD-CA-AED-SLLC-1014691785003</fullName>
+                <default>false</default>
+                <label>ENBD-CA-AED-SLLC-1014691785003</label>
+            </value>
+            <value>
+                <fullName>Sharjah Islamic Bank - Villas Phase 3</fullName>
+                <default>false</default>
+                <label>Sharjah Islamic Bank - Villas Phase 3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

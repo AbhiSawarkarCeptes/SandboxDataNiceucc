@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mall_leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>Lead_Sub_Source__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>LEAD.MOBILE_PHONE</columns>
+    <columns>Promoters__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Lead_Sub_Source__c</field>
+        <operation>contains</operation>
+        <value>Mall</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/24/2019 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>LEAD.LAST_NAME</field>
+        <operation>notContain</operation>
+        <value>Test</value>
+    </filters>
+    <filters>
+        <field>LEAD.FIRST_NAME</field>
+        <operation>notContain</operation>
+        <value>Test</value>
+    </filters>
+    <label>Mall Leads</label>
+    <sharedTo>
+        <role>Promoters</role>
+        <role>Promoters_Head</role>
+    </sharedTo>
+</ListView>

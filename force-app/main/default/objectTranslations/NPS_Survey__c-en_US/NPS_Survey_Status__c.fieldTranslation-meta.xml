@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NPS Survey Status --></label>
+    <name>NPS_Survey_Status__c</name>
+    <picklistValues>
+        <masterLabel>Call Back / أتصل مرة أخرى</masterLabel>
+        <translation><!-- Call Back / أتصل مرة أخرى --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Call Completed / اكتملت المكالمة</masterLabel>
+        <translation><!-- Call Completed / اكتملت المكالمة --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cannot Call-Only Initials</masterLabel>
+        <translation><!-- Cannot Call-Only Initials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Did not Pick / لم اختر</masterLabel>
+        <translation><!-- Did not Pick / لم اختر --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ineligible</masterLabel>
+        <translation><!-- Ineligible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Language Problem Arabic</masterLabel>
+        <translation><!-- Language Problem Arabic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Language Problem English</masterLabel>
+        <translation><!-- Language Problem English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Language Problem Others</masterLabel>
+        <translation><!-- Language Problem Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Language Problem Russian</masterLabel>
+        <translation><!-- Language Problem Russian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Interested / غير مهتم</masterLabel>
+        <translation><!-- Not Interested / غير مهتم --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Number busy / الرقم مشغول</masterLabel>
+        <translation><!-- Number busy / الرقم مشغول --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out of Reach / صعب المنال</masterLabel>
+        <translation><!-- Out of Reach / صعب المنال --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Switched Off / مغلق</masterLabel>
+        <translation><!-- Switched Off / مغلق --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong Number or Not Responding / رقم خاطئ أو لا يستجيب</masterLabel>
+        <translation><!-- Wrong Number or Not Responding / رقم خاطئ أو لا يستجيب --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

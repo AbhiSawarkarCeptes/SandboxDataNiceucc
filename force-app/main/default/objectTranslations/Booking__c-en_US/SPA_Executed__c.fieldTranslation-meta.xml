@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SPA Status --></label>
+    <name>SPA_Executed__c</name>
+    <picklistValues>
+        <masterLabel>Blocked Sales</masterLabel>
+        <translation><!-- Blocked Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRM OPS Assurance Review completed</masterLabel>
+        <translation><!-- CRM OPS Assurance Review completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRM OPS Assurance rejected</masterLabel>
+        <translation><!-- CRM OPS Assurance rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executed copy sent through DocuSign</masterLabel>
+        <translation><!-- Executed copy sent through DocuSign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Issue ? Under discussion</masterLabel>
+        <translation><!-- Issue ? Under discussion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revised SPA Particular Received - SPA Copy Pending</masterLabel>
+        <translation><!-- Revised SPA Particular Received - SPA Copy Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revised SPA Particular Sent</masterLabel>
+        <translation><!-- Revised SPA Particular Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA Executed</masterLabel>
+        <translation><!-- SPA Executed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA Issued But Not Sent</masterLabel>
+        <translation><!-- SPA Issued But Not Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA Issued But Not Sent - Customer to Collect</masterLabel>
+        <translation><!-- SPA Issued But Not Sent - Customer to Collect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA Particulars Received</masterLabel>
+        <translation><!-- SPA Particulars Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA Received and sent to CRM OPS Assurance for Review</masterLabel>
+        <translation><!-- SPA Received and sent to CRM OPS Assurance for Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA Sent But Not Returned</masterLabel>
+        <translation><!-- SPA Sent But Not Returned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA Sent through DocuSign</masterLabel>
+        <translation><!-- SPA Sent through DocuSign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA Signed by Seller</masterLabel>
+        <translation><!-- SPA Signed by Seller --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA is Voided in Docusign</masterLabel>
+        <translation><!-- SPA is Voided in Docusign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>To be Issued</masterLabel>
+        <translation><!-- To be Issued --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

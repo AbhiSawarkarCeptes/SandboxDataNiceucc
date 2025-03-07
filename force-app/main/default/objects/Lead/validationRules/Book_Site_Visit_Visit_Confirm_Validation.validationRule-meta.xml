@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Book_Site_Visit_Visit_Confirm_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(
+AND(
+ISCHANGED(Status), 
+ISPICKVAL(Status, &apos;Book Site Visit - Visit Confirm&apos;) 
+),
+AND(
+ISNEW(), 
+CreatedBy.Profile.Name  &lt;&gt; &apos;Integration User&apos;,
+ISPICKVAL(Status, &apos;Book Site Visit - Visit Confirm&apos;) 
+)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>This option is limited for website book site only.</errorMessage>
+</ValidationRule>

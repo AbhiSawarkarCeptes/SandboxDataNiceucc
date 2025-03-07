@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Las_Vegas_Lead</fullName>
+    <columns>Lead_Id__c</columns>
+    <columns>Presales_Agent__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>Last_Call_Attempt_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>UTM_Campaign__c</field>
+        <operation>contains</operation>
+        <value>Las_Vegas</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>9/1/2024 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Presales_Agent__c</field>
+        <operation>notContain</operation>
+        <value>Harsh,Anamika,Sunny</value>
+    </filters>
+    <label>Las Vegas</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

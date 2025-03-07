@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Total On Account Money --></label>
+    <name>Total_On_Account_Money_With_Registration__c</name>
+</CustomFieldTranslation>

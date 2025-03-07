@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Amount paid till date by the Transferor --></label>
+    <name>Amount_paid_till_date_by_the_Transferor__c</name>
+</CustomFieldTranslation>

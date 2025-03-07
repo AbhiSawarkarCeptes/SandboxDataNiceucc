@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Default</masterLabel>
+        <translation><!-- Default --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Transfer</masterLabel>
+        <translation><!-- Internal Transfer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recall</masterLabel>
+        <translation><!-- Recall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regularization</masterLabel>
+        <translation><!-- Regularization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retention</masterLabel>
+        <translation><!-- Retention --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sweep in</masterLabel>
+        <translation><!-- Sweep in --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transaction Reverse</masterLabel>
+        <translation><!-- Transaction Reverse --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

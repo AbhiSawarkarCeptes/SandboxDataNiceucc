@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CorpANDRegAmtShouldNotBeGreaterthanTotal</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Total_Amount__c &gt; 0, 
+OR(Corporate_Collection_Control_Report__c &gt;0, 
+Registration_Collection_Control_Report__c &gt; 0), 
+(Corporate_Collection_Control_Report__c + Registration_Collection_Control_Report__c) &gt; (Total_Amount__c))</errorConditionFormula>
+    <errorMessage>Sum of Registration Collection Control Report Amount and Corporate Collection Control Report Amount should not be greater than Total Amount</errorMessage>
+</ValidationRule>

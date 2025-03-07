@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancelled_Month__c</fullName>
+    <description>IF(MONTH(DATEVALUE(Booking__r.Cancellation_Date__c))=1,&apos;JAN&apos;,
+IF(MONTH(DATEVALUE(Booking__r.Cancellation_Date__c))=2,&apos;FEB&apos;,
+IF(MONTH(DATEVALUE(Booking__r.Cancellation_Date__c))=3,&apos;MAR&apos;,
+IF(MONTH(DATEVALUE(Booking__r.Cancellation_Date__c))=4,&apos;APR&apos;,
+IF(MONTH(DATEVALUE(Booking__r.Cancellation_Date__c))=5,&apos;MAY&apos;,
+IF(MONTH(DATEVALUE(Booking__r.Cancellation_Date__c))=6,&apos;JUN&apos;,
+IF(MONTH(DATEVALUE(Booking__r.Cancellation_Date__c))=7,&apos;JUL&apos;,
+IF(MONTH(DATEVALUE(Booking__r.Cancellation_Date__c))=8,&apos;AUG&apos;,
+IF(MONTH(DATEVALUE(Booking__r.Cancellation_Date__c))=9,&apos;SEP&apos;,
+IF(MONTH(DATEVALUE(Booking__r.Cancellation_Date__c))=10,&apos;OCT&apos;,
+IF(MONTH(DATEVALUE(Booking__r.Cancellation_Date__c))=11,&apos;NOV&apos;,
+IF(MONTH(DATEVALUE(Booking__r.Cancellation_Date__c))=12,&apos;DEC&apos;,&apos;NA&apos;
+)
+)))))
+)
+)
+)
+)
+)
+)</description>
+    <externalId>false</externalId>
+    <formula>CASE(MONTH(DATEVALUE(Booking__r.Cancellation_Date__c)),
+    1, &quot;Jan-&quot;,
+    2, &quot;Feb-&quot;,
+    3, &quot;Mar-&quot;,
+    4, &quot;Apr-&quot;,
+    5, &quot;May-&quot;,
+    6, &quot;Jun-&quot;,
+    7, &quot;Jul-&quot;,
+    8, &quot;Aug-&quot;,
+    9, &quot;Sep-&quot;,
+    10, &quot;Oct-&quot;,
+    11, &quot;Nov-&quot;,
+    12, &quot;Dec-&quot;,
+    &quot;No&quot;
+) &amp; TEXT(YEAR(DATEVALUE(Booking__r.Cancellation_Date__c)))</formula>
+    <label>Cancelled Month</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

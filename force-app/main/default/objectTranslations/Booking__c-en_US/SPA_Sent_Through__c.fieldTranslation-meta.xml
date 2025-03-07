@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SPA Sent Through --></label>
+    <name>SPA_Sent_Through__c</name>
+    <picklistValues>
+        <masterLabel>Collected By Broker</masterLabel>
+        <translation><!-- Collected By Broker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collected by Sales Manager</masterLabel>
+        <translation><!-- Collected by Sales Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DocuSign</masterLabel>
+        <translation><!-- DocuSign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Self Collected</masterLabel>
+        <translation><!-- Self Collected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sent Through Courier</masterLabel>
+        <translation><!-- Sent Through Courier --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

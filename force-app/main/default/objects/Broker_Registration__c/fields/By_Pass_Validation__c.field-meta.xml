@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>By_Pass_Validation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Check this box to allow editing of the record even when the Channel Partner profile restrictions are in place.</inlineHelpText>
+    <label>By Pass Validation</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booking_with_amount_2_stage_as_EOI</fullName>
+    <columns>NAME</columns>
+    <columns>Receipts__c</columns>
+    <columns>Opportunity__c</columns>
+    <columns>Tower__c</columns>
+    <columns>Unit__c</columns>
+    <columns>Quotation__c</columns>
+    <columns>Stage_of_Booking__c</columns>
+    <columns>Current_Status__c</columns>
+    <columns>Status__c</columns>
+    <columns>Agreement_Value__c</columns>
+    <columns>Paid_Percentage__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage_of_Booking__c</field>
+        <operation>equals</operation>
+        <value>EOI</value>
+    </filters>
+    <filters>
+        <field>Paid_Percentage__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>2</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelled,Cancellation In Progress</value>
+    </filters>
+    <label>1.4 Booking with amount &gt;=2% &amp; Stage EOI</label>
+    <sharedTo>
+        <group>Booking_Group</group>
+    </sharedTo>
+</ListView>

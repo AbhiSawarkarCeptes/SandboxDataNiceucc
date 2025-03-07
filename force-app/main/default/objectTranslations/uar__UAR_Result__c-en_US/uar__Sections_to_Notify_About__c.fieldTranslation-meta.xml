@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When changes are detected for the selected sections, an email will be sent. Changes in deselected sections will be ignored. --></help>
+    <label><!-- Sections to Notify About --></label>
+    <name>uar__Sections_to_Notify_About__c</name>
+    <picklistValues>
+        <masterLabel>Accounts Team Member</masterLabel>
+        <translation><!-- Accounts Team Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Apex Classes</masterLabel>
+        <translation><!-- Apex Classes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cases Team Member</masterLabel>
+        <translation><!-- Cases Team Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chatter Groups Member</masterLabel>
+        <translation><!-- Chatter Groups Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Permissions</masterLabel>
+        <translation><!-- Custom Permissions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Settings / Metadata Types</masterLabel>
+        <translation><!-- Custom Settings / Metadata Types --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Data Sources</masterLabel>
+        <translation><!-- External Data Sources --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flows</masterLabel>
+        <translation><!-- Flows --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Named Credentials</masterLabel>
+        <translation><!-- Named Credentials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Object and Record Access</masterLabel>
+        <translation><!-- Object and Record Access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opportunities Team Member</masterLabel>
+        <translation><!-- Opportunities Team Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Permission Sets / Groups</masterLabel>
+        <translation><!-- Permission Sets / Groups --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Queues / Public Groups</masterLabel>
+        <translation><!-- Queues / Public Groups --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sites Member</masterLabel>
+        <translation><!-- Sites Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>User Permissions</masterLabel>
+        <translation><!-- User Permissions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visualforce Pages</masterLabel>
+        <translation><!-- Visualforce Pages --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

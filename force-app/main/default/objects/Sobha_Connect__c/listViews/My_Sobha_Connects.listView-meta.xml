@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Sobha_Connects</fullName>
+    <columns>NAME</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Sobha Connects</label>
+    <sharedTo>
+        <role>Channel_Relationship_Manager_2</role>
+        <role>Channel_Relationship_Manager_3</role>
+        <role>Channel_relationship_manager</role>
+    </sharedTo>
+</ListView>

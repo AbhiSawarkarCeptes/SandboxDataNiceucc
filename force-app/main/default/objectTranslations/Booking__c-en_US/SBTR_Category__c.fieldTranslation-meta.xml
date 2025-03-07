@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SBTR-Category --></label>
+    <name>SBTR_Category__c</name>
+    <picklistValues>
+        <masterLabel>Cancel &amp; Downgrade</masterLabel>
+        <translation><!-- Cancel &amp; Downgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancel &amp; Rebook</masterLabel>
+        <translation><!-- Cancel &amp; Rebook --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancel &amp; Swap</masterLabel>
+        <translation><!-- Cancel &amp; Swap --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancel &amp; Upgrade</masterLabel>
+        <translation><!-- Cancel &amp; Upgrade --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

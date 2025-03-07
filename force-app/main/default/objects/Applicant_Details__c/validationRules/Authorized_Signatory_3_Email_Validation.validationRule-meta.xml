@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Authorized_Signatory_3_Email_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( Authorized_Signatory_3__c &lt;&gt; null, IF(Authorized_Signatory_2__c=null, true, false), false)</errorConditionFormula>
+    <errorDisplayField>Authorized_Signatory_2__c</errorDisplayField>
+    <errorMessage>Email ID is Required</errorMessage>
+</ValidationRule>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Exception Status to Prevent Edit - CHRM --></label>
+    <name>Exception_Status_Prevent_Edit_CHRM__c</name>
+</CustomFieldTranslation>

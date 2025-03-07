@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBTR_Category__c</fullName>
+    <description>This field is used for SBTR in case of manual Booking</description>
+    <label>SBTR-Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cancel &amp; Swap</fullName>
+                <default>false</default>
+                <label>Cancel &amp; Swap</label>
+            </value>
+            <value>
+                <fullName>Cancel &amp; Upgrade</fullName>
+                <default>false</default>
+                <label>Cancel &amp; Upgrade</label>
+            </value>
+            <value>
+                <fullName>Cancel &amp; Downgrade</fullName>
+                <default>false</default>
+                <label>Cancel &amp; Downgrade</label>
+            </value>
+            <value>
+                <fullName>Cancel &amp; Rebook</fullName>
+                <default>false</default>
+                <label>Cancel &amp; Rebook</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

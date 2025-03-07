@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audit_approved_documents_check</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(INCLUDES(Audit_Approved_Documents__c, &quot;Customer Signed DSR&quot;),true,false)  &amp;&amp;   NOT(Customer_Signed_DSR_Uploaded__c )</errorConditionFormula>
+    <errorDisplayField>Audit_Approved_Documents__c</errorDisplayField>
+    <errorMessage>Customer Signed DSR can not be added to approved documents as its not uploaded</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booked_Booking_with_PP_greater_than_10</fullName>
+    <active>false</active>
+    <description>If Paid Purchase is greater than or equal to 10%, then only Stage of Booking can be changed to Booked.</description>
+    <errorConditionFormula>AND(Paid_Percentage__c &lt; 0.10, 
+ISCHANGED(Stage_of_Booking__c), 
+TEXT(Stage_of_Booking__c) = &apos;Booked&apos;)</errorConditionFormula>
+    <errorMessage>You cannot change the Stage of Booking to Booked as paid percentage is less than 10%</errorMessage>
+</ValidationRule>

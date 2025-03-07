@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>UAR Result Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Queue One Time Run --></label>
+        <name>uar__Queue_One_Time_Run</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Please provide one or more comma-separated email addresses to send email notifications to. --></errorMessage>
+        <name>uar__Provide_Email_Addresses_for_Notification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please do not update the User Id or User fields on an existing record. Instead please delete the scheduled job, deactivate this record, and create a new record for the new user. --></errorMessage>
+        <name>uar__Update_User_Id_field_instead_of_User_fie</name>
+    </validationRules>
+</CustomObjectTranslation>

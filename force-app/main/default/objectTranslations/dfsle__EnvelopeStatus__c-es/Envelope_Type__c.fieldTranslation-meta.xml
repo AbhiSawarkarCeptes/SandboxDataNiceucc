@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Envelope Type --></label>
+    <name>Envelope_Type__c</name>
+    <picklistValues>
+        <masterLabel>Booking Form</masterLabel>
+        <translation><!-- Booking Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker Agreement</masterLabel>
+        <translation><!-- Broker Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker Registration - Agreement</masterLabel>
+        <translation><!-- Broker Registration - Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker Registration - NOC</masterLabel>
+        <translation><!-- Broker Registration - NOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker Renew Agreement</masterLabel>
+        <translation><!-- Broker Renew Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker Renew Noc</masterLabel>
+        <translation><!-- Broker Renew Noc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSPA</masterLabel>
+        <translation><!-- DSPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSR</masterLabel>
+        <translation><!-- DSR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Handover</masterLabel>
+        <translation><!-- Handover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Handover of Possession</masterLabel>
+        <translation><!-- Handover of Possession --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Orientation Undertaking Letter</masterLabel>
+        <translation><!-- Home Orientation Undertaking Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOU</masterLabel>
+        <translation><!-- MOU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mandate Letter</masterLabel>
+        <translation><!-- Mandate Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC</masterLabel>
+        <translation><!-- NOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC TR</masterLabel>
+        <translation><!-- NOC TR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale NOC</masterLabel>
+        <translation><!-- Resale NOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale process</masterLabel>
+        <translation><!-- Resale process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA</masterLabel>
+        <translation><!-- SPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA Addendum</masterLabel>
+        <translation><!-- SPA Addendum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer &amp; Assignment</masterLabel>
+        <translation><!-- Transfer &amp; Assignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Undertaking Letter</masterLabel>
+        <translation><!-- Undertaking Letter --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

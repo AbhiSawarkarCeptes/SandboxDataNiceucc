@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobile_Number_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(AND(Alternate_Mobile_Number__c != null,CONTAINS(Alternate_Mobile_Number__c ,&apos; &apos;) ),AND(Mobile_Number__c != null ,CONTAINS(Mobile_Number__c ,&apos; &apos;)))</errorConditionFormula>
+    <errorMessage>Mobile number can not be contain space, please remove space and try again</errorMessage>
+</ValidationRule>

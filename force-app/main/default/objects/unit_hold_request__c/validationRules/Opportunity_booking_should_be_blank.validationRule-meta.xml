@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_booking_should_be_blank</fullName>
+    <active>true</active>
+    <description>Opportunity&apos;s booking should be blank while creating new Sale Approval</description>
+    <errorConditionFormula>AND(ISNEW() ,Opportunity__c != null &amp;&amp; Opportunity__r.Booking__c != null)</errorConditionFormula>
+    <errorMessage>Please select an opportunity without booking</errorMessage>
+</ValidationRule>

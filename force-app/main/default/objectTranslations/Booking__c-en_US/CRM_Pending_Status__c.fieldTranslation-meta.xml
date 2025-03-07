@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CRM Pending Status --></label>
+    <name>CRM_Pending_Status__c</name>
+    <picklistValues>
+        <masterLabel>Call Back Request</masterLabel>
+        <translation><!-- Call Back Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation under process</masterLabel>
+        <translation><!-- Cancellation under process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change of ownership</masterLabel>
+        <translation><!-- Change of ownership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD Termination</masterLabel>
+        <translation><!-- DLD Termination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispute</masterLabel>
+        <translation><!-- Dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Docs Submitted</masterLabel>
+        <translation><!-- Docs Submitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>File Note under process</masterLabel>
+        <translation><!-- File Note under process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Final Notice</masterLabel>
+        <translation><!-- Final Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Follow up required</masterLabel>
+        <translation><!-- Follow up required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forfeiture Notice</masterLabel>
+        <translation><!-- Forfeiture Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT error</masterLabel>
+        <translation><!-- IT error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In touch with Broker</masterLabel>
+        <translation><!-- In touch with Broker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In touch with Customer</masterLabel>
+        <translation><!-- In touch with Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In touch with Sales</masterLabel>
+        <translation><!-- In touch with Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Language Barrier</masterLabel>
+        <translation><!-- Language Barrier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal case</masterLabel>
+        <translation><!-- Legal case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Management Reference/ Employee</masterLabel>
+        <translation><!-- Management Reference/ Employee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No response</masterLabel>
+        <translation><!-- No response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Contactable</masterLabel>
+        <translation><!-- Not Contactable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid</masterLabel>
+        <translation><!-- Paid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment pending from Customer</masterLabel>
+        <translation><!-- Payment pending from Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with Development</masterLabel>
+        <translation><!-- Pending with Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with Sales Ops</masterLabel>
+        <translation><!-- Pending with Sales Ops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Promise to pay</masterLabel>
+        <translation><!-- Promise to pay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Promise to sign</masterLabel>
+        <translation><!-- Promise to sign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Promise to submit docs</masterLabel>
+        <translation><!-- Promise to submit docs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested Cancellation</masterLabel>
+        <translation><!-- Requested Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signed/Couriered</masterLabel>
+        <translation><!-- Signed/Couriered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swap/Upgrade</masterLabel>
+        <translation><!-- Swap/Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>To Send Final Notice</masterLabel>
+        <translation><!-- To Send Final Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under discussion with Management</masterLabel>
+        <translation><!-- Under discussion with Management --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

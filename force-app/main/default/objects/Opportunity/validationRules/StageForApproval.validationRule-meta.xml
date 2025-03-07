@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StageForApproval</fullName>
+    <active>true</active>
+    <description>Temporally removed ISPICKVAL(StageName, &apos;Booking confirmed&apos;)),</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL(StageName, &apos;Token Amount Received&apos;)),  TEXT(Approved_Rejected__c) != &apos;Approved&apos;, PAN_Card_Received__c == true, Passport_Received__c == true,  POI_Card_If_Required__c == true, Payment_Plan_Fixed__c == true,  Cheque_Received__c == true, Special_Deviations__c == true)</errorConditionFormula>
+    <errorMessage>Please send it for Approval before this stage.</errorMessage>
+</ValidationRule>

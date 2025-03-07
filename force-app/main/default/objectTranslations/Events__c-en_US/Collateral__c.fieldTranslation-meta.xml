@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Collateral Approval Status --></label>
+    <name>Collateral__c</name>
+    <picklistValues>
+        <masterLabel>Collateral Approved</masterLabel>
+        <translation><!-- Collateral Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collateral Pending With AVP</masterLabel>
+        <translation><!-- Collateral Pending With AVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collateral Pending With Audit</masterLabel>
+        <translation><!-- Collateral Pending With Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collateral Pending With CHRM TL</masterLabel>
+        <translation><!-- Collateral Pending With CHRM TL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collateral Pending With Channel Ops</masterLabel>
+        <translation><!-- Collateral Pending With Channel Ops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collateral Pending With Channel Ops Manager</masterLabel>
+        <translation><!-- Collateral Pending With Channel Ops Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collateral Rejected</masterLabel>
+        <translation><!-- Collateral Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collateral Rejected By AVP</masterLabel>
+        <translation><!-- Collateral Rejected By AVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collateral Rejected By Audit</masterLabel>
+        <translation><!-- Collateral Rejected By Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collateral Rejected By CHRM TL</masterLabel>
+        <translation><!-- Collateral Rejected By CHRM TL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collateral Rejected By Channel Ops</masterLabel>
+        <translation><!-- Collateral Rejected By Channel Ops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collateral Rejected By Channel Ops Manager</masterLabel>
+        <translation><!-- Collateral Rejected By Channel Ops Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Collateral</masterLabel>
+        <translation><!-- No Collateral --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

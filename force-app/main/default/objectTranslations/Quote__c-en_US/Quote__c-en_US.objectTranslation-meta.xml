@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quote</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quote</value>
+    </caseValues>
+    <layouts>
+        <layout>Quote Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Income Charges --></label>
+            <section>Income Charges</section>
+        </sections>
+        <sections>
+            <label><!-- Purchase Price Details --></label>
+            <section>Purchase Price Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- View_Quotation --></label>
+        <name>View_Quotation</name>
+    </webLinks>
+</CustomObjectTranslation>

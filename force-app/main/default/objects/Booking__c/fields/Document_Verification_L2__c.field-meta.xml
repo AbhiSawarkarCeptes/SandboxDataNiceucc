@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Document_Verification_L2__c</fullName>
+    <label>Document Verification L2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Verification_status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Management Approved</fullName>
+                <default>false</default>
+                <label>Management Approved</label>
+            </value>
+            <value>
+                <fullName>Customer Name</fullName>
+                <default>false</default>
+                <label>Customer Name</label>
+            </value>
+            <value>
+                <fullName>Commercial Details Incorrect/Incomplete</fullName>
+                <default>false</default>
+                <label>Commercial Details Incorrect/Incomplete</label>
+            </value>
+            <value>
+                <fullName>Payment</fullName>
+                <default>false</default>
+                <label>Payment</label>
+            </value>
+            <value>
+                <fullName>Source Verifications</fullName>
+                <default>false</default>
+                <label>Source Verifications</label>
+            </value>
+            <value>
+                <fullName>Signature</fullName>
+                <default>false</default>
+                <label>Signature</label>
+            </value>
+            <value>
+                <fullName>KYC Details Missing</fullName>
+                <default>false</default>
+                <label>KYC Details Missing</label>
+            </value>
+            <value>
+                <fullName>KYC Document Missing</fullName>
+                <default>false</default>
+                <label>KYC Document Missing</label>
+            </value>
+            <value>
+                <fullName>Sales Dependancy</fullName>
+                <default>false</default>
+                <label>Sales Dependancy</label>
+            </value>
+            <value>
+                <fullName>PDC</fullName>
+                <default>false</default>
+                <label>PDC</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Accepted</controllingFieldValue>
+            <valueName>Management Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accepted</controllingFieldValue>
+            <valueName>NA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Customer Name</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Commercial Details Incorrect/Incomplete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <controllingFieldValue>Not Started</controllingFieldValue>
+            <valueName>Source Verifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Signature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <controllingFieldValue>Not Started</controllingFieldValue>
+            <valueName>KYC Details Missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Started</controllingFieldValue>
+            <valueName>KYC Document Missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Started</controllingFieldValue>
+            <valueName>Sales Dependancy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Started</controllingFieldValue>
+            <valueName>PDC</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

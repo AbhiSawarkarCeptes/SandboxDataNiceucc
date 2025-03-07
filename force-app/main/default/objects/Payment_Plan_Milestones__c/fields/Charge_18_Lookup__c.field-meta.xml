@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Charge_18_Lookup__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Charge 18 Lookup</label>
+    <referenceTo>ProjectCharges__c</referenceTo>
+    <relationshipLabel>Payment Plan Milestones (Charge 18 Lookup)</relationshipLabel>
+    <relationshipName>Payment_Plan_Milestones24vV</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

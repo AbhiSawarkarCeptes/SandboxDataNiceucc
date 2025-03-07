@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pre_registration__c</fullName>
+    <label>Pre-registration</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Initiated</fullName>
+                <default>true</default>
+                <label>Not Initiated</label>
+            </value>
+            <value>
+                <fullName>Request to Initiate Pre-Registration</fullName>
+                <default>false</default>
+                <label>Request to Initiate Pre-Registration</label>
+            </value>
+            <value>
+                <fullName>Additional Docs required</fullName>
+                <default>false</default>
+                <label>Additional Docs required</label>
+            </value>
+            <value>
+                <fullName>Customer Docs Required</fullName>
+                <default>false</default>
+                <label>Customer Docs Required</label>
+            </value>
+            <value>
+                <fullName>Under Process - Paid</fullName>
+                <default>false</default>
+                <label>Under Process - Paid</label>
+            </value>
+            <value>
+                <fullName>Submitted To DLD</fullName>
+                <default>false</default>
+                <label>Submitted To DLD</label>
+            </value>
+            <value>
+                <fullName>With Audit</fullName>
+                <default>false</default>
+                <label>With Audit</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

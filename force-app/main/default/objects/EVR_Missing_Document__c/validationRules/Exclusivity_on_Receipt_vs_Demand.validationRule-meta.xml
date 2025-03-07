@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exclusivity_on_Receipt_vs_Demand</fullName>
+    <active>true</active>
+    <errorConditionFormula>(Credit_Note_or_Receipt__c  = NULL &amp;&amp; (ISPICKVAL(Document_Type__c,&apos;Receipt&apos;) || ISPICKVAL(Document_Type__c,&apos;Credit Note&apos;)))
+|| 
+(Demand_or_Debit_Note__c  = NULL &amp;&amp; (ISPICKVAL(Document_Type__c,&apos;Demand - ASI&apos;) || ISPICKVAL(Document_Type__c,&apos;Demand - PSI&apos;) || ISPICKVAL(Document_Type__c,&apos;Demand - DLD&apos;) || ISPICKVAL(Document_Type__c,&apos;Debit Note&apos;)))
+||
+(Credit_Note_or_Receipt__c &lt;&gt; NULL &amp;&amp; Demand_or_Debit_Note__c &lt;&gt; NULL)</errorConditionFormula>
+    <errorMessage>The Receipt, Credit Note, Demand and Debit Note should be wrt the Document Type selected.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- City 3 --></label>
+    <name>City_3__c</name>
+    <picklistValues>
+        <masterLabel>Abu Dhabi</masterLabel>
+        <translation><!-- Abu Dhabi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Abuja</masterLabel>
+        <translation><!-- Abuja --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Addis Ababa</masterLabel>
+        <translation><!-- Addis Ababa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agra</masterLabel>
+        <translation><!-- Agra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ahmedabad</masterLabel>
+        <translation><!-- Ahmedabad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Al Ain</masterLabel>
+        <translation><!-- Al Ain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alger</masterLabel>
+        <translation><!-- Alger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Almaty</masterLabel>
+        <translation><!-- Almaty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amsterdam</masterLabel>
+        <translation><!-- Amsterdam --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ankara</masterLabel>
+        <translation><!-- Ankara --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Astana</masterLabel>
+        <translation><!-- Astana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Athens</masterLabel>
+        <translation><!-- Athens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BEIRUT</masterLabel>
+        <translation><!-- BEIRUT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BERLIN</masterLabel>
+        <translation><!-- BERLIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Baghdad</masterLabel>
+        <translation><!-- Baghdad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Baku</masterLabel>
+        <translation><!-- Baku --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bangalore</masterLabel>
+        <translation><!-- Bangalore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bangkok</masterLabel>
+        <translation><!-- Bangkok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Basel</masterLabel>
+        <translation><!-- Basel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beijing</masterLabel>
+        <translation><!-- Beijing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belgrade</masterLabel>
+        <translation><!-- Belgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bhopal</masterLabel>
+        <translation><!-- Bhopal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Birmingham</masterLabel>
+        <translation><!-- Birmingham --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bishkek</masterLabel>
+        <translation><!-- Bishkek --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bradford</masterLabel>
+        <translation><!-- Bradford --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brighton</masterLabel>
+        <translation><!-- Brighton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brisbane</masterLabel>
+        <translation><!-- Brisbane --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brussels</masterLabel>
+        <translation><!-- Brussels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bucharest</masterLabel>
+        <translation><!-- Bucharest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bursa</masterLabel>
+        <translation><!-- Bursa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CALGARY</masterLabel>
+        <translation><!-- CALGARY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAPETOWN</masterLabel>
+        <translation><!-- CAPETOWN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHENGDU</masterLabel>
+        <translation><!-- CHENGDU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLUJ-NAPOCA</masterLabel>
+        <translation><!-- CLUJ-NAPOCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRAIOVA</masterLabel>
+        <translation><!-- CRAIOVA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cairo</masterLabel>
+        <translation><!-- Cairo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cannes</masterLabel>
+        <translation><!-- Cannes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Casablanca</masterLabel>
+        <translation><!-- Casablanca --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chandigarh</masterLabel>
+        <translation><!-- Chandigarh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chennai</masterLabel>
+        <translation><!-- Chennai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chisinau</masterLabel>
+        <translation><!-- Chisinau --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleveland</masterLabel>
+        <translation><!-- Cleveland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cluj</masterLabel>
+        <translation><!-- Cluj --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cochin</masterLabel>
+        <translation><!-- Cochin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Copenhagen</masterLabel>
+        <translation><!-- Copenhagen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DUBAI</masterLabel>
+        <translation><!-- DUBAI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DUSSELDROP</masterLabel>
+        <translation><!-- DUSSELDROP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dakar</masterLabel>
+        <translation><!-- Dakar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dallas</masterLabel>
+        <translation><!-- Dallas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delhi</masterLabel>
+        <translation><!-- Delhi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Doha</masterLabel>
+        <translation><!-- Doha --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dong Ying</masterLabel>
+        <translation><!-- Dong Ying --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dubrovnik</masterLabel>
+        <translation><!-- Dubrovnik --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Durban</masterLabel>
+        <translation><!-- Durban --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dusseldorf</masterLabel>
+        <translation><!-- Dusseldorf --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Erbil</masterLabel>
+        <translation><!-- Erbil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Erdos</masterLabel>
+        <translation><!-- Erdos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRESNO</masterLabel>
+        <translation><!-- FRESNO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forte Dei Marmi</masterLabel>
+        <translation><!-- Forte Dei Marmi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frankfurt</masterLabel>
+        <translation><!-- Frankfurt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GUANG ZHOU</masterLabel>
+        <translation><!-- GUANG ZHOU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gelendzhik</masterLabel>
+        <translation><!-- Gelendzhik --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geneva</masterLabel>
+        <translation><!-- Geneva --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gurugram</masterLabel>
+        <translation><!-- Gurugram --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Haifa</masterLabel>
+        <translation><!-- Haifa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hamburg</masterLabel>
+        <translation><!-- Hamburg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hanoi</masterLabel>
+        <translation><!-- Hanoi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harare</masterLabel>
+        <translation><!-- Harare --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hengzhou</masterLabel>
+        <translation><!-- Hengzhou --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Herentals</masterLabel>
+        <translation><!-- Herentals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ho Chi Minh</masterLabel>
+        <translation><!-- Ho Chi Minh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hong Kong</masterLabel>
+        <translation><!-- Hong Kong --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hounslow</masterLabel>
+        <translation><!-- Hounslow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Humburg</masterLabel>
+        <translation><!-- Humburg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hyderabad</masterLabel>
+        <translation><!-- Hyderabad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITALIE ROME</masterLabel>
+        <translation><!-- ITALIE ROME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Iasi</masterLabel>
+        <translation><!-- Iasi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Istanbul</masterLabel>
+        <translation><!-- Istanbul --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Izmir</masterLabel>
+        <translation><!-- Izmir --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JAKARTA</masterLabel>
+        <translation><!-- JAKARTA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JAMMU &amp; kASHMIR</masterLabel>
+        <translation><!-- JAMMU &amp; kASHMIR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jaipur</masterLabel>
+        <translation><!-- Jaipur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jeddah</masterLabel>
+        <translation><!-- Jeddah --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Johannesburg</masterLabel>
+        <translation><!-- Johannesburg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kampala</masterLabel>
+        <translation><!-- Kampala --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Karnal</masterLabel>
+        <translation><!-- Karnal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kazan</masterLabel>
+        <translation><!-- Kazan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kinshasa</masterLabel>
+        <translation><!-- Kinshasa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Knokke</masterLabel>
+        <translation><!-- Knokke --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kolkata</masterLabel>
+        <translation><!-- Kolkata --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kuwait</masterLabel>
+        <translation><!-- Kuwait --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lagos</masterLabel>
+        <translation><!-- Lagos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lahore</masterLabel>
+        <translation><!-- Lahore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>London</masterLabel>
+        <translation><!-- London --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Los Angeles</masterLabel>
+        <translation><!-- Los Angeles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lucknow</masterLabel>
+        <translation><!-- Lucknow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ludhiana</masterLabel>
+        <translation><!-- Ludhiana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Luxembourg</masterLabel>
+        <translation><!-- Luxembourg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MADRID</masterLabel>
+        <translation><!-- MADRID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MELBOURNE</masterLabel>
+        <translation><!-- MELBOURNE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MONACO</masterLabel>
+        <translation><!-- MONACO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MUNICH</masterLabel>
+        <translation><!-- MUNICH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Macau</masterLabel>
+        <translation><!-- Macau --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mallorca</masterLabel>
+        <translation><!-- Mallorca --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manchester</masterLabel>
+        <translation><!-- Manchester --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marbella</masterLabel>
+        <translation><!-- Marbella --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marseille</masterLabel>
+        <translation><!-- Marseille --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mashhad</masterLabel>
+        <translation><!-- Mashhad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mauritius</masterLabel>
+        <translation><!-- Mauritius --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mexico City</masterLabel>
+        <translation><!-- Mexico City --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miami</masterLabel>
+        <translation><!-- Miami --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Milano</masterLabel>
+        <translation><!-- Milano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monte Carlo</masterLabel>
+        <translation><!-- Monte Carlo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monterrey City</masterLabel>
+        <translation><!-- Monterrey City --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monterrey City for one Day, Mexico City for the second day</masterLabel>
+        <translation><!-- Monterrey City for one Day, Mexico City for the second day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Montreal</masterLabel>
+        <translation><!-- Montreal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moscow</masterLabel>
+        <translation><!-- Moscow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mumbai</masterLabel>
+        <translation><!-- Mumbai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nagoya</masterLabel>
+        <translation><!-- Nagoya --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nairobi</masterLabel>
+        <translation><!-- Nairobi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Delhi</masterLabel>
+        <translation><!-- New Delhi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Jersey</masterLabel>
+        <translation><!-- New Jersey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New York</masterLabel>
+        <translation><!-- New York --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nice</masterLabel>
+        <translation><!-- Nice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noordwijk</masterLabel>
+        <translation><!-- Noordwijk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North Leeds</masterLabel>
+        <translation><!-- North Leeds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nottingham</masterLabel>
+        <translation><!-- Nottingham --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Osaka</masterLabel>
+        <translation><!-- Osaka --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oslo</masterLabel>
+        <translation><!-- Oslo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Panipat</masterLabel>
+        <translation><!-- Panipat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pleasanton</masterLabel>
+        <translation><!-- Pleasanton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Port Louis</masterLabel>
+        <translation><!-- Port Louis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prague</masterLabel>
+        <translation><!-- Prague --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pune</masterLabel>
+        <translation><!-- Pune --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raipur</masterLabel>
+        <translation><!-- Raipur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rajkot</masterLabel>
+        <translation><!-- Rajkot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Riyadh</masterLabel>
+        <translation><!-- Riyadh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rome</masterLabel>
+        <translation><!-- Rome --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SHEN ZHEN</masterLabel>
+        <translation><!-- SHEN ZHEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SINGAPORE</masterLabel>
+        <translation><!-- SINGAPORE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SYDNEY</masterLabel>
+        <translation><!-- SYDNEY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Saint Petersburg</masterLabel>
+        <translation><!-- Saint Petersburg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seoul</masterLabel>
+        <translation><!-- Seoul --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shanghai</masterLabel>
+        <translation><!-- Shanghai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sharjah</masterLabel>
+        <translation><!-- Sharjah --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sochi</masterLabel>
+        <translation><!-- Sochi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Srinagar</masterLabel>
+        <translation><!-- Srinagar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>St.Petersberg</masterLabel>
+        <translation><!-- St.Petersberg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stuttgart</masterLabel>
+        <translation><!-- Stuttgart --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sulaymaniyah</masterLabel>
+        <translation><!-- Sulaymaniyah --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TORONTO</masterLabel>
+        <translation><!-- TORONTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Taipei</masterLabel>
+        <translation><!-- Taipei --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tashkent</masterLabel>
+        <translation><!-- Tashkent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tbilisi</masterLabel>
+        <translation><!-- Tbilisi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Hague</masterLabel>
+        <translation><!-- The Hague --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tirupati</masterLabel>
+        <translation><!-- Tirupati --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tokyo</masterLabel>
+        <translation><!-- Tokyo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VALENCIA</masterLabel>
+        <translation><!-- VALENCIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vienna</masterLabel>
+        <translation><!-- Vienna --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warsaw</masterLabel>
+        <translation><!-- Warsaw --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yaounde</masterLabel>
+        <translation><!-- Yaounde --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yerevan</masterLabel>
+        <translation><!-- Yerevan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZHU HAI</masterLabel>
+        <translation><!-- ZHU HAI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zurich</masterLabel>
+        <translation><!-- Zurich --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>bandar abbas</masterLabel>
+        <translation><!-- bandar abbas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>lusaka</masterLabel>
+        <translation><!-- lusaka --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>surat</masterLabel>
+        <translation><!-- surat --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

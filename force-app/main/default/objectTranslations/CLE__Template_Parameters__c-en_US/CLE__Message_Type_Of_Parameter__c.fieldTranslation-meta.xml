@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Message Type Of Parameter --></label>
+    <name>CLE__Message_Type_Of_Parameter__c</name>
+    <picklistValues>
+        <masterLabel>Body</masterLabel>
+        <translation><!-- Body --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Footer</masterLabel>
+        <translation><!-- Footer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Header</masterLabel>
+        <translation><!-- Header --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

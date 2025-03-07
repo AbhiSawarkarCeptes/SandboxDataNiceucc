@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Last_Response__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(
+    FLOOR((Last_Call_Attempt_Date__c -  Date_and_Time_of_Unserviced_Lead__c)/24)) &amp; &quot; Days: &quot; &amp;
+TEXT(
+    MOD(
+        FLOOR(
+            Last_Call_Attempt_Date__c -  Date_and_Time_of_Unserviced_Lead__c
+        ), 24
+    )
+) &amp; &quot; Hrs: &quot; &amp; 
+TEXT(
+    ROUND(
+        MOD(Last_Call_Attempt_Date__c -  Date_and_Time_of_Unserviced_Lead__c,1) * 60
+        , 0
+    )
+) &amp; &quot; Mins&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lead Last Response</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

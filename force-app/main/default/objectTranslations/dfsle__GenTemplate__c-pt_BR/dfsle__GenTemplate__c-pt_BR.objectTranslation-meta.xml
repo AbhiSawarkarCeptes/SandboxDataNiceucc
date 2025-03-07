@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Modelo da DocuSign Gen</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Modelos da DocuSign Gen</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Gen Template Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Name</nameFieldLabel>
+</CustomObjectTranslation>

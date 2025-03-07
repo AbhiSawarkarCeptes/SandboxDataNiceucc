@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Source of Booking --></label>
+    <name>Source_of_Booking__c</name>
+    <picklistValues>
+        <masterLabel>Channel Partner</masterLabel>
+        <translation><!-- Channel Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital</masterLabel>
+        <translation><!-- Digital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direct</masterLabel>
+        <translation><!-- Direct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee</masterLabel>
+        <translation><!-- Employee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee Reference</masterLabel>
+        <translation><!-- Employee Reference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loyalty Customer</masterLabel>
+        <translation><!-- Loyalty Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loyalty Customer Referral</masterLabel>
+        <translation><!-- Loyalty Customer Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mall Stands</masterLabel>
+        <translation><!-- Mall Stands --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Management Reference</masterLabel>
+        <translation><!-- Management Reference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation><!-- Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retention</masterLabel>
+        <translation><!-- Retention --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesperson initiative</masterLabel>
+        <translation><!-- Salesperson initiative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Connect</masterLabel>
+        <translation><!-- Sobha Connect --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

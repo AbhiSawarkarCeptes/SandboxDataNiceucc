@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cheque_Replacement_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Approval_Status_Interim__c, &quot;Approved&quot;),
+Submit_for_Cheque_Replacement_Approval__c = TRUE
+)</errorConditionFormula>
+    <errorMessage>If the Payment is Approved then the Cheque cannot be replaced.</errorMessage>
+</ValidationRule>

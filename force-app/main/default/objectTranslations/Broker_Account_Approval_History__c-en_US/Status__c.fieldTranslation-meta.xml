@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Completed</masterLabel>
+        <translation><!-- Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Progress</masterLabel>
+        <translation><!-- In Progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending With CHRM OPS Manager</masterLabel>
+        <translation><!-- Pending With CHRM OPS Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with Audit</masterLabel>
+        <translation><!-- Pending with Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Audit</masterLabel>
+        <translation><!-- Rejected by Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by CHRM OPS Manager</masterLabel>
+        <translation><!-- Rejected by CHRM OPS Manager --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesManager__c</fullName>
+    <label>SalesManager</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tamila Mangeldina</fullName>
+                <default>false</default>
+                <label>Tamila Mangeldina</label>
+            </value>
+            <value>
+                <fullName>Alina Asokina</fullName>
+                <default>false</default>
+                <label>Alina Asokina</label>
+            </value>
+            <value>
+                <fullName>Elizaveta Oleshchenko</fullName>
+                <default>false</default>
+                <label>Elizaveta Oleshchenko</label>
+            </value>
+            <value>
+                <fullName>Sanobar Igrasheva</fullName>
+                <default>false</default>
+                <label>Sanobar Igrasheva</label>
+            </value>
+            <value>
+                <fullName>Aleksei Berezkin</fullName>
+                <default>false</default>
+                <label>Aleksei Berezkin</label>
+            </value>
+            <value>
+                <fullName>Nargiz Riga</fullName>
+                <default>false</default>
+                <label>Nargiz Riga</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

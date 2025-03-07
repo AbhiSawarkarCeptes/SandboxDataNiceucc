@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>City_2_City_3_is_Mandatory</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND (OR(IsNew(),isChanged(Trip_Plan__c)),IsPickval(Trip_Plan__c,&apos;Multiple City&apos;),OR(City_2__c == null ,City_3__c == null) )</errorConditionFormula>
+    <errorMessage>For Multiple city trip - City 1,2,3 are mandatory.</errorMessage>
+</ValidationRule>

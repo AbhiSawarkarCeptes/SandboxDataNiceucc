@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dummy_Opportunities_for_SM</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Opportunity_ID__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>contains</operation>
+        <value>_test</value>
+    </filters>
+    <label>Dummy Opportunities for SM</label>
+    <sharedTo>
+        <role>Admin</role>
+    </sharedTo>
+</ListView>

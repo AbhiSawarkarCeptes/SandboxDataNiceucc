@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PropStrength__Case_Issue__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Case Issue</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Allotments</fullName>
+                <default>false</default>
+                <label>Allotments</label>
+            </value>
+            <value>
+                <fullName>Call Notices</fullName>
+                <default>false</default>
+                <label>Call Notices</label>
+            </value>
+            <value>
+                <fullName>Payment Plans</fullName>
+                <default>false</default>
+                <label>Payment Plans</label>
+            </value>
+            <value>
+                <fullName>Extension of Payment Dates</fullName>
+                <default>false</default>
+                <label>Extension of Payment Dates</label>
+            </value>
+            <value>
+                <fullName>Cancellation Request</fullName>
+                <default>false</default>
+                <label>Cancellation Request</label>
+            </value>
+            <value>
+                <fullName>Car Parking</fullName>
+                <default>false</default>
+                <label>Car Parking</label>
+            </value>
+            <value>
+                <fullName>Agreement Status</fullName>
+                <default>false</default>
+                <label>Agreement Status</label>
+            </value>
+            <value>
+                <fullName>Possessions</fullName>
+                <default>false</default>
+                <label>Possessions</label>
+            </value>
+            <value>
+                <fullName>Extension for payment due date</fullName>
+                <default>false</default>
+                <label>Extension for payment due date</label>
+            </value>
+            <value>
+                <fullName>Leads - Commercial</fullName>
+                <default>false</default>
+                <label>Leads - Commercial</label>
+            </value>
+            <value>
+                <fullName>TDS Certificates</fullName>
+                <default>false</default>
+                <label>TDS Certificates</label>
+            </value>
+            <value>
+                <fullName>Lease Renewal</fullName>
+                <default>false</default>
+                <label>Lease Renewal</label>
+            </value>
+            <value>
+                <fullName>Bank Loans</fullName>
+                <default>false</default>
+                <label>Bank Loans</label>
+            </value>
+            <value>
+                <fullName>Address Change</fullName>
+                <default>false</default>
+                <label>Address Change</label>
+            </value>
+            <value>
+                <fullName>Transfers</fullName>
+                <default>false</default>
+                <label>Transfers</label>
+            </value>
+            <value>
+                <fullName>Post Possesion Issue</fullName>
+                <default>false</default>
+                <label>Post Possesion Issue</label>
+            </value>
+            <value>
+                <fullName>Reallocations</fullName>
+                <default>false</default>
+                <label>Reallocations</label>
+            </value>
+            <value>
+                <fullName>Receipt of payment</fullName>
+                <default>false</default>
+                <label>Receipt of payment</label>
+            </value>
+            <value>
+                <fullName>Site Visit / Site Inspection</fullName>
+                <default>false</default>
+                <label>Site Visit / Site Inspection</label>
+            </value>
+            <value>
+                <fullName>Registration</fullName>
+                <default>false</default>
+                <label>Registration</label>
+            </value>
+            <value>
+                <fullName>Construction Updates</fullName>
+                <default>false</default>
+                <label>Construction Updates</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Committments</fullName>
+                <default>false</default>
+                <label>Committments</label>
+            </value>
+            <value>
+                <fullName>Rentals</fullName>
+                <default>false</default>
+                <label>Rentals</label>
+            </value>
+            <value>
+                <fullName>Leads - Residential</fullName>
+                <default>false</default>
+                <label>Leads - Residential</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestone_Name_Picklist__c</fullName>
+    <label>Milestone Name Picklist</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&lt;&lt;Construction Stage Name&gt;&gt;</fullName>
+                <default>false</default>
+                <label>&lt;&lt;Construction Stage Name&gt;&gt;</label>
+            </value>
+            <value>
+                <fullName>from booking date</fullName>
+                <default>false</default>
+                <label>from booking date</label>
+            </value>
+            <value>
+                <fullName>Token</fullName>
+                <default>false</default>
+                <label>Token</label>
+            </value>
+            <value>
+                <fullName>On Booking date</fullName>
+                <default>false</default>
+                <label>On Booking date</label>
+            </value>
+            <value>
+                <fullName>On Handover</fullName>
+                <default>false</default>
+                <label>On Handover</label>
+            </value>
+            <value>
+                <fullName>Final Installment</fullName>
+                <default>false</default>
+                <label>Final Installment</label>
+            </value>
+            <value>
+                <fullName>Sixth Installment</fullName>
+                <default>false</default>
+                <label>Sixth Installment</label>
+            </value>
+            <value>
+                <fullName>Third Installment</fullName>
+                <default>false</default>
+                <label>Third Installment</label>
+            </value>
+            <value>
+                <fullName>Fourth Installment</fullName>
+                <default>false</default>
+                <label>Fourth Installment</label>
+            </value>
+            <value>
+                <fullName>First Installment</fullName>
+                <default>false</default>
+                <label>First Installment</label>
+            </value>
+            <value>
+                <fullName>Fifth Installment</fullName>
+                <default>false</default>
+                <label>Fifth Installment</label>
+            </value>
+            <value>
+                <fullName>Bookin Amount</fullName>
+                <default>false</default>
+                <label>Booking Amount</label>
+            </value>
+            <value>
+                <fullName>Second Installment</fullName>
+                <default>false</default>
+                <label>Second Installment</label>
+            </value>
+            <value>
+                <fullName>On Completion</fullName>
+                <default>false</default>
+                <label>On Completion</label>
+            </value>
+            <value>
+                <fullName>6 Months from Booking Date</fullName>
+                <default>false</default>
+                <label>6 Months from Completion</label>
+            </value>
+            <value>
+                <fullName>12 Months from Booking Date</fullName>
+                <default>false</default>
+                <label>12 Months from Completion</label>
+            </value>
+            <value>
+                <fullName>18 Months from Booking Date</fullName>
+                <default>false</default>
+                <label>18 Months from Completion</label>
+            </value>
+            <value>
+                <fullName>24 Months from Booking Date</fullName>
+                <default>false</default>
+                <label>24 Months from Completion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

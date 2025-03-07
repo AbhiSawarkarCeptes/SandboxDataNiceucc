@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Expected Level of Usage --></label>
+    <name>Expected_Level_of_Usage__c</name>
+    <picklistValues>
+        <masterLabel>Investment</masterLabel>
+        <translation><!-- Investment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Self Use</masterLabel>
+        <translation><!-- Self Use --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

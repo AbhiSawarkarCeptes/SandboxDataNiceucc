@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Mobile Link</label>
+    <protected>false</protected>
+    <values>
+        <field>Applicant_Details_Trigger__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Booking_Endpoint_URL__c</field>
+        <value xsi:type="xsd:string">https://srprdapimgmt.onesobhaapp.com/srprosalesforce/v1/salesforce/bookings</value>
+    </values>
+    <values>
+        <field>Booking_Trigger__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Communities_endpoint__c</field>
+        <value xsi:type="xsd:string">https://srprdapimgmt.onesobhaapp.com/srprosalesforce/v1/salesforce/communities</value>
+    </values>
+    <values>
+        <field>End_Point__c</field>
+        <value xsi:type="xsd:string">https://srprdapimgmt.onesobhaapp.com</value>
+    </values>
+    <values>
+        <field>Enquiry_Trigger__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Lead_Trigger__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Master_Communities_Endpoint__c</field>
+        <value xsi:type="xsd:string">https://srprdapimgmt.onesobhaapp.com/srprosalesforce/v1/salesforce/master-communities</value>
+    </values>
+    <values>
+        <field>Master_Project_Trigger__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Notifications_Endpoint__c</field>
+        <value xsi:type="xsd:string">https://srprdapimgmt.onesobhaapp.com/sradminnotification/v1/admin/notifications</value>
+    </values>
+    <values>
+        <field>Profile_Case_Endpoint__c</field>
+        <value xsi:type="xsd:string">https://srprdapimgmt.onesobhaapp.com/srprofileupdate/v1/admin/profile-case</value>
+    </values>
+    <values>
+        <field>Project_Trigger__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Property_Trigger__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Received_Payment__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Subscription_Key__c</field>
+        <value xsi:type="xsd:string">18d4469283e64e5cbb91c43a51b44cc5</value>
+    </values>
+    <values>
+        <field>Tower_Endpoint__c</field>
+        <value xsi:type="xsd:string">https://srprdapimgmt.onesobhaapp.com/srprosalesforce/v1/salesforce/towers</value>
+    </values>
+    <values>
+        <field>Tower_Trigger__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Unit_Endpoint__c</field>
+        <value xsi:type="xsd:string">https://srprdapimgmt.onesobhaapp.com/srprosalesforce/v1/salesforce/unit</value>
+    </values>
+    <values>
+        <field>Unit_Trigger__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>User_trigger__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>cluster_Trigger__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>sf_Token__c</field>
+        <value xsi:type="xsd:string">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjUsIm5hbWUiOiJzYWxlc2ZvcmNlIiwiaWF0IjoxNjk3NDUxMTcyfQ.-psVd67-isrG0Un1y_DM-FvClt-1XNY5nxT6Y3XRBIM</value>
+    </values>
+</CustomMetadata>

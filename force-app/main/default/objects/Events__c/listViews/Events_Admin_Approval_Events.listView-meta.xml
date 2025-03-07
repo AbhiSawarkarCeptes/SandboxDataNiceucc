@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Events_Admin_Approval_Events</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Events Admin Approval</label>
+    <queue>Events_Admin_Approval</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

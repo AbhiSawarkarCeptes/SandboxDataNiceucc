@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Visit_Overdue__c</fullName>
+    <formula>if( AND ( 
+OR( Last_call_attempt_status__c == &apos;Visit proposed&apos; , Last_call_attempt_status__c == &apos;Visit confirmed&apos; ), 
+OR(Date_Of_Visit__c &lt; DATEVALUE(call_proposed_date_of_visit__c), ISNULL(Date_Of_Visit__c)) ), TRUE, FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Visit Overdue</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

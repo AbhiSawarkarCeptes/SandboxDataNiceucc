@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>MagnatiIntegration</label>
+    <protected>false</protected>
+    <values>
+        <field>Customer__c</field>
+        <value xsi:type="xsd:string">SOBHALLC</value>
+    </values>
+    <values>
+        <field>End_Point__c</field>
+        <value xsi:type="xsd:string">https://ipg.comtrust.ae:2443</value>
+    </values>
+    <values>
+        <field>Merchant_Descriptor__c</field>
+        <value xsi:type="xsd:string">SOBHA LLC</value>
+    </values>
+    <values>
+        <field>Password__c</field>
+        <value xsi:type="xsd:string">Magnate3@2023#</value>
+    </values>
+    <values>
+        <field>Siniya_Merchant_Descriptor__c</field>
+        <value xsi:type="xsd:string">Sobha Al Siniya FZC</value>
+    </values>
+    <values>
+        <field>Siniya_Transaction_Descriptor__c</field>
+        <value xsi:type="xsd:string">Sobha Al Siniya FZC</value>
+    </values>
+    <values>
+        <field>Store__c</field>
+        <value xsi:type="xsd:string">SOBHA_AL_SINIYA</value>
+    </values>
+    <values>
+        <field>Terminal__c</field>
+        <value xsi:type="xsd:string">SOBHA_AL_SINIYA</value>
+    </values>
+    <values>
+        <field>TransactionHint__c</field>
+        <value xsi:type="xsd:string">CPT:Y;VCC:Y;</value>
+    </values>
+    <values>
+        <field>Transaction_Descriptor__c</field>
+        <value xsi:type="xsd:string">SOBHA LLC</value>
+    </values>
+    <values>
+        <field>UserName__c</field>
+        <value xsi:type="xsd:string">SOBHA_Mohan</value>
+    </values>
+</CustomMetadata>

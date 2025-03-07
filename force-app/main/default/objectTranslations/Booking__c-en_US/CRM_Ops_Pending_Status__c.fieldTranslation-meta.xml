@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CRM Ops Pending Status --></label>
+    <name>CRM_Ops_Pending_Status__c</name>
+    <picklistValues>
+        <masterLabel>Area update pending</masterLabel>
+        <translation><!-- Area update pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Booking form under process</masterLabel>
+        <translation><!-- Booking form under process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer documents pending</masterLabel>
+        <translation><!-- Customer documents pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Floor plan pending</masterLabel>
+        <translation><!-- Floor plan pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT error</masterLabel>
+        <translation><!-- IT error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Issue under discussion</masterLabel>
+        <translation><!-- Issue under discussion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>To be issued</masterLabel>
+        <translation><!-- To be issued --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

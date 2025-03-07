@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Verifier_s_Comment_Options__c</fullName>
+    <label>Verifier&apos;s Comment Options</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Matching in both Xpedeon &amp; SalesForce</fullName>
+                <default>false</default>
+                <label>Matching in both Xpedeon &amp; SalesForce</label>
+            </value>
+            <value>
+                <fullName>Bank Receipt Not Allocated</fullName>
+                <default>false</default>
+                <label>Bank Receipt Not Allocated</label>
+            </value>
+            <value>
+                <fullName>Demand Not Booked in Xpedeon</fullName>
+                <default>false</default>
+                <label>Demand Not Booked in Xpedeon</label>
+            </value>
+            <value>
+                <fullName>Excess DLD not transferred to blocking</fullName>
+                <default>false</default>
+                <label>Excess DLD not transferred to blocking</label>
+            </value>
+            <value>
+                <fullName>Shortfall in DLD is not adjusted from blocking</fullName>
+                <default>false</default>
+                <label>Shortfall in DLD is not adjusted from blocking</label>
+            </value>
+            <value>
+                <fullName>Re-allocation done in salesforce but not in Xpedeon</fullName>
+                <default>false</default>
+                <label>Re-allocation done in salesforce but not in Xpedeon</label>
+            </value>
+            <value>
+                <fullName>File note entries posted in salesforce but not in Xpedeon</fullName>
+                <default>false</default>
+                <label>File note entries posted in salesforce but not in Xpedeon</label>
+            </value>
+            <value>
+                <fullName>Incorrect Unit Allocation</fullName>
+                <default>false</default>
+                <label>Incorrect Unit Allocation</label>
+            </value>
+            <value>
+                <fullName>Incorrect GL Allocation</fullName>
+                <default>false</default>
+                <label>Incorrect GL Allocation</label>
+            </value>
+            <value>
+                <fullName>Extension Data Not Updated</fullName>
+                <default>false</default>
+                <label>Extension Data Not Updated</label>
+            </value>
+            <value>
+                <fullName>Transfer &amp; Assignment</fullName>
+                <default>false</default>
+                <label>Transfer &amp; Assignment</label>
+            </value>
+            <value>
+                <fullName>Excess Demand Booked in Xpedeon</fullName>
+                <default>false</default>
+                <label>Excess Demand Booked in Xpedeon</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

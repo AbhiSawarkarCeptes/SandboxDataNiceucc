@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>Category__c</name>
+    <picklistValues>
+        <masterLabel>Adjustment Pending / Rebate Pending</masterLabel>
+        <translation><!-- Adjustment Pending / Rebate Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Interested</masterLabel>
+        <translation><!-- Customer Interested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mortgage</masterLabel>
+        <translation><!-- Mortgage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Contact / Unable to Reach</masterLabel>
+        <translation><!-- No Contact / Unable to Reach --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Pitched</masterLabel>
+        <translation><!-- Not Pitched --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTP</masterLabel>
+        <translation><!-- PTP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid But Not Realized</masterLabel>
+        <translation><!-- Paid But Not Realized --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raise for Cancellation</masterLabel>
+        <translation><!-- Raise for Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regular Follow Up</masterLabel>
+        <translation><!-- Regular Follow Up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA / DLD Not Done</masterLabel>
+        <translation><!-- SPA / DLD Not Done --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swap / Upgrade</masterLabel>
+        <translation><!-- Swap / Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to Pay</masterLabel>
+        <translation><!-- Unable to Pay --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

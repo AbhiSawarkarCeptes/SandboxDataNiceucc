@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Unit --></label>
+    <lookupFilter>
+        <errorMessage><!-- Please select the Unit With status Available Or Requested for hold --></errorMessage>
+    </lookupFilter>
+    <name>Unit__c</name>
+    <relationshipLabel><!-- Unit Holds For SM --></relationshipLabel>
+</CustomFieldTranslation>

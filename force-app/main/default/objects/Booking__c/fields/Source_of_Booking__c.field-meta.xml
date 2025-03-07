@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source_of_Booking__c</fullName>
+    <label>Source of Booking</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+                <label>Channel Partner</label>
+            </value>
+            <value>
+                <fullName>Direct</fullName>
+                <default>false</default>
+                <label>Direct</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect</fullName>
+                <default>false</default>
+                <label>Sobha Connect</label>
+            </value>
+            <value>
+                <fullName>Management Reference</fullName>
+                <default>false</default>
+                <label>Management Reference</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Digital</fullName>
+                <default>false</default>
+                <label>Digital</label>
+            </value>
+            <value>
+                <fullName>Retention</fullName>
+                <default>false</default>
+                <label>Retention</label>
+            </value>
+            <value>
+                <fullName>Employee</fullName>
+                <default>false</default>
+                <label>Employee</label>
+            </value>
+            <value>
+                <fullName>Loyalty Customer</fullName>
+                <default>false</default>
+                <label>Loyalty Customer</label>
+            </value>
+            <value>
+                <fullName>Stand Leads</fullName>
+                <default>false</default>
+                <label>Mall Stands</label>
+            </value>
+            <value>
+                <fullName>Employee reference</fullName>
+                <default>false</default>
+                <label>Employee Reference</label>
+            </value>
+            <value>
+                <fullName>Loyalty Customer Referral</fullName>
+                <default>false</default>
+                <label>Loyalty Customer Referral</label>
+            </value>
+            <value>
+                <fullName>Salesperson initiative</fullName>
+                <default>false</default>
+                <label>Salesperson initiative</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

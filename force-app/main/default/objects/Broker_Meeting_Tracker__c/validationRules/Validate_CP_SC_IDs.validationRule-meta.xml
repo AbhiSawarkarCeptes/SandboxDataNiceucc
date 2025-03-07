@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_CP_SC_IDs</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(Channel_Partner__c=&apos;&apos;, SC_ID__c=&apos;&apos;, If_Broker_Not_Registered_Choose_the_Brok__c=&apos;&apos;),
+AND(Channel_Partner__c!=&apos;&apos;, SC_ID__c!=&apos;&apos;), AND(Channel_Partner__c!=&apos;&apos;,If_Broker_Not_Registered_Choose_the_Brok__c!=&apos;&apos;),AND(SC_ID__c!=&apos;&apos;,If_Broker_Not_Registered_Choose_the_Brok__c!=&apos;&apos;)
+)</errorConditionFormula>
+    <errorMessage>Either the CP or SC ID field must be filled in; neither should not be empty.</errorMessage>
+</ValidationRule>

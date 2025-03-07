@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Calculated as --></label>
+    <name>Calculatedas__c</name>
+    <picklistValues>
+        <masterLabel>Percentage of Agreement Value</masterLabel>
+        <translation><!-- Percentage of Agreement Value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rate list at Unit level</masterLabel>
+        <translation><!-- Rate list at Unit level --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

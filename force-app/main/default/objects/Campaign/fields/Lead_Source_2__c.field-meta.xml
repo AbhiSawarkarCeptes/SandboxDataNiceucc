@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Source_2__c</fullName>
+    <label>Sub Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Lead_Source_1__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+                <label>Facebook</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <label>B</label>
+            </value>
+            <value>
+                <fullName>99 Acres</fullName>
+                <default>false</default>
+                <label>99 Acres</label>
+            </value>
+            <value>
+                <fullName>Magic Bricks</fullName>
+                <default>false</default>
+                <label>Magic Bricks</label>
+            </value>
+            <value>
+                <fullName>Common Floor</fullName>
+                <default>false</default>
+                <label>Common Floor</label>
+            </value>
+            <value>
+                <fullName>Google Search</fullName>
+                <default>false</default>
+                <label>Google Search</label>
+            </value>
+            <value>
+                <fullName>Google Display</fullName>
+                <default>false</default>
+                <label>Google Display</label>
+            </value>
+            <value>
+                <fullName>TOI</fullName>
+                <default>false</default>
+                <label>TOI</label>
+            </value>
+            <value>
+                <fullName>Hindu</fullName>
+                <default>false</default>
+                <label>Hindu</label>
+            </value>
+            <value>
+                <fullName>ABP</fullName>
+                <default>false</default>
+                <label>ABP</label>
+            </value>
+            <value>
+                <fullName>Wadala</fullName>
+                <default>false</default>
+                <label>Wadala</label>
+            </value>
+            <value>
+                <fullName>Kharghar</fullName>
+                <default>false</default>
+                <label>Kharghar</label>
+            </value>
+            <value>
+                <fullName>PropExpo</fullName>
+                <default>false</default>
+                <label>PropExpo</label>
+            </value>
+            <value>
+                <fullName>Property Mela</fullName>
+                <default>false</default>
+                <label>Property Mela</label>
+            </value>
+            <value>
+                <fullName>Small Brochure</fullName>
+                <default>false</default>
+                <label>Small Brochure</label>
+            </value>
+            <value>
+                <fullName>Big Brochure</fullName>
+                <default>false</default>
+                <label>Big Brochure</label>
+            </value>
+            <value>
+                <fullName>BQS</fullName>
+                <default>false</default>
+                <label>BQS</label>
+            </value>
+            <value>
+                <fullName>Mirror</fullName>
+                <default>false</default>
+                <label>Mirror</label>
+            </value>
+            <value>
+                <fullName>HT</fullName>
+                <default>false</default>
+                <label>HT</label>
+            </value>
+            <value>
+                <fullName>Red FM</fullName>
+                <default>false</default>
+                <label>Red FM</label>
+            </value>
+            <value>
+                <fullName>Magic FM</fullName>
+                <default>false</default>
+                <label>Magic FM</label>
+            </value>
+            <value>
+                <fullName>Fever FM</fullName>
+                <default>false</default>
+                <label>Fever FM</label>
+            </value>
+            <value>
+                <fullName>Nasha</fullName>
+                <default>false</default>
+                <label>Nasha</label>
+            </value>
+            <value>
+                <fullName>Mirchi</fullName>
+                <default>false</default>
+                <label>Mirchi</label>
+            </value>
+            <value>
+                <fullName>Ishq</fullName>
+                <default>false</default>
+                <label>Ishq</label>
+            </value>
+            <value>
+                <fullName>Hoardings</fullName>
+                <default>false</default>
+                <label>Hoardings</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Online</controllingFieldValue>
+            <valueName>Facebook</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Online</controllingFieldValue>
+            <valueName>99 Acres</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Online</controllingFieldValue>
+            <valueName>Magic Bricks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Online</controllingFieldValue>
+            <valueName>Common Floor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Online</controllingFieldValue>
+            <valueName>Google Search</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Online</controllingFieldValue>
+            <valueName>Google Display</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper</controllingFieldValue>
+            <controllingFieldValue>Print</controllingFieldValue>
+            <valueName>TOI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper</controllingFieldValue>
+            <valueName>Hindu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper</controllingFieldValue>
+            <valueName>ABP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hoardings</controllingFieldValue>
+            <valueName>Wadala</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hoardings</controllingFieldValue>
+            <valueName>Kharghar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events</controllingFieldValue>
+            <valueName>PropExpo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events</controllingFieldValue>
+            <valueName>Property Mela</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brochure</controllingFieldValue>
+            <valueName>Small Brochure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brochure</controllingFieldValue>
+            <valueName>Big Brochure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OOH</controllingFieldValue>
+            <valueName>BQS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OOH</controllingFieldValue>
+            <valueName>Hoardings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Print</controllingFieldValue>
+            <valueName>Mirror</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Print</controllingFieldValue>
+            <valueName>HT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Radio</controllingFieldValue>
+            <valueName>Red FM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Radio</controllingFieldValue>
+            <valueName>Magic FM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Radio</controllingFieldValue>
+            <valueName>Fever FM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Radio</controllingFieldValue>
+            <valueName>Nasha</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Radio</controllingFieldValue>
+            <valueName>Mirchi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Radio</controllingFieldValue>
+            <valueName>Ishq</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Broker Category --></label>
+    <name>Broker_Category__c</name>
+    <picklistValues>
+        <masterLabel>Broker - Intnl</masterLabel>
+        <translation><!-- Broker - Intnl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker - RERA</masterLabel>
+        <translation><!-- Broker - RERA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker - UAE</masterLabel>
+        <translation><!-- Broker - UAE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Connect - Intnl - Company</masterLabel>
+        <translation><!-- Sobha Connect - Intnl - Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Connect - Intnl - Individual</masterLabel>
+        <translation><!-- Sobha Connect - Intnl - Individual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Connect - UAE - Company</masterLabel>
+        <translation><!-- Sobha Connect - UAE - Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Connect - UAE - Individual</masterLabel>
+        <translation><!-- Sobha Connect - UAE - Individual --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booking_Source_Reference_By_Others__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( Opportunity__r.Name_O__c) , &quot;N/A&quot;, &quot;Name - &quot;+Opportunity__r.Name_O__c+&quot; | Mobile -&quot;+ Opportunity__r.Mobile_No_O__c +&quot; | Email - &quot;+ Opportunity__r.Email_Id_O__c +&quot; | Relation - &quot;+ Opportunity__r.Relation_With_Radius_O__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Booking Source (Reference By Others)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

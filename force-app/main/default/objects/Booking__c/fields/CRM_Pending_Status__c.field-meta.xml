@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRM_Pending_Status__c</fullName>
+    <label>CRM Pending Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Follow up required</fullName>
+                <default>false</default>
+                <label>Follow up required</label>
+            </value>
+            <value>
+                <fullName>No response</fullName>
+                <default>false</default>
+                <label>No response</label>
+            </value>
+            <value>
+                <fullName>Not Contactable</fullName>
+                <default>false</default>
+                <label>Not Contactable</label>
+            </value>
+            <value>
+                <fullName>Promise to sign</fullName>
+                <default>false</default>
+                <label>Promise to sign</label>
+            </value>
+            <value>
+                <fullName>Promise to pay</fullName>
+                <default>false</default>
+                <label>Promise to pay</label>
+            </value>
+            <value>
+                <fullName>Signed/Couriered</fullName>
+                <default>false</default>
+                <label>Signed/Couriered</label>
+            </value>
+            <value>
+                <fullName>Language Barrier</fullName>
+                <default>false</default>
+                <label>Language Barrier</label>
+            </value>
+            <value>
+                <fullName>Management Reference/ Employee</fullName>
+                <default>false</default>
+                <label>Management Reference/ Employee</label>
+            </value>
+            <value>
+                <fullName>Call Back Request</fullName>
+                <default>false</default>
+                <label>Call Back Request</label>
+            </value>
+            <value>
+                <fullName>IT error</fullName>
+                <default>false</default>
+                <label>IT error</label>
+            </value>
+            <value>
+                <fullName>In touch with Sales</fullName>
+                <default>false</default>
+                <label>In touch with Sales</label>
+            </value>
+            <value>
+                <fullName>In touch with Broker</fullName>
+                <default>false</default>
+                <label>In touch with Broker</label>
+            </value>
+            <value>
+                <fullName>In touch with Customer</fullName>
+                <default>false</default>
+                <label>In touch with Customer</label>
+            </value>
+            <value>
+                <fullName>Final Notice</fullName>
+                <default>false</default>
+                <label>Final Notice</label>
+            </value>
+            <value>
+                <fullName>Forfeiture Notice</fullName>
+                <default>false</default>
+                <label>Forfeiture Notice</label>
+            </value>
+            <value>
+                <fullName>Requested Cancellation</fullName>
+                <default>false</default>
+                <label>Requested Cancellation</label>
+            </value>
+            <value>
+                <fullName>Cancellation under process</fullName>
+                <default>false</default>
+                <label>Cancellation under process</label>
+            </value>
+            <value>
+                <fullName>Change of ownership</fullName>
+                <default>false</default>
+                <label>Change of ownership</label>
+            </value>
+            <value>
+                <fullName>Pending with Development</fullName>
+                <default>false</default>
+                <label>Pending with Development</label>
+            </value>
+            <value>
+                <fullName>Pending with Sales Ops</fullName>
+                <default>false</default>
+                <label>Pending with Sales Ops</label>
+            </value>
+            <value>
+                <fullName>Swap/Upgrade</fullName>
+                <default>false</default>
+                <label>Swap/Upgrade</label>
+            </value>
+            <value>
+                <fullName>Dispute</fullName>
+                <default>false</default>
+                <label>Dispute</label>
+            </value>
+            <value>
+                <fullName>Legal case</fullName>
+                <default>false</default>
+                <label>Legal case</label>
+            </value>
+            <value>
+                <fullName>DLD Termination</fullName>
+                <default>false</default>
+                <label>DLD Termination</label>
+            </value>
+            <value>
+                <fullName>File Note under process</fullName>
+                <default>false</default>
+                <label>File Note under process</label>
+            </value>
+            <value>
+                <fullName>Under discussion with Management</fullName>
+                <default>false</default>
+                <label>Under discussion with Management</label>
+            </value>
+            <value>
+                <fullName>Promise to submit docs</fullName>
+                <default>false</default>
+                <label>Promise to submit docs</label>
+            </value>
+            <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <label>Paid</label>
+            </value>
+            <value>
+                <fullName>Docs Submitted</fullName>
+                <default>false</default>
+                <label>Docs Submitted</label>
+            </value>
+            <value>
+                <fullName>To Send Final Notice</fullName>
+                <default>false</default>
+                <label>To Send Final Notice</label>
+            </value>
+            <value>
+                <fullName>Payment pending from Customer</fullName>
+                <default>false</default>
+                <label>Payment pending from Customer</label>
+            </value>
+            <value>
+                <fullName>14 August, 2023</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>14 August, 2023</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

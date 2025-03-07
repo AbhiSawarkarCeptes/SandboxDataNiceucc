@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Resale Type --></label>
+    <name>Resale_Type__c</name>
+    <picklistValues>
+        <masterLabel>Oqood for Apt &amp; Villas</masterLabel>
+        <translation><!-- Oqood for Apt &amp; Villas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oqood for Plots</masterLabel>
+        <translation><!-- Oqood for Plots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale with Mortgage</masterLabel>
+        <translation><!-- Resale with Mortgage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Transfer for Apt &amp; Villas</masterLabel>
+        <translation><!-- Title Transfer for Apt &amp; Villas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Transfer for Plots</masterLabel>
+        <translation><!-- Title Transfer for Plots --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

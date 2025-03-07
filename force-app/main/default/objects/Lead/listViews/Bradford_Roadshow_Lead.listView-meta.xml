@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bradford_Roadshow_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Bradford Roadshow</label>
+    <queue>Bradford_Roadshow</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

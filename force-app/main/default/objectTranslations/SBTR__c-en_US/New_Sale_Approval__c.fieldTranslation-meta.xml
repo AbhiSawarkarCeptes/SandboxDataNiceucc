@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NSA --></label>
+    <name>New_Sale_Approval__c</name>
+    <relationshipLabel><!-- SBTRs --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mani_Tyagi_Today_s_Payment_Request</fullName>
+    <columns>NAME</columns>
+    <columns>Name__c</columns>
+    <columns>Unit__c</columns>
+    <columns>Mode__c</columns>
+    <columns>Mode_Option__c</columns>
+    <columns>Currency__c</columns>
+    <columns>Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Status_Lapse__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Mani Tyagi Today&apos;s Payment Request</label>
+    <sharedTo>
+        <role>Vice_President_6</role>
+    </sharedTo>
+</ListView>

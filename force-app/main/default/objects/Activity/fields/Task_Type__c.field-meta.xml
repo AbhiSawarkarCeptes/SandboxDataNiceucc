@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task_Type__c</fullName>
+    <label>Task Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Enquiry Received</fullName>
+                <default>false</default>
+                <label>Enquiry Received</label>
+            </value>
+            <value>
+                <fullName>Presales Call</fullName>
+                <default>false</default>
+                <label>Presales Call</label>
+            </value>
+            <value>
+                <fullName>Sales Call</fullName>
+                <default>false</default>
+                <label>Sales Call</label>
+            </value>
+            <value>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+                <label>Channel Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Contact_Leads</fullName>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Lead_Id__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>FULL_NAME</columns>
+    <columns>RDS_Country__c</columns>
+    <columns>RDS_Country_Code__c</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>No_Contact_Counter__c</columns>
+    <columns>Presales_Agent__c</columns>
+    <columns>Last_Call_Attempt_Date__c</columns>
+    <columns>Last_Call_Attempt_Status__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.LAST_NAME</field>
+        <operation>notContain</operation>
+        <value>test</value>
+    </filters>
+    <filters>
+        <field>Last_Call_Attempt_Status__c</field>
+        <operation>equals</operation>
+        <value>No Contact</value>
+    </filters>
+    <filters>
+        <field>Lead_Source__c</field>
+        <operation>equals</operation>
+        <value>Digital</value>
+    </filters>
+    <filters>
+        <field>is_serviced__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>8/1/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notContain</operation>
+        <value>Lost</value>
+    </filters>
+    <label>No Contact Leads</label>
+    <sharedTo>
+        <role>GM_Digital_Marketing_Telesales</role>
+        <role>Presales_Agent</role>
+    </sharedTo>
+</ListView>

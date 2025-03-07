@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Fields_Missing</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(IsConverted = true , OR (
+IsBlank (Type_Investment_Or_Self_Use__c),
+IsBlank (LOOKING_FOR__c),
+IsBlank (Opportunity_Value__c),
+IsBlank (LOCATION_PREFERENCE__c),
+IsBlank (Estimated_Timeline_for_Purchase__c),
+IsBlank (NATIONALITY_ON_CONVERT__c),
+IsBlank (Language_On_Convert__c),
+
+IsBlank (INITIAL_INFO_From_TSA__c),
+IsBlank (Level_Warm_Or_Hot__c),
+IsBlank (DATE_TIME_To_Contact_Lead__c),
+IsBlank (INITIAL_FEEDBACK__c),
+IsBlank (FOLLOW_UP_1st__c),
+
+IsBlank (FOLLOW_UP_2nd__c),
+IsBlank (FOLLOW_UP_3rd__c)),
+ $Profile.Name == &apos;Presales&apos;)</errorConditionFormula>
+    <errorMessage>Please input required fields in mentioned Team Performance section</errorMessage>
+</ValidationRule>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incentive_Paid</fullName>
+    <active>true</active>
+    <label>Incentive Paid</label>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected by Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected by Payroll Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted to Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted to Payroll Team</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bank_Name__c</picklist>
+        <values>
+            <fullName>Dubai Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emirates Islamic Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FAB %28First Abu Dhabi Bank%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RAKBANK</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Mode__c</picklist>
+        <values>
+            <fullName>Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wire Transfer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

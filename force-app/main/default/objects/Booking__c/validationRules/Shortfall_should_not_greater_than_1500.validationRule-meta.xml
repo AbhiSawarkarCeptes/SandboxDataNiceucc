@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shortfall_should_not_greater_than_1500</fullName>
+    <active>true</active>
+    <description>Shortfall Amount should not be greater than 1500 AED</description>
+    <errorConditionFormula>Shortfall_Amount__c &gt;1500</errorConditionFormula>
+    <errorMessage>Shortfall Amount should not be greater than 1500</errorMessage>
+</ValidationRule>

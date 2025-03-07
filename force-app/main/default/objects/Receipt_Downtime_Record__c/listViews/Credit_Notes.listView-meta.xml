@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Notes</fullName>
+    <columns>NAME</columns>
+    <columns>Opportunity__c</columns>
+    <columns>Booking__c</columns>
+    <columns>Receipt_Date__c</columns>
+    <columns>Mode__c</columns>
+    <columns>Total_Amount__c</columns>
+    <columns>Currency__c</columns>
+    <columns>Corporate_Collection_Control_Report__c</columns>
+    <columns>Registration_Collection_Control_Report__c</columns>
+    <columns>Receipt_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Mode__c</field>
+        <operation>equals</operation>
+        <value>Credit Note</value>
+    </filters>
+    <label>Credit Notes</label>
+    <sharedTo>
+        <role>Finance</role>
+    </sharedTo>
+</ListView>

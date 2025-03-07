@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CountryRisIndiathenCityRmndatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND((ISPICKVAL( Country_R__c , &apos;India&apos;)) ,  ISPICKVAL(City_R__c , &apos;&apos;) )</errorConditionFormula>
+    <errorMessage>Country(R) is India then you must select City(R)</errorMessage>
+</ValidationRule>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_For_Cancellation_D__c</fullName>
+    <label>Reason For Cancellation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>15 days - 0%</fullName>
+                <default>false</default>
+                <label>15 days - 0%</label>
+            </value>
+            <value>
+                <fullName>30 days - unit not qualified</fullName>
+                <default>false</default>
+                <label>30 days - unit not qualified</label>
+            </value>
+            <value>
+                <fullName>Auto cancellation (7 days policy)</fullName>
+                <default>false</default>
+                <label>Auto cancellation (7 days policy)</label>
+            </value>
+            <value>
+                <fullName>Cancel &amp; Rebook</fullName>
+                <default>false</default>
+                <label>Cancel &amp; Rebook</label>
+            </value>
+            <value>
+                <fullName>Cancel &amp; Swap</fullName>
+                <default>false</default>
+                <label>Cancel &amp; Swap</label>
+            </value>
+            <value>
+                <fullName>Cancellation &amp; Transfer</fullName>
+                <default>false</default>
+                <label>Cancellation &amp; Transfer</label>
+            </value>
+            <value>
+                <fullName>Cancelled by CRM</fullName>
+                <default>false</default>
+                <label>Cancelled by CRM</label>
+            </value>
+            <value>
+                <fullName>Client request for cancellation</fullName>
+                <default>false</default>
+                <label>Client request for cancellation</label>
+            </value>
+            <value>
+                <fullName>Low Funds</fullName>
+                <default>false</default>
+                <label>Low Funds</label>
+            </value>
+            <value>
+                <fullName>Management Instruction</fullName>
+                <default>false</default>
+                <label>Management Instruction</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>PR rejected due to non-submission of NSA</fullName>
+                <default>false</default>
+                <label>PR rejected due to non-submission of NSA</label>
+            </value>
+            <value>
+                <fullName>Auto cancellation (14 days policy)</fullName>
+                <default>false</default>
+                <label>Auto cancellation (14 days policy)</label>
+            </value>
+            <value>
+                <fullName>15 days - 2%</fullName>
+                <default>false</default>
+                <label>15 days - 2%</label>
+            </value>
+            <value>
+                <fullName>14Days - Not Qualified</fullName>
+                <default>false</default>
+                <label>14Days - Not Qualified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Stage of Booking --></label>
+    <name>Stage_of_Booking__c</name>
+    <picklistValues>
+        <masterLabel>Blocked</masterLabel>
+        <translation><!-- Blocked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Booked</masterLabel>
+        <translation><!-- Booked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EOI</masterLabel>
+        <translation><!-- EOI --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PCC Status --></label>
+    <name>PCC_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved by Audit</masterLabel>
+        <translation><!-- Approved by Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for Accounts Approval</masterLabel>
+        <translation><!-- Pending for Accounts Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for Audit Approval</masterLabel>
+        <translation><!-- Pending for Audit Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-Submitted to Accounts</masterLabel>
+        <translation><!-- Re-Submitted to Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-Submitted to Audit</masterLabel>
+        <translation><!-- Re-Submitted to Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-Submitted to Collections</masterLabel>
+        <translation><!-- Re-Submitted to Collections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Accounts</masterLabel>
+        <translation><!-- Rejected by Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Audit</masterLabel>
+        <translation><!-- Rejected by Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Audit &amp; Submitted to Accounts and CRM</masterLabel>
+        <translation><!-- Rejected by Audit &amp; Submitted to Accounts and CRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Audit &amp; Submitted to Collections and CRM</masterLabel>
+        <translation><!-- Rejected by Audit &amp; Submitted to Collections and CRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Audit Submitted to Accounts</masterLabel>
+        <translation><!-- Rejected by Audit Submitted to Accounts --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

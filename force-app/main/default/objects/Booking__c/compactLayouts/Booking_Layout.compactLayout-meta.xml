@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booking_Layout</fullName>
+    <fields>Opportunity__c</fields>
+    <fields>Name</fields>
+    <fields>Project__c</fields>
+    <fields>Tower__c</fields>
+    <fields>Unit__c</fields>
+    <fields>Quotation__c</fields>
+    <label>Booking Layout</label>
+</CompactLayout>

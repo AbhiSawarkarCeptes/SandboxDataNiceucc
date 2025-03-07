@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Update --></label>
+    <name>Call_Update__c</name>
+    <picklistValues>
+        <masterLabel>Angry</masterLabel>
+        <translation><!-- Angry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Call Back</masterLabel>
+        <translation><!-- Call Back --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaint</masterLabel>
+        <translation><!-- Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Happy</masterLabel>
+        <translation><!-- Happy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Response</masterLabel>
+        <translation><!-- No Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Contactable</masterLabel>
+        <translation><!-- Not Contactable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Query</masterLabel>
+        <translation><!-- Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Update Details</masterLabel>
+        <translation><!-- Update Details --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong Number</masterLabel>
+        <translation><!-- Wrong Number --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

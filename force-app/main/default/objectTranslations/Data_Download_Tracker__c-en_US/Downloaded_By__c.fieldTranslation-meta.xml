@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Downloaded By --></label>
+    <name>Downloaded_By__c</name>
+    <relationshipLabel><!-- Data Download Trackers --></relationshipLabel>
+</CustomFieldTranslation>

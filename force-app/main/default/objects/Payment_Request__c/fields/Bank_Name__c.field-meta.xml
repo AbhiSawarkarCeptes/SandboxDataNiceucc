@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bank_Name__c</fullName>
+    <label>Bank Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asia Commercial Bank Ltd</fullName>
+                <default>false</default>
+                <label>Asia Commercial Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Australia &amp; New Zealand Banking Group</fullName>
+                <default>false</default>
+                <label>Australia &amp; New Zealand Banking Group</label>
+            </value>
+            <value>
+                <fullName>Axis Bank</fullName>
+                <default>false</default>
+                <label>Axis Bank</label>
+            </value>
+            <value>
+                <fullName>Bank Of America</fullName>
+                <default>false</default>
+                <label>Bank Of America</label>
+            </value>
+            <value>
+                <fullName>Bank Of China(Hong Kong)</fullName>
+                <default>false</default>
+                <label>Bank Of China(Hong Kong)</label>
+            </value>
+            <value>
+                <fullName>Bank Of India</fullName>
+                <default>false</default>
+                <label>Bank Of India</label>
+            </value>
+            <value>
+                <fullName>Bank Of Taiwan</fullName>
+                <default>false</default>
+                <label>Bank Of Taiwan</label>
+            </value>
+            <value>
+                <fullName>Bank Of Tokyo-Mitsubishi UFJ, Ltd.</fullName>
+                <default>false</default>
+                <label>Bank Of Tokyo-Mitsubishi UFJ, Ltd.</label>
+            </value>
+            <value>
+                <fullName>Barclays Bank Plc</fullName>
+                <default>false</default>
+                <label>Barclays Bank Plc</label>
+            </value>
+            <value>
+                <fullName>Citibank</fullName>
+                <default>false</default>
+                <label>Citibank</label>
+            </value>
+            <value>
+                <fullName>DBS Bank Ltd</fullName>
+                <default>false</default>
+                <label>DBS Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Deutsche Bank AG</fullName>
+                <default>false</default>
+                <label>Deutsche Bank AG</label>
+            </value>
+            <value>
+                <fullName>Hong Leong Bank</fullName>
+                <default>false</default>
+                <label>Hong Leong Bank</label>
+            </value>
+            <value>
+                <fullName>HSBC Holdings</fullName>
+                <default>false</default>
+                <label>HSBC Holdings</label>
+            </value>
+            <value>
+                <fullName>ICICI Bank</fullName>
+                <default>false</default>
+                <label>ICICI Bank</label>
+            </value>
+            <value>
+                <fullName>Industrial &amp; Commercial Bank of China (ICBC)</fullName>
+                <default>false</default>
+                <label>Industrial &amp; Commercial Bank of China (ICBC)</label>
+            </value>
+            <value>
+                <fullName>JPMorgan Chase Bank</fullName>
+                <default>false</default>
+                <label>JPMorgan Chase Bank</label>
+            </value>
+            <value>
+                <fullName>Malayan Banking Berhad (Maybank)</fullName>
+                <default>false</default>
+                <label>Malayan Banking Berhad (Maybank)</label>
+            </value>
+            <value>
+                <fullName>Royal Bank Of Canada</fullName>
+                <default>false</default>
+                <label>Royal Bank Of Canada</label>
+            </value>
+            <value>
+                <fullName>Royal Bank Of Scotland</fullName>
+                <default>false</default>
+                <label>Royal Bank Of Scotland</label>
+            </value>
+            <value>
+                <fullName>Societe Generale</fullName>
+                <default>false</default>
+                <label>Societe Generale</label>
+            </value>
+            <value>
+                <fullName>Standard Chartered</fullName>
+                <default>false</default>
+                <label>Standard Chartered</label>
+            </value>
+            <value>
+                <fullName>State Bank Of India</fullName>
+                <default>false</default>
+                <label>State Bank Of India</label>
+            </value>
+            <value>
+                <fullName>Wells Fargo</fullName>
+                <default>false</default>
+                <label>Wells Fargo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Booking In Process</masterLabel>
+        <translation><!-- Booking In Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation In Progress</masterLabel>
+        <translation><!-- Cancellation In Progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Processed</masterLabel>
+        <translation><!-- Processed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UnProcessed</masterLabel>
+        <translation><!-- UnProcessed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

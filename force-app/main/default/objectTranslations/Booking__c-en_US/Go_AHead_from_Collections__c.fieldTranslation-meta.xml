@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Go AHead from Collections --></label>
+    <name>Go_AHead_from_Collections__c</name>
+</CustomFieldTranslation>

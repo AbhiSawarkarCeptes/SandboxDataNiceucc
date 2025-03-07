@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Signed_Status__c</fullName>
+    <defaultValue>&quot;Pending&quot;</defaultValue>
+    <label>Signed Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Booking Form Uploaded</fullName>
+                <default>false</default>
+                <label>Booking Form Uploaded</label>
+            </value>
+            <value>
+                <fullName>Resubmit to Submitter</fullName>
+                <default>false</default>
+                <label>Resubmit to Submitter</label>
+            </value>
+            <value>
+                <fullName>Resubmitted for Document Verification</fullName>
+                <default>false</default>
+                <label>Resubmitted for Document Verification</label>
+            </value>
+            <value>
+                <fullName>No Cancellation</fullName>
+                <default>false</default>
+                <label>No Cancellation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

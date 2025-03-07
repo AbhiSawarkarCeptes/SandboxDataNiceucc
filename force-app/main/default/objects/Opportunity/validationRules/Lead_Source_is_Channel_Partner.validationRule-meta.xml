@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Source_is_Channel_Partner</fullName>
+    <active>false</active>
+    <description>If Lead Source Value is Channel Partner then Channel Partner Field Mandatory</description>
+    <errorConditionFormula>AND 
+( 
+ISPICKVAL( LeadSource , &quot;Channel Partner&quot;), 
+ISBLANK( Channel_Partner__c) 
+)</errorConditionFormula>
+    <errorMessage>Please fill the Channel Partner</errorMessage>
+</ValidationRule>

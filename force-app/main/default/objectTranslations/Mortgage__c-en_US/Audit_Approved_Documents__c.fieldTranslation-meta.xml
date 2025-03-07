@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Audit Approved Documents --></label>
+    <name>Audit_Approved_Documents__c</name>
+    <picklistValues>
+        <masterLabel>Customer Signed DSR</masterLabel>
+        <translation><!-- Customer Signed DSR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mortgage Contract Cheque</masterLabel>
+        <translation><!-- Mortgage Contract Cheque --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

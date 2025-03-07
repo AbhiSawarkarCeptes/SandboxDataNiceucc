@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mall_Name__c</fullName>
+    <label>Mall Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MOE</fullName>
+                <default>false</default>
+                <label>MOE</label>
+            </value>
+            <value>
+                <fullName>DCC</fullName>
+                <default>false</default>
+                <label>DCC</label>
+            </value>
+            <value>
+                <fullName>Moscow Exhibition</fullName>
+                <default>false</default>
+                <label>Moscow Exhibition</label>
+            </value>
+            <value>
+                <fullName>MCC</fullName>
+                <default>false</default>
+                <label>MCC</label>
+            </value>
+            <value>
+                <fullName>St Petersburg Exhibition</fullName>
+                <default>false</default>
+                <label>St Petersburg Exhibition</label>
+            </value>
+            <value>
+                <fullName>A place in the Sun : UK Expo</fullName>
+                <default>false</default>
+                <label>A place in the Sun : UK Expo</label>
+            </value>
+            <value>
+                <fullName>Movenpick JBR</fullName>
+                <default>false</default>
+                <label>Movenpick JBR</label>
+            </value>
+            <value>
+                <fullName>Sofitel Downtown</fullName>
+                <default>false</default>
+                <label>Sofitel Downtown</label>
+            </value>
+            <value>
+                <fullName>United Expo, Singapore</fullName>
+                <default>false</default>
+                <label>United Expo, Singapore</label>
+            </value>
+            <value>
+                <fullName>LPS Shanghai Exhibition</fullName>
+                <default>false</default>
+                <label>LPS Shanghai Exhibition</label>
+            </value>
+            <value>
+                <fullName>Nakheel Mall</fullName>
+                <default>false</default>
+                <label>Nakheel Mall</label>
+            </value>
+            <value>
+                <fullName>Bur Juman</fullName>
+                <default>false</default>
+                <label>Bur Juman</label>
+            </value>
+            <value>
+                <fullName>Dubai Boat Show</fullName>
+                <default>false</default>
+                <label>Dubai Boat Show</label>
+            </value>
+            <value>
+                <fullName>China Property Expo – Shanghai Expo Mart</fullName>
+                <default>false</default>
+                <label>China Property Expo – Shanghai Expo Mart</label>
+            </value>
+            <value>
+                <fullName>DFC</fullName>
+                <default>false</default>
+                <label>DFC</label>
+            </value>
+            <value>
+                <fullName>Radisson Blu Marina</fullName>
+                <default>false</default>
+                <label>Radisson Blu Marina</label>
+            </value>
+            <value>
+                <fullName>IREX Mumbai – St. Regis 2024</fullName>
+                <default>false</default>
+                <label>IREX Mumbai – St. Regis 2024</label>
+            </value>
+            <value>
+                <fullName>QLP China -2024</fullName>
+                <default>false</default>
+                <label>QLP China -2024</label>
+            </value>
+            <value>
+                <fullName>Sobha Realty Metro Stand</fullName>
+                <default>false</default>
+                <label>Sobha Realty Metro Stand</label>
+            </value>
+            <value>
+                <fullName>VR activation London</fullName>
+                <default>false</default>
+                <label>VR activation London</label>
+            </value>
+            <value>
+                <fullName>APITS London</fullName>
+                <default>false</default>
+                <label>APITS London</label>
+            </value>
+            <value>
+                <fullName>Delhi Airport - Stand</fullName>
+                <default>false</default>
+                <label>Delhi Airport - Stand</label>
+            </value>
+            <value>
+                <fullName>IREX Hyderabad – Hotel Trident</fullName>
+                <default>false</default>
+                <label>IREX Hyderabad – Hotel Trident</label>
+            </value>
+            <value>
+                <fullName>APEX Expo– Javits Centre, New York, USA</fullName>
+                <default>false</default>
+                <label>APEX Expo– Javits Centre, New York, USA</label>
+            </value>
+            <value>
+                <fullName>Sheraton Deira Creek Hotel</fullName>
+                <default>false</default>
+                <label>Sheraton Deira Creek Hotel</label>
+            </value>
+            <value>
+                <fullName>BLS Global - Turkey</fullName>
+                <default>false</default>
+                <label>BLS Global - Turkey</label>
+            </value>
+            <value>
+                <fullName>TOI SOBHA EVENT 2024</fullName>
+                <default>false</default>
+                <label>TOI SOBHA EVENT 2024</label>
+            </value>
+            <value>
+                <fullName>NRI ONE SINGAPORE 2024</fullName>
+                <default>false</default>
+                <label>NRI ONE SINGAPORE 2024</label>
+            </value>
+            <value>
+                <fullName>IREX NEW DELHI 2024</fullName>
+                <default>false</default>
+                <label>IREX NEW DELHI 2024</label>
+            </value>
+            <value>
+                <fullName>CITYSCAPE QATAR - 2024</fullName>
+                <default>false</default>
+                <label>CITYSCAPE QATAR - 2024</label>
+            </value>
+            <value>
+                <fullName>BLS NYC REAL ESTATE EXPO 2024</fullName>
+                <default>false</default>
+                <label>BLS NYC REAL ESTATE EXPO 2024</label>
+            </value>
+            <value>
+                <fullName>IREIS ABU DHABI 2024</fullName>
+                <default>false</default>
+                <label>IREIS ABU DHABI 2024</label>
+            </value>
+            <value>
+                <fullName>BLS Mumbai 2024</fullName>
+                <default>false</default>
+                <label>BLS Mumbai 2024</label>
+            </value>
+            <value>
+                <fullName>Canada IPS 2024</fullName>
+                <default>false</default>
+                <label>Canada IPS 2024</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

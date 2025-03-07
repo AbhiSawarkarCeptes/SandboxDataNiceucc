@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Dispositions__c</fullName>
+    <label>Sub Dispositions</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Call_Attempt_Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ringing</fullName>
+                <default>false</default>
+                <label>Ringing</label>
+            </value>
+            <value>
+                <fullName>Not Reachable</fullName>
+                <default>false</default>
+                <label>Not Reachable</label>
+            </value>
+            <value>
+                <fullName>Call Busy</fullName>
+                <default>false</default>
+                <label>Call Busy</label>
+            </value>
+            <value>
+                <fullName>Swicthed Off</fullName>
+                <default>false</default>
+                <label>Swicthed Off</label>
+            </value>
+            <value>
+                <fullName>Invalid Number</fullName>
+                <default>false</default>
+                <label>Invalid Number</label>
+            </value>
+            <value>
+                <fullName>Never Inquired</fullName>
+                <default>false</default>
+                <label>Never Inquired</label>
+            </value>
+            <value>
+                <fullName>Inquired By Mistake</fullName>
+                <default>false</default>
+                <label>Inquired By Mistake</label>
+            </value>
+            <value>
+                <fullName>Job  Seeker</fullName>
+                <default>false</default>
+                <label>Job  Seeker</label>
+            </value>
+            <value>
+                <fullName>Rent Inquiry</fullName>
+                <default>false</default>
+                <label>Rent Inquiry</label>
+            </value>
+            <value>
+                <fullName>Personal Business Interest</fullName>
+                <default>false</default>
+                <label>Personal Business Interest</label>
+            </value>
+            <value>
+                <fullName>Broker Inquiry</fullName>
+                <default>false</default>
+                <label>Broker Inquiry</label>
+            </value>
+            <value>
+                <fullName>Interested in Future</fullName>
+                <default>false</default>
+                <label>Interested in Future</label>
+            </value>
+            <value>
+                <fullName>Call Back No Contact</fullName>
+                <default>false</default>
+                <label>Call Back No Contact</label>
+            </value>
+            <value>
+                <fullName>Need Time to Think</fullName>
+                <default>false</default>
+                <label>Need Time to Think</label>
+            </value>
+            <value>
+                <fullName>Call Back Busy</fullName>
+                <default>false</default>
+                <label>Call Back Busy</label>
+            </value>
+            <value>
+                <fullName>Location Not Preferred</fullName>
+                <default>false</default>
+                <label>Location Not Preferred</label>
+            </value>
+            <value>
+                <fullName>Booked with competition</fullName>
+                <default>false</default>
+                <label>Booked with competition</label>
+            </value>
+            <value>
+                <fullName>Wants Ready Project Only</fullName>
+                <default>false</default>
+                <label>Wants Ready Project Only</label>
+            </value>
+            <value>
+                <fullName>Already Invested</fullName>
+                <default>false</default>
+                <label>Already Invested</label>
+            </value>
+            <value>
+                <fullName>Not happy with Size of Aparment</fullName>
+                <default>false</default>
+                <label>Not happy with Size of Aparment</label>
+            </value>
+            <value>
+                <fullName>Choice of Inventory not available</fullName>
+                <default>false</default>
+                <label>Choice of Inventory not available</label>
+            </value>
+            <value>
+                <fullName>Desired Configuration Not Available</fullName>
+                <default>false</default>
+                <label>Desired Configuration Not Available</label>
+            </value>
+            <value>
+                <fullName>Low Budget</fullName>
+                <default>false</default>
+                <label>Low Budget</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Follow Up-Qualified</fullName>
+                <default>false</default>
+                <label>Follow Up-Qualified</label>
+            </value>
+            <value>
+                <fullName>Follow up - email</fullName>
+                <default>false</default>
+                <label>Follow up - email</label>
+            </value>
+            <value>
+                <fullName>Follow up - social</fullName>
+                <default>false</default>
+                <label>Follow up - social</label>
+            </value>
+            <value>
+                <fullName>Visit Proposed</fullName>
+                <default>false</default>
+                <label>Visit Proposed</label>
+            </value>
+            <value>
+                <fullName>Visit Confirmed</fullName>
+                <default>false</default>
+                <label>Visit Confirmed</label>
+            </value>
+            <value>
+                <fullName>Visit Done</fullName>
+                <default>false</default>
+                <label>Visit Done</label>
+            </value>
+            <value>
+                <fullName>Meeting Proposed</fullName>
+                <default>false</default>
+                <label>Meeting Proposed</label>
+            </value>
+            <value>
+                <fullName>Meeting Done</fullName>
+                <default>false</default>
+                <label>Meeting Done</label>
+            </value>
+            <value>
+                <fullName>Meeting Cancelled</fullName>
+                <default>false</default>
+                <label>Meeting Cancelled</label>
+            </value>
+            <value>
+                <fullName>Home Presentation</fullName>
+                <default>false</default>
+                <label>Home Presentation</label>
+            </value>
+            <value>
+                <fullName>Office Presentation</fullName>
+                <default>false</default>
+                <label>Office Presentation</label>
+            </value>
+            <value>
+                <fullName>Tele-Meeting Fixed</fullName>
+                <default>false</default>
+                <label>Tele-Meeting Fixed</label>
+            </value>
+            <value>
+                <fullName>Tele-Meeting Done</fullName>
+                <default>false</default>
+                <label>Tele-Meeting Done</label>
+            </value>
+            <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <label>Paid</label>
+            </value>
+            <value>
+                <fullName>PTP</fullName>
+                <default>false</default>
+                <label>PTP</label>
+            </value>
+            <value>
+                <fullName>RTP</fullName>
+                <default>false</default>
+                <label>RTP</label>
+            </value>
+            <value>
+                <fullName>Payment Plan Change</fullName>
+                <default>false</default>
+                <label>Payment Plan Change</label>
+            </value>
+            <value>
+                <fullName>Cancellation Request</fullName>
+                <default>false</default>
+                <label>Cancellation Request</label>
+            </value>
+            <value>
+                <fullName>No booking form</fullName>
+                <default>false</default>
+                <label>No booking form</label>
+            </value>
+            <value>
+                <fullName>Issue Case</fullName>
+                <default>false</default>
+                <label>Issue Case</label>
+            </value>
+            <value>
+                <fullName>MSO</fullName>
+                <default>false</default>
+                <label>MSO</label>
+            </value>
+            <value>
+                <fullName>RNR</fullName>
+                <default>false</default>
+                <label>RNR</label>
+            </value>
+            <value>
+                <fullName>Language barrier</fullName>
+                <default>false</default>
+                <label>Language barrier</label>
+            </value>
+            <value>
+                <fullName>Junk Lead</fullName>
+                <default>false</default>
+                <label>Junk Lead</label>
+            </value>
+            <value>
+                <fullName>Prospect - Budget</fullName>
+                <default>false</default>
+                <label>Prospect - Budget</label>
+            </value>
+            <value>
+                <fullName>Prospect - Locality</fullName>
+                <default>false</default>
+                <label>Prospect - Locality</label>
+            </value>
+            <value>
+                <fullName>Prospect - Type</fullName>
+                <default>false</default>
+                <label>Prospect - Type</label>
+            </value>
+            <value>
+                <fullName>Prospect - Construction Timeline</fullName>
+                <default>false</default>
+                <label>Prospect - Construction Timeline</label>
+            </value>
+            <value>
+                <fullName>Tele-Meeting Proposed</fullName>
+                <default>false</default>
+                <label>Tele-Meeting Proposed</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Not Interested</controllingFieldValue>
+            <valueName>Location Not Preferred</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Interested</controllingFieldValue>
+            <valueName>Booked with competition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Interested</controllingFieldValue>
+            <valueName>Wants Ready Project Only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Interested</controllingFieldValue>
+            <valueName>Already Invested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Interested</controllingFieldValue>
+            <valueName>Not happy with Size of Aparment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Interested</controllingFieldValue>
+            <valueName>Choice of Inventory not available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Interested</controllingFieldValue>
+            <valueName>Desired Configuration Not Available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Interested</controllingFieldValue>
+            <valueName>Low Budget</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Interested</controllingFieldValue>
+            <valueName>Others</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Follow Up -Qualified</controllingFieldValue>
+            <valueName>Follow Up-Qualified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Contact</controllingFieldValue>
+            <valueName>Ringing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Contact</controllingFieldValue>
+            <valueName>Not Reachable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Contact</controllingFieldValue>
+            <valueName>Call Busy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Contact</controllingFieldValue>
+            <valueName>Swicthed Off</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invalid Enquiry</controllingFieldValue>
+            <valueName>Never Inquired</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invalid Enquiry</controllingFieldValue>
+            <valueName>Inquired By Mistake</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invalid Enquiry</controllingFieldValue>
+            <valueName>Job  Seeker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invalid Enquiry</controllingFieldValue>
+            <valueName>Rent Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invalid Enquiry</controllingFieldValue>
+            <valueName>Personal Business Interest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invalid Enquiry</controllingFieldValue>
+            <valueName>Broker Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invalid Number</controllingFieldValue>
+            <valueName>Invalid Number</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Paid</controllingFieldValue>
+            <valueName>Paid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PTP</controllingFieldValue>
+            <valueName>PTP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RTP</controllingFieldValue>
+            <valueName>RTP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment Plan Change</controllingFieldValue>
+            <valueName>Payment Plan Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancellation Request</controllingFieldValue>
+            <valueName>Cancellation Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No booking form</controllingFieldValue>
+            <valueName>No booking form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Issue Case</controllingFieldValue>
+            <valueName>Issue Case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MSO</controllingFieldValue>
+            <valueName>MSO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Presentation</controllingFieldValue>
+            <valueName>Home Presentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RNR</controllingFieldValue>
+            <valueName>RNR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office Presentation</controllingFieldValue>
+            <valueName>Office Presentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Language barrier</controllingFieldValue>
+            <valueName>Language barrier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tele-Meeting Fixed</controllingFieldValue>
+            <valueName>Tele-Meeting Fixed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Junk Lead</controllingFieldValue>
+            <valueName>Junk Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tele-Meeting Done</controllingFieldValue>
+            <valueName>Tele-Meeting Done</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Follow up - email</controllingFieldValue>
+            <valueName>Follow up - email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meeting Cancelled</controllingFieldValue>
+            <valueName>Meeting Cancelled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Follow up - social</controllingFieldValue>
+            <valueName>Follow up - social</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tele-Meeting Proposed</controllingFieldValue>
+            <valueName>Tele-Meeting Proposed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Follow up</controllingFieldValue>
+            <valueName>Interested in Future</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Follow up</controllingFieldValue>
+            <valueName>Call Back No Contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Follow up</controllingFieldValue>
+            <valueName>Need Time to Think</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Follow up</controllingFieldValue>
+            <valueName>Call Back Busy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visit confirmed</controllingFieldValue>
+            <valueName>Visit Confirmed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visit proposed</controllingFieldValue>
+            <valueName>Visit Proposed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meeting Proposed</controllingFieldValue>
+            <valueName>Meeting Proposed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meeting Done</controllingFieldValue>
+            <valueName>Meeting Done</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visit Done</controllingFieldValue>
+            <valueName>Visit Done</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prospect - Budget</controllingFieldValue>
+            <valueName>Prospect - Budget</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prospect - Locality</controllingFieldValue>
+            <valueName>Prospect - Locality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prospect - Type</controllingFieldValue>
+            <valueName>Prospect - Type</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prospect - Construction Timeline</controllingFieldValue>
+            <valueName>Prospect - Construction Timeline</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

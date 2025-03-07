@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Milestone_is_Token</fullName>
+    <active>false</active>
+    <errorConditionFormula>If(MilestoneNumber__c == 1 &amp;&amp;  NOT(ISNEW()), 
+			OR(TEXT(Milestone_Name_Picklist__c) &lt;&gt; &apos;Token&apos;, 
+						TEXT(Plan_Milestone_Type__c) &lt;&gt; &apos;Date Linked&apos;), 
+			false)</errorConditionFormula>
+    <errorMessage>In first milestone, Milestone Name Picklist should be &quot;Token&quot; and Milestone Type should be &quot;Date Linked&quot;</errorMessage>
+</ValidationRule>

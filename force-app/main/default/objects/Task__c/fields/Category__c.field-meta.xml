@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <label>Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PTP</fullName>
+                <default>false</default>
+                <label>PTP</label>
+            </value>
+            <value>
+                <fullName>No Contact / Unable to Reach</fullName>
+                <default>false</default>
+                <label>No Contact / Unable to Reach</label>
+            </value>
+            <value>
+                <fullName>Raise for Cancellation</fullName>
+                <default>false</default>
+                <label>Raise for Cancellation</label>
+            </value>
+            <value>
+                <fullName>Adjustment Pending / Rebate Pending</fullName>
+                <default>false</default>
+                <label>Adjustment Pending / Rebate Pending</label>
+            </value>
+            <value>
+                <fullName>Paid But Not Realized</fullName>
+                <default>false</default>
+                <label>Paid But Not Realized</label>
+            </value>
+            <value>
+                <fullName>Regular Follow Up</fullName>
+                <default>false</default>
+                <label>Regular Follow Up</label>
+            </value>
+            <value>
+                <fullName>Mortgage</fullName>
+                <default>false</default>
+                <label>Mortgage</label>
+            </value>
+            <value>
+                <fullName>Unable to Pay</fullName>
+                <default>false</default>
+                <label>Unable to Pay</label>
+            </value>
+            <value>
+                <fullName>SPA / DLD Not Done</fullName>
+                <default>false</default>
+                <label>SPA / DLD Not Done</label>
+            </value>
+            <value>
+                <fullName>Swap / Upgrade</fullName>
+                <default>false</default>
+                <label>Swap / Upgrade</label>
+            </value>
+            <value>
+                <fullName>Not Pitched</fullName>
+                <default>false</default>
+                <label>Not Pitched</label>
+            </value>
+            <value>
+                <fullName>Customer Interested</fullName>
+                <default>false</default>
+                <label>Customer Interested</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

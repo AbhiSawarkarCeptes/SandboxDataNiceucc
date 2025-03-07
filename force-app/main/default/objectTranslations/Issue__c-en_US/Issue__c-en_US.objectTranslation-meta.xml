@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Issue</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Issues</value>
+    </caseValues>
+    <layouts>
+        <layout>Issue Layout</layout>
+        <sections>
+            <label><!-- Analysis Details --></label>
+            <section>Analysis Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Last Update Date --></label>
+            <section>Last Update Date</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter value here --></errorMessage>
+        <name>Priority_L1L2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter value here --></errorMessage>
+        <name>Status_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter value here --></errorMessage>
+        <name>Status_GoaheadDev</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter value here --></errorMessage>
+        <name>Status_GoaheadProduction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter value here --></errorMessage>
+        <name>Status_ReOpen</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter value here --></errorMessage>
+        <name>Status_UAT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter value here --></errorMessage>
+        <name>Under_Development</name>
+    </validationRules>
+</CustomObjectTranslation>

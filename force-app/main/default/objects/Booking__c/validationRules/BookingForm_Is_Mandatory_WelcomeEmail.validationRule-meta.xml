@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BookingForm_Is_Mandatory_WelcomeEmail</fullName>
+    <active>true</active>
+    <description>Signed Booking Form should be attached before sending welcome email to client</description>
+    <errorConditionFormula>AND(
+NOT(Is_Booking_Form_Attached__c),
+ISCHANGED(Start_Registration__c), 
+Start_Registration__c
+)</errorConditionFormula>
+    <errorMessage>Signed booking form is mandatory when sending welcome email</errorMessage>
+</ValidationRule>

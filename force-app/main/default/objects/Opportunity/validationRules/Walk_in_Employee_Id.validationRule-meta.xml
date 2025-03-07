@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Walk_in_Employee_Id</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(PRIORVALUE(Walk_in_Employee_Id__c) != null, 
+ISCHANGED(Walk_in_Employee_Id__c), OR($Profile.Name != &quot;Admin&quot;), 
+$Profile.Name != &quot;System Administrator&quot;)</errorConditionFormula>
+    <errorDisplayField>Walk_in_Employee_Id__c</errorDisplayField>
+    <errorMessage>You cannot change Walk-in Employee Id, please contact your administrator</errorMessage>
+</ValidationRule>

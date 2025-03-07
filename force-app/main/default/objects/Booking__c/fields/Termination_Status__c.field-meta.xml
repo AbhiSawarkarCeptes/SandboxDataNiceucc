@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Termination_Status__c</fullName>
+    <label>Termination Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Submitted to Accounts</fullName>
+                <default>false</default>
+                <label>Submitted to Accounts</label>
+            </value>
+            <value>
+                <fullName>Resubmitted to collections by accounts</fullName>
+                <default>false</default>
+                <label>Resubmitted to collections by accounts</label>
+            </value>
+            <value>
+                <fullName>Rejected by accounts</fullName>
+                <default>false</default>
+                <label>Rejected by accounts</label>
+            </value>
+            <value>
+                <fullName>Rejected by audit</fullName>
+                <default>false</default>
+                <label>Rejected by audit</label>
+            </value>
+            <value>
+                <fullName>Resubmitted to accounts by collections</fullName>
+                <default>false</default>
+                <label>Resubmitted to accounts by collections</label>
+            </value>
+            <value>
+                <fullName>Submitted to audit</fullName>
+                <default>false</default>
+                <label>Submitted to audit</label>
+            </value>
+            <value>
+                <fullName>Resubmitted to audit by collections</fullName>
+                <default>false</default>
+                <label>Resubmitted to audit by collections</label>
+            </value>
+            <value>
+                <fullName>Resubmitted to audit by accounts</fullName>
+                <default>false</default>
+                <label>Resubmitted to audit by accounts</label>
+            </value>
+            <value>
+                <fullName>Resubmitted to Collection and Accounts by audit</fullName>
+                <default>false</default>
+                <label>Resubmitted to Collection and Accounts by audit</label>
+            </value>
+            <value>
+                <fullName>Submitted to Raise the Internal DLD team</fullName>
+                <default>false</default>
+                <label>Submitted to Raise the Internal DLD team</label>
+            </value>
+            <value>
+                <fullName>Raised to DLD Team</fullName>
+                <default>false</default>
+                <label>Raised to DLD Team</label>
+            </value>
+            <value>
+                <fullName>Resubmitted to collections by audit</fullName>
+                <default>false</default>
+                <label>Resubmitted to collections by audit</label>
+            </value>
+            <value>
+                <fullName>Resubmitted by audit to accounts</fullName>
+                <default>false</default>
+                <label>Resubmitted by audit to accounts</label>
+            </value>
+            <value>
+                <fullName>Rejected by Collections</fullName>
+                <default>false</default>
+                <label>Rejected by Collections</label>
+            </value>
+            <value>
+                <fullName>Submitted to collections by DLD</fullName>
+                <default>false</default>
+                <label>Submitted to collections by DLD</label>
+            </value>
+            <value>
+                <fullName>Legal Termination</fullName>
+                <default>false</default>
+                <label>Legal Termination</label>
+            </value>
+            <value>
+                <fullName>Allocate To Collection By CRM</fullName>
+                <default>false</default>
+                <label>Allocate To Collection By CRM</label>
+            </value>
+            <value>
+                <fullName>Reject</fullName>
+                <default>false</default>
+                <label>Reject</label>
+            </value>
+            <value>
+                <fullName>Rejected by CRM</fullName>
+                <default>false</default>
+                <label>Rejected by CRM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

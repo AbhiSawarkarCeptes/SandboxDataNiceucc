@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejected_By__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(TEXT(Approval_Status__c) = &apos;CRM Rejected&apos;, 
+         CRM__r.FirstName + &quot; &quot; + CRM__r.LastName + &quot; - CRM&quot;,
+If(TEXT(Approval_Status__c) = &apos;Audit Rejected&apos;, 
+         Audit__r.FirstName + &quot; &quot; + Audit__r.LastName + &quot; - Audit&quot;,
+If(TEXT(Approval_Status__c) = &apos;Finance Rejected&apos;, 
+         Finance__r.FirstName + &quot; &quot; + Finance__r.LastName + &quot; - Finance&quot;,
+If(TEXT(Approval_Status__c) = &apos;CFO Rejected&apos;, 
+         CFO__r.FirstName + &quot; &quot; + CFO__r.LastName + &quot; - CFO&quot;, &apos;&apos;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Rejected By</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

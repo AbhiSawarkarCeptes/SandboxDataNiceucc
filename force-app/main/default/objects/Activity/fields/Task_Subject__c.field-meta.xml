@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task_Subject__c</fullName>
+    <label>Task Subject</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Calls</fullName>
+                <default>false</default>
+                <label>Calls</label>
+            </value>
+            <value>
+                <fullName>Meeting In Hartland</fullName>
+                <default>false</default>
+                <label>Meeting In Hartland</label>
+            </value>
+            <value>
+                <fullName>Meeting In Brokers Office</fullName>
+                <default>false</default>
+                <label>Meeting In Brokers Office</label>
+            </value>
+            <value>
+                <fullName>Zoom Call</fullName>
+                <default>false</default>
+                <label>Zoom Call</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

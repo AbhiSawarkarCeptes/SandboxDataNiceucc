@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Loan_Sub_Status__c</fullName>
+    <label>Client Loan Sub Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Under process</fullName>
+                <default>false</default>
+                <label>Under process</label>
+            </value>
+            <value>
+                <fullName>Sanctioned</fullName>
+                <default>false</default>
+                <label>Sanctioned</label>
+            </value>
+            <value>
+                <fullName>Disbursed</fullName>
+                <default>false</default>
+                <label>Disbursed</label>
+            </value>
+            <value>
+                <fullName>Radius Fin Assist – To get in touch</fullName>
+                <default>false</default>
+                <label>Radius Fin Assist – To get in touch</label>
+            </value>
+            <value>
+                <fullName>Radius Fin Assist – Pre-sanction works</fullName>
+                <default>false</default>
+                <label>Radius Fin Assist – Pre-sanction works</label>
+            </value>
+            <value>
+                <fullName>Sanctioned- Awaiting PD</fullName>
+                <default>false</default>
+                <label>Sanctioned- Awaiting PD</label>
+            </value>
+            <value>
+                <fullName>Sanctioned-Client documents pending</fullName>
+                <default>false</default>
+                <label>Sanctioned-Client documents pending</label>
+            </value>
+            <value>
+                <fullName>Sanctioned-Radius documents pending</fullName>
+                <default>false</default>
+                <label>Sanctioned-Radius documents pending</label>
+            </value>
+            <value>
+                <fullName>Sanction-Client Self Contribution pending</fullName>
+                <default>false</default>
+                <label>Sanction-Client Self Contribution pending</label>
+            </value>
+            <value>
+                <fullName>Sanctioned-Agreement pending (Client Hold Up)</fullName>
+                <default>false</default>
+                <label>Sanctioned-Agreement pending (Client Hold Up)</label>
+            </value>
+            <value>
+                <fullName>Sanctioned-Agreement pending (Radius Hold Up)</fullName>
+                <default>false</default>
+                <label>Sanctioned-Agreement pending (Radius Hold Up)</label>
+            </value>
+            <value>
+                <fullName>Ineligible for Loan-IT not filled</fullName>
+                <default>false</default>
+                <label>Ineligible for Loan-IT not filled</label>
+            </value>
+            <value>
+                <fullName>Ineligible for Loan-CIBIL Rating issue</fullName>
+                <default>false</default>
+                <label>Ineligible for Loan-CIBIL Rating issue</label>
+            </value>
+            <value>
+                <fullName>Ineligible for Loan-income insufficient</fullName>
+                <default>false</default>
+                <label>Ineligible for Loan-income insufficient</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

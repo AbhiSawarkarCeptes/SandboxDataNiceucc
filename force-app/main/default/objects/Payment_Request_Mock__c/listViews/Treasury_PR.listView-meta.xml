@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Treasury_PR</fullName>
+    <columns>NAME</columns>
+    <columns>Name__c</columns>
+    <columns>Account_Master__c</columns>
+    <columns>Currency__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Status__c</columns>
+    <columns>Treasury_Status__c</columns>
+    <columns>Account_Remarks__c</columns>
+    <columns>Treasury_Remarks__c</columns>
+    <columns>Mode__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Treasury_Status__c</field>
+        <operation>equals</operation>
+        <value>Pending with Treasury</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Pending for Accounts Approval,Submitted to Accounts for Amount Confirmation</value>
+    </filters>
+    <label>Pending with Treasury</label>
+    <sharedTo>
+        <role>Admin</role>
+        <role>Finance</role>
+    </sharedTo>
+</ListView>

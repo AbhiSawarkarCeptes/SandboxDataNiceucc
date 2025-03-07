@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booking_Id__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( From_Booking__c =true,Booking__r.Name,if( From_Booking__c = false, New_Sale_Approval__r.Booking__r.Name ,&apos;&apos;))</formula>
+    <label>Booking Id</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

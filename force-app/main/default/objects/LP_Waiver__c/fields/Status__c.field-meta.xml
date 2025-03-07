@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rejected by Collection Head</fullName>
+                <default>false</default>
+                <label>Rejected by Collection Head</label>
+            </value>
+            <value>
+                <fullName>Pending for Collection Head Approval</fullName>
+                <default>true</default>
+                <label>Pending for Collection Head Approval</label>
+            </value>
+            <value>
+                <fullName>Approved by MDO/CMO</fullName>
+                <default>false</default>
+                <label>Approved by MDO/CMO</label>
+            </value>
+            <value>
+                <fullName>Rejected by MDO/CMO</fullName>
+                <default>false</default>
+                <label>Rejected by MDO/CMO</label>
+            </value>
+            <value>
+                <fullName>Pending for MDO/CMO</fullName>
+                <default>false</default>
+                <label>Pending for MDO/CMO</label>
+            </value>
+            <value>
+                <fullName>Rejected By CRM Head</fullName>
+                <default>false</default>
+                <label>Rejected By CRM Head</label>
+            </value>
+            <value>
+                <fullName>Pending For CRM Head Approval</fullName>
+                <default>false</default>
+                <label>Pending For CRM Head Approval</label>
+            </value>
+            <value>
+                <fullName>Approved By CRM Head</fullName>
+                <default>false</default>
+                <label>Approved By CRM Head</label>
+            </value>
+            <value>
+                <fullName>Approved by Audit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Approved by Audit</label>
+            </value>
+            <value>
+                <fullName>Pending for Accounts Approval</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pending for Accounts Approval</label>
+            </value>
+            <value>
+                <fullName>Pending for Audit Approval</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pending for Audit Approval</label>
+            </value>
+            <value>
+                <fullName>Rejected by Accounts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rejected by Accounts</label>
+            </value>
+            <value>
+                <fullName>Rejected by Audit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rejected by Audit</label>
+            </value>
+            <value>
+                <fullName>Rejected by Audit &amp; Submitted to Accounts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rejected by Audit &amp; Submitted to Accounts</label>
+            </value>
+            <value>
+                <fullName>Rejected by Audit &amp; Submitted to Accounts &amp; Collection</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rejected by Audit &amp; Submitted to Accounts &amp; Collection</label>
+            </value>
+            <value>
+                <fullName>Resubmitted to Accounts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Resubmitted to Accounts</label>
+            </value>
+            <value>
+                <fullName>Resubmitted to Audit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Resubmitted to Audit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

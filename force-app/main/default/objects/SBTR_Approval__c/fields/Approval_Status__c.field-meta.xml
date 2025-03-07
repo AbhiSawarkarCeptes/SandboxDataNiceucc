@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Status__c</fullName>
+    <label>Approval Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Lvl1 Approved</fullName>
+                <default>false</default>
+                <label>Lvl1 Approved</label>
+            </value>
+            <value>
+                <fullName>Lvl2 Approved</fullName>
+                <default>false</default>
+                <label>Lvl2 Approved</label>
+            </value>
+            <value>
+                <fullName>Lvl3 Approved</fullName>
+                <default>false</default>
+                <label>Lvl3 Approved</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

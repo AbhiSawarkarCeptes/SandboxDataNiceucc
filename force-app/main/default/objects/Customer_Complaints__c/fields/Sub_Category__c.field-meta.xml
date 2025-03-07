@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Category__c</fullName>
+    <description>Captures sub category of the complaint category.</description>
+    <label>Sub-Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ownership change</fullName>
+                <default>false</default>
+                <label>Ownership change</label>
+            </value>
+            <value>
+                <fullName>Advance Payment Discount</fullName>
+                <default>false</default>
+                <label>Advance Payment Discount</label>
+            </value>
+            <value>
+                <fullName>Mis-sell</fullName>
+                <default>false</default>
+                <label>Mis-sell</label>
+            </value>
+            <value>
+                <fullName>View</fullName>
+                <default>false</default>
+                <label>View</label>
+            </value>
+            <value>
+                <fullName>Marketing Offer</fullName>
+                <default>false</default>
+                <label>Marketing Offer</label>
+            </value>
+            <value>
+                <fullName>SPA</fullName>
+                <default>false</default>
+                <label>SPA</label>
+            </value>
+            <value>
+                <fullName>Affection Plan</fullName>
+                <default>false</default>
+                <label>Affection Plan</label>
+            </value>
+            <value>
+                <fullName>Payment</fullName>
+                <default>false</default>
+                <label>Payment</label>
+            </value>
+            <value>
+                <fullName>Financial Issues</fullName>
+                <default>false</default>
+                <label>Financial Issues</label>
+            </value>
+            <value>
+                <fullName>Discount</fullName>
+                <default>false</default>
+                <label>Discount</label>
+            </value>
+            <value>
+                <fullName>Misell</fullName>
+                <default>false</default>
+                <label>Misell</label>
+            </value>
+            <value>
+                <fullName>EOI unit</fullName>
+                <default>false</default>
+                <label>EOI unit</label>
+            </value>
+            <value>
+                <fullName>Legal Charges</fullName>
+                <default>false</default>
+                <label>Legal Charges</label>
+            </value>
+            <value>
+                <fullName>Floor Level</fullName>
+                <default>false</default>
+                <label>Floor Level</label>
+            </value>
+            <value>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+                <label>Cancellation</label>
+            </value>
+            <value>
+                <fullName>Wrong account</fullName>
+                <default>false</default>
+                <label>Wrong account</label>
+            </value>
+            <value>
+                <fullName>Increase in purchase price and area</fullName>
+                <default>false</default>
+                <label>Increase in purchase price and area</label>
+            </value>
+            <value>
+                <fullName>Admin Charges waiver</fullName>
+                <default>false</default>
+                <label>Admin Charges waiver</label>
+            </value>
+            <value>
+                <fullName>Furniture Voucher</fullName>
+                <default>false</default>
+                <label>Furniture Voucher</label>
+            </value>
+            <value>
+                <fullName>Resale</fullName>
+                <default>false</default>
+                <label>Resale</label>
+            </value>
+            <value>
+                <fullName>Area Changes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Area Changes</label>
+            </value>
+            <value>
+                <fullName>Brands of appliances</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Brands of appliances</label>
+            </value>
+            <value>
+                <fullName>Car Parking</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Car Parking</label>
+            </value>
+            <value>
+                <fullName>Change in Customer details</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Change in Customer details</label>
+            </value>
+            <value>
+                <fullName>Delayed Handover</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Delayed Handover</label>
+            </value>
+            <value>
+                <fullName>Error in Registration</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Error in Registration</label>
+            </value>
+            <value>
+                <fullName>Incorrect due amount</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Incorrect due amount</label>
+            </value>
+            <value>
+                <fullName>Late Payment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Late Payment</label>
+            </value>
+            <value>
+                <fullName>Missing Payment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Missing Payment</label>
+            </value>
+            <value>
+                <fullName>NOC from Bank pending</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NOC from Bank pending</label>
+            </value>
+            <value>
+                <fullName>No response from Sales</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No response from Sales</label>
+            </value>
+            <value>
+                <fullName>Non-RERA registered</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non-RERA registered</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>PCC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PCC</label>
+            </value>
+            <value>
+                <fullName>Pending NOC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pending NOC</label>
+            </value>
+            <value>
+                <fullName>Pending Rebates</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pending Rebates</label>
+            </value>
+            <value>
+                <fullName>Product</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Product</label>
+            </value>
+            <value>
+                <fullName>Re-allocation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Re-allocation</label>
+            </value>
+            <value>
+                <fullName>Rebates</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rebates</label>
+            </value>
+            <value>
+                <fullName>SOA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SOA</label>
+            </value>
+            <value>
+                <fullName>Size</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Size</label>
+            </value>
+            <value>
+                <fullName>Vouchers Related</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vouchers Related</label>
+            </value>
+            <value>
+                <fullName>Wrong allocation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Wrong allocation</label>
+            </value>
+            <value>
+                <fullName>Wrong information</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Wrong information</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

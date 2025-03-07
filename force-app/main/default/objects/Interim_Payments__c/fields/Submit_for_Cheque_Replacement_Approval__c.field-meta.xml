@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Submit_for_Cheque_Replacement_Approval__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Submit for Cheque Replacement Approval</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

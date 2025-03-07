@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Designation --></label>
+    <name>Designation__c</name>
+    <picklistValues>
+        <masterLabel>Acountant</masterLabel>
+        <translation><!-- Acountant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advocate</masterLabel>
+        <translation><!-- Advocate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Air Force</masterLabel>
+        <translation><!-- Air Force --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Application Developer</masterLabel>
+        <translation><!-- Application Developer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Application Engineer</masterLabel>
+        <translation><!-- Application Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Architects</masterLabel>
+        <translation><!-- Architects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Army</masterLabel>
+        <translation><!-- Army --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant</masterLabel>
+        <translation><!-- Assistant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant Director</masterLabel>
+        <translation><!-- Assistant Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant Manager</masterLabel>
+        <translation><!-- Assistant Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant Proj Manager</masterLabel>
+        <translation><!-- Assistant Proj Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Associate</masterLabel>
+        <translation><!-- Associate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Associate Director</masterLabel>
+        <translation><!-- Associate Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Associate Vice President</masterLabel>
+        <translation><!-- Associate Vice President --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asst. General Manager</masterLabel>
+        <translation><!-- Asst. General Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asst. Manager</masterLabel>
+        <translation><!-- Asst. Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA</masterLabel>
+        <translation><!-- CA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEO</masterLabel>
+        <translation><!-- CEO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CFO</masterLabel>
+        <translation><!-- CFO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CIO</masterLabel>
+        <translation><!-- CIO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CMO</masterLabel>
+        <translation><!-- CMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COO</masterLabel>
+        <translation><!-- COO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CS</masterLabel>
+        <translation><!-- CS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTO</masterLabel>
+        <translation><!-- CTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cardiologist</masterLabel>
+        <translation><!-- Cardiologist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chairman</masterLabel>
+        <translation><!-- Chairman --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chairman cum Managing Director</masterLabel>
+        <translation><!-- Chairman cum Managing Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chartered Accountant</masterLabel>
+        <translation><!-- Chartered Accountant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chief Executive</masterLabel>
+        <translation><!-- Chief Executive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chief Executive Officer</masterLabel>
+        <translation><!-- Chief Executive Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chief Financial Officer</masterLabel>
+        <translation><!-- Chief Financial Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chief Investment Officer</masterLabel>
+        <translation><!-- Chief Investment Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chief Manager</masterLabel>
+        <translation><!-- Chief Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chief Marketing Officer</masterLabel>
+        <translation><!-- Chief Marketing Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chief Operating Officer</masterLabel>
+        <translation><!-- Chief Operating Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chief Technology Officer</masterLabel>
+        <translation><!-- Chief Technology Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Company Secretary</masterLabel>
+        <translation><!-- Company Secretary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultant / Sr. Consultant</masterLabel>
+        <translation><!-- Consultant / Sr. Consultant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contractor</masterLabel>
+        <translation><!-- Contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dentist</masterLabel>
+        <translation><!-- Dentist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deputy General Manager</masterLabel>
+        <translation><!-- Deputy General Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deputy Manager</masterLabel>
+        <translation><!-- Deputy Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dermatologist</masterLabel>
+        <translation><!-- Dermatologist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design Engineer</masterLabel>
+        <translation><!-- Design Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director</masterLabel>
+        <translation><!-- Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Doctor</masterLabel>
+        <translation><!-- Doctor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENT Specialist</masterLabel>
+        <translation><!-- ENT Specialist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineer</masterLabel>
+        <translation><!-- Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineer Softwaer Testing</masterLabel>
+        <translation><!-- Engineer Softwaer Testing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance Manager</masterLabel>
+        <translation><!-- Finance Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Controller</masterLabel>
+        <translation><!-- Financial Controller --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Founder</masterLabel>
+        <translation><!-- Founder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Free Lancer</masterLabel>
+        <translation><!-- Free Lancer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Manager</masterLabel>
+        <translation><!-- General Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government Service</masterLabel>
+        <translation><!-- Government Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gynecologist</masterLabel>
+        <translation><!-- Gynecologist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Head</masterLabel>
+        <translation><!-- IT Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Joint General Manager</masterLabel>
+        <translation><!-- Joint General Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Joint Manager</masterLabel>
+        <translation><!-- Joint Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jr. Associate</masterLabel>
+        <translation><!-- Jr. Associate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jr. Officer</masterLabel>
+        <translation><!-- Jr. Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Junior Engineer</masterLabel>
+        <translation><!-- Junior Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lawyer</masterLabel>
+        <translation><!-- Lawyer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Analyst</masterLabel>
+        <translation><!-- Lead Analyst --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manager</masterLabel>
+        <translation><!-- Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Managing Director</masterLabel>
+        <translation><!-- Managing Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Navy</masterLabel>
+        <translation><!-- Navy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neurologist</masterLabel>
+        <translation><!-- Neurologist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neurosurgeon</masterLabel>
+        <translation><!-- Neurosurgeon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Officer</masterLabel>
+        <translation><!-- Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Orthopedic Surgeon</masterLabel>
+        <translation><!-- Orthopedic Surgeon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owner</masterLabel>
+        <translation><!-- Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner</masterLabel>
+        <translation><!-- Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pediatrician</masterLabel>
+        <translation><!-- Pediatrician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physiologist</masterLabel>
+        <translation><!-- Physiologist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pilot</masterLabel>
+        <translation><!-- Pilot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Police</masterLabel>
+        <translation><!-- Police --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>President</masterLabel>
+        <translation><!-- President --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Engineer</masterLabel>
+        <translation><!-- Product Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Head</masterLabel>
+        <translation><!-- Product Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professor</masterLabel>
+        <translation><!-- Professor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Manager</masterLabel>
+        <translation><!-- Project Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proprietor</masterLabel>
+        <translation><!-- Proprietor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Psychiatrist</masterLabel>
+        <translation><!-- Psychiatrist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Senior Director</masterLabel>
+        <translation><!-- Senior Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Senior Engineer</masterLabel>
+        <translation><!-- Senior Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Senior Manager</masterLabel>
+        <translation><!-- Senior Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Head</masterLabel>
+        <translation><!-- Service Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Worker</masterLabel>
+        <translation><!-- Social Worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software Architech</masterLabel>
+        <translation><!-- Software Architech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software Developer</masterLabel>
+        <translation><!-- Software Developer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software Engineer</masterLabel>
+        <translation><!-- Software Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sofware Analyst/ Analyst</masterLabel>
+        <translation><!-- Sofware Analyst/ Analyst --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sole Proprietor</masterLabel>
+        <translation><!-- Sole Proprietor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sr. Analyst</masterLabel>
+        <translation><!-- Sr. Analyst --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sr. Application Developer</masterLabel>
+        <translation><!-- Sr. Application Developer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sr. Application Engineer</masterLabel>
+        <translation><!-- Sr. Application Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sr. Associate</masterLabel>
+        <translation><!-- Sr. Associate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sr. Design Engineer</masterLabel>
+        <translation><!-- Sr. Design Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sr. Manager</masterLabel>
+        <translation><!-- Sr. Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sr. Officer</masterLabel>
+        <translation><!-- Sr. Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sr. Product Engineer</masterLabel>
+        <translation><!-- Sr. Product Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sr. Software Eng</masterLabel>
+        <translation><!-- Sr. Software Eng --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sr. Vice president</masterLabel>
+        <translation><!-- Sr. Vice president --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgeon</masterLabel>
+        <translation><!-- Surgeon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teacher</masterLabel>
+        <translation><!-- Teacher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Team Lead</masterLabel>
+        <translation><!-- Team Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech Lead</masterLabel>
+        <translation><!-- Tech Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test Lead</masterLabel>
+        <translation><!-- Test Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Urologist</masterLabel>
+        <translation><!-- Urologist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vice Chairman</masterLabel>
+        <translation><!-- Vice Chairman --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vice President</masterLabel>
+        <translation><!-- Vice President --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

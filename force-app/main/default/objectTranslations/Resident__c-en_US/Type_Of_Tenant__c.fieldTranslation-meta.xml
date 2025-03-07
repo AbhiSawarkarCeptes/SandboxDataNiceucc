@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type Of Tenant --></label>
+    <name>Type_Of_Tenant__c</name>
+    <picklistValues>
+        <masterLabel>HHC</masterLabel>
+        <translation><!-- HHC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HHO</masterLabel>
+        <translation><!-- HHO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owner</masterLabel>
+        <translation><!-- Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tenant</masterLabel>
+        <translation><!-- Tenant --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

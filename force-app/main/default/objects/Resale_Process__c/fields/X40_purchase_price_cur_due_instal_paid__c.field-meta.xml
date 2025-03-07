@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X40_purchase_price_cur_due_instal_paid__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>40% of the purchase price and current due instalment is paid</inlineHelpText>
+    <label>40% purchase price &amp; cur due instal paid</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

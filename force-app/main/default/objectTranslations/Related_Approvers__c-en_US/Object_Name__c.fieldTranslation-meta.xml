@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Object Name --></label>
+    <name>Object_Name__c</name>
+    <picklistValues>
+        <masterLabel>Application/Booking</masterLabel>
+        <translation><!-- Application/Booking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment</masterLabel>
+        <translation><!-- Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Plan</masterLabel>
+        <translation><!-- Payment Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Plan Detail</masterLabel>
+        <translation><!-- Payment Plan Detail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property</masterLabel>
+        <translation><!-- Property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TDS Recoverable</masterLabel>
+        <translation><!-- TDS Recoverable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transaction Request</masterLabel>
+        <translation><!-- Transaction Request --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

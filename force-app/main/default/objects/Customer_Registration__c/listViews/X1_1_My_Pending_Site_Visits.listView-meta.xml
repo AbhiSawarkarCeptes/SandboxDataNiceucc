@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1_1_My_Pending_Site_Visits</fullName>
+    <columns>Opportunity_Id__c</columns>
+    <columns>NAME</columns>
+    <columns>opportunity__c</columns>
+    <columns>Mobile_Number__c</columns>
+    <columns>Nationality__c</columns>
+    <columns>Date__c</columns>
+    <columns>SM_Feedback_Given__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>SM_Feedback_Given__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>1.1 My Pending Site Visits</label>
+    <sharedTo>
+        <role>Sales_Manager_1</role>
+        <role>Sales_Manager_10</role>
+        <role>Sales_Manager_11</role>
+        <role>Sales_Manager_12</role>
+        <role>Sales_Manager_13</role>
+        <role>Sales_Manager_14</role>
+        <role>Sales_Manager_15</role>
+        <role>Sales_Manager_17</role>
+        <role>Sales_Manager_18</role>
+        <role>Sales_Manager_2</role>
+        <role>Sales_Manager_3</role>
+        <role>Sales_Manager_4</role>
+        <role>Sales_Manager_5</role>
+        <role>Sales_Manager_6</role>
+        <role>Sales_Manager_7</role>
+        <role>Sales_Manager_8</role>
+        <role>Sales_Manager_9</role>
+    </sharedTo>
+</ListView>

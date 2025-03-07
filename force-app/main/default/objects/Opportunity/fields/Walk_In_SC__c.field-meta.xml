@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Walk_In_SC__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Walk-In SC</label>
+    <referenceTo>Sobha_Connect__c</referenceTo>
+    <relationshipLabel>Opportunities (Walk In SC)</relationshipLabel>
+    <relationshipName>Opportunities1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

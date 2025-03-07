@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Interim Payments Received</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Interim Payments Received</value>
+    </caseValues>
+    <layouts>
+        <layout>Income Charge Received</layout>
+        <sections>
+            <label><!-- Bank Details for Payment by Cheque/ Demand Draft/ Wire Transfers --></label>
+            <section>Bank Details for Payment by Cheque/ Demand Draft/ Wire Transfers</section>
+        </sections>
+        <sections>
+            <label><!-- Cheque Bouncing Details --></label>
+            <section>Cheque Bouncing Details</section>
+        </sections>
+        <sections>
+            <label><!-- Cheque Replacement / Hold Process --></label>
+            <section>Cheque Replacement / Hold Process</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Details --></label>
+            <section>Customer Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Interim Payments Received Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Income Charges Received --></label>
+        <name>Income_Charges_Received</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Payment Received --></label>
+        <name>Payment_Received</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Once Payment is Approved, Cannot be changed --></errorMessage>
+        <name>Approved_Payment_Cannot_be_Changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If payment is approved, Cheque cannot be bounced. --></errorMessage>
+        <name>Approved_Payment_Cheque_bounce_Validati</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bank name can not be blank if the payment mode is Cheque --></errorMessage>
+        <name>Bank_Name_Cannot_be_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bounce Reason is mandatory in Cheque bounce checkbox is true --></errorMessage>
+        <name>Bounce_Reason_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot Reject an IPR without giving Rejection Cause --></errorMessage>
+        <name>Cancellation_without_Cause</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Instrument number cannot be blank if the payment mode is Cheque. --></errorMessage>
+        <name>Cheque_Cannot_be_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the Payment is Approved then the Cheque cannot be replaced. --></errorMessage>
+        <name>Cheque_Replacement_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Cheque can be put on hold only 10 days before the instrument date. --></errorMessage>
+        <name>Cheque_hold_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- GL Date, Credit Account and Debit Accounts are mandatory before Approving IPR. --></errorMessage>
+        <name>Mandatory_Fields_for_Approval</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Interim_Receipt --></label>
+        <name>Interim_Receipt</name>
+    </webLinks>
+</CustomObjectTranslation>

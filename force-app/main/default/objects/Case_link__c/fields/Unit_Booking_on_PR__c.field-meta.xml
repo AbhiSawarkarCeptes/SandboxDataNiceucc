@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_Booking_on_PR__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISNULL(Payment_Request__r.Unit__c) || ISBLANK(Payment_Request__r.Unit__c), &apos;No Unit Tagged on PR&apos;,Payment_Request__r.Unit__r.Booking__r.Name + &apos; - &apos; + Payment_Request__r.Unit__r.Name)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Unit/Booking on PR</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

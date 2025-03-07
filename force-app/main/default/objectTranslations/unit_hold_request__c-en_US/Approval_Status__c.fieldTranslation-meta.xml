@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Approval Status --></label>
+    <name>Approval_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by SVP</masterLabel>
+        <translation><!-- Approved by SVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by Sales Head</masterLabel>
+        <translation><!-- Approved by Sales Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by Sales Ops</masterLabel>
+        <translation><!-- Approved by Sales Ops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by Sales VP</masterLabel>
+        <translation><!-- Approved by Sales VP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending</masterLabel>
+        <translation><!-- Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by SVP</masterLabel>
+        <translation><!-- Rejected by SVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Sales Head</masterLabel>
+        <translation><!-- Rejected by Sales Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Sales Ops</masterLabel>
+        <translation><!-- Rejected by Sales Ops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Sales VP</masterLabel>
+        <translation><!-- Rejected by Sales VP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

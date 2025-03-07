@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub Source --></label>
+    <name>Sub_Source__c</name>
+    <picklistValues>
+        <masterLabel>Social-India-en-sobha-facebook-waves3-lead-gen</masterLabel>
+        <translation><!-- Social-India-en-sobha-facebook-waves3-lead-gen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social-India-en-sobha-intagram-waves3-lead-gen</masterLabel>
+        <translation><!-- Social-India-en-sobha-intagram-waves3-lead-gen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social-UK-en-sobha-facebook-waves3-lead-gen</masterLabel>
+        <translation><!-- Social-UK-en-sobha-facebook-waves3-lead-gen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social-UK-en-sobha-instagram-waves3-lead-gen</masterLabel>
+        <translation><!-- Social-UK-en-sobha-instagram-waves3-lead-gen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social-uae-en-sobha-facebook-waves3-lead-gen</masterLabel>
+        <translation><!-- Social-uae-en-sobha-facebook-waves3-lead-gen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social-uae-en-sobha-instagram-waves3-lead-gen</masterLabel>
+        <translation><!-- Social-uae-en-sobha-instagram-waves3-lead-gen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>facebook-lead-ad</masterLabel>
+        <translation><!-- facebook-lead-ad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-UAE-EN-Stower-leadgen</masterLabel>
+        <translation><!-- social-facebook-UAE-EN-Stower-leadgen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-algeria-ar</masterLabel>
+        <translation><!-- social-facebook-algeria-ar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-all-ar</masterLabel>
+        <translation><!-- social-facebook-all-ar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-all-cn</masterLabel>
+        <translation><!-- social-facebook-all-cn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-all-en</masterLabel>
+        <translation><!-- social-facebook-all-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-auh-ar</masterLabel>
+        <translation><!-- social-facebook-auh-ar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-auh-en</masterLabel>
+        <translation><!-- social-facebook-auh-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-chennai-en</masterLabel>
+        <translation><!-- social-facebook-chennai-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-china-cn</masterLabel>
+        <translation><!-- social-facebook-china-cn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-del-en</masterLabel>
+        <translation><!-- social-facebook-del-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-gurugram-en</masterLabel>
+        <translation><!-- social-facebook-gurugram-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-hyd-en</masterLabel>
+        <translation><!-- social-facebook-hyd-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-instagram-bangalore</masterLabel>
+        <translation><!-- social-facebook-instagram-bangalore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-instagram-delhi</masterLabel>
+        <translation><!-- social-facebook-instagram-delhi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-instagram-france-fr</masterLabel>
+        <translation><!-- social-facebook-instagram-france-fr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-instagram-hk-en</masterLabel>
+        <translation><!-- social-facebook-instagram-hk-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-instagram-india-en</masterLabel>
+        <translation><!-- social-facebook-instagram-india-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-instagram-uae-ar</masterLabel>
+        <translation><!-- social-facebook-instagram-uae-ar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-instagram-uae-en</masterLabel>
+        <translation><!-- social-facebook-instagram-uae-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-instagram-uk-en</masterLabel>
+        <translation><!-- social-facebook-instagram-uk-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-ksa-ar</masterLabel>
+        <translation><!-- social-facebook-ksa-ar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-mauritius-en</masterLabel>
+        <translation><!-- social-facebook-mauritius-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-mumbai-en</masterLabel>
+        <translation><!-- social-facebook-mumbai-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-pune-en</masterLabel>
+        <translation><!-- social-facebook-pune-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-romania-en</masterLabel>
+        <translation><!-- social-facebook-romania-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-romania-ro</masterLabel>
+        <translation><!-- social-facebook-romania-ro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-story-villa-ar</masterLabel>
+        <translation><!-- social-facebook-story-villa-ar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-story-villa-en</masterLabel>
+        <translation><!-- social-facebook-story-villa-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-surat-en</masterLabel>
+        <translation><!-- social-facebook-surat-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-uae-ar</masterLabel>
+        <translation><!-- social-facebook-uae-ar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-uae-en</masterLabel>
+        <translation><!-- social-facebook-uae-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-uk -all-en</masterLabel>
+        <translation><!-- social-facebook-uk -all-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-uk-en</masterLabel>
+        <translation><!-- social-facebook-uk-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-villa-ar</masterLabel>
+        <translation><!-- social-facebook-villa-ar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-facebook-villa-en</masterLabel>
+        <translation><!-- social-facebook-villa-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram- story -uk-all- en</masterLabel>
+        <translation><!-- social-instagram- story -uk-all- en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-UAE-EN-Stower-leadgen</masterLabel>
+        <translation><!-- social-instagram-UAE-EN-Stower-leadgen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-all-ar</masterLabel>
+        <translation><!-- social-instagram-all-ar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-all-cn</masterLabel>
+        <translation><!-- social-instagram-all-cn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-all-en</masterLabel>
+        <translation><!-- social-instagram-all-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-china-cn</masterLabel>
+        <translation><!-- social-instagram-china-cn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-del-en</masterLabel>
+        <translation><!-- social-instagram-del-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-gurugram-en</masterLabel>
+        <translation><!-- social-instagram-gurugram-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-hyd-en</masterLabel>
+        <translation><!-- social-instagram-hyd-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-india-en</masterLabel>
+        <translation><!-- social-instagram-india-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-ksa-ar</masterLabel>
+        <translation><!-- social-instagram-ksa-ar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-professional-en</masterLabel>
+        <translation><!-- social-instagram-professional-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-professional-story-en</masterLabel>
+        <translation><!-- social-instagram-professional-story-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-romania-en</masterLabel>
+        <translation><!-- social-instagram-romania-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-romania-ro</masterLabel>
+        <translation><!-- social-instagram-romania-ro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-story-hyd-en</masterLabel>
+        <translation><!-- social-instagram-story-hyd-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-story-reserve-en</masterLabel>
+        <translation><!-- social-instagram-story-reserve-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-story-uae-ar</masterLabel>
+        <translation><!-- social-instagram-story-uae-ar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-story-uae-en</masterLabel>
+        <translation><!-- social-instagram-story-uae-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-story-uk-en</masterLabel>
+        <translation><!-- social-instagram-story-uk-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-story-villa-ar</masterLabel>
+        <translation><!-- social-instagram-story-villa-ar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-story-villa-en</masterLabel>
+        <translation><!-- social-instagram-story-villa-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-surat-en</masterLabel>
+        <translation><!-- social-instagram-surat-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-uae-ar</masterLabel>
+        <translation><!-- social-instagram-uae-ar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-uae-en</masterLabel>
+        <translation><!-- social-instagram-uae-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-uk -all-en</masterLabel>
+        <translation><!-- social-instagram-uk -all-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-uk-en</masterLabel>
+        <translation><!-- social-instagram-uk-en --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-villa-ar</masterLabel>
+        <translation><!-- social-instagram-villa-ar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>social-instagram-villa-en</masterLabel>
+        <translation><!-- social-instagram-villa-en --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

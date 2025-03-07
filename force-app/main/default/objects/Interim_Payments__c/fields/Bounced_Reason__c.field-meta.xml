@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bounced_Reason__c</fullName>
+    <inlineHelpText>If the cheque was bounced, then what was the reason.</inlineHelpText>
+    <label>Bounced Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Insufficient Funds</fullName>
+                <default>false</default>
+                <label>Insufficient Funds</label>
+            </value>
+            <value>
+                <fullName>Signature not matching</fullName>
+                <default>false</default>
+                <label>Signature not matching</label>
+            </value>
+            <value>
+                <fullName>Cheque drawn irregularly</fullName>
+                <default>false</default>
+                <label>Cheque drawn irregularly</label>
+            </value>
+            <value>
+                <fullName>Amount not matching words</fullName>
+                <default>false</default>
+                <label>Amount not matching words</label>
+            </value>
+            <value>
+                <fullName>No Date</fullName>
+                <default>false</default>
+                <label>No Date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

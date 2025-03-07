@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Can_not_edit_lead_source_if_not_blank</fullName>
+    <active>true</active>
+    <description>If lead source is not blank  and the user is making it blank &quot; You don&apos;t have privileges remove the lead source details&quot;</description>
+    <errorConditionFormula>AND( NOT(ISBLANK(PRIORVALUE(  LeadSource  ))), 
+ISCHANGED(LeadSource) ,
+ $Profile.Name != &quot;Integration User&quot;,
+$Profile.Name != &quot;GRE&quot;,
+$Profile.Name != &quot;System Administrator&quot;,
+$Permission.Bypass_Validation_Rules = FALSE
+)</errorConditionFormula>
+    <errorDisplayField>LeadSource</errorDisplayField>
+    <errorMessage>You don&apos;t have privileges to edit the lead source details</errorMessage>
+</ValidationRule>

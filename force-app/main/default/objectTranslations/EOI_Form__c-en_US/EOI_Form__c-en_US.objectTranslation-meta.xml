@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>EOI Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>EOI Forms</value>
+    </caseValues>
+    <layouts>
+        <layout>EOI Form Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fourth Applicant Details --></label>
+            <section>Fourth Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Manager Details --></label>
+            <section>Sales Manager Details</section>
+        </sections>
+        <sections>
+            <label><!-- Second Applicant Details --></label>
+            <section>Second Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Thrid Applicant Details --></label>
+            <section>Thrid Applicant Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select the Channel Partner --></errorMessage>
+        <name>CP_is_not_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sobha Connect is not be Blank --></errorMessage>
+        <name>SC_Is_not_Blank</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- EOI_Form --></label>
+        <name>EOI_Form</name>
+    </webLinks>
+</CustomObjectTranslation>

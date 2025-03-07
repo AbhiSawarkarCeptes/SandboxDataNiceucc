@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Website_PRs</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Unit__c</columns>
+    <columns>Booking__c</columns>
+    <columns>Name__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Status__c</columns>
+    <columns>Mode_Option__c</columns>
+    <columns>Mode__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Mode__c</field>
+        <operation>equals</operation>
+        <value>Website</value>
+    </filters>
+    <label>All Website PRs</label>
+    <sharedTo>
+        <role>Finance</role>
+    </sharedTo>
+</ListView>

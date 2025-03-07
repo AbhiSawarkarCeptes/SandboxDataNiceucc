@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>N_Opportunity_Lightning_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>N_Opportunity_Lightning_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Broker Custom Reports</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Events_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Events__c</pageOrSobjectType>
+        <recordType>Events__c.Road_Shows</recordType>
+        <type>Flexipage</type>
+        <profile>CP Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Events_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Events__c</pageOrSobjectType>
+        <recordType>Events__c.Road_Shows</recordType>
+        <type>Flexipage</type>
+        <profile>CP Manager</profile>
+    </profileActionOverrides>
+    <tabs>Broker_Ageing_Report</tabs>
+    <tabs>Payment_Plan__c</tabs>
+    <tabs>Visitor_Registration__c</tabs>
+    <tabs>Management_Approval_Request__c</tabs>
+    <tabs>Payment_Plan_Milestones__c</tabs>
+    <tabs>Customer_Offers__c</tabs>
+    <tabs>Case_link__c</tabs>
+    <tabs>Payment_Request__c</tabs>
+    <tabs>Inventory_Page</tabs>
+    <tabs>Broker_Empanelment_Form</tabs>
+    <tabs>Broker_Renewal__c</tabs>
+    <tabs>Bank_GL__c</tabs>
+    <tabs>BRC_PR_Allocation__c</tabs>
+    <tabs>Collector_Assignment__c</tabs>
+    <tabs>Campaign__c</tabs>
+    <tabs>API_Callout_Log__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Broker_Custom_Reports_UtilityBar</utilityBar>
+</CustomApplication>

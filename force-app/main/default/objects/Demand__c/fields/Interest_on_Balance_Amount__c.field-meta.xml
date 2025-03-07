@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interest_on_Balance_Amount__c</fullName>
+    <externalId>false</externalId>
+    <formula>If ( TODAY() &gt; Due_Date__c,
+(Total_Balance__c *  $Setup.ROI_del__c.ROI__c * ( TODAY() -  Due_Date__c )),0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Interest on Balance Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

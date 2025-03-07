@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Offer_Applicable_Projects__c</fullName>
+    <label>Offer Applicable Projects</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>One Park Avenue Tower</fullName>
+                <default>false</default>
+                <label>One Park Avenue Tower</label>
+            </value>
+            <value>
+                <fullName>Phase I</fullName>
+                <default>false</default>
+                <label>Phase I</label>
+            </value>
+            <value>
+                <fullName>Phase I - Building 1</fullName>
+                <default>false</default>
+                <label>Phase I - Building 1</label>
+            </value>
+            <value>
+                <fullName>Phase I - Building 4</fullName>
+                <default>false</default>
+                <label>Phase I - Building 4</label>
+            </value>
+            <value>
+                <fullName>Phase II</fullName>
+                <default>false</default>
+                <label>Phase II</label>
+            </value>
+            <value>
+                <fullName>Phase II - Building 2</fullName>
+                <default>false</default>
+                <label>Phase II - Building 2</label>
+            </value>
+            <value>
+                <fullName>Phase II - Building 3</fullName>
+                <default>false</default>
+                <label>Phase II - Building 3</label>
+            </value>
+            <value>
+                <fullName>Phase III</fullName>
+                <default>false</default>
+                <label>Phase III</label>
+            </value>
+            <value>
+                <fullName>Phase III - Building 5</fullName>
+                <default>false</default>
+                <label>Phase III - Building 5</label>
+            </value>
+            <value>
+                <fullName>Phase III - Building 6</fullName>
+                <default>false</default>
+                <label>Phase III - Building 6</label>
+            </value>
+            <value>
+                <fullName>SCVR - A</fullName>
+                <default>false</default>
+                <label>SCVR - A</label>
+            </value>
+            <value>
+                <fullName>SCVR - B</fullName>
+                <default>false</default>
+                <label>SCVR - B</label>
+            </value>
+            <value>
+                <fullName>Sobha Creek vistas Reserve</fullName>
+                <default>false</default>
+                <label>Sobha Creek vistas Reserve</label>
+            </value>
+            <value>
+                <fullName>Sobha Tranquility</fullName>
+                <default>false</default>
+                <label>Sobha Tranquility</label>
+            </value>
+            <value>
+                <fullName>Tower A</fullName>
+                <default>false</default>
+                <label>Tower A</label>
+            </value>
+            <value>
+                <fullName>Tower B</fullName>
+                <default>false</default>
+                <label>Tower B</label>
+            </value>
+            <value>
+                <fullName>Townhouse</fullName>
+                <default>false</default>
+                <label>Townhouse</label>
+            </value>
+            <value>
+                <fullName>Waterside Plots</fullName>
+                <default>false</default>
+                <label>Waterside Plots</label>
+            </value>
+            <value>
+                <fullName>Waves</fullName>
+                <default>false</default>
+                <label>Waves</label>
+            </value>
+            <value>
+                <fullName>Waves Grande</fullName>
+                <default>false</default>
+                <label>Waves Grande</label>
+            </value>
+            <value>
+                <fullName>The S</fullName>
+                <default>false</default>
+                <label>The S</label>
+            </value>
+            <value>
+                <fullName>CVG</fullName>
+                <default>false</default>
+                <label>CVG</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

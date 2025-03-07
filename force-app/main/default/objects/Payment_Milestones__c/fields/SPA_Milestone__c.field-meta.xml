@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPA_Milestone__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Installment__c=&quot;Booking Amount&quot;,Milestone_Name__c,
+			IF(NOT(CONTAINS(Milestone_Name__c,&apos;Completion&apos;)),(Milestone_Name__c &amp; &apos;(*)&apos;),(Milestone_Name__c &amp; &apos;(**)&apos;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SPA Milestone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

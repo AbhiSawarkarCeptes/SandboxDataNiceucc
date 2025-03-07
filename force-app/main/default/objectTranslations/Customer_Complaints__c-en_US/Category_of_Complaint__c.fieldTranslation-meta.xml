@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category of Complaint --></label>
+    <name>Category_of_Complaint__c</name>
+    <picklistValues>
+        <masterLabel>Area Change</masterLabel>
+        <translation><!-- Area Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation and Refund</masterLabel>
+        <translation><!-- Cancellation and Refund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation and Transfer of funds</masterLabel>
+        <translation><!-- Cancellation and Transfer of funds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation through Dubai Court</masterLabel>
+        <translation><!-- Cancellation through Dubai Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compensation</masterLabel>
+        <translation><!-- Compensation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction NOC</masterLabel>
+        <translation><!-- Construction NOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Handover</masterLabel>
+        <translation><!-- Handover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Payment Waiver</masterLabel>
+        <translation><!-- Late Payment Waiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mis-Sell</masterLabel>
+        <translation><!-- Mis-Sell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Name addition</masterLabel>
+        <translation><!-- Name addition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ownership Change</masterLabel>
+        <translation><!-- Ownership Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment</masterLabel>
+        <translation><!-- Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Plan Extension</masterLabel>
+        <translation><!-- Payment Plan Extension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rebate</masterLabel>
+        <translation><!-- Rebate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale</masterLabel>
+        <translation><!-- Resale --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

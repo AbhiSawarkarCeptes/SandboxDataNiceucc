@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSD_should_be_15_days_of_PD</fullName>
+    <active>true</active>
+    <description>Start date should be  &gt; 15days from proposal date</description>
+    <errorConditionFormula>AND(Bypass_Validation_Rule__c == false,$User.Username != &apos;maria.lobo@sobharealty.com&apos;,$RecordType.Name == &apos;Open Houses&apos;, Date_Of_Event__c &lt;= today()+15 ,OR(ISNew(),IsChanged(Date_Of_Event__c)) )</errorConditionFormula>
+    <errorDisplayField>Date_Of_Event__c</errorDisplayField>
+    <errorMessage>ERF should be raised before 15 days of the event starting date</errorMessage>
+</ValidationRule>

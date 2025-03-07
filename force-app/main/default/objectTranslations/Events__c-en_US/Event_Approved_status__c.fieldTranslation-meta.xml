@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Event approval status --></label>
+    <name>Event_Approved_status__c</name>
+    <picklistValues>
+        <masterLabel>After Invoice Raise Approved by CP Head</masterLabel>
+        <translation><!-- After Invoice Raise Approved by CP Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by AVP</masterLabel>
+        <translation><!-- Approved by AVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by Anuj</masterLabel>
+        <translation><!-- Approved by Anuj --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by CMO</masterLabel>
+        <translation><!-- Approved by CMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice Under Review</masterLabel>
+        <translation><!-- Invoice Under Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending With Ashish Parakh</masterLabel>
+        <translation><!-- Pending With Ashish Parakh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending With CHRM manager</masterLabel>
+        <translation><!-- Pending With CHRM manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending With CHRM manager TL</masterLabel>
+        <translation><!-- Pending With CHRM manager TL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending With Channel Ops</masterLabel>
+        <translation><!-- Pending With Channel Ops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending With Manish Goenka</masterLabel>
+        <translation><!-- Pending With Manish Goenka --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending With Maria</masterLabel>
+        <translation><!-- Pending With Maria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending With SVP</masterLabel>
+        <translation><!-- Pending With SVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending With Sales Director</masterLabel>
+        <translation><!-- Pending With Sales Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending With VP</masterLabel>
+        <translation><!-- Pending With VP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for Hotel Finalization</masterLabel>
+        <translation><!-- Pending for Hotel Finalization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with AVP</masterLabel>
+        <translation><!-- Pending with AVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with Anuj</masterLabel>
+        <translation><!-- Pending with Anuj --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with Swapnil</masterLabel>
+        <translation><!-- Pending with Swapnil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by AVP</masterLabel>
+        <translation><!-- Rejected by AVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Anuj</masterLabel>
+        <translation><!-- Rejected by Anuj --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been Approved by SVP</masterLabel>
+        <translation><!-- The event has been Approved by SVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been Approved by Sales Manager</masterLabel>
+        <translation><!-- The event has been Approved by Sales Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been Approved by Team Lead</masterLabel>
+        <translation><!-- The event has been Approved by Team Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been Approved for the Invoice Raise</masterLabel>
+        <translation><!-- The event has been Approved for the Invoice Raise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been Rejected before the Invoice Raise</masterLabel>
+        <translation><!-- The event has been Rejected before the Invoice Raise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been Rejected by Sales Manager</masterLabel>
+        <translation><!-- The event has been Rejected by Sales Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been Rejected by Team Lead</masterLabel>
+        <translation><!-- The event has been Rejected by Team Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been Submitted for the Invoice Raise Approval</masterLabel>
+        <translation><!-- The event has been Submitted for the Invoice Raise Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been Submitted for the after Invoice Raise Approval  for CSO</masterLabel>
+        <translation><!-- The event has been Submitted for the after Invoice Raise Approval  for CSO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been Submitted for the after Invoice Raise Approval to CP Head</masterLabel>
+        <translation><!-- The event has been Submitted for the after Invoice Raise Approval to CP Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been Submitted for the after Invoice Raise Rejected by CP Head</masterLabel>
+        <translation><!-- The event has been Submitted for the after Invoice Raise Rejected by CP Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been approved by Ashish Parakh</masterLabel>
+        <translation><!-- The event has been approved by Ashish Parakh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been approved by CHRM manager</masterLabel>
+        <translation><!-- The event has been approved by CHRM manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been approved by CHRM manager TL</masterLabel>
+        <translation><!-- The event has been approved by CHRM manager TL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been approved by CRM OPs after Invoice Approval</masterLabel>
+        <translation><!-- The event has been approved by CRM OPs after Invoice Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been approved by CSO</masterLabel>
+        <translation><!-- The event has been approved by CSO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been approved by GM Hospitality</masterLabel>
+        <translation><!-- The event has been approved by GM Hospitality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been approved by Manish Goenka</masterLabel>
+        <translation><!-- The event has been approved by Manish Goenka --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been approved by Maria</masterLabel>
+        <translation><!-- The event has been approved by Maria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been approved by Sales Director</masterLabel>
+        <translation><!-- The event has been approved by Sales Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been approved by VP</masterLabel>
+        <translation><!-- The event has been approved by VP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been rejected by Ashish Parakh</masterLabel>
+        <translation><!-- The event has been rejected by Ashish Parakh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been rejected by CHRM manager</masterLabel>
+        <translation><!-- The event has been rejected by CHRM manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been rejected by CHRM manager TL</masterLabel>
+        <translation><!-- The event has been rejected by CHRM manager TL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been rejected by GM Hospitality</masterLabel>
+        <translation><!-- The event has been rejected by GM Hospitality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been rejected by Manish Goenka</masterLabel>
+        <translation><!-- The event has been rejected by Manish Goenka --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been rejected by Maria</masterLabel>
+        <translation><!-- The event has been rejected by Maria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been rejected by SVP</masterLabel>
+        <translation><!-- The event has been rejected by SVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been rejected by Sales Director</masterLabel>
+        <translation><!-- The event has been rejected by Sales Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The event has been rejected by VP</masterLabel>
+        <translation><!-- The event has been rejected by VP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>This event has been submitted by GM after invoice approval</masterLabel>
+        <translation><!-- This event has been submitted by GM after invoice approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Venue Cost Approval - pending with AVP</masterLabel>
+        <translation><!-- Venue Cost Approval - pending with AVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Venue Cost Approved</masterLabel>
+        <translation><!-- Venue Cost Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Venue Cost Approved-CMO</masterLabel>
+        <translation><!-- Venue Cost Approved-CMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Venue Cost Approved-HOD</masterLabel>
+        <translation><!-- Venue Cost Approved-HOD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Venue Cost Pending Approval - CMO</masterLabel>
+        <translation><!-- Venue Cost Pending Approval - CMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Venue Cost Pending Approval - CSO</masterLabel>
+        <translation><!-- Venue Cost Pending Approval - CSO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Venue Cost Rejected-CMO</masterLabel>
+        <translation><!-- Venue Cost Rejected-CMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Venue Cost Rejected-HOD</masterLabel>
+        <translation><!-- Venue Cost Rejected-HOD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Venue Cost Resubmission Needed</masterLabel>
+        <translation><!-- Venue Cost Resubmission Needed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

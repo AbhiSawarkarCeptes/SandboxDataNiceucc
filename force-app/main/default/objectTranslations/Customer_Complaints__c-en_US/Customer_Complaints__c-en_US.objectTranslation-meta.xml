@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Complaints</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customers complaints</value>
+    </caseValues>
+    <layouts>
+        <layout>Customer Complaints Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter the Closing Remarks --></errorMessage>
+        <name>Closing_Remarks_to_be_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the Complaint / Detail Remarks. --></errorMessage>
+        <name>Complaint_detail_Remarks_to_be_mandator</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Cancellation_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISNEW() &amp;&amp; ISCHANGED(Status__c) &amp;&amp; ISPICKVAL(Status__c,&apos;Cancelled&apos;) &amp;&amp; 
+ISPICKVAL(Reason_For_Cancellation_D__c, &apos;&apos;)</errorConditionFormula>
+    <errorDisplayField>Reason_For_Cancellation_D__c</errorDisplayField>
+    <errorMessage>Please enter the Reason for Cancellation before cancelling the Booking.</errorMessage>
+</ValidationRule>

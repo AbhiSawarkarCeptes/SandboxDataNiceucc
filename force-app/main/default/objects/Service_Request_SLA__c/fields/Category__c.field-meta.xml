@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <label>Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Welcome</fullName>
+                <default>false</default>
+                <label>Welcome</label>
+            </value>
+            <value>
+                <fullName>SPA</fullName>
+                <default>false</default>
+                <label>SPA</label>
+            </value>
+            <value>
+                <fullName>Pre registration</fullName>
+                <default>false</default>
+                <label>Pre registration</label>
+            </value>
+            <value>
+                <fullName>Booking related</fullName>
+                <default>false</default>
+                <label>Booking related</label>
+            </value>
+            <value>
+                <fullName>Resale</fullName>
+                <default>false</default>
+                <label>Resale</label>
+            </value>
+            <value>
+                <fullName>Title Deed</fullName>
+                <default>false</default>
+                <label>Title Deed</label>
+            </value>
+            <value>
+                <fullName>Mortgage</fullName>
+                <default>false</default>
+                <label>Mortgage</label>
+            </value>
+            <value>
+                <fullName>Supplier Details</fullName>
+                <default>false</default>
+                <label>Supplier Details</label>
+            </value>
+            <value>
+                <fullName>Business Proposal</fullName>
+                <default>false</default>
+                <label>Business Proposal</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Home Orientation</fullName>
+                <default>false</default>
+                <label>Home Orientation</label>
+            </value>
+            <value>
+                <fullName>Handover</fullName>
+                <default>false</default>
+                <label>Handover</label>
+            </value>
+            <value>
+                <fullName>Notices</fullName>
+                <default>false</default>
+                <label>Notices</label>
+            </value>
+            <value>
+                <fullName>Construction Update</fullName>
+                <default>false</default>
+                <label>Construction Update</label>
+            </value>
+            <value>
+                <fullName>Compensations</fullName>
+                <default>false</default>
+                <label>Compensations</label>
+            </value>
+            <value>
+                <fullName>Snag Rectification</fullName>
+                <default>false</default>
+                <label>Snag Rectification</label>
+            </value>
+            <value>
+                <fullName>Payment Completion Certificate</fullName>
+                <default>false</default>
+                <label>Payment Completion Certificate</label>
+            </value>
+            <value>
+                <fullName>DEWA</fullName>
+                <default>false</default>
+                <label>DEWA</label>
+            </value>
+            <value>
+                <fullName>Warranty Letters</fullName>
+                <default>false</default>
+                <label>Warranty Letters</label>
+            </value>
+            <value>
+                <fullName>Parking</fullName>
+                <default>false</default>
+                <label>Parking</label>
+            </value>
+            <value>
+                <fullName>FedEx</fullName>
+                <default>false</default>
+                <label>FedEx</label>
+            </value>
+            <value>
+                <fullName>Name Change</fullName>
+                <default>false</default>
+                <label>Name Change</label>
+            </value>
+            <value>
+                <fullName>Unit Related</fullName>
+                <default>false</default>
+                <label>Unit Related</label>
+            </value>
+            <value>
+                <fullName>Service Charges</fullName>
+                <default>false</default>
+                <label>Service Charges</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>MD/CM office escalation</fullName>
+                <default>false</default>
+                <label>MD/CM office escalation</label>
+            </value>
+            <value>
+                <fullName>SOA</fullName>
+                <default>false</default>
+                <label>SOA</label>
+            </value>
+            <value>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+                <label>Cheque</label>
+            </value>
+            <value>
+                <fullName>Escrow Details</fullName>
+                <default>false</default>
+                <label>Escrow Details</label>
+            </value>
+            <value>
+                <fullName>Refund</fullName>
+                <default>false</default>
+                <label>Refund</label>
+            </value>
+            <value>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+                <label>Invoice</label>
+            </value>
+            <value>
+                <fullName>Termination/ Cancellation</fullName>
+                <default>false</default>
+                <label>Termination/ Cancellation</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Vehicle Access Cards</fullName>
+                <default>false</default>
+                <label>Vehicle Access Cards</label>
+            </value>
+            <value>
+                <fullName>Community Access Cards</fullName>
+                <default>false</default>
+                <label>Community Access Cards</label>
+            </value>
+            <value>
+                <fullName>Service Provider Access Permit</fullName>
+                <default>false</default>
+                <label>Service Provider Access Permit</label>
+            </value>
+            <value>
+                <fullName>Visitors Access</fullName>
+                <default>false</default>
+                <label>Visitors Access</label>
+            </value>
+            <value>
+                <fullName>Community Amenities Access</fullName>
+                <default>false</default>
+                <label>Community Amenities Access</label>
+            </value>
+            <value>
+                <fullName>Move-in Permits (MIP)</fullName>
+                <default>false</default>
+                <label>Move-in Permits (MIP)</label>
+            </value>
+            <value>
+                <fullName>Move-out Permits (MOP)</fullName>
+                <default>false</default>
+                <label>Move-out Permits (MOP)</label>
+            </value>
+            <value>
+                <fullName>Registration Request (REG)</fullName>
+                <default>false</default>
+                <label>Registration Request (REG)</label>
+            </value>
+            <value>
+                <fullName>Renewal of app account (REN)</fullName>
+                <default>false</default>
+                <label>Renewal of app account (REN)</label>
+            </value>
+            <value>
+                <fullName>Mobile App Log-in</fullName>
+                <default>false</default>
+                <label>Mobile App Log-in</label>
+            </value>
+            <value>
+                <fullName>Household Staff Registration</fullName>
+                <default>false</default>
+                <label>Household Staff Registration</label>
+            </value>
+            <value>
+                <fullName>Holiday Home</fullName>
+                <default>false</default>
+                <label>Holiday Home</label>
+            </value>
+            <value>
+                <fullName>Photography or Photshoot Permissions</fullName>
+                <default>false</default>
+                <label>Photography or Photshoot Permissions</label>
+            </value>
+            <value>
+                <fullName>Elevators</fullName>
+                <default>false</default>
+                <label>Elevators</label>
+            </value>
+            <value>
+                <fullName>DEWA electricity and water - Common area</fullName>
+                <default>false</default>
+                <label>DEWA electricity and water - Common area</label>
+            </value>
+            <value>
+                <fullName>Water Leakage (Neighbor Issues)</fullName>
+                <default>false</default>
+                <label>Water Leakage (Neighbor Issues)</label>
+            </value>
+            <value>
+                <fullName>Water Leakage - Common Area</fullName>
+                <default>false</default>
+                <label>Water Leakage - Common Area</label>
+            </value>
+            <value>
+                <fullName>Neighbor Disputes</fullName>
+                <default>false</default>
+                <label>Neighbor Disputes</label>
+            </value>
+            <value>
+                <fullName>Irrigation water leakage</fullName>
+                <default>false</default>
+                <label>Irrigation water leakage</label>
+            </value>
+            <value>
+                <fullName>Landscaping</fullName>
+                <default>false</default>
+                <label>Landscaping</label>
+            </value>
+            <value>
+                <fullName>Notice of Violations</fullName>
+                <default>false</default>
+                <label>Notice of Violations</label>
+            </value>
+            <value>
+                <fullName>Community Rules Violation</fullName>
+                <default>false</default>
+                <label>Community Rules Violation</label>
+            </value>
+            <value>
+                <fullName>Alterations</fullName>
+                <default>false</default>
+                <label>Alterations</label>
+            </value>
+            <value>
+                <fullName>Amenity Reservations</fullName>
+                <default>false</default>
+                <label>Amenity Reservations</label>
+            </value>
+            <value>
+                <fullName>Pest Control- Rodents</fullName>
+                <default>false</default>
+                <label>Pest Control- Rodents</label>
+            </value>
+            <value>
+                <fullName>Pest Control- Flies/Mosquitos</fullName>
+                <default>false</default>
+                <label>Pest Control- Flies/Mosquitos</label>
+            </value>
+            <value>
+                <fullName>Civil Works</fullName>
+                <default>false</default>
+                <label>Civil Works</label>
+            </value>
+            <value>
+                <fullName>Blockage</fullName>
+                <default>false</default>
+                <label>Blockage</label>
+            </value>
+            <value>
+                <fullName>LPG</fullName>
+                <default>false</default>
+                <label>LPG</label>
+            </value>
+            <value>
+                <fullName>Broken Glass</fullName>
+                <default>false</default>
+                <label>Broken Glass</label>
+            </value>
+            <value>
+                <fullName>Security Staff Behavior</fullName>
+                <default>false</default>
+                <label>Security Staff Behavior</label>
+            </value>
+            <value>
+                <fullName>Community Staff Behavior</fullName>
+                <default>false</default>
+                <label>Community Staff Behavior</label>
+            </value>
+            <value>
+                <fullName>Construction Noise</fullName>
+                <default>false</default>
+                <label>Construction Noise</label>
+            </value>
+            <value>
+                <fullName>Customer Appreciation</fullName>
+                <default>false</default>
+                <label>Customer Appreciation</label>
+            </value>
+            <value>
+                <fullName>Damaged Pavements or Roads</fullName>
+                <default>false</default>
+                <label>Damaged Pavements or Roads</label>
+            </value>
+            <value>
+                <fullName>Gate/Entrance Barrier</fullName>
+                <default>false</default>
+                <label>Gate/Entrance Barrier</label>
+            </value>
+            <value>
+                <fullName>Private events permission</fullName>
+                <default>false</default>
+                <label>Private events permission</label>
+            </value>
+            <value>
+                <fullName>Fire Alarm</fullName>
+                <default>false</default>
+                <label>Fire Alarm</label>
+            </value>
+            <value>
+                <fullName>Flood Water/Accumulation</fullName>
+                <default>false</default>
+                <label>Flood Water/Accumulation</label>
+            </value>
+            <value>
+                <fullName>Foul Smell/Odor</fullName>
+                <default>false</default>
+                <label>Foul Smell/Odor</label>
+            </value>
+            <value>
+                <fullName>Garbage Bin Request</fullName>
+                <default>false</default>
+                <label>Garbage Bin Request</label>
+            </value>
+            <value>
+                <fullName>Garbage Chute</fullName>
+                <default>false</default>
+                <label>Garbage Chute</label>
+            </value>
+            <value>
+                <fullName>General Cleaning</fullName>
+                <default>false</default>
+                <label>General Cleaning</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Health and Safety</fullName>
+                <default>false</default>
+                <label>Health and Safety</label>
+            </value>
+            <value>
+                <fullName>Insurance Claims</fullName>
+                <default>false</default>
+                <label>Insurance Claims</label>
+            </value>
+            <value>
+                <fullName>Intercom</fullName>
+                <default>false</default>
+                <label>Intercom</label>
+            </value>
+            <value>
+                <fullName>Kids Play Area</fullName>
+                <default>false</default>
+                <label>Kids Play Area</label>
+            </value>
+            <value>
+                <fullName>Low Water Pressure</fullName>
+                <default>false</default>
+                <label>Low Water Pressure</label>
+            </value>
+            <value>
+                <fullName>Paint Color Code Request</fullName>
+                <default>false</default>
+                <label>Paint Color Code Request</label>
+            </value>
+            <value>
+                <fullName>Painting Damage – Common area</fullName>
+                <default>false</default>
+                <label>Painting Damage – Common area</label>
+            </value>
+            <value>
+                <fullName>Pet Management</fullName>
+                <default>false</default>
+                <label>Pet Management</label>
+            </value>
+            <value>
+                <fullName>Rain/Wind Damages</fullName>
+                <default>false</default>
+                <label>Rain/Wind Damages</label>
+            </value>
+            <value>
+                <fullName>Waste Collection</fullName>
+                <default>false</default>
+                <label>Waste Collection</label>
+            </value>
+            <value>
+                <fullName>Recycle Waste</fullName>
+                <default>false</default>
+                <label>Recycle Waste</label>
+            </value>
+            <value>
+                <fullName>Report Accident</fullName>
+                <default>false</default>
+                <label>Report Accident</label>
+            </value>
+            <value>
+                <fullName>Theft/Intruders</fullName>
+                <default>false</default>
+                <label>Theft/Intruders</label>
+            </value>
+            <value>
+                <fullName>Signage</fullName>
+                <default>false</default>
+                <label>Signage</label>
+            </value>
+            <value>
+                <fullName>Storage Cage</fullName>
+                <default>false</default>
+                <label>Storage Cage</label>
+            </value>
+            <value>
+                <fullName>Gymnasium</fullName>
+                <default>false</default>
+                <label>Gymnasium</label>
+            </value>
+            <value>
+                <fullName>Vehicle Speeding</fullName>
+                <default>false</default>
+                <label>Vehicle Speeding</label>
+            </value>
+            <value>
+                <fullName>Window Cleaning</fullName>
+                <default>false</default>
+                <label>Window Cleaning</label>
+            </value>
+            <value>
+                <fullName>Pandemic</fullName>
+                <default>false</default>
+                <label>Pandemic</label>
+            </value>
+            <value>
+                <fullName>Communication</fullName>
+                <default>false</default>
+                <label>Communication</label>
+            </value>
+            <value>
+                <fullName>Call Back Request</fullName>
+                <default>false</default>
+                <label>Call Back Request</label>
+            </value>
+            <value>
+                <fullName>No Water - Common Area</fullName>
+                <default>false</default>
+                <label>No Water - Common Area</label>
+            </value>
+            <value>
+                <fullName>No Electrictity - Common Area</fullName>
+                <default>false</default>
+                <label>No Electrictity - Common Area</label>
+            </value>
+            <value>
+                <fullName>No Hot Water Supply - Common Area</fullName>
+                <default>false</default>
+                <label>No Hot Water Supply - Common Area</label>
+            </value>
+            <value>
+                <fullName>Online Services</fullName>
+                <default>false</default>
+                <label>Online Services</label>
+            </value>
+            <value>
+                <fullName>Community Service Fees</fullName>
+                <default>false</default>
+                <label>Community Service Fees</label>
+            </value>
+            <value>
+                <fullName>Lights - Common Area</fullName>
+                <default>false</default>
+                <label>Lights - Common Area</label>
+            </value>
+            <value>
+                <fullName>AC Cooling - Inside Units</fullName>
+                <default>false</default>
+                <label>AC Cooling - Inside Units</label>
+            </value>
+            <value>
+                <fullName>AC Cooling - Common Area</fullName>
+                <default>false</default>
+                <label>AC Cooling - Common Area</label>
+            </value>
+            <value>
+                <fullName>Common Area Doors</fullName>
+                <default>false</default>
+                <label>Common Area Doors</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <label>Transportation</label>
+            </value>
+            <value>
+                <fullName>MEP Noise</fullName>
+                <default>false</default>
+                <label>MEP Noise</label>
+            </value>
+            <value>
+                <fullName>Other community amenities</fullName>
+                <default>false</default>
+                <label>Other community amenities</label>
+            </value>
+            <value>
+                <fullName>Owner&apos;s Association</fullName>
+                <default>false</default>
+                <label>Owner&apos;s Association</label>
+            </value>
+            <value>
+                <fullName>Lost and Found</fullName>
+                <default>false</default>
+                <label>Lost and Found</label>
+            </value>
+            <value>
+                <fullName>Community Improvements</fullName>
+                <default>false</default>
+                <label>Community Improvements</label>
+            </value>
+            <value>
+                <fullName>Plumbing</fullName>
+                <default>false</default>
+                <label>Plumbing</label>
+            </value>
+            <value>
+                <fullName>AC</fullName>
+                <default>false</default>
+                <label>AC</label>
+            </value>
+            <value>
+                <fullName>Fire System</fullName>
+                <default>false</default>
+                <label>Fire System</label>
+            </value>
+            <value>
+                <fullName>Electromechanical</fullName>
+                <default>false</default>
+                <label>Electromechanical</label>
+            </value>
+            <value>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+                <label>Electrical</label>
+            </value>
+            <value>
+                <fullName>Appliances</fullName>
+                <default>false</default>
+                <label>Appliances</label>
+            </value>
+            <value>
+                <fullName>Swimming Pool</fullName>
+                <default>false</default>
+                <label>Swimming Pool</label>
+            </value>
+            <value>
+                <fullName>Civil</fullName>
+                <default>false</default>
+                <label>Civil</label>
+            </value>
+            <value>
+                <fullName>Apartment / Townhouse modification request</fullName>
+                <default>false</default>
+                <label>Apartment / Townhouse modification request</label>
+            </value>
+            <value>
+                <fullName>Villa modification request</fullName>
+                <default>false</default>
+                <label>Villa modification request</label>
+            </value>
+            <value>
+                <fullName>Retail modification request</fullName>
+                <default>false</default>
+                <label>Retail modification request</label>
+            </value>
+            <value>
+                <fullName>Plots</fullName>
+                <default>false</default>
+                <label>Plots</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>SPAM</fullName>
+                <default>false</default>
+                <label>SPAM</label>
+            </value>
+            <value>
+                <fullName>Test</fullName>
+                <default>false</default>
+                <label>Test</label>
+            </value>
+            <value>
+                <fullName>Unregistered Email ID</fullName>
+                <default>false</default>
+                <label>Unregistered Email ID</label>
+            </value>
+            <value>
+                <fullName>HR</fullName>
+                <default>false</default>
+                <label>HR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

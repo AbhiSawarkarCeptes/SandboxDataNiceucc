@@ -1,0 +1,1766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Booking</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Booking</value>
+    </caseValues>
+    <layouts>
+        <layout>Admin</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Details --></label>
+            <section>Booking Details</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Termination --></label>
+            <section>Booking Termination</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Handover Details --></label>
+            <section>Handover Details</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Details --></label>
+            <section>Pre-Registration Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+        <sections>
+            <label><!-- Title Deed Transfer Details --></label>
+            <section>Title Deed Transfer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Transfer Account Amount Details --></label>
+            <section>Transfer Account Amount Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Admin Clone Booking Layout</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Process Details --></label>
+            <section>Pre-Registration Process Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+        <sections>
+            <label><!-- Transfer Account Amount Details --></label>
+            <section>Transfer Account Amount Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assistant Manager CMO</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Details --></label>
+            <section>Booking Details</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Termination --></label>
+            <section>Booking Termination</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Handover Details --></label>
+            <section>Handover Details</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Details --></label>
+            <section>Pre-Registration Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+        <sections>
+            <label><!-- Title Deed Transfer Details --></label>
+            <section>Title Deed Transfer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Transfer Account Amount Details --></label>
+            <section>Transfer Account Amount Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Audit/CFO Booking Layout</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Process Details --></label>
+            <section>Pre-Registration Process Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Booking Layout</layout>
+        <sections>
+            <label><!-- Actual Charges Details --></label>
+            <section>Actual Charges Details</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Parking Details --></label>
+            <section>Additional Parking Details</section>
+        </sections>
+        <sections>
+            <label><!-- Alter Area --></label>
+            <section>Alter Area</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Processing --></label>
+            <section>Booking Processing</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Approval Section --></label>
+            <section>Finance Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Latest Booking Action --></label>
+            <section>Latest Booking Action</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Other Details --></label>
+            <section>Other Details</section>
+        </sections>
+        <sections>
+            <label><!-- Rate Change --></label>
+            <section>Rate Change</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CP Head Booking Layout</layout>
+        <sections>
+            <label><!-- Actual Charges Details --></label>
+            <section>Actual Charges Details</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Parking Details --></label>
+            <section>Additional Parking Details</section>
+        </sections>
+        <sections>
+            <label><!-- Alter Area --></label>
+            <section>Alter Area</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Processing --></label>
+            <section>Booking Processing</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Approval Section --></label>
+            <section>Finance Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Latest Booking Action --></label>
+            <section>Latest Booking Action</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Other Details --></label>
+            <section>Other Details</section>
+        </sections>
+        <sections>
+            <label><!-- Rate Change --></label>
+            <section>Rate Change</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CRM Booking Layout</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Termination --></label>
+            <section>Booking Termination</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Handover Details --></label>
+            <section>Handover Details</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Details --></label>
+            <section>Pre-Registration Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+        <sections>
+            <label><!-- Title Transfer Details --></label>
+            <section>Title Transfer Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CRM Booking Layout V2</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Handover Details --></label>
+            <section>Handover Details</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Details --></label>
+            <section>Pre-Registration Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+        <sections>
+            <label><!-- Title Transfer Details --></label>
+            <section>Title Transfer Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CRM Booking Layout with Booking Cancellation</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Termination --></label>
+            <section>Booking Termination</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Handover Details --></label>
+            <section>Handover Details</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Details --></label>
+            <section>Pre-Registration Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+        <sections>
+            <label><!-- Title Transfer Details --></label>
+            <section>Title Transfer Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Collection Booking Layout</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Termination --></label>
+            <section>Booking Termination</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Handover Details --></label>
+            <section>Handover Details</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Details --></label>
+            <section>Pre-Registration Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SOA Details --></label>
+            <section>SOA Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+        <sections>
+            <label><!-- Title Transfer Details --></label>
+            <section>Title Transfer Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Collection with CRM</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Handover Details --></label>
+            <section>Handover Details</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Details --></label>
+            <section>Pre-Registration Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+        <sections>
+            <label><!-- Title Transfer Details --></label>
+            <section>Title Transfer Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DLD Page Layout</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Termination --></label>
+            <section>Booking Termination</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Handover Details --></label>
+            <section>Handover Details</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Details --></label>
+            <section>Pre-Registration Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+        <sections>
+            <label><!-- Title Transfer Details --></label>
+            <section>Title Transfer Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>External SOA Verification Vendor</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Details --></label>
+            <section>Booking Details</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Termination --></label>
+            <section>Booking Termination</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Handover Details --></label>
+            <section>Handover Details</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Details --></label>
+            <section>Pre-Registration Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+        <sections>
+            <label><!-- Title Deed Transfer Details --></label>
+            <section>Title Deed Transfer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Transfer Account Amount Details --></label>
+            <section>Transfer Account Amount Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Finance Booking Layout</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Process Details --></label>
+            <section>Pre-Registration Process Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SOA Details --></label>
+            <section>SOA Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+        <sections>
+            <label><!-- Transfer Account Details --></label>
+            <section>Transfer Account Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Intern – CRM Booking Layout</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Details --></label>
+            <section>Pre-Registration Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NPS Survey Booking Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SM Booking Layout</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Process Details --></label>
+            <section>Pre-Registration Process Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SM Booking Layout 1</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SO Booking Layout</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Handover Details --></label>
+            <section>Handover Details</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Process Details --></label>
+            <section>Pre-Registration Process Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SO Booking Layout for AREA Update</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Cancellation --></label>
+            <section>Booking Cancellation</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Future Correspondence --></label>
+            <section>Future Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Entity Details --></label>
+            <section>Legal Entity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sales Call Details --></label>
+            <section>Post Sales Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Registration Process Details --></label>
+            <section>Pre-Registration Process Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>VP DEO&apos;s Booking Layout 1</layout>
+        <sections>
+            <label><!-- % of Purchase Price Details --></label>
+            <section>% of Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval Section --></label>
+            <section>Audit Approval Section</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Verification Details --></label>
+            <section>Document Verification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Applicant Details --></label>
+            <section>Primary Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- SM Details --></label>
+            <section>SM Details</section>
+        </sections>
+        <sections>
+            <label><!-- SPA Details --></label>
+            <section>SPA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source Details --></label>
+            <section>Source Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- CRMCall --></label>
+        <name>CRMCall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Calculate Late Payment Charges --></label>
+        <name>Calculate_Late_Payment_Charges</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Call Customer --></label>
+        <name>Call_Customer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Click to Dial --></label>
+        <name>Click_to_Dial</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Initiate Business Process --></label>
+        <name>Create_Pre_Registration</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Final Termination Notice --></label>
+        <name>Final_Termination_Notice</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Initiate Resale --></label>
+        <name>Initiate_Resale</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- LP Waiver --></label>
+        <name>LP_Waiver</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Mortgage --></label>
+        <name>Mortgage</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NPS Survey --></label>
+        <name>NPS_Survey</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Payment Request --></label>
+        <name>Payment_Request</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Payment Request (Downtime) --></label>
+        <name>Payment_Request_Downtime</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate RFP --></label>
+        <name>Request_For_Payment</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Request for Approval --></label>
+        <name>Request_for_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Resubmit to Submitter --></label>
+        <name>Resubmit_to_Submitter</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SPA Send to Seller --></label>
+        <name>SPA_Send_for_Seller_Signature</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SPA send to Document Controller --></label>
+        <name>SPA_send_for_Document_Controller</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Booking Form to Customer --></label>
+        <name>Send_Booking_Form_to_Customer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send DSPA for Docusign --></label>
+        <name>Send_DSPA_for_Docusign</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Executed SPA to Client --></label>
+        <name>Send_Executed_SPA_to_Client</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Handover For Signature --></label>
+        <name>Send_Handover_For_Signature</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send PCC To Customer --></label>
+        <name>Send_PCC</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send SPA Addendum to Customer --></label>
+        <name>Send_SPA_Addendum_to_Customer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send SPA for Docusign --></label>
+        <name>Send_SPA_for_Docusign</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send SPA to Customer --></label>
+        <name>Send_SPA_for_Signing</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit for SBTR Approval --></label>
+        <name>Submit_for_SBTR_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update NPS Survey Status --></label>
+        <name>Update_NPS_Survey_Status</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Upload SBF &amp; Other Documents --></label>
+        <name>Upload_SBF_Other_Documents</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Verify Documents --></label>
+        <name>Verify_Documents</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter your comments for rejection. --></errorMessage>
+        <name>Audit_comments_to_be_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the Stage of Booking to Blocked as paid percentage is less than 2% --></errorMessage>
+        <name>Blocked_Booking_with_PP_greater_than_2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the Stage of Booking to Booked as paid percentage is less than 10% --></errorMessage>
+        <name>Booked_Booking_with_PP_greater_than_10</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Signed booking form is mandatory when sending welcome email --></errorMessage>
+        <name>BookingForm_Is_Mandatory_WelcomeEmail</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please update &quot;Booking Date&quot; also along with &quot;Stage of Booked&quot; --></errorMessage>
+        <name>Booking_Date_and_Stage_of_Booking_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change &quot;Booking Date&quot; after &quot;Stage of Booking&quot; is Booked --></errorMessage>
+        <name>Booking_Date_cannot_be_changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unit Status Should Be Available To Create Booking. --></errorMessage>
+        <name>Booking_Unit_Should_be_Vacant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter Booking Validation Remarks --></errorMessage>
+        <name>Booking_Validation_Remarks_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Booking is in cancellation process. No updates are allowed on the record --></errorMessage>
+        <name>Booking_under_cancellation_Process</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter Cancellation Start Date and Cancellation End Date --></errorMessage>
+        <name>Cancellation_Start_Date_and_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot update both Cancel-Swap &amp; Cancel-Rebook as Yes --></errorMessage>
+        <name>Check_cancel_swap_and_rebook_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Should not select the prior status --></errorMessage>
+        <name>Notice_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- PreRegistration can be completed only by DLD --></errorMessage>
+        <name>PreRegistration_Completed_by_DLD</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quotation can not be changed after creation of booking --></errorMessage>
+        <name>Quatation_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the Reason for Cancellation before cancelling the Booking. --></errorMessage>
+        <name>Reason_for_Cancellation_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter Received SPA Particular sent / received date --></errorMessage>
+        <name>Received_SPA_Particular_sent_recev_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Des- Cancel &amp; Swap/Cancel &amp; Rebook is required when Cancel Rebook or Cancel Swap is Yes. --></errorMessage>
+        <name>Require_Remark_for_SO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Received SPA Particular sent/receive date should be greater than previous date when SPA Status is Revised SPA Particular Received - SPA Copy Pending. --></errorMessage>
+        <name>SPA_Copy_Pending_Update_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shortfall Amount should not be greater than 1500 --></errorMessage>
+        <name>Shortfall_should_not_greater_than_1500</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Title Deed can be completed only by DLD --></errorMessage>
+        <name>TitleDeed_Completedby_DLD</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Welcome call letter can not be sent for the this booking since audit approval is pending. --></errorMessage>
+        <name>Welcomecall_validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Booking_Form --></label>
+        <name>Booking_Form</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Cancel_Booking --></label>
+        <name>Cancel_Booking</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Cancel_Booking_SO --></label>
+        <name>Cancel_Booking_SO</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CompletionNoticeW_oHeaderFooter --></label>
+        <name>CompletionNoticeW_oHeaderFooter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CustomerSOA_UnProcessed_Receipts --></label>
+        <name>CustomerSOA_UnProcessed_Receipts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Customer_SOA --></label>
+        <name>Customer_SOA</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- File_Note --></label>
+        <name>File_Note</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Checklist --></label>
+        <name>Generate_Checklist</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Escrow_Account_Letters --></label>
+        <name>Generate_Escrow_Account_Letters</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Final_Notice --></label>
+        <name>Generate_Final_Notice</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Handover_Of_Possession --></label>
+        <name>Generate_Handover_Of_Possession</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Undertaking_Letter --></label>
+        <name>Generate_Undertaking_Letter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Lightning_View_Booking --></label>
+        <name>Lightning_View_Booking</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Customer_SOA --></label>
+        <name>New_Customer_SOA</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Debit_Note --></label>
+        <name>New_Debit_Note</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Receipt --></label>
+        <name>New_Receipt</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Other_SOA --></label>
+        <name>Other_SOA</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PCC --></label>
+        <name>PCC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PP_Filenote --></label>
+        <name>PP_Filenote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Process --></label>
+        <name>Process</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Raise_Late_Payment_Demand --></label>
+        <name>Raise_Late_Payment_Demand</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Registration_Payment --></label>
+        <name>Registration_Payment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Run_DDP --></label>
+        <name>Run_DDP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Run_Interest --></label>
+        <name>Run_Interest</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SPA_Bilingual_Excel_Format --></label>
+        <name>SPA_Bilingual_Excel_Format</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SPA_Particular_In_Excel --></label>
+        <name>SPA_Particular_In_Excel</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SPA_Particular_PDF --></label>
+        <name>SPA_Particular_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Completion_Notice --></label>
+        <name>Send_Completion_Notice</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Handover_Notice --></label>
+        <name>Send_Handover_Notice</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_SOA --></label>
+        <name>Send_SOA</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Transfer_Amount --></label>
+        <name>Transfer_Amount</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Upload_Customer_Documents --></label>
+        <name>Upload_Customer_Documents</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Handover_Notice_W_O_Header --></label>
+        <name>View_Handover_Notice_W_O_Header</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_LPC_Demand --></label>
+        <name>View_LPC_Demand</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_PreRegistration_Notice --></label>
+        <name>View_PreRegistration_Notice</name>
+    </webLinks>
+</CustomObjectTranslation>

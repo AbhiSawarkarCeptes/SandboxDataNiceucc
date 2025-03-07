@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area_Type__c</fullName>
+    <label>Area Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Carpet Area</fullName>
+                <default>false</default>
+                <label>Carpet Area</label>
+            </value>
+            <value>
+                <fullName>Chargeable Area</fullName>
+                <default>false</default>
+                <label>Chargeable Area</label>
+            </value>
+            <value>
+                <fullName>Garden Area</fullName>
+                <default>false</default>
+                <label>Garden Area</label>
+            </value>
+            <value>
+                <fullName>Courtyard Area</fullName>
+                <default>false</default>
+                <label>Courtyard Area</label>
+            </value>
+            <value>
+                <fullName>Terrace Area</fullName>
+                <default>false</default>
+                <label>Terrace Area</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

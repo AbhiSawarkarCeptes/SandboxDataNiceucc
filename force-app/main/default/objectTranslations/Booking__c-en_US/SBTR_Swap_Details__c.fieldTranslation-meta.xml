@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Update this field with Old Unit &amp; Old Booking Date, and NewUnit &amp; NewBooking Date --></help>
+    <label><!-- SBTR-Swap Details --></label>
+    <name>SBTR_Swap_Details__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Rejection Assignment By Audit --></label>
+    <name>Rejection__c</name>
+    <picklistValues>
+        <masterLabel>Accounts</masterLabel>
+        <translation><!-- Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collection</masterLabel>
+        <translation><!-- Collection --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Web_Eng_Sync_Enquiry_Field__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Web Eng Sync Enquiry Field</label>
+    <referenceTo>Web_Eng_Sync_Enquiry_Field__mdt</referenceTo>
+    <relationshipLabel>WebEng Enquiry Contact Transformations</relationshipLabel>
+    <relationshipName>WebEng_Enquiry_Contact_Transformations</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

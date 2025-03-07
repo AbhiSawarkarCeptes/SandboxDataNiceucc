@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_PR_Not_Allocated</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Payment_Request__c</columns>
+    <columns>Booking__c</columns>
+    <columns>Name__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Status__c</columns>
+    <columns>Mode__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted to Accounts for Amount Confirmation</value>
+    </filters>
+    <filters>
+        <field>Mode__c</field>
+        <operation>equals</operation>
+        <value>International Wire Transfer,Domestic Wire Transfer</value>
+    </filters>
+    <label>Approved PR Not Allocated</label>
+</ListView>

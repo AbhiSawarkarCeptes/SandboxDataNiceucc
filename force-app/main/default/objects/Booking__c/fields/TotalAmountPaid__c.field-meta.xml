@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TotalAmountPaid__c</fullName>
+    <label>Total Amount Paid</label>
+    <summarizedField>Demand__c.Total_Amount_Paid__c</summarizedField>
+    <summaryFilterItems>
+        <field>Demand__c.Demand_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Reversed</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Demand__c.Debit_Type__c</field>
+        <operation>notEqual</operation>
+        <value>Credit Note Reversal</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Demand__c.Booking__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

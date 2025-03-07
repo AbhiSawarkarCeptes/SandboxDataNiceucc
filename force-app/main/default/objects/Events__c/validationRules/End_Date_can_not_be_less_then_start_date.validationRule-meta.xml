@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Date_can_not_be_less_then_start_date</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Bypass_Validation_Rule__c == false,  $User.Username != &apos;maria.lobo@sobharealty.com&apos;,$User.Username!=&apos;shailesh.dsouza@sobharealty.com&apos;,End_Date_Of_Event__c &lt;Date_Of_Event__c)</errorConditionFormula>
+    <errorDisplayField>Date_Of_Event__c</errorDisplayField>
+    <errorMessage>End Date should be greater then start date</errorMessage>
+</ValidationRule>

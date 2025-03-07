@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bank_Name__c</fullName>
+    <label>Bank Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ADCB – Abu Dhabi Commercial Bank</fullName>
+                <default>false</default>
+                <label>ADCB – Abu Dhabi Commercial Bank</label>
+            </value>
+            <value>
+                <fullName>ADIB – Abu Dhabi Islamic Bank</fullName>
+                <default>false</default>
+                <label>ADIB – Abu Dhabi Islamic Bank</label>
+            </value>
+            <value>
+                <fullName>ENBD – Emirates NBD</fullName>
+                <default>false</default>
+                <label>ENBD – Emirates NBD</label>
+            </value>
+            <value>
+                <fullName>FAB – First Abu Dhabi Bank</fullName>
+                <default>false</default>
+                <label>FAB – First Abu Dhabi Bank</label>
+            </value>
+            <value>
+                <fullName>CBD – Commercial Bank of Dubai</fullName>
+                <default>false</default>
+                <label>CBD – Commercial Bank of Dubai</label>
+            </value>
+            <value>
+                <fullName>HSBC – Hongkong and Shanghai Banking Corporation</fullName>
+                <default>false</default>
+                <label>HSBC – Hongkong and Shanghai Banking Corporation</label>
+            </value>
+            <value>
+                <fullName>Mashreq</fullName>
+                <default>false</default>
+                <label>Mashreq</label>
+            </value>
+            <value>
+                <fullName>BOB – Bank of Baroda</fullName>
+                <default>false</default>
+                <label>BOB – Bank of Baroda</label>
+            </value>
+            <value>
+                <fullName>SCB – Standard Chartered Bank</fullName>
+                <default>false</default>
+                <label>SCB – Standard Chartered Bank</label>
+            </value>
+            <value>
+                <fullName>DIB – Dubai Islamic Bank</fullName>
+                <default>false</default>
+                <label>DIB – Dubai Islamic Bank</label>
+            </value>
+            <value>
+                <fullName>RAK -Ras Al Khaimah Bank</fullName>
+                <default>false</default>
+                <label>RAK -Ras Al Khaimah Bank</label>
+            </value>
+            <value>
+                <fullName>EIB – Emirates Islamic Bank</fullName>
+                <default>false</default>
+                <label>EIB – Emirates Islamic Bank</label>
+            </value>
+            <value>
+                <fullName>NBF – National Bank of Fujairah</fullName>
+                <default>false</default>
+                <label>NBF – National Bank of Fujairah</label>
+            </value>
+            <value>
+                <fullName>CitiBank</fullName>
+                <default>false</default>
+                <label>CitiBank</label>
+            </value>
+            <value>
+                <fullName>EDB – Emirates Development Bank</fullName>
+                <default>false</default>
+                <label>EDB – Emirates Development Bank</label>
+            </value>
+            <value>
+                <fullName>UAB – United Arab Bank</fullName>
+                <default>false</default>
+                <label>UAB – United Arab Bank</label>
+            </value>
+            <value>
+                <fullName>SIB – Sharjah Islamic Bank</fullName>
+                <default>false</default>
+                <label>SIB – Sharjah Islamic Bank</label>
+            </value>
+            <value>
+                <fullName>NBAD – National Bank of Abu Dhabi</fullName>
+                <default>false</default>
+                <label>NBAD – National Bank of Abu Dhabi</label>
+            </value>
+            <value>
+                <fullName>FGB – First Gulf Bank</fullName>
+                <default>false</default>
+                <label>FGB – First Gulf Bank</label>
+            </value>
+            <value>
+                <fullName>Al Hilal Bank</fullName>
+                <default>false</default>
+                <label>Al Hilal Bank</label>
+            </value>
+            <value>
+                <fullName>Bank of Sharjah</fullName>
+                <default>false</default>
+                <label>Bank of Sharjah</label>
+            </value>
+            <value>
+                <fullName>CBI – Commercial Bank International</fullName>
+                <default>false</default>
+                <label>CBI – Commercial Bank International</label>
+            </value>
+            <value>
+                <fullName>DFB – Dubai Finance Bank</fullName>
+                <default>false</default>
+                <label>DFB – Dubai Finance Bank</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>true</default>
+                <label>NA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

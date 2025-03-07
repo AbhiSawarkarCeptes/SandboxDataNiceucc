@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Configuration__c</fullName>
+    <label>Configuration</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ST</fullName>
+                <default>false</default>
+                <label>Studio</label>
+            </value>
+            <value>
+                <fullName>2DP</fullName>
+                <default>false</default>
+                <label>2 BR Duplex</label>
+            </value>
+            <value>
+                <fullName>3DP</fullName>
+                <default>false</default>
+                <label>3 BR Duplex</label>
+            </value>
+            <value>
+                <fullName>4DP</fullName>
+                <default>false</default>
+                <label>4 BR Duplex</label>
+            </value>
+            <value>
+                <fullName>1 BR</fullName>
+                <default>false</default>
+                <label>1 BR</label>
+            </value>
+            <value>
+                <fullName>2 BR</fullName>
+                <default>false</default>
+                <label>2 BR</label>
+            </value>
+            <value>
+                <fullName>3 BR</fullName>
+                <default>false</default>
+                <label>3 BR</label>
+            </value>
+            <value>
+                <fullName>4BR Villa</fullName>
+                <default>false</default>
+                <label>4BR Villa</label>
+            </value>
+            <value>
+                <fullName>5BR Villa</fullName>
+                <default>false</default>
+                <label>5 BR</label>
+            </value>
+            <value>
+                <fullName>GFA Plots</fullName>
+                <default>false</default>
+                <label>GFA Plots</label>
+            </value>
+            <value>
+                <fullName>Gardenia</fullName>
+                <default>false</default>
+                <label>Gardenia</label>
+            </value>
+            <value>
+                <fullName>Townhouse</fullName>
+                <default>false</default>
+                <label>Townhouse</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Restaurant</fullName>
+                <default>false</default>
+                <label>Restaurant</label>
+            </value>
+            <value>
+                <fullName>Canal Villa</fullName>
+                <default>false</default>
+                <label>Canal Villa</label>
+            </value>
+            <value>
+                <fullName>4 BR</fullName>
+                <default>false</default>
+                <label>4 BR</label>
+            </value>
+            <value>
+                <fullName>1 Br + Study</fullName>
+                <default>false</default>
+                <label>1 BR + Study</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>Retail / Cafe</fullName>
+                <default>false</default>
+                <label>Retail / Cafe</label>
+            </value>
+            <value>
+                <fullName>2.5 BR</fullName>
+                <default>false</default>
+                <label>2.5 BR</label>
+            </value>
+            <value>
+                <fullName>6 BR</fullName>
+                <default>false</default>
+                <label>6 BR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Can_not_edit_Project_if_not_blank</fullName>
+    <active>false</active>
+    <description>If project Name is not blank and if the user is making it blank and then &quot; You don&apos;t have privileges remove the project details&quot;</description>
+    <errorConditionFormula>AND( NOT(ISBLANK(PRIORVALUE( Project__c ))),
+     ISCHANGED(Project__c)
+)</errorConditionFormula>
+    <errorDisplayField>Project__c</errorDisplayField>
+    <errorMessage>You don&apos;t have privileges to edit the project details</errorMessage>
+</ValidationRule>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Amount Type --></label>
+    <name>Amount_Type__c</name>
+    <picklistValues>
+        <masterLabel>Addition/Deletion Charges</masterLabel>
+        <translation><!-- Addition/Deletion Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheque Bouncing Charges</masterLabel>
+        <translation><!-- Cheque Bouncing Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Management Services</masterLabel>
+        <translation><!-- Community Management Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conversion Charges</masterLabel>
+        <translation><!-- Conversion Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD Fees</masterLabel>
+        <translation><!-- DLD Fees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fund Transfer</masterLabel>
+        <translation><!-- Fund Transfer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installment</masterLabel>
+        <translation><!-- Installment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Payment Fee</masterLabel>
+        <translation><!-- Late Payment Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mortgage Fee</masterLabel>
+        <translation><!-- Mortgage Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-registration To Pre-title Deed</masterLabel>
+        <translation><!-- Pre-registration To Pre-title Deed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-registration to pre-title deed (completed projects)</masterLabel>
+        <translation><!-- Pre-registration to pre-title deed (completed projects) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reallocation Charges</masterLabel>
+        <translation><!-- Reallocation Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service charge</masterLabel>
+        <translation><!-- Service charge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Deed Charges</masterLabel>
+        <translation><!-- Title Deed Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Deed Fees (Units)</masterLabel>
+        <translation><!-- Title Deed Fees (Units) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Deed Fees (Villas)</masterLabel>
+        <translation><!-- Title Deed Fees (Villas) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transaction Fee</masterLabel>
+        <translation><!-- Transaction Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer Charges</masterLabel>
+        <translation><!-- Transfer Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer Fee</masterLabel>
+        <translation><!-- Transfer Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transferred from Booking</masterLabel>
+        <translation><!-- Transferred from Booking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Verification Charges</masterLabel>
+        <translation><!-- Verification Charges --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

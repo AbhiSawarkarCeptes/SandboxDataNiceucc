@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Termination Status --></label>
+    <name>Termination_Status__c</name>
+    <picklistValues>
+        <masterLabel>Allocate To Collection By CRM</masterLabel>
+        <translation><!-- Allocate To Collection By CRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Termination</masterLabel>
+        <translation><!-- Legal Termination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raised to DLD Team</masterLabel>
+        <translation><!-- Raised to DLD Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reject</masterLabel>
+        <translation><!-- Reject --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by CRM</masterLabel>
+        <translation><!-- Rejected by CRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Collections</masterLabel>
+        <translation><!-- Rejected by Collections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by accounts</masterLabel>
+        <translation><!-- Rejected by accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by audit</masterLabel>
+        <translation><!-- Rejected by audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resubmitted by audit to accounts</masterLabel>
+        <translation><!-- Resubmitted by audit to accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resubmitted to Collection and Accounts by audit</masterLabel>
+        <translation><!-- Resubmitted to Collection and Accounts by audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resubmitted to accounts by collections</masterLabel>
+        <translation><!-- Resubmitted to accounts by collections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resubmitted to audit by accounts</masterLabel>
+        <translation><!-- Resubmitted to audit by accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resubmitted to audit by collections</masterLabel>
+        <translation><!-- Resubmitted to audit by collections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resubmitted to collections by accounts</masterLabel>
+        <translation><!-- Resubmitted to collections by accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resubmitted to collections by audit</masterLabel>
+        <translation><!-- Resubmitted to collections by audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted to Accounts</masterLabel>
+        <translation><!-- Submitted to Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted to Raise the Internal DLD team</masterLabel>
+        <translation><!-- Submitted to Raise the Internal DLD team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted to audit</masterLabel>
+        <translation><!-- Submitted to audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted to collections by DLD</masterLabel>
+        <translation><!-- Submitted to collections by DLD --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

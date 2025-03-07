@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Team_Type__c</fullName>
+    <label>Team Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CRM Team</fullName>
+                <default>false</default>
+                <label>CRM Team</label>
+            </value>
+            <value>
+                <fullName>Sales Approvers Team</fullName>
+                <default>false</default>
+                <label>Sales Approvers Team</label>
+            </value>
+            <value>
+                <fullName>Cancellation Approval Team</fullName>
+                <default>false</default>
+                <label>Cancellation Approval Team</label>
+            </value>
+            <value>
+                <fullName>File Note Approver Team</fullName>
+                <default>false</default>
+                <label>File Note Approver Team</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

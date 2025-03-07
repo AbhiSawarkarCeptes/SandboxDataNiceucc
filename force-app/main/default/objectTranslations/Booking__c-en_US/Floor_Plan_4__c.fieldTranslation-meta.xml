@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Floor Plan 4 --></label>
+    <name>Floor_Plan_4__c</name>
+</CustomFieldTranslation>

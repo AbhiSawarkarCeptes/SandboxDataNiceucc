@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task_type_should_be_Sales</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(  
+NOT(ISPICKVAL(Task_Type__c , &quot;Sales Call&quot;)),
+  $Profile.Name  = &apos;Sales&apos;,
+  $User.Full_Name__c  != &apos;Nargiz Riga&apos;,
+$User.Full_Name__c  != &apos;Archana Rajasekharan Nair&apos;,
+$User.Full_Name__c  != &apos;Xin Song&apos;,
+$User.Full_Name__c  != &apos;Chengzhi He&apos;,
+$User.Full_Name__c  != &apos;Tinghui Deng&apos;,
+  $User.Full_Name__c  != &apos;Azharuddin Asif Syed&apos;,
+$User.Full_Name__c  != &apos;Tamila Mangeldina&apos;,
+$User.Full_Name__c  != &apos;Alina Asokina&apos;,
+$User.Full_Name__c  != &apos;Elizaveta Oleshchenko&apos;,
+$User.Full_Name__c  != &apos;Aleksei Berezkin&apos;,
+$User.Full_Name__c  != &apos;Sanobar Igrasheva&apos;,
+$User.Full_Name__c != &apos;Abdullah Hussain Mujeeb Hussain&apos;,
+$User.Full_Name__c != &apos;Sheneela Haroon&apos;,
+$User.Full_Name__c != &apos;Sameer Faizal Mussa&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Task_Type__c</errorDisplayField>
+    <errorMessage>Please select Task Type as &apos;Sales&apos;.</errorMessage>
+</ValidationRule>

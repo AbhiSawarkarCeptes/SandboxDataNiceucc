@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Attempt_Status__c</fullName>
+    <label>Call Attempt Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Processing</fullName>
+                <default>false</default>
+                <label>Processing</label>
+            </value>
+            <value>
+                <fullName>Actioned</fullName>
+                <default>false</default>
+                <label>Actioned</label>
+            </value>
+            <value>
+                <fullName>Not Actioned</fullName>
+                <default>false</default>
+                <label>Not Actioned</label>
+            </value>
+            <value>
+                <fullName>Visit confirmed</fullName>
+                <default>false</default>
+                <label>Visit confirmed</label>
+            </value>
+            <value>
+                <fullName>Visit proposed</fullName>
+                <default>false</default>
+                <label>Visit proposed</label>
+            </value>
+            <value>
+                <fullName>Junk Lead</fullName>
+                <default>false</default>
+                <label>Junk Lead</label>
+            </value>
+            <value>
+                <fullName>Invalid Enquiry</fullName>
+                <default>false</default>
+                <label>Invalid Enquiry</label>
+            </value>
+            <value>
+                <fullName>Invalid Number</fullName>
+                <default>false</default>
+                <label>Invalid Number</label>
+            </value>
+            <value>
+                <fullName>Not Actioned - No Shuffle</fullName>
+                <default>false</default>
+                <label>Not Actioned - No Shuffle</label>
+            </value>
+            <value>
+                <fullName>Not Shuffle</fullName>
+                <default>false</default>
+                <label>Not Shuffle</label>
+            </value>
+            <value>
+                <fullName>Recycled Lead</fullName>
+                <default>false</default>
+                <label>Recycled Lead</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+            <value>
+                <fullName>Follow up</fullName>
+                <default>false</default>
+                <label>Follow up</label>
+            </value>
+            <value>
+                <fullName>Follow up - email</fullName>
+                <default>false</default>
+                <label>Follow up - email</label>
+            </value>
+            <value>
+                <fullName>Follow up - social</fullName>
+                <default>false</default>
+                <label>Follow up - social</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

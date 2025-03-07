@@ -1,0 +1,3667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Country_of_Initiation__c</fullName>
+    <label>Country of Initiation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Mode__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Australia</fullName>
+                <default>false</default>
+                <label>Australia</label>
+            </value>
+            <value>
+                <fullName>Afghanistan</fullName>
+                <default>false</default>
+                <label>Afghanistan</label>
+            </value>
+            <value>
+                <fullName>Aland Islands (Finland)</fullName>
+                <default>false</default>
+                <label>Aland Islands (Finland)</label>
+            </value>
+            <value>
+                <fullName>Albania</fullName>
+                <default>false</default>
+                <label>Albania</label>
+            </value>
+            <value>
+                <fullName>Algeria</fullName>
+                <default>false</default>
+                <label>Algeria</label>
+            </value>
+            <value>
+                <fullName>American Samoa (USA)</fullName>
+                <default>false</default>
+                <label>American Samoa (USA)</label>
+            </value>
+            <value>
+                <fullName>Andorra</fullName>
+                <default>false</default>
+                <label>Andorra</label>
+            </value>
+            <value>
+                <fullName>Angola</fullName>
+                <default>false</default>
+                <label>Angola</label>
+            </value>
+            <value>
+                <fullName>Anguilla (UK)</fullName>
+                <default>false</default>
+                <label>Anguilla (UK)</label>
+            </value>
+            <value>
+                <fullName>Antigua and Barbuda</fullName>
+                <default>false</default>
+                <label>Antigua and Barbuda</label>
+            </value>
+            <value>
+                <fullName>Argentina</fullName>
+                <default>false</default>
+                <label>Argentina</label>
+            </value>
+            <value>
+                <fullName>Armenia</fullName>
+                <default>false</default>
+                <label>Armenia</label>
+            </value>
+            <value>
+                <fullName>Aruba (Netherlands)</fullName>
+                <default>false</default>
+                <label>Aruba (Netherlands)</label>
+            </value>
+            <value>
+                <fullName>Austria</fullName>
+                <default>false</default>
+                <label>Austria</label>
+            </value>
+            <value>
+                <fullName>Azerbaijan</fullName>
+                <default>false</default>
+                <label>Azerbaijan</label>
+            </value>
+            <value>
+                <fullName>Bahamas</fullName>
+                <default>false</default>
+                <label>Bahamas</label>
+            </value>
+            <value>
+                <fullName>Bahrain</fullName>
+                <default>false</default>
+                <label>Bahrain</label>
+            </value>
+            <value>
+                <fullName>Bangladesh</fullName>
+                <default>false</default>
+                <label>Bangladesh</label>
+            </value>
+            <value>
+                <fullName>Barbados</fullName>
+                <default>false</default>
+                <label>Barbados</label>
+            </value>
+            <value>
+                <fullName>Belarus</fullName>
+                <default>false</default>
+                <label>Belarus</label>
+            </value>
+            <value>
+                <fullName>Belgium</fullName>
+                <default>false</default>
+                <label>Belgium</label>
+            </value>
+            <value>
+                <fullName>Belize</fullName>
+                <default>false</default>
+                <label>Belize</label>
+            </value>
+            <value>
+                <fullName>Benin</fullName>
+                <default>false</default>
+                <label>Benin</label>
+            </value>
+            <value>
+                <fullName>Bermuda (UK)</fullName>
+                <default>false</default>
+                <label>Bermuda (UK)</label>
+            </value>
+            <value>
+                <fullName>Bhutan</fullName>
+                <default>false</default>
+                <label>Bhutan</label>
+            </value>
+            <value>
+                <fullName>Bolivia</fullName>
+                <default>false</default>
+                <label>Bolivia</label>
+            </value>
+            <value>
+                <fullName>Bosnia and Herzegovina</fullName>
+                <default>false</default>
+                <label>Bosnia and Herzegovina</label>
+            </value>
+            <value>
+                <fullName>Botswana</fullName>
+                <default>false</default>
+                <label>Botswana</label>
+            </value>
+            <value>
+                <fullName>Brazil</fullName>
+                <default>false</default>
+                <label>Brazil</label>
+            </value>
+            <value>
+                <fullName>British Virgin Islands (UK)</fullName>
+                <default>false</default>
+                <label>British Virgin Islands (UK)</label>
+            </value>
+            <value>
+                <fullName>Brunei</fullName>
+                <default>false</default>
+                <label>Brunei</label>
+            </value>
+            <value>
+                <fullName>Bulgaria</fullName>
+                <default>false</default>
+                <label>Bulgaria</label>
+            </value>
+            <value>
+                <fullName>Burkina Faso</fullName>
+                <default>false</default>
+                <label>Burkina Faso</label>
+            </value>
+            <value>
+                <fullName>Burma</fullName>
+                <default>false</default>
+                <label>Burma</label>
+            </value>
+            <value>
+                <fullName>Burundi</fullName>
+                <default>false</default>
+                <label>Burundi</label>
+            </value>
+            <value>
+                <fullName>Cambodia</fullName>
+                <default>false</default>
+                <label>Cambodia</label>
+            </value>
+            <value>
+                <fullName>Cameroon</fullName>
+                <default>false</default>
+                <label>Cameroon</label>
+            </value>
+            <value>
+                <fullName>Canada</fullName>
+                <default>false</default>
+                <label>Canada</label>
+            </value>
+            <value>
+                <fullName>Cape Verde</fullName>
+                <default>false</default>
+                <label>Cape Verde</label>
+            </value>
+            <value>
+                <fullName>Caribbean Netherlands (Netherlands)</fullName>
+                <default>false</default>
+                <label>Caribbean Netherlands (Netherlands)</label>
+            </value>
+            <value>
+                <fullName>Cayman Islands (UK)</fullName>
+                <default>false</default>
+                <label>Cayman Islands (UK)</label>
+            </value>
+            <value>
+                <fullName>Central African Republic</fullName>
+                <default>false</default>
+                <label>Central African Republic</label>
+            </value>
+            <value>
+                <fullName>Chad</fullName>
+                <default>false</default>
+                <label>Chad</label>
+            </value>
+            <value>
+                <fullName>Chile</fullName>
+                <default>false</default>
+                <label>Chile</label>
+            </value>
+            <value>
+                <fullName>China</fullName>
+                <default>false</default>
+                <label>China</label>
+            </value>
+            <value>
+                <fullName>Christmas Island (Australia)</fullName>
+                <default>false</default>
+                <label>Christmas Island (Australia)</label>
+            </value>
+            <value>
+                <fullName>Cocos (Keeling) Islands (Australia)</fullName>
+                <default>false</default>
+                <label>Cocos (Keeling) Islands (Australia)</label>
+            </value>
+            <value>
+                <fullName>Colombia</fullName>
+                <default>false</default>
+                <label>Colombia</label>
+            </value>
+            <value>
+                <fullName>Comoros</fullName>
+                <default>false</default>
+                <label>Comoros</label>
+            </value>
+            <value>
+                <fullName>Cook Islands (NZ)</fullName>
+                <default>false</default>
+                <label>Cook Islands (NZ)</label>
+            </value>
+            <value>
+                <fullName>Costa Rica</fullName>
+                <default>false</default>
+                <label>Costa Rica</label>
+            </value>
+            <value>
+                <fullName>Croatia</fullName>
+                <default>false</default>
+                <label>Croatia</label>
+            </value>
+            <value>
+                <fullName>Cuba</fullName>
+                <default>false</default>
+                <label>Cuba</label>
+            </value>
+            <value>
+                <fullName>Curacao (Netherlands)</fullName>
+                <default>false</default>
+                <label>Curacao (Netherlands)</label>
+            </value>
+            <value>
+                <fullName>Cyprus</fullName>
+                <default>false</default>
+                <label>Cyprus</label>
+            </value>
+            <value>
+                <fullName>Czech Republic</fullName>
+                <default>false</default>
+                <label>Czech Republic</label>
+            </value>
+            <value>
+                <fullName>Democratic Republic of the Congo</fullName>
+                <default>false</default>
+                <label>Democratic Republic of the Congo</label>
+            </value>
+            <value>
+                <fullName>Denmark</fullName>
+                <default>false</default>
+                <label>Denmark</label>
+            </value>
+            <value>
+                <fullName>Djibouti</fullName>
+                <default>false</default>
+                <label>Djibouti</label>
+            </value>
+            <value>
+                <fullName>Dominica</fullName>
+                <default>false</default>
+                <label>Dominica</label>
+            </value>
+            <value>
+                <fullName>Dominican Republic</fullName>
+                <default>false</default>
+                <label>Dominican Republic</label>
+            </value>
+            <value>
+                <fullName>Ecuador</fullName>
+                <default>false</default>
+                <label>Ecuador</label>
+            </value>
+            <value>
+                <fullName>Egypt</fullName>
+                <default>false</default>
+                <label>Egypt</label>
+            </value>
+            <value>
+                <fullName>El Salvador</fullName>
+                <default>false</default>
+                <label>El Salvador</label>
+            </value>
+            <value>
+                <fullName>Equatorial Guinea</fullName>
+                <default>false</default>
+                <label>Equatorial Guinea</label>
+            </value>
+            <value>
+                <fullName>Eritrea</fullName>
+                <default>false</default>
+                <label>Eritrea</label>
+            </value>
+            <value>
+                <fullName>Estonia</fullName>
+                <default>false</default>
+                <label>Estonia</label>
+            </value>
+            <value>
+                <fullName>Ethiopia</fullName>
+                <default>false</default>
+                <label>Ethiopia</label>
+            </value>
+            <value>
+                <fullName>Falkland Islands (UK)</fullName>
+                <default>false</default>
+                <label>Falkland Islands (UK)</label>
+            </value>
+            <value>
+                <fullName>Faroe Islands (Denmark)</fullName>
+                <default>false</default>
+                <label>Faroe Islands (Denmark)</label>
+            </value>
+            <value>
+                <fullName>Federated States of Micronesia</fullName>
+                <default>false</default>
+                <label>Federated States of Micronesia</label>
+            </value>
+            <value>
+                <fullName>Fiji</fullName>
+                <default>false</default>
+                <label>Fiji</label>
+            </value>
+            <value>
+                <fullName>Finland</fullName>
+                <default>false</default>
+                <label>Finland</label>
+            </value>
+            <value>
+                <fullName>France</fullName>
+                <default>false</default>
+                <label>France</label>
+            </value>
+            <value>
+                <fullName>French Guiana (France)</fullName>
+                <default>false</default>
+                <label>French Guiana (France)</label>
+            </value>
+            <value>
+                <fullName>French Polynesia (France)</fullName>
+                <default>false</default>
+                <label>French Polynesia (France)</label>
+            </value>
+            <value>
+                <fullName>Gabon</fullName>
+                <default>false</default>
+                <label>Gabon</label>
+            </value>
+            <value>
+                <fullName>Gambia</fullName>
+                <default>false</default>
+                <label>Gambia</label>
+            </value>
+            <value>
+                <fullName>Georgia</fullName>
+                <default>false</default>
+                <label>Georgia</label>
+            </value>
+            <value>
+                <fullName>Germany</fullName>
+                <default>false</default>
+                <label>Germany</label>
+            </value>
+            <value>
+                <fullName>Ghana</fullName>
+                <default>false</default>
+                <label>Ghana</label>
+            </value>
+            <value>
+                <fullName>Gibraltar (UK)</fullName>
+                <default>false</default>
+                <label>Gibraltar (UK)</label>
+            </value>
+            <value>
+                <fullName>Greece</fullName>
+                <default>false</default>
+                <label>Greece</label>
+            </value>
+            <value>
+                <fullName>Greenland (Denmark)</fullName>
+                <default>false</default>
+                <label>Greenland (Denmark)</label>
+            </value>
+            <value>
+                <fullName>Grenada</fullName>
+                <default>false</default>
+                <label>Grenada</label>
+            </value>
+            <value>
+                <fullName>Guadeloupe (France)</fullName>
+                <default>false</default>
+                <label>Guadeloupe (France)</label>
+            </value>
+            <value>
+                <fullName>Guam (USA)</fullName>
+                <default>false</default>
+                <label>Guam (USA)</label>
+            </value>
+            <value>
+                <fullName>Guatemala</fullName>
+                <default>false</default>
+                <label>Guatemala</label>
+            </value>
+            <value>
+                <fullName>Guernsey (UK)</fullName>
+                <default>false</default>
+                <label>Guernsey (UK)</label>
+            </value>
+            <value>
+                <fullName>Guinea</fullName>
+                <default>false</default>
+                <label>Guinea</label>
+            </value>
+            <value>
+                <fullName>Guinea-Bissau</fullName>
+                <default>false</default>
+                <label>Guinea-Bissau</label>
+            </value>
+            <value>
+                <fullName>Guyana</fullName>
+                <default>false</default>
+                <label>Guyana</label>
+            </value>
+            <value>
+                <fullName>Haiti</fullName>
+                <default>false</default>
+                <label>Haiti</label>
+            </value>
+            <value>
+                <fullName>Honduras</fullName>
+                <default>false</default>
+                <label>Honduras</label>
+            </value>
+            <value>
+                <fullName>Hong Kong (China)</fullName>
+                <default>false</default>
+                <label>Hong Kong (China)</label>
+            </value>
+            <value>
+                <fullName>Hungary</fullName>
+                <default>false</default>
+                <label>Hungary</label>
+            </value>
+            <value>
+                <fullName>Iceland</fullName>
+                <default>false</default>
+                <label>Iceland</label>
+            </value>
+            <value>
+                <fullName>India</fullName>
+                <default>false</default>
+                <label>India</label>
+            </value>
+            <value>
+                <fullName>Indonesia</fullName>
+                <default>false</default>
+                <label>Indonesia</label>
+            </value>
+            <value>
+                <fullName>Iran</fullName>
+                <default>false</default>
+                <label>Iran</label>
+            </value>
+            <value>
+                <fullName>Iraq</fullName>
+                <default>false</default>
+                <label>Iraq</label>
+            </value>
+            <value>
+                <fullName>Ireland</fullName>
+                <default>false</default>
+                <label>Ireland</label>
+            </value>
+            <value>
+                <fullName>Isle of Man (UK)</fullName>
+                <default>false</default>
+                <label>Isle of Man (UK)</label>
+            </value>
+            <value>
+                <fullName>Israel</fullName>
+                <default>false</default>
+                <label>Israel</label>
+            </value>
+            <value>
+                <fullName>Italy</fullName>
+                <default>false</default>
+                <label>Italy</label>
+            </value>
+            <value>
+                <fullName>Ivory Coast</fullName>
+                <default>false</default>
+                <label>Ivory Coast</label>
+            </value>
+            <value>
+                <fullName>Jamaica</fullName>
+                <default>false</default>
+                <label>Jamaica</label>
+            </value>
+            <value>
+                <fullName>Japan</fullName>
+                <default>false</default>
+                <label>Japan</label>
+            </value>
+            <value>
+                <fullName>Jersey (UK)</fullName>
+                <default>false</default>
+                <label>Jersey (UK)</label>
+            </value>
+            <value>
+                <fullName>Jordan</fullName>
+                <default>false</default>
+                <label>Jordan</label>
+            </value>
+            <value>
+                <fullName>Kazakhstan</fullName>
+                <default>false</default>
+                <label>Kazakhstan</label>
+            </value>
+            <value>
+                <fullName>Kenya</fullName>
+                <default>false</default>
+                <label>Kenya</label>
+            </value>
+            <value>
+                <fullName>Kiribati</fullName>
+                <default>false</default>
+                <label>Kiribati</label>
+            </value>
+            <value>
+                <fullName>Kosovo</fullName>
+                <default>false</default>
+                <label>Kosovo</label>
+            </value>
+            <value>
+                <fullName>Kuwait</fullName>
+                <default>false</default>
+                <label>Kuwait</label>
+            </value>
+            <value>
+                <fullName>Kyrgyzstan</fullName>
+                <default>false</default>
+                <label>Kyrgyzstan</label>
+            </value>
+            <value>
+                <fullName>Laos</fullName>
+                <default>false</default>
+                <label>Laos</label>
+            </value>
+            <value>
+                <fullName>Latvia</fullName>
+                <default>false</default>
+                <label>Latvia</label>
+            </value>
+            <value>
+                <fullName>Lebanon</fullName>
+                <default>false</default>
+                <label>Lebanon</label>
+            </value>
+            <value>
+                <fullName>Lesotho</fullName>
+                <default>false</default>
+                <label>Lesotho</label>
+            </value>
+            <value>
+                <fullName>Liberia</fullName>
+                <default>false</default>
+                <label>Liberia</label>
+            </value>
+            <value>
+                <fullName>Libya</fullName>
+                <default>false</default>
+                <label>Libya</label>
+            </value>
+            <value>
+                <fullName>Liechtenstein</fullName>
+                <default>false</default>
+                <label>Liechtenstein</label>
+            </value>
+            <value>
+                <fullName>Lithuania</fullName>
+                <default>false</default>
+                <label>Lithuania</label>
+            </value>
+            <value>
+                <fullName>Luxembourg</fullName>
+                <default>false</default>
+                <label>Luxembourg</label>
+            </value>
+            <value>
+                <fullName>Macau (China)</fullName>
+                <default>false</default>
+                <label>Macau (China)</label>
+            </value>
+            <value>
+                <fullName>Macedonia</fullName>
+                <default>false</default>
+                <label>Macedonia</label>
+            </value>
+            <value>
+                <fullName>Madagascar</fullName>
+                <default>false</default>
+                <label>Madagascar</label>
+            </value>
+            <value>
+                <fullName>Malawi</fullName>
+                <default>false</default>
+                <label>Malawi</label>
+            </value>
+            <value>
+                <fullName>Malaysia</fullName>
+                <default>false</default>
+                <label>Malaysia</label>
+            </value>
+            <value>
+                <fullName>Maldives</fullName>
+                <default>false</default>
+                <label>Maldives</label>
+            </value>
+            <value>
+                <fullName>Mali</fullName>
+                <default>false</default>
+                <label>Mali</label>
+            </value>
+            <value>
+                <fullName>Malta</fullName>
+                <default>false</default>
+                <label>Malta</label>
+            </value>
+            <value>
+                <fullName>Marshall Islands</fullName>
+                <default>false</default>
+                <label>Marshall Islands</label>
+            </value>
+            <value>
+                <fullName>Martinique (France)</fullName>
+                <default>false</default>
+                <label>Martinique (France)</label>
+            </value>
+            <value>
+                <fullName>Mauritania</fullName>
+                <default>false</default>
+                <label>Mauritania</label>
+            </value>
+            <value>
+                <fullName>Mauritius</fullName>
+                <default>false</default>
+                <label>Mauritius</label>
+            </value>
+            <value>
+                <fullName>Mayotte (France)</fullName>
+                <default>false</default>
+                <label>Mayotte (France)</label>
+            </value>
+            <value>
+                <fullName>Mexico</fullName>
+                <default>false</default>
+                <label>Mexico</label>
+            </value>
+            <value>
+                <fullName>Moldov</fullName>
+                <default>false</default>
+                <label>Moldov</label>
+            </value>
+            <value>
+                <fullName>Monaco</fullName>
+                <default>false</default>
+                <label>Monaco</label>
+            </value>
+            <value>
+                <fullName>Mongolia</fullName>
+                <default>false</default>
+                <label>Mongolia</label>
+            </value>
+            <value>
+                <fullName>Montenegro</fullName>
+                <default>false</default>
+                <label>Montenegro</label>
+            </value>
+            <value>
+                <fullName>Montserrat (UK)</fullName>
+                <default>false</default>
+                <label>Montserrat (UK)</label>
+            </value>
+            <value>
+                <fullName>Morocco</fullName>
+                <default>false</default>
+                <label>Morocco</label>
+            </value>
+            <value>
+                <fullName>Mozambique</fullName>
+                <default>false</default>
+                <label>Mozambique</label>
+            </value>
+            <value>
+                <fullName>Namibia</fullName>
+                <default>false</default>
+                <label>Namibia</label>
+            </value>
+            <value>
+                <fullName>Nauru</fullName>
+                <default>false</default>
+                <label>Nauru</label>
+            </value>
+            <value>
+                <fullName>Nepal</fullName>
+                <default>false</default>
+                <label>Nepal</label>
+            </value>
+            <value>
+                <fullName>Netherlands</fullName>
+                <default>false</default>
+                <label>Netherlands</label>
+            </value>
+            <value>
+                <fullName>New Caledonia (France)</fullName>
+                <default>false</default>
+                <label>New Caledonia (France)</label>
+            </value>
+            <value>
+                <fullName>New Zealand</fullName>
+                <default>false</default>
+                <label>New Zealand</label>
+            </value>
+            <value>
+                <fullName>Nicaragua</fullName>
+                <default>false</default>
+                <label>Nicaragua</label>
+            </value>
+            <value>
+                <fullName>Niger</fullName>
+                <default>false</default>
+                <label>Niger</label>
+            </value>
+            <value>
+                <fullName>Nigeria</fullName>
+                <default>false</default>
+                <label>Nigeria</label>
+            </value>
+            <value>
+                <fullName>Niue (NZ)</fullName>
+                <default>false</default>
+                <label>Niue (NZ)</label>
+            </value>
+            <value>
+                <fullName>Norfolk Island (Australia)</fullName>
+                <default>false</default>
+                <label>Norfolk Island (Australia)</label>
+            </value>
+            <value>
+                <fullName>North Korea</fullName>
+                <default>false</default>
+                <label>North Korea</label>
+            </value>
+            <value>
+                <fullName>Northern Mariana Islands (USA)</fullName>
+                <default>false</default>
+                <label>Northern Mariana Islands (USA)</label>
+            </value>
+            <value>
+                <fullName>Norway</fullName>
+                <default>false</default>
+                <label>Norway</label>
+            </value>
+            <value>
+                <fullName>Oman</fullName>
+                <default>false</default>
+                <label>Oman</label>
+            </value>
+            <value>
+                <fullName>Pakistan</fullName>
+                <default>false</default>
+                <label>Pakistan</label>
+            </value>
+            <value>
+                <fullName>Palau</fullName>
+                <default>false</default>
+                <label>Palau</label>
+            </value>
+            <value>
+                <fullName>Palestine</fullName>
+                <default>false</default>
+                <label>Palestine</label>
+            </value>
+            <value>
+                <fullName>Panama</fullName>
+                <default>false</default>
+                <label>Panama</label>
+            </value>
+            <value>
+                <fullName>Papua New Guinea</fullName>
+                <default>false</default>
+                <label>Papua New Guinea</label>
+            </value>
+            <value>
+                <fullName>Paraguay</fullName>
+                <default>false</default>
+                <label>Paraguay</label>
+            </value>
+            <value>
+                <fullName>Peru</fullName>
+                <default>false</default>
+                <label>Peru</label>
+            </value>
+            <value>
+                <fullName>Philippines</fullName>
+                <default>false</default>
+                <label>Philippines</label>
+            </value>
+            <value>
+                <fullName>Pitcairn Islands (UK)</fullName>
+                <default>false</default>
+                <label>Pitcairn Islands (UK)</label>
+            </value>
+            <value>
+                <fullName>Poland</fullName>
+                <default>false</default>
+                <label>Poland</label>
+            </value>
+            <value>
+                <fullName>Portugal</fullName>
+                <default>false</default>
+                <label>Portugal</label>
+            </value>
+            <value>
+                <fullName>Puerto Rico</fullName>
+                <default>false</default>
+                <label>Puerto Rico</label>
+            </value>
+            <value>
+                <fullName>Qatar</fullName>
+                <default>false</default>
+                <label>Qatar</label>
+            </value>
+            <value>
+                <fullName>Republic of the Congo</fullName>
+                <default>false</default>
+                <label>Republic of the Congo</label>
+            </value>
+            <value>
+                <fullName>Reunion (France)</fullName>
+                <default>false</default>
+                <label>Reunion (France)</label>
+            </value>
+            <value>
+                <fullName>Romania</fullName>
+                <default>false</default>
+                <label>Romania</label>
+            </value>
+            <value>
+                <fullName>Russia</fullName>
+                <default>false</default>
+                <label>Russia</label>
+            </value>
+            <value>
+                <fullName>Rwanda</fullName>
+                <default>false</default>
+                <label>Rwanda</label>
+            </value>
+            <value>
+                <fullName>Saint Barthelemy (France)</fullName>
+                <default>false</default>
+                <label>Saint Barthelemy (France)</label>
+            </value>
+            <value>
+                <fullName>Saint Helena, Ascension and Tristan da Cunha (UK)</fullName>
+                <default>false</default>
+                <label>Saint Helena, Ascension and Tristan da Cunha (UK)</label>
+            </value>
+            <value>
+                <fullName>Saint Kitts and Nevis</fullName>
+                <default>false</default>
+                <label>Saint Kitts and Nevis</label>
+            </value>
+            <value>
+                <fullName>Saint Lucia</fullName>
+                <default>false</default>
+                <label>Saint Lucia</label>
+            </value>
+            <value>
+                <fullName>Saint Martin (France)</fullName>
+                <default>false</default>
+                <label>Saint Martin (France)</label>
+            </value>
+            <value>
+                <fullName>Saint Pierre and Miquelon (France)</fullName>
+                <default>false</default>
+                <label>Saint Pierre and Miquelon (France)</label>
+            </value>
+            <value>
+                <fullName>Saint Vincent and the Grenadines</fullName>
+                <default>false</default>
+                <label>Saint Vincent and the Grenadines</label>
+            </value>
+            <value>
+                <fullName>Samoa</fullName>
+                <default>false</default>
+                <label>Samoa</label>
+            </value>
+            <value>
+                <fullName>San Marino</fullName>
+                <default>false</default>
+                <label>San Marino</label>
+            </value>
+            <value>
+                <fullName>Sao Tom and Principe</fullName>
+                <default>false</default>
+                <label>Sao Tom and Principe</label>
+            </value>
+            <value>
+                <fullName>Saudi Arabia</fullName>
+                <default>false</default>
+                <label>Saudi Arabia</label>
+            </value>
+            <value>
+                <fullName>Senegal</fullName>
+                <default>false</default>
+                <label>Senegal</label>
+            </value>
+            <value>
+                <fullName>Serbia</fullName>
+                <default>false</default>
+                <label>Serbia</label>
+            </value>
+            <value>
+                <fullName>Seychelles</fullName>
+                <default>false</default>
+                <label>Seychelles</label>
+            </value>
+            <value>
+                <fullName>Sierra Leone</fullName>
+                <default>false</default>
+                <label>Sierra Leone</label>
+            </value>
+            <value>
+                <fullName>Singapore</fullName>
+                <default>false</default>
+                <label>Singapore</label>
+            </value>
+            <value>
+                <fullName>Sint Maarten (Netherlands)</fullName>
+                <default>false</default>
+                <label>Sint Maarten (Netherlands)</label>
+            </value>
+            <value>
+                <fullName>Slovakia</fullName>
+                <default>false</default>
+                <label>Slovakia</label>
+            </value>
+            <value>
+                <fullName>Slovenia</fullName>
+                <default>false</default>
+                <label>Slovenia</label>
+            </value>
+            <value>
+                <fullName>Solomon Islands</fullName>
+                <default>false</default>
+                <label>Solomon Islands</label>
+            </value>
+            <value>
+                <fullName>Somalia</fullName>
+                <default>false</default>
+                <label>Somalia</label>
+            </value>
+            <value>
+                <fullName>South Africa</fullName>
+                <default>false</default>
+                <label>South Africa</label>
+            </value>
+            <value>
+                <fullName>South Korea</fullName>
+                <default>false</default>
+                <label>South Korea</label>
+            </value>
+            <value>
+                <fullName>South Sudan</fullName>
+                <default>false</default>
+                <label>South Sudan</label>
+            </value>
+            <value>
+                <fullName>Spain</fullName>
+                <default>false</default>
+                <label>Spain</label>
+            </value>
+            <value>
+                <fullName>Sri Lanka</fullName>
+                <default>false</default>
+                <label>Sri Lanka</label>
+            </value>
+            <value>
+                <fullName>Sudan</fullName>
+                <default>false</default>
+                <label>Sudan</label>
+            </value>
+            <value>
+                <fullName>Suriname</fullName>
+                <default>false</default>
+                <label>Suriname</label>
+            </value>
+            <value>
+                <fullName>Svalbard and Jan Mayen (Norway)</fullName>
+                <default>false</default>
+                <label>Svalbard and Jan Mayen (Norway)</label>
+            </value>
+            <value>
+                <fullName>Swaziland</fullName>
+                <default>false</default>
+                <label>Swaziland</label>
+            </value>
+            <value>
+                <fullName>Sweden</fullName>
+                <default>false</default>
+                <label>Sweden</label>
+            </value>
+            <value>
+                <fullName>Switzerland</fullName>
+                <default>false</default>
+                <label>Switzerland</label>
+            </value>
+            <value>
+                <fullName>Syria</fullName>
+                <default>false</default>
+                <label>Syria</label>
+            </value>
+            <value>
+                <fullName>Taiwan</fullName>
+                <default>false</default>
+                <label>Taiwan</label>
+            </value>
+            <value>
+                <fullName>Tajikistan</fullName>
+                <default>false</default>
+                <label>Tajikistan</label>
+            </value>
+            <value>
+                <fullName>Tanzania</fullName>
+                <default>false</default>
+                <label>Tanzania</label>
+            </value>
+            <value>
+                <fullName>Thailand</fullName>
+                <default>false</default>
+                <label>Thailand</label>
+            </value>
+            <value>
+                <fullName>Timor-Leste</fullName>
+                <default>false</default>
+                <label>Timor-Leste</label>
+            </value>
+            <value>
+                <fullName>Togo</fullName>
+                <default>false</default>
+                <label>Togo</label>
+            </value>
+            <value>
+                <fullName>Tokelau (NZ)</fullName>
+                <default>false</default>
+                <label>Tokelau (NZ)</label>
+            </value>
+            <value>
+                <fullName>Tonga</fullName>
+                <default>false</default>
+                <label>Tonga</label>
+            </value>
+            <value>
+                <fullName>Trinidad and Tobago</fullName>
+                <default>false</default>
+                <label>Trinidad and Tobago</label>
+            </value>
+            <value>
+                <fullName>Tunisia</fullName>
+                <default>false</default>
+                <label>Tunisia</label>
+            </value>
+            <value>
+                <fullName>Turkey</fullName>
+                <default>false</default>
+                <label>Turkey</label>
+            </value>
+            <value>
+                <fullName>Turkmenistan</fullName>
+                <default>false</default>
+                <label>Turkmenistan</label>
+            </value>
+            <value>
+                <fullName>Turks and Caicos Islands (UK)</fullName>
+                <default>false</default>
+                <label>Turks and Caicos Islands (UK)</label>
+            </value>
+            <value>
+                <fullName>Tuvalu</fullName>
+                <default>false</default>
+                <label>Tuvalu</label>
+            </value>
+            <value>
+                <fullName>Uganda</fullName>
+                <default>false</default>
+                <label>Uganda</label>
+            </value>
+            <value>
+                <fullName>Ukraine</fullName>
+                <default>false</default>
+                <label>Ukraine</label>
+            </value>
+            <value>
+                <fullName>United Arab Emirates</fullName>
+                <default>false</default>
+                <label>United Arab Emirates</label>
+            </value>
+            <value>
+                <fullName>United Kingdom</fullName>
+                <default>false</default>
+                <label>United Kingdom</label>
+            </value>
+            <value>
+                <fullName>United States</fullName>
+                <default>false</default>
+                <label>United States</label>
+            </value>
+            <value>
+                <fullName>United States Virgin Islands (USA)</fullName>
+                <default>false</default>
+                <label>United States Virgin Islands (USA)</label>
+            </value>
+            <value>
+                <fullName>Uruguay</fullName>
+                <default>false</default>
+                <label>Uruguay</label>
+            </value>
+            <value>
+                <fullName>Uzbekistan</fullName>
+                <default>false</default>
+                <label>Uzbekistan</label>
+            </value>
+            <value>
+                <fullName>Vanuatu</fullName>
+                <default>false</default>
+                <label>Vanuatu</label>
+            </value>
+            <value>
+                <fullName>Vatican City</fullName>
+                <default>false</default>
+                <label>Vatican City</label>
+            </value>
+            <value>
+                <fullName>Venezuela</fullName>
+                <default>false</default>
+                <label>Venezuela</label>
+            </value>
+            <value>
+                <fullName>Vietnam</fullName>
+                <default>false</default>
+                <label>Vietnam</label>
+            </value>
+            <value>
+                <fullName>Wallis and Futuna (France)</fullName>
+                <default>false</default>
+                <label>Wallis and Futuna (France)</label>
+            </value>
+            <value>
+                <fullName>Western Sahara</fullName>
+                <default>false</default>
+                <label>Western Sahara</label>
+            </value>
+            <value>
+                <fullName>Yemen</fullName>
+                <default>false</default>
+                <label>Yemen</label>
+            </value>
+            <value>
+                <fullName>Zambia</fullName>
+                <default>false</default>
+                <label>Zambia</label>
+            </value>
+            <value>
+                <fullName>Zimbabwe</fullName>
+                <default>false</default>
+                <label>Zimbabwe</label>
+            </value>
+            <value>
+                <fullName>UAE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UAE</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Australia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Afghanistan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Aland Islands (Finland)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Albania</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Algeria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>American Samoa (USA)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Andorra</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Angola</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Anguilla (UK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Antigua and Barbuda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Argentina</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Armenia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Aruba (Netherlands)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Austria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Azerbaijan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Bahamas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Bahrain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Bangladesh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Barbados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Belarus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Belgium</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Belize</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Benin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Bermuda (UK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Bhutan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Bolivia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Bosnia and Herzegovina</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Botswana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Brazil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>British Virgin Islands (UK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Brunei</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Bulgaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Burkina Faso</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Burma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Burundi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Cambodia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Cameroon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Canada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Cape Verde</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Caribbean Netherlands (Netherlands)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Cayman Islands (UK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Central African Republic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Chad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Chile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>China</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Christmas Island (Australia)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Cocos (Keeling) Islands (Australia)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Colombia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Comoros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Cook Islands (NZ)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Costa Rica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Croatia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Cuba</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Curacao (Netherlands)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Cyprus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Czech Republic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Democratic Republic of the Congo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Denmark</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Djibouti</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Dominica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Dominican Republic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Ecuador</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Egypt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>El Salvador</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Equatorial Guinea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Eritrea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Estonia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Ethiopia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Falkland Islands (UK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Faroe Islands (Denmark)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Federated States of Micronesia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Fiji</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Finland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>France</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>French Guiana (France)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>French Polynesia (France)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Gabon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Gambia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Georgia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Germany</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Ghana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Gibraltar (UK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Greece</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Greenland (Denmark)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Grenada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Guadeloupe (France)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Guam (USA)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Guatemala</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Guernsey (UK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Guinea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Guinea-Bissau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Guyana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Haiti</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Honduras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Hong Kong (China)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Hungary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Iceland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>India</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Indonesia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Iran</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Iraq</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Ireland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Isle of Man (UK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Israel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Italy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Ivory Coast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Jamaica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Japan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Jersey (UK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Jordan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Kazakhstan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Kenya</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Kiribati</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Kosovo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Kuwait</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Kyrgyzstan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Laos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Latvia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Lebanon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Lesotho</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Liberia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Libya</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Liechtenstein</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Lithuania</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Luxembourg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Macau (China)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Macedonia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Madagascar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Malawi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Malaysia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Maldives</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Mali</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Malta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Marshall Islands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Martinique (France)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Mauritania</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Mauritius</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Mayotte (France)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Mexico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Moldov</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Monaco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Mongolia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Montenegro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Montserrat (UK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Morocco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Mozambique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Namibia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Nauru</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Nepal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Netherlands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>New Caledonia (France)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>New Zealand</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Nicaragua</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Niger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Nigeria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Niue (NZ)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Norfolk Island (Australia)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>North Korea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Northern Mariana Islands (USA)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Norway</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Oman</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Pakistan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Palau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Palestine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Panama</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Papua New Guinea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Paraguay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Peru</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Philippines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Pitcairn Islands (UK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Poland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Portugal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Puerto Rico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Qatar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Republic of the Congo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Reunion (France)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Romania</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Russia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Rwanda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Saint Barthelemy (France)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Saint Helena, Ascension and Tristan da Cunha (UK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Saint Kitts and Nevis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Saint Lucia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Saint Martin (France)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Saint Pierre and Miquelon (France)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Saint Vincent and the Grenadines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Samoa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>San Marino</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Sao Tom and Principe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Saudi Arabia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Senegal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Serbia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Seychelles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Sierra Leone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Singapore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Sint Maarten (Netherlands)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Slovakia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Slovenia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Solomon Islands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Somalia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>South Africa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>South Korea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>South Sudan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Spain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Sri Lanka</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Sudan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Suriname</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Svalbard and Jan Mayen (Norway)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Swaziland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Sweden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Switzerland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Syria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Taiwan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Tajikistan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Tanzania</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Thailand</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Timor-Leste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Togo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Tokelau (NZ)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Tonga</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Trinidad and Tobago</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Tunisia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Turkey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Turkmenistan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Turks and Caicos Islands (UK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Tuvalu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Uganda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Ukraine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Domestic Wire Transfer</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>United Arab Emirates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>United Kingdom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>United States</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>United States Virgin Islands (USA)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Uruguay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Uzbekistan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Vanuatu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Vatican City</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Venezuela</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Vietnam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Wallis and Futuna (France)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Western Sahara</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Yemen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Zambia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTC Deposits</controllingFieldValue>
+            <controllingFieldValue>Cheque</controllingFieldValue>
+            <controllingFieldValue>CDM Cash</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>CDM Cheque</controllingFieldValue>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <controllingFieldValue>International Wire Transfer</controllingFieldValue>
+            <valueName>Zimbabwe</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CSO Announcement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CSO Announcements</value>
+    </caseValues>
+    <layouts>
+        <layout>CSO Announcement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Deactivate Announcement --></label>
+        <name>Deactivate_Announcement</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The announcement can not be updated when it is active. Please deactivate it first --></errorMessage>
+        <name>Validate_when_announcement_is_active</name>
+    </validationRules>
+</CustomObjectTranslation>

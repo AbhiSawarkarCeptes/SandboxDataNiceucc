@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payment Towards --></label>
+    <name>Payment_Towards__c</name>
+    <picklistValues>
+        <masterLabel>Corporate Account</masterLabel>
+        <translation><!-- Corporate Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESCROW Account</masterLabel>
+        <translation><!-- ESCROW Account --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

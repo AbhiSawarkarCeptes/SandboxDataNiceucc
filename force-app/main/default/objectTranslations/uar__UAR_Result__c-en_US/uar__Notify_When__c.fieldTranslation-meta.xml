@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For the selected sections, this will send a notification email when a change is detected, for open access, or both. --></help>
+    <label><!-- Notify When --></label>
+    <name>uar__Notify_When__c</name>
+    <picklistValues>
+        <masterLabel>Every time the report runs and finds open access</masterLabel>
+        <translation><!-- Every time the report runs and finds open access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>When access changes compared to the previous run</masterLabel>
+        <translation><!-- When access changes compared to the previous run --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

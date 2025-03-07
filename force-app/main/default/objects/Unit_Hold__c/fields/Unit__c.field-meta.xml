@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>Unit</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <filterItems>
+            <field>Unit__c.Unit_Status__c</field>
+            <operation>equals</operation>
+            <value>Available</value>
+        </filterItems>
+        <filterItems>
+            <field>Unit__c.Not_Available_for_Sales__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Unit__c</referenceTo>
+    <relationshipLabel>Unit Hold</relationshipLabel>
+    <relationshipName>Unit_Hold</relationshipName>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

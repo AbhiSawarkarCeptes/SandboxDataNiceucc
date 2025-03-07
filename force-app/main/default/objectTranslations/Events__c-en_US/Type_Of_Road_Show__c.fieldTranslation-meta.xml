@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type Of Road Show --></label>
+    <name>Type_Of_Road_Show__c</name>
+    <picklistValues>
+        <masterLabel>Channel Partner Roadshow</masterLabel>
+        <translation><!-- Channel Partner Roadshow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Roadshow</masterLabel>
+        <translation><!-- Digital Roadshow --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

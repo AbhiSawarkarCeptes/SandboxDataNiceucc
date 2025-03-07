@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Site Visit Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Site Visit Forms</value>
+    </caseValues>
+    <layouts>
+        <layout>CP/CPTL SVF Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Preferences --></label>
+            <section>Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Professional Details --></label>
+            <section>Professional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Feedback --></label>
+            <section>Visit Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Walk-in Details --></label>
+            <section>Walk-in Details</section>
+        </sections>
+        <sections>
+            <label><!-- Walk-in Source Details --></label>
+            <section>Walk-in Source Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CRM Site Visit Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Registration Form Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Preferences --></label>
+            <section>Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Professional Details --></label>
+            <section>Professional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Feedback --></label>
+            <section>Visit Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Walk-in Details --></label>
+            <section>Walk-in Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>GRE SVF Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Preferences --></label>
+            <section>Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Professional Details --></label>
+            <section>Professional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Feedback --></label>
+            <section>Visit Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Walk-in Details --></label>
+            <section>Walk-in Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Presales SVF Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Preferences --></label>
+            <section>Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Professional Details --></label>
+            <section>Professional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Feedback --></label>
+            <section>Visit Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Walk-in Details --></label>
+            <section>Walk-in Details</section>
+        </sections>
+        <sections>
+            <label><!-- Walk-in Source Details --></label>
+            <section>Walk-in Source Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Read Only SV Layout</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Preferences --></label>
+            <section>Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Professional Details --></label>
+            <section>Professional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Feedback --></label>
+            <section>Visit Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Walk-in Details --></label>
+            <section>Walk-in Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Revisit Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Revisit Feedback --></label>
+            <section>Revisit Feedback</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SM SVF Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Preferences --></label>
+            <section>Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Professional Details --></label>
+            <section>Professional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Feedback --></label>
+            <section>Visit Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Walk-in Details --></label>
+            <section>Walk-in Details</section>
+        </sections>
+        <sections>
+            <label><!-- Walk-in Source Details --></label>
+            <section>Walk-in Source Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales Operation SVF Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Preferences --></label>
+            <section>Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Professional Details --></label>
+            <section>Professional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Feedback --></label>
+            <section>Visit Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Walk-in Details --></label>
+            <section>Walk-in Details</section>
+        </sections>
+        <sections>
+            <label><!-- Walk-in Source Details --></label>
+            <section>Walk-in Source Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Site Visit Form Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Get Token --></label>
+        <name>Get_Token</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- CRM Site Visit --></label>
+        <name>CRM_Site_Visit</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Site Revisit --></label>
+        <name>Site_Revisit</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Site Visit --></label>
+        <name>Site_Visit</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Mobile number can not be contain space, please remove space and try again --></errorMessage>
+        <name>Mobile_Number_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter &apos;Next Action Date&apos;. --></errorMessage>
+        <name>Visit_Next_Action_Followup_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

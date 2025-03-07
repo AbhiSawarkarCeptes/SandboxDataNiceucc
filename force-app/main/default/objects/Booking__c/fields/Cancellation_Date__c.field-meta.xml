@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancellation_Date__c</fullName>
+    <description>When booking status is unprocessed for more than 7 days, Signed status is null and the Booking date is after june 1st then system cancel the booking automatically</description>
+    <inlineHelpText>This field holds the value of cancellation date which is cancelled through system</inlineHelpText>
+    <label>Cancellation Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

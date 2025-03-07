@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Mall Name --></label>
+    <name>Mall_Name__c</name>
+    <picklistValues>
+        <masterLabel>A place in the Sun : UK Expo</masterLabel>
+        <translation><!-- A place in the Sun : UK Expo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APEX Expo– Javits Centre, New York, USA</masterLabel>
+        <translation><!-- APEX Expo– Javits Centre, New York, USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APITS London</masterLabel>
+        <translation><!-- APITS London --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLS Global - Turkey</masterLabel>
+        <translation><!-- BLS Global - Turkey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLS Mumbai 2024</masterLabel>
+        <translation><!-- BLS Mumbai 2024 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLS NYC REAL ESTATE EXPO 2024</masterLabel>
+        <translation><!-- BLS NYC REAL ESTATE EXPO 2024 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bur Juman</masterLabel>
+        <translation><!-- Bur Juman --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CITYSCAPE QATAR - 2024</masterLabel>
+        <translation><!-- CITYSCAPE QATAR - 2024 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada IPS 2024</masterLabel>
+        <translation><!-- Canada IPS 2024 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>China Property Expo – Shanghai Expo Mart</masterLabel>
+        <translation><!-- China Property Expo – Shanghai Expo Mart --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DCC</masterLabel>
+        <translation><!-- DCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DFC</masterLabel>
+        <translation><!-- DFC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delhi Airport - Stand</masterLabel>
+        <translation><!-- Delhi Airport - Stand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dubai Boat Show</masterLabel>
+        <translation><!-- Dubai Boat Show --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IREIS ABU DHABI 2024</masterLabel>
+        <translation><!-- IREIS ABU DHABI 2024 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IREX Hyderabad – Hotel Trident</masterLabel>
+        <translation><!-- IREX Hyderabad – Hotel Trident --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IREX Mumbai – St. Regis 2024</masterLabel>
+        <translation><!-- IREX Mumbai – St. Regis 2024 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IREX NEW DELHI 2024</masterLabel>
+        <translation><!-- IREX NEW DELHI 2024 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LPS Shanghai Exhibition</masterLabel>
+        <translation><!-- LPS Shanghai Exhibition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MCC</masterLabel>
+        <translation><!-- MCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOE</masterLabel>
+        <translation><!-- MOE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moscow Exhibition</masterLabel>
+        <translation><!-- Moscow Exhibition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Movenpick JBR</masterLabel>
+        <translation><!-- Movenpick JBR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRI ONE SINGAPORE 2024</masterLabel>
+        <translation><!-- NRI ONE SINGAPORE 2024 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nakheel Mall</masterLabel>
+        <translation><!-- Nakheel Mall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QLP China -2024</masterLabel>
+        <translation><!-- QLP China -2024 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radisson Blu Marina</masterLabel>
+        <translation><!-- Radisson Blu Marina --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sheraton Deira Creek Hotel</masterLabel>
+        <translation><!-- Sheraton Deira Creek Hotel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Realty Metro Stand</masterLabel>
+        <translation><!-- Sobha Realty Metro Stand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sofitel Downtown</masterLabel>
+        <translation><!-- Sofitel Downtown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>St Petersburg Exhibition</masterLabel>
+        <translation><!-- St Petersburg Exhibition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TOI SOBHA EVENT 2024</masterLabel>
+        <translation><!-- TOI SOBHA EVENT 2024 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>United Expo, Singapore</masterLabel>
+        <translation><!-- United Expo, Singapore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VR activation London</masterLabel>
+        <translation><!-- VR activation London --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Broker Approval Status --></label>
+    <name>Broker_Approval_Status__c</name>
+    <picklistValues>
+        <masterLabel>Agreement - approved by CHRM OPS</masterLabel>
+        <translation><!-- Agreement - approved by CHRM OPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement Awaiting Approval - CHRM OPS</masterLabel>
+        <translation><!-- Agreement Awaiting Approval - CHRM OPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement Created and Sent for Signatures</masterLabel>
+        <translation><!-- Agreement Created and Sent for Signatures --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement Executed Manually</masterLabel>
+        <translation><!-- Agreement Executed Manually --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement Generated</masterLabel>
+        <translation><!-- Agreement Generated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement Is in process</masterLabel>
+        <translation><!-- Agreement Is in process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement Rejected by CHRM OPS</masterLabel>
+        <translation><!-- Agreement Rejected by CHRM OPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement created and send for Review</masterLabel>
+        <translation><!-- Agreement created and send for Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement created and sent for signature</masterLabel>
+        <translation><!-- Agreement created and sent for signature --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement created and sent to witness</masterLabel>
+        <translation><!-- Agreement created and sent to witness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>All Missing Documents Uploaded</masterLabel>
+        <translation><!-- All Missing Documents Uploaded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved - by Ashish Parakh</masterLabel>
+        <translation><!-- Approved - by Ashish Parakh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by CHRM Ops</masterLabel>
+        <translation><!-- Approved by CHRM Ops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker Empanelment Form Filled</masterLabel>
+        <translation><!-- Broker Empanelment Form Filled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker Registration Done</masterLabel>
+        <translation><!-- Broker Registration Done --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker Registration Done, pending with CHRM Manager</masterLabel>
+        <translation><!-- Broker Registration Done, pending with CHRM Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHRM Registration Done</masterLabel>
+        <translation><!-- CHRM Registration Done --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CP/SC ID Generated</masterLabel>
+        <translation><!-- CP/SC ID Generated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CP/SC ID in Process</masterLabel>
+        <translation><!-- CP/SC ID in Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executed Agreement Sent to Broker</masterLabel>
+        <translation><!-- Executed Agreement Sent to Broker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executed Agreement Sent to CHRM</masterLabel>
+        <translation><!-- Executed Agreement Sent to CHRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executed Agreement sent to CRHM</masterLabel>
+        <translation><!-- Executed Agreement sent to CRHM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC Generated</masterLabel>
+        <translation><!-- NOC Generated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC Is in Process</masterLabel>
+        <translation><!-- NOC Is in Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC Pending with Audit</masterLabel>
+        <translation><!-- NOC Pending with Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending</masterLabel>
+        <translation><!-- Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with Ashish Parakh</masterLabel>
+        <translation><!-- Pending with Ashish Parakh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with Ashish Parakh/ Sent for final signatures</masterLabel>
+        <translation><!-- Pending with Ashish Parakh/ Sent for final signatures --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with Audit</masterLabel>
+        <translation><!-- Pending with Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with CHRM / Rejected with CHRM</masterLabel>
+        <translation><!-- Pending with CHRM / Rejected with CHRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with CHRM Manager</masterLabel>
+        <translation><!-- Pending with CHRM Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with CHRM Ops</masterLabel>
+        <translation><!-- Pending with CHRM Ops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected - Rejected by CHRM OPS</masterLabel>
+        <translation><!-- Rejected - Rejected by CHRM OPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Audit</masterLabel>
+        <translation><!-- Rejected by Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by CHRM Manager</masterLabel>
+        <translation><!-- Rejected by CHRM Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by CHRM Ops</masterLabel>
+        <translation><!-- Rejected by CHRM Ops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sent for Final Signatures</masterLabel>
+        <translation><!-- Sent for Final Signatures --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signed Agreement Received - Documents</masterLabel>
+        <translation><!-- Signed Agreement Received - Documents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signed Agreement Received - Documents Awaiting</masterLabel>
+        <translation><!-- Signed Agreement Received - Documents Awaiting --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

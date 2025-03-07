@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_for_Collection_Manager_approval</fullName>
+    <booleanFilter>1 OR 2</booleanFilter>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Approval_Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted,Resubmitted to Collections</value>
+    </filters>
+    <filters>
+        <field>Audit_Resubmitted_to__c</field>
+        <operation>equals</operation>
+        <value>Resubmit to Collections,Resubmit to Collections and Accounts</value>
+    </filters>
+    <label>Pending for Collection Manager approval</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Collection</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

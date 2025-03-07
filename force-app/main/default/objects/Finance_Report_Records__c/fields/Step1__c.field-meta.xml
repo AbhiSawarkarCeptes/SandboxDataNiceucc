@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Step1__c</fullName>
+    <formula>IF(AND(OR(Document_Category_New__c=&apos;Credit Note&apos;,Document_Category_New__c=&apos;Debit Note&apos;,Document_Category_New__c=&apos;Receipt&apos;), OR(Receipt_Status__c=&apos;PDC&apos;, Receipt_Status__c=&apos;Dishonored&apos;, Receipt_Status__c=&apos;Cancelled&apos;)),TRUE, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Step1</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_with_Swapnil</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Event_Approved_status__c</field>
+        <operation>equals</operation>
+        <value>Pending with Swapnil</value>
+    </filters>
+    <label>Pending with Swapnil</label>
+    <sharedTo>
+        <group>Swapnil</group>
+    </sharedTo>
+</ListView>

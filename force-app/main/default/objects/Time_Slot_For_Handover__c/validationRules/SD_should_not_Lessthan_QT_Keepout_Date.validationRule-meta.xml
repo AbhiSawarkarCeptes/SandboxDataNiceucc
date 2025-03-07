@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SD_should_not_Lessthan_QT_Keepout_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>If( QT_Keepout_Date__c &gt; Scheduled_Date__c ,true,false)</errorConditionFormula>
+    <errorMessage>QT date is greater than Scheduled Date. Please change the Date</errorMessage>
+</ValidationRule>

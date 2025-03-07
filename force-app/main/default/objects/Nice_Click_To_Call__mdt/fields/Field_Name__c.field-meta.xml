@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field_Name__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Please Provide the field Name</inlineHelpText>
+    <label>Field Name</label>
+    <metadataRelationshipControllingField>Nice_Click_To_Call__mdt.Object_Name__c</metadataRelationshipControllingField>
+    <referenceTo>FieldDefinition</referenceTo>
+    <relationshipLabel>Nice_Click_To_Call</relationshipLabel>
+    <relationshipName>Nice_Click_To_Call</relationshipName>
+    <required>true</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

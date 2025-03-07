@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permitted_Use_Arabic__c</fullName>
+    <label>Permitted Use Docgen Arabic</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>للغرض التجاري فقط</fullName>
+                <default>false</default>
+                <label>للغرض التجاري فقط</label>
+            </value>
+            <value>
+                <fullName>لغرض المطعم فقط</fullName>
+                <default>false</default>
+                <label>لغرض المطعم فقط</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

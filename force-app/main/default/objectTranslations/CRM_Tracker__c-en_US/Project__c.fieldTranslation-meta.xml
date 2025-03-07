@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Project --></label>
+    <name>Project__c</name>
+    <picklistValues>
+        <masterLabel>310  Riverside Crescent</masterLabel>
+        <translation><!-- 310  Riverside Crescent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>320  Riverside Crescent</masterLabel>
+        <translation><!-- 320  Riverside Crescent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>330  Riverside Crescent</masterLabel>
+        <translation><!-- 330  Riverside Crescent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>340  Riverside Crescent</masterLabel>
+        <translation><!-- 340  Riverside Crescent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>350  Riverside Crescent</masterLabel>
+        <translation><!-- 350  Riverside Crescent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>360  Riverside Crescent</masterLabel>
+        <translation><!-- 360  Riverside Crescent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Creek Vista</masterLabel>
+        <translation><!-- Creek Vista --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Creek Vistas Grande</masterLabel>
+        <translation><!-- Creek Vistas Grande --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crest Grande</masterLabel>
+        <translation><!-- Crest Grande --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delphine Beach Residences</masterLabel>
+        <translation><!-- Delphine Beach Residences --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greens</masterLabel>
+        <translation><!-- Greens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hartland Extension</masterLabel>
+        <translation><!-- Hartland Extension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>One Park Avenue</masterLabel>
+        <translation><!-- One Park Avenue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Selence Beach Residences</masterLabel>
+        <translation><!-- Selence Beach Residences --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Creek Vista Heights</masterLabel>
+        <translation><!-- Sobha Creek Vista Heights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Creek vistas Reserve</masterLabel>
+        <translation><!-- Sobha Creek vistas Reserve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Hartland II Villas</masterLabel>
+        <translation><!-- Sobha Hartland II Villas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha One</masterLabel>
+        <translation><!-- Sobha One --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Orbis</masterLabel>
+        <translation><!-- Sobha Orbis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Reserve</masterLabel>
+        <translation><!-- Sobha Reserve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha SeaHaven</masterLabel>
+        <translation><!-- Sobha SeaHaven --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Siniya Island</masterLabel>
+        <translation><!-- Sobha Siniya Island --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Tranquility</masterLabel>
+        <translation><!-- Sobha Tranquility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Waves Opulence</masterLabel>
+        <translation><!-- Sobha Waves Opulence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Crest</masterLabel>
+        <translation><!-- The Crest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The S</masterLabel>
+        <translation><!-- The S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Townhouses</masterLabel>
+        <translation><!-- Townhouses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Verde By Sobha</masterLabel>
+        <translation><!-- Verde By Sobha --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Villas</masterLabel>
+        <translation><!-- Villas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waterside Plots</masterLabel>
+        <translation><!-- Waterside Plots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waves</masterLabel>
+        <translation><!-- Waves --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waves Grande</masterLabel>
+        <translation><!-- Waves Grande --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

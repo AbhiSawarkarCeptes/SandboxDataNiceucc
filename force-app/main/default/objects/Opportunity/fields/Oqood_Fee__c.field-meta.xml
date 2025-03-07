@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oqood_Fee__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Unit__r.Charge_1_Bucket__c ==&apos;Stamp Duty and Registration&apos;, Unit__r.Charge_1_Amount__c, 0)+ IF(Unit__r.Charge_2_Bucket__c ==&apos;Stamp Duty and Registration&apos;, Unit__r.Charge_2_Amount__c, 0)+ IF(Unit__r.Charge_3_Bucket__c ==&apos;Stamp Duty and Registration&apos;, Unit__r.Charge_3_Amount__c, 0)+
+IF(Unit__r.Charge_4_Bucket__c ==&apos;Stamp Duty and Registration&apos;, Unit__r.Charge_4_Amount__c, 0)+
+IF(Unit__r.Charge_5_Bucket__c ==&apos;Stamp Duty and Registration&apos;, Unit__r.Charge_5_Amount__c, 0)+
+IF(Unit__r.Charge_6_Bucket__c ==&apos;Stamp Duty and Registration&apos;, Unit__r.Charge_6_Amount__c, 0)+
+IF(Unit__r.Charge_7_Bucket__c ==&apos;Stamp Duty and Registration&apos;, Unit__r.Charge_7_Amount__c, 0)+
+IF(Unit__r.Charge_8_Bucket__c ==&apos;Stamp Duty and Registration&apos;, Unit__r.Charge_8_Amount__c, 0)+
+IF(Unit__r.Charge_9_Bucket__c ==&apos;Stamp Duty and Registration&apos;, Unit__r.Charge_9_Amount__c, 0)+
+IF(Unit__r.Charge_10_Bucket__c ==&apos;Stamp Duty and Registration&apos;, Unit__r.Charge_10_Amount__c, 0)+
+IF(Unit__r.Charge_11_Bucket__c ==&apos;Stamp Duty and Registration&apos;, Unit__r.Charge_11_Amount__c, 0)+
+IF(Unit__r.Charge_12_Bucket__c ==&apos;Stamp Duty and Registration&apos;, Unit__r.Charge_12_Amount__c, 0)+
+IF(Unit__r.Charge_13_Bucket__c ==&apos;Stamp Duty and Registration&apos;, Unit__r.Charge_13_Amount__c, 0)+
+IF(Unit__r.Charge_14_Bucket__c ==&apos;Stamp Duty and Registration&apos;, Unit__r.Charge_14_Amount__c, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Oqood Fee</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

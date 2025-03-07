@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Approval Status --></label>
+    <name>Approval_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Audit</masterLabel>
+        <translation><!-- Rejected by Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by CMO</masterLabel>
+        <translation><!-- Rejected by CMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Chairman Office</masterLabel>
+        <translation><!-- Rejected by Chairman Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by GM</masterLabel>
+        <translation><!-- Rejected by GM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Payroll Team</masterLabel>
+        <translation><!-- Rejected by Payroll Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted to Audit</masterLabel>
+        <translation><!-- Submitted to Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted to CMO</masterLabel>
+        <translation><!-- Submitted to CMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted to Chairman Office</masterLabel>
+        <translation><!-- Submitted to Chairman Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted to GM</masterLabel>
+        <translation><!-- Submitted to GM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted to Payroll Team</masterLabel>
+        <translation><!-- Submitted to Payroll Team --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

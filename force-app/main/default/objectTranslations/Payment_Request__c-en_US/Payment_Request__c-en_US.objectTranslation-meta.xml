@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payment Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payment Requests</value>
+    </caseValues>
+    <layouts>
+        <layout>Copy of Payment Request Layout for Admin</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Website Payment Details --></label>
+            <section>Website Payment Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>External SOA Verification Vendor</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Website Payment Details --></label>
+            <section>Website Payment Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Payment Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Website Payment Details --></label>
+            <section>Website Payment Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Payment Request Layout R/O</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Website Payment Details --></label>
+            <section>Website Payment Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Secondary Mode --></label>
+        <name>Add_Secondary_Mode</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Allocate Amount --></label>
+        <name>Allocate_Amount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Cancel Ezetap --></label>
+        <name>Cancel_Ezetap</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Confirm Amount --></label>
+        <name>Confirm_Amount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Offer --></label>
+        <name>Create_Offer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Ezetap Status --></label>
+        <name>Ezetap_Status</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate Receipt --></label>
+        <name>Generate_Receipt</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Initiate Ezetap --></label>
+        <name>Initiate_Ezetap</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Sale Approval --></label>
+        <name>New_Sale_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Reallocate Amount --></label>
+        <name>Reallocate_Amount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Reduce Amount --></label>
+        <name>Reduce_Amount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Resubmit to SM/SD --></label>
+        <name>Resubmit_to_SM_SD</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Special Re Allocation --></label>
+        <name>Special_Re_Allocation</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update DLD and DP Amount --></label>
+        <name>Update_DLD_and_DP_Amount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Instrument No &amp; Date --></label>
+        <name>Update_Instrument_No_Date</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Status --></label>
+        <name>Update_Status</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- For Collection without OTC Deposit --></description>
+        <label><!-- Collection --></label>
+        <name>Collection</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Payment Request can be created by Allocated SM only --></errorMessage>
+        <name>Allocated_SM_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can only change Escrow for The Crest project and can only change it to either DIB-ES-CREST-MAIN-AED-SLLC-001582404190101 or BOB-ES-THECREST-AED-SLLC-90030200022548 --></errorMessage>
+        <name>Edit_Escrow_Restrictions</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You dont have access to change this value. Please contact SF Admin --></errorMessage>
+        <name>Mode_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not allowed to edit Approved PR. --></errorMessage>
+        <name>Restrict_Edit_Access_For_Approved_PR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select an unit which is available. --></errorMessage>
+        <name>Unit_should_be_available</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_Offer --></label>
+        <name>Create_Offer</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Submitted to Collection by DLD Date --></label>
+    <name>Submitted_to_Collection_by_DLD_Date__c</name>
+</CustomFieldTranslation>

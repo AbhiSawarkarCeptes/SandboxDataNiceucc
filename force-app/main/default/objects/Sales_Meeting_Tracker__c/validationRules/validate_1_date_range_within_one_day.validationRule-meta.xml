@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>validate_1_date_range_within_one_day</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(
+AND(
+    OR(
+        TODAY() - 1 = DATEVALUE( TEXT(Meeting_Date__c )  ),  
+        TODAY() = DATEVALUE(TEXT(Meeting_Date__c ))    
+       
+    ),
+    NOT(ISBLANK(Meeting_Date__c ))  
+)
+)</errorConditionFormula>
+    <errorDisplayField>Meeting_Date__c</errorDisplayField>
+    <errorMessage>Date can be today or yesterday only.</errorMessage>
+</ValidationRule>

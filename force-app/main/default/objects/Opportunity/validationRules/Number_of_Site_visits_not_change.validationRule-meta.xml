@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Site_visits_not_change</fullName>
+    <active>false</active>
+    <description>Fires when the Opp Stage not equal to Revisit Done</description>
+    <errorConditionFormula>AND(TEXT(StageName) != &apos;Revisit Done&apos;, ISCHANGED(Number_of_Site_Visits__c))</errorConditionFormula>
+    <errorDisplayField>Number_of_Site_Visits__c</errorDisplayField>
+    <errorMessage>You can not change the&quot; Number of Site Visit&quot; once revisit done.</errorMessage>
+</ValidationRule>

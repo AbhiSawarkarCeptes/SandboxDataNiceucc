@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PropStrength__Department__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Department</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Architectural Cell</fullName>
+                <default>false</default>
+                <label>Architectural Cell</label>
+            </value>
+            <value>
+                <fullName>CRM</fullName>
+                <default>false</default>
+                <label>CRM</label>
+            </value>
+            <value>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+                <label>Project Management</label>
+            </value>
+            <value>
+                <fullName>Product Strategy</fullName>
+                <default>false</default>
+                <label>Product Strategy</label>
+            </value>
+            <value>
+                <fullName>Facilities Operations</fullName>
+                <default>false</default>
+                <label>Facilities Operations</label>
+            </value>
+            <value>
+                <fullName>Legal &amp; Sectretarial</fullName>
+                <default>false</default>
+                <label>Legal &amp; Sectretarial</label>
+            </value>
+            <value>
+                <fullName>Client Services</fullName>
+                <default>false</default>
+                <label>Client Services</label>
+            </value>
+            <value>
+                <fullName>Client Records</fullName>
+                <default>false</default>
+                <label>Client Records</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Accounting &amp; Finance</fullName>
+                <default>false</default>
+                <label>Accounting &amp; Finance</label>
+            </value>
+            <value>
+                <fullName>DMD Office</fullName>
+                <default>false</default>
+                <label>DMD Office</label>
+            </value>
+            <value>
+                <fullName>Information Management</fullName>
+                <default>false</default>
+                <label>Information Management</label>
+            </value>
+            <value>
+                <fullName>Directors</fullName>
+                <default>false</default>
+                <label>Directors</label>
+            </value>
+            <value>
+                <fullName>HR</fullName>
+                <default>false</default>
+                <label>HR</label>
+            </value>
+            <value>
+                <fullName>Corporate Communications</fullName>
+                <default>false</default>
+                <label>Corporate Communications</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

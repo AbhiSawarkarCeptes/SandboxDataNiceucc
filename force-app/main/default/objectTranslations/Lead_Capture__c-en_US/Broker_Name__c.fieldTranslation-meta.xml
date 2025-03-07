@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Broker Name --></label>
+    <name>Broker_Name__c</name>
+    <picklistValues>
+        <masterLabel>2F PROPERTIES</masterLabel>
+        <translation><!-- 2F PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7 TEPE INSAAT DEKORASYON VE GAYRIMENKUL DANISMANLIK LIMITED SIRKETI</masterLabel>
+        <translation><!-- 7 TEPE INSAAT DEKORASYON VE GAYRIMENKUL DANISMANLIK LIMITED SIRKETI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A B C PROPERTIES BROKERAGE - SOLE PROPRIETORSHIP L.L.C</masterLabel>
+        <translation><!-- A B C PROPERTIES BROKERAGE - SOLE PROPRIETORSHIP L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A D S REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- A D S REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A I CAPITAL REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- A I CAPITAL REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A K G REAL ESTATE BROKERAGE L.L.C</masterLabel>
+        <translation><!-- A K G REAL ESTATE BROKERAGE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ACE CAPITAL REAL ESTATE BROKERAGE L.L.C</masterLabel>
+        <translation><!-- ACE CAPITAL REAL ESTATE BROKERAGE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AE REALTY GROUP</masterLabel>
+        <translation><!-- AE REALTY GROUP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AEON TRISL INVESTMENTS LIMITED</masterLabel>
+        <translation><!-- AEON TRISL INVESTMENTS LIMITED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ALLEGIANCE REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- ALLEGIANCE REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANALIZA CHUMACERA</masterLabel>
+        <translation><!-- ANALIZA CHUMACERA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANASTI REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- ANASTI REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANG REZIDENTIAL SRL</masterLabel>
+        <translation><!-- ANG REZIDENTIAL SRL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANWA PROPERTIES L.L.C</masterLabel>
+        <translation><!-- ANWA PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANWA PROPERTIES LTD</masterLabel>
+        <translation><!-- ANWA PROPERTIES LTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AREIS REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- AREIS REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ARK VISION INTERNATIONAL REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- ARK VISION INTERNATIONAL REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ARTEGO REALESTATE</masterLabel>
+        <translation><!-- ARTEGO REALESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ARTHA REALTY L.L.C</masterLabel>
+        <translation><!-- ARTHA REALTY L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AVALON PROPERTIES</masterLabel>
+        <translation><!-- AVALON PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AWS REAL ESTATE</masterLabel>
+        <translation><!-- AWS REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AX PREMIUM PROPERTIES L.L.C</masterLabel>
+        <translation><!-- AX PREMIUM PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BANKE INTERNATIONAL PROPERTIES LLC</masterLabel>
+        <translation><!-- BANKE INTERNATIONAL PROPERTIES LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BANKE INTERNATIONAL PROPERTIES LTD</masterLabel>
+        <translation><!-- BANKE INTERNATIONAL PROPERTIES LTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BEACH &amp; SAND PROPERTIES L.L.C</masterLabel>
+        <translation><!-- BEACH &amp; SAND PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BENCHMARK PROPERTIES</masterLabel>
+        <translation><!-- BENCHMARK PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BEST LUXURY PROPERTIES L.L.C</masterLabel>
+        <translation><!-- BEST LUXURY PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BK REAL ESTATE</masterLabel>
+        <translation><!-- BK REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUE BELLS LUXURY REAL ESTATE</masterLabel>
+        <translation><!-- BLUE BELLS LUXURY REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUE VELVET REAL ESTATE BROKERAGE</masterLabel>
+        <translation><!-- BLUE VELVET REAL ESTATE BROKERAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BRICKS N WOODS REAL ESTATE BROKERAGE L.L.C</masterLabel>
+        <translation><!-- BRICKS N WOODS REAL ESTATE BROKERAGE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BUILDCAPS REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- BUILDCAPS REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker Event</masterLabel>
+        <translation><!-- Broker Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CASA REGAL PROPERTIES L.L.C</masterLabel>
+        <translation><!-- CASA REGAL PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CITY HEIGHTS PROPERTIES</masterLabel>
+        <translation><!-- CITY HEIGHTS PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLASSIC PARAMOUNT REAL ESTATE</masterLabel>
+        <translation><!-- CLASSIC PARAMOUNT REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COLLECT PROPERTIES</masterLabel>
+        <translation><!-- COLLECT PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONQUER PLANETARIO REAL ESTATE</masterLabel>
+        <translation><!-- CONQUER PLANETARIO REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CORAZON REAL ESTATE BROKRAGE</masterLabel>
+        <translation><!-- CORAZON REAL ESTATE BROKRAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CORNERSTONE REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- CORNERSTONE REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CREATIVE HOMES REAL ESTATE BROKER L.L.C</masterLabel>
+        <translation><!-- CREATIVE HOMES REAL ESTATE BROKER L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D &amp; S HOMES REAL ESTATE BROKERS L.L.C</masterLabel>
+        <translation><!-- D &amp; S HOMES REAL ESTATE BROKERS L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D G HOMES REAL ESTATE BROKER L.L.C</masterLabel>
+        <translation><!-- D G HOMES REAL ESTATE BROKER L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D I A REAL ESTATE</masterLabel>
+        <translation><!-- D I A REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D M A X X PROPERTIES L.L.C</masterLabel>
+        <translation><!-- D M A X X PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D O P REAL ESTATE</masterLabel>
+        <translation><!-- D O P REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DAX REAL ESTATE ONE PERSON COMPANY LLC</masterLabel>
+        <translation><!-- DAX REAL ESTATE ONE PERSON COMPANY LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DESEA GLOBAL PROPERTIES L.L.C</masterLabel>
+        <translation><!-- DESEA GLOBAL PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIVINE BRICKS REAL ESTATE</masterLabel>
+        <translation><!-- DIVINE BRICKS REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOMINANTA REAL ESTATE</masterLabel>
+        <translation><!-- DOMINANTA REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DRE HOMES REAL ESTATE BROKER</masterLabel>
+        <translation><!-- DRE HOMES REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DREAM DESIGN REAL ESTATE BROKER</masterLabel>
+        <translation><!-- DREAM DESIGN REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSEVEN PROPERTIES</masterLabel>
+        <translation><!-- DSEVEN PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELAN REAL ESTATE</masterLabel>
+        <translation><!-- ELAN REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELEVATION INTERNATIONAL REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- ELEVATION INTERNATIONAL REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELEVEN STREET REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- ELEVEN STREET REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELIT STROY PROPERTY L.L.C</masterLabel>
+        <translation><!-- ELIT STROY PROPERTY L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELYSIAN REAL ESTATE BROKER L.L.C</masterLabel>
+        <translation><!-- ELYSIAN REAL ESTATE BROKER L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMAX PROPERTIES</masterLabel>
+        <translation><!-- EMAX PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMINENCE REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- EMINENCE REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMPIRE CITY REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- EMPIRE CITY REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMPIRE HILLS REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- EMPIRE HILLS REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EV REAL ESTATE BROKERAGE LLC</masterLabel>
+        <translation><!-- EV REAL ESTATE BROKERAGE LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EVA REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- EVA REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXCEED REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- EXCEED REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXP REAL ESTATE (BR OF EXP INTERNATIONAL HOLDINGS INC )(DUBAI BRANCH)</masterLabel>
+        <translation><!-- EXP REAL ESTATE (BR OF EXP INTERNATIONAL HOLDINGS INC )(DUBAI BRANCH) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F A M REAL ESTATE BROKER L.L.C</masterLabel>
+        <translation><!-- F A M REAL ESTATE BROKER L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F L X PROPERTY L.L.C</masterLabel>
+        <translation><!-- F L X PROPERTY L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FAST WAY REAL ESTATE BROKER</masterLabel>
+        <translation><!-- FAST WAY REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIFTY SIX REALTY L.L.C</masterLabel>
+        <translation><!-- FIFTY SIX REALTY L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FOOT PRINT REAL ESTATE BROKER</masterLabel>
+        <translation><!-- FOOT PRINT REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GHIZLANE REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- GHIZLANE REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GOLD PILLARS STAR PROPERTIES L.L.C</masterLabel>
+        <translation><!-- GOLD PILLARS STAR PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GOLDEN INFINITY PROPERTIES L.L.C</masterLabel>
+        <translation><!-- GOLDEN INFINITY PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GOOD REPUTATION REAL ESTATE BROKER-CHENGDU</masterLabel>
+        <translation><!-- GOOD REPUTATION REAL ESTATE BROKER-CHENGDU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GREHA PRAVESH REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- GREHA PRAVESH REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H &amp; S REAL ESTATE</masterLabel>
+        <translation><!-- H &amp; S REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H J REAL ESTATES</masterLabel>
+        <translation><!-- H J REAL ESTATES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEIGHTS AVENUE REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- HEIGHTS AVENUE REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HESTIA HOMES REAL ESTATE</masterLabel>
+        <translation><!-- HESTIA HOMES REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HOME HUSTLER REAL ESTATE L.L.C.</masterLabel>
+        <translation><!-- HOME HUSTLER REAL ESTATE L.L.C. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HOME LIGA REAL ESTATE</masterLabel>
+        <translation><!-- HOME LIGA REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HOMES 4 LIFE REAL ESTATE BROKER (L.L.C)</masterLabel>
+        <translation><!-- HOMES 4 LIFE REAL ESTATE BROKER (L.L.C) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HOMES 4 LIFE REAL ESTATE BROKER (LLC)</masterLabel>
+        <translation><!-- HOMES 4 LIFE REAL ESTATE BROKER (LLC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HOMES PARTNER REAL ESTATE MANAGEMENT SUPERVISION SERVICES LLC</masterLabel>
+        <translation><!-- HOMES PARTNER REAL ESTATE MANAGEMENT SUPERVISION SERVICES LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HOUSE AND HEDGES REAL ESTATE</masterLabel>
+        <translation><!-- HOUSE AND HEDGES REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HUAXIA REAL ESTATE BROKER</masterLabel>
+        <translation><!-- HUAXIA REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I B I A REALTY L.L.C</masterLabel>
+        <translation><!-- I B I A REALTY L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I C PREMIERE PROPERTIES L.L.C</masterLabel>
+        <translation><!-- I C PREMIERE PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IMKAAN AL AWAL REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- IMKAAN AL AWAL REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INVESPY PROPERTIES L.L.C</masterLabel>
+        <translation><!-- INVESPY PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISIDEX MARKETING MANAGEMENT</masterLabel>
+        <translation><!-- ISIDEX MARKETING MANAGEMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J A Z REAL ESTATE</masterLabel>
+        <translation><!-- J A Z REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J S S REAL ESTATE BUYING &amp; SELLING BROKERAGE</masterLabel>
+        <translation><!-- J S S REAL ESTATE BUYING &amp; SELLING BROKERAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JAPSONS REALTY L.L.C</masterLabel>
+        <translation><!-- JAPSONS REALTY L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>K &amp; S  PROPERTIES L.L.C</masterLabel>
+        <translation><!-- K &amp; S  PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KATALYST PROPERTIES L.L.C</masterLabel>
+        <translation><!-- KATALYST PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KNIGHTSBRIDGE &amp; PARTNERS (HK) LIMITED</masterLabel>
+        <translation><!-- KNIGHTSBRIDGE &amp; PARTNERS (HK) LIMITED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KNIGHTSBRIDGE &amp; PARTNERS (HK) LIMITED-Shanghai-2023-11-11</masterLabel>
+        <translation><!-- KNIGHTSBRIDGE &amp; PARTNERS (HK) LIMITED-Shanghai-2023-11-11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KREDIUM TECHNOLOGIES L L C - DUBAI BRANCH</masterLabel>
+        <translation><!-- KREDIUM TECHNOLOGIES L L C - DUBAI BRANCH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KURUVILLA WORLDWIDE AG</masterLabel>
+        <translation><!-- KURUVILLA WORLDWIDE AG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kuruvilla World Wide AG</masterLabel>
+        <translation><!-- Kuruvilla World Wide AG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LIFER REALTY REAL ESTATE BROKERS L.L.C</masterLabel>
+        <translation><!-- LIFER REALTY REAL ESTATE BROKERS L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LUMINARY REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- LUMINARY REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LUXURY CONCIERGE REAL ESTATE BROKER L. L. C</masterLabel>
+        <translation><!-- LUXURY CONCIERGE REAL ESTATE BROKER L. L. C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LUXURY HUB PROPERTIES L.L.C</masterLabel>
+        <translation><!-- LUXURY HUB PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LUXURY LIVING HOMES INTERNATIONAL LTD</masterLabel>
+        <translation><!-- LUXURY LIVING HOMES INTERNATIONAL LTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M G L REALESTATE L.L.C</masterLabel>
+        <translation><!-- M G L REALESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M R ONE PROPERTIES L.L.C</masterLabel>
+        <translation><!-- M R ONE PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MANSION AND HOMES GAYRIMENKUL</masterLabel>
+        <translation><!-- MANSION AND HOMES GAYRIMENKUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MARISAN PROPERTIES</masterLabel>
+        <translation><!-- MARISAN PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MARRFA DISCOVERY REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- MARRFA DISCOVERY REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MAULIK  MERCHANT</masterLabel>
+        <translation><!-- MAULIK  MERCHANT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MEGA HOMES REAL ESTATE BROKERS (LLC)</masterLabel>
+        <translation><!-- MEGA HOMES REAL ESTATE BROKERS (LLC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MONOLITH REAL ESTATE</masterLabel>
+        <translation><!-- MONOLITH REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MYFUTURE PROPERTIES REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- MYFUTURE PROPERTIES REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N E X HOME PROPERTIES L.L.C</masterLabel>
+        <translation><!-- N E X HOME PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NANO REAL ESTATE</masterLabel>
+        <translation><!-- NANO REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEST HUNTERS REAL ESTATE LLC</masterLabel>
+        <translation><!-- NEST HUNTERS REAL ESTATE LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NESTWOOD REALTY REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- NESTWOOD REALTY REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NESTWOOD REALTY REAL ESTATE L.L.C-Bangalore-2023-10-28</masterLabel>
+        <translation><!-- NESTWOOD REALTY REAL ESTATE L.L.C-Bangalore-2023-10-28 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEW WAY REAL ESTATE BROKER</masterLabel>
+        <translation><!-- NEW WAY REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NORTH POINTE REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- NORTH POINTE REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OIA PROPERTIES L.L.C</masterLabel>
+        <translation><!-- OIA PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ONE GLOBAL REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- ONE GLOBAL REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPENCUBE GROUP LTD</masterLabel>
+        <translation><!-- OPENCUBE GROUP LTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ORIGINAL BULL AND BEAR PROPERTIES</masterLabel>
+        <translation><!-- ORIGINAL BULL AND BEAR PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P J INTERNATIONAL REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- P J INTERNATIONAL REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PHONEIX HOMES REAL ESTATE</masterLabel>
+        <translation><!-- PHONEIX HOMES REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PLATINUM SQUARE REAL ESTATE BROKERS</masterLabel>
+        <translation><!-- PLATINUM SQUARE REAL ESTATE BROKERS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PREMIA LIVINGS REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- PREMIA LIVINGS REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROP DUB REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- PROP DUB REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROPERTY JUNCTION INTERNATIONAL REAL ESTATE BROKER L.L.C</masterLabel>
+        <translation><!-- PROPERTY JUNCTION INTERNATIONAL REAL ESTATE BROKER L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROSPER HOMES REAL ESTATE BROKERAGE</masterLabel>
+        <translation><!-- PROSPER HOMES REAL ESTATE BROKERAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROSPER INTL REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- PROSPER INTL REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROVIDENT REAL ESTATE BROKER</masterLabel>
+        <translation><!-- PROVIDENT REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROVIDENT REAL ESTATE BROKER L.L.C</masterLabel>
+        <translation><!-- PROVIDENT REAL ESTATE BROKER L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R E M REAL ESTATE BROKER OWNED BY MUNA SAYED SAEED ALHASHEMI ONE PERSON CO L.L.C</masterLabel>
+        <translation><!-- R E M REAL ESTATE BROKER OWNED BY MUNA SAYED SAEED ALHASHEMI ONE PERSON CO L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R V N PROPERTIES</masterLabel>
+        <translation><!-- R V N PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAINBOW PROPERTIES L.L.C</masterLabel>
+        <translation><!-- RAINBOW PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAINBOW PROPERTIES LLC-Mumbai-2023-11-04</masterLabel>
+        <translation><!-- RAINBOW PROPERTIES LLC-Mumbai-2023-11-04 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAMZIN ESTATE BROKER L.L.C</masterLabel>
+        <translation><!-- RAMZIN ESTATE BROKER L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY L.L.C</masterLabel>
+        <translation><!-- RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY LLC</masterLabel>
+        <translation><!-- RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY LLC-Singapore-2023-11-04</masterLabel>
+        <translation><!-- RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY LLC-Singapore-2023-11-04 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAYNA PROPERTIES</masterLabel>
+        <translation><!-- RAYNA PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAZVAN-SEBASTIAN PASCU</masterLabel>
+        <translation><!-- RAZVAN-SEBASTIAN PASCU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REAL TREE PROPERTIES</masterLabel>
+        <translation><!-- REAL TREE PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RESELL GAYRIMENKUL KIRALAMA ALIM SATIM ARACILIK HIZMETLERI LIMITED SIRKETI</masterLabel>
+        <translation><!-- RESELL GAYRIMENKUL KIRALAMA ALIM SATIM ARACILIK HIZMETLERI LIMITED SIRKETI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RICHMOND PROPERTIES L.L.C</masterLabel>
+        <translation><!-- RICHMOND PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RISE UP REAL ESTATE</masterLabel>
+        <translation><!-- RISE UP REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ROOFS AND ROOTS REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- ROOFS AND ROOTS REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S R M INTERNATIONAL REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- S R M INTERNATIONAL REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S Y CAPITAL ESTATES L.L.C</masterLabel>
+        <translation><!-- S Y CAPITAL ESTATES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAIRABH VENTURES REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- SAIRABH VENTURES REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAMSUN GODWIN CONSULTING - F.Z.E</masterLabel>
+        <translation><!-- SAMSUN GODWIN CONSULTING - F.Z.E --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEQUOIA PROPERTIES L.L.C</masterLabel>
+        <translation><!-- SEQUOIA PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEVEN CENTURY REAL ESTATE BROKERS</masterLabel>
+        <translation><!-- SEVEN CENTURY REAL ESTATE BROKERS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEVEN CENTURY REAL ESTATE BROKERS L.L.C</masterLabel>
+        <translation><!-- SEVEN CENTURY REAL ESTATE BROKERS L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGNATURE LUXURY REAL ESTATE</masterLabel>
+        <translation><!-- SIGNATURE LUXURY REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SILVER OAK PROPERTIES L.L.C</masterLabel>
+        <translation><!-- SILVER OAK PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SKY FIVE REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- SKY FIVE REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SKY VIEW REAL ESTATE BROKERS LLC</masterLabel>
+        <translation><!-- SKY VIEW REAL ESTATE BROKERS LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMART CONCEPT REAL ESTATES - DUBAI BRANCH</masterLabel>
+        <translation><!-- SMART CONCEPT REAL ESTATES - DUBAI BRANCH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPADES REAL ESTATE BROKERS</masterLabel>
+        <translation><!-- SPADES REAL ESTATE BROKERS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPRING FIELD REAL ESTATE</masterLabel>
+        <translation><!-- SPRING FIELD REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SQUAREA GULF REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- SQUAREA GULF REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STAR 5 REALTY REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- STAR 5 REALTY REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STONE HOUSE REAL ESTATE BROKERAGE L.L.C</masterLabel>
+        <translation><!-- STONE HOUSE REAL ESTATE BROKERAGE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STONE HOUSE REAL ESTATE BROKERAGE LLC</masterLabel>
+        <translation><!-- STONE HOUSE REAL ESTATE BROKERAGE LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOREYS REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- STOREYS REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUCCESS VENUE REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- SUCCESS VENUE REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUPER MODA REAL ESTATE LLC</masterLabel>
+        <translation><!-- SUPER MODA REAL ESTATE LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUPERIOR AND SERENDIPITY REAL ESTATE BUYING &amp; SELLING BROKERAGE L.L.C</masterLabel>
+        <translation><!-- SUPERIOR AND SERENDIPITY REAL ESTATE BUYING &amp; SELLING BROKERAGE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SWAP REAL ESTATE BROKERS L.L.C</masterLabel>
+        <translation><!-- SWAP REAL ESTATE BROKERS L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>T V G REALTORS REAL ESTATE BROKERAGE</masterLabel>
+        <translation><!-- T V G REALTORS REAL ESTATE BROKERAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TANAMI PROPERTIES LLC</masterLabel>
+        <translation><!-- TANAMI PROPERTIES LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>THE G O A T REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- THE G O A T REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>THE LUXURY REAL ESTATE BROKER L.L.C</masterLabel>
+        <translation><!-- THE LUXURY REAL ESTATE BROKER L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TOP PRIORITY REAL ESTATE</masterLabel>
+        <translation><!-- TOP PRIORITY REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TOPNOTCH REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- TOPNOTCH REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TURNKEY PROPERTIES</masterLabel>
+        <translation><!-- TURNKEY PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNION SQUARE HOUSE REAL ESTATE BROKER</masterLabel>
+        <translation><!-- UNION SQUARE HOUSE REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNIQUE PROPERTIES L L C</masterLabel>
+        <translation><!-- UNIQUE PROPERTIES L L C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNIQUE ZONE REAL ESTATE</masterLabel>
+        <translation><!-- UNIQUE ZONE REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UP TOWN HOME REALEASTATE L.L.C</masterLabel>
+        <translation><!-- UP TOWN HOME REALEASTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VALOREM REAL ESTATE BROKERS L.L.C</masterLabel>
+        <translation><!-- VALOREM REAL ESTATE BROKERS L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VARTUR REAL ESTATE BROKERAGE</masterLabel>
+        <translation><!-- VARTUR REAL ESTATE BROKERAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VILA L.L.C-FZ</masterLabel>
+        <translation><!-- VILA L.L.C-FZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WAY ROYAL REAL ESTATE</masterLabel>
+        <translation><!-- WAY ROYAL REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZEAL WAY REAL ESTATE</masterLabel>
+        <translation><!-- ZEAL WAY REAL ESTATE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

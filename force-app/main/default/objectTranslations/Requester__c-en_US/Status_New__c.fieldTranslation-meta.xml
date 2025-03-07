@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status (New) --></label>
+    <name>Status_New__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved By Manager</masterLabel>
+        <translation><!-- Approved By Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted for approval</masterLabel>
+        <translation><!-- Submitted for approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted for approval to Accounts</masterLabel>
+        <translation><!-- Submitted for approval to Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted for approval to LM</masterLabel>
+        <translation><!-- Submitted for approval to LM --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

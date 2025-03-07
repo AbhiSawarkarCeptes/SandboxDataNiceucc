@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CRM Tracker</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CRM Tracker</value>
+    </caseValues>
+    <layouts>
+        <layout>CRM Tracker Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPA Tracker</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Stakeholders task layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CRM Internal Task --></label>
+        <name>CRM_Internal_Task</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IT Task --></label>
+        <name>IT_Task</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SPA Tracker --></label>
+        <name>SPA_Tracker</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Stakeholders task --></label>
+        <name>Stakeholders_task</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

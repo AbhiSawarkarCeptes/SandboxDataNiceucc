@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- QT Keep Out Personnel --></label>
+    <name>QT_Keep_Out_Personnel__c</name>
+    <picklistValues>
+        <masterLabel>Dirk Heyne</masterLabel>
+        <translation><!-- Dirk Heyne --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harald Frei</masterLabel>
+        <translation><!-- Harald Frei --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Karthikeyan Ranganathan</masterLabel>
+        <translation><!-- Karthikeyan Ranganathan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Olaf Wagner</masterLabel>
+        <translation><!-- Olaf Wagner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ralf Goedecke</masterLabel>
+        <translation><!-- Ralf Goedecke --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roland Gotsch</masterLabel>
+        <translation><!-- Roland Gotsch --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

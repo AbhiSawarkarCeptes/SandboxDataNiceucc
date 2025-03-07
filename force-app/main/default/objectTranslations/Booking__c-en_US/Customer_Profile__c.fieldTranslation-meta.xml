@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Profile --></label>
+    <name>Customer_Profile__c</name>
+    <picklistValues>
+        <masterLabel>Accountant</masterLabel>
+        <translation><!-- Accountant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aviation Industry/Pilot</masterLabel>
+        <translation><!-- Aviation Industry/Pilot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Banking Sector</masterLabel>
+        <translation><!-- Banking Sector --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Owner</masterLabel>
+        <translation><!-- Business Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Celebrity</masterLabel>
+        <translation><!-- Celebrity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Company</masterLabel>
+        <translation><!-- Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction/Architecture Professionals</masterLabel>
+        <translation><!-- Construction/Architecture Professionals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consulting/Professional Services</masterLabel>
+        <translation><!-- Consulting/Professional Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Creative/Artistic Professionals</masterLabel>
+        <translation><!-- Creative/Artistic Professionals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diplomat</masterLabel>
+        <translation><!-- Diplomat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Education Professionals</masterLabel>
+        <translation><!-- Education Professionals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entrepreneurs/Self-Employed</masterLabel>
+        <translation><!-- Entrepreneurs/Self-Employed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthcare Professionals/Medical Practitioners</masterLabel>
+        <translation><!-- Healthcare Professionals/Medical Practitioners --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospitality Industry</masterLabel>
+        <translation><!-- Hospitality Industry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Human Resources</masterLabel>
+        <translation><!-- Human Resources --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT/Computer Professionals</masterLabel>
+        <translation><!-- IT/Computer Professionals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investor</masterLabel>
+        <translation><!-- Investor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Journalism</masterLabel>
+        <translation><!-- Journalism --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Professionals</masterLabel>
+        <translation><!-- Legal Professionals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing Sector</masterLabel>
+        <translation><!-- Marketing Sector --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing/Media Sector</masterLabel>
+        <translation><!-- Marketing/Media Sector --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Middle-Level Manager</masterLabel>
+        <translation><!-- Middle-Level Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non Profitable Business</masterLabel>
+        <translation><!-- Non Profitable Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional/Technical Staff</masterLabel>
+        <translation><!-- Professional/Technical Staff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real Estate Brokers</masterLabel>
+        <translation><!-- Real Estate Brokers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Royal Family members</masterLabel>
+        <translation><!-- Royal Family members --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesperson</masterLabel>
+        <translation><!-- Salesperson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Employee</masterLabel>
+        <translation><!-- Sobha Employee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sports Professionals</masterLabel>
+        <translation><!-- Sports Professionals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Student</masterLabel>
+        <translation><!-- Student --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Top-Level Managers</masterLabel>
+        <translation><!-- Top-Level Managers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Undisclosed</masterLabel>
+        <translation><!-- Undisclosed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Works in UAE Government</masterLabel>
+        <translation><!-- Works in UAE Government --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

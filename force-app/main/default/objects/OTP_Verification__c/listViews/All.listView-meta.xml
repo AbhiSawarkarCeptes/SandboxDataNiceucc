@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Channel__c</columns>
+    <columns>To__c</columns>
+    <columns>Status__c</columns>
+    <columns>Sid_Verification_ID__c</columns>
+    <columns>Date_Created__c</columns>
+    <columns>Date_Verified__c</columns>
+    <columns>Date_Expires__c</columns>
+    <columns>Attempts_Sent__c</columns>
+    <columns>Attempts_Checked__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

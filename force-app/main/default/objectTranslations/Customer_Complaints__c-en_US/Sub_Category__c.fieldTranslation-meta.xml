@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub-Category --></label>
+    <name>Sub_Category__c</name>
+    <picklistValues>
+        <masterLabel>Admin Charges waiver</masterLabel>
+        <translation><!-- Admin Charges waiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advance Payment Discount</masterLabel>
+        <translation><!-- Advance Payment Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Affection Plan</masterLabel>
+        <translation><!-- Affection Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation</masterLabel>
+        <translation><!-- Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discount</masterLabel>
+        <translation><!-- Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EOI unit</masterLabel>
+        <translation><!-- EOI unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Issues</masterLabel>
+        <translation><!-- Financial Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Floor Level</masterLabel>
+        <translation><!-- Floor Level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Furniture Voucher</masterLabel>
+        <translation><!-- Furniture Voucher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Increase in purchase price and area</masterLabel>
+        <translation><!-- Increase in purchase price and area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Charges</masterLabel>
+        <translation><!-- Legal Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing Offer</masterLabel>
+        <translation><!-- Marketing Offer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mis-sell</masterLabel>
+        <translation><!-- Mis-sell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misell</masterLabel>
+        <translation><!-- Misell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ownership change</masterLabel>
+        <translation><!-- Ownership change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment</masterLabel>
+        <translation><!-- Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale</masterLabel>
+        <translation><!-- Resale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA</masterLabel>
+        <translation><!-- SPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>View</masterLabel>
+        <translation><!-- View --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong account</masterLabel>
+        <translation><!-- Wrong account --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

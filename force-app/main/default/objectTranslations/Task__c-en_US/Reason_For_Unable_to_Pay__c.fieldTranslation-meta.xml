@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason For Unable to Pay --></label>
+    <name>Reason_For_Unable_to_Pay__c</name>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Plan Extension</masterLabel>
+        <translation><!-- Payment Plan Extension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale</masterLabel>
+        <translation><!-- Resale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiver Requested</masterLabel>
+        <translation><!-- Waiver Requested --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

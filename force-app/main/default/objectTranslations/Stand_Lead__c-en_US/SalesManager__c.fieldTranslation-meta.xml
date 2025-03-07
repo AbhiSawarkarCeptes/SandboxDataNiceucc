@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SalesManager --></label>
+    <name>SalesManager__c</name>
+    <picklistValues>
+        <masterLabel>Aleksei Berezkin</masterLabel>
+        <translation><!-- Aleksei Berezkin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alina Asokina</masterLabel>
+        <translation><!-- Alina Asokina --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elizaveta Oleshchenko</masterLabel>
+        <translation><!-- Elizaveta Oleshchenko --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nargiz Riga</masterLabel>
+        <translation><!-- Nargiz Riga --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sanobar Igrasheva</masterLabel>
+        <translation><!-- Sanobar Igrasheva --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tamila Mangeldina</masterLabel>
+        <translation><!-- Tamila Mangeldina --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

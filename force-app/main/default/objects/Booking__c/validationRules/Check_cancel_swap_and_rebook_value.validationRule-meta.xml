@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_cancel_swap_and_rebook_value</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISNEW()),(OR(ISCHANGED(Cancel_Rebook__c),ISCHANGED( Cancel_Swap__c))),ISPICKVAL(Cancel_Rebook__c,&quot;Yes&quot;), ISPICKVAL(Cancel_Swap__c,&quot;YES&quot;))</errorConditionFormula>
+    <errorMessage>Cannot update both Cancel-Swap &amp; Cancel-Rebook as Yes</errorMessage>
+</ValidationRule>

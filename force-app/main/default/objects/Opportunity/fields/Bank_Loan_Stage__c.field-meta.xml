@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bank_Loan_Stage__c</fullName>
+    <label>Bank Loan Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Bank_Loan_Self_Funded__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Additional clarity from client</fullName>
+                <default>false</default>
+                <label>Additional clarity from client</label>
+            </value>
+            <value>
+                <fullName>Disbursed</fullName>
+                <default>false</default>
+                <label>Disbursed</label>
+            </value>
+            <value>
+                <fullName>Document Collection</fullName>
+                <default>false</default>
+                <label>Document Collection</label>
+            </value>
+            <value>
+                <fullName>PD and bank credit review</fullName>
+                <default>false</default>
+                <label>PD and bank credit review</label>
+            </value>
+            <value>
+                <fullName>Sanctioned - Awaiting 1st disbursement</fullName>
+                <default>false</default>
+                <label>Sanctioned - Awaiting 1st disbursement</label>
+            </value>
+            <value>
+                <fullName>Sanctioned - Developer documentation</fullName>
+                <default>false</default>
+                <label>Sanctioned - Developer documentation</label>
+            </value>
+            <value>
+                <fullName>Sanctioned - Loan paper execution</fullName>
+                <default>false</default>
+                <label>Sanctioned - Loan paper execution</label>
+            </value>
+            <value>
+                <fullName>Sanction in process</fullName>
+                <default>false</default>
+                <label>Sanction in process</label>
+            </value>
+            <value>
+                <fullName>Connect with client &amp; Assign Banker</fullName>
+                <default>true</default>
+                <label>Connect with client &amp; Assign Banker</label>
+            </value>
+            <value>
+                <fullName>Sanctioned</fullName>
+                <default>false</default>
+                <label>Sanctioned</label>
+            </value>
+            <value>
+                <fullName>Need help to apply</fullName>
+                <default>false</default>
+                <label>Need help to apply</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Bank Loan</controllingFieldValue>
+            <valueName>Additional clarity from client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bank Loan</controllingFieldValue>
+            <valueName>Disbursed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bank Loan</controllingFieldValue>
+            <valueName>Document Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bank Loan</controllingFieldValue>
+            <valueName>PD and bank credit review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bank Loan</controllingFieldValue>
+            <valueName>Sanctioned - Awaiting 1st disbursement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bank Loan</controllingFieldValue>
+            <valueName>Sanctioned - Developer documentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bank Loan</controllingFieldValue>
+            <valueName>Sanctioned - Loan paper execution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bank Loan</controllingFieldValue>
+            <valueName>Sanction in process</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

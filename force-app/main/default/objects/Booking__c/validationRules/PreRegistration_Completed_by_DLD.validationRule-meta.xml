@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreRegistration_Completed_by_DLD</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(ISCHANGED(Pre_registration__c),ISPICKVAL( Pre_registration__c, &apos;Completed&apos; ), $Profile.Name &lt;&gt; &quot;DLD Team&quot;)</errorConditionFormula>
+    <errorMessage>PreRegistration can be completed only by DLD</errorMessage>
+</ValidationRule>

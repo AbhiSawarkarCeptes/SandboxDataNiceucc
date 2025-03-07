@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rate_per_sq_ft_AED_sq_ft__c</fullName>
+    <description>Sale Value / Area
+Sale_Value_AED__c /  Saleable_Area_sq_ft__c</description>
+    <externalId>false</externalId>
+    <formula>Sale_Value_AED__c / Saleable_Area_sq_ft__c</formula>
+    <label>Rate per sq.ft. (AED/sq.ft.)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

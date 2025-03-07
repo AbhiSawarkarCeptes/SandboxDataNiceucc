@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collateral__c</fullName>
+    <defaultValue>&quot;No Collateral&quot;</defaultValue>
+    <label>Collateral Approval Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Collateral Approved</fullName>
+                <default>false</default>
+                <label>Collateral Approved</label>
+            </value>
+            <value>
+                <fullName>Collateral Pending With Audit</fullName>
+                <default>false</default>
+                <label>Collateral Pending With Audit</label>
+            </value>
+            <value>
+                <fullName>Collateral Pending With AVP</fullName>
+                <default>false</default>
+                <label>Collateral Pending With AVP</label>
+            </value>
+            <value>
+                <fullName>Collateral Pending With Channel Ops</fullName>
+                <default>false</default>
+                <label>Collateral Pending With Channel Ops</label>
+            </value>
+            <value>
+                <fullName>Collateral Pending With Channel Ops Manager</fullName>
+                <default>false</default>
+                <label>Collateral Pending With Channel Ops Manager</label>
+            </value>
+            <value>
+                <fullName>Collateral Pending With CHRM TL</fullName>
+                <default>false</default>
+                <label>Collateral Pending With CHRM TL</label>
+            </value>
+            <value>
+                <fullName>Collateral Rejected</fullName>
+                <default>false</default>
+                <label>Collateral Rejected</label>
+            </value>
+            <value>
+                <fullName>Collateral Rejected By Audit</fullName>
+                <default>false</default>
+                <label>Collateral Rejected By Audit</label>
+            </value>
+            <value>
+                <fullName>Collateral Rejected By AVP</fullName>
+                <default>false</default>
+                <label>Collateral Rejected By AVP</label>
+            </value>
+            <value>
+                <fullName>Collateral Rejected By Channel Ops</fullName>
+                <default>false</default>
+                <label>Collateral Rejected By Channel Ops</label>
+            </value>
+            <value>
+                <fullName>Collateral Rejected By Channel Ops Manager</fullName>
+                <default>false</default>
+                <label>Collateral Rejected By Channel Ops Manager</label>
+            </value>
+            <value>
+                <fullName>Collateral Rejected By CHRM TL</fullName>
+                <default>false</default>
+                <label>Collateral Rejected By CHRM TL</label>
+            </value>
+            <value>
+                <fullName>No Collateral</fullName>
+                <default>false</default>
+                <label>No Collateral</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

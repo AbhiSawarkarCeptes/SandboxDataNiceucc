@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agent_Category__c</fullName>
+    <label>Agent Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sobha Connect - Intl</fullName>
+                <default>false</default>
+                <label>Sobha Connect - Intl</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect - UAE</fullName>
+                <default>false</default>
+                <label>Sobha Connect - UAE</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect - UAE - Company</fullName>
+                <default>false</default>
+                <label>Sobha Connect - UAE - Company</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect - UAE - Individual</fullName>
+                <default>false</default>
+                <label>Sobha Connect - UAE - Individual</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect - Intnl - Company</fullName>
+                <default>false</default>
+                <label>Sobha Connect - Intnl - Company</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect - Intnl - Individual</fullName>
+                <default>false</default>
+                <label>Sobha Connect - Intnl - Individual</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

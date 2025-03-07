@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- only used for changing the clause for send booking form to customer. --></help>
+    <label><!-- Booking Form (Resale 20%) --></label>
+    <name>BookingFormResale20__c</name>
+</CustomFieldTranslation>

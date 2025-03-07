@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_Formula_Test__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Primary_Number__c != null, IF((ISPICKVAL(RDS_Country_Code__c, &apos;+971&apos;) || ISPICKVAL(RDS_Country_Code__c, &apos;&apos;) || ISPICKVAL(RDS_Country_Code__c, &apos;+&apos;) || ISPICKVAL(RDS_Country_Code__c, &apos;971&apos;)), IF(LEFT(Primary_Number__c, 1) == &apos;0&apos;, Primary_Number__c, &apos;0&apos;+Primary_Number__c), &apos;00&apos;+MID(TEXT(RDS_Country_Code__c), 2, LEN(TEXT(RDS_Country_Code__c)))+Primary_Number__c), IF((ISPICKVAL(RDS_Country_Code__c, &apos;+971&apos;) || ISPICKVAL(RDS_Country_Code__c, &apos;&apos;) || ISPICKVAL(RDS_Country_Code__c, &apos;+&apos;) || ISPICKVAL(RDS_Country_Code__c, &apos;971&apos;)), &apos;0&apos;+MobilePhone, &apos;00&apos;+MID(TEXT(RDS_Country_Code__c), 2, LEN(TEXT(RDS_Country_Code__c)))+MobilePhone))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Number Formula Test</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

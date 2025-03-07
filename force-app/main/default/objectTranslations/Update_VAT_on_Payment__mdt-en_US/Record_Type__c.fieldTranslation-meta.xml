@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Record Type --></label>
+    <name>Record_Type__c</name>
+    <picklistValues>
+        <masterLabel>Income Charge Due</masterLabel>
+        <translation><!-- Income Charge Due --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Income Charge Received</masterLabel>
+        <translation><!-- Income Charge Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Due</masterLabel>
+        <translation><!-- Payment Due --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Received</masterLabel>
+        <translation><!-- Payment Received --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

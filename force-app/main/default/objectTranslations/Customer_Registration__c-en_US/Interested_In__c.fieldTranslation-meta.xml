@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Interested In --></label>
+    <name>Interested_In__c</name>
+    <picklistValues>
+        <masterLabel>Apartment</masterLabel>
+        <translation><!-- Apartment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garden Houses</masterLabel>
+        <translation><!-- Garden Houses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail</masterLabel>
+        <translation><!-- Retail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Villa</masterLabel>
+        <translation><!-- Villa --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancellation_Type__c</fullName>
+    <label>Cancellation Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Default on Token</fullName>
+                <default>false</default>
+                <label>Default on Token</label>
+            </value>
+            <value>
+                <fullName>Termination Post booking Pre-confirmation</fullName>
+                <default>false</default>
+                <label>Termination Post booking Pre-confirmation</label>
+            </value>
+            <value>
+                <fullName>Termination Post confirmation Pre-registration</fullName>
+                <default>false</default>
+                <label>Termination Post confirmation Pre-registration</label>
+            </value>
+            <value>
+                <fullName>Termination Post Registration</fullName>
+                <default>false</default>
+                <label>Termination Post Registration</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

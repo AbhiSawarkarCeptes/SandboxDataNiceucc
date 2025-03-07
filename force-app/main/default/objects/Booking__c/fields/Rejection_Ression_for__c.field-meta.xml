@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejection_Ression_for__c</fullName>
+    <label>Rejection Reason for PCC by Audit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account</fullName>
+                <default>false</default>
+                <label>Account</label>
+            </value>
+            <value>
+                <fullName>Collection&amp;CRM</fullName>
+                <default>false</default>
+                <label>Collection &amp; CRM</label>
+            </value>
+            <value>
+                <fullName>Account and CRM</fullName>
+                <default>false</default>
+                <label>Account and CRM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

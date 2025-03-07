@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPA_to_Be_Issued</fullName>
+    <columns>NAME</columns>
+    <columns>Unit__c</columns>
+    <columns>Tower_Name__c</columns>
+    <columns>SPA_Executed__c</columns>
+    <columns>CRM_Ops_Pending_Status__c</columns>
+    <columns>Paid_Percentage__c</columns>
+    <columns>Current_Status__c</columns>
+    <columns>Audit_Approval_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPA_Executed__c</field>
+        <operation>equals</operation>
+        <value>To be Issued,SPA Issued But Not Sent,SPA Issued But Not Sent  - Customer to Collect,SPA Issued But Not Sent - Customer to Collect,SPA is Voided in Docusign,Audit rejected,Issue ? Under discussion</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Processed,UnProcessed,Booking In Process</value>
+    </filters>
+    <filters>
+        <field>Unit__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Tower_Name__c</field>
+        <operation>notContain</operation>
+        <value>Orbis,310,320,340,350,360,SSH - Tower C,Extension,Waterside,Tranquility</value>
+    </filters>
+    <label>SPA to be Issued</label>
+    <sharedTo>
+        <role>CRM</role>
+    </sharedTo>
+</ListView>

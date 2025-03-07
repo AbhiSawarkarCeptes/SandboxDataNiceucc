@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tower</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Towers</value>
+    </caseValues>
+    <layouts>
+        <layout>Collection Team Tower Layout</layout>
+        <sections>
+            <label><!-- Collection Details --></label>
+            <section>Collection Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details for SPA Particular --></label>
+            <section>Details for SPA Particular</section>
+        </sections>
+        <sections>
+            <label><!-- User Details for Welcome Call --></label>
+            <section>User Details for Welcome Call</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tower Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details for SPA Particular --></label>
+            <section>Details for SPA Particular</section>
+        </sections>
+        <sections>
+            <label><!-- User Details for Welcome Call --></label>
+            <section>User Details for Welcome Call</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tower Layout - Development</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details for SPA Particular --></label>
+            <section>Details for SPA Particular</section>
+        </sections>
+        <sections>
+            <label><!-- User Details for Welcome Call --></label>
+            <section>User Details for Welcome Call</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tower Layout for The Sales</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details for SPA Particular --></label>
+            <section>Details for SPA Particular</section>
+        </sections>
+        <sections>
+            <label><!-- User Details for Welcome Call --></label>
+            <section>User Details for Welcome Call</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Initiate Business Process --></label>
+        <name>Initiate_Business_Process</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

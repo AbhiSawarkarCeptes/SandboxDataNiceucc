@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PropStrength__Broker_Approval_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Broker Approval Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Broker Registration Done, pending with CHRM Manager</fullName>
+                <default>false</default>
+                <label>Pending with CHRM Manager</label>
+            </value>
+            <value>
+                <fullName>Pending with CHRM Ops</fullName>
+                <default>false</default>
+                <label>Pending with CHRM Ops</label>
+            </value>
+            <value>
+                <fullName>Approved by CHRM Ops</fullName>
+                <default>false</default>
+                <label>Approved by CHRM Ops</label>
+            </value>
+            <value>
+                <fullName>Agreement Created and Sent for Signatures</fullName>
+                <default>false</default>
+                <label>Agreement Created and Sent for Signatures</label>
+            </value>
+            <value>
+                <fullName>Signed Agreement Received - Documents Awaiting</fullName>
+                <default>false</default>
+                <label>Signed Agreement Received - Documents Awaiting</label>
+            </value>
+            <value>
+                <fullName>All Missing Documents Uploaded</fullName>
+                <default>false</default>
+                <label>All Missing Documents Uploaded</label>
+            </value>
+            <value>
+                <fullName>NOC Pending with Audit</fullName>
+                <default>false</default>
+                <label>NOC Pending with Audit</label>
+            </value>
+            <value>
+                <fullName>Pending with Ashish Parakh/ Sent for final signatures</fullName>
+                <default>false</default>
+                <label>Pending with Ashish Parakh</label>
+            </value>
+            <value>
+                <fullName>Executed Agreement Sent to CHRM</fullName>
+                <default>false</default>
+                <label>Executed Agreement Sent to CHRM</label>
+            </value>
+            <value>
+                <fullName>Executed Agreement Sent to Broker</fullName>
+                <default>false</default>
+                <label>Executed Agreement Sent to Broker</label>
+            </value>
+            <value>
+                <fullName>Rejected by CHRM Ops</fullName>
+                <default>false</default>
+                <label>Rejected by CHRM Ops</label>
+            </value>
+            <value>
+                <fullName>Broker Registration Done</fullName>
+                <default>false</default>
+                <label>Broker Registration Done</label>
+            </value>
+            <value>
+                <fullName>Broker Empanelment Form Filled</fullName>
+                <default>false</default>
+                <label>Broker Empanelment Form Filled</label>
+            </value>
+            <value>
+                <fullName>Rejected by CHRM Manager</fullName>
+                <default>false</default>
+                <label>Rejected by CHRM Manager</label>
+            </value>
+            <value>
+                <fullName>Pending with Audit</fullName>
+                <default>false</default>
+                <label>Pending with Audit</label>
+            </value>
+            <value>
+                <fullName>Pending with Ashish Parakh</fullName>
+                <default>false</default>
+                <label>Pending with Ashish Parakh1</label>
+            </value>
+            <value>
+                <fullName>Rejected by Audit</fullName>
+                <default>false</default>
+                <label>Rejected by Audit</label>
+            </value>
+            <value>
+                <fullName>NOC Generated</fullName>
+                <default>false</default>
+                <label>NOC Generated</label>
+            </value>
+            <value>
+                <fullName>Agreement created and sent for signature</fullName>
+                <default>false</default>
+                <label>Agreement created and sent for signature</label>
+            </value>
+            <value>
+                <fullName>NOC Is in Process</fullName>
+                <default>false</default>
+                <label>NOC Is in Process</label>
+            </value>
+            <value>
+                <fullName>Agreement - approved by CHRM OPS</fullName>
+                <default>false</default>
+                <label>Agreement - approved by CHRM OPS</label>
+            </value>
+            <value>
+                <fullName>Pending with CHRM / Rejected with CHRM</fullName>
+                <default>false</default>
+                <label>Pending with CHRM / Rejected with CHRM</label>
+            </value>
+            <value>
+                <fullName>Agreement Is in process</fullName>
+                <default>false</default>
+                <label>Agreement Is in process</label>
+            </value>
+            <value>
+                <fullName>Approved - by Ashish Parakh</fullName>
+                <default>false</default>
+                <label>Approved - by Ashish Parakh</label>
+            </value>
+            <value>
+                <fullName>Agreement Generated</fullName>
+                <default>false</default>
+                <label>Agreement Generated</label>
+            </value>
+            <value>
+                <fullName>Executed Agreement sent to CRHM</fullName>
+                <default>false</default>
+                <label>Executed Agreement sent to CRHM</label>
+            </value>
+            <value>
+                <fullName>Signed Agreement Received - Documents</fullName>
+                <default>false</default>
+                <label>Signed Agreement Received - Documents</label>
+            </value>
+            <value>
+                <fullName>CP/SC ID Generated</fullName>
+                <default>false</default>
+                <label>CP/SC ID Generated</label>
+            </value>
+            <value>
+                <fullName>Agreement created and send for Review</fullName>
+                <default>false</default>
+                <label>Agreement created and send for Review</label>
+            </value>
+            <value>
+                <fullName>Agreement created and sent to witness</fullName>
+                <default>false</default>
+                <label>Agreement created and sent to witness</label>
+            </value>
+            <value>
+                <fullName>Sent for Final Signatures</fullName>
+                <default>false</default>
+                <label>Sent for Final Signatures</label>
+            </value>
+            <value>
+                <fullName>Agreement Awaiting Approval - CHRM OPS</fullName>
+                <default>false</default>
+                <label>Agreement Awaiting Approval - CHRM OPS</label>
+            </value>
+            <value>
+                <fullName>Agreement Rejected by CHRM OPS</fullName>
+                <default>false</default>
+                <label>Agreement Rejected by CHRM OPS</label>
+            </value>
+            <value>
+                <fullName>Agreement Executed Manually</fullName>
+                <default>false</default>
+                <label>Agreement Executed Manually</label>
+            </value>
+            <value>
+                <fullName>Amendment Generated</fullName>
+                <default>false</default>
+                <label>Amendment Generated</label>
+            </value>
+            <value>
+                <fullName>Executed Amendment sent to CHRM</fullName>
+                <default>false</default>
+                <label>Executed Amendment sent to CHRM</label>
+            </value>
+            <value>
+                <fullName>Amendment sent for Broker Signature</fullName>
+                <default>false</default>
+                <label>Amendment sent for Broker Signature</label>
+            </value>
+            <value>
+                <fullName>Amendment Signed by Broker</fullName>
+                <default>false</default>
+                <label>Amendment Signed by Broker</label>
+            </value>
+            <value>
+                <fullName>Amendment Pending with Audit</fullName>
+                <default>false</default>
+                <label>Amendment Pending with Audit</label>
+            </value>
+            <value>
+                <fullName>Amendment Approved by Audit</fullName>
+                <default>false</default>
+                <label>Amendment Approved by Audit</label>
+            </value>
+            <value>
+                <fullName>Amendment Rejected by Audit</fullName>
+                <default>false</default>
+                <label>Amendment Rejected by Audit</label>
+            </value>
+            <value>
+                <fullName>Amendment sent for Final Signature</fullName>
+                <default>false</default>
+                <label>Amendment sent for Final Signature</label>
+            </value>
+            <value>
+                <fullName>Amendment Final Signature Completed</fullName>
+                <default>false</default>
+                <label>Amendment Final Signature Completed</label>
+            </value>
+            <value>
+                <fullName>Executed Amendment sent to Broker</fullName>
+                <default>false</default>
+                <label>Executed Amendment sent to Broker</label>
+            </value>
+            <value>
+                <fullName>Amendment In Progress</fullName>
+                <default>false</default>
+                <label>Amendment In Progress</label>
+            </value>
+            <value>
+                <fullName>Pending with Francis Alfred/ Sent for final signatures</fullName>
+                <default>false</default>
+                <label>Pending with Francis Alfred</label>
+            </value>
+            <value>
+                <fullName>CP/SC ID in Process</fullName>
+                <default>false</default>
+                <label>CP/SC ID in Process</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

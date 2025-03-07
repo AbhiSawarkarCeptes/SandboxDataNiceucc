@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vinay_Kumar_s_View</fullName>
+    <columns>Opportunity_ID__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Opportunity_created_date_and_time__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Lead_Sub_Source__c</columns>
+    <columns>Channel_Partner__c</columns>
+    <columns>First_Call_Attempted_by__c</columns>
+    <columns>First_Call_Description__c</columns>
+    <columns>Sales_Manager_Meeting_Feedback__c</columns>
+    <columns>Booking__c</columns>
+    <columns>Date_Of_Site_Visit__c</columns>
+    <filterScope>Team</filterScope>
+    <label>Vinay Kumar&apos;s View</label>
+    <sharedTo>
+        <group>Vinay_Kumar</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Configuration --></label>
+    <name>Configuration__c</name>
+    <picklistValues>
+        <masterLabel>1 BR</masterLabel>
+        <translation><!-- 1 BR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 BR + Study</masterLabel>
+        <translation><!-- 1 BR + Study --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 BR</masterLabel>
+        <translation><!-- 2 BR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 BR Duplex</masterLabel>
+        <translation><!-- 2 BR Duplex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2.5 BR</masterLabel>
+        <translation><!-- 2.5 BR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 BR</masterLabel>
+        <translation><!-- 3 BR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 BR Duplex</masterLabel>
+        <translation><!-- 3 BR Duplex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 BR</masterLabel>
+        <translation><!-- 4 BR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 BR Duplex</masterLabel>
+        <translation><!-- 4 BR Duplex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4BR Villa</masterLabel>
+        <translation><!-- 4BR Villa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5 BR</masterLabel>
+        <translation><!-- 5 BR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6 BR</masterLabel>
+        <translation><!-- 6 BR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canal Villa</masterLabel>
+        <translation><!-- Canal Villa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GFA Plots</masterLabel>
+        <translation><!-- GFA Plots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gardenia</masterLabel>
+        <translation><!-- Gardenia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restaurant</masterLabel>
+        <translation><!-- Restaurant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail</masterLabel>
+        <translation><!-- Retail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail / Cafe</masterLabel>
+        <translation><!-- Retail / Cafe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Studio</masterLabel>
+        <translation><!-- Studio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Townhouse</masterLabel>
+        <translation><!-- Townhouse --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cityscape</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cityscape</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- CP Broker Agent Name is required --></errorMessage>
+        <name>CP_Broker_Agent_Name_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please give value in Sobha Connect or Channel Partner --></errorMessage>
+        <name>CRM_Name_is_mandatiry</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Client(Name,Email,Phone) Details are mandatory for customer visit. --></errorMessage>
+        <name>Client_Details_are_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SC Broker Agent Name is Required --></errorMessage>
+        <name>SC_Broker_Agent_Name_Is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Select either channel partner or sobha connect, only one is enabled --></errorMessage>
+        <name>Select_either_channel_partner_or_sobha</name>
+    </validationRules>
+</CustomObjectTranslation>

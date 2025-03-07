@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Name change --></label>
+    <name>Type_of_Name_change__c</name>
+    <picklistValues>
+        <masterLabel>Complete Name Change</masterLabel>
+        <translation><!-- Complete Name Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>L.L.C added</masterLabel>
+        <translation><!-- L.L.C added --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Name Correction</masterLabel>
+        <translation><!-- Name Correction --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

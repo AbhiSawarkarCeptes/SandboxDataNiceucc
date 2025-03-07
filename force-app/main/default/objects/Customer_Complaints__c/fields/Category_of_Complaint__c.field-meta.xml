@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category_of_Complaint__c</fullName>
+    <description>Captures the category of the complaint that falls under</description>
+    <label>Category of Complaint</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Resale</fullName>
+                <default>false</default>
+                <label>Resale</label>
+            </value>
+            <value>
+                <fullName>Rebate</fullName>
+                <default>false</default>
+                <label>Rebate</label>
+            </value>
+            <value>
+                <fullName>Cancellation and Refund</fullName>
+                <default>false</default>
+                <label>Cancellation and Refund</label>
+            </value>
+            <value>
+                <fullName>Mis-Sell</fullName>
+                <default>false</default>
+                <label>Mis-Sell</label>
+            </value>
+            <value>
+                <fullName>Late Payment Waiver</fullName>
+                <default>false</default>
+                <label>Late Payment Waiver</label>
+            </value>
+            <value>
+                <fullName>Construction NOC</fullName>
+                <default>false</default>
+                <label>Construction NOC</label>
+            </value>
+            <value>
+                <fullName>Cancellation and Transfer of funds</fullName>
+                <default>false</default>
+                <label>Cancellation and Transfer of funds</label>
+            </value>
+            <value>
+                <fullName>Payment Plan Extension</fullName>
+                <default>false</default>
+                <label>Payment Plan Extension</label>
+            </value>
+            <value>
+                <fullName>Compensation</fullName>
+                <default>false</default>
+                <label>Compensation</label>
+            </value>
+            <value>
+                <fullName>Handover</fullName>
+                <default>false</default>
+                <label>Handover</label>
+            </value>
+            <value>
+                <fullName>Cancellation through Dubai Court</fullName>
+                <default>false</default>
+                <label>Cancellation through Dubai Court</label>
+            </value>
+            <value>
+                <fullName>Payment</fullName>
+                <default>false</default>
+                <label>Payment</label>
+            </value>
+            <value>
+                <fullName>Area Change</fullName>
+                <default>false</default>
+                <label>Area Change</label>
+            </value>
+            <value>
+                <fullName>Name addition</fullName>
+                <default>false</default>
+                <label>Name addition</label>
+            </value>
+            <value>
+                <fullName>Ownership Change</fullName>
+                <default>false</default>
+                <label>Ownership Change</label>
+            </value>
+            <value>
+                <fullName>Booking</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Booking</label>
+            </value>
+            <value>
+                <fullName>Collections / Payments</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Collections / Payments</label>
+            </value>
+            <value>
+                <fullName>Inspection/Handover</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inspection/Handover</label>
+            </value>
+            <value>
+                <fullName>Mortgage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mortgage</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Pre-Registration</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pre-Registration</label>
+            </value>
+            <value>
+                <fullName>SPA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SPA</label>
+            </value>
+            <value>
+                <fullName>Sales and Broker Issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sales and Broker Issues</label>
+            </value>
+            <value>
+                <fullName>Terminations/Cancellations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Terminations/Cancellations</label>
+            </value>
+            <value>
+                <fullName>Title Deed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Title Deed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

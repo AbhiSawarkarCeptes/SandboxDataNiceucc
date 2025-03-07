@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Purchase_Price_of_Unit_in_Format__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Total_Purchase_Price_of_the_Unit__c &lt; 1000,
+TEXT(Total_Purchase_Price_of_the_Unit__c), 
+IF(Total_Purchase_Price_of_the_Unit__c &lt; 1000000,
+TEXT(FLOOR(Total_Purchase_Price_of_the_Unit__c /1000))  &amp; &apos;,&apos;  &amp; RIGHT(TEXT(Total_Purchase_Price_of_the_Unit__c), LEN(TEXT(Total_Purchase_Price_of_the_Unit__c)) - LEN(TEXT(FLOOR(Total_Purchase_Price_of_the_Unit__c /1000)))), 
+IF(Total_Purchase_Price_of_the_Unit__c &lt; 1000000000,
+TEXT(FLOOR(Total_Purchase_Price_of_the_Unit__c /1000000))  &amp; &apos;,&apos; &amp; MID(TEXT(Total_Purchase_Price_of_the_Unit__c), 1 + LEN(TEXT(1 + FLOOR(Total_Purchase_Price_of_the_Unit__c /1000000))),3)  &amp; &apos;,&apos;  &amp; RIGHT(TEXT(Total_Purchase_Price_of_the_Unit__c), LEN(TEXT(Total_Purchase_Price_of_the_Unit__c)) - LEN(TEXT(FLOOR(Total_Purchase_Price_of_the_Unit__c /1000)))), 
+IF(Total_Purchase_Price_of_the_Unit__c &gt;= 1000000000,&quot;#.TooHigh!&quot;, NULL))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Purchase Price of Unit in Format</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

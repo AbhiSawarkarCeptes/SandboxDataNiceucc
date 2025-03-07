@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Disposition_L4__c</fullName>
+    <label>Call Disposition L4</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Only asked for site address</fullName>
+                <default>false</default>
+                <label>Only asked for site address</label>
+            </value>
+            <value>
+                <fullName>Customer mentioned Newspaper</fullName>
+                <default>false</default>
+                <label>Customer mentioned Newspaper</label>
+            </value>
+            <value>
+                <fullName>Customer mentioned Hoarding</fullName>
+                <default>false</default>
+                <label>Customer mentioned Hoarding</label>
+            </value>
+            <value>
+                <fullName>Customer mentioned Facebook</fullName>
+                <default>false</default>
+                <label>Customer mentioned Facebook</label>
+            </value>
+            <value>
+                <fullName>Customer mentioned Website</fullName>
+                <default>false</default>
+                <label>Customer mentioned Website</label>
+            </value>
+            <value>
+                <fullName>Customer mentioned through Reference</fullName>
+                <default>false</default>
+                <label>Customer mentioned through Reference</label>
+            </value>
+            <value>
+                <fullName>Not Given</fullName>
+                <default>false</default>
+                <label>Not Given</label>
+            </value>
+            <value>
+                <fullName>Customer did not want car park</fullName>
+                <default>false</default>
+                <label>Customer did not want car park</label>
+            </value>
+            <value>
+                <fullName>Customer was informed +/- car park</fullName>
+                <default>false</default>
+                <label>Customer was informed +/- car park</label>
+            </value>
+            <value>
+                <fullName>Floor</fullName>
+                <default>false</default>
+                <label>Floor</label>
+            </value>
+            <value>
+                <fullName>View</fullName>
+                <default>false</default>
+                <label>View</label>
+            </value>
+            <value>
+                <fullName>Unit No.</fullName>
+                <default>false</default>
+                <label>Unit No.</label>
+            </value>
+            <value>
+                <fullName>Incorrect</fullName>
+                <default>false</default>
+                <label>Incorrect</label>
+            </value>
+            <value>
+                <fullName>Offer Promised, but not mentioned</fullName>
+                <default>false</default>
+                <label>Offer Promised, but not mentioned</label>
+            </value>
+            <value>
+                <fullName>Offer Not Valid</fullName>
+                <default>false</default>
+                <label>Offer Not Valid</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>Change of Mind</fullName>
+                <default>false</default>
+                <label>Change of Mind</label>
+            </value>
+            <value>
+                <fullName>Family Disagreed</fullName>
+                <default>false</default>
+                <label>Family Disagreed</label>
+            </value>
+            <value>
+                <fullName>Cant Afford</fullName>
+                <default>false</default>
+                <label>Cant Afford</label>
+            </value>
+            <value>
+                <fullName>Death in Family</fullName>
+                <default>false</default>
+                <label>Death in Family</label>
+            </value>
+            <value>
+                <fullName>Financial Constraints</fullName>
+                <default>false</default>
+                <label>Financial Constraints</label>
+            </value>
+            <value>
+                <fullName>Deviation in Carpet Area</fullName>
+                <default>false</default>
+                <label>Deviation in Carpet Area</label>
+            </value>
+            <value>
+                <fullName>Unapproved payment plan</fullName>
+                <default>false</default>
+                <label>Unapproved payment plan</label>
+            </value>
+            <value>
+                <fullName>Assured registration at OCR &lt;10% without Bank Sanction</fullName>
+                <default>false</default>
+                <label>Assured registration at OCR &lt;10% without Bank Sanction</label>
+            </value>
+            <value>
+                <fullName>Other Charges not explained</fullName>
+                <default>false</default>
+                <label>Other Charges not explained</label>
+            </value>
+            <value>
+                <fullName>Diffierent Possession Date Communicated</fullName>
+                <default>false</default>
+                <label>Diffierent Possession Date Communicated</label>
+            </value>
+            <value>
+                <fullName>A particular brand committed</fullName>
+                <default>false</default>
+                <label>A particular brand committed</label>
+            </value>
+            <value>
+                <fullName>Unapprroved amenities</fullName>
+                <default>false</default>
+                <label>Unapprroved amenities</label>
+            </value>
+            <value>
+                <fullName>Assured stand alone car park</fullName>
+                <default>false</default>
+                <label>Assured stand alone car park</label>
+            </value>
+            <value>
+                <fullName>Informed the rate is inclusive of Car Park</fullName>
+                <default>false</default>
+                <label>Informed the rate is inclusive of Car Park</label>
+            </value>
+            <value>
+                <fullName>Specific type of car park allotment</fullName>
+                <default>false</default>
+                <label>Specific type of car park allotment</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

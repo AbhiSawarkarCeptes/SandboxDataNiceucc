@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Phone Search Field Config</label>
+    <pluralLabel>Phone Search Field Config</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

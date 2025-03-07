@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PropStrength__Contact_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field will be used for Reporting purposes to display the complete Name of the Contact using the Salutation, First name and Last Name based on Empty fields</description>
+    <externalId>false</externalId>
+    <formula>IF 
+( 
+TEXT(Salutation) != &quot;&quot;, (TEXT(Salutation) + &quot; &quot;), &quot;&quot; 
+) + 
+IF 
+( 
+FirstName != &quot;&quot;, (FirstName + &quot; &quot;), &quot;&quot; 
+) + 
+LastName</formula>
+    <label>Contact Name</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

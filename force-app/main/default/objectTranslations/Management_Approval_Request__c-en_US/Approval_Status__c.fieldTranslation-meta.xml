@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Approval Status --></label>
+    <name>Approval_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Draft</masterLabel>
+        <translation><!-- Draft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Approval</masterLabel>
+        <translation><!-- Pending Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending From Dinesh Dua</masterLabel>
+        <translation><!-- Pending From Dinesh Dua --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending From Gautam Sawhney</masterLabel>
+        <translation><!-- Pending From Gautam Sawhney --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending From Mohammad Adnan Hamid</masterLabel>
+        <translation><!-- Pending From Mohammad Adnan Hamid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

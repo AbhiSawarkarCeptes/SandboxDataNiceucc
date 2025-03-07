@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booking_Validation_Remarks_Mandatory</fullName>
+    <active>true</active>
+    <description>If Booking Validation Status is Verified and Rejected then Booking Validation Remarks in mandatory</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(TEXT(Booking_Validation_Status__c))), 
+TEXT(Booking_Validation_Status__c) = &apos;Verified and Rejected&apos;,
+ISBLANK(Booking_Validation_Remarks__c)
+)</errorConditionFormula>
+    <errorMessage>Please enter Booking Validation Remarks</errorMessage>
+</ValidationRule>

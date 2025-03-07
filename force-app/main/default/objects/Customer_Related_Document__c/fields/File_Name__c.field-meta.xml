@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>File_Name__c</fullName>
+    <label>File Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Booking Form</fullName>
+                <default>false</default>
+                <label>Booking Form</label>
+            </value>
+            <value>
+                <fullName>SPA</fullName>
+                <default>false</default>
+                <label>SPA</label>
+            </value>
+            <value>
+                <fullName>OQOOD</fullName>
+                <default>false</default>
+                <label>OQOOD</label>
+            </value>
+            <value>
+                <fullName>Payment Completion Certificate</fullName>
+                <default>false</default>
+                <label>Payment Completion Certificate</label>
+            </value>
+            <value>
+                <fullName>Building Completion Certificate</fullName>
+                <default>false</default>
+                <label>Building Completion Certificate</label>
+            </value>
+            <value>
+                <fullName>Handover Notice</fullName>
+                <default>false</default>
+                <label>Handover Notice</label>
+            </value>
+            <value>
+                <fullName>Title Deed</fullName>
+                <default>false</default>
+                <label>Title Deed</label>
+            </value>
+            <value>
+                <fullName>Receipt</fullName>
+                <default>false</default>
+                <label>Receipt</label>
+            </value>
+            <value>
+                <fullName>POP</fullName>
+                <default>false</default>
+                <label>POP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Under_cancellation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This checkbox will be used to bypass demand generation for payment milestones with selected related bookings</description>
+    <label>Under cancellation</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

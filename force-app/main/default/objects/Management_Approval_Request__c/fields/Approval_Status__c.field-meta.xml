@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Status__c</fullName>
+    <label>Approval Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Draft</fullName>
+                <default>true</default>
+                <label>Draft</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Pending Approval</fullName>
+                <default>false</default>
+                <label>Pending Approval</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Pending From Gautam Sawhney</fullName>
+                <default>false</default>
+                <label>Pending From Gautam Sawhney</label>
+            </value>
+            <value>
+                <fullName>Pending From Dinesh Dua</fullName>
+                <default>false</default>
+                <label>Pending From Dinesh Dua</label>
+            </value>
+            <value>
+                <fullName>Pending From Mohammad Adnan Hamid</fullName>
+                <default>false</default>
+                <label>Pending From Mohammad Adnan Hamid</label>
+            </value>
+            <value>
+                <fullName>Pending with CRM Head</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pending with CRM Head</label>
+            </value>
+            <value>
+                <fullName>Pending with CRM Manager</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pending with CRM Manager</label>
+            </value>
+            <value>
+                <fullName>Pending with CRM Ops</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pending with CRM Ops</label>
+            </value>
+            <value>
+                <fullName>Pending with MD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pending with MD</label>
+            </value>
+            <value>
+                <fullName>Rejected by  CRM Manager</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rejected by  CRM Manager</label>
+            </value>
+            <value>
+                <fullName>Rejected by CRM Head</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rejected by CRM Head</label>
+            </value>
+            <value>
+                <fullName>Rejected by CRM Ops</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rejected by CRM Ops</label>
+            </value>
+            <value>
+                <fullName>Rejected by MD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rejected by MD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

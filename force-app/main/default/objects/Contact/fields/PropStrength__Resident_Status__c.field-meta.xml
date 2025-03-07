@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PropStrength__Resident_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Residential Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Resident Citizen</fullName>
+                <default>true</default>
+                <label>Resident Citizen</label>
+            </value>
+            <value>
+                <fullName>Non Resident Citizen</fullName>
+                <default>false</default>
+                <label>Non Resident Citizen</label>
+            </value>
+            <value>
+                <fullName>Foreigner</fullName>
+                <default>false</default>
+                <label>Foreigner</label>
+            </value>
+            <value>
+                <fullName>Companies incorporated in permitted jurisdictions</fullName>
+                <default>false</default>
+                <label>Companies incorporated in permitted jurisdictions</label>
+            </value>
+            <value>
+                <fullName>UAE Resident</fullName>
+                <default>false</default>
+                <label>UAE Resident</label>
+            </value>
+            <value>
+                <fullName>Non-UAE Resident</fullName>
+                <default>false</default>
+                <label>Non-UAE Resident</label>
+            </value>
+            <value>
+                <fullName>Companies incorporated in the UAE</fullName>
+                <default>false</default>
+                <label>Companies incorporated in the UAE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

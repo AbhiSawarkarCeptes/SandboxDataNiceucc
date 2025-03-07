@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Title_Transfer_Completed__c</fullName>
+    <label>Title Transfer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Initiated</fullName>
+                <default>true</default>
+                <label>Not Initiated</label>
+            </value>
+            <value>
+                <fullName>Additional Docs Required</fullName>
+                <default>false</default>
+                <label>Additional Docs Required</label>
+            </value>
+            <value>
+                <fullName>Under Process</fullName>
+                <default>false</default>
+                <label>Under Process</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>DSR Received from Customer</fullName>
+                <default>false</default>
+                <label>DSR Received from Customer</label>
+            </value>
+            <value>
+                <fullName>DSR Pending with Customer</fullName>
+                <default>false</default>
+                <label>DSR Pending with Customer</label>
+            </value>
+            <value>
+                <fullName>Sent for accounts/Audit review</fullName>
+                <default>false</default>
+                <label>Sent for accounts/Audit review</label>
+            </value>
+            <value>
+                <fullName>Sent for Authorized signatory</fullName>
+                <default>false</default>
+                <label>Sent for Authorized signatory</label>
+            </value>
+            <value>
+                <fullName>Request to initiate Title transfer</fullName>
+                <default>false</default>
+                <label>Request to initiate Title transfer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

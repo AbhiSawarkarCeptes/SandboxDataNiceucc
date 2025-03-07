@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRM_Executive__c</fullName>
+    <externalId>false</externalId>
+    <formula>/*Booking__r.Unit__r.Tower__r.CRM_Executive__r.FirstName   + &apos; &apos; +  Booking__r.Unit__r.Tower__r.CRM_Executive__r.LastName*/
+ Booking__r.CRM_Executive__r.FirstName + &apos; &apos; +  Booking__r.CRM_Executive__r.LastName</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CRM Executive</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

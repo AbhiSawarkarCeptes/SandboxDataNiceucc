@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Disposition L3 --></label>
+    <name>Call_Disposition_L3__c</name>
+    <picklistValues>
+        <masterLabel>Agreement Value</masterLabel>
+        <translation><!-- Agreement Value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amenities</masterLabel>
+        <translation><!-- Amenities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Area</masterLabel>
+        <translation><!-- Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Call Back</masterLabel>
+        <translation><!-- Call Back --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Car Park</masterLabel>
+        <translation><!-- Car Park --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Car Park Allotment</masterLabel>
+        <translation><!-- Car Park Allotment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer denied CP booking</masterLabel>
+        <translation><!-- Customer denied CP booking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discount Amount</masterLabel>
+        <translation><!-- Discount Amount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Impulsive Booking</masterLabel>
+        <translation><!-- Impulsive Booking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Need Clarification</masterLabel>
+        <translation><!-- Need Clarification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No. Busy</masterLabel>
+        <translation><!-- No. Busy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Reachable</masterLabel>
+        <translation><!-- Not Reachable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Number out of Service</masterLabel>
+        <translation><!-- Number out of Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offer Mismatch</masterLabel>
+        <translation><!-- Offer Mismatch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Schedule</masterLabel>
+        <translation><!-- Payment Schedule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Possession Date</masterLabel>
+        <translation><!-- Possession Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Switched Off</masterLabel>
+        <translation><!-- Switched Off --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Token Amount not meeting company policy</masterLabel>
+        <translation><!-- Token Amount not meeting company policy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unit Details</masterLabel>
+        <translation><!-- Unit Details --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong No.</masterLabel>
+        <translation><!-- Wrong No. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

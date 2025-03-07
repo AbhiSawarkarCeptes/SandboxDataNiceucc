@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edit_Escrow_Restrictions</fullName>
+    <active>false</active>
+    <errorConditionFormula>$Permission.Edit_Escrow &amp;&amp; ISCHANGED(Account_Master__c)
+&amp;&amp; (
+    (
+     Unit__r.Tower__r.Cluster__c != &apos;a0A7S000000sfvVUAQ&apos;
+     )
+    || (
+        Account_Master__c != &apos;a18TX000004rQzlYAE&apos;
+        &amp;&amp; Account_Master__c != &apos;a187S000000Hp2hQAC&apos;
+    )
+)</errorConditionFormula>
+    <errorMessage>You can only change Escrow for The Crest project and can only change it to either DIB-ES-CREST-MAIN-AED-SLLC-001582404190101 or BOB-ES-THECREST-AED-SLLC-90030200022548</errorMessage>
+</ValidationRule>

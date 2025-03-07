@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booking_Validation_Status__c</fullName>
+    <defaultValue>&quot;New Booking&quot;</defaultValue>
+    <label>Booking Validation Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Started</fullName>
+                <default>false</default>
+                <label>Not Started</label>
+            </value>
+            <value>
+                <fullName>Verified and Approved</fullName>
+                <default>false</default>
+                <label>Verified and Approved</label>
+            </value>
+            <value>
+                <fullName>Verified and Rejected</fullName>
+                <default>false</default>
+                <label>Verified and Rejected</label>
+            </value>
+            <value>
+                <fullName>New Booking</fullName>
+                <default>false</default>
+                <label>New Booking</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

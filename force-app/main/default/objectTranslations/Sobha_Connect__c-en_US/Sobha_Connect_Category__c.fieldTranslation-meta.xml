@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sobha Connect Category --></label>
+    <name>Sobha_Connect_Category__c</name>
+    <picklistValues>
+        <masterLabel>Sobha Connect - China</masterLabel>
+        <translation><!-- Sobha Connect - China --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Connect - India</masterLabel>
+        <translation><!-- Sobha Connect - India --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Connect - KSA</masterLabel>
+        <translation><!-- Sobha Connect - KSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Connect - Others</masterLabel>
+        <translation><!-- Sobha Connect - Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Connect - UAE</masterLabel>
+        <translation><!-- Sobha Connect - UAE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sobha Connect - UK</masterLabel>
+        <translation><!-- Sobha Connect - UK --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

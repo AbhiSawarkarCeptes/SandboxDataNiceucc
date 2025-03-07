@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Unit Status --></label>
+    <name>Unit_Status__c</name>
+    <picklistValues>
+        <masterLabel>Available</masterLabel>
+        <translation><!-- Available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blocked</masterLabel>
+        <translation><!-- Blocked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Booked</masterLabel>
+        <translation><!-- Booked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EOI</masterLabel>
+        <translation><!-- EOI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hold</masterLabel>
+        <translation><!-- Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refuge</masterLabel>
+        <translation><!-- Refuge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested For EOI</masterLabel>
+        <translation><!-- Requested For EOI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sold</masterLabel>
+        <translation><!-- Sold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unreleased</masterLabel>
+        <translation><!-- Unreleased --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

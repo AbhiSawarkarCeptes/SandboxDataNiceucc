@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Channel_Partner__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;https://cs58.salesforce.com/a07/e?retURL=%2Fa07%3Ffcf%3D00B0l000000Qde0&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4TnkweE1TMHpNRlF4TVRveE16bzFNaTQyTkRkYSxHMzBmNHM0a0RIY3N2eGNQYVhDWC1lLE5UVTFPREps&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa07%2Fe&quot;, &quot;New Channel Partner&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>New Channel Partner</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

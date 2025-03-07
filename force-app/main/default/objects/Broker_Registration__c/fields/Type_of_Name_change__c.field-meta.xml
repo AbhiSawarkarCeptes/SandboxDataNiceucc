@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Name_change__c</fullName>
+    <label>Type of Name change</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Complete Name Change</fullName>
+                <default>false</default>
+                <label>Complete Name Change</label>
+            </value>
+            <value>
+                <fullName>L.L.C added</fullName>
+                <default>false</default>
+                <label>L.L.C added</label>
+            </value>
+            <value>
+                <fullName>Name Correction</fullName>
+                <default>false</default>
+                <label>Name Correction</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>Category__c</name>
+    <picklistValues>
+        <masterLabel>Broker - Intnl</masterLabel>
+        <translation><!-- Broker - Intnl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker - RERA</masterLabel>
+        <translation><!-- Broker - RERA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker - UAE</masterLabel>
+        <translation><!-- Broker - UAE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>International Broker - New</masterLabel>
+        <translation><!-- International Broker - New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>International Broker - Old</masterLabel>
+        <translation><!-- International Broker - Old --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

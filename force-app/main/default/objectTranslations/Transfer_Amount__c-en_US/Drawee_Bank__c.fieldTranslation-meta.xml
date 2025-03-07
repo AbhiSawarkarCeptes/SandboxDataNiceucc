@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Drawee Bank --></label>
+    <name>Drawee_Bank__c</name>
+    <picklistValues>
+        <masterLabel>Abu Dhabi Commercial Bank</masterLabel>
+        <translation><!-- Abu Dhabi Commercial Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Abu Dhabi Islamic Bank</masterLabel>
+        <translation><!-- Abu Dhabi Islamic Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ajman Bank</masterLabel>
+        <translation><!-- Ajman Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arab Bank plc</masterLabel>
+        <translation><!-- Arab Bank plc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank Melli Iran</masterLabel>
+        <translation><!-- Bank Melli Iran --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank Saderat Iran</masterLabel>
+        <translation><!-- Bank Saderat Iran --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank of Baroda</masterLabel>
+        <translation><!-- Bank of Baroda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank of Sharjah</masterLabel>
+        <translation><!-- Bank of Sharjah --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citibank N.A., United Arab Emirates</masterLabel>
+        <translation><!-- Citibank N.A., United Arab Emirates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Bank International</masterLabel>
+        <translation><!-- Commercial Bank International --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Bank of Dubai</masterLabel>
+        <translation><!-- Commercial Bank of Dubai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dubai Islamic Bank</masterLabel>
+        <translation><!-- Dubai Islamic Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emirates Investment Bank</masterLabel>
+        <translation><!-- Emirates Investment Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emirates Islamic</masterLabel>
+        <translation><!-- Emirates Islamic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emirates NBD</masterLabel>
+        <translation><!-- Emirates NBD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Gulf Bank</masterLabel>
+        <translation><!-- First Gulf Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HSBC Bank Middle East Limited</masterLabel>
+        <translation><!-- HSBC Bank Middle East Limited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Habib Bank AG Zurich</masterLabel>
+        <translation><!-- Habib Bank AG Zurich --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Habib Bank Limited (HBL)</masterLabel>
+        <translation><!-- Habib Bank Limited (HBL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invest Bank</masterLabel>
+        <translation><!-- Invest Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mashreq</masterLabel>
+        <translation><!-- Mashreq --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Bank of Abu Dhabi</masterLabel>
+        <translation><!-- National Bank of Abu Dhabi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Bank of Fujairah</masterLabel>
+        <translation><!-- National Bank of Fujairah --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Bank of Oman</masterLabel>
+        <translation><!-- National Bank of Oman --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Bank of Ras Al-Khaimah PJSC (RAKBANK)</masterLabel>
+        <translation><!-- National Bank of Ras Al-Khaimah PJSC (RAKBANK) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Bank of Umm Al-Qaiwain</masterLabel>
+        <translation><!-- National Bank of Umm Al-Qaiwain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noor Bank</masterLabel>
+        <translation><!-- Noor Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sharjah Islamic Bank</masterLabel>
+        <translation><!-- Sharjah Islamic Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard Chartered Bank (United Arab Emirates) Limited</masterLabel>
+        <translation><!-- Standard Chartered Bank (United Arab Emirates) Limited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swissquote MEA Ltd.</masterLabel>
+        <translation><!-- Swissquote MEA Ltd. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Union National Bank</masterLabel>
+        <translation><!-- Union National Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>United Arab Bank</masterLabel>
+        <translation><!-- United Arab Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>United Bank Limited (UBL)</masterLabel>
+        <translation><!-- United Bank Limited (UBL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zbavit Bank (ZB BANK)</masterLabel>
+        <translation><!-- Zbavit Bank (ZB BANK) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

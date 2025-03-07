@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Floor_Rise_Temp_For_PS__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF((Charge1Name__c = &apos;Floor Rise&apos;) , C1_Amount__c, IF((Charge2Name__c = &apos;Floor Rise&apos;) , C2_Amount__c, IF((Charge3Name__c = &apos;Floor Rise&apos;) , C3_Amount__c, IF((Charge4Name__c = &apos;Floor Rise&apos;) , C4_Amount__c, IF((Charge5Name__c = &apos;Floor Rise&apos;) , C5_Amount__c, IF((Charge6Name__c = &apos;Floor Rise&apos;) , C6_Amount__c, IF((Charge7Name__c = &apos;Floor Rise&apos;) , C7_Amount__c, IF((Charge8Name__c = &apos;Floor Rise&apos;) , C8_Amount__c, IF((Charge9Name__c = &apos;Floor Rise&apos;) , C9_Amount__c, IF((Charge10Name__c = &apos;Floor Rise&apos;) , C10_Amount__c, 0))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Floor Rise Temp For PS</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

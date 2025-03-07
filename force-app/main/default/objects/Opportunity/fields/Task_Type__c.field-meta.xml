@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task_Type__c</fullName>
+    <label>Task Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Follow up</fullName>
+                <default>false</default>
+                <label>Follow up</label>
+            </value>
+            <value>
+                <fullName>Visit</fullName>
+                <default>false</default>
+                <label>Visit</label>
+            </value>
+            <value>
+                <fullName>Call back by SM</fullName>
+                <default>false</default>
+                <label>Call back by SM</label>
+            </value>
+            <value>
+                <fullName>Revisit</fullName>
+                <default>false</default>
+                <label>Revisit</label>
+            </value>
+            <value>
+                <fullName>Booking Procedure</fullName>
+                <default>false</default>
+                <label>Booking Procedure</label>
+            </value>
+            <value>
+                <fullName>No Further Action Needed</fullName>
+                <default>false</default>
+                <label>No Further Action Needed</label>
+            </value>
+            <value>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+                <label>Meeting</label>
+            </value>
+            <value>
+                <fullName>Email Request</fullName>
+                <default>false</default>
+                <label>Email Request</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Not eligible for handover --></label>
+    <name>Not_eligible_for_handover__c</name>
+    <picklistValues>
+        <masterLabel>Shortfall due to LP.</masterLabel>
+        <translation><!-- Shortfall due to LP. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shortfall due to other charges</masterLabel>
+        <translation><!-- Shortfall due to other charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shortfall in DLD</masterLabel>
+        <translation><!-- Shortfall in DLD --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

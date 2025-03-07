@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demand_Types__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+        OR(
+            CONTAINS(Descriptions__c, &quot;refund&quot;),
+            CONTAINS(Descriptions__c, &quot;Refund&quot;),
+            CONTAINS(Descriptions__c, &quot;discount&quot;),
+            CONTAINS(Descriptions__c, &quot;Discount&quot;),
+            CONTAINS(Descriptions__c, &quot;reallocation&quot;),
+            CONTAINS(Descriptions__c, &quot;Reallocation&quot;),
+            CONTAINS(Descriptions__c, &quot;re-allocation&quot;),
+            CONTAINS(Descriptions__c, &quot;swap&quot;),
+            CONTAINS(Descriptions__c, &quot;Swap&quot;),
+            CONTAINS(Descriptions__c, &quot;cancellation&quot;),
+            CONTAINS(Descriptions__c, &quot;Cancellation&quot;),
+            CONTAINS(Descriptions__c, &quot;furniture&quot;),
+            CONTAINS(Descriptions__c, &quot;Furniture&quot;),
+            CONTAINS(Descriptions__c, &quot;Being Late payment charges&quot;),
+            CONTAINS(Descriptions__c, &quot;Late Payment Charges&quot;),
+            CONTAINS(Descriptions__c, &quot;Late Payment Chanrges&quot;),
+            CONTAINS(Descriptions__c, &quot;Latepayment Charges&quot;),
+            CONTAINS(Descriptions__c, &quot;Late Payment Charge&quot;),
+            CONTAINS(Descriptions__c, &quot;Late Payment Charegs&quot;),
+            CONTAINS(Descriptions__c, &quot;Late payment charges&quot;),
+            CONTAINS(Descriptions__c, &quot;Upkeep&quot;),
+            CONTAINS(Descriptions__c, &quot;refurbishment&quot;),
+            CONTAINS(Descriptions__c, &quot;DEWA&quot;),
+            CONTAINS(Descriptions__c, &quot;Late Payment&quot;),
+            CONTAINS(Descriptions__c, &quot;Cancellation&quot;),
+            CONTAINS(Descriptions__c, &quot;Cheque Dishonored&quot;),
+            CONTAINS(Descriptions__c, &quot;Service&quot;),
+            CONTAINS(Descriptions__c, &quot;Title Deed&quot;),
+            CONTAINS(Descriptions__c, &quot;Security Deposit&quot;),
+            CONTAINS(Descriptions__c, &quot;Mortgage&quot;),
+            CONTAINS(Descriptions__c, &quot;SPA&quot;),
+            CONTAINS(Descriptions__c, &quot;Ownership&quot;),
+            CONTAINS(Descriptions__c, &quot;Pre-registration&quot;),
+            CONTAINS(Descriptions__c, &quot;Plot&quot;),
+            CONTAINS(Descriptions__c, &quot;Title Deed&quot;),
+            CONTAINS(Descriptions__c, &quot;Mortgage&quot;),
+            CONTAINS(Descriptions__c, &quot;Name addition/deletion&quot;),
+            CONTAINS(Descriptions__c, &quot;DLD Cancellation&quot;),
+            CONTAINS(Descriptions__c, &quot;Admin&quot;),
+            CONTAINS(Descriptions__c, &quot;Pre-registration to pre-title deed (completed projects)&quot;),
+            CONTAINS(Descriptions__c, &quot;Soil Investigation&quot;),
+            CONTAINS(Descriptions__c, &quot;Maintenance&quot;),
+            CONTAINS(Descriptions__c, &quot;Handover&quot;),
+            CONTAINS(Descriptions__c, &quot;Chilled&quot;)
+        ),
+        &quot;Consider&quot;,
+        &quot;Not Considered&quot;
+    )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Demand Types</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Approval Status --></label>
+    <name>Approval_Status_Interim__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheque Dishonoured</masterLabel>
+        <translation><!-- Cheque Dishonoured --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheque Hold Approved</masterLabel>
+        <translation><!-- Cheque Hold Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheque Replacement Approved</masterLabel>
+        <translation><!-- Cheque Replacement Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PDC</masterLabel>
+        <translation><!-- PDC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted</masterLabel>
+        <translation><!-- Submitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted for Cheque Hold</masterLabel>
+        <translation><!-- Submitted for Cheque Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted for Cheque Replacement</masterLabel>
+        <translation><!-- Submitted for Cheque Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UnProcessed</masterLabel>
+        <translation><!-- UnProcessed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

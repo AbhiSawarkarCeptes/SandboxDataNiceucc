@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Channel Relations Team Lead --></label>
+    <name>CHRM_ManagerHead__c</name>
+    <relationshipLabel><!-- Broker Registrations (Channel Relations Team Lead) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Days for demand due --></label>
+    <name>Days_for_demand_due__c</name>
+</CustomFieldTranslation>

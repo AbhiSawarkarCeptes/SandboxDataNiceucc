@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Manager --></label>
+    <name>Manager__c</name>
+    <picklistValues>
+        <masterLabel>Deann</masterLabel>
+        <translation><!-- Deann --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Divya</masterLabel>
+        <translation><!-- Divya --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Farhan</masterLabel>
+        <translation><!-- Farhan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Priya</masterLabel>
+        <translation><!-- Priya --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roopa</masterLabel>
+        <translation><!-- Roopa --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

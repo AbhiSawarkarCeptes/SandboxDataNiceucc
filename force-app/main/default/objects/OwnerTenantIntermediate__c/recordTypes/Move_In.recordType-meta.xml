@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Move_In</fullName>
+    <active>true</active>
+    <label>Move In</label>
+    <picklistValues>
+        <picklist>Type_Of_Tenant__c</picklist>
+        <values>
+            <fullName>HHC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HHO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tenant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Calculatedas__c</fullName>
+    <label>Calculated as</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rate list at Unit level</fullName>
+                <default>false</default>
+                <label>Rate list at Unit level</label>
+            </value>
+            <value>
+                <fullName>Percentage of Agreement Value</fullName>
+                <default>false</default>
+                <label>Percentage of Agreement Value</label>
+            </value>
+            <value>
+                <fullName>Lumpsum at Project Level</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lumpsum at Project Level</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

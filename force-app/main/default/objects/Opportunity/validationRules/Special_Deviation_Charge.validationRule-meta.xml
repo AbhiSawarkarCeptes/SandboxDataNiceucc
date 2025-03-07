@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_Deviation_Charge</fullName>
+    <active>false</active>
+    <description>If Special Deviation Charge is not null and Special deviation checkbox is checked.</description>
+    <errorConditionFormula>AND(Special_Deviations__c = true, ISBLANK(Special_Deviation_Charge__c))</errorConditionFormula>
+    <errorDisplayField>Special_Deviation_Charge__c</errorDisplayField>
+    <errorMessage>Please fill the value of the Special Deviation Charge</errorMessage>
+</ValidationRule>

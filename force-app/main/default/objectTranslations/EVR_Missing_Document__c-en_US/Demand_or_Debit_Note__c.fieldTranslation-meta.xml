@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Demand or Debit Note --></label>
+    <name>Demand_or_Debit_Note__c</name>
+    <relationshipLabel><!-- EVR Missing Documents --></relationshipLabel>
+</CustomFieldTranslation>

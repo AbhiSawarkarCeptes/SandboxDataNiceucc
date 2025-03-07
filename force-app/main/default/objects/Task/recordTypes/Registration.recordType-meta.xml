@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registration</fullName>
+    <active>true</active>
+    <label>Registration</label>
+    <picklistValues>
+        <picklist>Budget__c</picklist>
+        <values>
+            <fullName>1 to 2 Cr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10 to 15 Cr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15 to 25 Cr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 to 5 Cr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25 to 50 Cr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 to 7%2E5 Cr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50 Cr %26 above</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E5 to 10 Cr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Below 1 Cr</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CP_Task_Type__c</picklist>
+        <values>
+            <fullName>Agent Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broker Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting at Agent%E2%80%99s office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting at Hartland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Openhouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Attempt_Status__c</picklist>
+        <values>
+            <fullName>Follow up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Presentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Presentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tele-Meeting Fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visit confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visit proposed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Status__c</picklist>
+        <values>
+            <fullName>Call complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call incomplete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disconnected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invalid number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Reachable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Switched off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ringing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spoke to 3rd party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong number</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Time__c</picklist>
+        <values>
+            <fullName>01%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>01%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>02%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>02%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>04%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>04%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>05%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>05%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>06%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>06%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>08%3A00 AM</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>08%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>08%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>09%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>09%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Type__c</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>We Chat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>What%27s App</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Communication_Type__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Call</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Configuration__c</picklist>
+        <values>
+            <fullName>1 BHK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E5 BHK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 BHK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E5 BHK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 BHK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E5 BHK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 BHK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 BHK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Penthouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Studio Apartment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Villa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Enquiry_Source__c</picklist>
+        <values>
+            <fullName>Banner Ads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corprate Activity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exhibition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Newspaper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perimeter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Event_Status__c</picklist>
+        <values>
+            <fullName>Blocked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold - Follow Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revisit Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revisit Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revisit Proposed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm - Follow up</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Follow_Up_Status__c</picklist>
+        <values>
+            <fullName>Arranging Funds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Loan Eligibility%2FApproval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deciding - Need More Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discussing with Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow Up Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Looking for Other Options</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Schedule Deviation Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Deviation Required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Interested_In__c</picklist>
+        <values>
+            <fullName>Apartment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Studio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Town House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Villa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Meeting_Type__c</picklist>
+        <values>
+            <fullName>Conference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One to One</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Previous_Call_Attempt_Status__c</picklist>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PropStrength__Escalation_Level__c</picklist>
+        <values>
+            <fullName>Level 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_For_Call__c</picklist>
+        <values>
+            <fullName>Collections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post Sales</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_For_Lost__c</picklist>
+        <values>
+            <fullName>Broker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Budget %2F Price %2F Possession</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Committee Disapproved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expecting correction in the market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invalid Enquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inventory Choice Availability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not interested in real estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Schedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Specification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Experience</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Attempted_By__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Sales Manager</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sourcing_Manager__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Sourcing Manager</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Dispositions__c</picklist>
+        <values>
+            <fullName>Already Invested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booked with competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broker Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Back Busy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Back No Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Busy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation Request%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Choice of Inventory not available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desired Configuration Not Available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow Up-Qualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow up - email%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow up - social%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Presentation%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inquired By Mistake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interested in Future</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invalid Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issue Case%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job  Seeker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Junk Lead%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Language barrier%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Location Not Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Budget</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSO%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting Cancelled%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting Done%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting Proposed%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need Time to Think</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Never Inquired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No booking form%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Reachable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not happy with Size of Aparment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Presentation%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PTP%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Plan Change%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Business Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect - Budget%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect - Construction Timeline%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect - Locality%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect - Type%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RNR%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTP%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rent Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ringing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swicthed Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tele-Meeting Done%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tele-Meeting Fixed%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tele-Meeting Proposed%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visit Confirmed%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visit Done%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visit Proposed%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wants Ready Project Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Status__c</picklist>
+        <values>
+            <fullName>Blocked - Deal Closed with 2%25 Booking Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booked - Qualified Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booking - Deal Closed with %3E2%25 - %3C20%25 Booking Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Budget Constraint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Seeker %28Non-broker%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled - No Booking Form Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Timelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Didn%27t Provide Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gathering Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Seeker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Location Constraint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Looking for Ready Unit%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting Proposed %28Cold%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting Proposed %28Hot%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting Proposed %28Warm%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Longer Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Actioned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect Bought With Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualified - Follow-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Visit Done - Cold Buyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Visit Done - Hot Buyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Visit Done - Warm Buyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unit Type Constraint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - Broker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - Budget Constraint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - Construction Timelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - Gathering Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - Location Constraint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - Looking for Ready Unit%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - No Longer Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - Unit Type Constraint</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Quote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Task_Subject__c</picklist>
+        <values>
+            <fullName>Calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting In Brokers Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting In Hartland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zoom Call</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Task_Type__c</picklist>
+        <values>
+            <fullName>Channel Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enquiry Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presales Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Call</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Walk_in_Source__c</picklist>
+        <values>
+            <fullName>Channel Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corprate Activity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exhibition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Newspaper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perimeter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Walk_in_Sub_Source__c</picklist>
+        <values>
+            <fullName>99 acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client Reference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Common Floor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Company Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Different Areas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Reference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exhibition Names</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magic Bricks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Newspaper Names</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

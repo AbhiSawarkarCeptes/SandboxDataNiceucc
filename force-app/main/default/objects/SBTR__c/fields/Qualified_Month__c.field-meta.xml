@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qualified_Month__c</fullName>
+    <description>IF(MONTH(Qualified_Date__c)=1,&apos;JAN&apos;,
+IF(MONTH(Qualified_Date__c)=2,&apos;FEB&apos;,
+IF(MONTH(Qualified_Date__c)=3,&apos;MAR&apos;,
+IF(MONTH(Qualified_Date__c)=4,&apos;APR&apos;,
+IF(MONTH(Qualified_Date__c)=5,&apos;MAY&apos;,
+IF(MONTH(Qualified_Date__c)=6,&apos;JUN&apos;,
+IF(MONTH(Qualified_Date__c)=7,&apos;JUL&apos;,
+IF(MONTH(Qualified_Date__c)=8,&apos;AUG&apos;,
+IF(MONTH(Qualified_Date__c)=9,&apos;SEP&apos;,
+IF(MONTH(Qualified_Date__c)=10,&apos;OCT&apos;,
+IF(MONTH(Qualified_Date__c)=11,&apos;NOV&apos;,&apos;DEC&apos;
+)))))
+)
+)
+)
+)
+)
+)</description>
+    <externalId>false</externalId>
+    <formula>CASE(MONTH(Qualified_Date__c),
+    1, &quot;Jan&quot; &amp; &quot;-&quot; &amp; TEXT(YEAR(Qualified_Date__c)),
+    2, &quot;Feb&quot; &amp; &quot;-&quot; &amp; TEXT(YEAR(Qualified_Date__c)),
+    3, &quot;Mar&quot; &amp; &quot;-&quot; &amp; TEXT(YEAR(Qualified_Date__c)),
+    4, &quot;Apr&quot; &amp; &quot;-&quot; &amp; TEXT(YEAR(Qualified_Date__c)),
+    5, &quot;May&quot; &amp; &quot;-&quot; &amp; TEXT(YEAR(Qualified_Date__c)),
+    6, &quot;Jun&quot; &amp; &quot;-&quot; &amp; TEXT(YEAR(Qualified_Date__c)),
+    7, &quot;Jul&quot; &amp; &quot;-&quot; &amp; TEXT(YEAR(Qualified_Date__c)),
+    8, &quot;Aug&quot; &amp; &quot;-&quot; &amp; TEXT(YEAR(Qualified_Date__c)),
+    9, &quot;Sep&quot; &amp; &quot;-&quot; &amp; TEXT(YEAR(Qualified_Date__c)),
+    10,&quot;Oct&quot; &amp; &quot;-&quot; &amp; TEXT(YEAR(Qualified_Date__c)),
+    11,&quot;Nov&quot; &amp; &quot;-&quot; &amp; TEXT(YEAR(Qualified_Date__c)),
+    12,&quot;Dec&quot; &amp; &quot;-&quot; &amp; TEXT(YEAR(Qualified_Date__c)),
+    &quot; &quot;
+)</formula>
+    <label>Qualified Month</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

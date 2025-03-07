@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interest_on_late_amount_paid__c</fullName>
+    <externalId>false</externalId>
+    <formula>If ( (DATEVALUE(CreatedDate) &gt;  Demand__r.Due_Date__c ),
+(Total_Amount_adjusted__c *  
+$Setup.ROI_del__c.ROI__c * (  DATEVALUE(CreatedDate) -  Demand__r.Due_Date__c )),0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Interest on late amount paid</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

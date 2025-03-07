@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Signed Status --></label>
+    <name>Signed_Status__c</name>
+    <picklistValues>
+        <masterLabel>Booking Form Uploaded</masterLabel>
+        <translation><!-- Booking Form Uploaded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Cancellation</masterLabel>
+        <translation><!-- No Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resubmit to Submitter</masterLabel>
+        <translation><!-- Resubmit to Submitter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resubmitted for Document Verification</masterLabel>
+        <translation><!-- Resubmitted for Document Verification --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

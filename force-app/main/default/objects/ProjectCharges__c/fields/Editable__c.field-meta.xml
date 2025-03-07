@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Editable__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Determines if charge is editable by the user while generating cost sheet</description>
+    <label>Editable (at cost sheet Level)</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

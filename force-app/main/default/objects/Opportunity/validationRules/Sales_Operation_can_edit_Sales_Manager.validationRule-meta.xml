@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Operation_can_edit_Sales_Manager</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISNULL(Sales_Manager_lookup__c)),
+ISCHANGED(Sales_Manager_lookup__c),
+$Profile.Name &lt;&gt; &apos;Sales Operation With Area Update Access&apos;,
+$Profile.Name &lt;&gt; &apos;GRE&apos;,
+$Profile.Name &lt;&gt; &apos;Sales Operation&apos;,
+$Profile.Name &lt;&gt; &apos;Head - Digital Marketing&apos;,
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+$Profile.Name &lt;&gt; &apos;Admin Clone&apos;,
+$Profile.Name &lt;&gt; &apos;Presales Head&apos;,
+$Profile.Name &lt;&gt; &apos;Promotors-Stand Lead&apos;,
+$Profile.Name &lt;&gt; &apos;Sales&apos;,
+$Permission.Bypass_Validation_Rules != FALSE
+)</errorConditionFormula>
+    <errorMessage>You don&apos;t have enough privilege to edit Sales Manager field</errorMessage>
+</ValidationRule>

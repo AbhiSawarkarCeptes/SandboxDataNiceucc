@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Welcomecall_validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+Start_Registration__c,
+NOT(ISPICKVAL(Booking_Approver_Audit__c, &apos;Accepted&apos;))
+)</errorConditionFormula>
+    <errorMessage>Welcome call letter can not be sent for the this booking since audit approval is pending.</errorMessage>
+</ValidationRule>

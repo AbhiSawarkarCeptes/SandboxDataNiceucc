@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CountryOisnotIndiathenSuburbOdisable</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISPICKVAL(   Office_Country__c , &apos;India&apos;)) ,NOT((ISPICKVAL( Suburb_O__c , &apos;&apos;))) ,NOT((ISPICKVAL( Suburb_O__c , &apos;&apos;))))</errorConditionFormula>
+    <errorMessage>Country(O) is non-India Then Suburb(O) and Zone(O)must be Blank.</errorMessage>
+</ValidationRule>

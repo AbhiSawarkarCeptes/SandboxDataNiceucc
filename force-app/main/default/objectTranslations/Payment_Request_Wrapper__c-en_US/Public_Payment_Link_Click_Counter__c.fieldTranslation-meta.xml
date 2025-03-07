@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Public Payment Link Click Counter --></label>
+    <name>Public_Payment_Link_Click_Counter__c</name>
+</CustomFieldTranslation>

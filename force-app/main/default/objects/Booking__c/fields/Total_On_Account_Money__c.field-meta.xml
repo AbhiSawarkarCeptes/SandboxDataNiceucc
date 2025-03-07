@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_On_Account_Money__c</fullName>
+    <label>Total On Account Money With Registration</label>
+    <summarizedField>Receipt__c.Amount_Rs__c</summarizedField>
+    <summaryFilterItems>
+        <field>Receipt__c.Receipt_Status__c</field>
+        <operation>equals</operation>
+        <value>Cleared</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Receipt__c.Consider_for_Paid_Percentage__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Receipt__c.Is_Reversed_Receipt__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Receipt__c.Booking__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Edit_Access_For_Approved_PR</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+	OR(
+	ISPICKVAL(Status__c, &quot;Approved&quot;),
+	ISPICKVAL(Status__c, &quot;Approved by Accounts&quot;),
+	ISPICKVAL(Status__c, &quot;Approved by Sales Ops&quot;),
+	ISPICKVAL(Status__c, &quot;Resubmitted to SM/SD&quot;),
+	ISPICKVAL(Status__c, &quot;Submitted to Accounts for Amount Confirmation&quot;),
+	ISPICKVAL(Status__c, &quot;Amount Confirmed by Accounts&quot;),
+	ISPICKVAL(Status__c, &quot;Partially Approved&quot;),
+	ISPICKVAL(Status__c, &quot;PR was Approved- Booking is cancelled&quot;)
+	),
+    OR($Profile.Name = &quot;Sales&quot;, $Profile.Name = &quot;VP-Data Entry Operator&quot;),
+    OR(
+        ISCHANGED(Lead_Source_Category__c),
+        ISCHANGED(Lead_Source_Sub_Category__c),
+		ISCHANGED(Name__c),
+		ISCHANGED(Email__c),
+		ISCHANGED(Mobile_Number__c),
+		ISCHANGED(Emirates_Id_Passport_Number__c),
+		ISCHANGED(POP_Comments__c),
+		ISCHANGED(Mode__c),
+		ISCHANGED(Mode_Option__c),
+		ISCHANGED(Unit__c),
+		ISCHANGED(Amount__c),
+		ISCHANGED(Instrument_Number__c),
+		ISCHANGED(Pop_Amount__c),
+		ISCHANGED(Currency__c),
+		ISCHANGED(Instrument_Date__c),
+		ISCHANGED(Status__c)						
+    )
+)</errorConditionFormula>
+    <errorMessage>Not allowed to edit Approved PR.</errorMessage>
+</ValidationRule>

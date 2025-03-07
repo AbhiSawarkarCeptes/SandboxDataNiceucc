@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Walk_in_Referred_by_Existing_Customer</fullName>
+    <active>false</active>
+    <description>Customer Lookup mandatory for customer referrals</description>
+    <errorConditionFormula>AND(ISPICKVAL( Walk_in_Sub_Source__c , &apos;Booked Customer Reference&apos;), ISBLANK( 00N1t00000DqNgO))</errorConditionFormula>
+    <errorMessage>This field is required</errorMessage>
+</ValidationRule>

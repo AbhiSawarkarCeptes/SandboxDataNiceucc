@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booking_Date_and_Stage_of_Booking_Change</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+    ISCHANGED(Stage_of_Booking__c),
+    TEXT(Stage_of_Booking__c) = &apos;Booked&apos;,
+    NOT(ISCHANGED(Booking_Date__c)))</errorConditionFormula>
+    <errorMessage>Please update &quot;Booking Date&quot; also along with &quot;Stage of Booked&quot;</errorMessage>
+</ValidationRule>

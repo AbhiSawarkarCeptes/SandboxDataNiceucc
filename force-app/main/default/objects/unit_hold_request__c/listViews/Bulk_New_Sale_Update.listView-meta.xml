@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bulk_New_Sale_Update</fullName>
+    <columns>NAME</columns>
+    <columns>Unit__c</columns>
+    <columns>Declared_Date__c</columns>
+    <columns>Approval_Status__c</columns>
+    <columns>Approved_Date__c</columns>
+    <columns>Applicant_Name1__c</columns>
+    <columns>Booking__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Approval_Status__c</field>
+        <operation>equals</operation>
+        <value>Approved</value>
+    </filters>
+    <label>Bulk New Sale Update</label>
+    <sharedTo>
+        <group>New_Sale_Update_for_SBTR</group>
+    </sharedTo>
+</ListView>

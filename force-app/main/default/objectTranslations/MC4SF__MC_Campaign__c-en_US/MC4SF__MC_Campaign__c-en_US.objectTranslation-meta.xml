@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- AggregateHourlyCampaignStats --></label>
+        <name>MC4SF__AggregateHourlyCampaignStats</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- CampaignDetail --></label>
+        <name>MC4SF__CampaignDetail</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- CampaignStats --></label>
+        <name>MC4SF__CampaignStats</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Options --></label>
+        <name>MC4SF__Options</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RelatedRecords --></label>
+        <name>MC4SF__RelatedRecords</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Tracking --></label>
+        <name>MC4SF__Tracking</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UnsubscribesBounces --></label>
+        <name>MC4SF__UnsubscribesBounces</name>
+    </fieldSets>
+    <layouts>
+        <layout>MC Campaign Layout</layout>
+        <sections>
+            <label><!-- Aggregate Hourly Campaign Stats --></label>
+            <section>Aggregate Hourly Campaign Stats</section>
+        </sections>
+        <sections>
+            <label><!-- Campaign Report --></label>
+            <section>Campaign Report</section>
+        </sections>
+        <sections>
+            <label><!-- Campaign Stats --></label>
+            <section>Campaign Stats</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Options --></label>
+            <section>Options</section>
+        </sections>
+        <sections>
+            <label><!-- Related Records --></label>
+            <section>Related Records</section>
+        </sections>
+        <sections>
+            <label><!-- Tracking --></label>
+            <section>Tracking</section>
+        </sections>
+        <sections>
+            <label><!-- Unsubscribes/Bounces --></label>
+            <section>Unsubscribes/Bounces</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Refresh_Campaign_Stats --></label>
+        <name>MC4SF__Refresh_Campaign_Stats</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Retrieve_from_MailChimp_list --></label>
+        <name>MC4SF__Retrieve_from_MailChimp_list</name>
+    </webLinks>
+</CustomObjectTranslation>

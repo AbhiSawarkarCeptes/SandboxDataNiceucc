@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Two-way message number --></help>
+    <label><!-- Message Number --></label>
+    <name>CLE__Message_Number__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Combination_Milestone</fullName>
+    <active>true</active>
+    <description>If Is Combination Milestone is true, then Milestone Type should be Date Linked, Project Construction Stage and Number of Days Should not be blank and</description>
+    <errorConditionFormula>If(Is_Combination_Milestone__c, 
+			OR(ISBLANK(Number_Of_Days_Plan__c), ISBLANK(Project_Construction_Stages__c), TEXT(Plan_Milestone_Type__c)  &lt;&gt; &apos;Date Linked&apos;), 
+		False)</errorConditionFormula>
+    <errorMessage>If Is Combination Milestone is True, then Project Construction Stage, Number of Days and Milestone Type = &apos;Date Linked&apos; is mandatory</errorMessage>
+</ValidationRule>

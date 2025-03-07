@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Missing Documents --></label>
+    <name>Missing_Documents__c</name>
+    <picklistValues>
+        <masterLabel>Emirates ID</masterLabel>
+        <translation><!-- Emirates ID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Identification Documents</masterLabel>
+        <translation><!-- Identification Documents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POA/MOA</masterLabel>
+        <translation><!-- POA/MOA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Passport Copy</masterLabel>
+        <translation><!-- Passport Copy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RERA Certificate</masterLabel>
+        <translation><!-- RERA Certificate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Registration Form</masterLabel>
+        <translation><!-- Registration Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade License</masterLabel>
+        <translation><!-- Trade License --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Translated Company Documents</masterLabel>
+        <translation><!-- Translated Company Documents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VAT Certificate</masterLabel>
+        <translation><!-- VAT Certificate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visa Copy</masterLabel>
+        <translation><!-- Visa Copy --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

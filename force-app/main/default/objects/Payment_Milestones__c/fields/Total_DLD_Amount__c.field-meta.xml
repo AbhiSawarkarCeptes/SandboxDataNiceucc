@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_DLD_Amount__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Tower__c = &apos;One Park Avenue Tower&apos;, C4_Amount__c + C4_CGST__c + C5_Amount__c + C5_CGST__c + C6_Amount__c + C6_CGST__c,
+
+IF(Tower__c = &apos;Sobha Creek vistas Reserve&apos;, C4_Amount__c + C4_CGST__c + C5_Amount__c + C5_CGST__c + C6_Amount__c + C6_CGST__c,
+
+IF(Tower__c = &apos;Phase II&apos;, C4_Amount__c + C4_CGST__c + C5_Amount__c + C5_CGST__c + C6_Amount__c + C6_CGST__c,
+
+IF(Tower__c = &apos;Phase I&apos;, C2_Amount__c + C2_CGST__c + C3_Amount__c + C3_CGST__c + C5_Amount__c + C5_CGST__c,
+
+IF(Tower__c = &apos;Phase III&apos;, C2_Amount__c + C2_CGST__c + C3_Amount__c + C3_CGST__c + C5_Amount__c + C5_CGST__c,
+
+IF(Tower__c = &apos;Phase I - Building 1&apos;, C2_Amount__c + C2_CGST__c + C3_Amount__c + C3_CGST__c + C5_Amount__c + C5_CGST__c,
+
+IF(Tower__c = &apos;Phase I - Building 4&apos;, C2_Amount__c + C2_CGST__c + C3_Amount__c + C3_CGST__c + C5_Amount__c + C5_CGST__c,
+
+IF(Tower__c = &apos;Phase II - Building 2&apos;, C2_Amount__c + C2_CGST__c + C3_Amount__c + C3_CGST__c + C5_Amount__c + C5_CGST__c,
+
+IF(Tower__c = &apos;Phase II - Building 3&apos;,  C2_Amount__c + C2_CGST__c + C3_Amount__c + C3_CGST__c + C5_Amount__c + C5_CGST__c,
+
+IF(Tower__c = &apos;Phase III - Building 5&apos;,C2_Amount__c + C2_CGST__c + C3_Amount__c + C3_CGST__c + C5_Amount__c + C5_CGST__c,
+
+IF(Tower__c = &apos;Phase III - Building 6&apos;, C2_Amount__c + C2_CGST__c + C3_Amount__c + C3_CGST__c + C5_Amount__c + C5_CGST__c,
+
+IF(Tower__c = &apos;Tower A&apos;,  C2_Amount__c + C2_CGST__c + C3_Amount__c + C3_CGST__c + C5_Amount__c + C5_CGST__c,
+
+IF(Tower__c = &apos;Tower B&apos;, C3_Amount__c + C3_CGST__c + C4_Amount__c + C4_CGST__c + C5_Amount__c + C5_CGST__c,
+
+IF(Tower__c = &apos;Townhouse&apos;, C2_Amount__c + C2_CGST__c + C3_Amount__c + C3_CGST__c + C5_Amount__c + C5_CGST__c,0))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total DLD Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

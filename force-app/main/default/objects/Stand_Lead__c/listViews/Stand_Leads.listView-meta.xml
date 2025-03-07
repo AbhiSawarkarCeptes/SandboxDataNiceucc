@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stand_Leads</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>FirstName__c</columns>
+    <columns>Last_Name__c</columns>
+    <columns>Nationality__c</columns>
+    <columns>Promotors_Remarks__c</columns>
+    <columns>Willing_to_meet_this_week__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LeadOwnerProfile__c</field>
+        <operation>notContain</operation>
+        <value>PreSales</value>
+    </filters>
+    <label>Stand Leads</label>
+    <sharedTo>
+        <group>Promoter_Permission_Set</group>
+    </sharedTo>
+</ListView>

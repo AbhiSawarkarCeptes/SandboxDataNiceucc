@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Common_Floor_Lead_Reason__c</fullName>
+    <label>Common Floor Lead Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Reason 1</fullName>
+                <default>false</default>
+                <label>Reason 1</label>
+            </value>
+            <value>
+                <fullName>Reason 2</fullName>
+                <default>false</default>
+                <label>Reason 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

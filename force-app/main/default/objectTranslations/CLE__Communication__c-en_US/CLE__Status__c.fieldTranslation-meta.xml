@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>CLE__Status__c</name>
+    <picklistValues>
+        <masterLabel>delivered</masterLabel>
+        <translation><!-- delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>failed</masterLabel>
+        <translation><!-- failed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pending</masterLabel>
+        <translation><!-- pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>read</masterLabel>
+        <translation><!-- read --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>rejected</masterLabel>
+        <translation><!-- rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sent</masterLabel>
+        <translation><!-- sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>submitted</masterLabel>
+        <translation><!-- submitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>undeliverable</masterLabel>
+        <translation><!-- undeliverable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>undelivered</masterLabel>
+        <translation><!-- undelivered --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

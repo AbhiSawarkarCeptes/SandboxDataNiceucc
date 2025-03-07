@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub Mode --></label>
+    <name>Sub_Mode__c</name>
+    <picklistValues>
+        <masterLabel>CCA</masterLabel>
+        <translation><!-- CCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CDA</masterLabel>
+        <translation><!-- CDA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CDM</masterLabel>
+        <translation><!-- CDM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSN</masterLabel>
+        <translation><!-- CSN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Link</masterLabel>
+        <translation><!-- Payment Link --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

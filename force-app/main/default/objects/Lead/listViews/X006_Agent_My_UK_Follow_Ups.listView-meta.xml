@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X006_Agent_My_UK_Follow_Ups</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
+    <columns>Lead_Id__c</columns>
+    <columns>Last_Call_Attempt_Status__c</columns>
+    <columns>Latest_Next_Action_Date__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>RDS_Country_Code__c</columns>
+    <columns>LEAD.MOBILE_PHONE</columns>
+    <columns>Presales_Agent__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notContain</operation>
+        <value>Lost</value>
+    </filters>
+    <filters>
+        <field>LEAD.LAST_NAME</field>
+        <operation>notContain</operation>
+        <value>test</value>
+    </filters>
+    <filters>
+        <field>Latest_Next_Action_Date__c</field>
+        <operation>lessOrEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>Last_Call_Attempt_Status__c</field>
+        <operation>contains</operation>
+        <value>follow,contact,visit,meeting</value>
+    </filters>
+    <filters>
+        <field>RDS_Country_Code__c</field>
+        <operation>contains</operation>
+        <value>44</value>
+    </filters>
+    <label>006 Agent: My UK Follow-Ups</label>
+    <sharedTo>
+        <role>Presales_Agent</role>
+        <roleAndSubordinatesInternal>TSA_Head1</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>TSA_Head2</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>TSA_Head3</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

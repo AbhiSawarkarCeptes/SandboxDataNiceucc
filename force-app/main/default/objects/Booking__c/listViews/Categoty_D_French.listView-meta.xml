@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Categoty_D_French</fullName>
+    <columns>NAME</columns>
+    <columns>PrimaryMobileNumber__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>equals</operation>
+        <value>B-2266,B-1786,B-2185,B-2001,B-2756</value>
+    </filters>
+    <label>Categoty D - French</label>
+    <sharedTo>
+        <group>NPS_Agents</group>
+    </sharedTo>
+</ListView>

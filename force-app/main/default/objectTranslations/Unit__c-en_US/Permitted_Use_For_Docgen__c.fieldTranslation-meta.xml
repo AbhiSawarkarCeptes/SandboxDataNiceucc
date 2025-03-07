@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Permitted Use For Docgen --></label>
+    <name>Permitted_Use_For_Docgen__c</name>
+    <picklistValues>
+        <masterLabel>Commercial Purposes only</masterLabel>
+        <translation><!-- Commercial Purposes only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restaurant Purposes only</masterLabel>
+        <translation><!-- Restaurant Purposes only --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

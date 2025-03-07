@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_PRs</fullName>
+    <columns>NAME</columns>
+    <columns>Booking__c</columns>
+    <columns>Unit__c</columns>
+    <columns>Amount__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Mode__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Approved PRs</label>
+    <sharedTo>
+        <role>Collection</role>
+    </sharedTo>
+</ListView>

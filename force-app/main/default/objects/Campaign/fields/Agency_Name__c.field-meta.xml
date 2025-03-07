@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agency_Name__c</fullName>
+    <label>Agency Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agency 1</fullName>
+                <default>false</default>
+                <label>Agency 1</label>
+            </value>
+            <value>
+                <fullName>Agency 2</fullName>
+                <default>false</default>
+                <label>Agency 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

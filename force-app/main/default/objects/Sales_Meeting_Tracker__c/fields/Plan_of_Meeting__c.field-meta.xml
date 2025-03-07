@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plan_of_Meeting__c</fullName>
+    <label>Plan of Meeting</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Introductory meeting</fullName>
+                <default>false</default>
+                <label>Introductory meeting</label>
+            </value>
+            <value>
+                <fullName>Client meeting in broker office</fullName>
+                <default>false</default>
+                <label>Client meeting in broker office</label>
+            </value>
+            <value>
+                <fullName>Meeting new agent</fullName>
+                <default>false</default>
+                <label>Meeting new agent</label>
+            </value>
+            <value>
+                <fullName>General meeting.</fullName>
+                <default>false</default>
+                <label>General meeting.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

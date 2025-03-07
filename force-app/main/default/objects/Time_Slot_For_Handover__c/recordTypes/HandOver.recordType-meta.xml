@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HandOver</fullName>
+    <active>true</active>
+    <label>HandOver</label>
+    <picklistValues>
+        <picklist>Bank_Name__c</picklist>
+        <values>
+            <fullName>Abu Dhabi Commercial Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abu Dhabi Islamic Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajman Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Al Hilal Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Al Maryah Community Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Al Masraf Arab Bank for Investment %26 Foreign Trade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank of Sharjah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Bank International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Bank of Dubai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dubai Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dubai Finance Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dubai Islamic Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emirates Development Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emirates Investment Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emirates Islamic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emirates NBD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Abu Dhabi Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invest Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mashreq</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Bank of Fujairah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Bank of Ras Al-Khaimah PJSC %28RAKBANK%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Bank of Umm Al-Quwain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noor Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sharjah Islamic Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Arab Bank</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bank_Valuation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CRM_Excutive__c</picklist>
+        <values>
+            <fullName>Abdeldjalil Kamel Bensenada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abdelrahman Salim Rashid Alzumr Al-Ali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ahmed Yossry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ali Yousuf Abdulla Qassem Alemadi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Angelina Khalilova</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Araba Aln%E2%80%99airat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aruna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aswathi Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davood Sheikh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deeksha Poral Lakshminarayana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Divya Shanthigrama Keshava</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hadi osama hussain mohamed ghanem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ilyos Abdulloev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juma Khalfan Juma Humaid Al-Ali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kaisar Sabraimov</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laila Nadeer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malak Saleh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mariia Aleksandrovskaia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nisha Krishnan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pratyush Kumar Nayak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priya Rathi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priyanka Binil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qingqin Yang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Racha Dannaoui</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raghad Kawaf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roopa Nataraj</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ruvaid Vani</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sahar Sultan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunny Pradhan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ummer Farhan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Usman Sheikh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vivek Sharma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yugeshkumar Sureshkumar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Ask__c</picklist>
+        <values>
+            <fullName>Ejari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mortgage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Title deed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_comments__c</picklist>
+        <values>
+            <fullName>Happy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unhappy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Not_eligible_for_handover__c</picklist>
+        <values>
+            <fullName>Shortfall due to LP%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shortfall due to other charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shortfall in DLD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QT_Keep_Out_Personnel__c</picklist>
+        <values>
+            <fullName>Dirk Heyne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harald Frei</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Karthikeyan Ranganathan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Olaf Wagner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ralf Goedecke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roland Gotsch</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Snags_identified__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Yet Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to contact</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Third_party_snagging__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Timings__c</picklist>
+        <values>
+            <fullName>1 PM - 2 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10 AM-11 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11 AM-12 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12 PM- 1 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 PM - 3 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 PM- 4 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 PM -5 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 PM - 6 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 PM - 7 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7PM - 8 PM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

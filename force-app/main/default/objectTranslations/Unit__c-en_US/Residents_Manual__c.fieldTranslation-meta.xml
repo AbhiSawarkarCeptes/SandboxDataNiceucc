@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Residents Manual --></label>
+    <name>Residents_Manual__c</name>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Provided</masterLabel>
+        <translation><!-- Not Provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Provided</masterLabel>
+        <translation><!-- Provided --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

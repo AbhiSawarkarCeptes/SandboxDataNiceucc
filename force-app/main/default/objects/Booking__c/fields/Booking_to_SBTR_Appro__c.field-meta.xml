@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booking_to_SBTR_Appro__c</fullName>
+    <description>This field will capture approval status for SBTR creation from Booking level</description>
+    <label>Booking to SBTR Approval Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Submitted for SBTR Approval</fullName>
+                <default>false</default>
+                <label>Submitted for SBTR Approval</label>
+            </value>
+            <value>
+                <fullName>SBTR Approved</fullName>
+                <default>false</default>
+                <label>SBTR Approved</label>
+            </value>
+            <value>
+                <fullName>SBTR Rejected</fullName>
+                <default>false</default>
+                <label>SBTR Rejected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

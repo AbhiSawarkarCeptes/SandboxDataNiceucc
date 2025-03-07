@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Business Process Step</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Business Process Steps</value>
+    </caseValues>
+    <layouts>
+        <layout>Business Process Step Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Accept --></label>
+        <name>Accept</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Approve/Reject --></label>
+        <name>Approve_Reject</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please accept before Approve or Reject --></errorMessage>
+        <name>Business_Process_Step_Accept_Required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Bulk_Accept --></label>
+        <name>Bulk_Accept</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Bulk_Approve --></label>
+        <name>Bulk_Approve</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Bulk_Reject --></label>
+        <name>Bulk_Reject</name>
+    </webLinks>
+</CustomObjectTranslation>

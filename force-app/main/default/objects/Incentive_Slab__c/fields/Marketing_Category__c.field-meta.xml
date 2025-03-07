@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Category__c</fullName>
+    <label>Marketing Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Loyalty Sales</fullName>
+                <default>false</default>
+                <label>Loyalty Sales</label>
+            </value>
+            <value>
+                <fullName>Mall Stands/Kiosks Sales</fullName>
+                <default>false</default>
+                <label>Mall Stands/Kiosks Sales</label>
+            </value>
+            <value>
+                <fullName>Digital Marketing Sales (Inc. Influencer)</fullName>
+                <default>false</default>
+                <label>Digital Marketing Sales (Inc. Influencer)</label>
+            </value>
+            <value>
+                <fullName>Loyalty Sales (saving 1% on discount)</fullName>
+                <default>false</default>
+                <label>Loyalty Sales (saving 1% on discount)</label>
+            </value>
+            <value>
+                <fullName>Loyalty Sales (with discount)</fullName>
+                <default>false</default>
+                <label>Loyalty Sales (with discount)</label>
+            </value>
+            <value>
+                <fullName>Mall Stands/Kiosks Sales (with Telesales)</fullName>
+                <default>false</default>
+                <label>Mall Stands/Kiosks Sales (with Telesales)</label>
+            </value>
+            <value>
+                <fullName>Direct Walk-in</fullName>
+                <default>false</default>
+                <label>Direct Walk-in</label>
+            </value>
+            <value>
+                <fullName>Telesales</fullName>
+                <default>false</default>
+                <label>Telesales</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

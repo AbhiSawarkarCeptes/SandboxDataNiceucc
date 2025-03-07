@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Meeting Organized by --></label>
+    <name>Meeting_Organized_by__c</name>
+    <picklistValues>
+        <masterLabel>Channel Team Lead</masterLabel>
+        <translation><!-- Channel Team Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel manager</masterLabel>
+        <translation><!-- Channel manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Head</masterLabel>
+        <translation><!-- Sales Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales VP</masterLabel>
+        <translation><!-- Sales VP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

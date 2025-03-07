@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Non Residency Letter Uploaded --></label>
+    <name>Non_Residency_Letter_Uploaded__c</name>
+</CustomFieldTranslation>

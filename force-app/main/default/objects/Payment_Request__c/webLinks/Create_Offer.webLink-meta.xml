@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Offer</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Create Offer</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/40.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/40.0/apex.js&quot;)}
+
+var recordId = &apos;{!Payment_Request__c.Id}&apos;;
+var status = &apos;{!Payment_Request__c.Status__c}&apos;;
+
+// Check if Status__c is &apos;Approved&apos;
+if (status === &apos;Approved&apos;) {
+    // Open your custom page or URL
+    window.location.href = &apos;/apex/openCreateOffer?Id=&apos; + recordId+&apos;&amp;fromClassic=true&apos;;
+} else {
+    alert(&apos;This record is not approved. So, page can\&apos;t open.&apos;);
+}</url>
+</WebLink>

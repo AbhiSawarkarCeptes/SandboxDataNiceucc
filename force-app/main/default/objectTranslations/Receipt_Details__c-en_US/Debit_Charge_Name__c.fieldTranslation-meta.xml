@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Debit Charge Name --></label>
+    <name>Debit_Charge_Name__c</name>
+    <picklistValues>
+        <masterLabel>Brokerage Reversal</masterLabel>
+        <translation><!-- Brokerage Reversal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheque Bounce</masterLabel>
+        <translation><!-- Cheque Bounce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interest Charges</masterLabel>
+        <translation><!-- Interest Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interior Charges</masterLabel>
+        <translation><!-- Interior Charges --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

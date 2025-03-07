@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Profile_Allowed_to_Edit__c</fullName>
+    <description>Profiles which are allowed to edit for some particular status (Helps to send renewal Link and change status)</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Profile Allowed to Edit</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

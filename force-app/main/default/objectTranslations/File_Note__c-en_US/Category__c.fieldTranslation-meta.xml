@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>Category__c</name>
+    <picklistValues>
+        <masterLabel>Cancellation &amp; Forfiture</masterLabel>
+        <translation><!-- Cancellation &amp; Forfiture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation &amp; Refund</masterLabel>
+        <translation><!-- Cancellation &amp; Refund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation &amp; Swap</masterLabel>
+        <translation><!-- Cancellation &amp; Swap --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD Fees Waiver (Half or Full)</masterLabel>
+        <translation><!-- DLD Fees Waiver (Half or Full) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discount Offered</masterLabel>
+        <translation><!-- Discount Offered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interest Charge Waiver (Can be any %)</masterLabel>
+        <translation><!-- Interest Charge Waiver (Can be any %) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

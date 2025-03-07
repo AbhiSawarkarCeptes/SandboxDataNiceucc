@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Russian_Booked_HO_done_Jul_Sep_2023</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NPS_status__c</field>
+        <operation>equals</operation>
+        <value>Booked In Jul - Sep 2023 - HO done - Russian</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelled,Cancellation In Progress</value>
+    </filters>
+    <label>Russian - Booked - HO done Jul- Sep 2023</label>
+    <sharedTo>
+        <group>NPS_Agents</group>
+    </sharedTo>
+</ListView>

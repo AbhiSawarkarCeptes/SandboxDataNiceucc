@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Last date of CRM meeting with Broker --></label>
+    <name>Last_date_of_CRM_meeting_with_Broker__c</name>
+</CustomFieldTranslation>

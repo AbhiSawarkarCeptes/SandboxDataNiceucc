@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_should_be_Token_Amount_received</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Cheque_Received__c==true, Customer_informed_about_relevant_Doc_s__c==true,
+AND(NOT(ISPICKVAL(StageName, &apos;Token Amount Received - BIP&apos;)),NOT(ISPICKVAL(StageName, &apos;Booking confirmed&apos;)),NOT(ISPICKVAL(StageName, &apos;Closed Lost&apos;))))</errorConditionFormula>
+    <errorMessage>Stage Name should be Token Amount Received - BIP.</errorMessage>
+</ValidationRule>

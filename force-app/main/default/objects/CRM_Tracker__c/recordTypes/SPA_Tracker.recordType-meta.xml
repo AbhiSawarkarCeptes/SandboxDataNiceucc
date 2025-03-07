@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPA_Tracker</fullName>
+    <active>true</active>
+    <label>SPA Tracker</label>
+    <picklistValues>
+        <picklist>Manager__c</picklist>
+        <values>
+            <fullName>Deann</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Divya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farhan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roopa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project__c</picklist>
+        <values>
+            <fullName>310  Riverside Crescent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>320  Riverside Crescent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>330  Riverside Crescent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>340  Riverside Crescent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>350  Riverside Crescent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>360  Riverside Crescent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creek Vista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creek Vistas Grande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crest Grande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delphine Beach Residences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hartland Extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One Park Avenue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selence Beach Residences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sobha Creek Vista Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sobha Creek vistas Reserve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sobha Hartland II Villas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sobha One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sobha Orbis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sobha Reserve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sobha SeaHaven</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sobha Siniya Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sobha Tranquility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sobha Waves Opulence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Crest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Townhouses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verde By Sobha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Villas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waterside Plots</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waves Grande</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stakeholder__c</picklist>
+        <values>
+            <fullName>Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Ops</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

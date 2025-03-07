@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Verification__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Customer Verification</label>
+    <referenceTo>Customer_Verification__c</referenceTo>
+    <relationshipLabel>CustomerVerifications</relationshipLabel>
+    <relationshipName>CustomerVerifications</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

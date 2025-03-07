@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Interest On Paid Amount --></label>
+    <name>Interest_On_Paid_Amount__c</name>
+</CustomFieldTranslation>

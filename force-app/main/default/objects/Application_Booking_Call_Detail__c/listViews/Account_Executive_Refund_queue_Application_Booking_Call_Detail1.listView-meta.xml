@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Executive_Refund_queue_Application_Booking_Call_Detail1</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Account Executive Refund queue</label>
+    <queue>Account_Executive_Refund_queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

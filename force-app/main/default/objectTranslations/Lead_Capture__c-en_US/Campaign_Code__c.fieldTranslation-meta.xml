@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Campaign Code --></label>
+    <name>Campaign_Code__c</name>
+    <picklistValues>
+        <masterLabel>2024-08-25/Pune/Business Trip/SQUAREA GULF REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-08-25/Pune/Business Trip/SQUAREA GULF REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-08-31/Baku/Road Shows/H J REAL ESTATES</masterLabel>
+        <translation><!-- 2024-08-31/Baku/Road Shows/H J REAL ESTATES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-08-31/Hyderabad/Road Shows/NEST HUNTERS REAL ESTATE LLC</masterLabel>
+        <translation><!-- 2024-08-31/Hyderabad/Road Shows/NEST HUNTERS REAL ESTATE LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-08-31/London/Road Shows/LUXURY LIVING HOMES INTERNATIONAL LTD</masterLabel>
+        <translation><!-- 2024-08-31/London/Road Shows/LUXURY LIVING HOMES INTERNATIONAL LTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-08-31/SINGAPORE/Road Shows/FOOT PRINT REAL ESTATE BROKER</masterLabel>
+        <translation><!-- 2024-08-31/SINGAPORE/Road Shows/FOOT PRINT REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-01/Birmingham/Road Shows/ELAN REAL ESTATE</masterLabel>
+        <translation><!-- 2024-09-01/Birmingham/Road Shows/ELAN REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-05/Bogota/Road Shows/J A Z REAL ESTATE</masterLabel>
+        <translation><!-- 2024-09-05/Bogota/Road Shows/J A Z REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-07/Baghdad/Road Shows/VILA L.L.C-FZ</masterLabel>
+        <translation><!-- 2024-09-07/Baghdad/Road Shows/VILA L.L.C-FZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-07/Chicago/Road Shows/PROVIDENT REAL ESTATE BROKER L.L.C</masterLabel>
+        <translation><!-- 2024-09-07/Chicago/Road Shows/PROVIDENT REAL ESTATE BROKER L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-07/Cochin/Road Shows/FIFTY SIX REALTY L.L.C</masterLabel>
+        <translation><!-- 2024-09-07/Cochin/Road Shows/FIFTY SIX REALTY L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-07/Colombo/Road Shows/BENCHMARK PROPERTIES</masterLabel>
+        <translation><!-- 2024-09-07/Colombo/Road Shows/BENCHMARK PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-07/Delhi/Road Shows/CASA REGAL PROPERTIES L.L.C</masterLabel>
+        <translation><!-- 2024-09-07/Delhi/Road Shows/CASA REGAL PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-07/Hamburg/Road Shows/FOOT PRINT REAL ESTATE BROKER</masterLabel>
+        <translation><!-- 2024-09-07/Hamburg/Road Shows/FOOT PRINT REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-07/Lagos/Road Shows/EMPIRE HILLS REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-09-07/Lagos/Road Shows/EMPIRE HILLS REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-07/Ludhiana/Road Shows/GREHA PRAVESH REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-09-07/Ludhiana/Road Shows/GREHA PRAVESH REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-13/Abuja/Road Shows/SPRING FIELD REAL ESTATE</masterLabel>
+        <translation><!-- 2024-09-13/Abuja/Road Shows/SPRING FIELD REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-14/CAPETOWN/Road Shows/RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY L.L.C</masterLabel>
+        <translation><!-- 2024-09-14/CAPETOWN/Road Shows/RANGE INTERNATIONAL PROPERTY INVESTMENT ONE PERSON COMPANY L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-14/Dallas/Road Shows/FOOT PRINT REAL ESTATE BROKER</masterLabel>
+        <translation><!-- 2024-09-14/Dallas/Road Shows/FOOT PRINT REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-14/Frankfurt/Road Shows/KREDIUM TECHNOLOGIES L L C - DUBAI BRANCH</masterLabel>
+        <translation><!-- 2024-09-14/Frankfurt/Road Shows/KREDIUM TECHNOLOGIES L L C - DUBAI BRANCH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-14/Hong Kong/Road Shows/KNIGHTSBRIDGE &amp; PARTNERS (HK) LIMITED</masterLabel>
+        <translation><!-- 2024-09-14/Hong Kong/Road Shows/KNIGHTSBRIDGE &amp; PARTNERS (HK) LIMITED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-14/Houston/Road Shows/RAYNA PROPERTIES</masterLabel>
+        <translation><!-- 2024-09-14/Houston/Road Shows/RAYNA PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-14/Miami/Road Shows/JAPSONS REALTY L.L.C</masterLabel>
+        <translation><!-- 2024-09-14/Miami/Road Shows/JAPSONS REALTY L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-14/Zurich/Road Shows/M G L REALESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-09-14/Zurich/Road Shows/M G L REALESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-21/Coimbatore/Road Shows/THE G O A T REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-09-21/Coimbatore/Road Shows/THE G O A T REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-21/Hyderabad/Road Shows/HOMES 4 LIFE REAL ESTATE BROKER (LLC)</masterLabel>
+        <translation><!-- 2024-09-21/Hyderabad/Road Shows/HOMES 4 LIFE REAL ESTATE BROKER (LLC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-21/London/Road Shows/AEON TRISL INVESTMENTS LIMITED</masterLabel>
+        <translation><!-- 2024-09-21/London/Road Shows/AEON TRISL INVESTMENTS LIMITED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-21/Manchester/Road Shows/ELEVATION INTERNATIONAL REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-09-21/Manchester/Road Shows/ELEVATION INTERNATIONAL REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-21/Mumbai/Road Shows/FOOT PRINT REAL ESTATE BROKER</masterLabel>
+        <translation><!-- 2024-09-21/Mumbai/Road Shows/FOOT PRINT REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-21/SINGAPORE/Road Shows/FOOT PRINT REAL ESTATE BROKER</masterLabel>
+        <translation><!-- 2024-09-21/SINGAPORE/Road Shows/FOOT PRINT REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-21/Stuttgart/Road Shows/ALLEGIANCE REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-09-21/Stuttgart/Road Shows/ALLEGIANCE REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-21/Ulaanbaatar/Road Shows/NANO REAL ESTATE</masterLabel>
+        <translation><!-- 2024-09-21/Ulaanbaatar/Road Shows/NANO REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-24/Dusseldorf/Road Shows/I B I A REALTY L.L.C</masterLabel>
+        <translation><!-- 2024-09-24/Dusseldorf/Road Shows/I B I A REALTY L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-26/Vienna/Road Shows/EMINENCE REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-09-26/Vienna/Road Shows/EMINENCE REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-27/Istanbul/Road Shows/MYFUTURE PROPERTIES REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-09-27/Istanbul/Road Shows/MYFUTURE PROPERTIES REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-28/Amsterdam/Road Shows/FOOT PRINT REAL ESTATE BROKER</masterLabel>
+        <translation><!-- 2024-09-28/Amsterdam/Road Shows/FOOT PRINT REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-28/Chennai/Road Shows/D &amp; S HOMES REAL ESTATE BROKERS L.L.C</masterLabel>
+        <translation><!-- 2024-09-28/Chennai/Road Shows/D &amp; S HOMES REAL ESTATE BROKERS L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-28/Kolkata/Road Shows/NESTWOOD REALTY REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-09-28/Kolkata/Road Shows/NESTWOOD REALTY REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-28/London/Road Shows/ANWA PROPERTIES LTD</masterLabel>
+        <translation><!-- 2024-09-28/London/Road Shows/ANWA PROPERTIES LTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-09-29/Bishkek/Road Shows/EMPIRE CITY REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-09-29/Bishkek/Road Shows/EMPIRE CITY REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-01/Tirana/Road Shows/ELYSIAN REAL ESTATE BROKER L.L.C</masterLabel>
+        <translation><!-- 2024-10-01/Tirana/Road Shows/ELYSIAN REAL ESTATE BROKER L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-04/Dallas/Road Shows/ORIGINAL BULL AND BEAR PROPERTIES</masterLabel>
+        <translation><!-- 2024-10-04/Dallas/Road Shows/ORIGINAL BULL AND BEAR PROPERTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-04/Dubrovnik/Road Shows/ELYSIAN REAL ESTATE BROKER L.L.C</masterLabel>
+        <translation><!-- 2024-10-04/Dubrovnik/Road Shows/ELYSIAN REAL ESTATE BROKER L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-05/Delhi/Road Shows/SAIRABH VENTURES REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-10-05/Delhi/Road Shows/SAIRABH VENTURES REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-05/Helsinki/Road Shows/PLATINUM SQUARE REAL ESTATE BROKERS</masterLabel>
+        <translation><!-- 2024-10-05/Helsinki/Road Shows/PLATINUM SQUARE REAL ESTATE BROKERS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-05/Houston/Road Shows/ARTHA REALTY L.L.C</masterLabel>
+        <translation><!-- 2024-10-05/Houston/Road Shows/ARTHA REALTY L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-05/Hyderabad/Road Shows/BLUE BELLS LUXURY REAL ESTATE</masterLabel>
+        <translation><!-- 2024-10-05/Hyderabad/Road Shows/BLUE BELLS LUXURY REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-05/Indore/Road Shows/HOMES 4 LIFE REAL ESTATE BROKER (LLC)</masterLabel>
+        <translation><!-- 2024-10-05/Indore/Road Shows/HOMES 4 LIFE REAL ESTATE BROKER (LLC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-05/London/Road Shows/OPENCUBE GROUP LTD</masterLabel>
+        <translation><!-- 2024-10-05/London/Road Shows/OPENCUBE GROUP LTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-05/Ludhiana/Road Shows/ACE CAPITAL REAL ESTATE BROKERAGE L.L.C</masterLabel>
+        <translation><!-- 2024-10-05/Ludhiana/Road Shows/ACE CAPITAL REAL ESTATE BROKERAGE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-05/Mumbai/Road Shows/SILVER OAK PROPERTIES L.L.C</masterLabel>
+        <translation><!-- 2024-10-05/Mumbai/Road Shows/SILVER OAK PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-05/New York/Road Shows/LUXURY CONCIERGE REAL ESTATE BROKER L. L. C</masterLabel>
+        <translation><!-- 2024-10-05/New York/Road Shows/LUXURY CONCIERGE REAL ESTATE BROKER L. L. C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-05/SINGAPORE/Road Shows/FOOT PRINT REAL ESTATE BROKER</masterLabel>
+        <translation><!-- 2024-10-05/SINGAPORE/Road Shows/FOOT PRINT REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-12/Ahmedabad/Road Shows/CLASSIC PARAMOUNT REAL ESTATE</masterLabel>
+        <translation><!-- 2024-10-12/Ahmedabad/Road Shows/CLASSIC PARAMOUNT REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-12/BERLIN/Road Shows/A K G REAL ESTATE BROKERAGE L.L.C</masterLabel>
+        <translation><!-- 2024-10-12/BERLIN/Road Shows/A K G REAL ESTATE BROKERAGE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-12/Chennai/Road Shows/HOUSE AND HEDGES REAL ESTATE</masterLabel>
+        <translation><!-- 2024-10-12/Chennai/Road Shows/HOUSE AND HEDGES REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-12/Gammarth/Road Shows/THE LUXURY REAL ESTATE BROKER L.L.C</masterLabel>
+        <translation><!-- 2024-10-12/Gammarth/Road Shows/THE LUXURY REAL ESTATE BROKER L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-12/London/Road Shows/BANKE INTERNATIONAL PROPERTIES LTD</masterLabel>
+        <translation><!-- 2024-10-12/London/Road Shows/BANKE INTERNATIONAL PROPERTIES LTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-12/Los Angeles/Road Shows/ALLEGIANCE REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-10-12/Los Angeles/Road Shows/ALLEGIANCE REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-18/Cairo/Business Trip/OIA PROPERTIES L.L.C</masterLabel>
+        <translation><!-- 2024-10-18/Cairo/Business Trip/OIA PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-19/Chicago/Road Shows/AX PREMIUM PROPERTIES L.L.C</masterLabel>
+        <translation><!-- 2024-10-19/Chicago/Road Shows/AX PREMIUM PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-19/Hengzhou/Road Shows/DESEA GLOBAL PROPERTIES L.L.C</masterLabel>
+        <translation><!-- 2024-10-19/Hengzhou/Road Shows/DESEA GLOBAL PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-19/Hyderabad/Road Shows/SKY FIVE REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-10-19/Hyderabad/Road Shows/SKY FIVE REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-19/Mumbai/Road Shows/RISE UP REAL ESTATE</masterLabel>
+        <translation><!-- 2024-10-19/Mumbai/Road Shows/RISE UP REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-20/DUBAI/Open Houses/R E M REAL ESTATE BROKER OWNED BY MUNA SAYED SAEED ALHASHEMI ONE PERSON CO L.L.C</masterLabel>
+        <translation><!-- 2024-10-20/DUBAI/Open Houses/R E M REAL ESTATE BROKER OWNED BY MUNA SAYED SAEED ALHASHEMI ONE PERSON CO L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-24/Tashkent/Road Shows/IMKAAN AL AWAL REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-10-24/Tashkent/Road Shows/IMKAAN AL AWAL REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-25/Kuwait/Road Shows/M R ONE PROPERTIES L.L.C</masterLabel>
+        <translation><!-- 2024-10-25/Kuwait/Road Shows/M R ONE PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-25/Tokyo/Road Shows/EXCEED REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-10-25/Tokyo/Road Shows/EXCEED REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-26/Colombo/Road Shows/BLUE VELVET REAL ESTATE BROKERAGE</masterLabel>
+        <translation><!-- 2024-10-26/Colombo/Road Shows/BLUE VELVET REAL ESTATE BROKERAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-26/Johannesburg/Road Shows/STONE HOUSE REAL ESTATE BROKERAGE L.L.C</masterLabel>
+        <translation><!-- 2024-10-26/Johannesburg/Road Shows/STONE HOUSE REAL ESTATE BROKERAGE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-26/Lagos/Road Shows/CORNERSTONE REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-10-26/Lagos/Road Shows/CORNERSTONE REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-26/SINGAPORE/Road Shows/LUMINARY REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-10-26/SINGAPORE/Road Shows/LUMINARY REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-26/Yerevan/Road Shows/HESTIA HOMES REAL ESTATE</masterLabel>
+        <translation><!-- 2024-10-26/Yerevan/Road Shows/HESTIA HOMES REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-31/DUBAI/Open Houses/D G HOMES REAL ESTATE BROKER L.L.C</masterLabel>
+        <translation><!-- 2024-10-31/DUBAI/Open Houses/D G HOMES REAL ESTATE BROKER L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-10-31/DUBAI/Open Houses/GOLDEN INFINITY PROPERTIES L.L.C</masterLabel>
+        <translation><!-- 2024-10-31/DUBAI/Open Houses/GOLDEN INFINITY PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-11-02/Amsterdam/Road Shows/ALLEGIANCE REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-11-02/Amsterdam/Road Shows/ALLEGIANCE REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-11-02/DUBAI/Open Houses/D M A X X PROPERTIES L.L.C</masterLabel>
+        <translation><!-- 2024-11-02/DUBAI/Open Houses/D M A X X PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-11-02/Dallas/Road Shows/INVESPY PROPERTIES L.L.C</masterLabel>
+        <translation><!-- 2024-11-02/Dallas/Road Shows/INVESPY PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-11-02/Denizli/Road Shows/MANSION AND HOMES GAYRIMENKUL</masterLabel>
+        <translation><!-- 2024-11-02/Denizli/Road Shows/MANSION AND HOMES GAYRIMENKUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-11-02/London/Road Shows/AEON TRISL INVESTMENTS LIMITED</masterLabel>
+        <translation><!-- 2024-11-02/London/Road Shows/AEON TRISL INVESTMENTS LIMITED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-11-02/Miami/Road Shows/EXP REAL ESTATE (BR OF EXP INTERNATIONAL HOLDINGS INC )(DUBAI BRANCH)</masterLabel>
+        <translation><!-- 2024-11-02/Miami/Road Shows/EXP REAL ESTATE (BR OF EXP INTERNATIONAL HOLDINGS INC )(DUBAI BRANCH) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-11-02/Mumbai/Road Shows/PREMIA LIVINGS REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-11-02/Mumbai/Road Shows/PREMIA LIVINGS REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-11-09/Delhi/Road Shows/P J INTERNATIONAL REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-11-09/Delhi/Road Shows/P J INTERNATIONAL REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-11-09/Hanoi/Road Shows/KNIGHTSBRIDGE &amp; PARTNERS (HK) LIMITED</masterLabel>
+        <translation><!-- 2024-11-09/Hanoi/Road Shows/KNIGHTSBRIDGE &amp; PARTNERS (HK) LIMITED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-11-09/Hyderabad/Road Shows/CREATIVE HOMES REAL ESTATE BROKER L.L.C</masterLabel>
+        <translation><!-- 2024-11-09/Hyderabad/Road Shows/CREATIVE HOMES REAL ESTATE BROKER L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-11-09/Lucknow/Road Shows/NESTWOOD REALTY REAL ESTATE L.L.C</masterLabel>
+        <translation><!-- 2024-11-09/Lucknow/Road Shows/NESTWOOD REALTY REAL ESTATE L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-11-09/Oslo/Business Trip/RICHMOND PROPERTIES L.L.C</masterLabel>
+        <translation><!-- 2024-11-09/Oslo/Business Trip/RICHMOND PROPERTIES L.L.C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-11-09/SINGAPORE/Road Shows/FOOT PRINT REAL ESTATE BROKER</masterLabel>
+        <translation><!-- 2024-11-09/SINGAPORE/Road Shows/FOOT PRINT REAL ESTATE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-11-11/Riyadh/Business Trip/ZEAL WAY REAL ESTATE</masterLabel>
+        <translation><!-- 2024-11-11/Riyadh/Business Trip/ZEAL WAY REAL ESTATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2024-11-11/Shanghai/Road Shows/SUPERIOR AND SERENDIPITY REAL ESTATE BUYING &amp; SELLING BROKERAGE L.L.C</masterLabel>
+        <translation><!-- 2024-11-11/Shanghai/Road Shows/SUPERIOR AND SERENDIPITY REAL ESTATE BUYING &amp; SELLING BROKERAGE L.L.C --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

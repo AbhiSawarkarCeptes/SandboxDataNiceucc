@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_type_Company</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL(PropStrength__Account_Type__c,&apos;Company&apos;) &amp;&amp; ISBLANK(Authorised_Representative_Name__c) &amp;&amp; ISBLANK(Authorised_Representative_Passport_No__c)</errorConditionFormula>
+    <errorDisplayField>Authorised_Representative_Name__c</errorDisplayField>
+    <errorMessage>Enter the Authorised Signatory Name and Passport Number.</errorMessage>
+</ValidationRule>

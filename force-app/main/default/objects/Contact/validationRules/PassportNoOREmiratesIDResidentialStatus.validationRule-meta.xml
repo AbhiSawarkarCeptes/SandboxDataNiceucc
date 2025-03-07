@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PassportNoOREmiratesIDResidentialStatus</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(
+  AND(ISPICKVAL( PropStrength__Resident_Status__c , &quot;Resident Citizen&quot;), ISBLANK(Emirates_ID__c)),
+  AND(ISPICKVAL(PropStrength__Resident_Status__c, &quot;Non Resident Citizen&quot;), ISBLANK(Passport_No__c))
+)</errorConditionFormula>
+    <errorDisplayField>PropStrength__Resident_Status__c</errorDisplayField>
+    <errorMessage>Please Enter Emirates ID if Residential Status is Resident OR Passport No if Non-Resident</errorMessage>
+</ValidationRule>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Charge_1Value__c</columns>
+    <columns>Charge_2Value__c</columns>
+    <columns>Charge_3Value__c</columns>
+    <columns>Charge_4Value__c</columns>
+    <columns>Charge_5Value__c</columns>
+    <columns>Charge_6Value__c</columns>
+    <columns>Charge_7Value__c</columns>
+    <columns>Charge_8Value__c</columns>
+    <columns>Demand_Raised__c</columns>
+    <columns>is_demand_raised__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>is_demand_raised__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>All</label>
+</ListView>

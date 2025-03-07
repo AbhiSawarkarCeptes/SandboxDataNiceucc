@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Total Interest Paid Till Date --></label>
+    <name>Total_Interest_Paid_Till_Date__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancellation_without_Cause</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ISPICKVAL(Approval_Status_Interim__c,&apos;Rejected&apos;) 
+|| ISPICKVAL(Approval_Status_Interim__c,&apos;Auto-Rejected - Payment not made&apos;) ) &amp;&amp;  ISPICKVAL(Rejection_Cause__c,&quot;&quot;)</errorConditionFormula>
+    <errorDisplayField>Rejection_Cause__c</errorDisplayField>
+    <errorMessage>Cannot Reject an IPR without giving Rejection Cause</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ID__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Enter Full Name as per Passport</inlineHelpText>
+    <label>SC ID</label>
+    <referenceTo>Sobha_Connect__c</referenceTo>
+    <relationshipLabel>Broker Meeting Tracker (Sales)</relationshipLabel>
+    <relationshipName>Sales_Meeting_Tracker</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

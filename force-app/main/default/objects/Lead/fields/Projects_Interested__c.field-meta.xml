@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Projects_Interested__c</fullName>
+    <label>Other Projects Interested</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Codename Mumbai Dreams</fullName>
+                <default>false</default>
+                <label>Codename Mumbai Dreams</label>
+            </value>
+            <value>
+                <fullName>Joyville Hinjewadi</fullName>
+                <default>false</default>
+                <label>Joyville Hinjewadi</label>
+            </value>
+            <value>
+                <fullName>Joyville Virar</fullName>
+                <default>false</default>
+                <label>Joyville Virar</label>
+            </value>
+            <value>
+                <fullName>Parkwest</fullName>
+                <default>false</default>
+                <label>Parkwest</label>
+            </value>
+            <value>
+                <fullName>Alpine</fullName>
+                <default>false</default>
+                <label>Alpine</label>
+            </value>
+            <value>
+                <fullName>Astron</fullName>
+                <default>false</default>
+                <label>Astron</label>
+            </value>
+            <value>
+                <fullName>Epsilon</fullName>
+                <default>false</default>
+                <label>Epsilon</label>
+            </value>
+            <value>
+                <fullName>Lumiere</fullName>
+                <default>false</default>
+                <label>Lumiere</label>
+            </value>
+            <value>
+                <fullName>Imperial</fullName>
+                <default>false</default>
+                <label>Imperial</label>
+            </value>
+            <value>
+                <fullName>SP Residency</fullName>
+                <default>false</default>
+                <label>SP Residency</label>
+            </value>
+            <value>
+                <fullName>Vicinia</fullName>
+                <default>false</default>
+                <label>Vicinia</label>
+            </value>
+            <value>
+                <fullName>Shukhobrishti</fullName>
+                <default>false</default>
+                <label>Shukhobrishti</label>
+            </value>
+            <value>
+                <fullName>Imperial edge</fullName>
+                <default>false</default>
+                <label>Imperial edge</label>
+            </value>
+            <value>
+                <fullName>Joyville - Howrah</fullName>
+                <default>false</default>
+                <label>Joyville - Howrah</label>
+            </value>
+            <value>
+                <fullName>SP Infocity - Manesar</fullName>
+                <default>false</default>
+                <label>SP Infocity - Manesar</label>
+            </value>
+            <value>
+                <fullName>SP Infocity - Mohali</fullName>
+                <default>false</default>
+                <label>SP Infocity - Mohali</label>
+            </value>
+            <value>
+                <fullName>SP Infocity - Nagpur</fullName>
+                <default>false</default>
+                <label>SP Infocity - Nagpur</label>
+            </value>
+            <value>
+                <fullName>SP Infocity - Pune</fullName>
+                <default>false</default>
+                <label>SP Infocity - Pune</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

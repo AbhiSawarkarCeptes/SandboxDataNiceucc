@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Country Code --></label>
+    <name>Country_Code__c</name>
+    <picklistValues>
+        <masterLabel>+1</masterLabel>
+        <translation><!-- +1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+20</masterLabel>
+        <translation><!-- +20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+221</masterLabel>
+        <translation><!-- +221 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+223</masterLabel>
+        <translation><!-- +223 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+225</masterLabel>
+        <translation><!-- +225 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+230</masterLabel>
+        <translation><!-- +230 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+233</masterLabel>
+        <translation><!-- +233 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+234</masterLabel>
+        <translation><!-- +234 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+254</masterLabel>
+        <translation><!-- +254 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+27</masterLabel>
+        <translation><!-- +27 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+30</masterLabel>
+        <translation><!-- +30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+33</masterLabel>
+        <translation><!-- +33 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+34</masterLabel>
+        <translation><!-- +34 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+351</masterLabel>
+        <translation><!-- +351 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+353</masterLabel>
+        <translation><!-- +353 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+358</masterLabel>
+        <translation><!-- +358 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+36</masterLabel>
+        <translation><!-- +36 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+39</masterLabel>
+        <translation><!-- +39 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+41</masterLabel>
+        <translation><!-- +41 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+43</masterLabel>
+        <translation><!-- +43 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+44</masterLabel>
+        <translation><!-- +44 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+45</masterLabel>
+        <translation><!-- +45 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+46</masterLabel>
+        <translation><!-- +46 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+47</masterLabel>
+        <translation><!-- +47 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+48</masterLabel>
+        <translation><!-- +48 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+49</masterLabel>
+        <translation><!-- +49 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+506</masterLabel>
+        <translation><!-- +506 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+54</masterLabel>
+        <translation><!-- +54 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+55</masterLabel>
+        <translation><!-- +55 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+60</masterLabel>
+        <translation><!-- +60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+61</masterLabel>
+        <translation><!-- +61 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+62</masterLabel>
+        <translation><!-- +62 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+63</masterLabel>
+        <translation><!-- +63 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+64</masterLabel>
+        <translation><!-- +64 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+65</masterLabel>
+        <translation><!-- +65 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+66</masterLabel>
+        <translation><!-- +66 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+7</masterLabel>
+        <translation><!-- +7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+81</masterLabel>
+        <translation><!-- +81 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+82</masterLabel>
+        <translation><!-- +82 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+852</masterLabel>
+        <translation><!-- +852 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+86</masterLabel>
+        <translation><!-- +86 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+880</masterLabel>
+        <translation><!-- +880 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+886</masterLabel>
+        <translation><!-- +886 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+91</masterLabel>
+        <translation><!-- +91 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+92</masterLabel>
+        <translation><!-- +92 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+93</masterLabel>
+        <translation><!-- +93 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+94</masterLabel>
+        <translation><!-- +94 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+960</masterLabel>
+        <translation><!-- +960 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+965</masterLabel>
+        <translation><!-- +965 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+966</masterLabel>
+        <translation><!-- +966 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+968</masterLabel>
+        <translation><!-- +968 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+971</masterLabel>
+        <translation><!-- +971 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+972</masterLabel>
+        <translation><!-- +972 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+973</masterLabel>
+        <translation><!-- +973 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+974</masterLabel>
+        <translation><!-- +974 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>+977</masterLabel>
+        <translation><!-- +977 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

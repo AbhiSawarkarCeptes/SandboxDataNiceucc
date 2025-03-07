@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Incentive Payouts</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Incentive Payouts</value>
+    </caseValues>
+    <layouts>
+        <layout>Incentive Paid Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Incentive Payouts Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Incentive Due --></label>
+        <name>Incentive_Due</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Incentive Paid --></label>
+        <name>Incentive_Paid</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

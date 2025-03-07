@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bounce_Reason_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Cheque_Bounced_Interim__c = TRUE, ISPICKVAL(Bounced_Reason__c, &apos;&apos;))</errorConditionFormula>
+    <errorDisplayField>Bounced_Reason__c</errorDisplayField>
+    <errorMessage>Bounce Reason is mandatory in Cheque bounce checkbox is true</errorMessage>
+</ValidationRule>

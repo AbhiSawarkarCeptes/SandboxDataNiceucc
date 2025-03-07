@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Title_Deed_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(OR(Text(Resale_Type__c) = &apos;Title Transfer for Plots&apos;, TEXT(Resale_Type__c)= &apos;Title Transfer for Apt &amp; Villas&apos;),IF(OR(TEXT(Rejected_To__c)=&apos;Audit Rejected to Collections&apos;,TEXT(Rejected_To__c)=&apos;Accounts Rejected to Collections&apos;,TEXT(Rejected_To__c)=&apos;Audit Rejected to Collections &amp; Accounts&apos;, TEXT(Rejected_To__c)=&apos;Audit Rejected to CRM &amp; Collections &amp; Accounts&apos;), true, false), false)</errorConditionFormula>
+    <errorDisplayField>Rejected_To__c</errorDisplayField>
+    <errorMessage>You can&apos;t reject Title Deed to Collections, Please select different team</errorMessage>
+</ValidationRule>

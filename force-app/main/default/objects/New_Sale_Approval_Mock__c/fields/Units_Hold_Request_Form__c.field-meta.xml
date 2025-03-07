@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Units_Hold_Request_Form__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Units Hold Request Form</label>
+    <referenceTo>Units_Hold_For_SM__c</referenceTo>
+    <relationshipName>unit_hold_requests11</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

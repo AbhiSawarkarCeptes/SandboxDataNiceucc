@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Action --></label>
+    <name>Action__c</name>
+    <picklistValues>
+        <masterLabel>Booking Cancellation</masterLabel>
+        <translation><!-- Booking Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delete Demand</masterLabel>
+        <translation><!-- Delete Demand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delete Receipt</masterLabel>
+        <translation><!-- Delete Receipt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receipt Amount Change</masterLabel>
+        <translation><!-- Receipt Amount Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reverse Apportionment</masterLabel>
+        <translation><!-- Reverse Apportionment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reverse Demand</masterLabel>
+        <translation><!-- Reverse Demand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unit Transfer</masterLabel>
+        <translation><!-- Unit Transfer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

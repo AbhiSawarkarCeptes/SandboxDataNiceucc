@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SD_with_whom_the_meeting_happened__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>SD with whom the meeting happened</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Broker_Meeting_Tracker2</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

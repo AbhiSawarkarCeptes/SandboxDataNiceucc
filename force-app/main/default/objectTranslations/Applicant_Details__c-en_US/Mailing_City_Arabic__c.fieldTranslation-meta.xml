@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Mailing City_Arabic --></label>
+    <name>Mailing_City_Arabic__c</name>
+    <picklistValues>
+        <masterLabel>Ahmedabad</masterLabel>
+        <translation><!-- Ahmedabad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ajmer</masterLabel>
+        <translation><!-- Ajmer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bucks</masterLabel>
+        <translation><!-- Bucks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delhi</masterLabel>
+        <translation><!-- Delhi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dubai</masterLabel>
+        <translation><!-- Dubai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guwahati</masterLabel>
+        <translation><!-- Guwahati --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jamnagar</masterLabel>
+        <translation><!-- Jamnagar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mumbai</masterLabel>
+        <translation><!-- Mumbai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nanded</masterLabel>
+        <translation><!-- Nanded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Navi Mumbai</masterLabel>
+        <translation><!-- Navi Mumbai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>She Zhen</masterLabel>
+        <translation><!-- She Zhen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thiruvananthapuram</masterLabel>
+        <translation><!-- Thiruvananthapuram --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>أبو ظبي</masterLabel>
+        <translation><!--  أبو ظبي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>أمستردام</masterLabel>
+        <translation><!--  أمستردام --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>إسطنبول</masterLabel>
+        <translation><!--  إسطنبول --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>الرياض</masterLabel>
+        <translation><!--  الرياض --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>باكو</masterLabel>
+        <translation><!--  باكو --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>بروكسل</masterLabel>
+        <translation><!--  بروكسل --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>بكين</masterLabel>
+        <translation><!--  بكين --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>بوخارست</masterLabel>
+        <translation><!--  بوخارست --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>بوديغرافن</masterLabel>
+        <translation><!--  بوديغرافن --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>بيلغورود سيتي</masterLabel>
+        <translation><!--  بيلغورود سيتي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>تتارستان</masterLabel>
+        <translation><!--  تتارستان --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>تكساس</masterLabel>
+        <translation><!--  تكساس --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>جالاندهار</masterLabel>
+        <translation><!--  جالاندهار --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>جنيف</masterLabel>
+        <translation><!--  جنيف --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>جيتيغارا</masterLabel>
+        <translation><!--  جيتيغارا --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>جيستلاند</masterLabel>
+        <translation><!--  جيستلاند --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>جِدَّة</masterLabel>
+        <translation><!--  جِدَّة --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>دبي</masterLabel>
+        <translation><!--  دبي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>دلهي</masterLabel>
+        <translation><!--  دلهي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>دوبروستي</masterLabel>
+        <translation><!--  دوبروستي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>دوشانبه</masterLabel>
+        <translation><!--  دوشانبه --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ريتشموند</masterLabel>
+        <translation><!--  ريتشموند --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>سان بطرسبرج</masterLabel>
+        <translation><!--  سان بطرسبرج --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>سان بطرسبرجV</masterLabel>
+        <translation><!--  سان بطرسبرجV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ستافروبول</masterLabel>
+        <translation><!--  ستافروبول --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>سلوفاكيا</masterLabel>
+        <translation><!--  سلوفاكيا --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>فلوريدا</masterLabel>
+        <translation><!--  فلوريدا --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>كازان</masterLabel>
+        <translation><!--  كازان --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>كالي</masterLabel>
+        <translation><!--  كالي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>كلوج</masterLabel>
+        <translation><!--  كلوج --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>كولكاتا</masterLabel>
+        <translation><!--  كولكاتا --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>كولومبو</masterLabel>
+        <translation><!--  كولومبو --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>كييف</masterLabel>
+        <translation><!--  كييف --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>مدينة أستانا</masterLabel>
+        <translation><!--  مدينة أستانا --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>مدينة أوديسا</masterLabel>
+        <translation><!--  مدينة أوديسا --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>مدينة سانت بطرسبرغ</masterLabel>
+        <translation><!--  مدينة سانت بطرسبرغ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>مدينة فولغوغراد</masterLabel>
+        <translation><!--  مدينة فولغوغراد --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>مدينة كراسنودار</masterLabel>
+        <translation><!--  مدينة كراسنودار --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>مدينة كولبوسوفا</masterLabel>
+        <translation><!--  مدينة كولبوسوفا --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>منسك</masterLabel>
+        <translation><!--  منسك --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>موسكو</masterLabel>
+        <translation><!--  موسكو --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>نوفغورود</masterLabel>
+        <translation><!--  نوفغورود --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>نيروبي</masterLabel>
+        <translation><!--  نيروبي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>نيو جيرسي</masterLabel>
+        <translation><!--  نيو جيرسي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>وارسو</masterLabel>
+        <translation><!--  وارسو --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>يريفان</masterLabel>
+        <translation><!--  يريفان --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>أبو ظبي</masterLabel>
+        <translation><!-- أبو ظبي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>أمستردام</masterLabel>
+        <translation><!-- أمستردام --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>إسطنبول</masterLabel>
+        <translation><!-- إسطنبول --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ابو ظبي</masterLabel>
+        <translation><!-- ابو ظبي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>الرياض</masterLabel>
+        <translation><!-- الرياض --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>الشارقة</masterLabel>
+        <translation><!-- الشارقة --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>باكو</masterLabel>
+        <translation><!-- باكو --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>بروكسل</masterLabel>
+        <translation><!-- بروكسل --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>بكين</masterLabel>
+        <translation><!-- بكين --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>بوخارست</masterLabel>
+        <translation><!-- بوخارست --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>بوديغرافن</masterLabel>
+        <translation><!-- بوديغرافن --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>بيلغورود سيتي</masterLabel>
+        <translation><!-- بيلغورود سيتي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>تتارستان</masterLabel>
+        <translation><!-- تتارستان --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>تكساس</masterLabel>
+        <translation><!-- تكساس --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>جالاندهار</masterLabel>
+        <translation><!-- جالاندهار --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>جنيف</masterLabel>
+        <translation><!-- جنيف --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>جيتيغارا</masterLabel>
+        <translation><!-- جيتيغارا --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>جيستلاند</masterLabel>
+        <translation><!-- جيستلاند --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>جِدَّة</masterLabel>
+        <translation><!-- جِدَّة --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>دبي</masterLabel>
+        <translation><!-- دبي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>دلهي</masterLabel>
+        <translation><!-- دلهي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>دوبروستي</masterLabel>
+        <translation><!-- دوبروستي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>دوشانبه</masterLabel>
+        <translation><!-- دوشانبه --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>راس الخيمة</masterLabel>
+        <translation><!-- راس الخيمة --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ريتشموند</masterLabel>
+        <translation><!-- ريتشموند --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>سان بطرسبرج</masterLabel>
+        <translation><!-- سان بطرسبرج --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>سان بطرسبرجV</masterLabel>
+        <translation><!-- سان بطرسبرجV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ستافروبول</masterLabel>
+        <translation><!-- ستافروبول --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>عجمان</masterLabel>
+        <translation><!-- عجمان --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>فلوريدا</masterLabel>
+        <translation><!-- فلوريدا --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>كازان</masterLabel>
+        <translation><!-- كازان --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>كالي</masterLabel>
+        <translation><!-- كالي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>كلوج</masterLabel>
+        <translation><!-- كلوج --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>كولكاتا</masterLabel>
+        <translation><!-- كولكاتا --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>كولومبو</masterLabel>
+        <translation><!-- كولومبو --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>كييف</masterLabel>
+        <translation><!-- كييف --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>مدينة أستانا</masterLabel>
+        <translation><!-- مدينة أستانا --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>مدينة أوديسا</masterLabel>
+        <translation><!-- مدينة أوديسا --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>مدينة سانت بطرسبرغ</masterLabel>
+        <translation><!-- مدينة سانت بطرسبرغ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>مدينة فولغوغراد</masterLabel>
+        <translation><!-- مدينة فولغوغراد --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>مدينة كراسنودار</masterLabel>
+        <translation><!-- مدينة كراسنودار --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>مدينة كولبوسوفا</masterLabel>
+        <translation><!-- مدينة كولبوسوفا --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>منسك</masterLabel>
+        <translation><!-- منسك --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>موسكو</masterLabel>
+        <translation><!-- موسكو --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>نوفغورود</masterLabel>
+        <translation><!-- نوفغورود --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>نيروبي</masterLabel>
+        <translation><!-- نيروبي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>نيو جيرسي</masterLabel>
+        <translation><!-- نيو جيرسي --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>وارسو</masterLabel>
+        <translation><!-- وارسو --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>يريفان</masterLabel>
+        <translation><!-- يريفان --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

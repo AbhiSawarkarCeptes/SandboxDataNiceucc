@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PropStrength__Associated_Projects__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This account is associated with these projects.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This account is associated with these projects.</inlineHelpText>
+    <label>Associated Projects</label>
+    <length>200</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

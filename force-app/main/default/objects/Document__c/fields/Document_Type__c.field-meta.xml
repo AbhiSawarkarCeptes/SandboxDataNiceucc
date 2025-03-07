@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Document_Type__c</fullName>
+    <label>Document Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SPA</fullName>
+                <default>false</default>
+                <label>SPA</label>
+            </value>
+            <value>
+                <fullName>DSPA</fullName>
+                <default>false</default>
+                <label>DSPA</label>
+            </value>
+            <value>
+                <fullName>MOU</fullName>
+                <default>false</default>
+                <label>MOU</label>
+            </value>
+            <value>
+                <fullName>All</fullName>
+                <default>false</default>
+                <label>All</label>
+            </value>
+            <value>
+                <fullName>Booking Form</fullName>
+                <default>false</default>
+                <label>Booking Form</label>
+            </value>
+            <value>
+                <fullName>Amendment Letter</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Amendment Letter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

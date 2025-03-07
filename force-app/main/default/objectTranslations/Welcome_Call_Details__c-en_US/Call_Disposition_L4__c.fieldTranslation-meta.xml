@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Disposition L4 --></label>
+    <name>Call_Disposition_L4__c</name>
+    <picklistValues>
+        <masterLabel>A particular brand committed</masterLabel>
+        <translation><!-- A particular brand committed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assured registration at OCR &lt;10% without Bank Sanction</masterLabel>
+        <translation><!-- Assured registration at OCR &lt;10% without Bank Sanction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assured stand alone car park</masterLabel>
+        <translation><!-- Assured stand alone car park --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cant Afford</masterLabel>
+        <translation><!-- Cant Afford --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change of Mind</masterLabel>
+        <translation><!-- Change of Mind --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer did not want car park</masterLabel>
+        <translation><!-- Customer did not want car park --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer mentioned Facebook</masterLabel>
+        <translation><!-- Customer mentioned Facebook --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer mentioned Hoarding</masterLabel>
+        <translation><!-- Customer mentioned Hoarding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer mentioned Newspaper</masterLabel>
+        <translation><!-- Customer mentioned Newspaper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer mentioned Website</masterLabel>
+        <translation><!-- Customer mentioned Website --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer mentioned through Reference</masterLabel>
+        <translation><!-- Customer mentioned through Reference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer was informed +/- car park</masterLabel>
+        <translation><!-- Customer was informed +/- car park --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Death in Family</masterLabel>
+        <translation><!-- Death in Family --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deviation in Carpet Area</masterLabel>
+        <translation><!-- Deviation in Carpet Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diffierent Possession Date Communicated</masterLabel>
+        <translation><!-- Diffierent Possession Date Communicated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Family Disagreed</masterLabel>
+        <translation><!-- Family Disagreed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Constraints</masterLabel>
+        <translation><!-- Financial Constraints --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Floor</masterLabel>
+        <translation><!-- Floor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect</masterLabel>
+        <translation><!-- Incorrect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Informed the rate is inclusive of Car Park</masterLabel>
+        <translation><!-- Informed the rate is inclusive of Car Park --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Given</masterLabel>
+        <translation><!-- Not Given --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offer Not Valid</masterLabel>
+        <translation><!-- Offer Not Valid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offer Promised, but not mentioned</masterLabel>
+        <translation><!-- Offer Promised, but not mentioned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Only asked for site address</masterLabel>
+        <translation><!-- Only asked for site address --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Charges not explained</masterLabel>
+        <translation><!-- Other Charges not explained --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specific type of car park allotment</masterLabel>
+        <translation><!-- Specific type of car park allotment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unapproved payment plan</masterLabel>
+        <translation><!-- Unapproved payment plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unapprroved amenities</masterLabel>
+        <translation><!-- Unapprroved amenities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unit No.</masterLabel>
+        <translation><!-- Unit No. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>View</masterLabel>
+        <translation><!-- View --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

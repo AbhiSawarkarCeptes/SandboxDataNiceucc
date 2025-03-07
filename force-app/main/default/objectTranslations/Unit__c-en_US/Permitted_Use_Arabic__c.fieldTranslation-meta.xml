@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Permitted Use Docgen Arabic --></label>
+    <name>Permitted_Use_Arabic__c</name>
+    <picklistValues>
+        <masterLabel>لغرض المطعم فقط</masterLabel>
+        <translation><!-- لغرض المطعم فقط --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>للغرض التجاري فقط</masterLabel>
+        <translation><!-- للغرض التجاري فقط --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

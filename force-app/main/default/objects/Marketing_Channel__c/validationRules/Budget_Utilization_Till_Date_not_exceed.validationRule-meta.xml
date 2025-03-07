@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Utilization_Till_Date_not_exceed</fullName>
+    <active>true</active>
+    <description>Budget Utilization Till Date can&apos;t be greater than Budget Allotted</description>
+    <errorConditionFormula>Budget_Utilization_Till_Date__c &gt; Budget_Allotted__c</errorConditionFormula>
+    <errorMessage>Budget Utilization Till Date can&apos;t be greater than Budget Allotted</errorMessage>
+</ValidationRule>

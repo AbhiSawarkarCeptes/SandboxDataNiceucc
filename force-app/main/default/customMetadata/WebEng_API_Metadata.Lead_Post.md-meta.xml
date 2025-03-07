@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Lead Post</label>
+    <protected>false</protected>
+    <values>
+        <field>API_Name__c</field>
+        <value xsi:type="xsd:string">Lead Post</value>
+    </values>
+    <values>
+        <field>End_Point__c</field>
+        <value xsi:type="xsd:string">https://api.in.webengage.com/v1/accounts/in~8261722b/users</value>
+    </values>
+    <values>
+        <field>Method_Name__c</field>
+        <value xsi:type="xsd:string">POST</value>
+    </values>
+</CustomMetadata>

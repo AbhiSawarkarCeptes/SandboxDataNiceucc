@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Walk_in_Customer_Mobile</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Walk_in_Detailed_Sub_Source__c, &apos;Non-Customer&apos;), Walk_in_Mobile_of_Refree__c == null)</errorConditionFormula>
+    <errorDisplayField>Walk_in_Mobile_of_Refree__c</errorDisplayField>
+    <errorMessage>You must select a value.</errorMessage>
+</ValidationRule>

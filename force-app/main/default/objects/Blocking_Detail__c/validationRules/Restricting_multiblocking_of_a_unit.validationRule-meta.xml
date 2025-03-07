@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restricting_multiblocking_of_a_unit</fullName>
+    <active>true</active>
+    <description>This unit is already blocked by someone. Please contact the admininstrator for more details.</description>
+    <errorConditionFormula>AND (ISPICKVAL(Unit__r.Unit_Status__c,&apos;Blocked&apos;),ISPICKVAL( Status__c, &apos;Blocked&apos;))</errorConditionFormula>
+    <errorMessage>Restricting to one blocking request per unit</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPA_Mailing_Address_English_Merged__c</fullName>
+    <description>Mailing_Address__c &amp;&quot;,&quot;&amp; TEXT(Mailing_Country__c)</description>
+    <externalId>false</externalId>
+    <formula>TRIM(Mailing_Address__c) + IF(NOT(ISPICKVAL(Mailing_City__c,&apos;&apos;)),&apos;,&apos;,&apos;&apos;) + TRIM(TEXT(Mailing_City__c)) + IF(NOT(ISPICKVAL(Mailing_State__c,&apos;&apos;)),&apos;,&apos;,&apos;&apos;) + TRIM(TEXT(Mailing_State__c)) + IF(NOT(ISPICKVAL(Mailing_Country__c,&apos;&apos;)),&apos;,&apos;,&apos;&apos;) + TRIM(TEXT(Mailing_Country__c)) + IF(NOT(ISNULL(Mailing_Pincode__c)),&apos;,&apos;,&apos;&apos;) + TRIM(TEXT(Mailing_Pincode__c))</formula>
+    <label>SPA Mailing Address English Merged</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

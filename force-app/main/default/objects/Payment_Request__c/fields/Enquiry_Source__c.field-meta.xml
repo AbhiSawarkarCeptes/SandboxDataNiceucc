@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enquiry_Source__c</fullName>
+    <label>Enquiry Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Web</fullName>
+                <default>false</default>
+                <label>Web</label>
+            </value>
+            <value>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+                <label>Direct Mail</label>
+            </value>
+            <value>
+                <fullName>Phone Enquiry</fullName>
+                <default>false</default>
+                <label>Phone Enquiry</label>
+            </value>
+            <value>
+                <fullName>Word of Mouth</fullName>
+                <default>false</default>
+                <label>Word of Mouth</label>
+            </value>
+            <value>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+                <label>Walk-in</label>
+            </value>
+            <value>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+                <label>Channel Partner</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect</fullName>
+                <default>false</default>
+                <label>Sobha Connect</label>
+            </value>
+            <value>
+                <fullName>Loyalty Sales</fullName>
+                <default>false</default>
+                <label>Loyalty Sales</label>
+            </value>
+            <value>
+                <fullName>Trade Show/ Exhibition</fullName>
+                <default>false</default>
+                <label>Trade Show/ Exhibition</label>
+            </value>
+            <value>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+                <label>Advertisement</label>
+            </value>
+            <value>
+                <fullName>Hoarding</fullName>
+                <default>false</default>
+                <label>Hoarding</label>
+            </value>
+            <value>
+                <fullName>Newspaper</fullName>
+                <default>false</default>
+                <label>Newspaper</label>
+            </value>
+            <value>
+                <fullName>Radio</fullName>
+                <default>false</default>
+                <label>Radio</label>
+            </value>
+            <value>
+                <fullName>Print Media</fullName>
+                <default>false</default>
+                <label>Print Media</label>
+            </value>
+            <value>
+                <fullName>Digital Marketing Sales (Inc. Influencer)</fullName>
+                <default>false</default>
+                <label>Digital Marketing Sales (Inc. Influencer)</label>
+            </value>
+            <value>
+                <fullName>Property Portal</fullName>
+                <default>false</default>
+                <label>Property Portal</label>
+            </value>
+            <value>
+                <fullName>Contact Centre</fullName>
+                <default>false</default>
+                <label>Contact Centre</label>
+            </value>
+            <value>
+                <fullName>Mall Stands/Kiosks Sales</fullName>
+                <default>false</default>
+                <label>Mall Stands/Kiosks Sales</label>
+            </value>
+            <value>
+                <fullName>Unified Messaging</fullName>
+                <default>false</default>
+                <label>Unified Messaging</label>
+            </value>
+            <value>
+                <fullName>Telesales</fullName>
+                <default>false</default>
+                <label>Telesales</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

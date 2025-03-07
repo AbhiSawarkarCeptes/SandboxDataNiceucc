@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved by Accounts</masterLabel>
+        <translation><!-- Approved by Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by Audit</masterLabel>
+        <translation><!-- Approved by Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by Collection Head</masterLabel>
+        <translation><!-- Approved by Collection Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for Accounts Approval</masterLabel>
+        <translation><!-- Pending for Accounts Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for Audit Approval</masterLabel>
+        <translation><!-- Pending for Audit Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for Collection Head Approval</masterLabel>
+        <translation><!-- Pending for Collection Head Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Accounts</masterLabel>
+        <translation><!-- Rejected by Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Audit</masterLabel>
+        <translation><!-- Rejected by Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Audit &amp; Submitted to Accounts</masterLabel>
+        <translation><!-- Rejected by Audit &amp; Submitted to Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Audit &amp; Submitted to Accounts &amp; Collection</masterLabel>
+        <translation><!-- Rejected by Audit &amp; Submitted to Accounts &amp; Collection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Audit &amp; Submitted to Collection</masterLabel>
+        <translation><!-- Rejected by Audit &amp; Submitted to Collection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Collection Head</masterLabel>
+        <translation><!-- Rejected by Collection Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resubmitted to Accounts</masterLabel>
+        <translation><!-- Resubmitted to Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resubmitted to Audit</masterLabel>
+        <translation><!-- Resubmitted to Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted</masterLabel>
+        <translation><!-- Submitted --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

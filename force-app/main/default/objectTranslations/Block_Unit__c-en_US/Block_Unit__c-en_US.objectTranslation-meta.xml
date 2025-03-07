@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Hold Unit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Hold Units</value>
+    </caseValues>
+    <layouts>
+        <layout>Block Unit Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot select back Date and Time --></errorMessage>
+        <name>DataandTimeofHoldUnitisnotlessthanNow</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Selected unit is not in Available status to hold. --></errorMessage>
+        <name>Unit_Should_be_Available</name>
+    </validationRules>
+</CustomObjectTranslation>

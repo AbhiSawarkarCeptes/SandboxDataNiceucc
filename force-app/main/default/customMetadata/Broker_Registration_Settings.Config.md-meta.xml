@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Config</label>
+    <protected>false</protected>
+    <values>
+        <field>Duplication_Check_for_Registration_No__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Escalate_to_Audit_Head__c</field>
+        <value xsi:type="xsd:double">4.0</value>
+    </values>
+    <values>
+        <field>Escalate_to_Audit_Manager__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+    <values>
+        <field>Escalate_to_CHRM_Ops_Head_Agreement__c</field>
+        <value xsi:type="xsd:double">4.0</value>
+    </values>
+    <values>
+        <field>Escalate_to_CHRM_Ops_Head_NOC__c</field>
+        <value xsi:type="xsd:double">4.0</value>
+    </values>
+    <values>
+        <field>Escalate_to_CHRM_Ops_Manager_Agreement__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+    <values>
+        <field>Escalate_to_CHRM_Ops_Manager_NOC__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+    <values>
+        <field>Exception_Status_Prevent_Edit_CHRM__c</field>
+        <value xsi:type="xsd:string">CHRM Registration Done,Pending with CHRM Manager,Pending with CHRM OPS,Rejected - Rejected by CHRM Manager,Rejected - Rejected by CHRM OPS,Rejected by Audit</value>
+    </values>
+    <values>
+        <field>Missing_Docs_Reminder_1st__c</field>
+        <value xsi:type="xsd:double">3.0</value>
+    </values>
+    <values>
+        <field>Missing_Docs_Reminder_2nd__c</field>
+        <value xsi:type="xsd:double">6.0</value>
+    </values>
+    <values>
+        <field>Missing_Docs_Reminder_3rd__c</field>
+        <value xsi:type="xsd:double">9.0</value>
+    </values>
+    <values>
+        <field>Missing_Docs_Reminder_4th__c</field>
+        <value xsi:type="xsd:double">12.0</value>
+    </values>
+    <values>
+        <field>Missing_Docs_Reminder_5th__c</field>
+        <value xsi:type="xsd:double">15.0</value>
+    </values>
+    <values>
+        <field>Missing_Docs_Reminder_6th__c</field>
+        <value xsi:type="xsd:double">18.0</value>
+    </values>
+    <values>
+        <field>Missing_Docs_Reminder_7th__c</field>
+        <value xsi:type="xsd:double">20.0</value>
+    </values>
+    <values>
+        <field>Profile_Allowed_to_Edit__c</field>
+        <value xsi:type="xsd:string">Channel Partners,CP Profile,CP Manager,Channel Operations Executive</value>
+    </values>
+</CustomMetadata>

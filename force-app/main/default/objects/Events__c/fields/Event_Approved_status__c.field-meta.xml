@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Event_Approved_status__c</fullName>
+    <label>Event approval status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>The event has been Submitted for the Invoice Raise Approval</fullName>
+                <default>false</default>
+                <label>The event has been Submitted for the Invoice Raise Approval</label>
+            </value>
+            <value>
+                <fullName>The event has been Approved for the Invoice Raise</fullName>
+                <default>false</default>
+                <label>The event has been Approved for the Invoice Raise</label>
+            </value>
+            <value>
+                <fullName>The event has been Rejected before the Invoice Raise</fullName>
+                <default>false</default>
+                <label>The event has been Rejected before the Invoice Raise</label>
+            </value>
+            <value>
+                <fullName>The event has been Submitted for the after Invoice Raise Approval to CP Head</fullName>
+                <default>false</default>
+                <label>The event has been Submitted for the after Invoice Raise Approval to CP Head</label>
+            </value>
+            <value>
+                <fullName>After Invoice Raise Approved by CP Head</fullName>
+                <default>false</default>
+                <label>After Invoice Raise Approved by CP Head</label>
+            </value>
+            <value>
+                <fullName>The event has been Submitted for the after Invoice Raise Rejected by CP Head</fullName>
+                <default>false</default>
+                <label>The event has been Submitted for the after Invoice Raise Rejected by CP Head</label>
+            </value>
+            <value>
+                <fullName>The event has been Submitted for the after Invoice Raise Approval  for CSO</fullName>
+                <default>false</default>
+                <label>The event has been Submitted for the after Invoice Raise Approval  for CSO</label>
+            </value>
+            <value>
+                <fullName>The event has been approved by Manish Goenka</fullName>
+                <default>false</default>
+                <label>The event has been approved by Manish Goenka</label>
+            </value>
+            <value>
+                <fullName>The event has been rejected by Manish Goenka</fullName>
+                <default>false</default>
+                <label>The event has been rejected by Manish Goenka</label>
+            </value>
+            <value>
+                <fullName>The event has been approved by Sales Director</fullName>
+                <default>false</default>
+                <label>The event has been approved by Sales Director</label>
+            </value>
+            <value>
+                <fullName>The event has been rejected by Sales Director</fullName>
+                <default>false</default>
+                <label>The event has been rejected by Sales Director</label>
+            </value>
+            <value>
+                <fullName>The event has been approved by Channel Relationship Manager</fullName>
+                <default>false</default>
+                <label>The event has been approved by CHRM manager</label>
+            </value>
+            <value>
+                <fullName>The event has been rejected by Channel Relationship Manager</fullName>
+                <default>false</default>
+                <label>The event has been rejected by CHRM manager</label>
+            </value>
+            <value>
+                <fullName>The event has been approved by Channel Relationship Head</fullName>
+                <default>false</default>
+                <label>The event has been approved by CHRM manager TL</label>
+            </value>
+            <value>
+                <fullName>The event has been rejected by Channel Relationship Head</fullName>
+                <default>false</default>
+                <label>The event has been rejected by CHRM manager TL</label>
+            </value>
+            <value>
+                <fullName>The event has been approved by Avin Anil</fullName>
+                <default>false</default>
+                <label>The event has been approved by Maria</label>
+            </value>
+            <value>
+                <fullName>The event has been rejected by Avin Anil</fullName>
+                <default>false</default>
+                <label>The event has been rejected by Maria</label>
+            </value>
+            <value>
+                <fullName>The event has been approved by Ashish Parakh</fullName>
+                <default>false</default>
+                <label>The event has been approved by Ashish Parakh</label>
+            </value>
+            <value>
+                <fullName>The event has been rejected by Ashish Parakh</fullName>
+                <default>false</default>
+                <label>The event has been rejected by Ashish Parakh</label>
+            </value>
+            <value>
+                <fullName>The event has been approved by GM Hospitality</fullName>
+                <default>false</default>
+                <label>The event has been approved by GM Hospitality</label>
+            </value>
+            <value>
+                <fullName>The event has been rejected by GM Hospitality</fullName>
+                <default>false</default>
+                <label>The event has been rejected by GM Hospitality</label>
+            </value>
+            <value>
+                <fullName>This event has been submitted by GM after invoice approval</fullName>
+                <default>false</default>
+                <label>This event has been submitted by GM after invoice approval</label>
+            </value>
+            <value>
+                <fullName>The event has been approved by CRM OPs after Invoice Approval</fullName>
+                <default>false</default>
+                <label>The event has been approved by CRM OPs after Invoice Approval</label>
+            </value>
+            <value>
+                <fullName>Pending With Sales Director</fullName>
+                <default>false</default>
+                <label>Pending With Sales Director</label>
+            </value>
+            <value>
+                <fullName>Pending With VP</fullName>
+                <default>false</default>
+                <label>Pending With VP</label>
+            </value>
+            <value>
+                <fullName>Pending With CHRM manager</fullName>
+                <default>false</default>
+                <label>Pending With CHRM manager</label>
+            </value>
+            <value>
+                <fullName>Pending With CHRM manager TL</fullName>
+                <default>false</default>
+                <label>Pending With CHRM manager TL</label>
+            </value>
+            <value>
+                <fullName>Pending With Avin Anil</fullName>
+                <default>false</default>
+                <label>Pending With Maria</label>
+            </value>
+            <value>
+                <fullName>Pending With Ashish Parakh</fullName>
+                <default>false</default>
+                <label>Pending With Ashish Parakh</label>
+            </value>
+            <value>
+                <fullName>Pending With Manish Goenka</fullName>
+                <default>false</default>
+                <label>Pending With Manish Goenka</label>
+            </value>
+            <value>
+                <fullName>Pending With Khodr El Masri/Invoice submitted by Khodr El Masri</fullName>
+                <default>false</default>
+                <label>Pending for Hotel Finalization</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>The event has been approved by VP</fullName>
+                <default>false</default>
+                <label>The event has been approved by VP</label>
+            </value>
+            <value>
+                <fullName>The event has been rejected by VP</fullName>
+                <default>false</default>
+                <label>The event has been rejected by VP</label>
+            </value>
+            <value>
+                <fullName>The event has been approved by CSO</fullName>
+                <default>false</default>
+                <label>The event has been approved by CSO</label>
+            </value>
+            <value>
+                <fullName>Invoice Under Review</fullName>
+                <default>false</default>
+                <label>Invoice Under Review</label>
+            </value>
+            <value>
+                <fullName>Venue Cost Pending Approval - CMO</fullName>
+                <default>false</default>
+                <label>Venue Cost Pending Approval - CMO</label>
+            </value>
+            <value>
+                <fullName>Venue Cost Pending Approval - CSO</fullName>
+                <default>false</default>
+                <label>Venue Cost Pending Approval - CSO</label>
+            </value>
+            <value>
+                <fullName>Venue Cost Resubmission Needed</fullName>
+                <default>false</default>
+                <label>Venue Cost Resubmission Needed</label>
+            </value>
+            <value>
+                <fullName>Venue Cost Approved</fullName>
+                <default>false</default>
+                <label>Venue Cost Approved</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>The event has been Approved by SVP</fullName>
+                <default>false</default>
+                <label>The event has been Approved by SVP</label>
+            </value>
+            <value>
+                <fullName>The event has been rejected by SVP</fullName>
+                <default>false</default>
+                <label>The event has been rejected by SVP</label>
+            </value>
+            <value>
+                <fullName>Approved by AVP</fullName>
+                <default>false</default>
+                <label>Approved by AVP</label>
+            </value>
+            <value>
+                <fullName>Rejected by AVP</fullName>
+                <default>false</default>
+                <label>Rejected by AVP</label>
+            </value>
+            <value>
+                <fullName>Pending with AVP</fullName>
+                <default>false</default>
+                <label>Pending with AVP</label>
+            </value>
+            <value>
+                <fullName>Pending With SVP</fullName>
+                <default>false</default>
+                <label>Pending With SVP</label>
+            </value>
+            <value>
+                <fullName>Pending with Anuj</fullName>
+                <default>false</default>
+                <label>Pending with Anuj</label>
+            </value>
+            <value>
+                <fullName>Approved by Anuj</fullName>
+                <default>false</default>
+                <label>Approved by Anuj</label>
+            </value>
+            <value>
+                <fullName>Rejected by Anuj</fullName>
+                <default>false</default>
+                <label>Rejected by Anuj</label>
+            </value>
+            <value>
+                <fullName>Approved by CMO</fullName>
+                <default>false</default>
+                <label>Approved by CMO</label>
+            </value>
+            <value>
+                <fullName>The event has been Approved by Team Lead</fullName>
+                <default>false</default>
+                <label>The event has been Approved by Team Lead</label>
+            </value>
+            <value>
+                <fullName>The event has been Rejected by Team Lead</fullName>
+                <default>false</default>
+                <label>The event has been Rejected by Team Lead</label>
+            </value>
+            <value>
+                <fullName>The event has been Approved by Sales Manager</fullName>
+                <default>false</default>
+                <label>The event has been Approved by Sales Manager</label>
+            </value>
+            <value>
+                <fullName>The event has been Rejected by Sales Manager</fullName>
+                <default>false</default>
+                <label>The event has been Rejected by Sales Manager</label>
+            </value>
+            <value>
+                <fullName>Venue Cost Approved-HOD</fullName>
+                <default>false</default>
+                <label>Venue Cost Approved-HOD</label>
+            </value>
+            <value>
+                <fullName>Venue Cost Approved-CMO</fullName>
+                <default>false</default>
+                <label>Venue Cost Approved-CMO</label>
+            </value>
+            <value>
+                <fullName>Venue Cost Rejected-HOD</fullName>
+                <default>false</default>
+                <label>Venue Cost Rejected-HOD</label>
+            </value>
+            <value>
+                <fullName>Venue Cost Rejected-CMO</fullName>
+                <default>false</default>
+                <label>Venue Cost Rejected-CMO</label>
+            </value>
+            <value>
+                <fullName>Pending With Channel Ops</fullName>
+                <default>false</default>
+                <label>Pending With Channel Ops</label>
+            </value>
+            <value>
+                <fullName>Venue Cost Approval - pending with AVP</fullName>
+                <default>false</default>
+                <label>Venue Cost Approval - pending with AVP</label>
+            </value>
+            <value>
+                <fullName>Pending with Swapnil</fullName>
+                <default>false</default>
+                <label>Pending with Swapnil</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Can this user be assigned records in the Assignment Group process.  Uncheck to mark this use as inactive on all assignment groups --></help>
+    <label><!-- Assignment Group Active --></label>
+    <name>Assignment_Group_Active__c</name>
+</CustomFieldTranslation>

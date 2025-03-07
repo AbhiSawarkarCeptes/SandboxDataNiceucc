@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Document_Verification_L4__c</fullName>
+    <label>Document Verification L4</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Document_Verification_L3__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Incorrect Favoring</fullName>
+                <default>false</default>
+                <label>Incorrect Favoring</label>
+            </value>
+            <value>
+                <fullName>Amount words/number mismatch</fullName>
+                <default>false</default>
+                <label>Amount words/number mismatch</label>
+            </value>
+            <value>
+                <fullName>Overwriting</fullName>
+                <default>false</default>
+                <label>Overwriting</label>
+            </value>
+            <value>
+                <fullName>Main Applicant</fullName>
+                <default>false</default>
+                <label>Main Applicant</label>
+            </value>
+            <value>
+                <fullName>Co-Applicant</fullName>
+                <default>false</default>
+                <label>Co-Applicant</label>
+            </value>
+            <value>
+                <fullName>Both</fullName>
+                <default>false</default>
+                <label>Both</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>PAN</controllingFieldValue>
+            <controllingFieldValue>Aadhar</controllingFieldValue>
+            <valueName>Main Applicant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PAN</controllingFieldValue>
+            <controllingFieldValue>Aadhar</controllingFieldValue>
+            <valueName>Co-Applicant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PAN</controllingFieldValue>
+            <controllingFieldValue>Aadhar</controllingFieldValue>
+            <valueName>Both</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

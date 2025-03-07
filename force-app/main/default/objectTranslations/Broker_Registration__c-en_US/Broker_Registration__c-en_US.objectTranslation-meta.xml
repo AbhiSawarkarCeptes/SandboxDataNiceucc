@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Broker Registration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Broker Registrations</value>
+    </caseValues>
+    <layouts>
+        <layout>Broker Registration Layout</layout>
+        <sections>
+            <label><!-- Authorized signatory details --></label>
+            <section>Authorized signatory details</section>
+        </sections>
+        <sections>
+            <label><!-- Company Details --></label>
+            <section>Company Details</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Details --></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Mailing Address --></label>
+            <section>Mailing Address</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Broker Registration Layout Channel Ops</layout>
+        <sections>
+            <label><!-- Authorized signatory details --></label>
+            <section>Authorized signatory details</section>
+        </sections>
+        <sections>
+            <label><!-- Company Details --></label>
+            <section>Company Details</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Details --></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Check List --></label>
+            <section>Document Check List</section>
+        </sections>
+        <sections>
+            <label><!-- Mailing Address --></label>
+            <section>Mailing Address</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal Details --></label>
+            <section>Renewal Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Click to Dial --></label>
+        <name>Click_to_Dial</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Field Update Request --></label>
+        <name>Field_Update_Request</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Field Update Request Account --></label>
+        <name>Field_Update_Request2</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate Agreement --></label>
+        <name>Generate_Agreement</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate CP/SC ID --></label>
+        <name>Generate_CP_SC_ID</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Resend Registration Link --></label>
+        <name>Resend_Registration_Link</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Agreement to Broker --></label>
+        <name>Send_Agreement_to_Broker</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Extension to Broker --></label>
+        <name>Send_Extension_to_Broker</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Renewal Link --></label>
+        <name>Send_Renewal_Link</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Executed Agreement to Broker --></label>
+        <name>Send_Signed_Agreement</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send for Final Signatures --></label>
+        <name>Send_for_Approval</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- New --></label>
+        <name>New</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Renewal --></label>
+        <name>Renewal</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Generate_Extension_Letter --></label>
+        <name>Generate_Extension_Letter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_NOC --></label>
+        <name>Generate_NOC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Run_DocGen_Package --></label>
+        <name>Run_DocGen_Package</name>
+    </webLinks>
+</CustomObjectTranslation>

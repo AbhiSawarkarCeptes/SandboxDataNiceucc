@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>External Verification Register</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>External Verification Registers</value>
+    </caseValues>
+    <layouts>
+        <layout>External Verification Register Layout</layout>
+        <sections>
+            <label><!-- AR Verification --></label>
+            <section>AR Verification</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Verification --></label>
+            <section>Audit Verification</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- SOA Verification --></label>
+            <section>SOA Verification</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

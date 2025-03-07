@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resale_Type__c</fullName>
+    <label>Resale Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Resale with Mortgage</fullName>
+                <default>false</default>
+                <label>Resale with Mortgage</label>
+            </value>
+            <value>
+                <fullName>Title Transfer for Plots</fullName>
+                <default>false</default>
+                <label>Title Transfer for Plots</label>
+            </value>
+            <value>
+                <fullName>Title Transfer for Apt &amp; Villas</fullName>
+                <default>false</default>
+                <label>Title Transfer for Apt &amp; Villas</label>
+            </value>
+            <value>
+                <fullName>Oqood for Apt &amp; Villas</fullName>
+                <default>false</default>
+                <label>Oqood for Apt &amp; Villas</label>
+            </value>
+            <value>
+                <fullName>Oqood for Plots</fullName>
+                <default>false</default>
+                <label>Oqood for Plots</label>
+            </value>
+            <value>
+                <fullName>Oqood</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oqood</label>
+            </value>
+            <value>
+                <fullName>Ownership Transfer (Title Deed)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ownership Transfer (Title Deed)</label>
+            </value>
+            <value>
+                <fullName>Ownership transfer(Oqood)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ownership transfer(Oqood)</label>
+            </value>
+            <value>
+                <fullName>Title Deed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Title Deed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

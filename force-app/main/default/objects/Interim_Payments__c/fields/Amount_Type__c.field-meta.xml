@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_Type__c</fullName>
+    <label>Amount Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Installment</fullName>
+                <default>false</default>
+                <label>Installment</label>
+            </value>
+            <value>
+                <fullName>Transaction Fee</fullName>
+                <default>false</default>
+                <label>Transaction Fee</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Transferred from Booking</fullName>
+                <default>false</default>
+                <label>Transferred from Booking</label>
+            </value>
+            <value>
+                <fullName>Verification Charges</fullName>
+                <default>false</default>
+                <label>Verification Charges</label>
+            </value>
+            <value>
+                <fullName>Cheque Bouncing Charges</fullName>
+                <default>false</default>
+                <label>Cheque Bouncing Charges</label>
+            </value>
+            <value>
+                <fullName>Transfer Charges</fullName>
+                <default>false</default>
+                <label>Transfer Charges</label>
+            </value>
+            <value>
+                <fullName>Conversion Charges</fullName>
+                <default>false</default>
+                <label>Conversion Charges</label>
+            </value>
+            <value>
+                <fullName>Reallocation Charges</fullName>
+                <default>false</default>
+                <label>Reallocation Charges</label>
+            </value>
+            <value>
+                <fullName>Transfer Fee</fullName>
+                <default>false</default>
+                <label>Transfer Fee</label>
+            </value>
+            <value>
+                <fullName>Addition/Deletion Charges</fullName>
+                <default>false</default>
+                <label>Addition/Deletion Charges</label>
+            </value>
+            <value>
+                <fullName>DLD Fees</fullName>
+                <default>false</default>
+                <label>DLD Fees</label>
+            </value>
+            <value>
+                <fullName>Title Deed Fees (Units)</fullName>
+                <default>false</default>
+                <label>Title Deed Fees (Units)</label>
+            </value>
+            <value>
+                <fullName>Title Deed Fees (Villas)</fullName>
+                <default>false</default>
+                <label>Title Deed Fees (Villas)</label>
+            </value>
+            <value>
+                <fullName>Title Deed Charges</fullName>
+                <default>false</default>
+                <label>Title Deed Charges</label>
+            </value>
+            <value>
+                <fullName>Pre-registration To Pre-title Deed</fullName>
+                <default>false</default>
+                <label>Pre-registration To Pre-title Deed</label>
+            </value>
+            <value>
+                <fullName>Pre-registration to pre-title deed (completed projects)</fullName>
+                <default>false</default>
+                <label>Pre-registration to pre-title deed (completed projects)</label>
+            </value>
+            <value>
+                <fullName>Community Management Services</fullName>
+                <default>false</default>
+                <label>Community Management Services</label>
+            </value>
+            <value>
+                <fullName>Service charge</fullName>
+                <default>false</default>
+                <label>Service charge</label>
+            </value>
+            <value>
+                <fullName>Fund Transfer</fullName>
+                <default>false</default>
+                <label>Fund Transfer</label>
+            </value>
+            <value>
+                <fullName>Mortgage Fee</fullName>
+                <default>false</default>
+                <label>Mortgage Fee</label>
+            </value>
+            <value>
+                <fullName>Late Payment Fee</fullName>
+                <default>false</default>
+                <label>Late Payment Fee</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

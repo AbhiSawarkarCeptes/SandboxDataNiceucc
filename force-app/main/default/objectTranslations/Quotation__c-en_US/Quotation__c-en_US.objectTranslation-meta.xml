@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quotation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quotations</value>
+    </caseValues>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quotation Layout</layout>
+        <sections>
+            <label><!-- Approvers Details --></label>
+            <section>Approvers Details</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 1 Details --></label>
+            <section>Charge 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 10 Details --></label>
+            <section>Charge 10 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 2 Details --></label>
+            <section>Charge 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 3 Details --></label>
+            <section>Charge 3 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 4 Details --></label>
+            <section>Charge 4 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 5 Details --></label>
+            <section>Charge 5 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 6 Details --></label>
+            <section>Charge 6 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 7 Details --></label>
+            <section>Charge 7 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 8 Details --></label>
+            <section>Charge 8 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 9 Details --></label>
+            <section>Charge 9 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Discount Details --></label>
+            <section>Discount Details</section>
+        </sections>
+        <sections>
+            <label><!-- NPV Details --></label>
+            <section>NPV Details</section>
+        </sections>
+        <sections>
+            <label><!-- Purchase Price Details --></label>
+            <section>Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Quotation Details --></label>
+            <section>Quotation Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quotation Layout Area Update</layout>
+        <sections>
+            <label><!-- Approvers Details --></label>
+            <section>Approvers Details</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 1 Details --></label>
+            <section>Charge 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 10 Details --></label>
+            <section>Charge 10 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 2 Details --></label>
+            <section>Charge 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 3 Details --></label>
+            <section>Charge 3 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 4 Details --></label>
+            <section>Charge 4 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 5 Details --></label>
+            <section>Charge 5 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 6 Details --></label>
+            <section>Charge 6 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 7 Details --></label>
+            <section>Charge 7 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 8 Details --></label>
+            <section>Charge 8 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 9 Details --></label>
+            <section>Charge 9 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Discount Details --></label>
+            <section>Discount Details</section>
+        </sections>
+        <sections>
+            <label><!-- NPV Details --></label>
+            <section>NPV Details</section>
+        </sections>
+        <sections>
+            <label><!-- Purchase Price Details --></label>
+            <section>Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Quotation Details --></label>
+            <section>Quotation Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Read Only Quotation Layout</layout>
+        <sections>
+            <label><!-- Approvers Details --></label>
+            <section>Approvers Details</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 1 Details --></label>
+            <section>Charge 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 10 Details --></label>
+            <section>Charge 10 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 2 Details --></label>
+            <section>Charge 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 3 Details --></label>
+            <section>Charge 3 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 4 Details --></label>
+            <section>Charge 4 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 5 Details --></label>
+            <section>Charge 5 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 6 Details --></label>
+            <section>Charge 6 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 7 Details --></label>
+            <section>Charge 7 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 8 Details --></label>
+            <section>Charge 8 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge 9 Details --></label>
+            <section>Charge 9 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Discount Details --></label>
+            <section>Discount Details</section>
+        </sections>
+        <sections>
+            <label><!-- NPV Details --></label>
+            <section>NPV Details</section>
+        </sections>
+        <sections>
+            <label><!-- Purchase Price Details --></label>
+            <section>Purchase Price Details</section>
+        </sections>
+        <sections>
+            <label><!-- Quotation Details --></label>
+            <section>Quotation Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales Quotation Layout</layout>
+        <sections>
+            <label><!-- Approvers Details --></label>
+            <section>Approvers Details</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park Details --></label>
+            <section>Car Park Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Discount Details --></label>
+            <section>Discount Details</section>
+        </sections>
+        <sections>
+            <label><!-- NPV Details --></label>
+            <section>NPV Details</section>
+        </sections>
+        <sections>
+            <label><!-- Quotation Details --></label>
+            <section>Quotation Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Lightning_View_Quotation --></label>
+        <name>Lightning_View_Quotation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Quotation --></label>
+        <name>View_Quotation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Quotation_Multi_Unit --></label>
+        <name>View_Quotation_Multi_Unit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Quotation_Sample --></label>
+        <name>View_Quotation_Sample</name>
+    </webLinks>
+</CustomObjectTranslation>

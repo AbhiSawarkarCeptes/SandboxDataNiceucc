@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Property</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>This property is not available to create payment request</errorMessage>
+        <filterItems>
+            <field>PropStrength__Property__c.PropStrength__Allotted__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <filterItems>
+            <field>PropStrength__Property__c.PropStrength__Property_Alloted_Through_Offer__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>PropStrength__Property__c</referenceTo>
+    <relationshipLabel>Payment Requests</relationshipLabel>
+    <relationshipName>Payment_Requests</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

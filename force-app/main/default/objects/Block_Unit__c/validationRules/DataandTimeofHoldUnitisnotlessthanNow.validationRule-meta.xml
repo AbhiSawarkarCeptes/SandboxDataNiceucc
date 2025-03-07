@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DataandTimeofHoldUnitisnotlessthanNow</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(     NOT(ISBLANK(Date_and_Time_of_Unhold_Unit__c )),
+Date_and_Time_of_Unhold_Unit__c &lt; Now(),False)</errorConditionFormula>
+    <errorMessage>You cannot select back Date and Time</errorMessage>
+</ValidationRule>

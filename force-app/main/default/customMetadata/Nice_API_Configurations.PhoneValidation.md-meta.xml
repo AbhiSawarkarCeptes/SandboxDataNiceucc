@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>PhoneValidation</label>
+    <protected>false</protected>
+    <values>
+        <field>API_Key__c</field>
+        <value xsi:type="xsd:string">2887fb441dc25407cd84a83cb5f993a7</value>
+    </values>
+    <values>
+        <field>Base_URL__c</field>
+        <value xsi:type="xsd:string">http://apilayer.net/api/validate</value>
+    </values>
+    <values>
+        <field>Message_Body__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Password__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Username__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

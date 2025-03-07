@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Expected no. of Visitor/Meetings per day --></label>
+    <name>Expected_number_of_Visitors__c</name>
+</CustomFieldTranslation>

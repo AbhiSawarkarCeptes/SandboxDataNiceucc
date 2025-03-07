@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Status__c</fullName>
+    <label>Sub Status</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Call_Attempt_Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Contact</fullName>
+                <default>false</default>
+                <label>No Contact</label>
+            </value>
+            <value>
+                <fullName>Follow-up</fullName>
+                <default>false</default>
+                <label>Follow-up</label>
+            </value>
+            <value>
+                <fullName>Meeting Proposed (Hot)</fullName>
+                <default>false</default>
+                <label>Meeting Proposed (Hot)</label>
+            </value>
+            <value>
+                <fullName>Meeting Proposed (Warm)</fullName>
+                <default>false</default>
+                <label>Meeting Proposed (Warm)</label>
+            </value>
+            <value>
+                <fullName>Meeting Proposed (Cold)</fullName>
+                <default>false</default>
+                <label>Meeting Proposed (Cold)</label>
+            </value>
+            <value>
+                <fullName>Budget Constraint</fullName>
+                <default>false</default>
+                <label>Budget Constraint</label>
+            </value>
+            <value>
+                <fullName>Location Constraint</fullName>
+                <default>false</default>
+                <label>Location Constraint</label>
+            </value>
+            <value>
+                <fullName>Unit Type Constraint</fullName>
+                <default>false</default>
+                <label>Unit Type Constraint</label>
+            </value>
+            <value>
+                <fullName>Looking for Ready Unit(s)</fullName>
+                <default>false</default>
+                <label>Looking for Ready Unit(s)</label>
+            </value>
+            <value>
+                <fullName>Construction Timelines</fullName>
+                <default>false</default>
+                <label>Construction Timelines</label>
+            </value>
+            <value>
+                <fullName>Job Seeker</fullName>
+                <default>false</default>
+                <label>Job Seeker</label>
+            </value>
+            <value>
+                <fullName>Business Seeker (Non-broker)</fullName>
+                <default>false</default>
+                <label>Business Seeker (Non-broker)</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>No Longer Interested</fullName>
+                <default>false</default>
+                <label>No Longer Interested</label>
+            </value>
+            <value>
+                <fullName>Didn&apos;t Provide Details</fullName>
+                <default>false</default>
+                <label>Didn&apos;t Provide Details</label>
+            </value>
+            <value>
+                <fullName>Gathering Information</fullName>
+                <default>false</default>
+                <label>Gathering Information</label>
+            </value>
+            <value>
+                <fullName>Site Visit Done - Hot Buyer</fullName>
+                <default>false</default>
+                <label>Site Visit Done - Hot Buyer</label>
+            </value>
+            <value>
+                <fullName>Site Visit Done - Warm Buyer</fullName>
+                <default>false</default>
+                <label>Site Visit Done - Warm Buyer</label>
+            </value>
+            <value>
+                <fullName>Site Visit Done - Cold Buyer</fullName>
+                <default>false</default>
+                <label>Site Visit Done - Cold Buyer</label>
+            </value>
+            <value>
+                <fullName>Unqualified - Budget Constraint</fullName>
+                <default>false</default>
+                <label>Unqualified - Budget Constraint</label>
+            </value>
+            <value>
+                <fullName>Unqualified - Location Constraint</fullName>
+                <default>false</default>
+                <label>Unqualified - Location Constraint</label>
+            </value>
+            <value>
+                <fullName>Unqualified - Unit Type Constraint</fullName>
+                <default>false</default>
+                <label>Unqualified - Unit Type Constraint</label>
+            </value>
+            <value>
+                <fullName>Unqualified - Looking for Ready Unit(s)</fullName>
+                <default>false</default>
+                <label>Unqualified - Looking for Ready Unit(s)</label>
+            </value>
+            <value>
+                <fullName>Unqualified - Construction Timelines</fullName>
+                <default>false</default>
+                <label>Unqualified - Construction Timelines</label>
+            </value>
+            <value>
+                <fullName>Unqualified - Broker</fullName>
+                <default>false</default>
+                <label>Unqualified - Broker</label>
+            </value>
+            <value>
+                <fullName>Unqualified - No Longer Interested</fullName>
+                <default>false</default>
+                <label>Unqualified - No Longer Interested</label>
+            </value>
+            <value>
+                <fullName>Prospect Bought With Competition</fullName>
+                <default>false</default>
+                <label>Prospect Bought With Competition</label>
+            </value>
+            <value>
+                <fullName>Unqualified - Gathering Information</fullName>
+                <default>false</default>
+                <label>Unqualified - Gathering Information</label>
+            </value>
+            <value>
+                <fullName>Blocked - Deal Closed with 2% Booking Amount</fullName>
+                <default>false</default>
+                <label>Blocked - Deal Closed with 2% Booking Amount</label>
+            </value>
+            <value>
+                <fullName>Booking - Deal Closed with &gt;2% - &lt;20% Booking Amount</fullName>
+                <default>false</default>
+                <label>Booking - Deal Closed with &gt;2% - &lt;20% Booking Amount</label>
+            </value>
+            <value>
+                <fullName>Booked - Qualified Sales</fullName>
+                <default>false</default>
+                <label>Booked - Qualified Sales</label>
+            </value>
+            <value>
+                <fullName>Cancelled - No Booking Form Signed</fullName>
+                <default>false</default>
+                <label>Cancelled - No Booking Form Signed</label>
+            </value>
+            <value>
+                <fullName>Qualified - Follow-up</fullName>
+                <default>false</default>
+                <label>Qualified - Follow-up</label>
+            </value>
+            <value>
+                <fullName>Not Actioned</fullName>
+                <default>false</default>
+                <label>Not Actioned</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

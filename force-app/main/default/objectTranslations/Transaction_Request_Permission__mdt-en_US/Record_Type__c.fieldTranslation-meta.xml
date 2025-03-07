@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Record Type --></label>
+    <name>Record_Type__c</name>
+    <picklistValues>
+        <masterLabel>Addition / Deletion of Name</masterLabel>
+        <translation><!-- Addition / Deletion of Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advance Payment Rebate</masterLabel>
+        <translation><!-- Advance Payment Rebate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Area Change</masterLabel>
+        <translation><!-- Area Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Booking Form</masterLabel>
+        <translation><!-- Booking Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Car Parking Allotment</masterLabel>
+        <translation><!-- Car Parking Allotment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change In Payment Plan</masterLabel>
+        <translation><!-- Change In Payment Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Notes</masterLabel>
+        <translation><!-- Credit Notes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Waiver</masterLabel>
+        <translation><!-- Credit Waiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSPA Process</masterLabel>
+        <translation><!-- DSPA Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Handing Possession to Customer</masterLabel>
+        <translation><!-- Handing Possession to Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Handover</masterLabel>
+        <translation><!-- Handover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOU Process</masterLabel>
+        <translation><!-- MOU Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mortgage Process</masterLabel>
+        <translation><!-- Mortgage Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Registration Process</masterLabel>
+        <translation><!-- Pre-Registration Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refund</masterLabel>
+        <translation><!-- Refund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA Process</masterLabel>
+        <translation><!-- SPA Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Deed Process</masterLabel>
+        <translation><!-- Title Deed Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer Of Property</masterLabel>
+        <translation><!-- Transfer Of Property --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Time__c</fullName>
+    <label>Request Time</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 hour</fullName>
+                <default>false</default>
+                <label>1 hour</label>
+            </value>
+            <value>
+                <fullName>2 hour</fullName>
+                <default>false</default>
+                <label>2 hour</label>
+            </value>
+            <value>
+                <fullName>3 hour</fullName>
+                <default>false</default>
+                <label>3 hour</label>
+            </value>
+            <value>
+                <fullName>4 hour</fullName>
+                <default>false</default>
+                <label>4 hour</label>
+            </value>
+            <value>
+                <fullName>5 hour</fullName>
+                <default>false</default>
+                <label>5 hour</label>
+            </value>
+            <value>
+                <fullName>6 hour</fullName>
+                <default>false</default>
+                <label>6 hour</label>
+            </value>
+            <value>
+                <fullName>7 hour</fullName>
+                <default>false</default>
+                <label>7 hour</label>
+            </value>
+            <value>
+                <fullName>8 hour</fullName>
+                <default>false</default>
+                <label>8 hour</label>
+            </value>
+            <value>
+                <fullName>9 hour</fullName>
+                <default>false</default>
+                <label>9 hour</label>
+            </value>
+            <value>
+                <fullName>10 hour</fullName>
+                <default>false</default>
+                <label>10 hour</label>
+            </value>
+            <value>
+                <fullName>11 hour</fullName>
+                <default>false</default>
+                <label>11 hour</label>
+            </value>
+            <value>
+                <fullName>12 hour</fullName>
+                <default>false</default>
+                <label>12 hour</label>
+            </value>
+            <value>
+                <fullName>13 hour</fullName>
+                <default>false</default>
+                <label>13 hour</label>
+            </value>
+            <value>
+                <fullName>14 hour</fullName>
+                <default>false</default>
+                <label>14 hour</label>
+            </value>
+            <value>
+                <fullName>15 hour</fullName>
+                <default>false</default>
+                <label>15 hour</label>
+            </value>
+            <value>
+                <fullName>16 hour</fullName>
+                <default>false</default>
+                <label>16 hour</label>
+            </value>
+            <value>
+                <fullName>17 hour</fullName>
+                <default>false</default>
+                <label>17 hour</label>
+            </value>
+            <value>
+                <fullName>18 hour</fullName>
+                <default>false</default>
+                <label>18 hour</label>
+            </value>
+            <value>
+                <fullName>19 hour</fullName>
+                <default>false</default>
+                <label>19 hour</label>
+            </value>
+            <value>
+                <fullName>20 hour</fullName>
+                <default>false</default>
+                <label>20 hour</label>
+            </value>
+            <value>
+                <fullName>21 hour</fullName>
+                <default>false</default>
+                <label>21 hour</label>
+            </value>
+            <value>
+                <fullName>22 hour</fullName>
+                <default>false</default>
+                <label>22 hour</label>
+            </value>
+            <value>
+                <fullName>23 hour</fullName>
+                <default>false</default>
+                <label>23 hour</label>
+            </value>
+            <value>
+                <fullName>1 Day</fullName>
+                <default>false</default>
+                <label>1 Day</label>
+            </value>
+            <value>
+                <fullName>2 Days</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2 Days</label>
+            </value>
+            <value>
+                <fullName>3 Days</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3 Days</label>
+            </value>
+            <value>
+                <fullName>4 Days</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>4 Days</label>
+            </value>
+            <value>
+                <fullName>5 Days</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>5 Days</label>
+            </value>
+            <value>
+                <fullName>6 Days</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>6 Days</label>
+            </value>
+            <value>
+                <fullName>7 Days</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>7 Days</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

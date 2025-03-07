@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <inlineHelpText>Current Status of the requestor</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+                <label>Submitted for Approval</label>
+            </value>
+            <value>
+                <fullName>Approved from Account &amp; Receipt is Created</fullName>
+                <default>false</default>
+                <label>Approved from Account &amp; Receipt is Created</label>
+            </value>
+            <value>
+                <fullName>Submitted to Sales Ops Head</fullName>
+                <default>false</default>
+                <label>Submitted to Sales Ops Head</label>
+            </value>
+            <value>
+                <fullName>Approved By sales Ops Head</fullName>
+                <default>false</default>
+                <label>Approved By sales Ops Head</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

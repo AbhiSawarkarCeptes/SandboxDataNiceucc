@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Comma Separated email addresses to notify --></help>
+    <label><!-- Emails to Notify --></label>
+    <name>uar__Emails_to_Notify__c</name>
+</CustomFieldTranslation>

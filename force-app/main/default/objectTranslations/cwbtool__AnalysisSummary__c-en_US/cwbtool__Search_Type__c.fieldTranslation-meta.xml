@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Search Type --></label>
+    <name>cwbtool__Search_Type__c</name>
+    <picklistValues>
+        <masterLabel>Custom Field References</masterLabel>
+        <translation><!-- Custom Field References --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Label References</masterLabel>
+        <translation><!-- Label References --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Object References</masterLabel>
+        <translation><!-- Object References --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

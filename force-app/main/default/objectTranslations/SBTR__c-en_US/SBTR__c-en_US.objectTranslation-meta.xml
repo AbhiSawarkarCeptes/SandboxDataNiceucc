@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SBTR</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SBTRs</value>
+    </caseValues>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SBTR Layout</layout>
+        <sections>
+            <label><!-- Applicant Details --></label>
+            <section>Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Broker Details --></label>
+            <section>Broker Details</section>
+        </sections>
+        <sections>
+            <label><!-- Collection Details --></label>
+            <section>Collection Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Offers --></label>
+            <section>Offers</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity and Source Info --></label>
+            <section>Opportunity and Source Info</section>
+        </sections>
+        <sections>
+            <label><!-- Unit and Project Info --></label>
+            <section>Unit and Project Info</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update SBTR --></label>
+        <name>Update_SBTR</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

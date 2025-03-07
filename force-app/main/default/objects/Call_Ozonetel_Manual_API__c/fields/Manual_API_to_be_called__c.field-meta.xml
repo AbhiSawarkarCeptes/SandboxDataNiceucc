@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manual_API_to_be_called__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Manual API to be called</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

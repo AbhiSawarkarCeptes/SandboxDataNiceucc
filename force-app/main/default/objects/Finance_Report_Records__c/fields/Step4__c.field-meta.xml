@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Step4__c</fullName>
+    <formula>IF(AND(Document_Category_New__c=&apos;Debit Note&apos;, Description__c=&apos;Debit note for DLD Charges&apos;), true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Step4</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

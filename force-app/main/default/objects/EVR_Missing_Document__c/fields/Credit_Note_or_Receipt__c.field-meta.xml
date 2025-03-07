@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Note_or_Receipt__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Credit Note or Receipt</label>
+    <referenceTo>Receipt__c</referenceTo>
+    <relationshipLabel>EVR Missing Documents</relationshipLabel>
+    <relationshipName>EVR_Missing_Documents</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

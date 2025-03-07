@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category_of_issue__c</fullName>
+    <label>Category of issue</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cancellation and Swap</fullName>
+                <default>false</default>
+                <label>Cancellation and Swap</label>
+            </value>
+            <value>
+                <fullName>Cancellation and Forfeiture</fullName>
+                <default>false</default>
+                <label>Cancellation and Forfeiture</label>
+            </value>
+            <value>
+                <fullName>Cancellation and Refund</fullName>
+                <default>false</default>
+                <label>Cancellation and Refund</label>
+            </value>
+            <value>
+                <fullName>Approval for Rebate/Discount</fullName>
+                <default>false</default>
+                <label>Approval for Rebate/Discount</label>
+            </value>
+            <value>
+                <fullName>Approval for Payment Plan Change</fullName>
+                <default>false</default>
+                <label>Approval for Payment Plan Change</label>
+            </value>
+            <value>
+                <fullName>Approval for Ownership Change</fullName>
+                <default>false</default>
+                <label>Approval for Ownership Change</label>
+            </value>
+            <value>
+                <fullName>Approval of Name Addition/Deletion</fullName>
+                <default>false</default>
+                <label>Approval of Name Addition/Deletion</label>
+            </value>
+            <value>
+                <fullName>Approval for Refund/Reimbursement/Compensation</fullName>
+                <default>false</default>
+                <label>Approval for Refund/Reimbursement/Compensation</label>
+            </value>
+            <value>
+                <fullName>Approval for Movement of Funds/Reallocation</fullName>
+                <default>false</default>
+                <label>Approval for Movement of Funds/Reallocation</label>
+            </value>
+            <value>
+                <fullName>Approval For Waiver</fullName>
+                <default>false</default>
+                <label>Approval For Waiver</label>
+            </value>
+            <value>
+                <fullName>Approval For Early Handover</fullName>
+                <default>false</default>
+                <label>Approval For Early Handover</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

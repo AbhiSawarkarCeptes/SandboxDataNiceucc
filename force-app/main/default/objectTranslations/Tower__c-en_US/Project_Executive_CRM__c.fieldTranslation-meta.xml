@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Project Executive CRM --></label>
+    <name>Project_Executive_CRM__c</name>
+    <relationshipLabel><!-- Towers (Project Executive CRM) --></relationshipLabel>
+</CustomFieldTranslation>

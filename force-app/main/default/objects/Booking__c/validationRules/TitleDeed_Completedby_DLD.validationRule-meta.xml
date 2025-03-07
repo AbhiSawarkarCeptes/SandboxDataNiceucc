@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TitleDeed_Completedby_DLD</fullName>
+    <active>false</active>
+    <description>Title Deed can be completed only by DLD</description>
+    <errorConditionFormula>AND(ISCHANGED(Title_Transfer_Completed__c),ISPICKVAL( Title_Transfer_Completed__c, &apos;Completed&apos; ), $Profile.Name &lt;&gt; &quot;DLD Team&quot;)</errorConditionFormula>
+    <errorDisplayField>Customer_Name_and_Unit_Status__c</errorDisplayField>
+    <errorMessage>Title Deed can be completed only by DLD</errorMessage>
+</ValidationRule>

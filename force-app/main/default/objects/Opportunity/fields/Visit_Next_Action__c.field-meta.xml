@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visit_Next_Action__c</fullName>
+    <label>Visit Next Action</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Follow up</fullName>
+                <default>false</default>
+                <label>Follow up</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>ReVisit Proposed</fullName>
+                <default>false</default>
+                <label>ReVisit Proposed</label>
+            </value>
+            <value>
+                <fullName>Meeting Proposed</fullName>
+                <default>false</default>
+                <label>Meeting Proposed</label>
+            </value>
+            <value>
+                <fullName>No Action Needed</fullName>
+                <default>false</default>
+                <label>No Action Needed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

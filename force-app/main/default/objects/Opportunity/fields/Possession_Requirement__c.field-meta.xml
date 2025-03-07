@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Possession_Requirement__c</fullName>
+    <label>Possession Requirement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ready to Live In (RTLI)</fullName>
+                <default>false</default>
+                <label>Ready to Live In (RTLI)</label>
+            </value>
+            <value>
+                <fullName>Ready to Move in (RTMI)</fullName>
+                <default>false</default>
+                <label>Ready to Move in (RTMI)</label>
+            </value>
+            <value>
+                <fullName>Under Construction (UC – 1 to 2 years)</fullName>
+                <default>false</default>
+                <label>Under Construction (UC – 1 to 2 years)</label>
+            </value>
+            <value>
+                <fullName>Under Construction (UC – 2 to 3 years)</fullName>
+                <default>false</default>
+                <label>Under Construction (UC – 2 to 3 years)</label>
+            </value>
+            <value>
+                <fullName>Under Construction (UC – More than 3 years)</fullName>
+                <default>false</default>
+                <label>Under Construction (UC – More than 3 years)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

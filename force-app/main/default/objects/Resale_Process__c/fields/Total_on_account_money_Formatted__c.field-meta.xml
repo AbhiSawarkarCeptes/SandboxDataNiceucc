@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_on_account_money_Formatted__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(LEN(TEXT(Total_on_account_money1__c)),
+1, TEXT(Total_on_account_money1__c),
+2, TEXT(Total_on_account_money1__c),
+3, TEXT(Total_on_account_money1__c),
+4, LEFT(TEXT(Total_on_account_money1__c), 1) &amp; &quot;,&quot; &amp; RIGHT(TEXT(Total_on_account_money1__c), 3),
+5, LEFT(TEXT(Total_on_account_money1__c), 2) &amp; &quot;,&quot; &amp; RIGHT(TEXT(Total_on_account_money1__c), 3),
+6, LEFT(TEXT(Total_on_account_money1__c), 3) &amp; &quot;,&quot; &amp; RIGHT(TEXT(Total_on_account_money1__c), 3),
+7, LEFT(TEXT(Total_on_account_money1__c), 1) &amp; &quot;,&quot; &amp; MID(TEXT(Total_on_account_money1__c), 2,3) &amp; &quot;,&quot; &amp; RIGHT(TEXT(Total_on_account_money1__c), 3),
+8, LEFT(TEXT(Total_on_account_money1__c), 2) &amp; &quot;,&quot; &amp; MID(TEXT(Total_on_account_money1__c), 3,3) &amp; &quot;,&quot; &amp; RIGHT(TEXT(Total_on_account_money1__c), 3),
+9, LEFT(TEXT(Total_on_account_money1__c), 3) &amp; &quot;,&quot; &amp; MID(TEXT(Total_on_account_money1__c), 4,3) &amp; &quot;,&quot; &amp; RIGHT(TEXT(Total_on_account_money1__c), 3),
+10, LEFT(TEXT(Total_on_account_money1__c), 1) &amp; &quot;,&quot; &amp; MID(TEXT(Total_on_account_money1__c), 2,3) &amp; &quot;,&quot; &amp; MID(TEXT(Total_on_account_money1__c), 5, 3) &amp; &quot;,&quot; &amp; RIGHT(TEXT(Total_on_account_money1__c), 3),
+11, LEFT(TEXT(Total_on_account_money1__c), 2) &amp; &quot;,&quot; &amp; MID(TEXT(Total_on_account_money1__c), 3,3) &amp; &quot;,&quot; &amp; MID(TEXT(Total_on_account_money1__c), 6, 3) &amp; &quot;,&quot; &amp; RIGHT(TEXT(Total_on_account_money1__c), 3),
+12, LEFT(TEXT(Total_on_account_money1__c), 3) &amp; &quot;,&quot; &amp; MID(TEXT(Total_on_account_money1__c), 4,3) &amp; &quot;,&quot; &amp; MID(TEXT(Total_on_account_money1__c), 7, 3) &amp; &quot;,&quot; &amp; RIGHT(TEXT(Total_on_account_money1__c), 3),
+null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total on account money Formatted</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

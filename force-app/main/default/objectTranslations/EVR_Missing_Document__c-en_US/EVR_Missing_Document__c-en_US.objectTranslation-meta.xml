@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>EVR Missing Document</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>EVR Missing Documents</value>
+    </caseValues>
+    <layouts>
+        <layout>EVR Missing Document Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Receipt, Credit Note, Demand and Debit Note should be wrt the Document Type selected. --></errorMessage>
+        <name>Exclusivity_on_Receipt_vs_Demand</name>
+    </validationRules>
+</CustomObjectTranslation>

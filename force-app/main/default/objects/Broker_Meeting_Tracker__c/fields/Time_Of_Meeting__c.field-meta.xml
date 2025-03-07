@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Of_Meeting__c</fullName>
+    <defaultValue>TIMENOW()</defaultValue>
+    <description>SOB-1744</description>
+    <label>Time Of Meeting</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Time</type>
+</CustomField>

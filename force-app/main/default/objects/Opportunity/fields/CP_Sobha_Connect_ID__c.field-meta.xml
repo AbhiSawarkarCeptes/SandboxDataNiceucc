@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CP_Sobha_Connect_ID__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (
+NOT(ISBLANK( Walk_In_CP__c)),Walk_In_CP__r.Channel_Partner_Id__c ,
+if
+( NOT(ISBLANK ( Walk_In_SC__c)), Walk_In_SC__r.Name ,&quot;&quot; ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CP / Sobha Connect ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

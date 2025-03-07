@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Installment_Arabic__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(
+Tower__c = &apos;The S&apos; ||
+Tower__c = &apos;One Park Avenue Tower&apos; ||
+Tower__c = &apos;310 Riverside Crescent&apos; ||
+Tower__c = &apos;320 Riverside Crescent&apos; ||
+Tower__c = &apos;330 Riverside Crescent&apos; ||
+Tower__c = &apos;340 Riverside Crescent&apos; ||
+Tower__c = &apos;350 Riverside Crescent&apos; ||
+Tower__c = &apos;360 Riverside Crescent&apos; ||
+Tower__c = &apos;Waves Grande&apos; ||
+Tower__c = &apos;SCVR - A&apos; ||
+Tower__c = &apos;SCVR - B&apos; ||
+Tower__c = &apos;Waves&apos; ||
+Tower__c = &apos;Sobha Waves Opulence&apos; ||
+Tower__c = &apos;SSH - Tower A&apos; ||
+Tower__c = &apos;SSH - Tower B&apos; ||
+Tower__c = &apos;SSH - Tower C&apos; ||
+Tower__c = &apos;Sobha One Tower A&apos; ||
+Tower__c = &apos;Sobha One Tower B&apos; ||
+Tower__c = &apos;Sobha One Tower C&apos; ||
+Tower__c = &apos;Sobha One Tower D&apos; ||
+Tower__c = &apos;Sobha One Tower E&apos; ||
+Tower__c = &apos;Verde&apos; ||
+Tower__c = &apos;Orbis Tower A&apos; ||
+Tower__c = &apos;Orbis Tower E&apos; ||
+Tower__c = &apos;Orbis Tower B&apos; ||
+Tower__c = &apos;Orbis Tower F&apos; ||
+Tower__c = &apos;Orbis Tower G&apos; ||
+Tower__c = &apos;Sobha One - Podium&apos; ||
+Tower__c = &apos;Sobha Hartland II Villas&apos; ||
+Tower__c = &apos;Skyscape Avenue&apos; ||
+Tower__c = &apos;Skyscape Altius&apos; ||
+Tower__c = &apos;Selene Beach Residences Tower A&apos; ||
+Tower__c = &apos;Selene Beach Residences Tower B&apos; ||
+Tower__c = &apos;Selene Beach Residences Tower C&apos; ||
+Tower__c = &apos;Selene Beach Residences Tower D&apos; ||
+Cluster_Name__c = &apos;Delphine Beach Residences&apos; ||
+Tower__c = &apos;Sobha Siniya Island&apos; ||
+Tower__c = &apos;Skyscape Aura&apos;),
+C1_Amount__c + C1_CGST__c + C2_Amount__c + C2_CGST__c + C3_Amount__c + C3_CGST__c + C7_Amount__c + C7_CGST__c,
+IF(OR(Tower__c = &apos;Phase II&apos; ||
+Tower__c = &apos;A&apos; ||
+Tower__c = &apos;B&apos; ||
+Tower__c = &apos;C&apos; ||
+Tower__c = &apos;D&apos; ||
+Tower__c = &apos;Crest Grande - Retail&apos; ||
+Tower__c = &apos;Retail&apos; ||
+Tower__c = &apos;Crest Grande - Tower B&apos; ||
+Tower__c = &apos;Crest Grande - Tower A&apos; ||
+Tower__c = &apos;Crest Grande - Tower C&apos; ||
+Tower__c = &apos;Creek Vistas Grande&apos; ||
+Tower__c = &apos;Sobha Reserve&apos;),
+C1_Amount__c + C1_CGST__c + C2_Amount__c + C2_CGST__c + C3_Amount__c + C3_CGST__c,
+IF(Tower__c = &apos;Phase I&apos; || Tower__c = &apos;Phase III&apos; || Tower__c = &apos;Phase I - Building 1&apos; || Tower__c = &apos;Phase I - Building 4&apos; || Tower__c = &apos;Phase II - Building 2&apos; || Tower__c = &apos;Phase II - Building 3&apos;,
+C1_Amount__c + C1_CGST__c + C4_Amount__c + C4_CGST__c + C6_Amount__c + C6_CGST__c,
+IF(OR(Tower__c = &apos;Phase III - Building 5&apos; || Tower__c = &apos;Phase III - Building 6&apos; || Tower__c = &apos;Tower A&apos; || Tower__c = &apos;Townhouse&apos;),
+C1_Amount__c + C1_CGST__c + C4_Amount__c + C4_CGST__c + C6_Amount__c + C6_CGST__c,
+IF(OR(Tower__c = &apos;Tower B&apos; || Cluster_Name__c = &apos;Sobha Creek Vista Heights&apos; || Cluster_Name__c = &apos;The Crest&apos; || Tower__c = &apos;Phase IV&apos;),
+C1_Amount__c + C1_CGST__c + C2_Amount__c + C2_CGST__c + C3_Amount__c + C3_CGST__c,
+IF(OR(Tower__c = &apos;Sobha Tranquility&apos; || Tower__c = &apos;Waterside Plots&apos; || Tower__c = &apos;Hartland Extension&apos;),
+C1_Amount__c,
+0
+)
+)
+)
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Installment_Arabic</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

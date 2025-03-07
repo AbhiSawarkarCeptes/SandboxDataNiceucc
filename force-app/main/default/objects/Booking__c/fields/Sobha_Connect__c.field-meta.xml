@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sobha_Connect__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Sobha Connect</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Sobha_Connect__c.Black_listed_user__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Sobha_Connect__c</referenceTo>
+    <relationshipLabel>Booking</relationshipLabel>
+    <relationshipName>Booking</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

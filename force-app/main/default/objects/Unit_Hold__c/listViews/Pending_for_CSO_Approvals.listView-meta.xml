@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_for_CSO_Approvals</fullName>
+    <columns>NAME</columns>
+    <columns>First_Name__c</columns>
+    <columns>Last_Name__c</columns>
+    <columns>Request_Time__c</columns>
+    <columns>Unit_Name__c</columns>
+    <columns>Unit_Hold_Approval_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>1/2/2024 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Unit_Hold_Approval_Status__c</field>
+        <operation>equals</operation>
+        <value>Approved by VP</value>
+    </filters>
+    <label>Pending for CSO Approval</label>
+    <sharedTo>
+        <role>Chief_Sales_Officer</role>
+    </sharedTo>
+</ListView>

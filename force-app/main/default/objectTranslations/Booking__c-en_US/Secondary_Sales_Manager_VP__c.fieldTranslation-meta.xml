@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sales Head VP --></label>
+    <name>Secondary_Sales_Manager_VP__c</name>
+    <relationshipLabel><!-- Booking (Sales Head VP) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Disposition_L5__c</fullName>
+    <label>Call Disposition L5</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Call_Disposition_L4__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sale of Property</fullName>
+                <default>false</default>
+                <label>Sale of Property</label>
+            </value>
+            <value>
+                <fullName>Flexible Payment Option</fullName>
+                <default>false</default>
+                <label>Flexible Payment Option</label>
+            </value>
+            <value>
+                <fullName>Flexibility for SDR Payment</fullName>
+                <default>false</default>
+                <label>Flexibility for SDR Payment</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Unapproved payment plan</controllingFieldValue>
+            <valueName>Sale of Property</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unapproved payment plan</controllingFieldValue>
+            <valueName>Flexible Payment Option</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unapproved payment plan</controllingFieldValue>
+            <valueName>Flexibility for SDR Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unapproved payment plan</controllingFieldValue>
+            <valueName>Others</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

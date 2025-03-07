@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_eligible_for_handover__c</fullName>
+    <label>Not eligible for handover</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Shortfall in DLD</fullName>
+                <default>false</default>
+                <label>Shortfall in DLD</label>
+            </value>
+            <value>
+                <fullName>Shortfall due to LP.</fullName>
+                <default>false</default>
+                <label>Shortfall due to LP.</label>
+            </value>
+            <value>
+                <fullName>Shortfall due to other charges</fullName>
+                <default>false</default>
+                <label>Shortfall due to other charges</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

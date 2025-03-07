@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- B6(181-360) Days --></label>
+    <name>B6_181_360_Days__c</name>
+</CustomFieldTranslation>

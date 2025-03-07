@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Request Time --></label>
+    <name>Request_Time__c</name>
+    <picklistValues>
+        <masterLabel>1 Day</masterLabel>
+        <translation><!-- 1 Day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 hour</masterLabel>
+        <translation><!-- 1 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10 hour</masterLabel>
+        <translation><!-- 10 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>11 hour</masterLabel>
+        <translation><!-- 11 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>12 hour</masterLabel>
+        <translation><!-- 12 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>13 hour</masterLabel>
+        <translation><!-- 13 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>14 hour</masterLabel>
+        <translation><!-- 14 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15 hour</masterLabel>
+        <translation><!-- 15 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>16 hour</masterLabel>
+        <translation><!-- 16 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>17 hour</masterLabel>
+        <translation><!-- 17 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>18 hour</masterLabel>
+        <translation><!-- 18 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>19 hour</masterLabel>
+        <translation><!-- 19 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 hour</masterLabel>
+        <translation><!-- 2 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>20 hour</masterLabel>
+        <translation><!-- 20 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>21 hour</masterLabel>
+        <translation><!-- 21 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>22 hour</masterLabel>
+        <translation><!-- 22 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>23 hour</masterLabel>
+        <translation><!-- 23 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 hour</masterLabel>
+        <translation><!-- 3 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 hour</masterLabel>
+        <translation><!-- 4 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5 hour</masterLabel>
+        <translation><!-- 5 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6 hour</masterLabel>
+        <translation><!-- 6 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7 hour</masterLabel>
+        <translation><!-- 7 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8 hour</masterLabel>
+        <translation><!-- 8 hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9 hour</masterLabel>
+        <translation><!-- 9 hour --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

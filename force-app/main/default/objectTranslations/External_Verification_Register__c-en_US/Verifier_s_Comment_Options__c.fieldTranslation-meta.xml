@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Verifier&apos;s Comment Options --></label>
+    <name>Verifier_s_Comment_Options__c</name>
+    <picklistValues>
+        <masterLabel>Bank Receipt Not Allocated</masterLabel>
+        <translation><!-- Bank Receipt Not Allocated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demand Not Booked in Xpedeon</masterLabel>
+        <translation><!-- Demand Not Booked in Xpedeon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excess DLD not transferred to blocking</masterLabel>
+        <translation><!-- Excess DLD not transferred to blocking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excess Demand Booked in Xpedeon</masterLabel>
+        <translation><!-- Excess Demand Booked in Xpedeon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extension Data Not Updated</masterLabel>
+        <translation><!-- Extension Data Not Updated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>File note entries posted in salesforce but not in Xpedeon</masterLabel>
+        <translation><!-- File note entries posted in salesforce but not in Xpedeon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect GL Allocation</masterLabel>
+        <translation><!-- Incorrect GL Allocation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect Unit Allocation</masterLabel>
+        <translation><!-- Incorrect Unit Allocation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Matching in both Xpedeon &amp; SalesForce</masterLabel>
+        <translation><!-- Matching in both Xpedeon &amp; SalesForce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-allocation done in salesforce but not in Xpedeon</masterLabel>
+        <translation><!-- Re-allocation done in salesforce but not in Xpedeon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shortfall in DLD is not adjusted from blocking</masterLabel>
+        <translation><!-- Shortfall in DLD is not adjusted from blocking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer &amp; Assignment</masterLabel>
+        <translation><!-- Transfer &amp; Assignment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

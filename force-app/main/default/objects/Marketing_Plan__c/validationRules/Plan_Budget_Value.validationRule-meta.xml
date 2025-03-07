@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plan_Budget_Value</fullName>
+    <active>true</active>
+    <errorConditionFormula>Marketing_Plan_Cost__c  &lt;  Used_Budget_Cost__c</errorConditionFormula>
+    <errorDisplayField>Marketing_Plan_Cost__c</errorDisplayField>
+    <errorMessage>Marketing Plan Budget Cost Can Not Be Less Than Total Budget Utilization Till Date</errorMessage>
+</ValidationRule>

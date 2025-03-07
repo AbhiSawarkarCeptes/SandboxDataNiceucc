@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booked_in_2022_and_HO_not_done_others</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Dataload_Identifier__c</field>
+        <operation>equals</operation>
+        <value>Booked in 2022 - HO not done - Others</value>
+    </filters>
+    <filters>
+        <field>NPS_Survey_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Call Completed,Call Scheduled,Did Not Pick,Not Interested,Wrong Number / Non-Contactable,Number busy / الرقم مشغول,Out of Reach / صعب المنال,Switched Off / مغلق,Ineligible</value>
+    </filters>
+    <label>Booked in 2022 and HO not done - Others</label>
+    <sharedTo>
+        <group>NPS_Calling_Group_Others</group>
+    </sharedTo>
+</ListView>

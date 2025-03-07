@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canada_Leads_Lead</fullName>
+    <columns>Campaign_Name__c</columns>
+    <columns>Goal__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>UTM_Campaign__c</columns>
+    <columns>UTM_Source__c</columns>
+    <columns>Last_Call_Attempt_Status__c</columns>
+    <columns>Presales_Call_counter__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Last_Call_Attempt_Status__c</field>
+        <operation>contains</operation>
+        <value>Not action</value>
+    </filters>
+    <filters>
+        <field>Presales_Agent__c</field>
+        <operation>contains</operation>
+        <value>shoh</value>
+    </filters>
+    <label>Canada Leads</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

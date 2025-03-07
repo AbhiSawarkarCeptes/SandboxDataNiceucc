@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>RECORDTYPE</columns>
+    <columns>NAME</columns>
+    <columns>Channel_Partner__c</columns>
+    <columns>Campaign_Code__c</columns>
+    <columns>Event_Approved_status__c</columns>
+    <columns>Collateral__c</columns>
+    <columns>Date_Of_Event__c</columns>
+    <columns>End_Date_Of_Event__c</columns>
+    <columns>Country__c</columns>
+    <columns>City_Country__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Type_Of_Road_Show__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <sharedTo>
+        <role>AVP_Channel_Relations</role>
+        <role>CHRM_OPS</role>
+        <role>Channel_Relationship_Manager_2</role>
+        <role>Channel_Relationship_Manager_3</role>
+        <role>Channel_Relationship_Manager_4</role>
+        <role>Channel_relationship_manager</role>
+        <role>Head_Channel_Relations</role>
+        <role>Manger_Channel_Operations</role>
+    </sharedTo>
+</ListView>

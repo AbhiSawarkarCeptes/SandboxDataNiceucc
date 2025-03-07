@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_Number__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Mode__c,&apos;OTC Deposits&apos;),&apos;OTC&apos;,IF(ISPICKVAL(Mode__c,&apos;Cheque&apos;),&apos;CSN&apos;,IF(ISPICKVAL(Mode__c,&apos;Credit Card&apos;),&apos;CCA&apos;,IF(ISPICKVAL(Mode__c,&apos;CDM Cash&apos;),&apos;CDM-CASH&apos;,IF(ISPICKVAL(Mode__c,&apos;CDM Cheque&apos;),&apos;CDM-CHEQUE&apos;,IF(ISPICKVAL(Mode__c,&apos;International Wire Transfer&apos;),&apos;IWT&apos;,IF(ISPICKVAL(Mode__c,&apos;Domestic Wire Transfer&apos;),&apos;DWT&apos;,IF(ISPICkVAL(Mode__c,&apos;Website&apos;),&apos;E-COMMERCE&apos;,&apos;&apos;)))))))) + &apos;-&apos; + Name</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Auto Number</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

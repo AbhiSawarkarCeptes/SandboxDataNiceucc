@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_with_Audit</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Pending with Audit</value>
+    </filters>
+    <filters>
+        <field>Is_UAE_Category__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Pending with Audit</label>
+    <sharedTo>
+        <group>CHRM_Manager</group>
+        <group>CHRM_Ops</group>
+        <group>CHRM_Team</group>
+    </sharedTo>
+</ListView>

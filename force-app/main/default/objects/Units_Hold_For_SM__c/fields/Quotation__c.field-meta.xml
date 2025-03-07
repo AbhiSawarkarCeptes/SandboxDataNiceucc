@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quotation__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Quotation</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Quotation__c.Unit__c</field>
+            <operation>equals</operation>
+            <value></value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Quotation__c</referenceTo>
+    <relationshipName>Unit_Holds_For_SM</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

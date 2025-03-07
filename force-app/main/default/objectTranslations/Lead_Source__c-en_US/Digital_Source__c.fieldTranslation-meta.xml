@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Digital Source --></label>
+    <name>Digital_Source__c</name>
+    <picklistValues>
+        <masterLabel>Social Media</masterLabel>
+        <translation><!-- Social Media --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>affiliate</masterLabel>
+        <translation><!-- affiliate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>facebook-lead-ad</masterLabel>
+        <translation><!-- facebook-lead-ad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>google</masterLabel>
+        <translation><!-- google --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>instagram-lead-ad</masterLabel>
+        <translation><!-- instagram-lead-ad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>instagram-story-ads</masterLabel>
+        <translation><!-- instagram-story-ads --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pogrammatic</masterLabel>
+        <translation><!-- pogrammatic --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

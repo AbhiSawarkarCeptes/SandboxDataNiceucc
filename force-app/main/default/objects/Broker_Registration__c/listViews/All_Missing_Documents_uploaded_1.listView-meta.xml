@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Missing_Documents_uploaded_1</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>CHRM_Ops_Approval_Date__c</columns>
+    <columns>Name_as_per_trade_license__c</columns>
+    <columns>NAME</columns>
+    <columns>Broker_Category__c</columns>
+    <columns>CHRM_Manager_Email__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>All missing documents uploaded</value>
+    </filters>
+    <label>All Missing Documents uploaded</label>
+    <sharedTo>
+        <group>CHRM_Ops</group>
+        <group>ERF_BRF_Broker_Meeting_Tracker</group>
+    </sharedTo>
+</ListView>

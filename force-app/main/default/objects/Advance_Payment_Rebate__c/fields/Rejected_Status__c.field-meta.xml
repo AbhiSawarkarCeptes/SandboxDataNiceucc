@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejected_Status__c</fullName>
+    <label>Rejected Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>rejected by Collections</fullName>
+                <default>false</default>
+                <label>rejected by Collections</label>
+            </value>
+            <value>
+                <fullName>Rejected by Accounts</fullName>
+                <default>false</default>
+                <label>Rejected by Accounts</label>
+            </value>
+            <value>
+                <fullName>Rejected by Audit</fullName>
+                <default>false</default>
+                <label>Rejected by Audit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

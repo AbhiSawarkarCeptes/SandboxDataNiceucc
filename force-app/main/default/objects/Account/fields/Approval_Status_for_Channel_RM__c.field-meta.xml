@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Status_for_Channel_RM__c</fullName>
+    <label>Approval Status for Channel RM</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Submitted : New Channel RM</fullName>
+                <default>false</default>
+                <label>Submitted : New Channel RM</label>
+            </value>
+            <value>
+                <fullName>Approved : New Channel RM</fullName>
+                <default>false</default>
+                <label>Approved : New Channel RM</label>
+            </value>
+            <value>
+                <fullName>Rejected : New Channel RM</fullName>
+                <default>false</default>
+                <label>Rejected : New Channel RM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

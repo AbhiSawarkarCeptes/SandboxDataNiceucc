@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason --></label>
+    <name>Reason__c</name>
+    <picklistValues>
+        <masterLabel>Armed Forces</masterLabel>
+        <translation><!-- Armed Forces --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporate</masterLabel>
+        <translation><!-- Corporate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporate - Percentage</masterLabel>
+        <translation><!-- Corporate - Percentage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Floor Rise</masterLabel>
+        <translation><!-- Floor Rise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GST</masterLabel>
+        <translation><!-- GST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referral Discount</masterLabel>
+        <translation><!-- Referral Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spin the wheel</masterLabel>
+        <translation><!-- Spin the wheel --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

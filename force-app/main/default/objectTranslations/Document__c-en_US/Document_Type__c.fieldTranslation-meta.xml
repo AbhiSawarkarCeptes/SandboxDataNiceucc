@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Document Type --></label>
+    <name>Document_Type__c</name>
+    <picklistValues>
+        <masterLabel>All</masterLabel>
+        <translation><!-- All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Booking Form</masterLabel>
+        <translation><!-- Booking Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSPA</masterLabel>
+        <translation><!-- DSPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOU</masterLabel>
+        <translation><!-- MOU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA</masterLabel>
+        <translation><!-- SPA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

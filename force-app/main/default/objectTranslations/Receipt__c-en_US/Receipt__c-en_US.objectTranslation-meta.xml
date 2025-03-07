@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Receipt</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Receipts</value>
+    </caseValues>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>External SOA Verification Vendor</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval --></label>
+            <section>Audit Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Bank Details --></label>
+            <section>Bank Details</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Note Details --></label>
+            <section>Credit Note Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Rejection Details --></label>
+            <section>Rejection Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Finance Receipt Layout</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval --></label>
+            <section>Audit Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Bank Details --></label>
+            <section>Bank Details</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Note Details --></label>
+            <section>Credit Note Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Rejection Details --></label>
+            <section>Rejection Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Finance with Receipt Edit Access</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval --></label>
+            <section>Audit Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Bank Details --></label>
+            <section>Bank Details</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Note Details --></label>
+            <section>Credit Note Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Rejection Details --></label>
+            <section>Rejection Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Read Only Receipt Layout</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval --></label>
+            <section>Audit Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Bank Details --></label>
+            <section>Bank Details</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Note Details --></label>
+            <section>Credit Note Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Rejection Details --></label>
+            <section>Rejection Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Receipt Layout</layout>
+        <sections>
+            <label><!-- Advance Receipt Details --></label>
+            <section>Advance Receipt Details</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Approval --></label>
+            <section>Audit Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Bank Details --></label>
+            <section>Bank Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Audit Finance Approval --></label>
+        <name>Audit_Finance_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Receipt Status --></label>
+        <name>Update_Receipt_Status</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot change the cancellation reason once it&apos;s set. Please contact the system administrator if you need to update the cancellation reason on this receipt. --></errorMessage>
+        <name>Cancellation_Reason_cannot_be_changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sum of Registration Collection Control Report Amount and Corporate Collection Control Report Amount should not be greater than Total Amount --></errorMessage>
+        <name>CorpANDRegAmtShouldNotBeGreaterthanTotal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Reason For Cancellation as receipt status is Cancelled --></errorMessage>
+        <name>Reason_For_Cancellation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit Rejected Receipt --></errorMessage>
+        <name>RejectedReceiptCannotBeEdited</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Total Apportioned Money should be less than or equal to On Account Money --></errorMessage>
+        <name>Validation_For_Total_Money_Apportioned</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Actions --></label>
+        <name>Actions</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Receipt --></label>
+        <name>Print_Receipt</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Receipt --></label>
+        <name>Send_Receipt</name>
+    </webLinks>
+</CustomObjectTranslation>

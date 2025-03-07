@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booking_Date_cannot_be_changed</fullName>
+    <active>false</active>
+    <description>Booking date can only be changed if Stage of Booking is &apos;Blocked&apos; or &apos;EOI&apos;</description>
+    <errorConditionFormula>AND(
+    TEXT(Stage_of_Booking__c) = &apos;Booked&apos;, 
+    ISCHANGED(Booking_Date__c),
+    NOT(ISCHANGED(Stage_of_Booking__c))
+)</errorConditionFormula>
+    <errorMessage>You cannot change &quot;Booking Date&quot; after &quot;Stage of Booking&quot; is Booked</errorMessage>
+</ValidationRule>

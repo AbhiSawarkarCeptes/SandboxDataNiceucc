@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub Source --></label>
+    <name>Sub_Source__c</name>
+    <picklistValues>
+        <masterLabel>Cairo_07FEB2019_Tarek</masterLabel>
+        <translation><!-- Cairo_07FEB2019_Tarek --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cityscape</masterLabel>
+        <translation><!-- Cityscape --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Events</masterLabel>
+        <translation><!-- Events --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exhibitions</masterLabel>
+        <translation><!-- Exhibitions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Facebook LeadGen</masterLabel>
+        <translation><!-- Facebook LeadGen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lagos_12Jan2019_Anil</masterLabel>
+        <translation><!-- Lagos_12Jan2019_Anil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mall</masterLabel>
+        <translation><!-- Mall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outdoor</masterLabel>
+        <translation><!-- Outdoor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Print</masterLabel>
+        <translation><!-- Print --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radio</masterLabel>
+        <translation><!-- Radio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tele sales AUH 27th July</masterLabel>
+        <translation><!-- Tele sales AUH 27th July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Television</masterLabel>
+        <translation><!-- Television --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tollfree</masterLabel>
+        <translation><!-- Tollfree --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

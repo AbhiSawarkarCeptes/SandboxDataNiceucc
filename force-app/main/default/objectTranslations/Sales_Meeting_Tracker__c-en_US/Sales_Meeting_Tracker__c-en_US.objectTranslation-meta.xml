@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Broker Meeting Tracker (Sales)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Broker Meeting Tracker (Sales)</value>
+    </caseValues>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales Meeting Tracker Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>SBM Name</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Enter Broker Name --></errorMessage>
+        <name>Broker_name_mandatory_on_not_reg</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Choose Either CP Id or SC Id but not both --></errorMessage>
+        <name>Valiadate_CP_Id_and_SC_Id</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Date can be today or yesterday only. --></errorMessage>
+        <name>validate_1_date_range_within_one_day</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Select Broker category --></errorMessage>
+        <name>validate_broker_category_mandatory</name>
+    </validationRules>
+</CustomObjectTranslation>

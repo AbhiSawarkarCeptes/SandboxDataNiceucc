@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Channel Partner</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Channel Partners</value>
+    </caseValues>
+    <layouts>
+        <layout>Channel Partner Layout</layout>
+        <sections>
+            <label><!-- Business Profiling --></label>
+            <section>Business Profiling</section>
+        </sections>
+        <sections>
+            <label><!-- CP Performance --></label>
+            <section>CP Performance</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Date Details --></label>
+            <section>Date Details</section>
+        </sections>
+        <sections>
+            <label><!-- Manager Details --></label>
+            <section>Manager Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Click to Dial --></label>
+        <name>Click_to_Dial</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Mandate for DocuSign --></label>
+        <name>Send_Mandate_for_DocuSign</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Generate_Mandate_Letter --></label>
+        <name>Generate_Mandate_Letter</name>
+    </webLinks>
+</CustomObjectTranslation>

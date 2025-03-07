@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PCC_Submit_for_Approval__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Required to be true if the user requires and option to Submit PCC for approval.</description>
+    <label>PCC Submit for Approval</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

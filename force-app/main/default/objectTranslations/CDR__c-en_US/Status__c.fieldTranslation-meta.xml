@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>AGENT BUSY</masterLabel>
+        <translation><!-- AGENT BUSY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANSWERED</masterLabel>
+        <translation><!-- ANSWERED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BUSY</masterLabel>
+        <translation><!-- BUSY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CANCEL</masterLabel>
+        <translation><!-- CANCEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISCONNECTED</masterLabel>
+        <translation><!-- DISCONNECTED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FAILD</masterLabel>
+        <translation><!-- FAILD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IVR TIMEOUT</masterLabel>
+        <translation><!-- IVR TIMEOUT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO AGENTS</masterLabel>
+        <translation><!-- NO AGENTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO ANSWER</masterLabel>
+        <translation><!-- NO ANSWER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QUEUE TIMEOUT</masterLabel>
+        <translation><!-- QUEUE TIMEOUT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

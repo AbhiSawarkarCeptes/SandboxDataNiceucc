@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project__c</fullName>
+    <label>Project</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hartland Extension</fullName>
+                <default>false</default>
+                <label>Hartland Extension</label>
+            </value>
+            <value>
+                <fullName>Creek Vista</fullName>
+                <default>false</default>
+                <label>Creek Vista</label>
+            </value>
+            <value>
+                <fullName>Creek Vistas Grande</fullName>
+                <default>false</default>
+                <label>Creek Vistas Grande</label>
+            </value>
+            <value>
+                <fullName>Crest Grande</fullName>
+                <default>false</default>
+                <label>Crest Grande</label>
+            </value>
+            <value>
+                <fullName>Greens</fullName>
+                <default>false</default>
+                <label>Greens</label>
+            </value>
+            <value>
+                <fullName>One Park Avenue</fullName>
+                <default>false</default>
+                <label>One Park Avenue</label>
+            </value>
+            <value>
+                <fullName>Sobha Creek Vista Heights</fullName>
+                <default>false</default>
+                <label>Sobha Creek Vista Heights</label>
+            </value>
+            <value>
+                <fullName>Sobha Creek vistas Reserve</fullName>
+                <default>false</default>
+                <label>Sobha Creek vistas Reserve</label>
+            </value>
+            <value>
+                <fullName>Sobha Tranquility</fullName>
+                <default>false</default>
+                <label>Sobha Tranquility</label>
+            </value>
+            <value>
+                <fullName>Sobha Waves Opulence</fullName>
+                <default>false</default>
+                <label>Sobha Waves Opulence</label>
+            </value>
+            <value>
+                <fullName>The Crest</fullName>
+                <default>false</default>
+                <label>The Crest</label>
+            </value>
+            <value>
+                <fullName>Townhouses</fullName>
+                <default>false</default>
+                <label>Townhouses</label>
+            </value>
+            <value>
+                <fullName>Villas</fullName>
+                <default>false</default>
+                <label>Villas</label>
+            </value>
+            <value>
+                <fullName>Waterside Plots</fullName>
+                <default>false</default>
+                <label>Waterside Plots</label>
+            </value>
+            <value>
+                <fullName>Waves</fullName>
+                <default>false</default>
+                <label>Waves</label>
+            </value>
+            <value>
+                <fullName>Waves Grande</fullName>
+                <default>false</default>
+                <label>Waves Grande</label>
+            </value>
+            <value>
+                <fullName>Sobha Hartland II Villas</fullName>
+                <default>false</default>
+                <label>Sobha Hartland II Villas</label>
+            </value>
+            <value>
+                <fullName>Sobha One</fullName>
+                <default>false</default>
+                <label>Sobha One</label>
+            </value>
+            <value>
+                <fullName>Sobha Reserve</fullName>
+                <default>false</default>
+                <label>Sobha Reserve</label>
+            </value>
+            <value>
+                <fullName>Sobha SeaHaven</fullName>
+                <default>false</default>
+                <label>Sobha SeaHaven</label>
+            </value>
+            <value>
+                <fullName>The S</fullName>
+                <default>false</default>
+                <label>The S</label>
+            </value>
+            <value>
+                <fullName>Verde By Sobha</fullName>
+                <default>false</default>
+                <label>Verde By Sobha</label>
+            </value>
+            <value>
+                <fullName>310  Riverside Crescent</fullName>
+                <default>false</default>
+                <label>310  Riverside Crescent</label>
+            </value>
+            <value>
+                <fullName>320  Riverside Crescent</fullName>
+                <default>false</default>
+                <label>320  Riverside Crescent</label>
+            </value>
+            <value>
+                <fullName>330  Riverside Crescent</fullName>
+                <default>false</default>
+                <label>330  Riverside Crescent</label>
+            </value>
+            <value>
+                <fullName>340  Riverside Crescent</fullName>
+                <default>false</default>
+                <label>340  Riverside Crescent</label>
+            </value>
+            <value>
+                <fullName>350  Riverside Crescent</fullName>
+                <default>false</default>
+                <label>350  Riverside Crescent</label>
+            </value>
+            <value>
+                <fullName>360  Riverside Crescent</fullName>
+                <default>false</default>
+                <label>360  Riverside Crescent</label>
+            </value>
+            <value>
+                <fullName>Sobha Orbis</fullName>
+                <default>false</default>
+                <label>Sobha Orbis</label>
+            </value>
+            <value>
+                <fullName>Delphine Beach Residences</fullName>
+                <default>false</default>
+                <label>Delphine Beach Residences</label>
+            </value>
+            <value>
+                <fullName>Selence Beach Residences</fullName>
+                <default>false</default>
+                <label>Selence Beach Residences</label>
+            </value>
+            <value>
+                <fullName>Sobha Siniya Island</fullName>
+                <default>false</default>
+                <label>Sobha Siniya Island</label>
+            </value>
+            <value>
+                <fullName>Test Project</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Test Project</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

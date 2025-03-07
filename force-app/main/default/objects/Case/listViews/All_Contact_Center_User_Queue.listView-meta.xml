@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Contact_Center_User_Queue</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>OWNER_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>New,Open,In Progress,Escalation – TAT,Re-Opened</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>contains</operation>
+        <value>Easakh Pandiri,Deann Prisca Lalita Dsilva,Daivik Paresh Kamdar,Syeda Absar Fatima,Reuben Dsouza,Elaine Susan George,Maithah,Hussein Nassrallah,Mahmoud,Nardos Dereje Melese,Bharat Thakwani,Yang Chen,Schneider Dsouza,Farhan Babar,Myrat,Farah</value>
+    </filters>
+    <filters>
+        <field>is_QMS_Case__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>All Contact Center User Queue</label>
+    <sharedTo>
+        <group>Contact_Center_User_Queue</group>
+        <role>CRM</role>
+    </sharedTo>
+</ListView>

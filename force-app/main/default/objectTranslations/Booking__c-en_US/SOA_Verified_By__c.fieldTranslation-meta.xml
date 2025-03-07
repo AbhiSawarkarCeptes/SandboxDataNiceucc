@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SOA Verified By --></label>
+    <name>SOA_Verified_By__c</name>
+    <relationshipLabel><!-- Booking (SOA Verified By) --></relationshipLabel>
+</CustomFieldTranslation>

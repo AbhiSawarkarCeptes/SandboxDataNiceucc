@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Opportunity Value</label>
+    <protected>false</protected>
+    <values>
+        <field>Field_Type__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Payload_Section__c</field>
+        <value xsi:type="xsd:string">eventData</value>
+    </values>
+    <values>
+        <field>SF_Lead_API__c</field>
+        <value xsi:type="xsd:string">Opportunity_Value__c</value>
+    </values>
+    <values>
+        <field>SF_Object__c</field>
+        <value xsi:type="xsd:string">Event</value>
+    </values>
+    <values>
+        <field>Weg_Engage_Key__c</field>
+        <value xsi:type="xsd:string">Opportunity Value</value>
+    </values>
+    <values>
+        <field>needTransformation__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

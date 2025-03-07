@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Charge Type --></label>
+    <name>Charge_Type__c</name>
+    <picklistValues>
+        <masterLabel>1% Delayed Handover Charges</masterLabel>
+        <translation><!-- 1% Delayed Handover Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Charges</masterLabel>
+        <translation><!-- Admin Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Charges (General)</masterLabel>
+        <translation><!-- Admin Charges (General) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advance Forfeited</masterLabel>
+        <translation><!-- Advance Forfeited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advance payment rebate</masterLabel>
+        <translation><!-- Advance payment rebate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Area change</masterLabel>
+        <translation><!-- Area change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Area excess</masterLabel>
+        <translation><!-- Area excess --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker Spot</masterLabel>
+        <translation><!-- Broker Spot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker commission</masterLabel>
+        <translation><!-- Broker commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancel &amp; Swap</masterLabel>
+        <translation><!-- Cancel &amp; Swap --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation Charges</masterLabel>
+        <translation><!-- Cancellation Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change of ownership</masterLabel>
+        <translation><!-- Change of ownership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheque Bouncing Charges</masterLabel>
+        <translation><!-- Cheque Bouncing Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheque Dishonored Charges</masterLabel>
+        <translation><!-- Cheque Dishonored Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission Adjustment Credit</masterLabel>
+        <translation><!-- Commission Adjustment Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Management Service fees</masterLabel>
+        <translation><!-- Community Management Service fees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concept drawing NOC</masterLabel>
+        <translation><!-- Concept drawing NOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction NOC</masterLabel>
+        <translation><!-- Construction NOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Card Charge</masterLabel>
+        <translation><!-- Credit Card Charge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Refund</masterLabel>
+        <translation><!-- Customer Refund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEWA Charges</masterLabel>
+        <translation><!-- DEWA Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD Cancellation Charges</masterLabel>
+        <translation><!-- DLD Cancellation Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLD Fees</masterLabel>
+        <translation><!-- DLD Fees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Detailed design NOC</masterLabel>
+        <translation><!-- Detailed design NOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee discount / rebate</masterLabel>
+        <translation><!-- Employee discount / rebate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installment</masterLabel>
+        <translation><!-- Installment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Payment Charges</masterLabel>
+        <translation><!-- Late Payment Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Payment Charges Demands</masterLabel>
+        <translation><!-- Late Payment Charges Demands --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Payment Charges Reversal</masterLabel>
+        <translation><!-- Late Payment Charges Reversal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Payment Waiver / DLD Waiver</masterLabel>
+        <translation><!-- Late Payment Waiver / DLD Waiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maintenance Charges</masterLabel>
+        <translation><!-- Maintenance Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Milestone Demand Reversal</masterLabel>
+        <translation><!-- Milestone Demand Reversal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Milestone Demands</masterLabel>
+        <translation><!-- Milestone Demands --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mortgage Fees</masterLabel>
+        <translation><!-- Mortgage Fees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mortgage Fees (Ejara)</masterLabel>
+        <translation><!-- Mortgage Fees (Ejara) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mortgage Fees (Traditonal)</masterLabel>
+        <translation><!-- Mortgage Fees (Traditonal) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC Charges</masterLabel>
+        <translation><!-- NOC Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Name addition/deletion</masterLabel>
+        <translation><!-- Name addition/deletion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oqood Charges</masterLabel>
+        <translation><!-- Oqood Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Charges Demand Reversal</masterLabel>
+        <translation><!-- Other Charges Demand Reversal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ownership Change</masterLabel>
+        <translation><!-- Ownership Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ownership changes</masterLabel>
+        <translation><!-- Ownership changes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plot - Construction Commencement/ Completion Delay Penalty</masterLabel>
+        <translation><!-- Plot - Construction Commencement/ Completion Delay Penalty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plot Resale NOC</masterLabel>
+        <translation><!-- Plot Resale NOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plot title Deed</masterLabel>
+        <translation><!-- Plot title Deed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-registration</masterLabel>
+        <translation><!-- Pre-registration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-registration To Pre-title Deed</masterLabel>
+        <translation><!-- Pre-registration To Pre-title Deed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-registration to pre-title deed (completed projects)</masterLabel>
+        <translation><!-- Pre-registration to pre-title deed (completed projects) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receipt (Credit Swap)</masterLabel>
+        <translation><!-- Receipt (Credit Swap) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reissue of Plot NOC (construction)</masterLabel>
+        <translation><!-- Reissue of Plot NOC (construction) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reissue of Plot NOC (other than construction)</masterLabel>
+        <translation><!-- Reissue of Plot NOC (other than construction) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renewal of Resale NOC (expired in 30 days)</masterLabel>
+        <translation><!-- Renewal of Resale NOC (expired in 30 days) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale NOC (Oqood)</masterLabel>
+        <translation><!-- Resale NOC (Oqood) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale NOC (Title Deed)</masterLabel>
+        <translation><!-- Resale NOC (Title Deed) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale – NOC (Off plan)</masterLabel>
+        <translation><!-- Resale – NOC (Off plan) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale – NOC (Title Deed)</masterLabel>
+        <translation><!-- Resale – NOC (Title Deed) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA Reissuance Fees</masterLabel>
+        <translation><!-- SPA Reissuance Fees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA reissuance fees (per book)</masterLabel>
+        <translation><!-- SPA reissuance fees (per book) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Spot</masterLabel>
+        <translation><!-- Sales Spot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales incentive / commission</masterLabel>
+        <translation><!-- Sales incentive / commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Security Deposit</masterLabel>
+        <translation><!-- Security Deposit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Selling Expenses</masterLabel>
+        <translation><!-- Selling Expenses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service charges</masterLabel>
+        <translation><!-- Service charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Soil Investigation</masterLabel>
+        <translation><!-- Soil Investigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Deed</masterLabel>
+        <translation><!-- Title Deed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Deed Charges</masterLabel>
+        <translation><!-- Title Deed Charges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Deed Fees (Plots)</masterLabel>
+        <translation><!-- Title Deed Fees (Plots) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Deed Fees (Units)</masterLabel>
+        <translation><!-- Title Deed Fees (Units) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Title Deed Fees (Villas)</masterLabel>
+        <translation><!-- Title Deed Fees (Villas) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upkeep/refurbishment Charges</masterLabel>
+        <translation><!-- Upkeep/refurbishment Charges --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

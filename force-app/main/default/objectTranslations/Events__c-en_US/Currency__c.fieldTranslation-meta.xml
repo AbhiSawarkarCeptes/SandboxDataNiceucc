@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Currency --></label>
+    <name>Currency__c</name>
+    <picklistValues>
+        <masterLabel>Australian dollar</masterLabel>
+        <translation><!-- Australian dollar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bangladeshi Taka (Bangladesh Currency)</masterLabel>
+        <translation><!-- Bangladeshi Taka (Bangladesh Currency) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brazilian real</masterLabel>
+        <translation><!-- Brazilian real --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canadian dollar</masterLabel>
+        <translation><!-- Canadian dollar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Central African CFA franc(Cameroon Currency)</masterLabel>
+        <translation><!-- Central African CFA franc(Cameroon Currency) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chilean peso</masterLabel>
+        <translation><!-- Chilean peso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colombian peso</masterLabel>
+        <translation><!-- Colombian peso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Congolese franc (Congo Currency)</masterLabel>
+        <translation><!-- Congolese franc (Congo Currency) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Czech koruna</masterLabel>
+        <translation><!-- Czech koruna --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Danish krone</masterLabel>
+        <translation><!-- Danish krone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Euro</masterLabel>
+        <translation><!-- Euro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ghanaian Cedi (Ghana Currency)</masterLabel>
+        <translation><!-- Ghanaian Cedi (Ghana Currency) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hong Kong dollar</masterLabel>
+        <translation><!-- Hong Kong dollar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hungarian forint</masterLabel>
+        <translation><!-- Hungarian forint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indian rupee</masterLabel>
+        <translation><!-- Indian rupee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indonesian rupiah</masterLabel>
+        <translation><!-- Indonesian rupiah --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Israeli new shekel</masterLabel>
+        <translation><!-- Israeli new shekel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Japanese yen</masterLabel>
+        <translation><!-- Japanese yen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Malaysian ringgit</masterLabel>
+        <translation><!-- Malaysian ringgit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mexican peso</masterLabel>
+        <translation><!-- Mexican peso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Taiwan dollar</masterLabel>
+        <translation><!-- New Taiwan dollar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Zealand dollar</masterLabel>
+        <translation><!-- New Zealand dollar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nigerian naira</masterLabel>
+        <translation><!-- Nigerian naira --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Norwegian krone</masterLabel>
+        <translation><!-- Norwegian krone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Philippine peso</masterLabel>
+        <translation><!-- Philippine peso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Polish złoty</masterLabel>
+        <translation><!-- Polish złoty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pound sterling</masterLabel>
+        <translation><!-- Pound sterling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renminbi</masterLabel>
+        <translation><!-- Renminbi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Romanian leu</masterLabel>
+        <translation><!-- Romanian leu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Russian ruble</masterLabel>
+        <translation><!-- Russian ruble --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Saudi riyal</masterLabel>
+        <translation><!-- Saudi riyal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Singapore dollar</masterLabel>
+        <translation><!-- Singapore dollar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South African rand</masterLabel>
+        <translation><!-- South African rand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South Korean wo</masterLabel>
+        <translation><!-- South Korean wo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swedish krona</masterLabel>
+        <translation><!-- Swedish krona --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swiss franc</masterLabel>
+        <translation><!-- Swiss franc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tanzanian Shilling (Tanzania currency)</masterLabel>
+        <translation><!-- Tanzanian Shilling (Tanzania currency) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thai baht</masterLabel>
+        <translation><!-- Thai baht --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkish lira</masterLabel>
+        <translation><!-- Turkish lira --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UAE dirham</masterLabel>
+        <translation><!-- UAE dirham --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>United States dollar</masterLabel>
+        <translation><!-- United States dollar --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transaction_Request__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Transaction Request</label>
+    <referenceTo>PropStrength__Transaction_Requests__c</referenceTo>
+    <relationshipLabel>Docusign Recipient Status Sobha</relationshipLabel>
+    <relationshipName>Docusign_Recipient_Status_Sobha</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

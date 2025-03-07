@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Executed_Agreement_sent_to_broker</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>Name_as_per_trade_license__c</columns>
+    <columns>NAME</columns>
+    <columns>Broker_Category__c</columns>
+    <columns>Status__c</columns>
+    <columns>Mobile__c</columns>
+    <columns>Email__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Executed Agreement sent to broker</value>
+    </filters>
+    <label>Executed Agreement sent to broker</label>
+    <sharedTo>
+        <group>CHRM_Team</group>
+        <role>AVP_Channel_Relations</role>
+    </sharedTo>
+</ListView>

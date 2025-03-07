@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CP_Sobha_Connect_Manager__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (
+NOT(ISBLANK( Channel_Partner__c )),Channel_Partner__r.Channel_Relationship_Manager__c ,
+if
+( NOT(ISBLANK ( Sobha_Connect__c )), Sobha_Connect__r.Channel_Relationship_Manager__c ,&quot;&quot; ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CP / Sobha Connect Manager</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

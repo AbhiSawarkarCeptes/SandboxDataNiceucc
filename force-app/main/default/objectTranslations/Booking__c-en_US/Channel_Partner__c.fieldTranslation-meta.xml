@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please Select a Channel Partner if Booking Source is &apos;Channel Partner&apos; --></help>
+    <label><!-- Channel Partner --></label>
+    <name>Channel_Partner__c</name>
+    <relationshipLabel><!-- Booking --></relationshipLabel>
+</CustomFieldTranslation>

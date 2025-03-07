@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VS10_UK_Opportunities</fullName>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Country_Code__c</columns>
+    <columns>Account_Mobile_Number__c</columns>
+    <columns>Presales_Agent__c</columns>
+    <columns>Last_Call_Attempt_Date__c</columns>
+    <columns>Last_call_attempt_status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>Digital</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>2/1/2019 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Country_Code__c</field>
+        <operation>contains</operation>
+        <value>44</value>
+    </filters>
+    <filters>
+        <field>Last_call_attempt_status__c</field>
+        <operation>contains</operation>
+        <value>Meeting,Visit,Tele</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Site Visit Done,Token Amount Received - BIP,Booking confirmed,Closed Won</value>
+    </filters>
+    <label>VS10: UK Opportunities</label>
+    <sharedTo>
+        <role>GM_Digital_Marketing_Telesales</role>
+    </sharedTo>
+</ListView>

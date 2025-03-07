@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Initial Contract of Sale No --></label>
+    <name>Initial_Contract_of_Sale_No__c</name>
+</CustomFieldTranslation>

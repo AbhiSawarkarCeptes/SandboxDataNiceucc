@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Incentive Teams</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Incentive Teams</value>
+    </caseValues>
+    <layouts>
+        <layout>Incentive Teams Layout</layout>
+        <sections>
+            <label><!-- Channel Partner Users --></label>
+            <section>Channel Partner Users</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Users --></label>
+            <section>Marketing Users</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Incentive Users --></label>
+            <section>Sales Incentive Users</section>
+        </sections>
+        <sections>
+            <label><!-- Special Incentive --></label>
+            <section>Special Incentive</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

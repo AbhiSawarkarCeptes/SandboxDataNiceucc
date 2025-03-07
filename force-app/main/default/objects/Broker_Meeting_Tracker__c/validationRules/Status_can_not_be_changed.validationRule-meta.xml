@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_can_not_be_changed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Not(isNew()),
+OR( 
+AND(PRIORVALUE(Meeting_Status__c) ==&apos;Completed&apos; , isPickval(Meeting_Status__c,&apos;Scheduled&apos;)),
+AND(PRIORVALUE(Meeting_Status__c) ==&apos;Completed&apos; , isPickval(Meeting_Status__c,&apos;Cancelled&apos;)),
+AND(PRIORVALUE(Meeting_Status__c) ==&apos;Unscheduled - Completed&apos; , isPickval(Meeting_Status__c,&apos;Scheduled&apos;)),
+AND(PRIORVALUE(Meeting_Status__c) ==&apos;Unscheduled Completed&apos; , isPickval(Meeting_Status__c,&apos;Cancelled&apos;)),
+AND(PRIORVALUE(Meeting_Status__c) ==&apos;Scheduled&apos; , isPickval(Meeting_Status__c,&apos;Unscheduled - Completed&apos;)),
+AND(PRIORVALUE(Meeting_Status__c) ==&apos;Cancelled&apos; , isPickval(Meeting_Status__c,&apos;Scheduled&apos;))))</errorConditionFormula>
+    <errorMessage>Status can not be changed</errorMessage>
+</ValidationRule>

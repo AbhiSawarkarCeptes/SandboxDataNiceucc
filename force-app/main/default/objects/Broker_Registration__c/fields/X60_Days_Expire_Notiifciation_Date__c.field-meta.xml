@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X60_Days_Expire_Notiifciation_Date__c</fullName>
+    <formula>Broker_Expiry_Date__c - 60</formula>
+    <label>60 Days Expire Notiifciation Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

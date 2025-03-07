@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Due_Amount_For_Process__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(Milestone_Due_Till_Date__c &gt; 0,Milestone_Due_Till_Date__c &gt; Paid_Amount_For_Process__c),Milestone_Due_Till_Date__c - Paid_Amount_For_Process__c,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Due Amount For Process</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

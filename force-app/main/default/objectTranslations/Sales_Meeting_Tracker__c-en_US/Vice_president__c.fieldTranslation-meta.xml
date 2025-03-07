@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Vice president --></label>
+    <name>Vice_president__c</name>
+    <relationshipLabel><!-- Broker Meeting Tracker (Sales) (Vice president) --></relationshipLabel>
+</CustomFieldTranslation>

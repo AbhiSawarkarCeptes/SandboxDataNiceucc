@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Debit_Charge_Name__c</fullName>
+    <label>Debit Charge Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Interest Charges</fullName>
+                <default>false</default>
+                <label>Interest Charges</label>
+            </value>
+            <value>
+                <fullName>Brokerage Reversal</fullName>
+                <default>false</default>
+                <label>Brokerage Reversal</label>
+            </value>
+            <value>
+                <fullName>Cheque Bounce</fullName>
+                <default>false</default>
+                <label>Cheque Bounce</label>
+            </value>
+            <value>
+                <fullName>Interior Charges</fullName>
+                <default>false</default>
+                <label>Interior Charges</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

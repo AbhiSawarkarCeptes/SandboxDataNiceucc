@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- UTM Source --></label>
+    <name>UTM_Source__c</name>
+    <picklistValues>
+        <masterLabel>Bayt</masterLabel>
+        <translation><!-- Bayt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Etiquette</masterLabel>
+        <translation><!-- Etiquette --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HF</masterLabel>
+        <translation><!-- HF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HOD</masterLabel>
+        <translation><!-- HOD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LinkedIn</masterLabel>
+        <translation><!-- LinkedIn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PropertyGuru</masterLabel>
+        <translation><!-- PropertyGuru --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Xiongma</masterLabel>
+        <translation><!-- Xiongma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>YallaCompare</masterLabel>
+        <translation><!-- YallaCompare --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>adlantic</masterLabel>
+        <translation><!-- adlantic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>adzberry</masterLabel>
+        <translation><!-- adzberry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>affiliate</masterLabel>
+        <translation><!-- affiliate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>arabayads</masterLabel>
+        <translation><!-- arabayads --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ballyhoo</masterLabel>
+        <translation><!-- ballyhoo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>facebook</masterLabel>
+        <translation><!-- facebook --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>flickstree</masterLabel>
+        <translation><!-- flickstree --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>google</masterLabel>
+        <translation><!-- google --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>icubeswire</masterLabel>
+        <translation><!-- icubeswire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>instagram</masterLabel>
+        <translation><!-- instagram --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>mrn</masterLabel>
+        <translation><!-- mrn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>optimise</masterLabel>
+        <translation><!-- optimise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>platformance</masterLabel>
+        <translation><!-- platformance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pogrammatic</masterLabel>
+        <translation><!-- pogrammatic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>propertyfinder</masterLabel>
+        <translation><!-- propertyfinder --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

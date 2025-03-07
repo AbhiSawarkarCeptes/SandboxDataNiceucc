@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Incentive</fullName>
+    <active>true</active>
+    <description>Marketing Team Incentive</description>
+    <label>Marketing Incentive</label>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted for Approval</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Marketing_Category__c</picklist>
+        <values>
+            <fullName>Digital Marketing Sales %28Inc%2E Influencer%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Walk-in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loyalty Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loyalty Sales %28saving 1%25 on discount%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loyalty Sales %28with discount%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mall Stands%2FKiosks Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mall Stands%2FKiosks Sales %28with Telesales%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

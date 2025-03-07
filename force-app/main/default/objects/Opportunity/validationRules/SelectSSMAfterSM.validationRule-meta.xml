@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SelectSSMAfterSM</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR( 
+AND(ISBLANK(Sales_Manager_lookup__c), 
+ISCHANGED(Secondary_Sales_Manager__c)), 
+
+AND(ISCHANGED(Sales_Manager_lookup__c), 
+ISCHANGED(Secondary_Sales_Manager__c) 
+))</errorConditionFormula>
+    <errorDisplayField>X9acres_Project_Description__c</errorDisplayField>
+    <errorMessage>Please select Sales Manager first and then select Secondary Sales Manager</errorMessage>
+</ValidationRule>

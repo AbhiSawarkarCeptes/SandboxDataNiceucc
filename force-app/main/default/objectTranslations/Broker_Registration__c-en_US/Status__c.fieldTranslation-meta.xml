@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Agreement - approved by CHRM OPS</masterLabel>
+        <translation><!-- Agreement - approved by CHRM OPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement Executed Manually</masterLabel>
+        <translation><!-- Agreement Executed Manually --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement Generated</masterLabel>
+        <translation><!-- Agreement Generated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement Is in process</masterLabel>
+        <translation><!-- Agreement Is in process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement created and sent for Review</masterLabel>
+        <translation><!-- Agreement created and sent for Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement created and sent for signature</masterLabel>
+        <translation><!-- Agreement created and sent for signature --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agreement created and sent to witness</masterLabel>
+        <translation><!-- Agreement created and sent to witness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>All missing documents uploaded</masterLabel>
+        <translation><!-- All missing documents uploaded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved - by Ashish Parakh</masterLabel>
+        <translation><!-- Approved - by Ashish Parakh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker Registration Done</masterLabel>
+        <translation><!-- Broker Registration Done --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CP/SC ID Generated</masterLabel>
+        <translation><!-- CP/SC ID Generated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled Agreement - As requested by Broker</masterLabel>
+        <translation><!-- Cancelled Agreement - As requested by Broker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled Agreement- Broker Category Change</masterLabel>
+        <translation><!-- Cancelled Agreement- Broker Category Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled Agreement- Company Name Change</masterLabel>
+        <translation><!-- Cancelled Agreement- Company Name Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled Agreement- Ownership Change</masterLabel>
+        <translation><!-- Cancelled Agreement- Ownership Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executed Agreement sent to CHRM</masterLabel>
+        <translation><!-- Executed Agreement sent to CHRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executed Agreement sent to broker</masterLabel>
+        <translation><!-- Executed Agreement sent to broker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC Generated</masterLabel>
+        <translation><!-- NOC Generated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOC Is in Process</masterLabel>
+        <translation><!-- NOC Is in Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Executed - Terminated</masterLabel>
+        <translation><!-- Not Executed - Terminated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with Ashish Parakh</masterLabel>
+        <translation><!-- Pending with Ashish Parakh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with Audit</masterLabel>
+        <translation><!-- Pending with Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with CHRM / Rejected with CHRM</masterLabel>
+        <translation><!-- Pending with CHRM / Rejected with CHRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with CHRM Manager</masterLabel>
+        <translation><!-- Pending with CHRM Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with CHRM OPS</masterLabel>
+        <translation><!-- Pending with CHRM OPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending with Channel Ops Audit</masterLabel>
+        <translation><!-- Pending with Channel Ops Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Audit</masterLabel>
+        <translation><!-- Rejected by Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by CHRM Manager</masterLabel>
+        <translation><!-- Rejected by CHRM Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by CHRM OPS</masterLabel>
+        <translation><!-- Rejected by CHRM OPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Channel Ops Audit</masterLabel>
+        <translation><!-- Rejected by Channel Ops Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sent for Final Signatures</masterLabel>
+        <translation><!-- Sent for Final Signatures --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signed Agreement Received - Documents Awaited</masterLabel>
+        <translation><!-- Signed Agreement Received - Documents Awaited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terminated</masterLabel>
+        <translation><!-- Terminated --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

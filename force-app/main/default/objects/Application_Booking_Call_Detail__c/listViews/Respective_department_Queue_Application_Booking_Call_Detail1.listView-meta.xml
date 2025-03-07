@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Respective_department_Queue_Application_Booking_Call_Detail1</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Respective department Queue</label>
+    <queue>Respective_department_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

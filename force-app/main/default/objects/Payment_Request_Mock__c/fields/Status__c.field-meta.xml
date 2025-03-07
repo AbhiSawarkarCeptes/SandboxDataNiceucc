@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending for Accounts Approval</fullName>
+                <default>false</default>
+                <label>Pending for Accounts Approval</label>
+            </value>
+            <value>
+                <fullName>Approved by Accounts</fullName>
+                <default>false</default>
+                <label>Approved by Accounts</label>
+            </value>
+            <value>
+                <fullName>Rejected by Accounts</fullName>
+                <default>false</default>
+                <label>Rejected by Accounts</label>
+            </value>
+            <value>
+                <fullName>Pending for Sales Ops Approval</fullName>
+                <default>false</default>
+                <label>Pending for Sales Ops Approval</label>
+            </value>
+            <value>
+                <fullName>Rejected by Sales Ops</fullName>
+                <default>false</default>
+                <label>Rejected by Sales Ops</label>
+            </value>
+            <value>
+                <fullName>Resubmitted to SM/SD</fullName>
+                <default>false</default>
+                <label>Resubmitted to SM/SD</label>
+            </value>
+            <value>
+                <fullName>Approved by Sales Ops</fullName>
+                <default>false</default>
+                <label>Approved by Sales Ops</label>
+            </value>
+            <value>
+                <fullName>Submitted to Accounts for Amount Confirmation</fullName>
+                <default>false</default>
+                <label>Submitted to Accounts for Amount Confirmation</label>
+            </value>
+            <value>
+                <fullName>Amount Confirmed by Accounts</fullName>
+                <default>false</default>
+                <label>Amount Confirmed by Accounts</label>
+            </value>
+            <value>
+                <fullName>Rejected by System</fullName>
+                <default>false</default>
+                <label>Rejected by System</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Payment Link sent to Customer</fullName>
+                <default>false</default>
+                <label>Payment Link sent to Customer</label>
+            </value>
+            <value>
+                <fullName>Partially Approved</fullName>
+                <default>false</default>
+                <label>Partially Approved</label>
+            </value>
+            <value>
+                <fullName>PR was Approved- Booking is cancelled</fullName>
+                <default>false</default>
+                <label>PR was Approved- Booking is cancelled</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

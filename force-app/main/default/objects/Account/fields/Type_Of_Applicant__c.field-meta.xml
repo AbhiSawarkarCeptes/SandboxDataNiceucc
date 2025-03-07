@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Of_Applicant__c</fullName>
+    <label>Type Of Applicant</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Individual Purchaser</fullName>
+                <default>false</default>
+                <label>Individual Purchaser</label>
+            </value>
+            <value>
+                <fullName>Corporate Purchaser</fullName>
+                <default>false</default>
+                <label>Corporate Purchaser</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

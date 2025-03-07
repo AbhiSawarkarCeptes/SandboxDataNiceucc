@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X006_Agent_My_Visit_Done</fullName>
+    <columns>Opportunity_ID__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Date_Of_Site_Visit__c</columns>
+    <columns>Site_Visit_Rating__c</columns>
+    <columns>Presales_Agent__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Unique_SVF_Number__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Date_Of_Site_Visit__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>12/1/2020</value>
+    </filters>
+    <filters>
+        <field>Walk_in_Source__c</field>
+        <operation>equals</operation>
+        <value>Digital</value>
+    </filters>
+    <filters>
+        <field>Presales_Agent__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>006 Agent: My Visit Done</label>
+    <sharedTo>
+        <role>Presales_Agent</role>
+    </sharedTo>
+</ListView>

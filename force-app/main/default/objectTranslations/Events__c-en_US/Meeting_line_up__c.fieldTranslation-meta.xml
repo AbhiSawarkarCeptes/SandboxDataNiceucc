@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Meeting line up --></label>
+    <name>Meeting_line_up__c</name>
+    <picklistValues>
+        <masterLabel>Channel Partner with Customer</masterLabel>
+        <translation><!-- Channel Partner with Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customers</masterLabel>
+        <translation><!-- Customers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Channel Partner</masterLabel>
+        <translation><!-- Multiple Channel Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>One Channel Partner</masterLabel>
+        <translation><!-- One Channel Partner --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

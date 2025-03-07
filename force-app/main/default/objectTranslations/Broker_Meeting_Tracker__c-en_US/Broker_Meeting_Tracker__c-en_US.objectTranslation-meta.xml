@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Broker Meeting Tracker</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Broker Meeting Tracker</value>
+    </caseValues>
+    <layouts>
+        <layout>Broker Meeting Tracker Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You can only edit Past meeting trackers --></errorMessage>
+        <name>Cannot_Edit_Future_Meeting_Tracker</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Meeting Date can not be changed --></errorMessage>
+        <name>Meeting_Date_can_not_be_changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Meeting status can not be selected as completed on meeting creation. --></errorMessage>
+        <name>New_meetings_can_not_have_completed_stat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Status can not be changed --></errorMessage>
+        <name>Status_can_not_be_changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Time Of Meeting can not be changed --></errorMessage>
+        <name>Time_Of_Meeting_can_not_be_changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Broker Name is required if the SC ID is &apos;New_SC&apos; or &apos;CP_ID_INPROCESS&apos; --></errorMessage>
+        <name>Validate_Broker_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Broker Name is required if the CP ID is &apos;New_CP*&apos; or &apos;CP_ID_INPROCESS&apos; --></errorMessage>
+        <name>Validate_Broker_Name_for_CP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Either the CP or SC ID field must be filled in; neither should not be empty. --></errorMessage>
+        <name>Validate_CP_SC_IDs</name>
+    </validationRules>
+</CustomObjectTranslation>

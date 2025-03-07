@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CP_or_SC_is_mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Bypass_Validation_Rule__c == false, OR(RecordType.Name == &apos;Brokers Training&apos;, RecordType.Name == &apos;Open Houses&apos;,RecordType.Name == &apos;Road Shows&apos;,RecordType.Name == &apos;Video Shoot&apos;), OR(AND( Channel_Partner__c == null , Sobha_Connect__c == null), AND( Channel_Partner__c != null , Sobha_Connect__c != null)),And(RecordType.Name == &apos;Road Shows&apos;,NOT(ISPICKVAL(Type_Of_Road_Show__c  , &apos;Digital Roadshow&apos;)) ))</errorConditionFormula>
+    <errorMessage>Either SC or CP Partner is required for Broker Training , Open Houses and Road Shows</errorMessage>
+</ValidationRule>

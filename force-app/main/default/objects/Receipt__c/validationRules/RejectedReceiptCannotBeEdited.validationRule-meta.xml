@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RejectedReceiptCannotBeEdited</fullName>
+    <active>true</active>
+    <description>Rejected or Reversed Receipt cannot be edited</description>
+    <errorConditionFormula>AND( 
+ $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+ NOT(ISCHANGED(Receipt_Status__c)),
+ OR(TEXT(Receipt_Status__c) == &apos;Dishonored&apos;, 
+    TEXT(Receipt_Status__c) == &apos;Physical Verification Rejected&apos;, 
+    TEXT(Receipt_Status__c) == &apos;Cancelled&apos;)
+)</errorConditionFormula>
+    <errorMessage>You cannot edit Rejected Receipt</errorMessage>
+</ValidationRule>

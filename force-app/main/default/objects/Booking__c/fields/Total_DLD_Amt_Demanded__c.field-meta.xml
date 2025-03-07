@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_DLD_Amt_Demanded__c</fullName>
+    <label>Total DLD Amt Demanded</label>
+    <summarizedField>Demand__c.Debit_Demanded__c</summarizedField>
+    <summaryFilterItems>
+        <field>Demand__c.Debit_Type__c</field>
+        <operation>equals</operation>
+        <value>DLD Charges</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Demand__c.Booking__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

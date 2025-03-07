@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Attempt Tracking</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Attempt Trackings</value>
+    </caseValues>
+    <layouts>
+        <layout>Attempt Tracking Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Email --></label>
+        <name>Email</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Official Landline --></label>
+        <name>Official_Landline</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Official Mobile --></label>
+        <name>Official_Mobile</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sobha Landline --></label>
+        <name>Sobha_Landline</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WhatsApp --></label>
+        <name>WhatsApp</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

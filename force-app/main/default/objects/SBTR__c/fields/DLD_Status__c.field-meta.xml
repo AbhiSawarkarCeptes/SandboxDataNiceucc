@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DLD_Status__c</fullName>
+    <description>updated on 27 oct as per new email
+earlier was: IF(DLD_Amount__c &gt; 0, &apos;Yes&apos;,&apos;No&apos;)</description>
+    <externalId>false</externalId>
+    <formula>IF((0.04* Sale_Value_AED__c - DLD_Amount__c)&lt;=1500, &apos;Yes&apos;,&apos;No&apos;
+
+)</formula>
+    <label>DLD Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

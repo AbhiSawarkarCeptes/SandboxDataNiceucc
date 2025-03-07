@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audit_comments_to_be_mandatory</fullName>
+    <active>true</active>
+    <description>This rule is used to make Audit comments field when SPA status is set to Audit rejected.</description>
+    <errorConditionFormula>AND(
+TEXT(SPA_Status_for_Audit__c) = &quot;Audit Rejected&quot;,
+ISBLANK(Audit_Comments__c))</errorConditionFormula>
+    <errorDisplayField>Audit_Comments__c</errorDisplayField>
+    <errorMessage>Please enter your comments for rejection.</errorMessage>
+</ValidationRule>

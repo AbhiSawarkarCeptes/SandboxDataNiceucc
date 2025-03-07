@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cheque_hold_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>Submit_for_Check_Hold__c == true &amp;&amp; 
+NOT(ISPICKVAL(Approval_Status_Interim__c, &quot;Approved&quot;)) &amp;&amp; 
+(ISPICKVAL(Payment_Mode_Interim__c, &quot;Cheque&quot;)) &amp;&amp;
+(DATEVALUE(Instrument_Date__c) - TODAY()) &lt;= 10</errorConditionFormula>
+    <errorMessage>The Cheque can be put on hold only 10 days before the instrument date.</errorMessage>
+</ValidationRule>

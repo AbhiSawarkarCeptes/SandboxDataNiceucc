@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Events</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Events</value>
+    </caseValues>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Events Layout</layout>
+        <sections>
+            <label><!-- CP/SC Performance --></label>
+            <section>CP/SC Performance</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- For Office Use --></label>
+            <section>For Office Use</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Events Layout For CP Operations</layout>
+        <sections>
+            <label><!-- CP/SC Performance --></label>
+            <section>CP/SC Performance</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- For Office Use --></label>
+            <section>For Office Use</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Marketing File Upload --></label>
+        <name>Marketing_File_Upload</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Upload Collateral --></label>
+        <name>Upload_Collateral</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Upload Invoice --></label>
+        <name>Upload_Invoice</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Brokers Event --></label>
+        <name>Brokers_Event</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Brokers Training --></label>
+        <name>Brokers_Training</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- SOB-1739 --></description>
+        <label><!-- Business Trip --></label>
+        <name>Business_Trip</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Open Houses --></label>
+        <name>Open_Houses</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Road Shows --></label>
+        <name>Road_Shows</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Video Shoot --></label>
+        <name>Video_Shoot</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- CP or SC is mandatory for video shoot. --></errorMessage>
+        <name>CP_OR_SC_IS_Mandatory_Video_Shoot</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Either SC or CP Partner is required for Broker Training , Open Houses and Road Shows --></errorMessage>
+        <name>CP_or_SC_is_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For Multiple city trip - City 1,2,3 are mandatory. --></errorMessage>
+        <name>City_2_City_3_is_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Broker Training : Start date of event should not be less then today + 1 days. --></errorMessage>
+        <name>Create_Date_Should_2_day_broker_training</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End Date should be greater then start date --></errorMessage>
+        <name>End_Date_can_not_be_less_then_start_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End Time Of Event should be greater then start time of event --></errorMessage>
+        <name>End_Time_of_Event_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End date should be greaterthan start date --></errorMessage>
+        <name>End_date_greaterthan_start_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Date cannot be in future. --></errorMessage>
+        <name>Last_date_of_CRM_meeting_with_Broker</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ERF should be raised before 15 days of the event starting date --></errorMessage>
+        <name>SSD_should_be_15_days_of_PD</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sales Manager is required --></errorMessage>
+        <name>Sales_Manager_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start Date can not be in past --></errorMessage>
+        <name>Start_Date_can_not_be_in_past</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ERF should be raised before 17 days of the event starting date --></errorMessage>
+        <name>create_date_15D_BusinessTrip</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ERF should be raised before 3 days of the event starting date --></errorMessage>
+        <name>create_date_15D_VideoShoot</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ERF should be raised before 21 days of the event starting date --></errorMessage>
+        <name>create_date_should_not_be_more_than_21D</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ERF should be raised before 30 days of the event starting date for Road Shows --></errorMessage>
+        <name>create_date_should_not_be_more_than_30D</name>
+    </validationRules>
+</CustomObjectTranslation>

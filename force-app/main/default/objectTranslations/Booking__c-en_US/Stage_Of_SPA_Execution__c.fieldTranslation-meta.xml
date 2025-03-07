@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Stage Of SPA Execution --></label>
+    <name>Stage_Of_SPA_Execution__c</name>
+    <picklistValues>
+        <masterLabel>Email is Sent For SPA Signature</masterLabel>
+        <translation><!-- Email is Sent For SPA Signature --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email is Sent for Reminder</masterLabel>
+        <translation><!-- Email is Sent for Reminder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email is Sent for SPA Executed</masterLabel>
+        <translation><!-- Email is Sent for SPA Executed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

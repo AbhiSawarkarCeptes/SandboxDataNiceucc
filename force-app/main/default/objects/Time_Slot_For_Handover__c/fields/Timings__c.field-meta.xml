@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timings__c</fullName>
+    <label>Timings</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>10 AM-11 AM</fullName>
+                <default>false</default>
+                <label>10 AM-11 AM</label>
+            </value>
+            <value>
+                <fullName>11 AM-12 PM</fullName>
+                <default>false</default>
+                <label>11 AM-12 PM</label>
+            </value>
+            <value>
+                <fullName>12 PM- 1 PM</fullName>
+                <default>false</default>
+                <label>12 PM- 1 PM</label>
+            </value>
+            <value>
+                <fullName>1 PM - 2 PM</fullName>
+                <default>false</default>
+                <label>1 PM - 2 PM</label>
+            </value>
+            <value>
+                <fullName>2 PM - 3 PM</fullName>
+                <default>false</default>
+                <label>2 PM - 3 PM</label>
+            </value>
+            <value>
+                <fullName>3 PM- 4 PM</fullName>
+                <default>false</default>
+                <label>3 PM- 4 PM</label>
+            </value>
+            <value>
+                <fullName>4 PM -5 PM</fullName>
+                <default>false</default>
+                <label>4 PM -5 PM</label>
+            </value>
+            <value>
+                <fullName>5 PM - 6 PM</fullName>
+                <default>false</default>
+                <label>5 PM - 6 PM</label>
+            </value>
+            <value>
+                <fullName>6 PM - 7 PM</fullName>
+                <default>false</default>
+                <label>6 PM - 7 PM</label>
+            </value>
+            <value>
+                <fullName>7PM - 8 PM</fullName>
+                <default>false</default>
+                <label>7PM - 8 PM</label>
+            </value>
+            <value>
+                <fullName>12:30 PM -2:30 PM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>12:30 PM -2:30 PM</label>
+            </value>
+            <value>
+                <fullName>4:00 PM - 6:00 PM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>4:00 PM - 6:00 PM</label>
+            </value>
+            <value>
+                <fullName>9 AM-11 AM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>9 AM-11 AM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DM_Booking_Through__c</fullName>
+    <description>This field is used for PS Data Migration</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    ISPICKVAL(Booking_Source__c, &quot;Digital&quot;) ||
+    ISPICKVAL(Booking_Source__c, &quot;Perimeter&quot;) ||
+    ISPICKVAL(Booking_Source__c, &quot;Newspaper&quot;) ||
+    ISPICKVAL(Booking_Source__c, &quot;Exhibition&quot;) ||
+    ISPICKVAL(Booking_Source__c, &quot;SMS&quot;) ||
+    ISPICKVAL(Booking_Source__c, &quot;Corporate Activity&quot;) ||
+    ISPICKVAL(Booking_Source__c, &quot;Existing Client&quot;) ||
+    ISPICKVAL(Booking_Source__c, &quot;Others&quot;),
+    &quot;Direct&quot;,
+    IF(
+        ISPICKVAL(Booking_Source__c, &quot;Reference&quot;) ||
+        ISPICKVAL(Booking_Source__c, &quot;Employee&quot;),
+        &quot;Employee Reference&quot;,
+        IF(
+            ISPICKVAL(Booking_Source__c, &quot;Channel Partner&quot;),
+            &quot;Broker&quot;,
+            NULL 
+        )
+    )
+)</formula>
+    <label>DM-Booking Through</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

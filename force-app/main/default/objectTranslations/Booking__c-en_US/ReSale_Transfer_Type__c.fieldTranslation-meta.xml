@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ReSale Transfer Type --></label>
+    <name>ReSale_Transfer_Type__c</name>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMT</masterLabel>
+        <translation><!-- PMT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMT</masterLabel>
+        <translation><!-- SMT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Account --></label>
+    <name>Account_Number__c</name>
+    <picklistValues>
+        <masterLabel>ADCB-ES-AED-SLLC-11423450820003</masterLabel>
+        <translation><!-- ADCB-ES-AED-SLLC-11423450820003 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADCB-ES-MAIN-AED-SLLC-CV-11423450820001</masterLabel>
+        <translation><!-- ADCB-ES-MAIN-AED-SLLC-CV-11423450820001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADCB-RT-AED-SLLC-11423450820004</masterLabel>
+        <translation><!-- ADCB-RT-AED-SLLC-11423450820004 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADIB-DIC ARENCO-ESCROW-GREENS PHASE III RETENTION A/C-28052124</masterLabel>
+        <translation><!-- ADIB-DIC ARENCO-ESCROW-GREENS PHASE III RETENTION A/C-28052124 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADIB-ES-AED-SLLC-16640027</masterLabel>
+        <translation><!-- ADIB-ES-AED-SLLC-16640027 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADIB-ES-AED-SLLC-25407167</masterLabel>
+        <translation><!-- ADIB-ES-AED-SLLC-25407167 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADIB-ES-AED-SLLC-25407170</masterLabel>
+        <translation><!-- ADIB-ES-AED-SLLC-25407170 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADIB-ES-AED-SLLC-27467383</masterLabel>
+        <translation><!-- ADIB-ES-AED-SLLC-27467383 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADIB-ES-AED-SLLC-27467451</masterLabel>
+        <translation><!-- ADIB-ES-AED-SLLC-27467451 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADIB-ES-AED-SLLC-27716157</masterLabel>
+        <translation><!-- ADIB-ES-AED-SLLC-27716157 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADIB-ES-AED-SLLC-28052098</masterLabel>
+        <translation><!-- ADIB-ES-AED-SLLC-28052098 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AM-ES-MAIN-AED-SLLC-CVR-994000001956</masterLabel>
+        <translation><!-- AM-ES-MAIN-AED-SLLC-CVR-994000001956 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Abu Dhabi Islamic Bank-ARENCO - DIC BR-AED-Escrow-SOBHA HARTLAND GREENS - PHASE</masterLabel>
+        <translation><!-- Abu Dhabi Islamic Bank-ARENCO - DIC BR-AED-Escrow-SOBHA HARTLAND GREENS - PHASE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Abu Dhabi Islamic Bank-Arenco - DIC Branch-AED-Current</masterLabel>
+        <translation><!-- Abu Dhabi Islamic Bank-Arenco - DIC Branch-AED-Current --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOB-DEIRA-ESCROW-GREENS INFRA-90030600003819</masterLabel>
+        <translation><!-- BOB-DEIRA-ESCROW-GREENS INFRA-90030600003819 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOB-DEIRA-ESCROW-GREENS PHASE III-9003060003820</masterLabel>
+        <translation><!-- BOB-DEIRA-ESCROW-GREENS PHASE III-9003060003820 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOB-DUBAI MAIN-CORPORATE-CURRENT ACCOUNT-90010200016189</masterLabel>
+        <translation><!-- BOB-DUBAI MAIN-CORPORATE-CURRENT ACCOUNT-90010200016189 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOB-ES-AED-SLLC-90030200019062</masterLabel>
+        <translation><!-- BOB-ES-AED-SLLC-90030200019062 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOB-ES-AED-SLLC-90030200019063</masterLabel>
+        <translation><!-- BOB-ES-AED-SLLC-90030200019063 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOB-ES-AED-SLLC-90030200019064</masterLabel>
+        <translation><!-- BOB-ES-AED-SLLC-90030200019064 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOB-ES-AED-SLLC-90030200019065</masterLabel>
+        <translation><!-- BOB-ES-AED-SLLC-90030200019065 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOB-ES-AED-SLLC-90030200019066</masterLabel>
+        <translation><!-- BOB-ES-AED-SLLC-90030200019066 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOB-ES-AED-SLLC-90030200019067</masterLabel>
+        <translation><!-- BOB-ES-AED-SLLC-90030200019067 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOB-ES-AED-SLLC-90030200019148</masterLabel>
+        <translation><!-- BOB-ES-AED-SLLC-90030200019148 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CBD-AED-ES-SHW-MainnA/c-SLLC</masterLabel>
+        <translation><!-- CBD-AED-ES-SHW-MainnA/c-SLLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CBD-CA-AED-SLLC-1002472494</masterLabel>
+        <translation><!-- CBD-CA-AED-SLLC-1002472494 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIB-ES-AED-SLLC-1582116190701</masterLabel>
+        <translation><!-- DIB-ES-AED-SLLC-1582116190701 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIB-ES-AED-SLLC-1582116190702</masterLabel>
+        <translation><!-- DIB-ES-AED-SLLC-1582116190702 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIB–AED–ES–CVR–Main A/c–SLLC - 001582194862601</masterLabel>
+        <translation><!-- DIB–AED–ES–CVR–Main A/c–SLLC - 001582194862601 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIB–AED–ES–CV–Main A/c–SLLC - 001582194865001</masterLabel>
+        <translation><!-- DIB–AED–ES–CV–Main A/c–SLLC - 001582194865001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIB–AED–ES–OPA–Main A/c–SLLC - 001582194866401</masterLabel>
+        <translation><!-- DIB–AED–ES–OPA–Main A/c–SLLC - 001582194866401 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENBD-CA-AED-SLLC-1014691785001</masterLabel>
+        <translation><!-- ENBD-CA-AED-SLLC-1014691785001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENBD-CA-AED-SLLC-1014691785003</masterLabel>
+        <translation><!-- ENBD-CA-AED-SLLC-1014691785003 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENBD-CA-AED-SLLC-1014691785004</masterLabel>
+        <translation><!-- ENBD-CA-AED-SLLC-1014691785004 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FAB-CA-AED-SLLC-1031324613244001</masterLabel>
+        <translation><!-- FAB-CA-AED-SLLC-1031324613244001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MASHREQ-RIGGA BR-CORPORATE-COLLECTION SLLC-019000034998</masterLabel>
+        <translation><!-- MASHREQ-RIGGA BR-CORPORATE-COLLECTION SLLC-019000034998 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MASHREQ-RIGGA BR-CORPORATE-USD-DISBURSEMENT SLLC (DO NOT USE)-019000034999</masterLabel>
+        <translation><!-- MASHREQ-RIGGA BR-CORPORATE-USD-DISBURSEMENT SLLC (DO NOT USE)-019000034999 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MASHREQ-RIGGA BR-CORPORATE-USD-DISBURSEMENT SLLC-019000034999</masterLabel>
+        <translation><!-- MASHREQ-RIGGA BR-CORPORATE-USD-DISBURSEMENT SLLC-019000034999 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MB-CA-AED-SLLC-019000034998</masterLabel>
+        <translation><!-- MB-CA-AED-SLLC-019000034998 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOOR BANK-SZR-ESCROW-VILLAS PHASE I MAIN A/C-00110543700010</masterLabel>
+        <translation><!-- NOOR BANK-SZR-ESCROW-VILLAS PHASE I MAIN A/C-00110543700010 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOOR BANK-SZR-ESCROW-VILLAS PHASE I RETENTION A/C-00110543700032</masterLabel>
+        <translation><!-- NOOR BANK-SZR-ESCROW-VILLAS PHASE I RETENTION A/C-00110543700032 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PNCI-CBD-CA-AED-PNCI-1002466736</masterLabel>
+        <translation><!-- PNCI-CBD-CA-AED-PNCI-1002466736 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PNCI-USD-AE49 0260 0010 2485 4250 002</masterLabel>
+        <translation><!-- PNCI-USD-AE49 0260 0010 2485 4250 002 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sharjah Islamic Bank - Villas Phase 3</masterLabel>
+        <translation><!-- Sharjah Islamic Bank - Villas Phase 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UAB-CA-AED-SLLC-1034024947001</masterLabel>
+        <translation><!-- UAB-CA-AED-SLLC-1034024947001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNB-CA-AED-SLLC-014464193303</masterLabel>
+        <translation><!-- UNB-CA-AED-SLLC-014464193303 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNB-ES-AED-SLLC-014464193009</masterLabel>
+        <translation><!-- UNB-ES-AED-SLLC-014464193009 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNB-ES-AED-SLLC-014464193623</masterLabel>
+        <translation><!-- UNB-ES-AED-SLLC-014464193623 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNB-ES-AED-SLLC-14464193484</masterLabel>
+        <translation><!-- UNB-ES-AED-SLLC-14464193484 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNB-ES-AED-SLLC-14464193639</masterLabel>
+        <translation><!-- UNB-ES-AED-SLLC-14464193639 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>United Arab Bank-ALQUOZ-CORPORATE-CURRENT A/C-1034024947001</masterLabel>
+        <translation><!-- United Arab Bank-ALQUOZ-CORPORATE-CURRENT A/C-1034024947001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waves Grande - CBD - DIB - Escrow</masterLabel>
+        <translation><!-- Waves Grande - CBD - DIB - Escrow --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Applicant Type --></label>
+    <name>Applicant_Type__c</name>
+    <picklistValues>
+        <masterLabel>Fifth Applicant</masterLabel>
+        <translation><!-- Fifth Applicant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Applicant</masterLabel>
+        <translation><!-- First Applicant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fourth Applicant</masterLabel>
+        <translation><!-- Fourth Applicant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Second Applicant</masterLabel>
+        <translation><!-- Second Applicant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sixth Applicant</masterLabel>
+        <translation><!-- Sixth Applicant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Applicant</masterLabel>
+        <translation><!-- Third Applicant --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

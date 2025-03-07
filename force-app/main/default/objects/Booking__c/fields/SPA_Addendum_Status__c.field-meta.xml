@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPA_Addendum_Status__c</fullName>
+    <label>SPA Addendum Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Addendum Sent through docusign</fullName>
+                <default>false</default>
+                <label>Addendum Sent through docusign</label>
+            </value>
+            <value>
+                <fullName>Addendum signed and sent to audit review</fullName>
+                <default>false</default>
+                <label>Addendum signed and sent to audit review</label>
+            </value>
+            <value>
+                <fullName>Addendum sent is expired</fullName>
+                <default>false</default>
+                <label>Addendum sent is expired</label>
+            </value>
+            <value>
+                <fullName>Addendum resent through docusign</fullName>
+                <default>false</default>
+                <label>Addendum resent through docusign</label>
+            </value>
+            <value>
+                <fullName>Addendum audit review completed</fullName>
+                <default>false</default>
+                <label>Addendum audit review completed</label>
+            </value>
+            <value>
+                <fullName>Addendum audit review rejected</fullName>
+                <default>false</default>
+                <label>Addendum audit review rejected</label>
+            </value>
+            <value>
+                <fullName>Addendum – seller signature completed</fullName>
+                <default>false</default>
+                <label>Addendum – seller signature completed</label>
+            </value>
+            <value>
+                <fullName>Addendum executed</fullName>
+                <default>false</default>
+                <label>Addendum executed</label>
+            </value>
+            <value>
+                <fullName>Addendum voided</fullName>
+                <default>false</default>
+                <label>Addendum voided</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

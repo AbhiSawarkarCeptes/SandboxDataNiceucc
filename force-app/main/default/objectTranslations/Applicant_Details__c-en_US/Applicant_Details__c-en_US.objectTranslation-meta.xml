@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Applicant Details</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ApplicantDetails</value>
+    </caseValues>
+    <layouts>
+        <layout>Applicant Details Layout</layout>
+        <sections>
+            <label><!-- Applicant Information --></label>
+            <section>Applicant Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Details --></label>
+            <section>Document Details</section>
+        </sections>
+        <sections>
+            <label><!-- Office Address Details --></label>
+            <section>Office Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- POA Details --></label>
+            <section>POA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Residential Address Details --></label>
+            <section>Residential Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Secondary Contact Details --></label>
+            <section>Secondary Contact Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Applicant layout for Mahesh Audit</layout>
+        <sections>
+            <label><!-- Applicant Information --></label>
+            <section>Applicant Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Details --></label>
+            <section>Document Details</section>
+        </sections>
+        <sections>
+            <label><!-- Office Address Details --></label>
+            <section>Office Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- POA Details --></label>
+            <section>POA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Residential Address Details --></label>
+            <section>Residential Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Secondary Contact Details --></label>
+            <section>Secondary Contact Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Applicants detail layout for SO</layout>
+        <sections>
+            <label><!-- Applicant Information --></label>
+            <section>Applicant Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Details --></label>
+            <section>Document Details</section>
+        </sections>
+        <sections>
+            <label><!-- Office Address Details --></label>
+            <section>Office Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- POA Details --></label>
+            <section>POA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Residential Address Details --></label>
+            <section>Residential Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Secondary Contact Details --></label>
+            <section>Secondary Contact Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CRM Applicant Layout</layout>
+        <sections>
+            <label><!-- Applicant Information --></label>
+            <section>Applicant Information</section>
+        </sections>
+        <sections>
+            <label><!-- Arabic Details --></label>
+            <section>Arabic Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Details --></label>
+            <section>Document Details</section>
+        </sections>
+        <sections>
+            <label><!-- Office Address Details --></label>
+            <section>Office Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- POA Details --></label>
+            <section>POA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Residential Address Details --></label>
+            <section>Residential Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Secondary Contact Details --></label>
+            <section>Secondary Contact Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CRM With Booking Cancel option</layout>
+        <sections>
+            <label><!-- Applicant Information --></label>
+            <section>Applicant Information</section>
+        </sections>
+        <sections>
+            <label><!-- Arabic Details --></label>
+            <section>Arabic Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Details --></label>
+            <section>Document Details</section>
+        </sections>
+        <sections>
+            <label><!-- Office Address Details --></label>
+            <section>Office Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- POA Details --></label>
+            <section>POA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Residential Address Details --></label>
+            <section>Residential Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Secondary Contact Details --></label>
+            <section>Secondary Contact Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>GRE Applicant detail</layout>
+        <sections>
+            <label><!-- Applicant Information --></label>
+            <section>Applicant Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Details --></label>
+            <section>Document Details</section>
+        </sections>
+        <sections>
+            <label><!-- Office Address Details --></label>
+            <section>Office Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- POA Details --></label>
+            <section>POA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Residential Address Details --></label>
+            <section>Residential Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Secondary Contact Details --></label>
+            <section>Secondary Contact Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Intern CRM Applicant Layout</layout>
+        <sections>
+            <label><!-- Applicant Information --></label>
+            <section>Applicant Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Details --></label>
+            <section>Document Details</section>
+        </sections>
+        <sections>
+            <label><!-- Office Address Details --></label>
+            <section>Office Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- POA Details --></label>
+            <section>POA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Residential Address Details --></label>
+            <section>Residential Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Secondary Contact Details --></label>
+            <section>Secondary Contact Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Intern CRM Applicant Layput</layout>
+        <sections>
+            <label><!-- Applicant Information --></label>
+            <section>Applicant Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Details --></label>
+            <section>Document Details</section>
+        </sections>
+        <sections>
+            <label><!-- Office Address Details --></label>
+            <section>Office Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- POA Details --></label>
+            <section>POA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Residential Address Details --></label>
+            <section>Residential Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Secondary Contact Details --></label>
+            <section>Secondary Contact Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Read Only Applicant Layout</layout>
+        <sections>
+            <label><!-- Applicant Information --></label>
+            <section>Applicant Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Details --></label>
+            <section>Document Details</section>
+        </sections>
+        <sections>
+            <label><!-- Office Address Details --></label>
+            <section>Office Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- POA Details --></label>
+            <section>POA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Residential Address Details --></label>
+            <section>Residential Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Secondary Contact Details --></label>
+            <section>Secondary Contact Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>System Admin Applicant details layout</layout>
+        <sections>
+            <label><!-- Applicant Information --></label>
+            <section>Applicant Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Details --></label>
+            <section>Document Details</section>
+        </sections>
+        <sections>
+            <label><!-- Encryption Details --></label>
+            <section>Encryption Details</section>
+        </sections>
+        <sections>
+            <label><!-- Office Address Details --></label>
+            <section>Office Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- POA Details --></label>
+            <section>POA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Residential Address Details --></label>
+            <section>Residential Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Secondary Contact Details --></label>
+            <section>Secondary Contact Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update Applicant Location --></label>
+        <name>Update_Applicant_Location</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Phone number required for Authorized Signatory2 --></errorMessage>
+        <name>Authorized_Signatory2_Phone_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone number required for Authorized Signatory3 --></errorMessage>
+        <name>Authorized_Signatory3_Phone_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Email ID is Required --></errorMessage>
+        <name>Authorized_Signatory_3_Email_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

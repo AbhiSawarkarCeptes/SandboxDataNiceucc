@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Memoradum_Articles_of_Association__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Memoradum &amp; Articles of Association</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

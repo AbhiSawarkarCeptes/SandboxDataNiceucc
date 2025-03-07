@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancellation_Allocation__c</fullName>
+    <label>Cancellation Allocation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Internal Cancellation</fullName>
+                <default>false</default>
+                <label>Internal Cancellation</label>
+            </value>
+            <value>
+                <fullName>Send it to Legal team</fullName>
+                <default>false</default>
+                <label>Send it to Legal team</label>
+            </value>
+            <value>
+                <fullName>Allocate to CRM Team</fullName>
+                <default>false</default>
+                <label>Allocate to CRM Team</label>
+            </value>
+            <value>
+                <fullName>Allocate to DLD Team</fullName>
+                <default>false</default>
+                <label>Allocate to DLD Team</label>
+            </value>
+            <value>
+                <fullName>Re Allocated To CRM By Collection</fullName>
+                <default>false</default>
+                <label>Re Allocated To CRM By Collection</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

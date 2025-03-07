@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <label>Category</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>International Broker - New</fullName>
+                <default>false</default>
+                <label>International Broker - New</label>
+            </value>
+            <value>
+                <fullName>International Broker - Old</fullName>
+                <default>false</default>
+                <label>International Broker - Old</label>
+            </value>
+            <value>
+                <fullName>Broker - UAE</fullName>
+                <default>false</default>
+                <label>Broker - UAE</label>
+            </value>
+            <value>
+                <fullName>Broker - Intnl</fullName>
+                <default>false</default>
+                <label>Broker - Intnl</label>
+            </value>
+            <value>
+                <fullName>Broker - RERA</fullName>
+                <default>false</default>
+                <label>Broker - RERA</label>
+            </value>
+            <value>
+                <fullName>Broker - China</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Broker - China</label>
+            </value>
+            <value>
+                <fullName>Broker - India</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Broker - India</label>
+            </value>
+            <value>
+                <fullName>Broker - Intl</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Broker - Intl</label>
+            </value>
+            <value>
+                <fullName>Broker - KSA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Broker - KSA</label>
+            </value>
+            <value>
+                <fullName>Broker - Others</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Broker - Others</label>
+            </value>
+            <value>
+                <fullName>Broker - UK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Broker - UK</label>
+            </value>
+            <value>
+                <fullName>SC - China</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SC - China</label>
+            </value>
+            <value>
+                <fullName>SC - India</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SC - India</label>
+            </value>
+            <value>
+                <fullName>SC - KSA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SC - KSA</label>
+            </value>
+            <value>
+                <fullName>SC - Others</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SC - Others</label>
+            </value>
+            <value>
+                <fullName>SC - UAE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SC - UAE</label>
+            </value>
+            <value>
+                <fullName>SC - UK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SC - UK</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect - Intl</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sobha Connect - Intl</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect - UAE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sobha Connect - UAE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

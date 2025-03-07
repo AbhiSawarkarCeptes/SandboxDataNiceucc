@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tele_Sales_GCC_Dec_Jan</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Dataload_Identifier__c</field>
+        <operation>equals</operation>
+        <value>Leads Dec - Jan - GCC</value>
+    </filters>
+    <filters>
+        <field>NPS_Survey_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Call Completed,Call Scheduled,Did Not Pick,Not Interested,Wrong Number / Non-Contactable,Number busy / الرقم مشغول,Out of Reach / صعب المنال,Switched Off / مغلق,Ineligible,Cannot Call-Only Initials</value>
+    </filters>
+    <filters>
+        <field>First_Name__c</field>
+        <operation>notContain</operation>
+        <value>CTI</value>
+    </filters>
+    <filters>
+        <field>NPS_Survey_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Language Problem English,Language Problem Arabic,Language Problem Russian</value>
+    </filters>
+    <label>Tele Sales GCC - Dec-Jan</label>
+    <sharedTo>
+        <group>NPS_Calling_Group</group>
+    </sharedTo>
+</ListView>

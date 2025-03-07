@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Process_Development_Queue_Business_Process_Step</fullName>
+    <columns>NAME</columns>
+    <columns>Booking_Name__c</columns>
+    <columns>Business_Process__c</columns>
+    <columns>Step__c</columns>
+    <columns>Department__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </filters>
+    <label>Business Process Development Queue</label>
+    <queue>Business_Process_Development_Queue</queue>
+    <sharedTo>
+        <group>Business_Process_Development</group>
+    </sharedTo>
+</ListView>

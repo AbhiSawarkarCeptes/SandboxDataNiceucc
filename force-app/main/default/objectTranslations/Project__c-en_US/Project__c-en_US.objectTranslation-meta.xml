@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Projects</value>
+    </caseValues>
+    <layouts>
+        <layout>Empty Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Project Layout</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 1 Details --></label>
+            <section>Car Park 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 2 Details --></label>
+            <section>Car Park 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Scoring Parameters --></label>
+            <section>Scoring Parameters</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Project Layout - Development</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 1 Details --></label>
+            <section>Car Park 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 2 Details --></label>
+            <section>Car Park 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Scoring Parameters --></label>
+            <section>Scoring Parameters</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Read Only Project Layout</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 1 Details --></label>
+            <section>Car Park 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Car Park 2 Details --></label>
+            <section>Car Park 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Scoring Parameters --></label>
+            <section>Scoring Parameters</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Escalation_Time_1__c</fullName>
+    <formula>IF( 
+AND(Lead_Creation_Hour__c &gt;=9 , Lead_Creation_Hour__c &lt; 17, ISPICKVAL(LeadSource, &quot;Digital&quot;)),
+Date_and_Time_of_Unserviced_Lead__c - 0.03800, 
+IF(AND(Lead_Creation_Hour__c &gt;= 9, Lead_Creation_Hour__c &lt; 17, NOT(ISPICKVAL(LeadSource, &quot;Digital&quot;))),
+Date_and_Time_of_Unserviced_Lead__c - 0.03109, 
+IF(AND(Lead_Creation_Hour__c &gt;= 17, Lead_Creation_Hour__c &lt;= 24),
+datetimevalue(DATEVALUE(Date_and_Time_of_Unserviced_Lead__c)+1)+6/24, 
+datetimevalue(DATEVALUE(Date_and_Time_of_Unserviced_Lead__c)+0)+6/24)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lead Escalation Time 1</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

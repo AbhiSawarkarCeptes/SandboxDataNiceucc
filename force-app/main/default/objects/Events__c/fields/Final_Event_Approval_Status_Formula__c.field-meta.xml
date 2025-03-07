@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Final_Event_Approval_Status_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(OR(ISPICKVAL(Final_Event_Approval_Status__c,&quot;Cancel&quot;),ISPICKVAL(Final_Event_Approval_Status__c ,&quot;Postponed&quot;)),
+Text(Final_Event_Approval_Status__c),
+if(OR(AND(Date_Of_Event__c &lt;today(),isblank(End_Date_Of_Event__c)),AND(Not(isblank(End_Date_Of_Event__c)), Date_Of_Event__c &lt;today() , End_Date_Of_Event__c&lt;today())), &apos;Complete&apos;, If(Date_Of_Event__c &gt;today() ,&apos;Upcoming&apos;,&apos;&apos;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Final Event Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

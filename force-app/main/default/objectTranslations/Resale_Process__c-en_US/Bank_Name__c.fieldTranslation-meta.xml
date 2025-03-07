@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Bank Name --></label>
+    <name>Bank_Name__c</name>
+    <picklistValues>
+        <masterLabel>ADCB – Abu Dhabi Commercial Bank</masterLabel>
+        <translation><!-- ADCB – Abu Dhabi Commercial Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADIB – Abu Dhabi Islamic Bank</masterLabel>
+        <translation><!-- ADIB – Abu Dhabi Islamic Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Al Hilal Bank</masterLabel>
+        <translation><!-- Al Hilal Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOB – Bank of Baroda</masterLabel>
+        <translation><!-- BOB – Bank of Baroda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank of Sharjah</masterLabel>
+        <translation><!-- Bank of Sharjah --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CBD – Commercial Bank of Dubai</masterLabel>
+        <translation><!-- CBD – Commercial Bank of Dubai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CBI – Commercial Bank International</masterLabel>
+        <translation><!-- CBI – Commercial Bank International --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CitiBank</masterLabel>
+        <translation><!-- CitiBank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DFB – Dubai Finance Bank</masterLabel>
+        <translation><!-- DFB – Dubai Finance Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIB – Dubai Islamic Bank</masterLabel>
+        <translation><!-- DIB – Dubai Islamic Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EDB – Emirates Development Bank</masterLabel>
+        <translation><!-- EDB – Emirates Development Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EIB – Emirates Islamic Bank</masterLabel>
+        <translation><!-- EIB – Emirates Islamic Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENBD – Emirates NBD</masterLabel>
+        <translation><!-- ENBD – Emirates NBD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FAB – First Abu Dhabi Bank</masterLabel>
+        <translation><!-- FAB – First Abu Dhabi Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FGB – First Gulf Bank</masterLabel>
+        <translation><!-- FGB – First Gulf Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HSBC – Hongkong and Shanghai Banking Corporation</masterLabel>
+        <translation><!-- HSBC – Hongkong and Shanghai Banking Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mashreq</masterLabel>
+        <translation><!-- Mashreq --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NBAD – National Bank of Abu Dhabi</masterLabel>
+        <translation><!-- NBAD – National Bank of Abu Dhabi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NBF – National Bank of Fujairah</masterLabel>
+        <translation><!-- NBF – National Bank of Fujairah --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAK -Ras Al Khaimah Bank</masterLabel>
+        <translation><!-- RAK -Ras Al Khaimah Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCB – Standard Chartered Bank</masterLabel>
+        <translation><!-- SCB – Standard Chartered Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIB – Sharjah Islamic Bank</masterLabel>
+        <translation><!-- SIB – Sharjah Islamic Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UAB – United Arab Bank</masterLabel>
+        <translation><!-- UAB – United Arab Bank --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

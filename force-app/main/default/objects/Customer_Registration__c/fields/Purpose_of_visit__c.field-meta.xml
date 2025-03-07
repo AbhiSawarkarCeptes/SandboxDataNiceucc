@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purpose_of_visit__c</fullName>
+    <label>Purpose of visit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Vertical__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Booking</fullName>
+                <default>false</default>
+                <label>Booking</label>
+            </value>
+            <value>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+                <label>Cancellation</label>
+            </value>
+            <value>
+                <fullName>Cheque Bounce</fullName>
+                <default>false</default>
+                <label>Cheque Bounce</label>
+            </value>
+            <value>
+                <fullName>Documents Submission</fullName>
+                <default>false</default>
+                <label>Documents Submission</label>
+            </value>
+            <value>
+                <fullName>DSR</fullName>
+                <default>false</default>
+                <label>DSR</label>
+            </value>
+            <value>
+                <fullName>Escrow Account Details</fullName>
+                <default>false</default>
+                <label>Escrow Account Details</label>
+            </value>
+            <value>
+                <fullName>Extension of Payment /Change</fullName>
+                <default>false</default>
+                <label>Extension of Payment /Change</label>
+            </value>
+            <value>
+                <fullName>Handover</fullName>
+                <default>false</default>
+                <label>Handover</label>
+            </value>
+            <value>
+                <fullName>Home Orientation</fullName>
+                <default>false</default>
+                <label>Home Orientation</label>
+            </value>
+            <value>
+                <fullName>Information Update</fullName>
+                <default>false</default>
+                <label>Information Update</label>
+            </value>
+            <value>
+                <fullName>Late Payment Fee</fullName>
+                <default>false</default>
+                <label>Late Payment Fee</label>
+            </value>
+            <value>
+                <fullName>Mortgage</fullName>
+                <default>false</default>
+                <label>Mortgage</label>
+            </value>
+            <value>
+                <fullName>PCC not Raised</fullName>
+                <default>false</default>
+                <label>PCC not Raised</label>
+            </value>
+            <value>
+                <fullName>Payments</fullName>
+                <default>false</default>
+                <label>Payments</label>
+            </value>
+            <value>
+                <fullName>Payment Request</fullName>
+                <default>false</default>
+                <label>Payment Request</label>
+            </value>
+            <value>
+                <fullName>Payment Updates</fullName>
+                <default>false</default>
+                <label>Payment Updates</label>
+            </value>
+            <value>
+                <fullName>Plots</fullName>
+                <default>false</default>
+                <label>Plots</label>
+            </value>
+            <value>
+                <fullName>Pre-Registration</fullName>
+                <default>false</default>
+                <label>Pre-Registration</label>
+            </value>
+            <value>
+                <fullName>Rebate Information</fullName>
+                <default>false</default>
+                <label>Rebate Information</label>
+            </value>
+            <value>
+                <fullName>Refund</fullName>
+                <default>false</default>
+                <label>Refund</label>
+            </value>
+            <value>
+                <fullName>Resale</fullName>
+                <default>false</default>
+                <label>Resale</label>
+            </value>
+            <value>
+                <fullName>SPA</fullName>
+                <default>false</default>
+                <label>SPA</label>
+            </value>
+            <value>
+                <fullName>Statement of Account</fullName>
+                <default>false</default>
+                <label>Statement of Account</label>
+            </value>
+            <value>
+                <fullName>PDC&apos;s</fullName>
+                <default>false</default>
+                <label>PDC&apos;s</label>
+            </value>
+            <value>
+                <fullName>Title Deed</fullName>
+                <default>false</default>
+                <label>Title Deed</label>
+            </value>
+            <value>
+                <fullName>Design Queries</fullName>
+                <default>false</default>
+                <label>Design Queries</label>
+            </value>
+            <value>
+                <fullName>MOU</fullName>
+                <default>false</default>
+                <label>MOU</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>CRM</controllingFieldValue>
+            <valueName>Booking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRM</controllingFieldValue>
+            <valueName>Cancellation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRM</controllingFieldValue>
+            <valueName>Documents Submission</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRM</controllingFieldValue>
+            <valueName>DSR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRM</controllingFieldValue>
+            <valueName>Handover</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRM</controllingFieldValue>
+            <valueName>Home Orientation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRM</controllingFieldValue>
+            <valueName>Information Update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRM</controllingFieldValue>
+            <controllingFieldValue>Collection</controllingFieldValue>
+            <valueName>Payments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRM</controllingFieldValue>
+            <valueName>Plots</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRM</controllingFieldValue>
+            <valueName>Pre-Registration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRM</controllingFieldValue>
+            <valueName>Resale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRM</controllingFieldValue>
+            <valueName>SPA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRM</controllingFieldValue>
+            <valueName>Title Deed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRM</controllingFieldValue>
+            <valueName>Design Queries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRM</controllingFieldValue>
+            <valueName>MOU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collection</controllingFieldValue>
+            <valueName>Cheque Bounce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collection</controllingFieldValue>
+            <valueName>Escrow Account Details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collection</controllingFieldValue>
+            <valueName>Extension of Payment /Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collection</controllingFieldValue>
+            <valueName>Late Payment Fee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collection</controllingFieldValue>
+            <valueName>Mortgage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collection</controllingFieldValue>
+            <valueName>PCC not Raised</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collection</controllingFieldValue>
+            <valueName>Payment Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collection</controllingFieldValue>
+            <valueName>Payment Updates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collection</controllingFieldValue>
+            <valueName>Rebate Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collection</controllingFieldValue>
+            <valueName>Refund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collection</controllingFieldValue>
+            <valueName>Statement of Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collection</controllingFieldValue>
+            <valueName>PDC&apos;s</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

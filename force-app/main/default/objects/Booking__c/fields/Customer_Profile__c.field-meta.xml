@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Profile__c</fullName>
+    <label>Customer Profile</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accountant</fullName>
+                <default>false</default>
+                <label>Accountant</label>
+            </value>
+            <value>
+                <fullName>Aviation Industry/Pilot</fullName>
+                <default>false</default>
+                <label>Aviation Industry/Pilot</label>
+            </value>
+            <value>
+                <fullName>Banking Sector</fullName>
+                <default>false</default>
+                <label>Banking Sector</label>
+            </value>
+            <value>
+                <fullName>Business Owner</fullName>
+                <default>false</default>
+                <label>Business Owner</label>
+            </value>
+            <value>
+                <fullName>Celebrity</fullName>
+                <default>false</default>
+                <label>Celebrity</label>
+            </value>
+            <value>
+                <fullName>Company</fullName>
+                <default>false</default>
+                <label>Company</label>
+            </value>
+            <value>
+                <fullName>Construction/Architecture Professionals</fullName>
+                <default>false</default>
+                <label>Construction/Architecture Professionals</label>
+            </value>
+            <value>
+                <fullName>Consulting/Professional Services</fullName>
+                <default>false</default>
+                <label>Consulting/Professional Services</label>
+            </value>
+            <value>
+                <fullName>Creative/Artistic Professionals</fullName>
+                <default>false</default>
+                <label>Creative/Artistic Professionals</label>
+            </value>
+            <value>
+                <fullName>Diplomat</fullName>
+                <default>false</default>
+                <label>Diplomat</label>
+            </value>
+            <value>
+                <fullName>Education Professionals</fullName>
+                <default>false</default>
+                <label>Education Professionals</label>
+            </value>
+            <value>
+                <fullName>Entrepreneurs/Self-Employed</fullName>
+                <default>false</default>
+                <label>Entrepreneurs/Self-Employed</label>
+            </value>
+            <value>
+                <fullName>Healthcare Professionals/Medical Practitioners</fullName>
+                <default>false</default>
+                <label>Healthcare Professionals/Medical Practitioners</label>
+            </value>
+            <value>
+                <fullName>Hospitality Industry</fullName>
+                <default>false</default>
+                <label>Hospitality Industry</label>
+            </value>
+            <value>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <label>Human Resources</label>
+            </value>
+            <value>
+                <fullName>Investor</fullName>
+                <default>false</default>
+                <label>Investor</label>
+            </value>
+            <value>
+                <fullName>IT/Computer Professionals</fullName>
+                <default>false</default>
+                <label>IT/Computer Professionals</label>
+            </value>
+            <value>
+                <fullName>Journalism</fullName>
+                <default>false</default>
+                <label>Journalism</label>
+            </value>
+            <value>
+                <fullName>Legal Professionals</fullName>
+                <default>false</default>
+                <label>Legal Professionals</label>
+            </value>
+            <value>
+                <fullName>Marketing/Media Sector</fullName>
+                <default>false</default>
+                <label>Marketing/Media Sector</label>
+            </value>
+            <value>
+                <fullName>Marketing Sector</fullName>
+                <default>false</default>
+                <label>Marketing Sector</label>
+            </value>
+            <value>
+                <fullName>Middle-Level Manager</fullName>
+                <default>false</default>
+                <label>Middle-Level Manager</label>
+            </value>
+            <value>
+                <fullName>Non Profitable Business</fullName>
+                <default>false</default>
+                <label>Non Profitable Business</label>
+            </value>
+            <value>
+                <fullName>Professional/Technical Staff</fullName>
+                <default>false</default>
+                <label>Professional/Technical Staff</label>
+            </value>
+            <value>
+                <fullName>Real Estate Brokers</fullName>
+                <default>false</default>
+                <label>Real Estate Brokers</label>
+            </value>
+            <value>
+                <fullName>Royal Family members</fullName>
+                <default>false</default>
+                <label>Royal Family members</label>
+            </value>
+            <value>
+                <fullName>Salesperson</fullName>
+                <default>false</default>
+                <label>Salesperson</label>
+            </value>
+            <value>
+                <fullName>Sobha Employee</fullName>
+                <default>false</default>
+                <label>Sobha Employee</label>
+            </value>
+            <value>
+                <fullName>Sports Professionals</fullName>
+                <default>false</default>
+                <label>Sports Professionals</label>
+            </value>
+            <value>
+                <fullName>Student</fullName>
+                <default>false</default>
+                <label>Student</label>
+            </value>
+            <value>
+                <fullName>Top-Level Managers</fullName>
+                <default>false</default>
+                <label>Top-Level Managers</label>
+            </value>
+            <value>
+                <fullName>Undisclosed</fullName>
+                <default>false</default>
+                <label>Undisclosed</label>
+            </value>
+            <value>
+                <fullName>Works in UAE Government</fullName>
+                <default>false</default>
+                <label>Works in UAE Government</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

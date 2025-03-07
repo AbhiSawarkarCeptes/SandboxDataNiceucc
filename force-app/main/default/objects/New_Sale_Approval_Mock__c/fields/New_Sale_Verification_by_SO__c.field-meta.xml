@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Sale_Verification_by_SO__c</fullName>
+    <label>New Sale Verification by SO</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Clash/Dispute</fullName>
+                <default>false</default>
+                <label>Clash/Dispute</label>
+            </value>
+            <value>
+                <fullName>Missing Documents</fullName>
+                <default>false</default>
+                <label>Missing Documents</label>
+            </value>
+            <value>
+                <fullName>Missing Approval</fullName>
+                <default>false</default>
+                <label>Missing Approval</label>
+            </value>
+            <value>
+                <fullName>New Sales Verified</fullName>
+                <default>false</default>
+                <label>New Sales Verified</label>
+            </value>
+            <value>
+                <fullName>Pending for verification</fullName>
+                <default>true</default>
+                <label>Pending for verification</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

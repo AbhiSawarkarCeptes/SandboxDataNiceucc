@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved By CRM Head</masterLabel>
+        <translation><!-- Approved By CRM Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by MDO/CMO</masterLabel>
+        <translation><!-- Approved by MDO/CMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending For CRM Head Approval</masterLabel>
+        <translation><!-- Pending For CRM Head Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for Collection Head Approval</masterLabel>
+        <translation><!-- Pending for Collection Head Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for MDO/CMO</masterLabel>
+        <translation><!-- Pending for MDO/CMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected By CRM Head</masterLabel>
+        <translation><!-- Rejected By CRM Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Collection Head</masterLabel>
+        <translation><!-- Rejected by Collection Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by MDO/CMO</masterLabel>
+        <translation><!-- Rejected by MDO/CMO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

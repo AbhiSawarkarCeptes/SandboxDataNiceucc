@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_payment_requests_for_Treasury_team</fullName>
+    <columns>NAME</columns>
+    <columns>Amount_Towards__c</columns>
+    <columns>Approved_Date_and_Time__c</columns>
+    <columns>Mode__c</columns>
+    <columns>Status__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Account_Master__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Approved by Accounts,Submitted to Accounts for Amount Confirmation,Amount Confirmed by Accounts,Approved,Partially Approved</value>
+    </filters>
+    <label>All payment requests for Treasury team</label>
+    <sharedTo>
+        <group>Treasury_Group</group>
+    </sharedTo>
+</ListView>

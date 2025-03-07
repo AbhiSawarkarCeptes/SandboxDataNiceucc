@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mortgage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mortgages</value>
+    </caseValues>
+    <layouts>
+        <layout>Mortgage Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Uploaded Documents --></label>
+            <section>Uploaded Documents</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Account Pre Approval Update --></label>
+        <name>Account_Pre_Approval_Update</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Audit Pre Approval Update --></label>
+        <name>Audit_Pre_Approval_Update</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- DSR File Upload --></label>
+        <name>DSR_File_Upload</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Customer Signed DSR can not be added to approved documents as its not uploaded --></errorMessage>
+        <name>Accounts_approved_documents_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Signed DSR can not be added to approved documents as its not uploaded --></errorMessage>
+        <name>Audit_approved_documents_check</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Mortgage_Verification --></label>
+        <name>Mortgage_Verification</name>
+    </webLinks>
+</CustomObjectTranslation>

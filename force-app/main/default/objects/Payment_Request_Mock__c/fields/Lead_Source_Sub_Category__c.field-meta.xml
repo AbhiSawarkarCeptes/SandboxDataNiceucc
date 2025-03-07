@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Source_Sub_Category__c</fullName>
+    <label>Lead Source – Sub Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Lead_Source_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Channel Partner (Broker)</label>
+            </value>
+            <value>
+                <fullName>Sobha Connect</fullName>
+                <default>false</default>
+                <label>Sobha Connect</label>
+            </value>
+            <value>
+                <fullName>Digital</fullName>
+                <default>false</default>
+                <label>Digital</label>
+            </value>
+            <value>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+                <label>Walk-in</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Mall Stands</fullName>
+                <default>false</default>
+                <label>Mall Stands</label>
+            </value>
+            <value>
+                <fullName>Influencer</fullName>
+                <default>false</default>
+                <label>Influencer</label>
+            </value>
+            <value>
+                <fullName>Corporate Tie-ups</fullName>
+                <default>false</default>
+                <label>Corporate Tie-ups</label>
+            </value>
+            <value>
+                <fullName>Loyalty</fullName>
+                <default>false</default>
+                <label>Loyalty</label>
+            </value>
+            <value>
+                <fullName>Management referral</fullName>
+                <default>false</default>
+                <label>Management referral</label>
+            </value>
+            <value>
+                <fullName>Employee referral</fullName>
+                <default>false</default>
+                <label>Employee referral</label>
+            </value>
+            <value>
+                <fullName>Salesperson initiative</fullName>
+                <default>false</default>
+                <label>Salesperson initiative</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>Retention</fullName>
+                <default>false</default>
+                <label>Retention</label>
+            </value>
+            <value>
+                <fullName>Employee</fullName>
+                <default>false</default>
+                <label>Employee</label>
+            </value>
+            <value>
+                <fullName>Loyalty Customer reference</fullName>
+                <default>false</default>
+                <label>Loyalty Customer reference</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Indirect</controllingFieldValue>
+            <valueName>Broker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indirect</controllingFieldValue>
+            <valueName>Sobha Connect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Digital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Walk-in</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Mall Stands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Influencer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Corporate Tie-ups</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Direct</controllingFieldValue>
+            <valueName>Loyalty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Direct</controllingFieldValue>
+            <valueName>Management referral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Direct</controllingFieldValue>
+            <valueName>Employee referral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Direct</controllingFieldValue>
+            <valueName>Salesperson initiative</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Direct</controllingFieldValue>
+            <valueName>Referral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Direct</controllingFieldValue>
+            <valueName>Employee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <valueName>Retention</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

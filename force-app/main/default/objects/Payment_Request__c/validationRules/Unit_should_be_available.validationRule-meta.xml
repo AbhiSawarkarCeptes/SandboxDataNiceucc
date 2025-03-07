@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_should_be_available</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(IsNew(),ischanged(Unit__c)),Unit__c != null,From_Booking__c==false, ISBLANK(TEXT(Secondary_Mode__c)),OR(Not(IsPICKVAl(Unit__r.Unit_Status__c , &apos;Available&apos;)), Unit__r.Not_Available_for_Sales__c ==true), $User.Id != Unit__r.Allocated_SM__c,$User.Username !=&apos;downtime.migration.user@sobharealty.com&apos;)</errorConditionFormula>
+    <errorDisplayField>Unit__c</errorDisplayField>
+    <errorMessage>Please select an unit which is available.</errorMessage>
+</ValidationRule>

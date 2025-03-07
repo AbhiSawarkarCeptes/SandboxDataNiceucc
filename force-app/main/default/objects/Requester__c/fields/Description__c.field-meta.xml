@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Description__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(Amount__c &gt;=1,Registration_Amount__c &gt;=1), &quot;received from &quot;&amp;Booking__r.Primary_Applicant_Name__c &amp;&apos; &apos;&amp; &quot;unit&quot;&amp; &apos; &apos;&amp;Booking__r.Unit__r.Name &amp;&apos; &apos;&amp;&quot;against&quot;&amp;&apos; &apos;&amp;&quot;purchase price&quot;&amp;&apos; &apos;&amp; TEXT(Amount__c)&amp;&apos; &apos; &amp;&quot;and&quot;&amp;&apos; &apos;&amp;&quot;pre-registration&quot;&amp;&apos; &apos;&amp;  TEXT(Registration_Amount__c) ,&apos;&apos;)</formula>
+    <label>Description</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

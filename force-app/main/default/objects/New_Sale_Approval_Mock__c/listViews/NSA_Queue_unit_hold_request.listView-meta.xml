@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSA_Queue_unit_hold_request</fullName>
+    <columns>NAME</columns>
+    <filterScope>Queue</filterScope>
+    <label>NSA Queue</label>
+    <queue>NSA_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

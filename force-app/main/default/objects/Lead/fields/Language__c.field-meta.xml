@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Language__c</fullName>
+    <label>Language</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>English</fullName>
+                <default>false</default>
+                <label>English</label>
+            </value>
+            <value>
+                <fullName>Mandarin Chinese</fullName>
+                <default>false</default>
+                <label>Mandarin Chinese</label>
+            </value>
+            <value>
+                <fullName>Hindi</fullName>
+                <default>false</default>
+                <label>Hindi</label>
+            </value>
+            <value>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+                <label>Spanish</label>
+            </value>
+            <value>
+                <fullName>French</fullName>
+                <default>false</default>
+                <label>French</label>
+            </value>
+            <value>
+                <fullName>Arabic</fullName>
+                <default>false</default>
+                <label>Arabic</label>
+            </value>
+            <value>
+                <fullName>Russian</fullName>
+                <default>false</default>
+                <label>Russian</label>
+            </value>
+            <value>
+                <fullName>Portuguese</fullName>
+                <default>false</default>
+                <label>Portuguese</label>
+            </value>
+            <value>
+                <fullName>Indonesian</fullName>
+                <default>false</default>
+                <label>Indonesian</label>
+            </value>
+            <value>
+                <fullName>German</fullName>
+                <default>false</default>
+                <label>German</label>
+            </value>
+            <value>
+                <fullName>Japanese</fullName>
+                <default>false</default>
+                <label>Japanese</label>
+            </value>
+            <value>
+                <fullName>Turkish</fullName>
+                <default>false</default>
+                <label>Turkish</label>
+            </value>
+            <value>
+                <fullName>Yue Chinese</fullName>
+                <default>false</default>
+                <label>Yue Chinese</label>
+            </value>
+            <value>
+                <fullName>Vietnamese</fullName>
+                <default>false</default>
+                <label>Vietnamese</label>
+            </value>
+            <value>
+                <fullName>Wu Chinese</fullName>
+                <default>false</default>
+                <label>Wu Chinese</label>
+            </value>
+            <value>
+                <fullName>Korean</fullName>
+                <default>false</default>
+                <label>Korean</label>
+            </value>
+            <value>
+                <fullName>Iranian Persian</fullName>
+                <default>false</default>
+                <label>Iranian Persian</label>
+            </value>
+            <value>
+                <fullName>Hausa</fullName>
+                <default>false</default>
+                <label>Hausa</label>
+            </value>
+            <value>
+                <fullName>Swahili</fullName>
+                <default>false</default>
+                <label>Swahili</label>
+            </value>
+            <value>
+                <fullName>Javanese</fullName>
+                <default>false</default>
+                <label>Javanese</label>
+            </value>
+            <value>
+                <fullName>Italian</fullName>
+                <default>false</default>
+                <label>Italian</label>
+            </value>
+            <value>
+                <fullName>Thai</fullName>
+                <default>false</default>
+                <label>Thai</label>
+            </value>
+            <value>
+                <fullName>Amharic</fullName>
+                <default>false</default>
+                <label>Amharic</label>
+            </value>
+            <value>
+                <fullName>Eastern Punjabi</fullName>
+                <default>false</default>
+                <label>Eastern Punjabi</label>
+            </value>
+            <value>
+                <fullName>Min Nan Chinese</fullName>
+                <default>false</default>
+                <label>Min Nan Chinese</label>
+            </value>
+            <value>
+                <fullName>Jin Chinese</fullName>
+                <default>false</default>
+                <label>Jin Chinese</label>
+            </value>
+            <value>
+                <fullName>Yoruba</fullName>
+                <default>false</default>
+                <label>Yoruba</label>
+            </value>
+            <value>
+                <fullName>Hakka Chinese</fullName>
+                <default>false</default>
+                <label>Hakka Chinese</label>
+            </value>
+            <value>
+                <fullName>Burmese</fullName>
+                <default>false</default>
+                <label>Burmese</label>
+            </value>
+            <value>
+                <fullName>Sudanese Spoken Arabic</fullName>
+                <default>false</default>
+                <label>Sudanese Spoken Arabic</label>
+            </value>
+            <value>
+                <fullName>Polish</fullName>
+                <default>false</default>
+                <label>Polish</label>
+            </value>
+            <value>
+                <fullName>Algerian Spoken Arabic</fullName>
+                <default>false</default>
+                <label>Algerian Spoken Arabic</label>
+            </value>
+            <value>
+                <fullName>Lingala</fullName>
+                <default>false</default>
+                <label>Lingala</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

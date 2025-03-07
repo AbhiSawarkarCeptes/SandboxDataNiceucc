@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Verified By --></label>
+    <name>Customer_Verified_By__c</name>
+    <relationshipLabel><!-- Customer Verifications --></relationshipLabel>
+</CustomFieldTranslation>

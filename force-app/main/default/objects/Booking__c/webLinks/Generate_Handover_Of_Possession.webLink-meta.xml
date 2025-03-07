@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Handover_Of_Possession</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Generate Handover Of Possession</masterLabel>
+    <openType>noSidebar</openType>
+    <page>HandoverDocument01</page>
+    <protected>false</protected>
+</WebLink>
