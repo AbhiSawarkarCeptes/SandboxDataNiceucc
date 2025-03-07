@@ -1,0 +1,23 @@
+<template>
+    <div class="slds-p-around_small">
+        <lightning-card title="">
+            <template if:true={phoneFields.length}>
+                <div class="slds-grid slds-wrap">
+                    <template for:each={phoneFields} for:item="phone">
+                        <div key={phone.id} class="slds-size_1-of-2 slds-p-around_x-small">
+                            <div class="slds-box slds-box_shadow slds-p-around_x-small">
+                                <div class="slds-grid slds-align-middle">
+                                    <lightning-icon icon-name="utility:contact" size="small" class="slds-p-around_x-small"></lightning-icon>
+                                    <div class="slds-size_2-of-3">
+                                        <strong>{phone.label}</strong>
+                                        <p>{phone.value}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </template>
+        </lightning-card>
+    </div>
+</template>

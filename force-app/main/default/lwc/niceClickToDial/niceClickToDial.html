@@ -1,0 +1,44 @@
+<template>
+    <div class="slds-p-around_small">
+        <lightning-card title="Call Phone Number" icon-name="utility:call">
+            <template if:true={phoneFields.length}>
+                <div class="slds-grid slds-wrap">
+                    <template for:each={phoneFields} for:item="phone">
+                        <div key={phone.id} class="slds-size_1-of-2 slds-p-around_x-small">
+                            <div class="slds-box slds-box_shadow slds-p-around_x-small">
+                                <div class="slds-grid slds-align_absolute-center">
+                                    <div class="slds-size_2-of-3">
+                                        <strong>{phone.label}</strong>
+                                        <p>{phone.value}</p>
+                                    </div>
+                                    <div class="slds-size_1-of-3 slds-text-align_right">
+                                        <!-- <template if:true={phone.showIcon}> -->
+                                        <lightning-button-icon icon-name="utility:call" alternative-text="Call"
+                                            title="Call" variant="brand" data-phone={phone.value} onclick={handleCall} disabled = {phone.showIcon} >
+                                        </lightning-button-icon>
+                                        <!-- </template> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </template>
+            <template if:false={phoneFields.length}>
+                <div class="slds-align_absolute-center slds-text-color_error">
+                    <p><b>{errorMessage}</b></p>
+                </div>
+            </template>
+            <template if:true={showSpinner}>
+                <lightning-spinner alternative-text="Loading"></lightning-spinner>
+            </template>
+            <!-- Hidden click-to-dial component to trigger the call -->
+            <template if:true={showClickToDial}>
+                <lightning-click-to-dial class="clickToDial" value={mobileNumber} data-id={recordId}
+                    phone-number={mobileNumber}>
+                </lightning-click-to-dial>
+            </template>
+        </lightning-card>
+    </div>
+
+</template>
