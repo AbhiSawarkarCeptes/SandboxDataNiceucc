@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Mandate_Sent_for_DocuSign</name>
+        <label>Mandate Sent for DocuSign</label>
+        <locationX>726</locationX>
+        <locationY>138</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Mandate_Sent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.dfsle__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sent</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Sent_to_Channel_Partner</targetReference>
+            </connector>
+            <label>Mandate Sent</label>
+        </rules>
+        <rules>
+            <name>Mandate_Completed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.dfsle__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Completed_Channel_Partner</targetReference>
+            </connector>
+            <label>Mandate Completed</label>
+        </rules>
+        <rules>
+            <name>Mandate_Voided</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.dfsle__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>voided</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Voided_Channel_Partner</targetReference>
+            </connector>
+            <label>Mandate Voided</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Mandate status to be Automated {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Mandate status to be Automated</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Completed_Channel_Partner</name>
+        <label>Completed Channel Partner</label>
+        <locationX>802</locationX>
+        <locationY>453</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.dfsle__SourceId__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Mandate_Status__c</field>
+            <value>
+                <stringValue>Mandate executed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Channel_Partner__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Sent_to_Channel_Partner</name>
+        <label>Sent to Channel Partner</label>
+        <locationX>557</locationX>
+        <locationY>434</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.dfsle__SourceId__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Mandate_Status__c</field>
+            <value>
+                <stringValue>Mandate Sent through DocuSign</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Channel_Partner__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Voided_Channel_Partner</name>
+        <label>Voided Channel Partner</label>
+        <locationX>1029</locationX>
+        <locationY>376</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.dfsle__SourceId__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Mandate_Status__c</field>
+            <value>
+                <stringValue>Mandate voided</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Channel_Partner__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>71</locationX>
+        <locationY>32</locationY>
+        <connector>
+            <targetReference>Mandate_Sent_for_DocuSign</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Envelope_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Mandate Letter</stringValue>
+            </value>
+        </filters>
+        <object>dfsle__EnvelopeStatus__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

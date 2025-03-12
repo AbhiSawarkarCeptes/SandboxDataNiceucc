@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>SBTR_Approval</name>
+        <label>SBTR_Approval</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>submit</actionName>
+        <actionType>submit</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>objectId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>processDefinitionNameOrId</name>
+            <value>
+                <stringValue>SBTR_Approval</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>submit</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Auto Submoit SBTR Approval {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Auto Submit SBTR Approval</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SBTR_Approval</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Send_For_Approval__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Approver 1</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Send_For_Approval__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Approver 2</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Send_For_Approval__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Approval 3</stringValue>
+            </value>
+        </filters>
+        <object>SBTR_Approval__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

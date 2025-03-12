@@ -1,0 +1,190 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <template if:true={isDataLoaded}>
+        <lightning-layout vertical-align="stretch" multiple-rows="true" class="x-large">
+            <lightning-layout-item size="12">
+                <div style="width:100%;background-color:white; padding:15px">
+                    <div class="slds-align_absolute-center">
+                        <lightning-button-group>
+                            <lightning-button label="Cancel" onclick={Close}></lightning-button> 
+                            <lightning-button variant="brand" label="Upload Documents" onclick={uploadDocuments}></lightning-button> 
+                        </lightning-button-group>
+                    </div>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small" size="12">
+                <table class="slds-table slds-table_cell-buffer ">
+                    <tr>
+                        <th><label class="slds-form-element__legend slds-form-element_label">Booking Name</label></th>
+                        <td>{bookingObj.Name}</td>
+                        <th><label class="slds-form-element__legend slds-form-element_label">Booking Date</label></th>
+                        <td>{bookingObj.BookingDate}</td>
+                    </tr>
+                    <tr>
+                        <th><label class="slds-form-element__legend slds-form-element_label">Project Name</label></th>
+                        <td>{bookingObj.ProjectName}</td>
+                        <th><label class="slds-form-element__legend slds-form-element_label">Unit</label></th>
+                        <td>{bookingObj.Unit}</td>
+                    </tr>
+               </table>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout vertical-align="stretch" multiple-rows="true" class="x-large">
+            <template if:true={uploadEnable}>
+            <lightning-layout-item padding="around-small" size="12">
+                <table class="slds-table slds-table_cell-buffer ">
+                    <tr>
+                    <td>
+                        <!-- <template if:true={uploadEnable}> -->
+                            <lightning-file-upload
+                            label="Upload Signed Booking Form"
+                            name="fileUploader"
+                            accept={acceptedFormats}
+                            record-id={bookingObj.Id}
+                            onuploadfinished={handleUploadFinished}
+                            file-field-name="Name" file-field-value="Signed Booking Form"
+                            disabled={disableSignedFormUpload}>
+                            </lightning-file-upload>
+                            <p>{signedBookingFormName}</p>
+                        <!-- </template> -->
+                            
+                        </td>
+                    </tr>
+                </table>
+                </lightning-layout-item>
+            </template>
+                <lightning-layout-item size="12">
+                    <lightning-tabset>
+                        <template if:true={isFirstApplicant}>
+                            <lightning-tab label="Primary Applicant" value="1" onactive={handleActive}>
+                                <lightning-layout multiple-rows>
+                                    <lightning-layout-item size="12">
+                                        <table class="slds-table slds-table_cell-buffer ">
+                                            <tr>
+                                                <th><label class="slds-form-element__legend slds-form-element_label">Applicant Name</label></th>
+                                                <td>{firstApplicant.Name}</td>
+                                                <th><label class="slds-form-element__legend slds-form-element_label">Applicant Type</label></th>
+                                                <td>{firstApplicant.ApplicantType}</td>
+                                            </tr>
+                                            <tr>
+                                                <th><label class="slds-form-element__legend slds-form-element_label">Type Of Applicant</label></th>
+                                                <td>{firstApplicant.ApplicantNumber}</td>
+                                                <th><label class="slds-form-element__legend slds-form-element_label">Residential Status</label></th>
+                                                <td>{firstApplicant.SubtypeApplicant}</td>
+                                            </tr>
+                                        </table>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+                                <lightning-layout>
+                                    <lightning-layout-item size="12">
+                                        <div style="margin-top:10px">
+                                            <c-upload-documents-to-applicant-details applicant-id = {firstApplicant.Id} booking-id={bookingObj.Id}
+                                            applicant = {firstApplicant}
+                                            onrefreshparent={getApplicationDetails}
+    ></c-upload-documents-to-applicant-details>
+                                        </div>
+                                    </lightning-layout-item>
+                                </lightning-layout> 
+                            </lightning-tab>
+                        </template>
+                        <template if:true={isSecondApplicant}>
+                            <lightning-tab label="Second Applicant" value="2" onactive={handleActive}>
+                                <table class="slds-table slds-table_cell-buffer ">
+                                    <tr>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Applicant Name</label></th>
+                                        <td>{secondApplicant.Name}</td>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Applicant Type</label></th>
+                                        <td>{secondApplicant.ApplicantType}</td>
+                                    </tr>
+                                    <tr>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Type Of Applicant</label></th>
+                                        <td>{secondApplicant.ApplicantNumber}</td>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Residential Status</label></th>
+                                        <td>{secondApplicant.SubtypeApplicant}</td>
+                                    </tr>
+                                </table>
+                                <div style="margin-top:10px">
+                                    <c-upload-documents-to-applicant-details applicant-id = {secondApplicant.Id} booking-id={bookingObj.Id}
+                                    applicant = {secondApplicant}
+                                    onrefreshparent={getApplicationDetails}></c-upload-documents-to-applicant-details>
+                                </div>
+                            </lightning-tab>
+                        </template>
+                        <template if:true={isThirdApplicant}>
+                            <lightning-tab label="Third Applicant" value="3" onactive={handleActive}>
+                                <table class="slds-table slds-table_cell-buffer ">
+                                    <tr>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Applicant Name</label></th>
+                                        <td>{thirdApplicant.Name}</td>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Applicant Type</label></th>
+                                        <td>{thirdApplicant.ApplicantType}</td>
+                                    </tr>
+                                    <tr>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Type Of Applicant</label></th>
+                                        <td>{thirdApplicant.ApplicantNumber}</td>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Residential Status</label></th>
+                                        <td>{thirdApplicant.SubtypeApplicant}</td>
+                                    </tr>
+                                </table>
+                                <div style="margin-top:10px">
+                                    <c-upload-documents-to-applicant-details applicant-id = {thirdApplicant.Id} booking-id={bookingObj.Id}
+                                    applicant = {thirdApplicant}
+                                    onrefreshparent={getApplicationDetails}></c-upload-documents-to-applicant-details>
+                                </div>
+                            </lightning-tab>
+                        </template>
+                        <template if:true={isFourthApplicant}>
+                            <lightning-tab label="Fourth Applicant" value="4" onactive={handleActive}>
+                                <table class="slds-table slds-table_cell-buffer ">
+                                    <tr>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Applicant Name</label></th>
+                                        <td>{fourthApplicant.Name}</td>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Applicant Type</label></th>
+                                        <td>{fourthApplicant.ApplicantType}</td>
+                                    </tr>
+                                    <tr>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Type Of Applicant</label></th>
+                                        <td>{fourthApplicant.ApplicantNumber}</td>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Residential Status</label></th>
+                                        <td>{fourthApplicant.SubtypeApplicant}</td>
+                                    </tr>
+                                </table>
+                                <div style="margin-top:10px">
+                                    <c-upload-documents-to-applicant-details applicant-id = {fourthApplicant.Id} booking-id={bookingObj.Id}
+                                    applicant = {fourthApplicant}
+                                    onrefreshparent={getApplicationDetails}></c-upload-documents-to-applicant-details>
+                                </div>
+                            </lightning-tab>
+                        </template>
+                        <template if:true={isFifthApplicant}>
+                            <lightning-tab label="Fifth Applicant" value="5" onactive={handleActive}>
+                                <table class="slds-table slds-table_cell-buffer ">
+                                    <tr>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Applicant Name</label></th>
+                                        <td>{fifthApplicant.Name}</td>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Applicant Type</label></th>
+                                        <td>{fifthApplicant.ApplicantType}</td>
+                                    </tr>
+                                    <tr>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Type of Applicant</label></th>
+                                        <td>{fifthApplicant.ApplicantNumber}</td>
+                                        <th><label class="slds-form-element__legend slds-form-element_label">Residential Status</label></th>
+                                        <td>{fifthApplicant.SubtypeApplicant}</td>
+                                    </tr>
+                                </table>
+                                <div style="margin-top:10px">
+                                    <c-upload-documents-to-applicant-details applicant-id = {fifthApplicant.Id} booking-id={bookingObj.Id}
+                                    applicant = {fifthApplicant}
+                                    onrefreshparent={getApplicationDetails}></c-upload-documents-to-applicant-details>
+                                </div>
+                            </lightning-tab>
+                        </template>
+                    </lightning-tabset>
+                </lightning-layout-item>
+        </lightning-layout>
+    </template>
+</template>

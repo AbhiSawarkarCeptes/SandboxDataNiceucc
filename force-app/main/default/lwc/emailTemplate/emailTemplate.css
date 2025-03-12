@@ -1,0 +1,52 @@
+.my-component-container {
+    height: 10rem;
+    margin: 0.5rem 1rem;
+}
+.custom-pill{
+    border-radius: 5px; /* Rounded corners */
+    padding: 4px 3px;
+}
+.lightning-input .slds-form-element .slds-form-element__label:empty {
+    display: none !important;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+}
+::-webkit-scrollbar-track {
+   display: none !important;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.4);
+}
+.slds-card__header.slds-grid {
+    padding: 1% 42% !important;
+}
+.ulContainer { 
+    border: 0.05rem solid black;
+    text-indent: 0.25rem;
+    border-radius: 0.2rem;
+    line-height: 2rem;
+    max-height: 7rem;
+    overflow-y: auto;
+    position: absolute;
+
+    z-index: 100 !important;
+    background: white;
+}
+.liBox:hover {
+    background-color: azure;
+    cursor: pointer;
+}
+.main {
+    background-color: white;
+    min-height: 80vh !important;
+    margin: 0;
+    padding: 0;
+}
+.slds-table thead th {
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+}

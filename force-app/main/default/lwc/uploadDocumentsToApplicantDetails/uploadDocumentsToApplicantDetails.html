@@ -1,0 +1,802 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <div>
+        <template if:true={UAE}>
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Document Name">Document Name</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Upload">Upload</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Upload">Uploaded File</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Passport Copy*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload name="Passport Copy" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.PassportVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.PassportVerified}>
+
+                                <div class="PassportCopy">
+                                    
+                                    {applicantNumber} - Passport Copy
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Visa Copy*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Visa Copy" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.VisaCopyVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.VisaCopyVerified}>
+
+                                <div class="VisaCopy">
+                                    
+                                    {applicantNumber} - Visa Copy
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Emirates Id*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Emirates Id" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.EmiratesIdVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.EmiratesIdVerified}>
+
+                                <div class="EmiratesId">
+                                    
+                                    {applicantNumber} - Emirates Id
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Power of Attorney (If Applicable)
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Power of Attorney" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.PowerOfAttorneyVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.PowerOfAttorneyVerified}>
+
+                                <div class="PowerofAttorney">
+                                    
+                                    {applicantNumber} - Power of Attorney
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Passport Copy of Authorized Attorney(If Applicable)
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Passport Copy of Authorized Attorney" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.PassportCopyAttorneyVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.PassportCopyAttorneyVerified}>
+
+                                <div class="PassportCopyofAuthorizedAttorney">
+                                    
+                                    {applicantNumber} - Passport Copy of Authorized Attorney
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Letter of undertaking if customer is minor (if applicable) 
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Letter of undertaking" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.LetterOfUndertakingIfCustomerIsMinorVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.LetterOfUndertakingIfCustomerIsMinorVerified}>
+
+                                <div class="Letterofundertaking">
+                                    
+                                    {applicantNumber} - Letter of undertaking
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Others
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Others" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.OtherDocumentsVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.OtherDocumentsVerified}>
+
+                                <div class="Others">
+                                    
+                                    Primary Applicant - Others
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </template>
+        <template if:true={nonUAE}>
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Document Name">Document Name</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Upload">Upload</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Upload">Uploaded File</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Passport Copy*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload name="Passport Copy" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.PassportVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                           <template if:true={applicant.PassportVerified}>
+
+                                <div class="PassportCopy">
+                                    
+                                    {applicantNumber} - Passport Copy
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                National Id*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="National Id" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.NationalIdVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                           <template if:true={applicant.NationalIdVerified}>
+
+                                <div class="NationalId">
+                                    
+                                    {applicantNumber} - National Id
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Power of Attorney (If Applicable)
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Power of Attorney" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.PowerOfAttorneyVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.PowerOfAttorneyVerified}>
+
+                                <div class="PowerofAttorney">
+                                    
+                                    {applicantNumber} - Power of Attorney
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Passport Copy of Authorized Attorney(If Applicable)
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Passport Copy of Authorized Attorney" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.PassportCopyAttorneyVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.PassportCopyAttorneyVerified}>
+
+                                <div class="PassportCopyofAuthorizedAttorney">
+                                    
+                                    {applicantNumber} - Passport Copy of Authorized Attorney
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Non-residency Letter
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Non-residency Letter" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.NonResidencyLetterVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.NonResidencyLetterVerified}>
+
+                                <div class="Non-residencyLetter">
+                                    
+                                    {applicantNumber} - Non-residency Letter
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Letter of undertaking if customer is minor (if applicable) 
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Letter of undertaking" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.LetterOfUndertakingIfCustomerIsMinorVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.LetterOfUndertakingIfCustomerIsMinorVerified}>
+
+                                <div class="Letterofundertaking">
+                                    
+                                    {applicantNumber} - Letter of undertaking
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                  
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Others
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Others" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.OtherDocumentsVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.OtherDocumentsVerified}>
+
+                                <div class="Others">
+                                    
+                                    {applicantNumber} - Others
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </template>
+        <template if:true={incorporatedUAE}>
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Document Name">Document Name</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Upload">Upload</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Upload">Uploaded File</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Passport Copy of Authorized Signatory*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Passport Copy of Authorized Signatory" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.PassportCopyAutorizedVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="PassportCopyofAuthorizedSignatory">
+                                
+                            </div>
+                            <template if:true={applicant.OtherDocumentsVerified}>
+
+                                <div class="Others">
+                                    
+                                    {applicantNumber} - Others
+                                </div>
+                            </template>
+                            
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Emirates ID of Authorized Signatory*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Emirates ID of Authorized Signatory" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.EmiratedIDAutorizedVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                           <template if:true={applicant.EmiratedIDAutorizedVerified}>
+
+                                <div class="EmiratesIDofAuthorizedSignatory">
+                                    
+                                    {applicantNumber} - Emirates ID of Authorized Signatory
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                               Visa Copy of Authorized Signatory*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Visa Copy of Authorized Signatory" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.VisaCopyAutorizedVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.VisaCopyAutorizedVerified}>
+
+                                <div class="VisaCopyofAuthorizedSignatory">
+                                    
+                                    {applicantNumber} - Visa Copy of Authorized Signatory
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Trade License Copy*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload name="Trade License" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.TradeLicenseVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.TradeLicenseVerified}>
+
+                                <div class="TradeLicense">
+                                    
+                                    {applicantNumber} - Trade License
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Memorandum of Association*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload name="Memorandum of Association" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.MemoradumArticlesVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.MemoradumArticlesVerified}>
+
+                                <div class="MemoradumArticlesofAssociation">
+                                    
+                                    {applicantNumber} - Memorandum of Association
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Power of Attorney (If Applicable)
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Power of Attorney" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.PowerOfAttorneyVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.PowerOfAttorneyVerified}>
+
+                                <div class="PowerofAttorney">
+                                    
+                                    {applicantNumber} - Power of Attorney
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Passport Copy of Authorized Attorney(If Applicable)
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Passport Copy of Authorized Attorney" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.PassportCopyAttorneyVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.PassportCopyAttorneyVerified}>
+
+                                <div class="PassportCopyofAuthorizedAttorney">
+                                    
+                                    {applicantNumber} - Passport Copy of Authorized Attorney
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Others
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Others" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.OtherDocumentsVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.OtherDocumentsVerified}>
+
+                                <div class="Others">
+                                    
+                                    {applicantNumber} - Others
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </template>
+        <template if:true={incorporatedJurisdictions}>
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Document Name">Document Name</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Document Details">Document Details</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Upload">Uploaded File</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Passport Copy of Authorized Signatory*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Passport Copy of Authorized Signatory" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.PassportCopyAutorizedVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.PassportCopyAutorizedVerified}>
+
+                                <div class="PassportCopyofAuthorizedSignatory">
+                                    
+                                    {applicantNumber} - Passport Copy of Authorized Signatory
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Emirates ID of Authorized Signatory*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Emirates ID of Authorized Signatory" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.EmiratedIDAutorizedVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.EmiratedIDAutorizedVerified}>
+
+                                <div class="EmiratesIDofAuthorizedSignatory">
+                                    
+                                    {applicantNumber} - Emirates ID of Authorized Signatory
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                               Visa Copy of Authorized Signatory*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Visa Copy of Authorized Signatory" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.VisaCopyAutorizedVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.VisaCopyAutorizedVerified}>
+
+                                <div class="VisaCopyofAuthorizedSignatory">
+                                    
+                                    {applicantNumber} - Visa Copy of Authorized Signatory
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Trade License Copy*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload name="Trade License" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.TradeLicenseVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.TradeLicenseVerified}>
+
+                                <div class="TradeLicense">
+                                    
+                                    {applicantNumber} - Trade License
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Memorandum of Association/Articles of Association*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload name="Memorandum of Association/Articles of Association" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.MemoradumArticlesVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                           <template if:true={applicant.MemoradumArticlesVerified}>
+
+                                <div class="MemoradumArticlesofAssociation">
+                                    
+                                    {applicantNumber} - Memorandum of Association/Articles of Association
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Certificate of Incorporation*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Certificate of Incorporation" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.CertificateOfIncorporationVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                           <template if:true={applicant.CertificateOfIncorporationVerified}>
+
+                                <div class="CertificateofIncorporation">
+                                    
+                                    {applicantNumber} - Certificate of Incorporation
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Certificate of Good Standing and Certificate of Incumbency*
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Certificate of Good Standing and Certificate of Incumbency" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.CertificateOfGoodStandingVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.CertificateOfGoodStandingVerified}>
+
+                                <div class="CertificateofGoodStandingandCertificateofIncumbency">
+                                    
+                                    {applicantNumber} - Certificate of Good Standing and Certificate of Incumbency
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Power of Attorney (If Applicable)
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Power of Attorney" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.PowerOfAttorneyVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.PowerOfAttorneyVerified}>
+
+                                <div class="PowerofAttorney">
+                                    
+                                    {applicantNumber} - Power of Attorney
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Passport Copy of Authorized Attorney(If Applicable)
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Passport Copy of Authorized Attorney" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.PassportCopyAttorneyVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            <template if:true={applicant.PassportCopyAttorneyVerified}>
+
+                                <div class="PassportCopyofAuthorizedAttorney">
+                                    
+                                    {applicantNumber} - Passport Copy of Authorized Attorney
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td>
+                            <div class="slds-truncate">
+                                Others
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <lightning-file-upload  name="Others" onclick={onUploadClick} accept={acceptedFormats} record-id={bookingId} onuploadfinished={handleUploadFinished}
+                                disabled={applicant.OtherDocumentsVerified}></lightning-file-upload>
+                            </div>
+                        </td>
+                        <td>
+                            
+                            <template if:true={applicant.OtherDocumentsVerified}>
+
+                                <div class="Others">
+                                    
+                                    {applicantNumber} - Others
+                                </div>
+                            </template>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </template>
+    </div>
+</template>

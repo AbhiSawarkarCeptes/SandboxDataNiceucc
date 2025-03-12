@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>CP_Ramadan_Offer_to_send_exclusively</name>
+        <label>CP - Ramadan Offer to send exclusively</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Channel_Partner__c.Channel_Partners</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Channel_Partner__c.Channel_Partners</nameSegment>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <description>Ramadan Offer to send exclusively to CHANNEL PARTNERS</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>NewRecord</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>Ramadan Offer to send exclusively to CHANNEL PARTNERS {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CP - Ramadan Offer to send exclusively</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>CP_Ramadan_Offer_to_send_exclusively</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Data_load_Identifier__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>190320241100AM</stringValue>
+            </value>
+        </filters>
+        <object>Channel_Partner__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

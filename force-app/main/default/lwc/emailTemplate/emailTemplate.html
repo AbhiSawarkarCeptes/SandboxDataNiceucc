@@ -1,0 +1,214 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </div>
+    </template>
+    <div class="main">
+        <div class="slds-grid slds-gutters slds-p-top_small">
+            <div class="slds-col slds-size_4-of-12" style="display: inline-flex;">
+                <lightning-input type="file" name="fileUploader" variant="label-hidden" accept={strAcceptedFormats}
+                    onchange={handleUploadFinished}>
+                </lightning-input>
+                <p style="margin: auto 0.5rem">{strUploadFileName}</p>
+            </div>
+            <div class="slds-col slds-size_8-of-12">
+                <lightning-button variant="brand-outline" label="Reset" onclick={resetEmails}
+                    class="slds-m-left_x-small"></lightning-button>
+                <lightning-button variant="brand-outline" label="Preview" onclick={handlePreview} disabled={previewEmailBtn}
+                    class="slds-m-left_x-small"></lightning-button>
+
+                <lightning-button variant="brand" label="Send" onclick={SendEmails} disabled={sendEmailBtn}
+                    class="slds-m-left_x-small"></lightning-button>
+            </div>
+        </div>
+        
+        <lightning-card>
+            <h2 style="margin: -1% 0% 1% 42% !important;font-size: large;font-weight: bold;"><lightning-icon icon-name="standard:email_chatter" size="small"></lightning-icon>
+                New Email</h2>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_3-of-12" style="text-align:right; margin: auto 0;">
+                    <span><b>To :</b></span>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <div style="max-height: 4rem;overflow-y: auto; padding: 5px; border-radius: 10px;">
+                        <span>
+                            <template for:each={labelTo} for:item="pillItem" for:index="index">
+                                <lightning-pill label={pillItem} onremove={removePillItem} key={pillItem}
+                                    class="custom-pill" name={index}>
+                                </lightning-pill>
+                            </template>
+                        </span>
+                    </div>
+                    <div onmouseleave={handleEmailClose}>
+                        <lightning-input type="search" name="lookupInput" variant="label-hidden"
+                            placeholder="Search Email..." value={searchToEmail} onchange={handleSearchKeyChange}
+                            onclick={showDialog} disabled={emailEditable}>
+                        </lightning-input>
+                        <div if:true={showResults}
+                            class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                            <div id="listbox-unique-id" role="listbox">
+                                <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation">
+                                    <template for:each={searchResults} for:item="result">
+                                        <li key={result} role="presentation" class="slds-listbox__item liBox">
+                                            <span role="option" onclick={handleEmailClick} title={result}
+                                                style="display: block !important;">
+                                                <lightning-icon icon-name="standard:email_chatter"
+                                                    size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result}
+                                            </span>
+                                        </li>
+                                    </template>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters slds-p-top_medium">
+                <div class="slds-col slds-size_3-of-12" style="text-align: right; margin: auto 0;">
+                    <span><b>CC :</b></span>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <div style="max-height: 4rem;overflow-y: auto; padding: 5px; border-radius: 10px;">
+                        <span>
+                            <template for:each={labelCC} for:item="pillItem" for:index="index">
+                                <lightning-pill label={pillItem} onremove={removeCCItem} key={pillItem}
+                                    class="custom-pill" name={index}>
+                                </lightning-pill>
+                            </template>
+                        </span>
+                    </div>
+                    <div onmouseleave={handleCCEmailClose}>
+                        <lightning-input type="search" name="lookupInput" variant="label-hidden"
+                            placeholder="Search Email..." value={searchKeyCCEmail} onchange={handleSearchCCChange}
+                            onclick={showCCDialog} disabled={emailEditable}>
+                        </lightning-input>
+                        <div if:true={showCCResults}
+                            class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                            <div id="listbox-unique-id1" role="listbox">
+                                <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation">
+                                    <template for:each={searchResults} for:item="result">
+                                        <li key={result} role="presentation" class="slds-listbox__item liBox">
+                                            <span role="option" onclick={handleCCClick} title={result}
+                                                style="display: block !important;">
+                                                <lightning-icon icon-name="standard:email_chatter"
+                                                    size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result}
+                                            </span>
+                                        </li>
+                                    </template>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters slds-p-top_medium">
+                <div class="slds-col slds-size_3-of-12" style="text-align: right; margin: auto 0;">
+                    <span><b>BCC :</b></span>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <div style="max-height: 4rem;overflow-y: auto; padding: 5px; border-radius: 10px;">
+                        <span>
+                            <template for:each={labelBCC} for:item="pillItem" for:index="index">
+                                <lightning-pill label={pillItem} onremove={removeBCCItem} key={pillItem}
+                                    class="custom-pill" name={index}>
+                                </lightning-pill>
+                            </template>
+                        </span>
+                    </div>
+                    <div  onmouseleave={handleBCCEmailClose}>
+                        <lightning-input type="search" name="lookupInput" variant="label-hidden"
+                            placeholder="Search Email..." value={searchKeyBCCEmail} onchange={handleSearchBCChange}
+                            onclick={showBCCDialog} disabled={emailEditable}>
+                        </lightning-input>
+                        <div if:true={showBCCResults}
+                            class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                            <div id="listbox-unique-id2" role="listbox">
+                                <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation">
+                                    <template for:each={searchResults} for:item="result">
+                                        <li key={result} role="presentation" class="slds-listbox__item liBox">
+                                            <span role="option" onclick={handleBCCClick} title={result}
+                                                style="display: block !important;">
+                                                <lightning-icon icon-name="standard:email_chatter"
+                                                    size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result}
+                                            </span>
+                                        </li>
+                                    </template>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slds-grid slds-gutters slds-p-top_medium">
+                <div class="slds-col slds-size_3-of-12" style="text-align: right; margin: auto 0;">
+                    <span><b>Subject :</b></span>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input type="text" variant="label-hidden" value={emailSubject}
+                        placeholder="Please Enter Email Subject" onchange={handleEmailSubject}></lightning-input>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters slds-p-top_medium">
+                <div class="slds-col slds-size_3-of-12">
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-rich-text value={fieldValue} variant="label-hidden"
+                        required={required} formats={allowedFormats} valid={validity} class="visibleLines"
+                        onchange={handleChange} share-with-entity-id={recordId}
+                        message-when-bad-input={errorMessage}>
+                    </lightning-input-rich-text>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters slds-p-top_medium">
+                <div class="slds-col slds-size_3-of-12">
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <input type="file" accept=".pdf,.doc,.docx,.txt" value={fileName} onchange={handleFileChange} />
+                </div>
+            </div>
+        </lightning-card>
+        <template lwc:if={ShowPreview}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                            title="Close" onclick={handleCancel}>
+                            <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                                size="small"></lightning-icon>
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Email Preview
+                        </h2>
+                    </header>
+
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <template for:each={excelRecords} for:item="record" >
+                            <p key={record.To}><b>To : </b><lightning-formatted-text  value={record.To}></lightning-formatted-text></p>
+                            <p key={record.To}><b>Cc : </b><lightning-formatted-text  value={record.CC}></lightning-formatted-text></p>
+                            <p key={record.To}><b>Bcc: </b><lightning-formatted-text  value={record.Bcc}></lightning-formatted-text></p>
+                            <p key={record.To}><b>Subject: </b><lightning-formatted-text value={record.EmailSubject}></lightning-formatted-text></p>
+                            <b key={record.To}>Body</b>
+                            <p key={record.To}>
+                                <lightning-formatted-rich-text value={record.EmailBody} class="slds-text-body_small"></lightning-formatted-rich-text>
+                            </p>
+                            <div key={record.To} style="background-color: black;height: 3px;width: -webkit-fill-available;margin: 20px 0px;">
+
+                            </div>
+                        </template>
+                    </div>
+
+                    <!-- modal footer start-->
+                    <footer class="slds-modal__footer">
+                        <button class="slds-button slds-button_neutral" onclick={handleCancel}>Cancel</button>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </template>
+    </div>
+</template>

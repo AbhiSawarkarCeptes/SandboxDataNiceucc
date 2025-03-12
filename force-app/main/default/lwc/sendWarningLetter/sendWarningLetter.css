@@ -1,0 +1,10 @@
+.anchor {
+    color: black !important;
+}
+.anchor:hover a{
+    color: black !important;
+}
+.thPadding {
+    padding-top: 8px; 
+    padding-bottom: 8px;
+}

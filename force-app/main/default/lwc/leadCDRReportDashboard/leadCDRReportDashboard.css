@@ -1,0 +1,9 @@
+.customTable{border-top:1px solid #ccc; margin: 0 0 20px 0; width: 100%; padding: 20px; display: inline-block;}
+.paginationWrap{padding: 10px;border-top:1px solid #ccc;}
+.tableWrap p{    display: inline-block;
+    background: #647a99; color: #fff;
+    padding: 6px 15px; width: 100%; text-align: center;
+    font-weight: bold;
+    font-size: 14px;}
+.tableWrap{width: 100%; vertical-align: top; border-radius: 5px; border: 2px solid #ccc; display: inline-block; margin-bottom: 20px;}
+.customDataTable table th{background-color: red;}

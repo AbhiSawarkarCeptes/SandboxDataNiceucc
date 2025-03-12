@@ -1,0 +1,92 @@
+<template>
+    <lightning-record-edit-form record-id={recordId} object-api-name="Resale_Process__c"
+            onsuccess={handleSuccess} onsubmit ={handleSubmit}>
+        <lightning-messages>
+        </lightning-messages>
+        <div class="slds-col slds-size_12-of-12 slds-p-around_medium">
+            <h1 class="slds-section-title--divider">Resale Collection Checklist</h1>
+        </div> 
+        <div class="slds-grid slds-wrap slds-p-around--medium "> 
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+            <lightning-input-field field-name="BCC_completed__c" value={bcccompleted} disabled="true"> 
+            </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+            <lightning-input-field field-name="Unprocessed_Receipt__c" value={UnprocessedReceipt} disabled="true"> 
+            </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+            <lightning-input-field field-name="Handover_Status_Completed__c" value={handoverstatus} disabled="true"> 
+            </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input-field field-name="X40_purchase_price_cur_due_instal_paid__c">
+        </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input-field field-name="outstand_Amt_40_purchase_price_IOM__c" required="true">
+        </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input-field field-name="PDC_s_of_the_current_Buyer__c" required="true">
+        </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input-field field-name="New_Buyer_PDC_required__c" required="true">
+        </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input-field field-name="New_Buyer_LOU_required__c" required="true">
+        </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input-field field-name="POP_confirmation_Approval__c" required="true">
+        </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input-field field-name="Count_of_PDC_s_available__c" value={countofpdc} disabled="true"> 
+        </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input-field field-name="Amount_of_PDC__c"  value={amountofpdc} disabled="true"> 
+        </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input-field field-name="Other_Charges_paid__c"  value={othercharges} disabled="true">
+        </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input-field field-name="Late_payment_charges__c" value={latecharges} disabled="true">
+        </lightning-input-field>
+        </div>
+        
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input-field field-name="PDC_to_be_collected_from_buyer__c">
+        </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input-field field-name="Amount_of_PDC_to_be_collected_from_Buyer__c">
+        </lightning-input-field>
+        </div>
+        <template if:true={resaletype}>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input-field field-name="Bank_Name__c" required="true">
+        </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input-field field-name="Cheque_amount__c" required="true">
+        </lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input-field field-name="Cheque_Date__c" required="true">
+        </lightning-input-field>
+        </div>
+        </template>
+        <div class="slds-col slds-size_12-of-12 slds-p-horizontal_medium">
+        <lightning-button class="slds-m-top_small" variant="brand" type="submit" name="update" label="Confirm Checklist">
+        </lightning-button>
+        </div>
+    </div>
+    </lightning-record-edit-form>
+
+</template>

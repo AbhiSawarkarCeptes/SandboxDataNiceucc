@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Resale_Process_Authorised_Signatory_Approved_Alert</name>
+        <label>Resale Process Authorised Signatory Approved Alert</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Resale_Process__c.Resale_Process_Authorised_Signatory_Approved_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Resale_Process__c.Resale_Process_Authorised_Signatory_Approved_Alert</nameSegment>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Resale Authorised Signatory Approved Alert Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Resale Authorised Signatory Approved Alert Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Resale_Process_Authorised_Signatory_Approved_Alert</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND (3 OR (4 AND 5))</filterLogic>
+        <filters>
+            <field>Agreement_Docusign_Completed__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Agreement_Docusign_Completed__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Resale_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Resale with Mortgage</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Resale_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Oqood for Apt &amp; Villas</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Is_Project_Completed__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Resale_Process__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

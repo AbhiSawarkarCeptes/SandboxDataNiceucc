@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigitalExperienceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Broker Account</label>
+    <site>
+        <urlPathPrefix>newbrokeraccount123</urlPathPrefix>
+    </site>
+    <space>site/Broker_Account1</space>
+</DigitalExperienceConfig>

@@ -1,0 +1,1240 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <div style="display:none">
+        {recordId}
+    </div>
+    <div style="padding-top: 15px; text-align: center; background-color: white; font-size: 20px;">
+        <h2>Payment Request Form</h2>
+    </div>
+    <template if:true={showForm}>
+        <lightning-record-edit-form object-api-name="Payment_Request__c" onsubmit={handleSubmit} onsuccess={handleSuccess}>
+            <div style="padding:10px;background-color:white">
+            <lightning-formatted-rich-text value={label.Payment_Request_Creation_Note}></lightning-formatted-rich-text></div>
+            <div style="padding:10px;background-color:white">
+                <template if:false={showFromBooking}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" disabled="true" field-name="Name__c" value={customerName}> </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                           <lightning-input-field required="true" disabled="true" field-name="Email__c" value={customerEmail}> </lightning-input-field>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2 slds-p-bottom_xx-small">
+                            <lightning-input-field required="true" disabled="true" field-name="Mobile_Number__c" value={customerPhone}> </lightning-input-field>
+                            <p style="color:green">Please enter in the following format - 9715XXXXXXXX(Country code & Phone number)</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" disabled="true" field-name="Emirates_Id_Passport_Number__c" value={customerPassportOrEmiratesId}> </lightning-input-field>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2 slds-p-bottom_xx-small">
+                            <lightning-input-field required="true" disabled="true" field-name="Passport_No__c" value={customerPassport}> </lightning-input-field>
+                        </div>
+                        <!-- <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field disabled="true" field-name="Enquiry_Source__c" value={enqSource}> </lightning-input-field>
+                        </div> -->
+                    </div>
+                </template>
+                <template if:false={newPRPage}>
+                    <template if:false={showFromProperty2}>
+                        <template if:false={showFromPR}>
+                            <template if:true={showFromBooking}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field required="true" readonly="true" disabled="true" field-name="Name__c" value={customerName}> </lightning-input-field>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field required="true" readonly="true" disabled="true" field-name="Email__c" value={customerEmail}> </lightning-input-field>
+                                    </div>
+                                </div>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2 slds-p-bottom_xx-small">
+                                        <lightning-input-field required="true" readonly="true" disabled="true" field-name="Mobile_Number__c" value={customerPhone}> </lightning-input-field>
+                                        <p style="color:green">Please enter in the following format - 9715XXXXXXXX(Country code & Phone number)</p>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field required="true" readonly="true" disabled="true" field-name="Emirates_Id_Passport_Number__c" value={customerPassportOrEmiratesId}> </lightning-input-field>
+                                    </div>
+                                </div>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2 slds-p-bottom_xx-small">
+                                        <lightning-input-field required="true" readonly="true" disabled="true" field-name="Passport_No__c" value={customerPassport}> </lightning-input-field>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field readonly="true" disabled="true" field-name="Enquiry_Source__c" value={enqSource}> </lightning-input-field>
+                                    </div>
+                                   
+                                </div>
+                            </template>
+                        </template>
+                    </template>
+                </template>
+                <template if:true={showReadOnly}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" readonly="true" disabled="true" field-name="Name__c" value={customerName}> </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" readonly="true" disabled="true" field-name="Email__c" value={customerEmail}> </lightning-input-field>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2 slds-p-bottom_xx-small">
+                            <lightning-input-field required="true" readonly="true" disabled="true" field-name="Mobile_Number__c" value={customerPhone}> </lightning-input-field>
+                            <p style="color:green">Please enter in the following format - 9715XXXXXXXX(Country code & Phone number)</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" readonly="true" disabled="true" field-name="Emirates_Id_Passport_Number__c" value={customerPassportOrEmiratesId}> </lightning-input-field>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2 slds-p-bottom_xx-small">
+                            <lightning-input-field required="true" readonly="true" disabled="true" field-name="Passport_No__c" value={customerPassport}> </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field readonly="true" disabled="true" field-name="Enquiry_Source__c" value={enqSource}> </lightning-input-field>
+                        </div>
+                        
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field readonly="true" disabled="true" field-name="Type_of_Enquiry__c" value={typeOfEnquiry}> </lightning-input-field>
+                        </div>
+                        <!-- <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field readonly="true" field-name="Broker_Type__c" value={brokerType}> </lightning-input-field>
+                        </div> -->
+
+                        <!-- <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field readonly="true"  field-name="Type_Of_Enquiry__c" value={typeOfEnquiry}> </lightning-input-field>
+                        </div> -->
+                        <!-- <div class="slds-col slds-size_1-of-2">
+                        <lightning-combobox
+                        name="progress"
+                        label="Status"
+                        value={typeOfEnquiry}
+                       
+                        options={TOEnquiryOptions}
+                        onchange={handleTypeOfEnquiryChange} ></lightning-combobox>
+                    </div> -->
+                    <!-- <div class="slds-col slds-size_1-of-2">
+                    <lightning-combobox
+                    name="progress"
+                    label="Status"
+                    value={brokerType}
+                   
+                    options={brokerTypeOptions}
+                    onchange={handleTypeOfBrokerChange} ></lightning-combobox>
+                </div> -->
+                    </div>
+                </template>
+                <template if:false={showReadOnly}>
+                    <template if:true={newPRPage}>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true" field-name="Name__c" value={customerName}> </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true" field-name="Email__c" value={customerEmail}> </lightning-input-field>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2 slds-p-bottom_xx-small">
+                                <lightning-input-field required="true" field-name="Mobile_Number__c" value={customerPhone}> </lightning-input-field>
+                                <p style="color:green">Please enter in the following format - 9715XXXXXXXX(Country code & Phone number)</p>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true" field-name="Emirates_Id_Passport_Number__c" value={customerPassportOrEmiratesId}> </lightning-input-field>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2 slds-p-bottom_xx-small">
+                                <lightning-input-field required="true" field-name="Passport_No__c" value={customerPassport}> </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true" field-name="Enquiry_Source__c" value={enqSource}> </lightning-input-field>
+                            </div>
+                          
+                        </div>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true"  field-name="Type_of_Enquiry__c" value={typeOfEnquiry}> </lightning-input-field>
+                            </div>
+                            <!-- <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field  field-name="Broker_Type__c" value={brokerType}> </lightning-input-field>
+                            </div> -->
+    
+                            <!-- <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field  field-name="Type_Of_Enquiry__c" value={typeOfEnquiry}> </lightning-input-field>
+                            </div> -->
+
+                            <!-- <div class="slds-col slds-size_1-of-2">
+                            <lightning-combobox
+                            name="progress"
+                            label="Status"
+                            value={typeOfEnquiry}
+                           
+                            options={TOEnquiryOptions}
+                            onchange={handleTypeOfEnquiryChange} ></lightning-combobox>
+                        </div>
+
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-combobox
+                            name="progress"
+                            label="Status"
+                            value={brokerType}
+                           
+                            options={brokerTypeOptions}
+                            onchange={handleTypeOfBrokerChange} ></lightning-combobox>
+                        </div> -->
+                        </div>
+                     
+                    </template>
+                </template>
+                <template if:false={showReadOnly}>
+                    <template if:true={showFromProperty2}>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true" field-name="Name__c" value={customerName}> </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true" field-name="Email__c" value={customerEmail}> </lightning-input-field>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2 slds-p-bottom_xx-small">
+                                <lightning-input-field required="true" field-name="Mobile_Number__c" value={customerPhone}> </lightning-input-field>
+                                <p style="color:green">Please enter in the following format - 9715XXXXXXXX(Country code & Phone number)</p>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true" field-name="Emirates_Id_Passport_Number__c" value={customerPassportOrEmiratesId}> </lightning-input-field>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2 slds-p-bottom_xx-small">
+                                <lightning-input-field required="true" field-name="Passport_No__c" value={customerPassport}> </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true" field-name="Enquiry_Source__c" value={enqSource}> </lightning-input-field>
+                            </div>
+                        
+                        </div>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true" field-name="Type_of_Enquiry__c" value={typeOfEnquiry}> </lightning-input-field>
+                            </div>
+                            <!-- <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field  field-name="Broker_Type__c" value={brokerType}> </lightning-input-field>
+                            </div> -->
+    
+                            <!-- <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field   field-name="Type_Of_Enquiry__c" value={typeOfEnquiry}> </lightning-input-field>
+                            </div> -->
+                        <!-- <div class="slds-col slds-size_1-of-2">
+                        <lightning-combobox
+                        name="progress"
+                        label="Type Of Enquiry"
+                        value={typeOfEnquiry}
+                       
+                        options={TOEnquiryOptions}
+                        onchange={handleTypeOfEnquiryChange} ></lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-combobox
+                    name="progress"
+                    label="Broker Type"
+                    value={brokerType}
+                   
+                    options={brokerTypeOptions}
+                    onchange={handleTypeOfBrokerChange} ></lightning-combobox>
+                </div> -->
+                    </div>
+                    </template>
+                </template>
+                <template if:true={showFromPR}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Name__c" disabled="true" value={customerName}> </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                           <lightning-input-field required="true" field-name="Email__c" disabled="true" value={customerEmail}> </lightning-input-field>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2 slds-p-bottom_xx-small">
+                            <lightning-input-field required="true" disabled="true" field-name="Mobile_Number__c" value={customerPhone}> </lightning-input-field>
+                            <p style="color:green">Please enter in the following format - 9715XXXXXXXX(Country code & Phone number)</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" disabled="true" field-name="Emirates_Id_Passport_Number__c" value={customerPassportOrEmiratesId}> </lightning-input-field>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2 slds-p-bottom_xx-small">
+                            <lightning-input-field required="true" disabled="true" field-name="Passport_No__c" value={customerPassport}> </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Enquiry_Source__c" disabled="true" value={enqSource}> </lightning-input-field>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field  field-name="Type_of_Enquiry__c" disabled="true" value={typeOfEnquiry}> </lightning-input-field>
+                        </div>
+                    </div>
+                </template>
+                <!-- <div class="slds-grid slds-gutters">
+                    <template if:true={showFromBooking}>
+                        <template if:true ={makeLeadSourceRequired}>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required field-name="Lead_Source_Category__c" value={category}></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required field-name="Lead_Source_Sub_Category__c" value={subcategory}></lightning-input-field>
+                            </div>
+                        </template>
+                    
+                        <template if:false ={makeLeadSourceRequired}>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="Lead_Source_Category__c" value={category}></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="Lead_Source_Sub_Category__c" value={subcategory}></lightning-input-field>
+                            </div>
+                        </template>
+                    </template>
+                </div> -->
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field field-name="POP_Comments__c"></lightning-input-field>
+                    </div>                  
+                </div>
+                
+                <div class="slds-grid slds-wrap slds-gutters">
+                    <div class="slds-col slds-size_1-of-3 slds-box"> Unit OutStanding : {unitOutStanding}</div>
+                    <div class="slds-col slds-size_1-of-3 slds-box"> DLD OutStanding : {DLDOutStanding}</div>
+                    <div class="slds-col slds-size_1-of-3 slds-box"> Other Charges OutStanding : {OtherChargesOutStanding}</div>
+                </div>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-1">
+                        <div class="slds-grid slds-gutters">
+                            <template if:true={showFromBooking}>
+                                <template if:true={showUnitSelection}>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <lightning-input-field required="true"  field-name="Mode_Option__c" onchange={handleModeOptionChange}> </lightning-input-field>
+                                        </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field required="true" field-name="Mode__c" onchange={handleModeChange}> </lightning-input-field>
+                                        <template if:true={isCash}>
+                                            <div style="margin-top: -8px; font-size: 16px; margin-left: 4px; font-style: italic; color:red"><b>Note</b>: {label.PR_OTC_14_Percent_Validation_Msg}</div>
+                                        </template>
+                                    </div>
+                                </template>
+                                <template if:false={showUnitSelection}>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        
+                                        <lightning-input-field required="true" field-name="Mode__c" onchange={handleModeChange}> </lightning-input-field>
+                                        <template if:true={isCash}>
+                                            <template if:true={fromBooking}>
+                                                <div style="margin-top: -8px; font-size: 16px; margin-left: 4px; font-style: italic; color:red"><b>Note</b>: {label.PR_OTC_14_Percent_Validation_Msg}</div>
+                                            </template>
+                                            <template if:false={fromBooking}>
+                                                <div style="margin-top: -8px; font-size: 16px; margin-left: 4px; font-style: italic; color:red"><b>Note</b>: {label.PR_OTC_14_Percent_Validation_Msg}</div>
+                                            </template>
+                                        </template>
+                                    </div>
+                                </template>  
+                            </template>
+                            <template if:false={showFromBooking}>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field required="true" field-name="Mode__c" onchange={handleModeChange}> </lightning-input-field>
+                                </div>
+                            </template>      
+                        </div>
+                    </div>
+                </div>
+                <template if:true={isSecondaryMode}>
+                     <div class="slds-grid slds-gutters">
+                         <div class="slds-col slds-size_1-of-2">
+                             <lightning-input-field field-name="POP_Amount_1__c" onchange={onPopAmountChange}> </lightning-input-field>
+                         </div>
+                     </div>
+                 </template>
+                <template if:false={showFromBooking}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <!-- <lightning-input-field field-name="POP_Amount_1__c" onchange={onPopAmountChange}> </lightning-input-field> -->
+                        </div>
+                    </div>
+                </template>
+                <template if:true={isPropertyPage}>
+                    <template if:false={propertyPopAmountFlag}>
+                    <div class="slds-grid slds-gutters">  
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="POP_Amount_1__c" onchange={onPopAmountChange}> </lightning-input-field>
+                            </div>
+                        </div>
+                    </template>
+                </template>
+                <template if:true={isEnquiryPage}>
+                    <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field field-name="POP_Amount_1__c" onchange={onPopAmountChange}> </lightning-input-field>
+                    </div>
+                </div>   
+                            
+                </template>
+                <template if:true={isOfferRecord}>                    
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="POP_Amount_1__c" onchange={onPopAmountChange}> </lightning-input-field>
+                            </div>
+                        </div>        
+                </template>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-2">                        
+                        <template if:false={showUnitSelection}>
+                            <template if:false={isSecondaryMode}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-1">
+                                       <lightning-input-field required="true" field-name="Amount__c" onchange={onAmountSelectBooking}> </lightning-input-field>
+                                    </div>
+                                </div>
+                            </template>
+                            <template if:true={isIWT}>	
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-1">	
+                                        <template if:false={isDWT}>	
+                                        <lightning-input-field required="true" field-name="Currency__c" onchange={onCurrencySelectMulti} value={defaultCurrency}> </lightning-input-field>	
+                                        </template>
+                                    </div>	
+                                </div>
+                            </template>
+                        </template>
+                    </div>
+                </div>
+                <template if:false={showFromBooking}>
+                    <template if:true={modeSelected}>
+                        <template if:true={isCheque}>
+                            <template if:false={isBookinPage}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field field-name="Amount_Towards__c" onchange={onAmountTowardsChange}> </lightning-input-field>
+                                    </div>
+                                    
+                                </div>
+                            </template>
+                            <div class="slds-grid slds-gutters">	
+                                <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field onchange={handleUnitPrice} field-name="Towards_Unit_Price_Amount__c"> </lightning-input-field>                                
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">                                 
+                                        <lightning-input-field field-name="Towards_Pre_Registration_Amount__c" onchange={handlePre_Registration_Amount}> </lightning-input-field>                              
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-gutters">	
+                                <div class="slds-col slds-size_1-of-2">                                
+                                        <lightning-input-field field-name="Towards_Other_Charges_Amount__c" onchange={validateOtherCharges}> </lightning-input-field>                           
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <template if:true={hasOtherCharges}>
+                                        <lightning-input-field field-name="Others__c" required="true" onchange={handleOtherChangeValue}> </lightning-input-field>
+                                    </template>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field field-name="Mortgage_Value__c" > </lightning-input-field>
+                                </div>
+                            </div>
+                            <template if:true={hasOtherCharges}>
+                                <div class="slds-grid slds-gutters">
+                                    <!-- <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field field-name="Others__c" required="true" onchange={handleOtherChangeValue}> </lightning-input-field>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        &nbsp;
+                                    </div> -->
+                                </div>
+                            </template>
+                        </template>
+                    </template>
+                    <template if:true={modeSelected}>
+                        <template if:false={isCDMCash}>
+                        <template if:false={isCheque}>
+                            <template if:false={isIWT}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field onchange={handleUnitPrice} field-name="Towards_Unit_Price_Amount__c"> </lightning-input-field>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field field-name="Towards_Pre_Registration_Amount__c" onchange={handlePre_Registration_Amount}> </lightning-input-field>
+                                    </div>
+                                </div>
+                                <template if:true={paymentCheck}>
+                                    <lightning-input-field field-name="Advance_Payment__c"> </lightning-input-field>
+                                </template>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field field-name="Towards_Other_Charges_Amount__c" onchange={validateOtherCharges}> </lightning-input-field>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <template if:true={hasOtherCharges}>
+                                            <lightning-input-field field-name="Others__c" required="true" onchange={handleOtherChangeValue}> </lightning-input-field>
+                                        </template>
+                                    </div>
+                                </div>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field field-name="Mortgage_Value__c" > </lightning-input-field>
+                                    </div>
+                                </div>
+                            </template>
+                        </template>
+                        </template>
+                    </template>
+                </template>
+                <template if:true={isCheque}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Cheque_No__c"> </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Cheque_Date__c"> </lightning-input-field>
+                        </div>
+                    </div>
+                </template>
+                <template if:true={isDWT}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Instrument_Number__c"> </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Date_of_Initiation__c"> </lightning-input-field>
+                        </div>
+                    </div>
+                    <template if:false={isDWT}>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true" field-name="Country_of_Initiation__c"> </lightning-input-field>
+                            </div>                        
+                        </div> 
+                </template>
+                </template>
+                <template if:true={isIWT}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-1">
+                            
+                            <template if:true={fromBooking}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field required="true" field-name="Account_Type__c" value={Account_Type} onchange={onAccountTypeChangeMulti}> </lightning-input-field>
+                                    </div>
+                                    <template if:true={isCorporate}>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <lightning-input-field required="true" field-name="Account_Master__c"> </lightning-input-field>
+                                        </div>
+                                    </template>
+                                    <template if:true={isESCROW}>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <div style="margin-top:30px;margin-left: 5px;">{escrowAccountName}</div>
+                                        </div>
+                                    </template>
+                                </div>
+                                
+                            </template>                            
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Instrument_Number__c"> </lightning-input-field>
+                        </div>                       
+                    </div>
+                    <template if:false={showFromBooking}>
+                        <template if:false={isBookinPage}>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="Amount_Towards__c" onchange={onAmountTowardsChange}> </lightning-input-field>
+                            </div>                             
+                        </div>
+                       </template>
+                       <template if:false={isIWT}>
+                        <div class="slds-grid slds-gutters">	
+                            <div class="slds-col slds-size_1-of-2">
+                                  <lightning-input-field onchange={handleUnitPrice} field-name="Towards_Unit_Price_Amount__c"> </lightning-input-field>                                
+                            </div> 
+                            <div class="slds-col slds-size_1-of-2">                                 
+                                    <lightning-input-field field-name="Towards_Pre_Registration_Amount__c" onchange={handlePre_Registration_Amount}> </lightning-input-field>                              
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-gutters">	
+                            <div class="slds-col slds-size_1-of-2">                                
+                                    <lightning-input-field field-name="Towards_Other_Charges_Amount__c" onchange={validateOtherCharges}> </lightning-input-field>                           
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <template if:true={hasOtherCharges}>
+                                    <lightning-input-field field-name="Others__c" required="true" onchange={handleOtherChangeValue}> </lightning-input-field>
+                                </template>
+                            </div>
+                        </div> 
+                    </template>
+                    </template>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Date_of_Initiation__c"> </lightning-input-field>
+                        </div>
+                        <template if:false={isDWT}>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true" field-name="Country_of_Initiation__c"> </lightning-input-field>
+                            </div>
+                        </template>
+                    </div>
+                </template>
+                <template if:true={isCDMCash}>
+                    <!-- Aayushi : SOB-341  SOB-403 added ESCROW details for CDM Cash-->
+                    <template if:true={fromBooking}>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true" field-name="Account_Type__c" value={Account_Type} onchange={onAccountTypeChangeMulti}> </lightning-input-field>
+                            </div>
+                            <template if:true={isCorporate}>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field required="true" field-name="Account_Master__c"> </lightning-input-field>
+                                </div>
+                            </template>
+                            <template if:true={isESCROW}>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <div style="margin-top:30px;margin-left: 5px;">{escrowAccountName}</div>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                    
+                    
+                    <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                        <p style="color:red;font-size:11px;">&nbsp;</p>POP
+                    </div>
+                    <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinished} multiple></lightning-file-upload>
+                        </div>
+
+                        
+                    </div>
+                    <template if:false={showFromBooking}>                       
+                        <div class="slds-grid slds-gutters">	
+                            <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field onchange={handleUnitPrice} field-name="Towards_Unit_Price_Amount__c"> </lightning-input-field>                                
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">                                 
+                                    <lightning-input-field field-name="Towards_Pre_Registration_Amount__c" onchange={handlePre_Registration_Amount}> </lightning-input-field>                              
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-gutters">	
+                            <div class="slds-col slds-size_1-of-2">                                
+                                    <lightning-input-field field-name="Towards_Other_Charges_Amount__c" onchange={validateOtherCharges}> </lightning-input-field>                           
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <template if:true={hasOtherCharges}>
+                                    <lightning-input-field field-name="Others__c" required="true" onchange={handleOtherChangeValue}> </lightning-input-field>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Instrument_Number__c"> </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Instrument_Date__c"> </lightning-input-field>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Date_of_Initiation__c"> </lightning-input-field>
+                        </div>
+                    </div>
+                </template>
+                <template if:true={isCDMCheque}>                    
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Instrument_Number__c"> </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Instrument_Date__c"> </lightning-input-field>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                        <p style="color:red;font-size:11px;">&nbsp;</p>POP
+                    </div>
+                    <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                        <div class="slds-col slds-size_1-of-2" style="float:left;">
+                            <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinished} multiple></lightning-file-upload>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters" >
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <lightning-input-field field-name="X3rd_Party_CDM_Cheque__c" onchange={showThirdPartyFileUploadCDMCheque}> </lightning-input-field>
+                        </div>
+                        <template if:true={thirdPartyCDMCheque}>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-input-field required="true" field-name="Third_Party_Name__c" > </lightning-input-field>
+                            </div>
+                        </template>
+                    </div>
+
+                    <template if:true={thirdPartyCDMCheque}>                       
+                        <div class="slds-grid slds-gutters" >
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload required="true" label ='Third Party Form' name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdPartyCDMCheque} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload label = 'Trade licence / Passport/EID copy' required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdParty} multiple></lightning-file-upload>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-gutters" >
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload label ='Other Docs' name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdOther} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                            </div>
+                        </div>
+                    </template>
+                    
+                    
+                </template>
+                <template if:true={isDWT}>
+                    
+                    <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                        <p style="color:red;font-size:11px;">&nbsp;</p>POP
+                    </div>
+                    <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinished} multiple></lightning-file-upload>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <template if:true ={showUnitSelection}>
+                                <template if:false={isDWT}>	
+                                    <lightning-input-field required="true" field-name="Currency__c" 
+                                    onchange={onCurrencySelectMultiIWT} 
+                                    value={popCurrency}> </lightning-input-field>	
+                                </template>	
+                            </template>
+                            </div>
+                        </div>
+                    
+                    <template if:false={isDWT}>  
+                        <div class="slds-grid slds-gutters" >
+                            
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-input-field field-name="X3rd_Party_IWT__c" onchange={showThirdPartyFileUploadIWT}> </lightning-input-field>
+                            </div>
+                            <template if:true={thirdPartyIWT}>
+                                <div class="slds-col slds-size_1-of-2" style="float:left">
+                                    <lightning-input-field required="true" field-name="Third_Party_Name__c" > </lightning-input-field>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                    <template if:true={isDWT}>
+                        <div class="slds-grid slds-gutters" >
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-input-field field-name="X3rd_Party_DWT__c" onchange={showThirdPartyFileUploadDWT}> </lightning-input-field>
+                            </div>
+                            <template if:true={thirdPartyDWT}>
+                                <div class="slds-col slds-size_1-of-2" style="float:left">
+                                    <lightning-input-field required="true" field-name="Third_Party_Name__c" > </lightning-input-field>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                    <template if:true={thirdPartyDWT}>                       
+                        <div class="slds-grid slds-gutters" >
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload required="true" label ='Third Party Form' name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdPartyDWT} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload label = 'Trade licence / Passport/EID copy' required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdParty} multiple></lightning-file-upload>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-gutters" >
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload  label ='Other Docs' name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdOther} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                            </div>
+                        </div>
+                    </template>
+                    <template if:true={thirdPartyIWT}>
+                        <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                            <p style="color:red;font-size:11px;">* </p>Third Party Form
+                        </div>
+                        <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdPartyIWT} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload label = 'Trade licence / Passport/EID copy' required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdParty} multiple></lightning-file-upload>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-gutters" >
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload  label ='Other Docs' name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdOther} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                            </div>
+                        </div>
+                    </template>
+                </template>
+                <template if:true={isIWT}>
+                    <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                        <p style="color:red;font-size:11px;">&nbsp;</p>POP
+                    </div>
+                    <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinished} multiple></lightning-file-upload>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <template if:true ={showUnitSelection}>
+                                <template if:false={isDWT}>	
+                                    <lightning-input-field required="true" field-name="Currency__c" 
+                                    onchange={onCurrencySelectMultiIWT} 
+                                    value={popCurrency}> </lightning-input-field>	
+                                </template>	
+                            </template>
+                            </div>
+                        </div>
+                    
+                    <template if:false={isDWT}>  
+                        <div class="slds-grid slds-gutters" >
+                            
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-input-field field-name="X3rd_Party_IWT__c" onchange={showThirdPartyFileUploadIWT}> </lightning-input-field>
+                            </div>
+                            <template if:true={thirdPartyIWT}>
+                                <div class="slds-col slds-size_1-of-2" style="float:left">
+                                    <lightning-input-field required="true" field-name="Third_Party_Name__c" > </lightning-input-field>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                    <template if:true={isDWT}>
+                        <div class="slds-grid slds-gutters" >
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-input-field field-name="X3rd_Party_DWT__c" onchange={showThirdPartyFileUploadDWT}> </lightning-input-field>
+                            </div>
+                            <template if:true={thirdPartyDWT}>
+                                <div class="slds-col slds-size_1-of-2" style="float:left">
+                                    <lightning-input-field required="true" field-name="Third_Party_Name__c" > </lightning-input-field>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                    <template if:true={thirdPartyDWT}>                       
+                        <div class="slds-grid slds-gutters" >
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload required="true" label ='Third Party Form' name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdPartyDWT} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload label = 'Trade licence / Passport/EID copy' required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdParty} multiple></lightning-file-upload>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-gutters" >
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload  label ='Other Docs' name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdOther} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                            </div>
+                        </div>
+                    </template>
+                    <template if:true={thirdPartyIWT}>
+                        <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                            <p style="color:red;font-size:11px;">* </p>Third Party Form
+                        </div>
+                        <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdPartyIWT} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload label = 'Trade licence / Passport/EID copy' required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdParty} multiple></lightning-file-upload>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-gutters" >
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload  label ='Other Docs' name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdOther} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                            </div>
+                        </div>
+                    </template>
+                        
+                </template>
+                <template if:true={isCheque}>
+                    <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                        <p style="color:red;font-size:11px;">&nbsp;</p>POP(Cheque)
+                    </div>
+                    <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinished} multiple></lightning-file-upload>
+                        </div>
+                        
+                    </div>
+                    <div class="slds-grid slds-gutters" >
+                        
+                    <div class="slds-col slds-size_1-of-2" style="float:left">
+                        <lightning-input-field field-name="X3rd_Party_Cheque__c" onchange={showThirdPartyFileUpload}> </lightning-input-field>
+                    </div>
+                    <template if:true={thirdPartyCheque}>
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <lightning-input-field required="true" field-name="Third_Party_Name__c" > </lightning-input-field>
+                        </div>
+                    </template>
+                    </div>
+                    <template if:true={thirdPartyCheque}>                       
+                        <div class="slds-grid slds-gutters" >
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload required="true" label ='Third Party Form' name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdPartyCheque} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload label = 'Trade licence / Passport/EID copy' required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdParty} multiple></lightning-file-upload>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-gutters" >
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload  label ='Other Docs' name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdOther} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                            </div>
+                        </div>
+                    </template>
+                </template>
+                <template if:true={isCreditCard}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <template if:true={isCreditCard}>
+                                <lightning-input-field field-name="Third_Party__c" onchange={handleThirdPartyChange}> </lightning-input-field>
+                            </template>
+                        </div>
+                        
+                    </div>
+                    <template if:true={isThirdParty}>
+                        <div class="slds-grid slds-gutters" >                                
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-input-field required="true" field-name="Third_Party_Name__c" > </lightning-input-field>
+                            </div>
+                            
+                        </div>    
+                    </template>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                                <p style="color:red;font-size:11px;"></p>Credit Card Authorization Form
+                            </div>
+                            <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedAuthorizationForm} multiple></lightning-file-upload>
+                                </div>
+                            </div>
+                        </div>
+                        <template if:true={isThirdParty}>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                                    <p style="color:red;font-size:11px;"></p>Third Party Form
+                                </div>
+                                <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                                    <div class="slds-col slds-size_1-of-1">
+                                        <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedDeclarationForm} multiple></lightning-file-upload>
+                                    </div>
+                                </div>                                
+                                </div>
+                            </div>                             
+                        </template>                        
+                    </div>
+                </template>                
+                <template if:true={isCreditCard}>
+                    <template if:true={isThirdParty}>
+                        <div class="slds-grid slds-gutters" >                                
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload label = 'Trade licence / Passport/EID copy' required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdParty} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload label ='Other Docs' name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdOther} multiple></lightning-file-upload>
+                            </div>
+                        </div>    
+                    </template>
+            </template>
+                <!-- <template if:true={showUnitSelection}> -->
+                    <div class="slds-grid slds-gutters">
+                        <!-- <template if:true={showFromBooking}>
+                            <div class="slds-col slds-size_1-of-2" style="width:25%">
+                                <lightning-input-field field-name="Offer__c" onchange={retrieveContactFromOffer} value={offerIdRecord}> </lightning-input-field>
+                            </div>
+                        </template> -->
+                        <template if:false={newPRPage}>
+                            <template if:false={showFromProperty2}>
+                                <template if:false={showFromPR}>
+                                    <template if:true={showFromBooking}>
+                                        <template if:true={showFromEnquiry}>
+                                            <div class="slds-col slds-size_1-of-2" style="width:50%">
+                                                <lightning-input-field readonly="true" disabled="true" field-name="Enquiry__c" value={enquiryRecordId} required="true"> </lightning-input-field>
+                                            </div>
+                                        </template>
+                                        <template if:false={showFromEnquiry}>
+                                            <div class="slds-col slds-size_1-of-2" style="width:50%">
+                                                <lightning-input-field field-name="Enquiry__c" required="true" onchange={retreivePrimaryContact}> </lightning-input-field>
+                                            </div>
+                                        </template>
+                                    </template>
+                                </template>
+                            </template>
+                        </template>
+                        <template if:true={newPRPage}>
+                            <div class="slds-col slds-size_1-of-2" style="width:50%">
+                                <lightning-input-field field-name="Enquiry__c" onchange={retreivePrimaryContact}> </lightning-input-field>
+                            </div>
+                        </template>
+                        <template if:true={showFromProperty2}>
+                            <div class="slds-col slds-size_1-of-2" style="width:50%">
+                                <lightning-input-field field-name="Enquiry__c" onchange={retreivePrimaryContact}> </lightning-input-field>
+                            </div>
+                        </template>
+                        <template if:false={showFromPR}>
+                            <template if:false={showFromBooking}>
+                                <div class="slds-col slds-size_1-of-2" style="width:50%">
+                                    <lightning-input-field field-name="Application_Booking__c" onchange={retrieveContactFromBooking} value={bookingIdRecord} readonly="true" disabled="true"> </lightning-input-field>
+                                </div>
+                                <template if:true={isBookinPage}>
+                                    <div class="slds-col slds-size_1-of-2" style="color:red; padding:1.5rem;">
+                                        Allowed Amount : {allowedAmount}
+                                    </div>
+                                </template>
+                                <!-- <div class="slds-col slds-size_1-of-2" style="width:25%">
+                                    <lightning-input-field field-name="Bank_Name__c" onchange={retrieveContactFromBooking} > </lightning-input-field>
+                                </div> -->
+                            </template>
+                        </template>
+                        <!-- <template if:true={showFromPR}>
+                            <div class="slds-col slds-size_1-of-2" style="width:25%">
+                                <lightning-input-field field-name="Application_Booking__c" onchange={retrieveContactFromBooking} value={bookingIdRecord}> </lightning-input-field>
+                            </div>
+                        </template> -->
+                    </div>
+                    <template if:true={newPRPage}>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="POP_Amount_1__c" onchange={onPopAmountChange}> </lightning-input-field>
+                            </div>
+                        </div>
+                    </template>
+                    <template for:each={units} for:item="u">
+                        <div key={u.row} style="border: 1px solid #c9c7c7; border-radius: 6px; padding: 1%;">
+                            <div class="slds-grid" >
+                                <template if:true={showFromProperty}>
+                                <div class="slds-col slds-size_1-of-2" style="padding-right: 1%;" >
+                                    <span style="margin-left: 5px; font-style: italic; color: grey;">{u.details}</span> <template if:true={u.isRemoveVisible}><b>&nbsp;&#8226;&nbsp;</b> <a onclick={onRemove} id={u.row}>Remove</a></template>
+                                    <lightning-input-field readonly="true" disabled="true" field-name="Property__c" id={u.row} key={u.row} data-id={u.row} onchange={onUnitSelect} style="margin-bottom: 0px;" value={u.value} required="true"> </lightning-input-field>                                    
+                                </div>
+                                </template>
+                                <template if:true={showFromBooking}>
+                                    <template if:false={showFromProperty}>
+                                        <div class="slds-col slds-size_1-of-2" style="padding-right: 1%;" >
+                                            <span style="margin-left: 5px; font-style: italic; color: grey;">{u.details}</span> <template if:true={u.isRemoveVisible}><b>&nbsp;&#8226;&nbsp;</b> <a onclick={onRemove} id={u.row}>Remove</a></template>
+                                            <lightning-input-field field-name="Property__c" id={u.row} key={u.row} data-id={u.row} onchange={onUnitSelect} style="margin-bottom: 0px;" value={u.value} required="true"> </lightning-input-field>                                            
+                                        </div>
+                                    </template>
+                                </template>
+                                <template if:true={showFromBooking}>
+                                    <template if:false={showFromProperty}>  
+                                        <template if:false={newPRPage}>   
+                                            <template if:false={showFromEnquiry}>      
+                                                <template if:false={isOfferRecord}>    
+                                                    <template if:false={isSecondaryMode}>                     
+                                                        <div class="slds-col slds-size_1-of-2" style="margin-top: 2%;width: 49%;">
+                                                        <lightning-input-field required="true" id={u.row} key={u.row} onchange={onAmountSelect} field-name="Amount__c" > </lightning-input-field>                                            
+                                                        </div>
+                                                    </template>
+                                                </template>
+                                        </template>    
+                                    </template>
+                                    </template>
+                                </template>
+                                <template if:false={showFromPR}>                                    
+                                        <div class="slds-col slds-size_1-of-2" style="margin-top: 2%;width: 49%;">
+                                            <lightning-input-field required="true" id={u.row} key={u.row} onchange={onAmountSelect} field-name="Amount__c" > </lightning-input-field>
+                                        </div>
+                                </template> 
+                                <template if:true={isSecondaryMode}>
+                                    <div class="slds-col slds-size_1-of-2" style="margin-top: 2%;width: 49%;">
+                                          <lightning-input-field required="true" id={u.row} key={u.row} onchange={onAmountSelect} field-name="Amount__c" > </lightning-input-field>                                            
+                                        </div>
+                                </template>                                                         
+                            </div>   
+                            <template if:true={isSecondaryMode}>
+                                <template if:true={secondryModeAccountTypeFlag}>
+                                <div class="slds-grid slds-gutters">
+                                    <template if:false={threeModesFlag}>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <lightning-input-field required="true" field-name="Account_Type__c" value={Account_Type} onchange={onAccountTypeChangeMulti}> </lightning-input-field>
+                                        </div>
+                                    </template>
+                                    <template if:true={isCorporate}>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <lightning-input-field required="true" field-name="Account_Master__c"> </lightning-input-field>
+                                        </div>
+                                    </template>
+                                    <template if:true={isESCROW}>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <div style="margin-top:30px;margin-left: 5px;">{escrowAccountName}</div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </template>
+                            </template>                        
+                                <template if:true={showFromBooking}>
+                                    <div style="width:100%">
+                                        <div>
+                                            <template if:false={isSecondaryMode}>
+                                             <template if:true={multiAccountTowerMappingFeatureFlag}>
+                                                    <template if:true={isIWT}>
+                                                        <div class="slds-col">
+                                                            <div class="slds-grid slds-gutters" >
+                                                                <div class="slds-col slds-size_1-of-2">
+                                                                    <lightning-input-field required="true" value={u.accountType} field-name="Account_Type__c" id={u.row} key={u.row} onchange={onAccountTypeChange}> </lightning-input-field>
+                                                                </div>
+                                                                <div class="slds-col slds-size_1-of-2">
+                                                                    <template if:true={u.isCorporate}>
+                                                                        <lightning-input-field required="true" id={u.row} key={u.row} field-name="Account_Master__c" value={u.accountId} onchange={onAccountIdChange}> </lightning-input-field>
+                                                                    </template>
+                                                                    <template if:true={u.isESCROW}>
+                                                                        <div style="margin-top:30px;margin-left: 5px;">{u.escrowAccount}</div>
+                                                                    </template>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </template>
+                                                    <template if:true={isDWT}>
+                                                        <div class="slds-col">
+                                                            <div class="slds-grid slds-gutters" >
+                                                                <div class="slds-col slds-size_1-of-2">
+                                                                    <lightning-input-field required="true" value={u.accountType} field-name="Account_Type__c" id={u.row} key={u.row} onchange={onAccountTypeChange}> </lightning-input-field>
+                                                                </div>
+                                                                <div class="slds-col slds-size_1-of-2">
+                                                                    <template if:true={u.isCorporate}>
+                                                                        <lightning-input-field required="true" id={u.row} key={u.row} field-name="Account_Master__c" value={u.accountId} onchange={onAccountIdChange}> </lightning-input-field>
+                                                                    </template>
+                                                                    <template if:true={u.isESCROW}>
+                                                                        <div style="margin-top:30px;margin-left: 5px;">{u.escrowAccount}</div>
+                                                                    </template>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </template>
+                                                    <template if:true={isCDMCash}>
+                                                        <div >
+                                                            <div class="slds-grid slds-gutters">
+                                                                <div class="slds-col slds-size_1-of-2">
+                                                                    <lightning-input-field required="true" value={u.accountType} field-name="Account_Type__c" id={u.row} key={u.row} onchange={onAccountTypeChange}> </lightning-input-field>
+                                                                </div>
+                                                                <div class="slds-col slds-size_1-of-2">
+                                                                    <template if:true={u.isCorporate}>
+                                                                        <lightning-input-field required="true" id={u.row} key={u.row} field-name="Account_Master__c" value={u.accountId} onchange={onAccountIdChange}> </lightning-input-field>
+                                                                    </template>
+                                                                    <template if:true={u.isESCROW}>
+                                                                        <div style="margin-top:30px;margin-left: 5px;">{u.escrowAccount}</div>
+                                                                    </template>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </template>
+                                                    <template if:true={isCDMCheque}>
+                                                        <div >
+                                                            <div class="slds-grid slds-gutters">
+                                                                <div class="slds-col slds-size_1-of-2">
+                                                                    <lightning-input-field required="true" value={u.accountType} field-name="Account_Type__c" id={u.row} key={u.row} onchange={onAccountTypeChange}> </lightning-input-field>
+                                                                </div>
+                                                                <div class="slds-col slds-size_1-of-2">
+                                                                    <template if:true={u.isCorporate}>
+                                                                        <lightning-input-field required="true" id={u.row} key={u.row} field-name="Account_Master__c" value={u.accountId} onchange={onAccountIdChange}> </lightning-input-field>
+                                                                    </template>
+                                                                    <template if:true={u.isESCROW}>
+                                                                        <div style="margin-top:30px;margin-left: 5px;">{u.escrowAccount}</div>
+                                                                    </template>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </template>
+                                                </template>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </template>
+                                <template if:false={showFromBooking}>
+                                    <template if:false={isSecondaryMode}>
+                                        <div class="slds-grid slds-gutters" >
+                                            <template if:false={threeModesFlag}>
+                                                <div class="slds-col slds-size_1-of-2">
+                                                    <lightning-input-field required="true" field-name="Account_Type__c" value={Account_Type} onchange={onAccountTypeChangeMulti}> </lightning-input-field>
+                                                </div>
+                                            </template>
+                                            <template if:true={isCorporate}>
+                                                <div class="slds-col slds-size_1-of-2">
+                                                    <lightning-input-field required="true" field-name="Account_Master__c"> </lightning-input-field>
+                                                </div>
+                                            </template>
+                                            <template if:true={isESCROW}>
+                                                <div class="slds-col slds-size_1-of-2">
+                                                    <div style="margin-top:30px;margin-left: 5px;">{escrowAccountName}</div>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </template>
+                                </template>
+                        </div>
+                    </template>
+                    <template if:true={showFromBooking}>
+                    <div style="margin-top:10px">
+                        <lightning-button variant="brand" label="Add Property" title="Add Property" onclick={addUnits} class="slds-m-left_x-small"></lightning-button>
+                    </div>
+                    </template>
+                <!-- </template> -->
+                
+                <template if:true={showPdfPassport}>
+                    <lightning-card title="Passport">
+                        <iframe src={pdfContent} title="PDF Viewer" width="100%" height="600px" frameborder="0"></iframe>
+                    </lightning-card>
+                </template>
+                <template if:true={showImgPassport}>
+                    <lightning-card title="Passport">
+                        <img src={imageUrl} alt="Image" width="40%" style="height: 18rem !important;"/>
+                    </lightning-card>
+                </template>
+                <template if:true={showImgPOP}>
+                    <lightning-card title="POP">
+                    <img src={fileUrl} alt="Preview" width="40%" style="height: 18rem !important;"/>
+                    </lightning-card>
+                </template>
+                <template if:true={showPdfPOP}>
+                    <lightning-card title="POP">
+                        <iframe src={fileUrl} title="PDF Viewer" width="100%" height="600px" frameborder="0"></iframe>
+                    </lightning-card>
+                </template>
+                <div style="text-align:center;padding-bottom:40px;padding-top: 20px;">
+                    <button type="submit" class="slds-button slds-button_brand" title="Save">Save</button>
+                    <button class="slds-button slds-button_brand" title="Cancel" onclick={handleCancel}>Cancel</button>
+                </div>
+            </div>
+        </lightning-record-edit-form>
+    </template>
+    <template if:false={showForm}>
+        <div style="padding-top: 15px; text-align: center; background-color: white; font-size: 20px;">
+            <h2>Booking is under termination payment request cannot be created </h2>
+        </div>
+    </template>
+</template>

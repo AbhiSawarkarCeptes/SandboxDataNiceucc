@@ -1,0 +1,883 @@
+<template>
+    <template if:true={showSpinner}>
+		<div class="exampleHolder">
+			<lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+		</div>
+	</template>
+    <div class={isEligible}>
+        <div class="container">
+            <div class="content-wrapper inner-wrapper">
+                <div class="broker-events-section">
+                    <div class="row events-list">
+                        <ul>
+                            <li class="active" onclick={handleItemClick} data-name="Road Shows">Road Shows</li>
+                            <li onclick={handleItemClick} data-name="Open Houses">Open Houses</li>
+                            <li onclick={handleItemClick} data-name="Business Trip">Business Trips</li>
+                            <li onclick={handleItemClick} data-name="Video Shoot">Video Shoots</li>
+                        </ul>
+                    </div>
+                    <div class="row events-content-section">
+                        <div class="col-9 ">
+                            <div class="left-sidebar-section">
+                                <div class="row mb-3">
+                                    <div class="filter-section">
+                                        <div>
+                                            <button class="btn btn-request modal-toggle" onclick={showModalHandler}>
+                                                <img src={raiseRequest_icon} />Raise a Request
+                                            </button>
+                                        </div>
+                                        <div class="select-date-filter">
+                                            <span>Select Date</span>
+                                            <lightning-input placeholder="Select from Date" type="date" name="Date" 
+                                                variant="label-hidden" value={fromDOEvent}
+                                                onchange={handleFromDateChange}></lightning-input>
+                                            <lightning-input placeholder="Select To Date" type="date" name="Date" 
+                                                variant="label-hidden" value={toDOEvent}
+                                                onchange={handleToDateChange}></lightning-input>
+                                        </div>
+                                        <div class="filter-tab-section">
+                                            <ul class="filter-tab-area">
+                                                <li class="filter-tab-link active" onclick={handleItemClick2}
+                                                    data-filter-tab="1">All</li>
+                                                <li class="filter-tab-link" onclick={handleItemClick2}
+                                                    data-filter-tab="2">Upcoming</li>
+                                                <li class="filter-tab-link" onclick={handleItemClick2}
+                                                    data-filter-tab="3">Completed</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row table-content">
+                                    <template if:true={hasEvents}>
+                                        <div>
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <template for:each={getTableHeaderItems} for:item="headerItem" for:index="index">
+                                                            <template if:true={headerItem.isVisible}>
+                                                                <th key={headerItem} scope="col">
+                                                                    {headerItem.keyName}
+                                                                </th>
+                                                            </template>
+                                                        </template>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <template for:each={recordsToDisplay} for:item="event">
+                                                        <template if:false={isVideoPage}>
+                                                            <tr key={event.Id}>
+                                                                <td data-label="date">
+                                                                    {event.formattedDate}
+                                                                </td>
+                                                                <td data-label="date" class="font-weight">
+                                                                    {event.noOfDays}
+                                                                </td>
+                                                                <td data-label="country" class="font-weight">
+                                                                    {event.Country__c}
+                                                                </td>
+                                                                <td data-label="city" class="font-weight">
+                                                                    {event.City_Country__c}
+                                                                </td>
+                                                                <td data-label="walkins" class="font-weight">
+                                                                    {event.bookingCount}</td>
+                                                                <td data-label="units" class="font-weight">
+                                                                    {event.formattedPurchasePrice}</td>
+                                                                <td data-label="collaterals">
+                                                                    <div class="uploadFile">
+                                                                        <template if:false={event.Collateral_Uploaded__c}>
+                                                                            <button class="uplodInput" data-recid={event.Id}
+                                                                                onclick={uploadCollateralHandler}>Upload
+                                                                                collateral
+                                                                            </button>
+                                                                        </template>
+                                                                        <template if:true={event.Collateral_Uploaded__c}>
+                                                                            <button class="uplodInput" data-recid={event.Id}
+                                                                                onclick={uploadCollateralHandler}
+                                                                                disabled style="cursor: not-allowed;">Upload
+                                                                                collateral
+                                                                            </button>
+                                                                        </template>
+                                                                    </div>
+                                                                </td>
+                                                                <td data-label="link" class="link slds-is-relative">
+                                                                    <div class="more-info-btn" id="more-info-btn"
+                                                                        data-id={event.Id} data-info={event.moreInfoData}
+                                                                        onclick={showMoreInfoHandler}>
+                                                                        More Info.
+                                                                    </div>
+                                                                    <template if:true={event.showMoreInfo}>
+                                                                        <c-br-portal-more-info-on-broker-events key={event.Id}
+                                                                            event-id={event.Id}
+                                                                            event-info={event.moreInfoData}
+                                                                            message-from-parent={msgToChild}
+                                                                            onclosemoreinfo={showMoreInfoHandler}
+                                                                            onmakeitfalse={moreInfoHandlerFromChild}
+                                                                            onrefreshchilddata={handleRefreshRequestFromChild}>
+                                                                        </c-br-portal-more-info-on-broker-events>
+                                                                    </template>
+                                                                </td>
+                                                            </tr>
+                                                        </template>
+                                                        <template if:true={isVideoPage}>
+                                                            <tr key={event.Id}>
+                                                                <td data-label="date">
+                                                                    {event.formattedDate}
+                                                                </td>
+                                                                <td data-label="date" class="font-weight">
+                                                                    {event.noOfDays}
+                                                                </td>
+                                                                <td data-label="walkins" class="font-weight">
+                                                                    {event.Venue_Video_Shoot__c}
+                                                                </td>
+                                                                <td data-label="units" class="font-weight">
+                                                                    <img style="cursor:pointer" data-id={event.videoURL}
+                                                                        src={videoEyeIcon} alt="Eye Icon"
+                                                                        onclick={videoEyeIconClickHandler}>
+                                                                </td>
+                                                                <td data-label="collaterals">
+                                                                    <div class="uploadFile">
+                                                                        <button class="uplodInput" data-recid={event.Id} onclick={uploadVideoHandler}>
+                                                                            Upload Video
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </template>
+                                                    </template>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!--PAGE NAVIGATION-->
+                                        <div>
+                                            <div class="slds-align_absolute-center table-pagination">
+                                                <lightning-button disabled={bDisableFirst}
+                                                    icon-name="utility:jump_to_left" label="First"
+                                                    alternative-text="first page"
+                                                    onclick={firstPage}></lightning-button>
+                                                <lightning-button disabled={bDisableFirst}
+                                                    icon-name="utility:chevronleft" label="Previous"
+                                                    alternative-text="Previous"
+                                                    onclick={previousPage}></lightning-button>
+                                                <lightning-button disabled={bDisableLast}
+                                                    icon-name="utility:chevronright" label="Next"
+                                                    alternative-text="Next" onclick={nextPage}
+                                                    icon-position="right"></lightning-button>
+                                                <lightning-button disabled={bDisableLast}
+                                                    icon-name="utility:jump_to_right" label="Last"
+                                                    alternative-text="last page" onclick={lastPage}
+                                                    icon-position="right"></lightning-button>
+                                            </div>
+                                        </div>
+                                        <!--EOF Pagination -->
+                                    </template>
+                                    <template if:false={hasEvents}>
+                                        <div class="slds-text-align_center">No Events found.</div>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                        <template if:false={isVideoPage}>
+                            <div class="col-3 ">
+                                <div class="right-sidebar">
+                                    <div class="sel">
+                                        <select class="form-control" onchange={handleYearClick}>
+                                            <option>Select Year</option>
+                                            <option>{currentYear}</option>
+                                        </select>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="total-sale-panel col-12">
+                                            <div class="icon">
+                                                <img src={sale_icon} />
+                                            </div>
+                                            <div class="price">
+                                                {totalSaleValueMillion} Mn <span>AED</span>
+                                            </div>
+                                            <div class="txt">
+                                                Total Sale Value
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row  mb-3">
+                                        <div class="roadshow-panel col-6">
+                                            <div class="icon">
+                                                <img src={roadshow_icon} />
+                                            </div>
+                                            <div class="price">
+                                                {presentUserRecordsCount}
+                                            </div>
+                                            <div class="txt">
+                                                {recType}
+                                            </div>
+                                        </div>
+                                        <div class="cities-covered-panel col-6">
+                                            <div class="icon">
+                                                <img src={loc_icon} />
+                                            </div>
+                                            <div class="price">
+                                                {citiesCovered}
+                                            </div>
+                                            <div class="txt">
+                                                Cities covered
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row  mb-3">
+                                        <div class="apartment-sold-panel col-6">
+                                            <div class="icon">
+                                                <img src={apartment_icon} />
+                                            </div>
+                                            <div class="price">
+                                                {apartmentCount}
+                                            </div>
+                                            <div class="txt">
+                                                Apartments sold
+                                            </div>
+                                        </div>
+                                        <div class="villa-sold-panel col-6">
+                                            <div class="icon">
+                                                <img src={villa_icon} />
+                                            </div>
+                                            <div class="price">
+                                                {villasCount}
+                                            </div>
+                                            <div class="txt">
+                                                Villas sold
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                        <template if:true={isVideoPage}>
+                            <div class="col-3 ">
+                                <div class="right-sidebar">
+                                    <div class="sel">
+                                        <select class="form-control" onchange={handleYearClick}>
+                                            <option>Select Year</option>
+                                            <option>{currentYear}</option>
+                                        </select>
+                                    </div>
+                                    <template if:true={showLatestVideo}>
+                                        <div class="video-container">
+                                            <!--<img src={videoPlayImg} alt="Video Img" />-->
+                                            <video width="100%" autoplay loop muted>
+                                                <source src={latestVideoUrl} type="video/mp4" />
+                                            </video>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <template if:true={showUploadColateral}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+            class="slds-modal slds-fade-in-open upload-collateral">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header header-style">
+                    <span>Upload Collaterals</span>
+                    <lightning-button-icon icon-name="utility:close" variant="bare" size="large"
+                        alternative-text="Close" title="Close"
+                        onclick={uploadCollateralHandler}>
+                    </lightning-button-icon>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+                    <div class="file-upload-design" ondragover={handleDragOver} ondrop={handleDrop}>
+                        <img src={upload_icon} alt="Upload Icon" height="27px" />
+                        <div class="drag-text">
+                            Drag & Drop to upload
+                        </div>
+                        <div class="browse-button" onclick={handleBrowse}>or Browse</div>
+                        <input id="files" type="file" onchange={handleFilesChange} name="files" multiple>
+                    </div>
+                    <div class="slds-grid slds-wrap slds-m-top_medium">
+                        <template if:true={filesData}>
+                            <template for:each={filesData} for:item="imgName" for:index="index">
+                                <div key={imgName.fileName} class="slds-col slds-size_6-of-12 selected-file-text">
+                                    <div>
+                                        <span class="file-name">
+                                            {imgName.fileName}
+                                        </span>
+                                        <lightning-button-icon icon-name="utility:close" variant="bare" size="small"
+                                            alternative-text="Close" title="Close" ata-id={index}
+                                            onclick={removeReceiptImage}></lightning-button-icon>
+                                    </div>
+                                </div>
+                            </template>
+                        </template>
+                    </div>
+                    <div class="upload-submit-btn">
+                        <button class="btn btn-submit" onclick={uploadFiles}>Submit </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+    <template if:true={showUploadVideo}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+            class="slds-modal slds-fade-in-open upload-collateral">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header header-style">
+                    <span>Upload Video</span>
+                    <lightning-button-icon icon-name="utility:close" variant="bare" size="large"
+                        alternative-text="Close" title="Close" onclick={uploadVideoHandler}></lightning-button-icon>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-3">
+                    <div class="file-upload-design" ondragover={handleDragOver} ondrop={handleDrop}>
+                        <img src={upload_icon} alt="Upload Icon" height="27px" />
+                        <div class="drag-text">Drag & Drop to upload</div>
+                        <div class="browse-button" onclick={handleBrowse}>or Browse</div>
+                        <input id="files1" type="file" onchange={handleFilesChange} name="files" multiple>
+                    </div>
+                    <div class="slds-grid slds-wrap slds-m-top_medium">
+                        <template if:true={filesData}>
+                            <template for:each={filesData} for:item="imgName" for:index="index">
+                                <div key={imgName.fileName} class="slds-col slds-size_6-of-12 selected-file-text">
+                                    <div>
+                                        <span class="file-name">{imgName.fileName}</span>
+                                        <lightning-button-icon icon-name="utility:close" variant="bare" size="small"
+                                            alternative-text="Close" title="Close" ata-id={index}
+                                            onclick={removeReceiptImage}></lightning-button-icon>
+                                    </div>
+                                </div>
+                            </template>
+                        </template>
+                    </div>
+                    <div class="upload-submit-btn">
+                        <button class="btn btn-submit" onclick={uploadFiles}>Submit </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+    <template if:true={showModal}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+            class="slds-modal slds-fade-in-open slds-modal_medium" onclick={callSalesUserMethod}>
+            <div class="slds-modal__container">
+                <div class="slds-modal__content slds-p-around_medium viewDocumentModal" id="modal-content-id-1">
+                    <div class="customContentSection">
+                        <div class="customHeaderSection slds-p-bottom_medium">
+                            <span>Raise a request</span>
+                            <span class="successRecodSubmit">{raiseRequestSuccessMessage}</span>
+                            <lightning-button-icon icon-name="utility:close" variant="bare" size="large"
+                                alternative-text="Close" title="Close"
+                                onclick={showModalHandler}>
+                            </lightning-button-icon>
+                        </div>
+                        <div class="request-form">
+                            <form if="raiseForm">
+                                <div class="row mb-4 select-list">
+                                    <div class="sel col-4 mx-auto">
+                                        <select class="form-control refSelector" data-id="setOpt"
+                                            onchange={handleFormSelect}>
+                                            <template for:each={SelectOptions} for:item="opt">
+                                                <option key={opt} value={opt}>{opt}</option>
+                                            </template>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="request-field">
+                                    <lightning-layout multiple-rows>
+                                        <template for:each={fieldsToDisplay} for:item="field">
+                                            <template if:true={field.isDateTime}>
+                                                <template if:true={field.leftColumn}>
+                                                    <lightning-layout-item key={field} size="12" small-device-size="12"
+                                                        medium-device-size="12" large-device-size="6"
+                                                        padding="around-small">
+                                                        <div class="slds-grid slds-wrap date-time-body">
+                                                            <div class="slds-col slds-size_3-of-12">
+                                                                <span>
+                                                                    {field.label}
+                                                                    <span class="required-symbol">*</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="slds-col slds-size_9-of-12">
+                                                                <div class="slds-grid slds-wrap date-picker">
+                                                                    <div class="slds-col slds-size_6-of-12 start-date">
+                                                                        <input type="date" id="Date_Of_Event__c"
+                                                                            placeholder="Select Date"
+                                                                            class="Date_Of_Event__c"
+                                                                            onchange={handleFieldChange} min={endDate} required>
+                                                                    </div>
+                                                                    <div class="slds-col slds-size_6-of-12 end-date">
+                                                                        <input type="date" id="End_Date_Of_Event__c"
+                                                                            placeholder="Select Date"
+                                                                            class="End_Date_Of_Event__c"
+                                                                            onchange={handleFieldChange} min={endDate} required>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="dateError"></span>
+                                                            </div>
+                                                        </div>
+                                                    </lightning-layout-item>
+                                                </template>
+                                                <template if:true={field.rightColumn}>
+                                                    <lightning-layout-item key={field} size="12" small-device-size="6"
+                                                        medium-device-size="12" large-device-size="6"
+                                                        padding="around-small">
+                                                        <div class="slds-grid slds-wrap date-time-body">
+                                                            <div class="slds-col slds-size_3-of-12">
+                                                                <span>
+                                                                    {field.label}
+                                                                    <span class="required-symbol">*</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="slds-col slds-size_9-of-12">
+                                                                <div class="slds-grid slds-wrap time-picker">
+                                                                    <div class="slds-col slds-size_5-of-12 start-time">
+                                                                        <input type="time"
+                                                                            id="Start_Time_of_the_Event__c"
+                                                                            placeholder="00:00"
+                                                                            class="Start_Time_of_the_Event__c"
+                                                                            onchange={handleFieldChange} required>
+                                                                    </div>
+                                                                    <div class="slds-col slds-size_2-of-12 to-text"> to
+                                                                    </div>
+                                                                    <div class="slds-col slds-size_5-of-12 end-time">
+                                                                        <input type="time" id="End_Time_of_the_Event__c"
+                                                                            placeholder="00:00"
+                                                                            class="End_Time_of_the_Event__c"
+                                                                            onchange={handleFieldChange} required>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="timeError"></span>
+                                                            </div>
+                                                        </div>
+                                                    </lightning-layout-item>
+                                                </template>
+                                            </template>
+                                            <template if:true={field.isColumn}>
+                                                <template if:true={field.leftColumn}>
+                                                    <lightning-layout-item key={field} size="12" small-device-size="12"
+                                                        medium-device-size="12" large-device-size="6"
+                                                        padding="around-small">
+                                                        <template if:true={field.isText}>
+                                                            <div class="slds-grid slds-wrap align-items-center">
+                                                                <template if:true={field.label}>
+                                                                    <div class="slds-col slds-size_4-of-12">
+                                                                        {field.label}
+                                                                        <span class="required-symbol">*</span>
+                                                                    </div>
+                                                                    <div class="slds-col slds-size_8-of-12">
+                                                                        <input type={field.type}
+                                                                            placeholder={field.placeholder}
+                                                                            id={field.id} onchange={handleFieldChange}
+                                                                            class={field.id} required/>
+                                                                    </div>
+                                                                </template>
+                                                                <template if:false={field.label}>
+                                                                    <input type={field.type}
+                                                                        placeholder={field.placeholder} id={field.id}
+                                                                        class={field.id} onchange={handleFieldChange}
+                                                                        required/>
+                                                                </template>
+                                                            </div>
+                                                        </template>
+                                                        <template if:true={field.isTextArea}>
+                                                            <template if:true={field.label}>
+                                                                <div class="slds-p-bottom_small">
+                                                                    {field.label}
+                                                                    <span class="required-symbol">*</span>
+                                                                </div>
+                                                            </template>
+                                                            <textarea rows="4" placeholder={field.placeholder}
+                                                                id={field.id} onchange={handleFieldChange}
+                                                                class={field.id} required>
+                                                            </textarea>
+                                                        </template>
+                                                    </lightning-layout-item>
+                                                </template>
+                                                <template if:true={field.rightColumn}>
+                                                    <lightning-layout-item key={field} size="12" small-device-size="12"
+                                                        medium-device-size="12" large-device-size="6"
+                                                        padding="around-small">
+                                                        <template if:true={field.isText}>
+                                                            <div class="slds-grid slds-wrap align-items-center">
+                                                                <template if:true={field.label}>
+                                                                    <template if:true={field.isSales}>
+                                                                        <!-- Lookup code  start -->
+                                                                        <!--
+                                                                        <template if:false={selectedValue}>
+                                                                            <div data-key="searchdiv" class="slds-col slds-size_8-of-12 slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+                                                                                role="none">
+                                                                                <input type="text" onfocusout={onLeave}
+                                                                                    value={searchKey}
+                                                                                    onkeyup={handleKeyChange}
+                                                                                    onchange={handleKeyChange}
+                                                                                    class="slds-input slds-combobox__input slds-has-focus"
+                                                                                    id={field.id}
+                                                                                    aria-autocomplete="list"
+                                                                                    aria-controls="listbox-id-2"
+                                                                                    role="textbox"
+                                                                                    placeholder="Search..." />
+                                                                                <span class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_right">
+                                                                                    <lightning-icon
+                                                                                        icon-name="utility:search"
+                                                                                        size="xx-Small"
+                                                                                        class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
+                                                                                        aria-hidden="true">
+                                                                                    </lightning-icon>
+                                                                                </span>
+                                                                                <template if:true={recordPresent}>
+                                                                                    <div id="listbox-id-2-venu"
+                                                                                        data-key="dropdownresult"
+                                                                                        class="slds-show slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid"
+                                                                                        role="listbox">
+                                                                                        <ul class="slds-listbox slds-listbox_vertical"
+                                                                                            role="presentation">
+                                                                                            <template if:true={message}>
+                                                                                                <li> {message}
+                                                                                                </li>
+                                                                                            </template>
+                                                                                            <template for:each={recordsList} for:item="record">
+                                                                                                <li id={record.Id}
+                                                                                                    key={record.Id}
+                                                                                                    onclick={onRecordSelection}
+                                                                                                    role="presentation"
+                                                                                                    class="slds-listbox__item">
+                                                                                                    <div data-key={record.Id}
+                                                                                                        data-name={record.Name}
+                                                                                                        class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta"
+                                                                                                        role="option">
+                                                                                                        <span class="slds-media__body">
+                                                                                                            <span
+                                                                                                                data-key={record.Id}
+                                                                                                                data-name={record.completeName}
+                                                                                                                class="slds-listbox__option-text slds-listbox__option-text_entity">{record.completeName}
+                                                                                                            </span>
+                                                                                                        </span>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                            </template>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </template>
+                                                                            </div>
+                                                                        </template>
+                                                                        <template if:true={selectedValue}>
+                                                                            <div data-key="pilldiv"
+                                                                                class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_left-right"
+                                                                                role="none">
+                                                                                <input type="text"
+                                                                                    class="slds-input slds-combobox__input slds-combobox__input-value"
+                                                                                    id={field.id}
+                                                                                    aria-controls="listbox-id-5"
+                                                                                    role="textbox"
+                                                                                    placeholder="Select an Option"
+                                                                                    readonly value={selectedValue}
+                                                                                    onchange={handleFieldChange} />
+                                                                                <button
+                                                                                    class="slds-button slds-button_icon slds-input__icon slds-input__icon_right"
+                                                                                    onclick={removeRecordOnLookup}
+                                                                                    title="Remove selected option">
+                                                                                    <span class="slds-button__icon"
+                                                                                        aria-hidden="true">
+                                                                                        <lightning-icon
+                                                                                            icon-name="utility:close"
+                                                                                            size="xx-Small"
+                                                                                            class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
+                                                                                            aria-hidden="true"></lightning-icon>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="slds-assistive-text">Remove
+                                                                                        selected option
+                                                                                    </span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </template>-->
+                                                                        <!-- Lookup code  End -->
+                                                                        <div class="slds-col slds-size_4-of-12">
+                                                                            {field.label}
+                                                                            <span class="required-symbol">*</span>
+                                                                        </div>
+                                                                        <div class="slds-col slds-size_8-of-12">
+                                                                            <c-br-portal-sales-user  onselect={handleLookupSelect} fieldapi="PS_Sobha_Sales_Team__c"></c-br-portal-sales-user>
+                                                                        </div>
+                                                                    </template>
+                                                                    <template if:true={field.isSales}>
+                                                                        <div class="slds-col slds-size_4-of-12">
+                                                                            Sobha sales team 2
+                                                                        </div>
+                                                                        <div class="slds-col slds-size_8-of-12">
+                                                                            <c-br-portal-sales-user-team onselect={handleLookupSelect} fieldapi="PS_Sobha_Sales_Team_2__c"></c-br-portal-sales-user-team>
+                                                                        </div>
+                                                                        </template>
+                                                                    <template if:true={field.isSales}>
+                                                                        <div class="slds-col slds-size_4-of-12">
+                                                                            Sobha sales team 3
+                                                                        </div>
+                                                                        <div class="slds-col slds-size_8-of-12">
+                                                                            <c-br-portal-sales-user-head onselect={handleLookupSelect} fieldapi="PS_Sobha_Sales_Team_3__c"></c-br-portal-sales-user-head>
+                                                                        </div>
+                                                                    </template>
+                                                                    <template if:false={field.isSales}>
+                                                                        <div class="slds-col slds-size_4-of-12">
+                                                                            {field.label}<span
+                                                                                class="required-symbol">*</span>
+                                                                        </div>
+                                                                        <div class="slds-col slds-size_8-of-12">
+                                                                            <input type={field.type}
+                                                                                placeholder={field.placeholder}
+                                                                                id={field.id} onchange={handleFieldChange}
+                                                                                class={field.id} min ="0" required/>
+                                                                        </div>
+                                                                    </template>
+                                                                </template>
+                                                                <template if:false={field.label}>
+                                                                    <template if:true={field.label}>
+                                                                        <div>
+                                                                            {field.label}
+                                                                            <span class="required-symbol">*</span>
+                                                                        </div>
+                                                                    </template>
+                                                                    <input type={field.type}
+                                                                        placeholder={field.placeholder} id={field.id}
+                                                                        class={field.id} onchange={handleFieldChange}
+                                                                        required/>
+                                                                </template>
+                                                            </div>
+                                                        </template>
+                                                        <template if:true={field.isTextArea}>
+                                                            <template if:true={field.label}>
+                                                                <div class="slds-p-bottom_small">
+                                                                    {field.label}
+                                                                    <span class="required-symbol">*</span>
+                                                                </div>
+                                                            </template>
+                                                            <textarea rows="4" placeholder={field.placeholder}
+                                                                id={field.id} onchange={handleFieldChange}
+                                                                class={field.id} required>
+                                                            </textarea>
+                                                        </template>
+                                                        <template if:true={field.isFile}>
+                                                            <template if:true={field.label}>
+                                                                <div class="slds-p-bottom_small">
+                                                                    {field.label}
+                                                                    <span class="required-symbol">*</span>
+                                                                </div>
+                                                            </template>
+                                                            <div class="file-upload-body">
+                                                                <lightning-icon icon-name="utility:upload"
+                                                                    alternative-text="Upload" title="Upload"
+                                                                    size="large">
+                                                                </lightning-icon>
+                                                                <div class="file-description">
+                                                                     <div>i. Please name Emirates ID file as per your
+                                                                        name</div>
+                                                                    <div>ii. The file should consist of front and back
+                                                                        of the
+                                                                        Emirates ID</div>
+                                                                    <div>iii. The file should be in a .jpg or .pdf
+                                                                        format</div>
+                                                                </div>
+                                                                <input id="files2" type="file" name="files" onchange={handleSingleFilesChange} />
+                                                            </div>
+                                                        </template>
+                                                    </lightning-layout-item>
+                                                </template>
+                                            </template>
+                                            <template if:true={field.isProjects}>
+                                                <lightning-layout-item key={field} size="12" small-device-size="12"
+                                                    medium-device-size="12" large-device-size="12"
+                                                    padding="around-small">
+                                                    <div class="slds-grid slds-wrap align-items-center">
+                                                        <div class="slds-col slds-size_3-of-12">
+                                                            {field.label}
+                                                            <span class="required-symbol">*</span>
+                                                        </div>
+                                                        <div class="slds-col slds-size_9-of-12">
+                                                            <input type={field.type} placeholder={field.placeholder}
+                                                                id={field.id} class={field.id}
+                                                                onchange={handleFieldChange} required/>
+                                                        </div>
+                                                    </div>
+                                                </lightning-layout-item>
+                                            </template>
+                                            <template if:true={field.isCommon}>
+                                                <lightning-layout-item key={field} size="12" small-device-size="12"
+                                                    medium-device-size="6" large-device-size="4" padding="around-small">
+                                                    <div class="slds-grid slds-wrap align-items-center">
+                                                        <div class="slds-col slds-size_3-of-12">
+                                                            {field.label}<span class="required-symbol">*</span>
+                                                        </div>
+                                                        <template if:true={field.isSales}>
+                                                            <!-- Lookup code  start -->
+                                                            <!--
+                                                            <template if:false={selectedValue}>
+
+                                                                <div data-key="searchdiv"
+                                                                    class="slds-col slds-size_8-of-12 slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+                                                                    role="none">
+
+                                                                    <input type="text" onfocusout={onLeave}
+                                                                        value={searchKey} onkeyup={handleKeyChange}
+                                                                        onchange={handleKeyChange}
+                                                                        class="slds-input slds-combobox__input slds-has-focus"
+                                                                        id={field.id} aria-autocomplete="list"
+                                                                        aria-controls="listbox-id-2" role="textbox"
+                                                                        placeholder="Search..." />
+
+                                                                    <span
+                                                                        class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_right">
+
+                                                                        <lightning-icon icon-name="utility:search"
+                                                                            size="xx-Small"
+                                                                            class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
+                                                                            aria-hidden="true"></lightning-icon>
+
+                                                                    </span>
+
+                                                                    <template if:true={recordPresent}>
+
+                                                                        <div id="listbox-id-3-venu"
+                                                                            data-key="dropdownresult"
+                                                                            class="slds-show slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid"
+                                                                            role="listbox">
+
+                                                                            <ul class="slds-listbox slds-listbox_vertical"
+                                                                                role="presentation">
+
+                                                                                <template if:true={message}>
+
+                                                                                    <li> {message}</li>
+
+                                                                                </template>
+
+                                                                                <template for:each={recordsList}
+                                                                                    for:item="record">
+
+                                                                                    <li id={record.Id} key={record.Id}
+                                                                                        onclick={onRecordSelection}
+                                                                                        role="presentation"
+                                                                                        class="slds-listbox__item">
+
+                                                                                        <div data-key={record.Id}
+                                                                                            data-name={record.Name}
+                                                                                            class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta"
+                                                                                            role="option">
+
+
+
+                                                                                            <span
+                                                                                                class="slds-media__body">
+
+                                                                                                <span
+                                                                                                                data-key={record.Id}
+                                                                                                                data-name={record.completeName}
+                                                                                                                class="slds-listbox__option-text slds-listbox__option-text_entity">{record.completeName}
+                                                                                                            </span>
+                                                                                            </span>
+
+                                                                                        </div>
+
+                                                                                    </li>
+
+                                                                                </template>
+
+                                                                            </ul>
+
+                                                                        </div>
+
+                                                                    </template>
+                                                                </div>
+
+
+                                                            </template>
+                                                            <template if:true={selectedValue}>
+
+                                                                <div data-key="pilldiv"
+                                                                    class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_left-right"
+                                                                    role="none">
+
+
+                                                                    <input type="text"
+                                                                        class="slds-input slds-combobox__input slds-combobox__input-value"
+                                                                        id={field.id} aria-controls="listbox-id-5"
+                                                                        role="textbox" placeholder="Select an Option"
+                                                                        readonly value={selectedValue}
+                                                                        onchange={handleFieldChange} />
+
+                                                                    <button
+                                                                        class="slds-button slds-button_icon slds-input__icon slds-input__icon_right"
+                                                                        onclick={removeRecordOnLookup}
+                                                                        title="Remove selected option">
+
+                                                                        <span class="slds-button__icon"
+                                                                            aria-hidden="true">
+
+                                                                            <lightning-icon icon-name="utility:close"
+                                                                                size="xx-Small"
+                                                                                class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
+                                                                                aria-hidden="true"></lightning-icon>
+
+                                                                        </span>
+
+                                                                        <span class="slds-assistive-text">Remove
+                                                                            selected option</span>
+
+                                                                    </button>
+                                                                </div>
+                                                            </template>
+                                                            -->
+                                                            <!-- Lookup code  End -->
+                                                            <div class="slds-col slds-size_9-of-12">
+                                                                <c-br-portal-sales-user onchange={handleKeyChange} onselect={handleLookupSelect} fieldapi="PS_Sobha_Sales_Team__c"></c-br-portal-sales-user>
+                                                            </div>
+                                                        </template>
+                                                        <template if:false={field.isSales}>
+                                                            <div class="slds-col slds-size_9-of-12">
+                                                                <input type={field.type} placeholder={field.placeholder}
+                                                                    id={field.id} class={field.id}
+                                                                    onchange={handleFieldChange} min ="0" required/>
+                                                            </div>
+                                                        </template>
+                                                    </div>
+                                                </lightning-layout-item>
+                                            </template>
+                                        </template>
+                                    </lightning-layout>
+                                </div>
+                                <div class="submit-request-btn">
+                                    <button class="btn" onclick={handleSubmit}>
+                                        Submit Request
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <template if:true={displayVideoShoot}>
+        <!-- Modal/Popup Box LWC starts here -->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal/Popup Box LWC header here -->
+                <header class="slds-modal__header" style="padding:0px">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={closeVideoModal}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse" size="small">
+                        </lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                </header>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content" id="modal-content-id-v" style="padding:10px;background-color:white;">
+                    <video width="100%" autoplay loop>
+                        <source src={currentVideoURL} type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" style="background-color:grey; opacity: 0.5;"></div>
+    </template>
+</template>

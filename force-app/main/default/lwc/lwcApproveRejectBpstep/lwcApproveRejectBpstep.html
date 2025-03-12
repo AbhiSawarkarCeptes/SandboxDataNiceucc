@@ -1,0 +1,33 @@
+<template>
+    <lightning-modal-header label="Approve/Reject"></lightning-modal-header>
+    <div class="slds-p-around_medium lgc-bg">
+    <lightning-radio-group name="radioGroup"
+                          label="Select Action"
+                          options={radioOptions}
+                          value={radioValue}
+                          onchange={handleRadioChange}
+                          type="radio"></lightning-radio-group>
+    </div>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text" label="Comment" onchange={commentOnChange} value={comment} placeholder="type here..." required></lightning-input>
+    </div>
+    <template if:true={showStep}>
+    <div class="slds-p-around_medium lgc-bg">
+    <lightning-combobox
+            name="progress"
+            label="Reject To"
+            value={setpValue}
+            placeholder="Select Step"
+            options={stepOptions1}
+            onchange={handleChange} ></lightning-combobox>
+    </div>
+    </template>
+    <template if:true={showBankReference}>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Bank Reference Number" onchange={bROnChange} value={brValue} required ></lightning-input>
+        </div>
+    </template>
+    <lightning-modal-footer>
+        <lightning-button label="OK" type="submit" onclick={handleOkay}></lightning-button>
+    </lightning-modal-footer>
+</template>

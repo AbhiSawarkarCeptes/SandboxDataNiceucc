@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Initiate_Approval_process</name>
+        <label>Initiate Approval process</label>
+        <locationX>314</locationX>
+        <locationY>974</locationY>
+        <actionName>InitiateApprvalProcessForCurrentRecord</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>Get_Current_APR.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>InitiateApprvalProcessForCurrentRecord</nameSegment>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>Assign_Audit_Resubmitted_to_Account</name>
+        <label>Assign Audit Resubmitted to Account</label>
+        <locationX>314</locationX>
+        <locationY>638</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Current_APR.Audit_Resubmitted_to__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Audit_Resubmitted_to_Accounts</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_APR</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Audit_Resubmitted_to_Collections</name>
+        <label>Assign Audit Resubmitted to Collections</label>
+        <locationX>50</locationX>
+        <locationY>638</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Current_APR.Audit_Resubmitted_to__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Audit_Resubmitted_to</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_APR</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Comments</name>
+        <label>Assign Comments</label>
+        <locationX>314</locationX>
+        <locationY>398</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Current_APR.Comments__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Comments</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Rejected_Status_Condition</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>RejectedByAccountsChoice</name>
+        <choiceText>Resubmit to Collections</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Resubmit to Collections</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>RejectedByAudit2</name>
+        <choiceText>Resubmit to Collections and Accounts</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Resubmit to Collections and Accounts</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>RejectedByAuditChoice1</name>
+        <choiceText>Resubmit to Accounts</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Resubmit to Accounts</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>Rejected_Status_Condition</name>
+        <label>Rejected Status Condition</label>
+        <locationX>314</locationX>
+        <locationY>518</locationY>
+        <defaultConnector>
+            <targetReference>Update_APR</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default outcome</defaultConnectorLabel>
+        <rules>
+            <name>Rejected_By_Accounts</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_APR.Rejected_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected by Accounts</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Audit_Resubmitted_to_Collections</targetReference>
+            </connector>
+            <label>Rejected By Accounts</label>
+        </rules>
+        <rules>
+            <name>Rejected_By_Audit</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_APR.Rejected_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected by Audit</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Audit_Resubmitted_to_Account</targetReference>
+            </connector>
+            <label>Rejected By Audit</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Resubmit APR Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Resubmit APR Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Current_APR</name>
+        <label>Get Current APR</label>
+        <locationX>314</locationX>
+        <locationY>158</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Select_Audit_Resubmitted_to</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Advance_Payment_Rebate__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Approval_Status__c</queriedFields>
+        <queriedFields>Audit_Resubmitted_to__c</queriedFields>
+        <queriedFields>Rejected_Status__c</queriedFields>
+        <queriedFields>Comments__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_APR</name>
+        <label>Update APR</label>
+        <locationX>314</locationX>
+        <locationY>854</locationY>
+        <connector>
+            <targetReference>Initiate_Approval_process</targetReference>
+        </connector>
+        <inputReference>Get_Current_APR</inputReference>
+    </recordUpdates>
+    <screens>
+        <name>Select_Audit_Resubmitted_to</name>
+        <label>Select Audit Resubmitted to</label>
+        <locationX>314</locationX>
+        <locationY>278</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Assign_Comments</targetReference>
+        </connector>
+        <fields>
+            <name>Audit_Resubmitted_to</name>
+            <choiceReferences>RejectedByAccountsChoice</choiceReferences>
+            <dataType>String</dataType>
+            <defaultSelectedChoiceReference>RejectedByAccountsChoice</defaultSelectedChoiceReference>
+            <fieldText>Audit Resubmitted to</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Get_Current_APR.Rejected_Status__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Rejected by Accounts</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Audit_Resubmitted_to_Accounts</name>
+            <choiceReferences>RejectedByAuditChoice1</choiceReferences>
+            <choiceReferences>RejectedByAudit2</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Audit Resubmitted to</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Get_Current_APR.Rejected_Status__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Rejected by Audit</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Comments</name>
+            <fieldText>Comments</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <nextOrFinishButtonLabel>Save</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Current_APR</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>AuditSubmittedto</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>Audit_Resubmitted_to</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

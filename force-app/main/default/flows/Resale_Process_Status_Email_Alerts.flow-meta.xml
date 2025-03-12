@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Resale_Approved</name>
+        <label>Resale - Approved</label>
+        <locationX>842</locationX>
+        <locationY>431</locationY>
+        <actionName>Resale_Process__c.Resale_Approved</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Resale_Process__c.Resale_Approved</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Resale_Pending_For_Accounts_Approval</name>
+        <label>Resale Pending For Accounts Approval</label>
+        <locationX>1106</locationX>
+        <locationY>431</locationY>
+        <actionName>Resale_Process__c.Resale_Pending_For_Accounts_Approval</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Resale_Process__c.Resale_Pending_For_Accounts_Approval</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Resale_Pending_For_Audit_Approval</name>
+        <label>Resale Pending For Audit Approval</label>
+        <locationX>1634</locationX>
+        <locationY>431</locationY>
+        <actionName>Resale_Process__c.Resale_Pending_For_Audit_Approval</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Resale_Process__c.Resale_Pending_For_Audit_Approval</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Resale_Pending_For_Collections_Approval</name>
+        <label>Resale Pending For Collections Approval</label>
+        <locationX>1370</locationX>
+        <locationY>431</locationY>
+        <actionName>Resale_Process__c.Resale_Pending_For_Collections_Approval</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Resale_Process__c.Resale_Pending_For_Collections_Approval</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Resale_Rejected_By_Accounts</name>
+        <label>Resale Rejected By Accounts</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <actionName>Resale_Process__c.Resale_Rejected_By_Accounts</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Resale_Process__c.Resale_Rejected_By_Accounts</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Resale_Rejected_By_Audit</name>
+        <label>Resale Rejected By Audit</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <actionName>Resale_Process__c.Resale_Rejected_By_Audit</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Resale_Process__c.Resale_Rejected_By_Audit</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Resale_Rejected_By_Collections</name>
+        <label>Resale Rejected By Collections</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <actionName>Resale_Process__c.Resale_Rejected_By_Collections</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Resale_Process__c.Resale_Rejected_By_Collections</nameSegment>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <decisions>
+        <name>Status_Update</name>
+        <label>Status Update</label>
+        <locationX>974</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>is_Rejected_By_Audit</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Approval_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected by Audit</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected by Audit</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Resale_Rejected_By_Audit</targetReference>
+            </connector>
+            <label>is Rejected By Audit</label>
+        </rules>
+        <rules>
+            <name>is_Rejected_By_Collections</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Approval_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected by Collections</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected by Collections</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Resale_Rejected_By_Collections</targetReference>
+            </connector>
+            <label>is Rejected By Collections</label>
+        </rules>
+        <rules>
+            <name>is_Rejected_By_Accounts</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Approval_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected by Accounts</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected by Accounts</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Resale_Rejected_By_Accounts</targetReference>
+            </connector>
+            <label>is Rejected By Accounts</label>
+        </rules>
+        <rules>
+            <name>Approved</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Approval_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Resale_Approved</targetReference>
+            </connector>
+            <label>Approved</label>
+        </rules>
+        <rules>
+            <name>Pending_by_Accounts</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Approval_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending for Accounts Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending for Accounts Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Resale_Pending_For_Accounts_Approval</targetReference>
+            </connector>
+            <label>Pending by Accounts</label>
+        </rules>
+        <rules>
+            <name>Pending_By_Collections</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Approval_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending for Collections Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending for Collections Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Resale_Pending_For_Collections_Approval</targetReference>
+            </connector>
+            <label>Pending By Collections</label>
+        </rules>
+        <rules>
+            <name>Pending_by_Audit</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Approval_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending for Audit Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending for Audit Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Resale_Pending_For_Audit_Approval</targetReference>
+            </connector>
+            <label>Pending by Audit</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Resale Process Status Email Alerts {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Resale Process Status Email Alerts</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>848</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Status_Update</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Approval_Status__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Resale_Process__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,172 @@
+<template>
+        <lightning-tabset>
+            <lightning-tab label="Rebate Forcasting">
+                <div style="padding-left:1.6rem !important;padding-right:1.6rem !important;"> 
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                            <span>
+                                <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Unit Name</p>
+                                <p style="margin-top: 0.5rem; word-wrap: break-word;">{unitName}</p>
+                            </span>
+                        </div>
+                        <div class="slds-col">
+                        <span>
+                                <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Applicant Name</p>
+                                <p style="margin-top: 0.5rem; word-wrap: break-word;">{applicantName}</p>
+                            </span>
+                        </div>
+                        <div class="slds-col">
+                        <span>
+                                <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Booking Status</p>
+                                <p style="margin-top: 0.5rem; word-wrap: break-word;">{bookingStatus}</p>
+                            </span>
+                        </div>
+                        <div class="slds-col">
+                        <span>
+                                <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Project Name</p>
+                                <p style="margin-top: 0.5rem; word-wrap: break-word;">{projectName}</p>
+                            </span>
+                        </div>
+                        <div class="slds-col">
+                        <span>
+                                <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Tower</p>
+                                <p style="margin-top: 0.5rem; word-wrap: break-word;">{tower}</p>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <br/><br/>
+
+                    <lightning-datatable class="slds-table_col-bordered" key-field="Id" columns={columns} data={data} hide-checkbox-column></lightning-datatable>
+                
+                    <br/>
+
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-4">
+                            <span>
+                                <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Paid (%)</p>
+                                <p style="margin-top: 0.5rem; word-wrap: break-word;">{totalPaidPercent}</p>
+                            </span>
+                        </div>
+                        <div class="slds-col slds-size_1-of-4">
+                            <span>
+                                <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Outstanding Balance</p>
+                                <p style="margin-top: 0.5rem; word-wrap: break-word;">{totalBalance}</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <br/><br/>
+
+                    <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Tentative Input Values</p>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-3">
+                            <span>
+                                <lightning-input label="Tentative Payment Date" type="date" value={tentativePaymentDate} onchange={handleDateChange}></lightning-input>
+                            </span>
+                        </div>
+                        <div class="slds-col slds-size_1-of-3">
+                            <span>
+                                <lightning-input label="Advance Amount" type="number" value={advanceAmount} onchange={handleAmountChange}></lightning-input>
+                            </span>
+                        </div>
+                    </div>
+
+                    <br/><br/>
+
+                    <center>
+                        <div data-id="highlightBox" class="slds-box changeColor" style="padding: 0.5rem; border-radius: 1rem; width: 14rem; background: rgb(50, 88, 168); color: white;" onmouseover={totalEligCSS}>
+                            <p style="font-weight: bold !important; font-size: 1rem !important;">
+                                Total Eligible Discount
+                            </p>
+                            <p style="font-size:1.1rem;margin-top:0.5rem;">{totalEligibleDiscount}</p>
+                        </div>
+                    </center>
+                </div>
+            </lightning-tab>
+            <lightning-tab label="Rebate Calculator">
+                                <div style="padding-left:1.6rem !important;padding-right:1.6rem !important;"> 
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                            <span>
+                                <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Unit Name</p>
+                                <p style="margin-top: 0.5rem; word-wrap: break-word;">{unitName}</p>
+                            </span>
+                        </div>
+                        <div class="slds-col">
+                        <span>
+                                <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Applicant Name</p>
+                                <p style="margin-top: 0.5rem; word-wrap: break-word;">{applicantName}</p>
+                            </span>
+                        </div>
+                        <div class="slds-col">
+                        <span>
+                                <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Booking Status</p>
+                                <p style="margin-top: 0.5rem; word-wrap: break-word;">{bookingStatus}</p>
+                            </span>
+                        </div>
+                        <div class="slds-col">
+                        <span>
+                                <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Project Name</p>
+                                <p style="margin-top: 0.5rem; word-wrap: break-word;">{projectName}</p>
+                            </span>
+                        </div>
+                        <div class="slds-col">
+                        <span>
+                                <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Tower</p>
+                                <p style="margin-top: 0.5rem; word-wrap: break-word;">{tower}</p>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <br/><br/>
+
+                    <lightning-datatable class="slds-table_col-bordered" key-field="Id" columns={columnsTab2} data={dataTab2} hide-checkbox-column></lightning-datatable>
+                
+                    <br/>
+
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-4">
+                            <span>
+                                <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Paid (%)</p>
+                                <p style="margin-top: 0.5rem; word-wrap: break-word;">{totalPaidPercent}</p>
+                            </span>
+                        </div>
+                        <div class="slds-col slds-size_1-of-4">
+                            <span>
+                                <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Outstanding Balance</p>
+                                <p style="margin-top: 0.5rem; word-wrap: break-word;">{totalBalanceTab2}</p>
+                            </span>
+                        </div>
+                        <div class="slds-col slds-size_1-of-4">
+                            <span>
+                                <p style="color : black !important;	font-weight: bold !important; font-size: 0.9rem !important;">Total Rebate Amount</p>
+                                <p style="margin-top: 0.5rem; word-wrap: break-word;">{totalRebateAmountTab2}</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <br/><br/>
+
+                    <p style="color : black !important;	font-weight: bold !important; font-size: 1rem !important;">Payment Records</p>
+                    <lightning-datatable class="slds-table_col-bordered" key-field="Id" columns={columnsPayment} data={dataPayment} onrowselection={checkBoxSelection}></lightning-datatable>
+
+                    <br/>
+
+                    <div class="slds-grid">
+                        <span class="slds-size_1-of-4">
+                            <lightning-input type="number" name="input2" label="Enter Total Rebate Amount" value={finalTotalRebateAmountTab2} onchange={updateFinalTotalRebateAmt2}></lightning-input>
+                        </span>
+                    </div><br/>
+
+                    <center>
+                        <div data-id="highlightBox" class="slds-box changeColor" style="padding: 0.5rem; border-radius: 0.5rem; width: 9rem; background: rgb(50, 88, 168); color: white;" onmouseover={totalEligCSS} onclick={submitTransaction}>
+                            <p style="font-weight: bold !important; font-size: 1rem !important;cursor: pointer;">
+                                Submit
+                            </p>
+                        </div>
+                    </center>
+                </div> 
+            </lightning-tab>
+        </lightning-tabset>
+</template>

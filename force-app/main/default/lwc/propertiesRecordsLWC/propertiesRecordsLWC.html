@@ -1,0 +1,170 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <div class="main">
+        <lightning-card title="Select Property to Generate Quotation">     
+        </lightning-card>
+        <div class="slds-m-around_medium">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_1-of-2 slds-medium-size_3-of-12 slds-large-size_3-of-12">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <label class="slds-form-element__label" for="lookupInput"><b>Project</b></label>
+                            <lightning-input
+                                type="search"
+                                name="lookupInput"
+                                placeholder="Search Projects..."
+                                value={searchKeyProject}
+                                onchange={handleSearchKeyChange}
+                                onclick={showDialog}
+                                >
+                            </lightning-input>
+                            <div if:true={showResults} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                                <div id="listbox-unique-id" role="listbox">
+                                    <lightning-icon icon-name="utility:close" size="xx-small" onclick={handleProjectClose} style="position: absolute;right:-20px;border:groove; text-wrap: nowrap;"></lightning-icon>
+                                    <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation">
+                                        <template for:each={searchResults} for:item="result">
+                                            <li key={result.Id} role="presentation" class="slds-listbox__item liBox" >
+                                                <span role="option" onclick={handleResultClick} title={result.Id} data-id={result.Name} style="display: block !important;">
+                                                    <lightning-icon icon-name="custom:custom24" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result.Name}
+                                                </span>
+                                            </li>
+                                        </template>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-medium-size_3-of-12 slds-large-size_3-of-12">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <label class="slds-form-element__label" for="lookupInput"><b>Tower</b></label>
+                            <lightning-input
+                                type="search"
+                                name="lookupInput"
+                                placeholder="Search Towers..."
+                                value={searchKeyTower}
+                                onchange={handleSearchKeyChangeTower}
+                                onclick={showDialogTower}
+                                disabled={towerInput}>
+                            </lightning-input>
+                            <div if:true={showResultsTower} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                                <div id="listbox-unique-id2" role="listbox">
+                                    <lightning-icon icon-name="utility:close" size="xx-small" onclick={handleTowerClose} style="position: absolute;right:-20px;border:groove; text-wrap: nowrap;"></lightning-icon>
+                                    <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation">
+                                        <template for:each={searchResultsTower} for:item="resultTower">
+                                            <li key={resultTower.Id} role="presentation" class="slds-listbox__item liBox">
+                                                <span role="option" onclick={handleResultClickTower} title={resultTower.Id} data-id={resultTower.PropStrength__Tower_Name__c} style="display: block !important; text-wrap: nowrap;">
+                                                    <lightning-icon icon-name="custom:custom100" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{resultTower.PropStrength__Tower_Name__c}
+                                                </span>
+                                            </li>
+                                        </template>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-medium-size_3-of-12 slds-large-size_3-of-12">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <label class="slds-form-element__label" for="lookupInput"><b>Floor</b></label>
+                            <lightning-input
+                                type="search"
+                                name="lookupInput"
+                                placeholder="Search Floor..."
+                                value={searchKeyFloor}
+                                onchange={handleSearchKeyChangeFloor}
+                                onclick={showDialogFloor}
+                                disabled={floorInput}>
+                            </lightning-input>
+                            <div if:true={showResultsFloor} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                                <div id="listbox-unique-id3" role="listbox">
+                                    <lightning-icon icon-name="utility:close" size="xx-small" onclick={handleFloorClose} style="position: absolute;right:-20px;border:groove; text-wrap: nowrap;"></lightning-icon>
+                                    <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation">
+                                        <template for:each={searchResultsFloor} for:item="resultFloor">
+                                            <li key={resultFloor.Id} role="presentation" class="slds-listbox__item liBox">
+                                                <span role="option" onclick={handleResultClickFloor} title={resultFloor.Id} data-id={resultFloor.PropStrength__Floor_Name__c} style="display: block !important; text-wrap: nowrap;">
+                                                    <lightning-icon icon-name="custom:custom24" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{resultFloor.PropStrength__Floor_Name__c}
+                                                </span>
+                                            </li>
+                                        </template>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+                <div class="slds-col slds-size_1-of-2 slds-medium-size_3-of-12 slds-large-size_3-of-12" style="margin-top: auto;">
+                    <button class="slds-button slds-button_brand" onclick={handleClick} disabled={showGetBtn}>Select Units</button>
+                </div>
+            </div>
+            <br/><br/>
+            <template lwc:if={showPropertiesData}>
+                <button class="slds-button slds-button_brand" onclick={handleSelect} disabled={selectedBtn} style="margin-left: 45%;margin-bottom: 1rem;">Generate Quote</button>
+                <div style="max-height: 50vh;overflow-y:auto;border: groove;width:auto !important;">
+                    <lightning-datatable
+                        key-field="Id"
+                        data={dataList}
+                        columns={columns}
+                        onrowselection={handleRowSelection}
+                        selected-rows={preselectedRow}
+                        min-column-width = "50"
+                    >
+                    </lightning-datatable>
+                </div>
+            </template>
+            <template lwc:elseif={noRecord}>
+                No Properties to show
+            </template>
+            
+        </div>
+    </div>
+   <!-- modal start -->      
+   <template if:true={isShowModal}>
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+       <div class="slds-modal__container" style="max-width: 50rem !important; word-break: auto-phrase;">
+        <!-- modal header start -->
+          <header class="slds-modal__header">
+             <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hideModalBox}>
+                <lightning-icon icon-name="utility:close"
+                   alternative-text="close"
+                   variant="inverse"
+                   size="small" ></lightning-icon>
+                <span class="slds-assistive-text">Close</span>
+             </button>
+             <h2 id="modal-heading-01" class="slds-text-heading_small slds-hyphenate">You have selected following properties to create quote, please confirm if you want to proceed. If any changes needed, please cancel it.</h2>
+          </header>
+      
+          <!-- modal body start -->
+          <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1" style="height: 20rem;">
+            <table>
+                <tr style="border: 1px solid black;">
+                    <th style="padding: 3px 10px;">Property Name</th></tr>
+                <template for:each={selectedPropertyList} for:item="mapEntry">
+                  <tr key={mapEntry.key} style="border: 1px solid black;" ><td style="padding: 3px 10px;">{mapEntry.Name}</td></tr>  
+                </template>
+            </table>
+          </div>
+
+          <!-- modal footer start-->
+          <footer class="slds-modal__footer" style="text-align: center !important;">
+             <button class="slds-button slds-button_neutral" onclick={createQuote} >Confirm</button>
+             <button class="slds-button slds-button_neutral" onclick={hideModalBox}>Back</button>
+          </footer>
+       
+       </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+ </template>
+ <!-- modal end -->
+
+
+
+
+
+</template>

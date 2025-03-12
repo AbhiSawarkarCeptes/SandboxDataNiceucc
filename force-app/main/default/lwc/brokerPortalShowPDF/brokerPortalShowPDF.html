@@ -1,0 +1,28 @@
+<template>
+  <!-- <template if:true={url}>
+        <iframe src={url} style={pdfHeight}></iframe>
+    </template>
+    <template if:false={url}>
+        <lightning-card>No PDF File ID found. Please specify PDF File ID.</lightning-card>
+    </template> -->
+
+
+  <table class="view-doc">
+    <thead>
+      <tr>
+        <th scope="col">Policy Name</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <template for:each={policiesUrl} for:item="policy" for:index="ind">
+        <tr key={policy.key}>
+          <td data-label="filename"><b>{policy.Name}</b></td>
+          <td data-label="actions" class="actions">
+            <span><a href={policy.Url} target="_blank"><img src={view_icon}></a></span>
+          </td>
+        </tr>
+      </template>
+    </tbody>
+  </table>
+</template>

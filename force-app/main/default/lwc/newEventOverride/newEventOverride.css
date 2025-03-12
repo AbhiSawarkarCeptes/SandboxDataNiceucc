@@ -1,0 +1,11 @@
+.recordTypeField{
+	display: inline-block;
+	text-align: left;
+	font-size: 20px;
+}
+.modalBody{
+	position: relative;
+}
+.contentWrap{
+	text-align: center;
+}

@@ -1,0 +1,207 @@
+<template>
+    <div class="slds-card slds-p-around_medium">
+        <div style="text-align: center; font-size: 20px; margin: 10px 0px;">New Receipt</div>
+        <lightning-record-edit-form object-api-name="Receipt_Downtime_Record__c" onsubmit={handleSubmit} onsuccess={handleSuccess}>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Receipt_Name__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Name"> </lightning-input-field>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Project__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Legacy_Data__c"> </lightning-input-field>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Opportunity__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Interest_Charges__c"> </lightning-input-field>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Project_Unit__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Legacy_Booking_Id__c"> </lightning-input-field>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Booking__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Request_No__c"> </lightning-input-field>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Adjustment_Entry__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Payment_Request_Downtime_Record__c"> </lightning-input-field>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Consider_for_Paid_Percentage__c">
+                    </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Advance_Payment_Rebate__c">
+                    </lightning-input-field>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="X2_DLD_Fees_Wavier_Receipt__c">
+                    </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="LP_Waiver__c"> </lightning-input-field>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="IsSOASend__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Account_Remarks__c"> </lightning-input-field>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Hide_From_SOA__c"> </lightning-input-field>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Cheque_Deposit_Date__c"> </lightning-input-field>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Front_Office_Remarks__c">
+                    </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Mode_of_Payment__c"> </lightning-input-field>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Booking_Status__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="LE_Project_Name_and_ID__c">
+                    </lightning-input-field>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Debit_Account__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Advance__c"> </lightning-input-field>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Manger_in_Requester__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Paid_Percentage_Consideration__c">
+                    </lightning-input-field>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="PR_from_receipt__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Print_Receipt__c"> </lightning-input-field>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Project_Name_ID__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Project_Name_with_Tower_Name__c">
+                    </lightning-input-field>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Xpedeon_ref__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Record_Age__c"> </lightning-input-field>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Requester_Number_in_Receipt__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="SM_Name__c"> </lightning-input-field>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Sub_Project__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Towards_Other_Charges_Amount__c">
+                    </lightning-input-field>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Towards_Pre_Registration_Amount__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Towards_Unit_Price_Amount__c">
+                    </lightning-input-field>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="VAT_Receipt__c"> </lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="Voucher_Number__c"> </lightning-input-field>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input-field field-name="VP_Name__c"> </lightning-input-field>
+                </div>
+            </div>
+
+            <div class="action-button" style="display: flex; justify-content: center;">
+                <lightning-button class="slds-m-top_small" variant="brand" type="submit"
+                    label="Save"></lightning-button>
+            </div>
+        </lightning-record-edit-form>
+    </div>
+</template>

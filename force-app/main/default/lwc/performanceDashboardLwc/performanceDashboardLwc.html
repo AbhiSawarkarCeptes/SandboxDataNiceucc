@@ -1,0 +1,638 @@
+<template>
+	<!-- Conditionally render different templates based on the button clicked -->
+
+	<!-- Insert HTML template for Site Visits -->
+	<!-- <div class="button-container">
+    <button class="slds-button slds-button_neutral" onclick={handleSiteVisitsClick}>Site visits</button>
+    <button class="slds-button slds-button_neutral" onclick={handleSalesClick}>Sales</button>
+    <button class="slds-button slds-button_neutral" onclick={handleBookingsClick}>Bookings</button>
+  </div> -->
+
+	<div class={isEligible}>
+		<div class="container">
+			<div class="inner-wrapper main-panel slds-grid slds-wrap">
+				<div class="row events-list">
+					<ul>
+						<li class="active" onclick={handleSiteVisitsClick}>Site visits</li>
+						<li onclick={handleSalesClick}>Sales</li>
+						<li onclick={handleBookingsClick}>Bookings</li>
+					</ul>
+				</div>
+				<!-- Middle Section showSiteVisits -->
+
+				<template if:true={showSiteVisitsTemplate}>
+					<div class="row events-content-section">
+						<div class="col-9 ">
+							<div class="left-sidebar-section">
+								<div class="row site-visit-graph">
+									<div class="top-heading">
+										<div if:true={chartOne} class="date-filter">
+											<span class=""><label>Select Start Month</label>
+												<input type="month" placeholder="Select Date"
+													onchange={handleSelectMonth} /></span>
+											<span class=""><label>Select End Month</label>
+												<input type="month" placeholder="Select Date"
+													onchange={handleSelectMonthTo} /></span>
+											<!--<span class="me-4"><input type="month" placeholder="Select Date" onchange={handleSelectMonthTo}/></span>-->
+										</div>
+										<div if:true={chartTwo} class="date-filter2">
+											<lightning-combobox name="year" label="Select Year" value={selectedYear}
+												options={yearOptions} onchange={handleYearChange}>
+											</lightning-combobox>
+										</div>
+										<div if:true={chartThree} class="date-filter2">
+											<lightning-combobox name="year" label="Select Year" value={selectedYear}
+												options={yearOptions} onchange={handleYearChange}>
+											</lightning-combobox>
+										</div>
+										<div if:true={chartFour} class="date-filter2">
+											<lightning-combobox name="year" label="Select Year" value={selectedYear}
+												options={yearOptions} onchange={handleYearChange}>
+											</lightning-combobox>
+										</div>
+										<div class="graph-tab-section">
+											<ul class="graph-tab-area">
+												<li class={buttonClass1} data-tab="1" onclick={handleTabClick}>Monthly
+												</li>
+												<li class={buttonClass2} data-tab="2" onclick={handleTabClick}>Quarterly
+												</li>
+												<li class={buttonClass3} data-tab="3" onclick={handleTabClick}>Bi-Yearly
+												</li>
+												<li class={buttonClass4} data-tab="4" onclick={handleTabClick}>Yearly
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="tab-content-wrapper">
+										<template if:true={chartFive}>
+											<div>
+												<canvas class="combined-monthly"></canvas>
+											</div>
+										</template>
+										<template if:true={chartOne}>
+											<div>
+												<canvas class="combined-chart"></canvas>
+											</div>
+										</template>
+										<template if:true={chartTwo}>
+											<div>
+												<canvas class="combined-quarterchart" width="100" height="50"></canvas>
+											</div>
+										</template>
+										<template if:true={chartThree}>
+											<div>
+												<canvas class="combined-halfyearlychart" width="100"
+													height="50"></canvas>
+											</div>
+										</template>
+										<template if:true={chartFour}>
+											<div>
+												<canvas class="combined-yearlychart" width="100" height="50"></canvas>
+											</div>
+										</template>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-3 ">
+
+							<div class="right-sidebar">
+								<div class="overview-box">
+									<div class="icon-txt">
+										<div class="icon"><img src={sitevisitUrl} alt="Site Visit Icon" /></div>
+									</div>
+									<div class="total">
+										<div if:true={chartOne}>
+											{totalCount}
+										</div>
+										<div if:true={chartTwo}>{siteVisitsCount}</div>
+										<div if:true={chartThree}>{siteVisitsCount}</div>
+										<div if:true={chartFour}>{siteVisitsCount}</div>
+
+										<div class="txt">Total Site Visits</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</template>
+
+
+				<template if:true={showSalesTemplate}>
+					<div class="row events-content-section">
+						<div class="col-9 ">
+							<div class="left-sidebar-section">
+								<div class="row site-visit-graph sales-graph">
+									<div class="top-heading">
+										<div class="chkbox-filter">
+											<input type="checkbox" class='check-box' name="villas" id="p1"
+												onclick={handleCheckboxClick}>
+											<label for="p1">Villas</label>
+											<input type="checkbox" class='check-box' name="apartments" id="p2"
+												onclick={handleCheckboxClick}>
+											<label for="p2">Apartments</label>
+											<input type="checkbox" class='check-box' name="others" id="p3"
+												onclick={handleCheckboxClick}>
+											<label for="p3">Others</label>
+										</div>
+									<div if:true={chartOne} class="date-filter">
+    <span class="">
+        <label>Select Start Month</label>
+        <input class="start-date-input" type="month" placeholder="Select Date" onchange={handleSelectMonth} />
+    </span>
+    <span class="">
+        <label>Select End Month</label>
+        <input class="end-date-input" type="month" placeholder="Select Date" onchange={handleSelectMonthTo} />
+    </span>
+</div>
+
+										<div if:true={chartTwo} class="date-filter2">
+											<lightning-combobox name="year" label="Select Year" value={selectedYear}
+												options={yearOptions} onchange={handleYearChange}>
+											</lightning-combobox>
+										</div>
+										<div if:true={chartThree} class="date-filter2">
+											<lightning-combobox name="year" label="Select Year" value={selectedYear}
+												options={yearOptions} onchange={handleYearChange}>
+											</lightning-combobox>
+										</div>
+										<div if:true={chartFour} class="date-filter2">
+											<lightning-combobox name="year" label="Select Year" value={selectedYear}
+												options={yearOptions} onchange={handleYearChange}>
+											</lightning-combobox>
+										</div>
+										<div class="graph-tab-section">
+											<ul class="graph-tab-area">
+												<li class={buttonClass1} data-tab="1" onclick={handleTabClick}>Monthly
+												</li>
+												<li class={buttonClass2} data-tab="2" onclick={handleTabClick}>Quarterly
+												</li>
+												<li class={buttonClass3} data-tab="3" onclick={handleTabClick}>Bi-Yearly
+												</li>
+												<li class={buttonClass4} data-tab="4" onclick={handleTabClick}>Yearly
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="tab-content-wrapper">
+										<!-- <template if:true={chartFive}>
+                                            <div style="width:600px;height:350px;">
+                                                <canvas class="combined-monthly"></canvas>
+                                            </div>
+                                        </template> -->
+										<template if:true={chartOne}>
+											<div>
+												<canvas class="combined-chartSales"></canvas>
+											</div>
+										</template>
+										<template if:true={chartTwo}>
+											<div>
+												<canvas class="combined-quarterchartSales" width="100"
+													height="50"></canvas>
+											</div>
+										</template>
+										<template if:true={chartThree}>
+											<div>
+												<canvas class="combined-halfyearlychartSales" width="100"
+													height="50"></canvas>
+											</div>
+										</template>
+										<template if:true={chartFour}>
+											<div>
+												<canvas class="combined-yearlychartSales" width="100"
+													height="50"></canvas>
+											</div>
+										</template>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-3 ">
+
+							<div class="right-sidebar">
+								<div class="overview-box">
+									<div class="icon-txt">
+										<div class="icon"><img src={sale_icon_blue} alt="Site Visit Icon" /></div>
+									</div>
+									<div class="total">
+										<!--div if:true={chartOne}>{totalBookingsinCurrentMonthtomillion}<span class="million">Mn</span></div>
+											<div if:true={chartTwo}>{totalBookingsinQuartYearMillion}<span class="million">Mn</span></div>
+											<div if:true={chartThree}>{totalBookingsinHalfYear}<span class="million">Mn</span></div-->
+										<div>{totalBookingsinYear} <span class="million">Mn</span></div>
+										<div class="txt">Total Sale Value</div>
+									</div>
+								</div>
+								<div class="overview-box box-2 mt-3">
+									<div class="unit-bookings-text">Total Number of Unit Bookings for the Year</div>
+
+									<div class="total-sales-box">
+										<div>
+											<div class="icon"><img src={villaIcon} /></div>
+											<div class="total">
+												<div>{villasBookingCount}</div>
+												<div class="txt">Villa Units</div>
+											</div>
+										</div>
+
+										<div>
+											<div class="icon"><img src={appartmentIcon} /></div>
+											<div class="total">
+												<div>{appartmentsBookingCount}</div>
+												<div class="txt">Apartment Units</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</template>
+
+
+				<template if:true={showBookingsTemplate}>
+					<div class="row events-content-section">
+						<div class="col-12 ">
+							<div class="left-sidebar-section">
+								<div class="filter-multiselect">
+									<div>
+										<div class="filter-button" onclick={openModal}>
+											<img src={filter_icon_white} alt="Filter Icon" />
+											Filters
+										</div>
+										<template if:true={isModalOpen}>
+											<section aria-describedby="dialog-body-id-109"
+												aria-labelledby="dialog-heading-id-114"
+												class="slds-popover slds-popover_small filter-popover" role="dialog">
+												<div class="slds-popover__body" id="dialog-body-id-109">
+													<div class="slds-media">
+														<div class="slds-media__body">
+															<header class="slds-popover__header header-body">
+																<h2 class="slds-text-heading_small"
+																	id="dialog-heading-id-114">Filters</h2>
+																<img src={filter_icon_blue} alt="Filter Icon" />
+															</header>
+															<!-- filter code -->
+															<div class="filter-checkbox-body">
+																<lightning-modal-body>
+																	<lightning-accordion allow-multiple-sections-open
+																		onsectiontoggle={handleSectionToggle}
+																		active-section-name={activeSections}>
+																		<lightning-accordion-section name="A"
+																			label="Project">
+																			<lightning-checkbox-group name="proj"
+																				label="" options={projOptions}
+																				value={projValue}
+																				onchange={handleChange}>
+																			</lightning-checkbox-group>
+																		</lightning-accordion-section>
+
+																		<lightning-accordion-section name="B"
+																			label="Nationality">
+																			<lightning-checkbox-group name="nat"
+																				label="" options={natOptions}
+																				value={natValue}
+																				onchange={handleChange}>
+																			</lightning-checkbox-group>
+																		</lightning-accordion-section>
+
+																		<lightning-accordion-section name="C"
+																			label="No. of Bedrooms">
+																			<lightning-checkbox-group name="bed"
+																				label="" options={bedOptions}
+																				value={bedValue}
+																				onchange={handleChange}>
+																			</lightning-checkbox-group>
+																		</lightning-accordion-section>
+																		<lightning-accordion-section name="D"
+																			label="Saleable Area (Sq ft)">
+																			<lightning-checkbox-group name="sale"
+																				label="" options={saleOptionsInRange}
+																				value={saleValue}
+																				onchange={handleChange}>
+																			</lightning-checkbox-group>
+																		</lightning-accordion-section>
+
+																		<lightning-accordion-section name="E"
+																			label="Booking Status">
+																			<lightning-checkbox-group name="book"
+																				label="" options={bookOptions}
+																				value={bookValue}
+																				onchange={handleChange}>
+																			</lightning-checkbox-group>
+																		</lightning-accordion-section>
+
+																		<lightning-accordion-section name="F"
+																			label="Property Type">
+																			<lightning-checkbox-group name="propType"
+																				label="" options={typeOptions}
+																				value={typeValue}
+																				onchange={handleChange}>
+																			</lightning-checkbox-group>
+																		</lightning-accordion-section>
+																		<!-- <lightning-accordion-section name="F"
+																			label="Agent Name">
+																			<lightning-checkbox-group name="agen"
+																				label="" options={agenOptions}
+																				value={agenValue}
+																				onchange={handleChange}>
+																			</lightning-checkbox-group>
+																		</lightning-accordion-section> -->
+																	</lightning-accordion>
+																	<!-- <ul class="slds-list_vertical slds-has-dividers_around-space">
+																		<li class="slds-list__item">Project: {project}</li>
+																		<li class="slds-list__item">Nationality: {nationality}</li>
+																		<li class="slds-list__item">No. of Bedrooms: {numBedrooms}</li>
+																		<li class="slds-list__item">Saleable Area: {saleableArea}</li>
+																		<li class="slds-list__item">Booking Status: {bookingStatus}</li>
+																		<li class="slds-list__item">Agent Name: {agentName}</li>
+																	</ul> -->
+																</lightning-modal-body>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+										</template>
+									</div>
+									<div class="show-selected-filters">
+										<template for:each={mapEntries} for:item="entry">
+											<template for:each={entry.value} for:item="item">
+												<div key={item} class="filtered-item">
+													<span>{item}</span>
+													<lightning-icon icon-name="utility:close" alternative-text="Close"
+														data-key={entry.key} data-value={item} onclick={handleDelete}
+														size="xx-small" title="Close"></lightning-icon>
+												</div>
+											</template>
+										</template>
+									</div>
+								</div>
+								<div class="performance-bookings-table">
+									<table>
+										<thead>
+											<tr class="table-header">
+												<th scope="col">Unit No</th>
+												<th scope="col">Customer Name</th>
+												<th scope="col">Nationality</th>
+												<th scope="col">No.of Bedroom</th>
+												<th scope="col">Saleable Area (sq. ft.)</th>
+												<th scope="col">Booked Date</th>
+												<th scope="col">Booking Status</th>
+												<th scope="col" style="width: 100px;">Sale Value (AED)</th>
+												<th scope="col">Paid Amount %</th>
+												<th scope="col">Booking Form Executed</th>
+												<th scope="col">DLD Paid</th>
+												<th scope="col">SPA Executed</th>
+												<!-- <th scope="col">Agent Name</th> -->
+												<th scope="col">Download BF</th>
+												<th scope="col">Download SPA</th>
+												<th scope="col">Actions</th>
+											</tr>
+										</thead>
+										<tbody class="table-body">
+											<template for:each={bookingData} for:item="booking" for:index="index">
+												<tr key={booking.Id}>
+													<td data-label="city">{booking.Unit__r.Name}</td>
+													<td data-label="customer Name">{booking.Primary_Applicant_Name__c}
+													</td>
+													<td data-label="nationality">{booking.Nationality_V2__c}</td>
+													<td data-label="no Of Bedroom">
+														{booking.Unit__r.No_of_Bedroom__c}
+													</td>
+													<td data-label="saleable Area ">
+														{booking.Unit__r.Chargeable_Area__c}</td>
+													<td data-label="booked Date">
+														<lightning-formatted-date-time maximum-fraction-digits="2"
+															value={booking.Booking_Date__c} year="2-digit"
+															month="2-digit" day="2-digit">
+														</lightning-formatted-date-time>
+													</td>
+													<td data-label="booking Status">
+														<template if:true={booking.isProcessed}>
+															<span class="processed-status">Sold</span>
+														</template>
+														<template if:true={booking.isCancelled}>
+															<span class="cancelled-status">Blocked</span>
+														</template>
+														<template if:true={booking.isUnProcessed}>
+															<span class="Qualified-status">Qualified</span>
+														</template>
+														<template if:true={booking.isBooked}>
+															<span class="unProcessed-status">Blocked</span>
+														</template>
+													</td>
+													<td data-label="sale Value">
+														{booking.salesValueAED}
+													</td>
+													<td data-label="paid Amount">{booking.Paid_Percentage__c}%</td>
+													<td data-label="b Form Signed">
+														<template if:true={booking.BFormSigned}>
+															<div class="icon-tick">
+																<lightning-icon icon-name="utility:check"
+																	alternative-text="Check!" size="xx-small"
+																	title="Check">
+																</lightning-icon>
+															</div>
+														</template>
+														<template if:false={booking.BFormSigned}>
+															<div class="icon-cross">
+																<lightning-icon icon-name="utility:close"
+																	alternative-text="Closed!" size="xx-small"
+																	title="Close"></lightning-icon>
+															</div>
+														</template>
+													</td>
+													<td data-label="dld Paid">
+														<template if:true={booking.isDLDPaid}>
+															<div class="icon-tick">
+																<lightning-icon icon-name="utility:check"
+																	alternative-text="Check!" size="xx-small"
+																	title="Check">
+																</lightning-icon>
+															</div>
+														</template>
+														<template if:false={booking.isDLDPaid}>
+															<div class="icon-cross">
+																<lightning-icon icon-name="utility:close"
+																	alternative-text="Closed!" size="xx-small"
+																	title="Close"></lightning-icon>
+															</div>
+														</template>
+													</td>
+													<td data-label="spa Executed">
+														<template if:true={booking.isSpaExecuted}>
+															<div class="icon-tick">
+																<lightning-icon icon-name="utility:check"
+																	alternative-text="Check!" size="xx-small"
+																	title="Check">
+																</lightning-icon>
+															</div>
+														</template>
+														<template if:false={booking.isSpaExecuted}>
+															<div class="icon-cross">
+																<lightning-icon icon-name="utility:close"
+																	alternative-text="Closed!" size="xx-small"
+																	title="Close"></lightning-icon>
+															</div>
+														</template>
+
+													</td>
+													<!-- <td data-label="agent Name">{booking.Channel_Partner__r.Name}</td> -->
+													<td data-label="download BF">
+														<div class="download-icon">
+															<lightning-icon icon-name="utility:download"
+																alternative-text="Closed!" size="small" title="Close"
+																onclick={downloadFormHandler}
+																data-target-id={booking.Id}
+																data-target-name={booking.Name}></lightning-icon>
+														</div>
+													</td>
+													<td data-label="download SPA">
+														<div class="download-icon">
+															<lightning-icon icon-name="utility:download"
+																alternative-text="Closed!" size="small" title="Close"
+																onclick={downloadFormSPAHandler}
+																data-target-id={booking.Id}
+																data-target-name={booking.Name}></lightning-icon>
+														</div>
+													</td>
+													<td data-label="actions">
+														<div class="more-info" onclick={handleMoreInfo}
+															data-index={index}>
+															More Info
+														</div>
+														<template if:true={booking.showMoreInfo}>
+															<c-performance-dashboard-pop-over onclose={handleMoreInfo}
+																index={index} cpname={booking.Channel_Partner_Contact_Person__c}
+																smname={booking.salesManager}
+																sdname={booking.salesDirector}>
+															</c-performance-dashboard-pop-over>
+															<!-- <section class="moreInfo-popover-style slds-nubbin_right">
+																<div class="slds-clearfix">
+																	<lightning-button-icon icon-name="utility:close"
+																		variant="container" size="small"
+																		data-index={index} onclick={handleMoreInfo}
+																		class="slds-float_right slds-m-top_small slds-m-right_small"
+																		alternative-text="Close"></lightning-button-icon>
+																</div>
+																<div class="moreInfo-body">
+																	<div class="display-flex">
+																		<span class="title-label">Sales
+																			Manager{index}</span>
+																		<span class="title-value">First Name Last
+																			Name</span>
+																	</div>
+																	<div class="display-flex">
+																		<span class="title-label">Sales Director</span>
+																		<span class="title-value">First Name Last
+																			Name</span>
+																	</div>
+																	<div class="display-flex">
+																		<span class="title-label">Agent Name</span>
+																		<span class="title-value">First Name Last
+																			Name</span>
+																	</div>
+																</div>
+															</section> -->
+														</template>
+													</td>
+												</tr>
+
+											</template>
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</template>
+
+				<!-- <div class="slds-col slds-size_6-of-12 middle-section col-6 site-visit-graph ">
+                    <div class="top-heading">
+                        <div class="heading">
+                           
+                            <span class="txt">Select Month</span>
+                        </div>
+                        <div class="graph-tab-section active">
+                            <ul class="graph-tab-area">
+                                <li  class={buttonClass1} data-tab="1" onclick={handleTabClick}>Monthly</li>
+                                <li class={buttonClass2} data-tab="2" onclick={handleTabClick}>Quarterly</li>
+                                <li class={buttonClass3} data-tab="3" onclick={handleTabClick}>Bi-Yearly</li>
+                                <li class={buttonClass4} data-tab="4" onclick={handleTabClick}>Yearly</li>
+                            </ul>
+                        </div>
+                    </div>
+                 <template if:true={chartOne}>
+                     <div style="width:600px;height:350px;">
+        <canvas class="combined-chart" ></canvas>
+    </div>
+                 </template>
+                   <template if:true={chartTwo}>
+                  <div style="width:600px;height:350px;">
+                   <canvas class="combined-quarterchart" width="100" height="50"></canvas>
+                   </div>
+                 </template>
+                 <template if:true={chartThree}>
+                      <div style="width:600px;height:350px;">
+                   <canvas class="combined-halfyearlychart" width="100" height="50"></canvas>
+                      </div>
+                 </template>
+                  <template if:true={chartFour}>
+                       <div style="width:600px;height:350px;">
+                   <canvas class="combined-yearlychart" width="100" height="50"></canvas>
+                       </div>
+                 </template>
+
+
+                </div> -->
+
+				<!-- <div class=" slds-col slds-size_3-of-12 right-section col-3">
+                    <div class="events-overview"> 
+                        <div class="row mt-2"> 
+<div class="heading-section"> 
+     <span class="icon1">
+                                <img src={sitevisitUrl} alt="Site Visit Icon" />
+                            </span>
+                            <div class="txtone">{siteVisitsCount}</div>
+    <h3 class="simpletxt">Total Site Visits</h3>
+
+</div>
+
+                        </div>
+                    </div>
+                     </div> -->
+			</div>
+		</div>
+	</div>
+
+</template>
+
+<!-- <template if:true={showSalesTemplate}>
+    <div class="button-container">
+    <button class="slds-button slds-button_neutral" onclick={handleSiteVisitsClick}>Site visits</button>
+    <button class="slds-button slds-button_neutral" onclick={handleSalesClick}>Sales</button>
+    <button class="slds-button slds-button_neutral" onclick={handleBookingsClick}>Bookings</button>
+  </div>
+  
+      <div class="container"><p>
+          Sales page
+          </p></div>
+ 
+  </template>
+  <template if:true={showBookingsTemplate}>
+    <div class="button-container">
+    <button class="slds-button slds-button_neutral" onclick={handleSiteVisitsClick}>Site visits</button>
+    <button class="slds-button slds-button_neutral" onclick={handleSalesClick}>Sales</button>
+    <button class="slds-button slds-button_neutral" onclick={handleBookingsClick}>Bookings</button>
+  </div>
+  
+      <div class="container"><p>
+          Booking page
+          </p></div>
+ 
+  </template> 
+
+</template>-->

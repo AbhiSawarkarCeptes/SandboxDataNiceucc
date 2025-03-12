@@ -1,0 +1,9 @@
+<template>
+    <lightning-spinner alternative-text="Loading" size="large" if:true={showSpinner}></lightning-spinner>
+
+    <c-refund-dashboard-table-lwc columns={columns} result={data} selected-project={selectedProjectId} selected-tower={selectedTowerId}
+    onfetchtransactionrequestdetails={getTransactionRequestDetails} is-tower-disable={isTowerDisable} onrequestforrefundprocess={handleRefundDashboard} 
+    onprojectchange={handleProjectChange} get-visibility-of-filter-selection={getVisibilityOfFilterSelection}>
+        <p slot="headerName">Audit Refund Dashboard</p>
+    </c-refund-dashboard-table-lwc>
+</template>

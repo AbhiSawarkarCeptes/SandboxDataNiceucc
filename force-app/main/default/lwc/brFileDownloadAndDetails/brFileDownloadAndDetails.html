@@ -1,0 +1,19 @@
+<template>
+   
+      <lightning-card title="Broker Document History" icon-name="standard:contact" >
+        <br/>
+        <div style="width: auto;">
+            
+          
+          
+          <template if:true={filesData}>
+                <lightning-datatable data={filesData}
+                                     columns={columns}
+                                     key-field="id"
+                                     hide-checkbox-column="true"
+                                     onrowaction={callRowAction}></lightning-datatable>
+            </template>
+        </div>
+    </lightning-card>
+    <!-- <lightning-button label="Open Files" data-ids={file.fileIds} onclick={handleClick}></lightning-button> -->
+</template>

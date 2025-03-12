@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Oral checkup &amp; Health Screening for Creek Vistas: Loyalty Campaign</description>
+        <name>Oral_checkup_Health_Screening_for_Creek_Vistas_Loyalty_Campaign</name>
+        <label>Oral checkup &amp; Health Screening for Creek Vistas: Loyalty Campaign</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Applicant_Details__c.Loyalty_Emailer_without_Link</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Applicant_Details__c.Loyalty_Emailer_without_Link</nameSegment>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <description>Oral checkup &amp; Health Screening for Creek Vistas: Loyalty Campaign</description>
+    <environments>Default</environments>
+    <interviewLabel>Oral checkup &amp; Health Screening for Creek Vistas: Loyalty Campaign {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Oral checkup &amp; Health Screening for Creek Vistas: Loyalty Campaign</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Oral_checkup_Health_Screening_for_Creek_Vistas_Loyalty_Campaign</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Dataload_Identifier__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>230520240530PM</stringValue>
+            </value>
+        </filters>
+        <object>Applicant_Details__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

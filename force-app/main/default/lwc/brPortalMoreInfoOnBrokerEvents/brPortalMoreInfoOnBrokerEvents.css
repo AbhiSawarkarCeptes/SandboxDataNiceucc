@@ -1,0 +1,226 @@
+.request-field input[type="number"] {
+    width: 100%;
+    border-width: 0px 0px 1px 0px;
+    border-color: rgba(234, 234, 234, 1);
+    border-style: solid;
+    color: black;
+    font-family: 'Inter-Regular';
+    font-size: 12px;
+    font-weight: 400;
+    padding: 15px 5px;
+    outline: none;
+
+}
+
+
+.moreInfo-popover-style {
+    position: absolute;
+    width: 310px;
+    height: auto;
+    left: 100px;
+    top: 0px;
+    background-color: #FFFFFF;
+    border-radius: 17px;
+    z-index: 999;
+    border: 0px;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.14);
+}
+
+.moreInfo-body div span.title-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #1F55DE;
+    padding-bottom: 5px;
+}
+
+.moreInfo-body div span.title-value {
+    font-size: 14px;
+    font-weight: 400;
+    color: #061D3C;
+}
+
+.moreInfo-body>div:nth-child(2) {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.moreInfo-body>div:nth-child(3) {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.display-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.display-flex span.title-one {
+    font-size: 10px;
+    font-weight: 400;
+    color: #061D3C;
+}
+
+.display-flex span.title-two {
+    font-size: 10px;
+    font-weight: 400;
+    color: #061D3C;
+}
+
+.display-flex span.title-value-text {
+    font-size: 40px;
+    font-weight: 500;
+    color: #1F55DE;
+}
+
+div button.save-btn {
+    height: 30px;
+    width: -webkit-fill-available;
+    border: none;
+    border-radius: 10px;
+    background-color: #1F55DE;
+    color: white;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+div button.view-collateral-btn {
+    height: 30px;
+    width: 130px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1F55DE;
+    color: white;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.moreInfo-body>div:nth-child(4) {
+    text-align: center;
+}
+
+.slds-nubbin_left-top::after {
+    box-shadow: none !important;
+    z-index: initial !important;
+    left: -8px !important;
+    top: 60px !important;
+}
+
+.slds-nubbin_left-top::before {
+    left: -8px !important;
+    top: 60px !important;
+}
+
+.collaterals-section div.header-style {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0px !important;
+    padding: 20px 20px 5px 20px;
+}
+
+.collaterals-section div.header-style span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #061D3C;
+}
+
+.collaterals-section div.slds-modal__container {
+    width: 370px !important;
+}
+
+.collaterals-section div.modal-body {
+    text-align: left;
+    /* height: 290px !important; */
+}
+
+div.modal-body div.sub-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1F55DE;
+}
+
+div.modal-body div.date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #061D3C;
+}
+
+div.modal-body div.sub-body-title {
+    border-bottom: 1px solid #EAEAEA;
+    padding: 0px 10px 10px 10px;
+}
+
+div.modal-body div.sub-body-file {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 290px !important;
+    overflow-y: auto;
+    padding-top: 10px;
+}
+
+div.modal-body div.sub-body-file::-webkit-scrollbar {
+    width: 4px;
+}
+
+div.modal-body div.sub-body-file::-webkit-scrollbar-thumb {
+    background: rgba(31, 85, 222, 1);
+    border-radius: 21px;
+}
+
+
+div.modal-body div.sub-body-file div.file-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+div.modal-body div.sub-body-file div.file-body:hover {
+    background-color: #F2F6FF;
+}
+
+div.modal-body div.sub-body-file div.file-body span {
+    font-size: 8px;
+    font-weight: 400;
+    color: #1F55DE;
+    padding-top: 5px;
+}
+
+div.editIcon {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+div.editIcon img {
+    height: 25px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
+    .moreInfo-popover-style {
+        width: 90%;
+        left: auto;
+        top: 45px;
+    }
+
+    .slds-nubbin_left-top::before {
+        display: none;
+    }
+
+    .slds-nubbin_left-top::after {
+        display: none;
+    }
+
+    .moreInfo-body .display-flex {
+        width: 100%;
+    }
+
+    .collaterals-section div.slds-modal__container {
+        width: auto !important;
+    }
+}

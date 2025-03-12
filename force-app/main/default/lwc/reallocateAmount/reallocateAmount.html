@@ -1,0 +1,28 @@
+<template>
+    <div style="padding:20px">
+        <div style="display:none">{recordId}</div>
+        <template if:true={showSpinner}>
+            <div class="exampleHolder">
+                <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+            </div>
+        </template>
+        <lightning-record-edit-form onsubmit={handleSubmit} record-id={recordId} object-api-name="Payment_Request__c" onsuccess={handleSuccess} >
+            <lightning-output-field field-name="Original_Amount__c"></lightning-output-field>
+            <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field  field-name="Amount__c" disabled="true"></lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input type="text" disabled="true" label="Currency" value="AED"></lightning-input>
+                </div>
+            </div>
+            <lightning-input-field field-name="Towards_Pre_Registration_Amount__c"> </lightning-input-field>
+            <lightning-input-field field-name="Towards_Unit_Price_Amount__c"> </lightning-input-field>
+            <lightning-input-field field-name="Towards_Other_Charges_Amount__c"> </lightning-input-field>
+            <lightning-input-field field-name="Others__c"> </lightning-input-field>
+            <div style="text-align:center;padding-top: 20px;">
+                <button type="submit" class="slds-button slds-button_brand" title="Save">Save</button>
+            </div>
+        </lightning-record-edit-form>
+    </div>
+</template>

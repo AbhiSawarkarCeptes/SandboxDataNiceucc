@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <disableProtocolSecurity>false</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://7a9b4aeba6a7b9b0ed9d631ee5c7cbdc.m.pipedream.net</url>
+</RemoteSiteSetting>

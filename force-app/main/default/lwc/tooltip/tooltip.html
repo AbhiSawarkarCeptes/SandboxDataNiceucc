@@ -1,0 +1,8 @@
+<template>
+    <div class="tooltip-container" onmouseenter={handleMouseEnter} onmouseleave={handleMouseLeave}>
+        <slot></slot>
+        <div class="tooltip-text" if:true={showTooltip}>
+            {tooltipText}
+        </div>
+    </div>
+</template>

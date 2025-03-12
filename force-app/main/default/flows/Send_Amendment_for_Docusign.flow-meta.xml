@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_For_Docusign</name>
+        <label>Send For Docusign</label>
+        <locationX>138</locationX>
+        <locationY>674</locationY>
+        <actionName>AmendmentLetterDocusignHandler</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Docusign_Confirmation</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>accId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>AmendmentLetterDocusignHandler</nameSegment>
+    </actionCalls>
+    <apiVersion>61.0</apiVersion>
+    <decisions>
+        <name>Amendment_Letter_present_or_not</name>
+        <label>Amendment Letter present or not</label>
+        <locationX>270</locationX>
+        <locationY>566</locationY>
+        <defaultConnector>
+            <targetReference>Check_File_Name</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Enter</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Check_File_Name.ContentDocument.Title</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Amendment Document</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_For_Docusign</targetReference>
+            </connector>
+            <label>Enter</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Status</name>
+        <label>Check Status</label>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
+        <defaultConnector>
+            <targetReference>Status_Error</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Amendment_Generated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Account_Details.PropStrength__Broker_Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Amendment Generated</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Attachment</targetReference>
+            </connector>
+            <label>Amendment Generated</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Send Amendment for Docusign {!$Flow.CurrentDateTime}</interviewLabel>
+    <isAdditionalPermissionRequiredToRun>true</isAdditionalPermissionRequiredToRun>
+    <label>Send Amendment for Docusign</label>
+    <loops>
+        <name>Check_File_Name</name>
+        <label>Check File Name</label>
+        <locationX>50</locationX>
+        <locationY>458</locationY>
+        <collectionReference>Get_Attachment</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Amendment_Letter_present_or_not</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Copy_1_of_Status_Error</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Account_Details</name>
+        <label>Get Account Details</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Status</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Attachment</name>
+        <label>Get Attachment</label>
+        <locationX>50</locationX>
+        <locationY>350</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_File_Name</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LinkedEntityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>ContentDocumentLink</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>Copy_1_of_Status_Error</name>
+        <label>Copy 1 of Status Error</label>
+        <locationX>50</locationX>
+        <locationY>1166</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Copy_1_of_statusError</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;There is no File Present with the name Containing &quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Amendment Document&lt;/span&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt; -&quot; in Notes &amp;amp; Attachment.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Docusign_Confirmation</name>
+        <label>Docusign Confirmation</label>
+        <locationX>138</locationX>
+        <locationY>782</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Confirmation</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Amendment Document&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt; successfully sent for signature(s).&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Status_Error</name>
+        <label>Status Error</label>
+        <locationX>314</locationX>
+        <locationY>350</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>statusError</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Amendment is not yet Generated&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Account_Details</targetReference>
+        </connector>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

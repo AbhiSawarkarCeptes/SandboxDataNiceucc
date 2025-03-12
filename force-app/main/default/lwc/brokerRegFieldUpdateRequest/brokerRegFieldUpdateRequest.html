@@ -1,0 +1,45 @@
+<template>
+    <lightning-quick-action-panel header="Field Update Request">
+        <lightning-spinner alternative-text="Loading" size="large" if:true={showSpinner}></lightning-spinner>
+        <lightning-layout multiple-rows="true">
+
+            <template if:true={isFieldTypeVisible}>
+                <lightning-layout-item class="slds-p-around_xx-small" size="6">
+                    <lightning-record-edit-form record-id={dummyRecord} object-api-name={objectApiName}>
+                        <lightning-input-field required="true"  field-name="Field_Update_Type__c" name="Field_Update_Type__c" onchange={onFieldTypeChange} ></lightning-input-field>
+                    </lightning-record-edit-form>
+                </lightning-layout-item>
+            </template>
+
+            <template if:false={isFieldTypeVisible}>
+                <div class="goBackWrap"><span onclick={goBacktoFieldUpdate}> <lightning-icon size="xx-small" icon-name="utility:back" alternative-text="Change Field Update Type" title="Change Field Update Type">
+        </lightning-icon>  Change Field Update Type</span></div>
+                <lightning-layout-item class="slds-p-around_xx-small" size="6">
+                    <div class="customWrap"><span>Old Field Value</span>
+                        <lightning-record-edit-form record-id={recordId} class="oldRecordForm" object-api-name={objectApiName} onsuccess={handleSuccess}>
+                            <template for:each={dataList} for:item="dat" for:index="index">
+                                <lightning-input-field key={dat.API_Name__c} data-id={dat.MasterLabel} field-name={dat.API_Name__c} name={dat.API_Name__c} disabled="true" ></lightning-input-field>
+                            </template>
+                        </lightning-record-edit-form>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item class="slds-p-around_xx-small" size="6">
+                    <div class="customWrap"><span>New Field Value</span>
+                        <lightning-record-edit-form record-id={dummyRecord} object-api-name={objectApiName} onsuccess={handleSuccess}>
+                            <template for:each={dataList} for:item="dat" for:index="index">
+                                <lightning-input-field key={dat.API_Name__c} required="false" data-id={dat.MasterLabel} field-name={dat.API_Name__c} name={dat.API_Name__c} onchange={handleFieldChange}></lightning-input-field>
+                                <!-- <lightning-input key={dat.API_Name__c} type="text" class="customMaring" variant="standard" name={dat.API_Name__c} label={dat.MasterLabel} placeholder="type here..." onchange={handleFieldChange}></lightning-input> -->
+                            </template>
+                        </lightning-record-edit-form>
+                    </div>
+                </lightning-layout-item>
+            </template>
+
+        </lightning-layout>
+
+        <div slot="footer">
+            <lightning-button variant="neutral" label="Cancel" onclick={closePopup}></lightning-button>
+            <lightning-button variant="brand" class="slds-m-left_x-small" label="Save" type="submit" onclick={onSubmit}></lightning-button>
+        </div>
+    </lightning-quick-action-panel>
+</template>

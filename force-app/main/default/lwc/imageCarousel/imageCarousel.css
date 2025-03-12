@@ -1,0 +1,69 @@
+/* carousel.css */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 45px;
+    outline: none;
+}
+
+.navigation button:hover {
+    color: #555;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.modal-body {
+    border-radius: 10px !important;
+    padding: 5px !important;
+}
+
+
+.close-icon {
+    --slds-c-icon-color-foreground: white;
+}
+
+.download-icon {
+    cursor: pointer;
+}
+
+.icon-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-bottom: 10px;
+    /* align-items: end;
+    position: relative;
+    right: -40px;
+    top: 60px; */
+}

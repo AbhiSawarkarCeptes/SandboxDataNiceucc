@@ -1,0 +1,32 @@
+.my-component-container {
+    height: 10rem;
+    margin: 0.5rem 1rem;
+}
+
+.ulContainer { 
+    border: 0.05rem solid black;
+    text-indent: 0.25rem;
+    border-radius: 0.2rem;
+    line-height: 2rem;
+    max-height: 7rem;
+    overflow-y: auto;
+    position: absolute;
+    width: -webkit-fill-available;
+    z-index: 100 !important;
+    background: white;
+}
+.liBox:hover {
+    background-color: azure;
+    cursor: pointer;
+}
+.main {
+    background-color: white;
+    height: 98vh !important;
+    margin: 0;
+    padding: 0;
+}
+.slds-table thead th {
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+}

@@ -1,0 +1,124 @@
+<template>
+  <!-- modal start -->
+  <template if:true={show}>
+    <section
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="modal-heading-01"
+      aria-modal="true"
+      aria-describedby="modal-content-id-1"
+      class="slds-modal slds-fade-in-open"
+    >
+      <div class="slds-modal__container">
+        <!-- modal header start -->
+        <header class="slds-modal__header">
+          <button
+            class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+            title="Close"
+            onclick={hideModalBox}
+          >
+            <lightning-icon
+              icon-name="utility:close"
+              alternative-text="close"
+              variant="inverse"
+              size="small"
+            ></lightning-icon>
+            <span class="slds-assistive-text">Close</span>
+          </button>
+          <h2
+            id="modal-heading-01"
+            class="slds-text-heading_medium slds-hyphenate slds-text-color_weak"
+          >
+            Potential Duplicate Records
+          </h2>
+        </header>
+        <lightning-card
+          title="Duplicate Comparison"
+          icon-name="standard:account"
+        >
+          <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+            <thead>
+              <tr>
+                <th>Field Name</th>
+                <template
+                  for:each={namesOfAccount}
+                  for:item="record"
+                  key={record}
+                >
+                  <th key={record}>{record}</th>
+                </template>
+              </tr>
+            </thead>
+            <tbody>
+              <template
+                for:each={tablewrp}
+                for:item="record"
+                key={record.fieldName}
+                for:index="index"
+              >
+                <!-- <lightning-radio-group name="radioGroup"  key={record.fieldName} type="radio"> -->
+
+                <tr key={record.fieldName}>
+                  <td scope="col">{record.fieldName}</td>
+                  <template
+                    for:each={record.lstrecordDetails}
+                    for:item="recDetails"
+                  >
+                    <td key={recDetails} scope="col">
+                      <!-- {recDetails} -->
+                      <!-- <lightning-radio-group name="radioGroup" options={recDetails} 
+                                            value={record.isSelected} type="radio"></lightning-radio-group> -->
+                      <lightning-input
+                        type="radio"
+                        data-index={index}
+                        onchange={handleSingleCheckboxSelect}
+                        label={recDetails}
+                        data-label={recDetails}
+                        value={record.isSelected}
+                        data-id={recDetails}
+                        name={record.fieldName}
+                        data-field={record.fieldName}
+                        data-name="radio"
+                      > </lightning-input>
+                      <!-- <fieldset key={index} style="display: block; float: left;">
+                        <div class="slds-form-element__control">
+                            <span class="slds-radio">
+                                <input name="radiogroup" data-index={index} data-field={record.fieldName} data-id={recDetails} data-label={recDetails} id={index} type="radio" value={record.isSelected} onchange={handleSingleCheckboxSelect}/>
+                                <label class="slds-radio__label" for={index}>
+                                    <span class="slds-radio_faux"></span>
+                                    <span class="slds-form-element__label">{recDetails}</span>
+                                </label>
+                            </span>
+                        </div>
+                    </fieldset> -->
+                      
+                    </td>
+                  </template>
+                </tr>
+                <!-- </lightning-radio-group> -->
+              </template>
+            </tbody>
+          </table>
+
+          <!-- modal footer start-->
+          <footer class="slds-modal__footer">
+            <button
+              class="slds-button slds-button_neutral"
+              onclick={handleMerge}
+            >
+              Merge Records
+            </button>
+            <button
+              class="slds-button slds-button_neutral"
+              onclick={hideModalBox}
+            >
+              Cancel
+            </button>
+          </footer>
+        </lightning-card>
+      </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+  </template>
+  <!-- modal end -->
+</template>

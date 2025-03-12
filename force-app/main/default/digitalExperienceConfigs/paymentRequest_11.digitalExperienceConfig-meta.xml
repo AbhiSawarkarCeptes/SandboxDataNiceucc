@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigitalExperienceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>paymentRequest 1</label>
+    <site>
+        <urlPathPrefix>paymentRequest</urlPathPrefix>
+    </site>
+    <space>site/paymentRequest_11</space>
+</DigitalExperienceConfig>

@@ -1,0 +1,17 @@
+:host {
+  /* --slds-c-radio-color-background-checked: white;
+  --slds-c-radio-mark-color-foreground: #5867e8;
+  --slds-c-radio-margin-right: 5px ;
+  --slds-c-label-color-background-checked: green;
+  --slds-c-label-mark-color-foreground: yellow;
+  --slds-form-label-margin-right : 5px; */
+
+  /* --slds-c-radio-color-border */
+  --slds-c-input-spacing-horizontal-end : 5px;
+}
+.custom-radio {
+  margin-right: 10px; /* Adjust the value as needed */
+}
+.THIS.slds-radio_faux  {
+  margin-right : 5px;
+}

@@ -1,0 +1,39 @@
+.removeImage {
+    border-radius: 50%;
+    padding: 0px 4px;
+    margin: 8px 2px 8px 8px;
+    color: #fff;
+    background-color: #9f201b;
+    cursor: pointer;
+}
+.error-message {
+    color: red;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25;
+    margin-left: 13.75rem;
+}
+.green-flag,
+.red-flag {
+    font-size: 0.8rem;
+    color: green;
+    display: flex;
+    justify-content: center; /* Aligns horizontally */
+    height: 50%;           /* Adjust as needed for vertical centering */
+}
+
+.red-flag {
+    color: red;
+    display: flex;
+    justify-content: center; /* Aligns horizontally */
+    height: 50%;
+}
+
+.flag-container {
+    margin-left: 0.2rem;
+}
+.center-align {
+    display: flex;
+    justify-content: center; /* Aligns horizontally */
+    height: 50%;           /* Adjust as needed for vertical centering */
+}

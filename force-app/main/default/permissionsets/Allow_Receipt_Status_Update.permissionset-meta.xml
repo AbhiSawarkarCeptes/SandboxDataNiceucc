@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Allow_Receipt_Status_Update</name>
+    </customPermissions>
+    <description>Used in the Receipt_Status_Update flow to validate the user. Because the Record page layout isnt lightning hence had to be controlled in flow.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Allow Receipt Status Update</label>
+</PermissionSet>

@@ -1,0 +1,466 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <template if:true={isModalOpen}>
+        <!-- Modal/Popup Box LWC starts here -->
+        <lightning-record-edit-form object-api-name="Task__c" onsubmit={handleSubmit} onsuccess={handleSuccess}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <!-- Modal/Popup Box LWC header here -->
+                    <header class="slds-modal__header">
+                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+                            <lightning-icon icon-name="utility:close"
+                                alternative-text="close"
+                                variant="inverse"
+                                size="small" >
+                            </lightning-icon>
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Create Task</h2>
+                    </header>
+                    <!-- Modal/Popup Box LWC body starts here -->
+                    <div class="slds-modal__content" id="modal-content-id-1" style="padding:10px">
+                        <lightning-input-field field-name="Communication_Mode__c"> </lightning-input-field>
+                        <lightning-combobox style="margin-bottom: 10px;"
+                            required="true"
+                            label="Category"
+                            placeholder="Select Category"
+                            options={categoryoptions}
+                            onchange={handleCategoryChange}>
+                        </lightning-combobox>
+                        <template if:true={showLastContactedDate}>
+                            <lightning-input onchange={setLastContactedDate} type="date" min="1-01-01" max={todayDate} label="Last Contacted Date"></lightning-input>
+                        </template>
+                        <template if:true={showPTPDate}>
+                            <lightning-input-field field-name="PTP_Date__c" onchange={onPTPDateChange}> </lightning-input-field>
+                        </template>
+                        <template if:true={showAmount}>
+                            <lightning-input-field required={makeAmountReq} field-name="Amount__c"> </lightning-input-field>
+                        </template>
+                        <template if:true={showFollowUpDate}>
+                            <lightning-input-field required={makeFollowUpDateReq} field-name="Follow_up_Date__c"> </lightning-input-field>
+                        </template>
+                        <template if:true={showBankName}>
+                            <lightning-input-field required={makeBankNameReq} field-name="Bank_Name__c"> </lightning-input-field>
+                        </template>
+                        <template if:true={showValuation}>
+                            <lightning-input-field required={makeValueationReq} field-name="Valuation__c" onchange={onValuationChange}> </lightning-input-field>
+                        </template>
+                        <template if:true={showMortgageOfferLetter}>
+                            <lightning-input-field field-name="Mortgage_Offer_Letter__c" onchange={onMortgageOfferLetterChange}> </lightning-input-field>
+                        </template>
+                        <template if:true={showExpectedDateOfReceivingCheque}>
+                            <lightning-input-field field-name="Expected_Date_of_Receiving_Cheque__c"> </lightning-input-field>
+                        </template>
+                        <template if:true={showReasonForUnableToPay}>
+                            <lightning-input-field field-name="Reason_For_Unable_to_Pay__c"> </lightning-input-field>
+                        </template>
+                        <template if:true={showCustomerInterested}>
+                            <lightning-input-field field-name="Customer_Interested__c" onchange={onCustomerInterestedChange}> </lightning-input-field>
+                        </template>
+                        <template if:true={showAmountToBePaidInAdv}>
+                            <lightning-input-field field-name="Amount_To_Be_Paid_In_Advance__c" required="true"> </lightning-input-field>
+                        </template>
+                        <template if:true={showDiscountAmount}>
+                            <lightning-input-field required="true" field-name="Discount_Amount__c" onchange={onDiscountAmountChange}></lightning-input-field>
+                        </template>
+                        <template if:true={showDiscountOnSale}>
+                            <lightning-input-field field-name="Discount_On_Sale_Value_Without_VAT__c" disabled="true" value={discountPercentage}> </lightning-input-field>
+                        </template>
+                        <template if:true={showExpectedDateOfPayment}>
+                            <lightning-input-field field-name="Expected_Date_Of_The_Payment__c" required="true"> </lightning-input-field>
+                        </template>
+                        <lightning-input-field field-name="Notes__c"> </lightning-input-field>
+                        <lightning-input-field field-name="Booking__c" class="slds-hide" value={selectedBookingId}> </lightning-input-field>
+                        <lightning-input-field field-name="Category__c" class="slds-hide" value={selectedCategory}> </lightning-input-field>
+                    </div>
+                    <!-- Modal/Popup Box LWC footer starts here -->
+                    <footer class="slds-modal__footer">
+                        <button class="slds-button slds-button_neutral" onclick={closeModal} title="Cancel">Cancel</button>
+                        <button type="submit" class="slds-button slds-button_brand" onclick={submitDetails} title="OK">Save</button>
+                    </footer>
+                </div>
+            </section>
+        </lightning-record-edit-form>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <template if:true={isCallModalOpen}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-011" aria-modal="true" aria-describedby="modal-content-id-11" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeCallModal}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" ></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-011" class="slds-text-heading_medium slds-hyphenate">Please enter the mobile number.</h2>
+                </header>
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={closeCallModal} title="Close">Close</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <template if:true={isModalOpenCallLog}>
+        <!-- Modal/Popup Box LWC starts here Call Option -->
+        <lightning-record-edit-form record-id={newTaskId} object-api-name="Task__c" onsubmit={handleSubmit} onsuccess={handleSuccess}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <!-- Modal/Popup Box LWC header here -->
+                    <header class="slds-modal__header">
+                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                            title="Close" onclick={closeModal}>
+                            <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                                size="small">
+                            </lightning-icon>
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                        <h2 id="modal-heading-02" class="slds-text-heading_medium slds-hyphenate">Call Option</h2>
+                        {currentTime}
+                    </header>
+                    <!-- Modal/Popup Box LWC body starts here -->
+                    <div class="slds-modal__content" id="modal-content-id-2" style="padding:10px">
+                        <lightning-input-field field-name="Communication_Mode__c" disabled> </lightning-input-field>
+                        <lightning-combobox style="margin-bottom: 10px;" required="true" label="Category"
+                            placeholder="Select Category" options={categoryoptions} onchange={handleCategoryChange}>
+                        </lightning-combobox>
+                        <template if:true={showLastContactedDate}>
+                            <lightning-input onchange={setLastContactedDate} type="date" min="1-01-01" max={todayDate} label="Last Contacted Date"></lightning-input>
+                        </template>
+                        <template if:true={showPTPDate}>
+                            <lightning-input-field field-name="PTP_Date__c" onchange={onPTPDateChange}>
+                            </lightning-input-field>
+                        </template>
+                        <template if:true={showAmount}>
+                            <lightning-input-field required={makeAmountReq} field-name="Amount__c">
+                            </lightning-input-field>
+                        </template>
+                        <template if:true={showFollowUpDate}>
+                            <lightning-input-field required={makeFollowUpDateReq} field-name="Follow_up_Date__c">
+                            </lightning-input-field>
+                        </template>
+                        <template if:true={showBankName}>
+                            <lightning-input-field required={makeBankNameReq} field-name="Bank_Name__c">
+                            </lightning-input-field>
+                        </template>
+                        <template if:true={showValuation}>
+                            <lightning-input-field required={makeValueationReq} field-name="Valuation__c"
+                                onchange={onValuationChange}> </lightning-input-field>
+                        </template>
+                        <template if:true={showMortgageOfferLetter}>
+                            <lightning-input-field field-name="Mortgage_Offer_Letter__c"
+                                onchange={onMortgageOfferLetterChange}> </lightning-input-field>
+                        </template>
+                        <template if:true={showExpectedDateOfReceivingCheque}>
+                            <lightning-input-field field-name="Expected_Date_of_Receiving_Cheque__c">
+                            </lightning-input-field>
+                        </template>
+                        <template if:true={showReasonForUnableToPay}>
+                            <lightning-input-field field-name="Reason_For_Unable_to_Pay__c"> </lightning-input-field>
+                        </template>
+                        <template if:true={showCustomerInterested}>
+                            <lightning-input-field field-name="Customer_Interested__c"
+                                onchange={onCustomerInterestedChange}> </lightning-input-field>
+                        </template>
+                        <template if:true={showAmountToBePaidInAdv}>
+                            <lightning-input-field field-name="Amount_To_Be_Paid_In_Advance__c" required="true">
+                            </lightning-input-field>
+                        </template>
+                        <template if:true={showDiscountAmount}>
+                            <lightning-input-field required="true" field-name="Discount_Amount__c"
+                                onchange={onDiscountAmountChange}></lightning-input-field>
+                        </template>
+                        <template if:true={showDiscountOnSale}>
+                            <lightning-input-field field-name="Discount_On_Sale_Value_Without_VAT__c" disabled="true"
+                                value={discountPercentage}> </lightning-input-field>
+                        </template>
+                        <template if:true={showExpectedDateOfPayment}>
+                            <lightning-input-field field-name="Expected_Date_Of_The_Payment__c" required="true">
+                            </lightning-input-field>
+                        </template>
+                        <lightning-input-field field-name="Notes__c"> </lightning-input-field>
+                        <lightning-input-field field-name="Booking__c" class="slds-hide" value={selectedBookingId}>
+                        </lightning-input-field>
+                        <lightning-input-field field-name="Category__c" class="slds-hide" value={selectedCategory}>
+                        </lightning-input-field>
+                    </div>
+                    <!-- Modal/Popup Box LWC footer starts here -->
+                    <footer class="slds-modal__footer">
+                        <button class="slds-button slds-button_neutral" onclick={closeModal}
+                            title="Cancel">Cancel</button>
+                        <button type="submit" class="slds-button slds-button_brand" onclick={submitDetails}
+                            title="OK">Save</button>
+                    </footer>
+                </div>
+            </section>
+        </lightning-record-edit-form>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <div style="background-color:white;min-height:100%;padding:20px">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_2-of-12" style="margin-top:-15px;font-size:12px;">
+                <template if:true={showSearch}>
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+                            <lightning-icon style="margin-top: 10px" size="x-small" class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" icon-name="utility:search"></lightning-icon>
+                            <lightning-input data-id="searchInput" style="height:33px;" type="text" placeholder="Unit / Booking / Customer" onchange={search}></lightning-input>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+        <center>
+        <!-- <lightning-button label="Submit" variant="brand" class="submitButton" onclick={handleSubmit}></lightning-button> -->
+        </center>
+        <template if:true={showSection}>
+            <div style="margin-top:20px; z-index: 2; position: relative;">
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-5">
+                        <lightning-combobox
+                            name="project"
+                            label="Project"
+                            placeholder="Select Project"
+                            options={projectoptions}
+                            onchange={handleProjectChange}>
+                        </lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_1-of-5">
+                        <lightning-combobox
+                            value={selectedTower}
+                            name="building"
+                            label="Building"
+                            placeholder="Select Building"
+                            options={toweroptions}
+                            onchange={handleTowerChange}>
+                        </lightning-combobox>
+                    </div>
+                    <template if:false={isAdvance}>
+                        <template if:false={isFollowUp}>
+                            <div class="slds-col slds-size_2-of-5 slds-m-top_large">
+                            <lightning-button-group>
+                                <lightning-button label="All" onclick={handleAllBucket}></lightning-button>
+                                <lightning-button label="< 30 Days" variant="brand" class="greenbutton" onclick={handleGreenBucket}></lightning-button>
+                                <lightning-button label="31-60 Days" variant="brand" class="yellowbutton" onclick={handleYellowBucket}></lightning-button>
+                                <lightning-button label="61-90 Days" variant="brand" class="amberbutton" onclick={handleAmberBucket}></lightning-button>
+                                <lightning-button label=">91 Days" variant="brand" class="redbutton" onclick={handleRedBucket}></lightning-button>
+                                
+                            </lightning-button-group>
+                    </div>
+                        </template>
+                    </template>
+                    <div class="slds-col slds-size_1-of-5">
+                        <template if:true={isCategories}>
+                            <lightning-combobox
+                                value={selectedTaskCategory}
+                                name="category"
+                                label="Category"
+                                placeholder="Select Category"
+                                options={taskcategoryoptions}
+                                onchange={handleTaskCategoryChange}>
+                            </lightning-combobox>
+                        </template>
+                    </div>
+                </div>
+            </div>
+            <template if:false={isFollowUp}>
+                <div class="fixTableHead">
+                    <!-- <c-paginator records={bookingData} 
+                                total-records={bookingData.length} 
+                                show-search-box="true" 
+                                if:true={bookingData}
+                                onpaginatorchange={handlePaginatorChange}>
+                    </c-paginator> -->
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th class="" scope="col" style="width:4%;">
+                                    <div style="padding-top:5px;padding-bottom:5px" class="slds-truncate" title="Unit Number">Unit Number</div>
+                                </th>
+                                <th class="" scope="col" style="width:4%">
+                                    <div class="slds-truncate" title="Booking Id">Booking Id</div>
+                                </th>
+                                <th class="" style="width:4%">
+                                    <div class="slds-truncate" title="Customer Name">Customer Name</div>
+                                </th>
+                                <th class="" scope="col" style="width:4%">
+                                    <div class="slds-truncate" title="Booking Date">Booking Date</div>
+                                </th>
+                                <th class="" scope="col" style="width:6%">
+                                    <div class="slds-truncate" title="Sale Value">Sale Value</div>
+                                </th>
+                                <th class="" scope="col" style="width:6%">
+                                    <div class="slds-truncate" title="Milestone Due">Milestone Due</div>
+                                </th>
+                                <th class="slds-cell-wrap" scope="col" style="width:12%">
+                                    <div class="slds-line-clamp" title="Collected Amount">Collected Amount</div>
+                                </th>
+                                <template if:true={isGrossAll}>
+                                    <th class="" scope="col" style="width:2%">
+                                        <div class="slds-truncate" title="Balance">Balance</div>
+                                    </th>
+                                </template>
+                                <template if:true={isGrossAll}>
+                                    <th class="" scope="col" style="width:2%">
+                                        <div class="slds-truncate" title="Age">Age</div>
+                                    </th>
+                                </template>
+                                <th class="" scope="col" style="width:2%">
+                                    <div class="slds-truncate" title="SOA">SOA</div>
+                                </th>
+                                <th class="" scope="col" style="width:3%">
+                                    <div class="slds-truncate" title="Call Option">Call Option</div>
+                                </th>
+                                <th class="" scope="col" style="width:3%">
+                                    <div class="slds-truncate" title="Task Update">Task Update</div>
+                                </th>
+                                <!-- <th class="" scope="col" style="width:4%">
+                                    <div class="slds-truncate" title="Status">Status</div>
+                                </th> -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="slds-line-height_reset" style="font-size: 14px;">
+                                <th class="" scope="col" style="width:4%;">
+                                    <div style="padding-top:5px;padding-bottom:5px" class="slds-truncate" title="Unit Number"><b>{totalUnits}</b></div>
+                                </th>
+                                <th class="" scope="col" style="width:4%">
+                                    <div class="slds-truncate" title="Booking Id"></div>
+                                </th>
+                                <th class="" style="width:4%">
+                                    <div class="slds-truncate" title="Customer Name"></div>
+                                </th>
+                                <th class="" scope="col" style="width:4%">
+                                    <div class="slds-truncate" title="Booking Date"></div>
+                                </th>
+                                <th class="" scope="col" style="width:6%">
+                                    <div class="slds-truncate" title="Sale Value"><b>{totalSalValue}</b></div>
+                                </th>
+                                <th class="" scope="col" style="width:6%">
+                                    <div class="slds-truncate" title="Milestone Due"><b>{totalMilestoneDue}</b></div>
+                                </th>
+                                <th class="slds-cell-wrap" scope="col" style="width:12%">
+                                    <div class="slds-line-clamp" title="Collected Amount"><b>{totalCollectionAmount}</b></div>
+                                </th>
+                                <template if:true={isGrossAll}>
+                                    <th class="" scope="col" style="width:2%">
+                                        <div class="slds-truncate" title="Balance"><b>{totalBalance}</b></div>
+                                    </th>
+                                </template>
+                                <template if:true={isGrossAll}>
+                                    <th class="" scope="col" style="width:2%">
+                                        <div class="slds-truncate" title="Age"></div>
+                                    </th>
+                                </template>
+                                <th class="" scope="col" style="width:2%">
+                                    <div class="slds-truncate" title="SOA"></div>
+                                </th>
+                                <th class="" scope="col" style="width:3%">
+                                    <div class="slds-truncate" title="Call Option"></div>
+                                </th>
+                                <th class="" scope="col" style="width:3%">
+                                    <div class="slds-truncate" title="Task Update"></div>
+                                </th>
+                                <!-- <th class="" scope="col" style="width:4%">
+                                    <div class="slds-truncate" title="Status"></div>
+                                </th> -->
+                            </tr>
+                            <template for:each={bookingData} for:item="b">
+                                <tr key={b.Id} class="slds-hint-parent" style={b.bucketColor}>
+                                    <th scope="row" style="width:4%">
+                                        <div class="slds-truncate">
+                                            <a class="anchor" href={b.unitLink} target="_blank">{b.House_Unit_No__c}</a>
+                                        </div>
+                                    </th>
+                                    <td style="width:4%">
+                                        <div class="slds-truncate">
+                                            <a class="anchor" href={b.bookingLink} target="_blank">{b.Name}</a>
+                                        </div>
+                                    </td>
+                                    <td style="width:4%" class="slds-cell-wrap" title={b.PropStrength__Primary_Applicant_Name__c}>
+                                        <div class="slds-line-clamp">{b.PropStrength__Primary_Applicant_Name__c}</div>
+                                    </td>
+                                    <td style="width:4%">
+                                        <div class="slds-truncate">
+                                            {b.PropStrength__Booking_Date__c}
+                                        </div>
+                                    </td>
+                                    <td style="width:6%">
+                                        <div class="slds-truncate">
+                                            {b.PropStrength__Revised_Total_Sales_Consideration__c}
+                                        </div>
+                                    </td>
+                                    <td style="width:6%">
+                                        <div class="slds-truncate">
+                                            {b.PropStrength__Total_Payment_Due__c}
+                                        </div>
+                                    </td>
+                                    <td style="width:12%">
+                                        <div class="slds-truncate">
+                                            {b.PropStrength__Total_Payment_Received__c}
+                                        </div>
+                                    </td>
+                                    <td style="width:12%">
+                                        <div class="slds-truncate">
+                                            {b.PropStrength__Outstanding_Balance__c}
+                                        </div>
+                                    </td>
+                                    <template if:true={isGrossAll}>
+                                        <td style="width:2%">
+                                            <div class="slds-truncate">
+                                                {b.age}
+                                            </div>
+                                        </td>
+                                    </template>
+                                    <td style="width:2%">
+                                        <div class="slds-truncate" style="align: center;">
+                                            <a href={b.soalink} target="_blank">
+                                                <lightning-icon icon-name="standard:document" alternative-text="SOA" title="SOA" size="small"></lightning-icon>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td style="width:3%">
+                                        <div class="slds-truncate" style="align:center;" data-id={b.Id}>
+                                            <a type={b.PropStrength__Applicant_Mobile__c} id={b.Id} data-id={b.Id}
+                                                phone-number={b.PropStrength__Applicant_Mobile__c} onclick={CallOption}
+                                                name={b.saleValue} title={b.category} class="click-to-dial">
+                                                <div class={b.Id}>
+                                                    <lightning-icon icon-name="standard:voice_call" alternative-text="Call"
+                                                        title="Call" size="small" data-id={b.Id}
+                                                        phone-number={b.PropStrength__Applicant_Mobile__c}>
+                                                    </lightning-icon>
+                                                    <lightning-click-to-dial class="clickToDial" value={b.PropStrength__Applicant_Mobile__c}
+                                                        style="visibility: hidden" record-id={b.Id} data-id={b.Id}
+                                                        phone-number={b.PropStrength__Applicant_Mobile__c}>
+                                                    </lightning-click-to-dial>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td style="width:3%">
+                                        <div class="slds-truncate" style="text-align: center;">
+                                            <a type={b.due} id={b.Id} onclick={createTask} name={b.saleValue} title={b.category}>
+                                                <lightning-icon icon-name="standard:task" alternative-text="Create Task" title="Create Task" size="small"></lightning-icon>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <!-- <td style="width:2%">
+                                        <div class="slds-truncate">
+                                            {b.termStatus}
+                                        </div>
+                                    </td> -->
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </template>
+        </template>
+    </div>
+</template>

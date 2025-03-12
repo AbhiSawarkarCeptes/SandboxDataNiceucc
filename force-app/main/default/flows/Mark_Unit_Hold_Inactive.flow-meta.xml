@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Mark Unit Hold Inactive {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Mark Unit Hold Inactive</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>update_record</name>
+        <label>update record</label>
+        <locationX>544</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>
+                <stringValue>Inactive</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>360</locationX>
+        <locationY>46</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Unit_Hold_Requested__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Unit_Hold__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <name>mark_it_inactive_1_day_after</name>
+            <connector>
+                <targetReference>update_record</targetReference>
+            </connector>
+            <label>mark it inactive 1 day after</label>
+            <offsetNumber>1</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <timeSource>RecordTriggerEvent</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

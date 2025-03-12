@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <description>Seller Representative</description>
+        <name>Assign_Seller_Representative</name>
+        <label>Assign Seller Representative</label>
+        <locationX>314</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Seller_Representative__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Sobha_Default_Settings.Booking_Form_Seller_Representative__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.CRM_Seller_representative__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Label.BookingDefaultCRMSellerRepresentative</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Siniya CRM Seller and Seller Representative</description>
+        <name>Siniya_CRM_Seller_and_Seller_Representative</name>
+        <label>Assign Siniya CRM Seller and Seller Representative</label>
+        <locationX>50</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Seller_Representative__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Sobha_Default_Settings.BookingForm_Siniya_Seller_Representative__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.CRM_Seller_representative__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Label.BookingSiniyaCRMSellerRepresentative</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Siniya Project</description>
+        <name>Siniya_Project</name>
+        <label>Siniya Project?</label>
+        <locationX>182</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Seller_Representative</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Siniya_Project</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Project__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sobha Siniya Island</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Siniya_CRM_Seller_and_Seller_Representative</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Update Seller Representative on Booking {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Seller Representative on Booking</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Sobha_Default_Settings</name>
+        <label>Sobha Default Settings</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Siniya_Project</targetReference>
+        </connector>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Shoba_Default_Settings__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Sobha_Default_Settings</targetReference>
+        </connector>
+        <object>Booking__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>SellerRepresentativeId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

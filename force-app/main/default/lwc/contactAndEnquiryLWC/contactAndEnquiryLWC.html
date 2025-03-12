@@ -1,0 +1,161 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder" >
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <article class="slds-card" style={cardStyle}>
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__body">
+                <div
+                    class="slds-p-around_xx-small">
+                    <center><img src={logoImg} width="50%"></center>
+                </div>
+            
+                <div style="padding:0rem 2rem 0rem 2rem;margin-top: 20px;">
+                <span style=" color:white; font-weight:bold;">We are glad to assist you, tell us your requirements, or send us your comments and suggestions for our improvement.</span><br/><br/><br/>
+                <lightning-record-edit-form object-api-name="Contact">
+                    <div class="slds-notify slds-notify_alert slds-alert_error slds-p-around_xx-small"
+                            role="alert" if:true={displayErrorMessage} style="border: 0.2rem solid red; margin-bottom: 5rem; background: black; color: white; border-radius: 0.8rem; font-weight: bold; box-shadow: 0 0px 42px red;">
+                            {errorMessage}
+                        </div>
+                        <div class="slds-notify slds-notify_alert slds-alert_success slds-p-around_xx-small"
+                            role="alert" if:true={displaysuccessMessage} style="border: 0.2rem solid green; margin-bottom: 5rem; background: black; color: white; border-radius: 0.8rem; font-weight: bold; box-shadow: 0 0px 42px green;">
+                            <span class="slds-assistive-text">Success</span>
+                            <h2 class="slds-text-heading_small">{successMessage}</h2>
+                        </div>
+                      <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+                            <span>
+                                <label style="margin-right: 227px; color:white; font-weight:bold;">First Name </label>
+                                <lightning-input value={firstName} onchange={handleFirstNameChange}></lightning-input>
+                            </span>
+                        </div><br/>
+                        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+                            <span>
+                                <label style="margin-right: 227px; color:white; font-weight:bold;">Last Name <span style="color:red;">*</span></label>
+                                <lightning-input value={lastName} onchange={handleLastNameChange}></lightning-input>
+                            </span>
+                        </div><br/>
+                        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+                            <span>
+                                <label style="margin-right: 248px; color:white; font-weight:bold;">Phone <span style="color:red;">*</span></label>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-3">
+                                        <span><lightning-combobox class="slds-combobox__input" value={selectedCountry} options={countryOptions} onchange={handleCountryChange}></lightning-combobox></span>
+                                    </div>
+                                    <div class="slds-col slds-size_2-of-3">
+                                        <span><lightning-input value={phone} onchange={handlePhoneChange}></lightning-input></span>
+                                    </div>
+                                </div>
+                            </span>
+                        </div><br/>
+                        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+                            <span>
+                                <label style="margin-right: 252px; color:white; font-weight:bold;">Email <span style="color:red;">*</span></label>
+                                <lightning-input value={email} onchange={handleEmailChange}></lightning-input>
+                            </span>
+                        </div><br/> 
+                        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+                            <span>
+                                <label style="margin-right: 252px; color:white; font-weight:bold;">Type of Enquiry<span style="color:red;">*</span></label>
+                                <lightning-combobox name="progress" value={enqType} placeholder="Select Type of Enquiry" options={optionsTypeOfEnquiry} onchange={handleChangeET} ></lightning-combobox>
+                            </span>
+                        </div><br/>    
+                        <template if:true={showBrokerDetails}>
+                            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+                                <span>
+                                    <label style="margin-right: 252px; color:white; font-weight:bold;" for="lookupInput">Broker Account<span style="color:red;">*</span></label>
+                                    <lightning-input
+                                    type="search"
+                                    name="lookupInput"
+                                    placeholder="Search Broker Account.."
+                                    value={searchKeyBrkAcc}
+                                    onchange={handleSearchKeyChange}
+                                    onclick={showDialog}
+                                    >
+                                </lightning-input>
+                                <div if:true={showResults} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                                    <div id="listbox-unique-id" role="listbox">
+                                        <lightning-icon icon-name="utility:close" size="xx-small" onclick={closeDropList} style="position: absolute;right:32px;border:groove; text-wrap: nowrap;"></lightning-icon>
+                                        <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation">
+                                            <template for:each={searchResults} for:item="result">
+                                                <li key={result.Id} role="presentation" class="slds-listbox__item liBox" >
+                                                    <span role="option" onclick={handleResultClick} title={result.Id} data-id={result.Name} style="display: block !important;">
+                                                        <lightning-icon icon-name="custom:custom24" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result.Name}
+                                                    </span>
+                                                </li>
+                                            </template>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </span>
+                            </div><br/>  
+                            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+                                <span>
+                                    <label style="margin-right: 252px; color:white; font-weight:bold;" for="lookupInput">Broker Contact<span style="color:red;">*</span></label>
+                                    <lightning-input
+                                    type="search"
+                                    name="lookupInput"
+                                    placeholder="Search Broker Contact.."
+                                    value={searchKeyBrkCont}
+                                    onchange={handleContSearchKeyChange}
+                                    onclick={showContDialog}
+                                    disabled={contactInput}
+                                    >
+                                </lightning-input>
+                                <div if:true={showContactResults} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                                    <div id="listbox-unique-id1" role="listbox">
+                                        <lightning-icon icon-name="utility:close" size="xx-small" onclick={closeContactDropList} style="position: absolute;right:32px;border:groove; text-wrap: nowrap;"></lightning-icon>
+                                        <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation">
+                                            <template for:each={searchContactResults} for:item="result">
+                                                <li key={result.Id} role="presentation" class="slds-listbox__item liBox" >
+                                                    <span role="option" onclick={handleContactResultClick} title={result.Id} data-id={result.Name} style="display: block !important;">
+                                                        <lightning-icon icon-name="custom:custom24" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result.Name}
+                                                    </span>
+                                                </li>
+                                            </template>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </span>
+                            </div><br/>  
+                        </template>  
+                        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+                            <span>
+                                <label style="margin-right: 252px; color:white; font-weight:bold;">Enquiry Source<span style="color:red;">*</span></label>
+                                <lightning-combobox name="progress" value={enqSource} placeholder="Select Enquiry Source" options={optionsEnquirySource} onchange={handleChangeSrc} ></lightning-combobox>
+                            </span>
+                        </div><br/>      
+                        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+                            <span>
+                                <label style="margin-right: 252px; color:white; font-weight:bold;">Preferred Language</label>
+                                <lightning-combobox name="progress" value={prefLang} placeholder="Select Preferred Language" options={options} onchange={handleChangePL} ></lightning-combobox>
+                            </span>
+                        </div><br/>    
+                        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+                            <span style="color:white; font-weight:bold;">
+                                Send us your property enquiry or your feedback on our services.
+                            </span>
+                        </div><br/>
+                        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1"
+                            style="margin-bottom: 25px;">
+                            <span>
+                                <label style="margin-right: 248px; color:white; font-weight:bold;">Enquiry Feedback <span style="color:red;">*</span></label>
+                                <lightning-textarea value={description} onchange={handleDescChange}></lightning-textarea>
+                            </span>
+                        </div><br/><br/><br/><br/>
+                        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+                            <center><button class="slds-button"
+                                style="border-radius:0.8rem; border:0.1rem solid #e7caa3; background-color:black; color:#e7caa3; font-size:1rem; font-weight:bold; padding:0.3rem 2rem;"
+                                onclick={handleSave}>Submit</button></center>
+                        </div>
+                   
+                </lightning-record-edit-form>
+            </div>
+        
+                </div>
+            </header>
+        </div>
+    </article>
+</template>

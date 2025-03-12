@@ -1,0 +1,27 @@
+.ulContainer { 
+    border: 0.05rem solid black;
+    padding: 0.15rem;
+    text-indent: 0.25rem;
+    border-radius: 0.2rem;
+    line-height: 2rem;
+    z-index: 4 !important;
+}
+.liBox:hover {
+    background-color: azure;
+    cursor: pointer;
+}
+.liBox  {
+    background-color:white;
+    cursor: pointer;
+}
+.formElement{
+    position: relative;
+    display: inline-flex;
+    min-width:-webkit-fill-available;
+}
+.inputField { 
+    width: 20rem;
+}
+.lightning-input .slds-form-element .slds-form-element__label:empty {
+    display: none !important;
+}

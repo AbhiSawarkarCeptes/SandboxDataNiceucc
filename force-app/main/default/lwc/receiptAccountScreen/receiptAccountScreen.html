@@ -1,0 +1,86 @@
+<template>
+    <lightning-card title="Receipts with rejected Status">
+        <template if:true={isSaveProgress}>
+            <div class="slds-align_absolute-center">
+                <div style="position: relative;display: inline-block;width: 80px;height: 80px;">
+                    <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                </div>
+            </div>
+        </template>
+        <template if:false={isSaveProgress}>
+            <template if:true={hasReceiptsRejcted}>
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                    <thead>
+                        <tr>
+                            <template for:each={columns} for:item="column">
+                                <th key={column.fieldName} scope="col">{column.label}</th>
+                            </template>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody>
+                        <template for:each={recordsToDisplay} for:item="receipt">
+                            <tr key={receipt.Id}>
+                                <template for:each={columns} for:item="column">
+                                    <td key={column.fieldName}>
+                                        <template if:true={column.isUrl}>
+                                            <template if:true={column.isName}>
+                                             <a href={receipt.NameUrl}>{receipt.Name}</a>
+                                            </template>
+                                            <template if:false={column.isName}>
+                                             <a href={receipt.PaymentRequestUrl}>{receipt.Payment_Request__r.Name}</a>
+                                            </template>
+                                        </template>
+                                        <template if:false={column.isUrl}>
+                                            <template if:true={column.editable}>
+                                                <div>
+                                                    <lightning-input type="text" data-idx={receipt.Index} value={receipt.Audit_Submitter_s_Comments__c} data-field-name={column.fieldName} data-record-id={receipt.Id} onchange={handleCommentChange}></lightning-input>
+                                                </div>
+                                            </template>
+                                            <template if:false={column.editable}>
+                                                <c-receipt-field-value
+                                                        receipt-id={receipt.Id}
+                                                        field-name={column.fieldName}
+                                                        receipt-data={receipts}>
+                                                    </c-receipt-field-value>
+                                               <!-- <lightning-record-view-form record-id={receipt.Id} object-api-name="Receipt__c">
+                                                   <lightning-output-field variant="label-hidden" field-name={column.fieldName}></lightning-output-field>
+                                                </lightning-record-view-form>-->
+                                            </template>
+                                        </template>
+                                    </td>
+                                </template>
+                                <td>
+                                    <lightning-button variant="success" label="Resubmit" data-idx={receipt.Index} title="Resubmit action" onclick={handleAction} class="slds-m-left_x-small"></lightning-button>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+                <!--PAGE NAVIGATION-->
+                <div>
+                    <div class="slds-align_absolute-center" style="height:5rem">
+                        <lightning-button disabled={bDisableFirst} icon-name="utility:jump_to_left" label="First" class="slds-p-horizontal_x-small" alternative-text="first page" onclick={firstPage}></lightning-button>
+                        <lightning-button disabled={bDisableFirst} icon-name="utility:chevronleft" label="Previous" alternative-text="Previous" onclick={previousPage}></lightning-button>
+                        &nbsp;
+                        <!-- <span class="slds-badge">Showing {pageNumber} &nbsp;of&nbsp; {totalPages} &nbsp;&nbsp;Page(s)</span> -->
+                        &nbsp;
+                        <lightning-button disabled={bDisableLast} icon-name="utility:chevronright" label="Next" alternative-text="Next" onclick={nextPage} class="slds-p-horizontal_x-small" icon-position="right"></lightning-button>
+                        <lightning-button disabled={bDisableLast} icon-name="utility:jump_to_right" label="Last" alternative-text="last page" onclick={lastPage} icon-position="right"></lightning-button>
+                    </div>
+                    <!--TOTAL RECORDS-->
+                    <!-- <div class="slds-clearfix">
+                        <div class="slds-float_right">
+                            <span class="slds-badge"> Total Records: {totalRecords}</span>
+                        </div>
+                    </div> -->
+                </div>
+                <!--EOF Pagination -->
+            </template>
+            <template if:false={hasReceiptsRejcted}>
+                <div class="slds-text-align_center">No receipts found which are Rejected.</div>
+            </template>
+        </template>
+    </lightning-card>
+</template>

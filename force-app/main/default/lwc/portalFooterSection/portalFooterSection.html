@@ -1,0 +1,170 @@
+<template>
+	<div class="footer">
+		<div class="footer-content">
+			<template if:true={showFooterFlag}>
+				<div class="footer-link announcement">
+					<a href="/s/">
+						<p>Announcements</p>
+						<img src={announcement_icon} />
+					</a>
+				</div>
+				<template if:true={channelFlag}>
+					<section class="channel-popover-style slds-nubbin_bottom-left">
+						<div class="channel-popover-body slds-p-around_medium">
+							<div class="header-style slds-m-bottom_x-small slds-clearfix">
+								{offerHeader}
+								<lightning-button-icon icon-name="utility:close" variant="container" size="small"
+									class="slds-float_right" data-action="channel" onclick={handlePopOver}
+									alternative-text="Close"></lightning-button-icon>
+							</div>
+							<div class="popover-sub-body">
+								<template if:true={offerDataLoaded}>
+									<template for:each={offers.channelPartnerOffers} for:item="channelData"
+										for:index="index">
+										<div key={channelData.Id} class="channel-popover-card">
+											<!--<img src={channelData.coverImg} height="130px">-->
+											<lightning-formatted-rich-text onclick={handleImageClick} class="imgwidth"
+											    data-name={channelData.Offer_Name__c}
+												data-image={channelData.Offer_Image__c}
+												value={channelData.Offer_Image__c}>
+											</lightning-formatted-rich-text>
+											<div class="channelHeader">{channelData.Offer_Name__c}</div>
+											<div class="channelDescription" title={channelData.Offer_Description__c}>
+												{channelData.Offer_Description__c}</div>
+											<div class="channelDate">
+												<lightning-formatted-date-time value={channelData.CreatedDate}
+													year="numeric" month="numeric" day="numeric" hour="2-digit"
+													minute="2-digit">
+												</lightning-formatted-date-time>
+											</div>
+										</div>
+									</template>
+									<template for:each={offers.customerOffers} for:item="channelData" for:index="index">
+										<div key={channelData.Id} class="channel-popover-card">
+											<!--<img src={channelData.coverImg} height="130px">-->
+											<lightning-formatted-rich-text onclick={handleImageClick} class="imgwidth"
+											    data-name={channelData.Offer_Name__c}
+												data-image={channelData.Offer_Image__c}
+												value={channelData.Offer_Image__c}>
+											</lightning-formatted-rich-text>
+											<div class="channelHeader">{channelData.Offer_Name__c}</div>
+											<div class="channelDescription">{channelData.Offer_Description__c}</div>
+											<div class="channelDate">
+												<lightning-formatted-date-time value={channelData.CreatedDate}
+													year="numeric" month="numeric" day="numeric" hour="2-digit"
+													minute="2-digit">
+												</lightning-formatted-date-time>
+											</div>
+										</div>
+									</template>
+								</template>
+							</div>
+						</div>
+					</section>
+				</template>
+				<div class="footer-link channel-offer" onclick={handlePopOver} data-action="channel">
+					<h6>{offerHeader}</h6>
+					<div class="scrolling-text-container">
+						<div class="scrolling-text">
+							<template if:true={offerDataLoaded}>
+								<template for:each={offers.channelPartnerOffers} for:item="channelData"
+									for:index="index">
+									<h4 key={channelData.Id}>{channelData.Offer_Name__c}</h4>
+								</template>
+								<template for:each={offers.customerOffers} for:item="channelData" for:index="index">
+									<h4 key={channelData.Id}>{channelData.Offer_Name__c}</h4>
+								</template>
+							</template>
+						</div>
+					</div>
+				</div>
+				<template if:true={notificationFlag}>
+					<section class="notifications-popover-style slds-nubbin_bottom-left">
+						<div class="notifications-popover-body slds-p-around_x-small">
+							<div
+								class="header-style slds-p-bottom_small slds-p-top_xx-small slds-m-bottom_x-small slds-clearfix">
+								Your Notifications ({totalNotifications})
+								<lightning-button-icon icon-name="utility:close" variant="container" size="small"
+									class="slds-float_right" data-action="notifications" onclick={handlePopOver}
+									alternative-text="Close"></lightning-button-icon>
+							</div>
+							<div class="popover-sub-body">
+								<template for:each={notificationsData} for:item="notificationData" for:index="index">
+									<div key={notificationData} class="slds-grid slds-wrap notifications-popover-card">
+										<template if:false={notificationData.isIcon}>
+											<div class={notificationData.className}>
+												{notificationData.status}
+											</div>
+										</template>
+										<template if:true={notificationData.isIcon}>
+											<div class="slds-col slds-size_3-of-12 status-style">
+												<lightning-icon icon-name={notificationData.iconName} size="xx-small"
+													alternative-text={notificationData.iconText}
+													title={notificationData.iconText}></lightning-icon>
+											</div>
+										</template>
+										<div class="slds-col slds-size_8-of-12 notification-middle-card-body">
+											<template if:true={notificationData.header}>
+												<div class="ntfn-header slds-p-bottom_xx-small">
+													{notificationData.header}
+												</div>
+											</template>
+											<div class="ntfn-desc slds-p-bottom_xx-small">{notificationData.description}
+											</div>
+											<div class="ntfn-date">{notificationData.dateStr}</div>
+										</div>
+										<div class="slds-col slds-size_1-of-12 ntfn-open">
+											<template if:false={notificationData.isOpened}>
+												<div></div>
+											</template>
+										</div>
+									</div>
+								</template>
+								<template for:each={brFileHistory} for:item="fileHistory" for:index="index">
+									<div key={fileHistory.recordId}
+										class="slds-grid slds-wrap notifications-popover-card">
+										<template if:false={fileHistory.isExpired}>
+											<div class="slds-col slds-size_3-of-12 expired-text">
+												Expired
+											</div>
+										</template>
+										<template if:true={fileHistory.isExpired}>
+											<div class="slds-col slds-size_3-of-12 about-expired-text">
+												About to Expire
+											</div>
+										</template>
+										<div class="slds-col slds-size_8-of-12">
+											<div class="expired-filename slds-p-bottom_xx-small">{fileHistory.fileType}
+											</div>
+											<div class="expired-date">{fileHistory.expiryDate}</div>
+										</div>
+									</div>
+								</template>
+							</div>
+						</div>
+					</section>
+				</template>
+				<div class="footer-link notification" onclick={handlePopOver} data-action="notifications">
+					<p>Notification</p>
+					<template if:true={showTotalNotificationCount}><span
+							class="total-count">{totalNotifications}</span></template>
+					<img src={notification_icon} />
+				</div>
+				<div class="footer-link calendar">
+
+					<p>{dateMonth}</p>
+					<h4>{dateDay}</h4>
+				</div>
+				<div class="footer-link arrow" onclick={handleFooterBar} data-action="down"><img
+						src={footerDownArrow_icon} alt="Up Arrow" />
+				</div>
+			</template>
+			<template if:false={showFooterFlag}>
+				<div class="footer-link arrow" onclick={handleFooterBar} data-action="up"><img src={footerUpArrow_icon}
+						alt="Down Arrow" />
+				</div>
+			</template>
+		</div>
+
+	</div>
+</template>

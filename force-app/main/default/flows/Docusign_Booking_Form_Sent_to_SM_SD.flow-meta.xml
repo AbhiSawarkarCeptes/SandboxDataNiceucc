@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_SM_SD_Envelope_Sent_Notification</name>
+        <label>Send SM SD Envelope Sent Notification</label>
+        <locationX>614</locationX>
+        <locationY>444</locationY>
+        <actionName>DocuSignNotificationSMSDSent</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>bookingIds</name>
+            <value>
+                <elementReference>$Record.DocuSignEnvelope__r.Booking__r.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>DocuSignNotificationSMSDSent</nameSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Docusign Booking Form {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Docusign Booking Form Sent to SM SD</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>490</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Send_SM_SD_Envelope_Sent_Notification</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sent</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Envelope_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Booking Form</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Envelope_Recipient_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sales manager</stringValue>
+            </value>
+        </filters>
+        <object>Docusign_Recipient_Status_Sobha__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <triggerOrder>600</triggerOrder>
+</Flow>

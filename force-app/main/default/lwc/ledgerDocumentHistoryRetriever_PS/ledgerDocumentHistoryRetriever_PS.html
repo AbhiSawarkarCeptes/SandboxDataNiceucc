@@ -1,0 +1,14 @@
+<template>
+      <lightning-card title="Ledger Document History" icon-name="standard:contact" >
+        <br/>
+        <div style="width: auto;">
+          <template if:true={filesData}>
+                <lightning-datatable data={filesData}
+                                     columns={columns}
+                                     key-field="id"
+                                     hide-checkbox-column="true"
+                                     onrowaction={callRowAction}></lightning-datatable>
+            </template>
+        </div>
+    </lightning-card>
+</template>

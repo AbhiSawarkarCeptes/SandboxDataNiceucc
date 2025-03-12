@@ -1,0 +1,39 @@
+<template> 
+  <lightning-modal-header label="Applicant Location Input"></lightning-modal-header>
+  <lightning-modal-body>
+      <template if:true={isUpdating}>
+          <div class="slds-align_absolute-center">
+              <lightning-spinner alternative-text="Updating"></lightning-spinner>
+              <p>Updating...</p>
+          </div>
+      </template>
+      <lightning-combobox
+          name="country"
+          label="Country"
+          value={country}
+          placeholder="Select Country"
+          options={countryOptions}
+          onchange={handleCountryChange}
+      ></lightning-combobox>
+      <lightning-combobox
+          name="state"
+          label="State"
+          value={state}
+          placeholder="Select State"
+          options={stateOptions}
+          onchange={handleStateChange}
+      ></lightning-combobox>
+      <lightning-combobox
+          name="city"
+          label="City"
+          value={city}
+          placeholder="Select City"
+          options={cityOptions}
+          onchange={handleCityChange}
+      ></lightning-combobox>
+  </lightning-modal-body>
+  <lightning-modal-footer>
+      <lightning-button class="slds-m-right_small" label="Update" onclick={handleUpdate}></lightning-button>
+      <lightning-button label="Cancel" onclick={closeModal}></lightning-button>
+  </lightning-modal-footer>
+</template>

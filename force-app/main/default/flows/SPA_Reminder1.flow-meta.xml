@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>SPA_Reminder_31AUG</name>
+        <label>SPA Reminder 31AUG</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Applicant_Details__c.SPA_Reminder_9AUG</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Applicant_Details__c.SPA_Reminder_9AUG</nameSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <description>For CRM SPA&apos;s reminder</description>
+    <environments>Default</environments>
+    <interviewLabel>SPA Reminder {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SPA Reminder for CRM</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SPA_Reminder_31AUG</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Dataload_Identifier__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>310820230300</stringValue>
+            </value>
+        </filters>
+        <object>Applicant_Details__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

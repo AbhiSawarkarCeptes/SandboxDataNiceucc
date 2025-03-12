@@ -1,0 +1,89 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </div>
+    </template>
+    <template if:true={checklistFlag}>
+        <div class="slds-grid slds-wrap slds-p-around--medium ">
+            <div class="slds-col slds-size_12-of-12 slds-p-around_medium">
+                <h1 class="slds-section-title--divider">Resale Collection Checklist</h1>
+            </div>  
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="BCC Completed" type="Checkbox" field-name='BCC_Completed__c' style="margin-left: 2.5%;" checked ={BCCComplete} class="validate" disabled="true" data-fieldname="BCC_Completed__c" onchange={handleFieldChange1} > </lightning-input>
+            </div>
+            <!-- <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Unprocessed Receipt" type="Checkbox" style="margin-left: 2.5%;" field-name='Unprocessed_Receipt__c' disabled="true" class="validate" data-fieldname="Unprocessed_Receipt__c" onchange={handleFieldChange1}> </lightning-input>
+            </div> -->
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Handover Status Completed" type="Checkbox" field-name='Handover_Status_Completed__c' checked ={handoverStatus} disabled="true" class="validate" data-fieldname="Handover_Status_Completed__c" onchange={handleFieldChange1} > </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Total Payment Due" field-name='Name' value={paymentDue} disabled="true"> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Total Payment Received" field-name='Name' value={paymentRec} disabled="true"> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Total Paid Percent" field-name='Name' value={totalpaidPer} disabled="true"> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium" style="margin-top: 2%;">
+                <lightning-input label="40% purchase price & cur due instal paid" type="Checkbox" field-name='X40_purchase_price_cur_due_instal_paid__c' class="validate" data-fieldname="X40_purchase_price_cur_due_instal_paid__c" onchange={handleFieldChange1} required="true"> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium" >
+                <lightning-combobox name="Outstand Amt 40% purchase price IOM" field-name='Outstand_Amt_40_purchase_price_IOM__c' class="validate" label="Outstand Amt 40% purchase price IOM" value={Outstand_Amt_40_purchase_price_IOM__c} placeholder="None" data-fieldname="Outstand_Amt_40_purchase_price_IOM__c" options={OutstandAmtpriceOption} onchange={handlePicklistFieldChange1} required="true"></lightning-combobox>
+            </div>  
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-combobox name="PDC's of the current buyer" field-name='PDC_s_of_the_current_buyer__c' class="validate" label="PDC's of the current buyer" value={PDC_s_of_the_current_buyer__c} placeholder="None" data-fieldname="PDC_s_of_the_current_buyer__c" options={PDC_Current_buyerOption} onchange={handlePicklistFieldChange1} required="true"></lightning-combobox>
+            </div>      
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-combobox name="New Buyer LOU required" field-name='New_Buyer__c' class="validate" label="New Buyer LOU required" value={New_Buyer__c} placeholder="None" data-fieldname="New_Buyer__c" options={New_buyerLOUOption} onchange={handlePicklistFieldChange1} required="true"></lightning-combobox>
+            </div>  
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-combobox name="New Buyer PDC required" field-name='New_Buyer_PDC_required__c' class="validate" label="New Buyer PDC required" value={New_Buyer_PDC_required__c} placeholder="None" data-fieldname="New_Buyer_PDC_required__c" options={New_buyerOption} onchange={handlePicklistFieldChange1} required="true"></lightning-combobox>
+            </div>               
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-combobox name="POP confirmation / Approval" field-name='POP_confirmation_Approval__c' class="validate" label="POP confirmation / Approval" value={POP_confirmation_Approval__c} placeholder="None" data-fieldname="POP_confirmation_Approval__c" options={POPConfirmOption} onchange={handlePicklistFieldChange1} required="true"></lightning-combobox>
+            </div>  
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Count Of PDC's available" field-name="Count Of PDC's available" value={sellerInformation} disabled="true"> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium" style="margin-top: 3%;">
+                <lightning-input label="PDC to be collected from buyer" type="Checkbox" field-name='PDC_to_be_collected_from_buyer__c' class="validate"  data-fieldname="PDC_to_be_collected_from_buyer__c" onchange={handleFieldChange1} > </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Amount of PDC to be collected from  buyer" type="text" field-name='Amount_of_PDC__c' class="validate" data-fieldname="Amount_of_PDC__c" onchange={handleFieldChange1} required="true"> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-combobox name="Bank Name" field-name='PropStrength__Bank_NamePick__c' class="validate" label="Bank Name" value={PropStrength__Bank_NamePick__c} placeholder="None" data-fieldname="PropStrength__Bank_NamePick__c" options={BankNameOption} onchange={handlePicklistFieldChange1} required="true"></lightning-combobox>
+            </div> 
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Cheque Amount" type="text" field-name='Cheque_Amount__c' class="validate" data-fieldname="Cheque_Amount__c" onchange={handleFieldChange1} required="true"> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Cheque date" type="date" field-name='PropStrength__Cheque_Date__c' class="validate" data-fieldname="PropStrength__Cheque_Date__c" onchange={handleFieldChange1} required="true"> </lightning-input>
+            </div>
+
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+            <lightning-input name="chequecopy" type="file" label="Cheque Copy" onchange={chequecopyUploaded} required>
+            </lightning-input>
+            
+                <p>{chequecopy}</p>
+            
+            </div>
+    
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+            <lightning-input name="pdc" type="file" label="PDC" onchange={pdcUploaded} required>
+            </lightning-input>
+            
+                <p>{pdc}</p>
+            
+            </div> 
+        </div>  
+        <div class="slds-grid slds-wrap slds-p-around--medium">
+            <div  class="slds-col slds-size_12-of-12 slds-p-horizontal_medium">
+                <lightning-button class="slds-m-top_small" type="button" variant="brand" label="Confirm Checklist" onclick={submitForm} ></lightning-button>
+            </div>
+        </div>   
+    </template>  
+</template>

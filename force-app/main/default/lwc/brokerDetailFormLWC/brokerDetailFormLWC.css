@@ -1,0 +1,44 @@
+th {
+	background-color: #F28C28 !important;
+	color: white !important;
+}
+
+th:hover {
+	background-color: #FAD5A5 !important;
+	color: black !important;
+}
+
+.disabled {
+	background: lightgrey !important;
+	cursor: not-allowed;
+}
+
+.highlitghted-card {
+	border: 3px solid #ff9900; /* Set the desired border width and color */
+	box-shadow: 0 0 5px #ff9900; /* Optional: Add a box shadow for a more prominent effect */
+}
+
+.highlitghted-card-bg {
+	background-image: linear-gradient(rgba(253, 171, 78, 0.938), rgba(253, 198, 78, 0.582));
+}
+
+.my-component-container {
+    height: 10rem;
+    margin: 0.5rem 1rem;
+}
+.ulContainer { 
+    border: 0.05rem solid black;
+    margin: 0.25rem;
+    text-indent: 0.25rem;
+    border-radius: 0.2rem;
+    line-height: 2rem;
+	max-height: 8rem;
+	overflow-y: auto;
+}
+.liBox:hover {
+    background-color: azure;
+    cursor: pointer;
+}
+.required {
+	color: red;
+}

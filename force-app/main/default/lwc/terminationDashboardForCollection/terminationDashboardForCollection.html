@@ -1,0 +1,81 @@
+<template>
+
+	<lightning-spinner alternative-text="Loading" size="large" if:true={showSpinner}></lightning-spinner>
+	<template if:true={openModal}>
+		<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+			<div class="slds-modal__container">
+			 <!-- modal header start -->
+			   <header class="slds-modal__header">
+				  <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hideModalBox}>
+					 <lightning-icon icon-name="utility:close"
+						alternative-text="close"
+						variant="inverse"
+						size="small" ></lightning-icon>
+					 <span class="slds-assistive-text">Close</span>
+				  </button>
+				  <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Reason</h2>
+			   </header>
+		   
+			   <!-- modal body start -->
+			   <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+					 <lightning-textarea label="Reason" name="Reason" required onchange={handleReasonChange}> </lightning-textarea>
+			   </div>
+	 
+			   <!-- modal footer start-->
+			   <footer class="slds-modal__footer">
+				  <lightning-button label="Cancel" name="Cancel" onclick={hideModalBox}> </lightning-button>
+				  <lightning-button label="Submit" class="slds-m-left_x-small" name="Submit" variant="brand" onclick={submitToAccount}> </lightning-button>
+			   </footer>
+			
+			</div>
+		 </section>
+		 <div class="slds-backdrop slds-backdrop_open"></div>
+		</template>
+
+		<template if:true={openRemarksModal}>
+			<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+				<div class="slds-modal__container">
+				 <!-- modal header start -->
+				   <header class="slds-modal__header">
+					  <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hideModalBox}>
+						 <lightning-icon icon-name="utility:close"
+							alternative-text="close"
+							variant="inverse"
+							size="small" ></lightning-icon>
+						 <span class="slds-assistive-text">Close</span>
+					  </button>
+					  <h2 id="modal-remarks-01" class="slds-text-heading_medium slds-hyphenate">Termination Remarks</h2>
+				   </header>
+			   
+				   <!-- modal body start -->
+				   <div class="slds-modal__content slds-p-around_medium" id="modal-remarks-id-1">
+						 {terminationRemarks}
+				   </div>
+				
+				</div>
+			</section>
+			<div class="slds-backdrop slds-backdrop_open"></div>
+		</template>
+
+	<c-termination-dashboard columns={columns} is-collection="true" is-rejected-visible={isRejectedVisible} is-approve-visible={isApproveVisible}  is-resubmit-visible={isResubmitVisible} result={data} onsearch={handleSearch} selected-project={selectedProjectId} selected-tower={selectedTowerId}
+		onfetchbookingdetails={getBookingDetails} is-tower-disable={isTowerDisable} onrequestforcancellation={handleRequestForCancellation} onprojectchange={handleProjectChange} get-visibility-of-filter-selection={getVisibilityOfFilterSelection}>
+		<lightning-button-group slot="buttonGroup">
+			<lightning-button label="Create New Cancellation Request" variant={newCancellationRequestButtonVariant} onclick={handleNewCancellationRequestClick}  >
+			</lightning-button>
+			<lightning-button label="Resubmitted by Account Team" variant={resubmittedByAccountTeamVariant} onclick={handleResubmittedByAccountTeamClick} >
+			</lightning-button>
+			<lightning-button label="Resubmitted by Audit Team" variant={resubmittedByAuditTeamVariant} onclick={handleResubmittedByAuditTeamClick}>
+			</lightning-button>
+			<lightning-button label="Rejected by Accounts" variant={rejectedByAccountsVariant} onclick={handleRejectedbyAccountsClick}>
+			</lightning-button>
+			<lightning-button label="Rejected by Audit" variant={rejectedByAuditVariant} onclick={handleRejectedByAuditTeamClick}>
+			</lightning-button>
+			<lightning-button label="Submitted by DLD Team" variant={submittedByDLdVariant} onclick={handleSubmittedByDLDTeamClick}>
+			</lightning-button>
+			<lightning-button label="Submitted by CRM Team" variant={submittedByCRMVariant} onclick={handleSubmittedByCRMTeamClick}>
+			</lightning-button>
+		</lightning-button-group>
+		<p slot="headerName">Unit Termination Collection Dashboard</p>
+	</c-termination-dashboard>
+
+</template>

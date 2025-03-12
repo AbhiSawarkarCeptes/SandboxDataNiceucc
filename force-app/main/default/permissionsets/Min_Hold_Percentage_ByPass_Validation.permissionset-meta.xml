@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Min_Hold_Percentage_ByPass_Validation - Only For Saima</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Unit__c.Bypass_10_Validation__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Min Hold Percentage - ByPass Validation</label>
+    <license>Salesforce</license>
+</PermissionSet>

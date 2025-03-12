@@ -1,0 +1,42 @@
+.dummy{
+	color : blue;
+}
+
+.paymentRight {
+	margin-right: 150px;
+}
+
+.shift {
+	padding-left: 20%;
+}
+
+.shiftless {
+	padding-left: 5%;
+}
+
+.blurclass{
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+}
+
+.slds-spinner_container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9050;
+    background-color: var(--slds-g-color-neutral-100-opacity-75,hsla(0, 3%, 92%, 0.75));
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity .2s ease,visibility 0s;
+    transition: opacity .2s ease,visibility 0s;
+    -webkit-transition-delay: 0s,.3s;
+    transition-delay: 0s,.3s;
+}

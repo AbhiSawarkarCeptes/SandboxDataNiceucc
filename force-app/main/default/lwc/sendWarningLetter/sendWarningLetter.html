@@ -1,0 +1,99 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <div style="background-color:white;min-height:100%;padding:20px">
+        <div class="slds-grid slds-gutters" style="margin-bottom:10px">
+            <div class="slds-col slds-size_1-of-5">
+                <lightning-combobox
+                    value={selectedTower}
+                    name="tower"
+                    label="Tower"
+                    placeholder="Select Tower"
+                    options={allTowers}
+                    onchange={onTowerChange}>
+                </lightning-combobox>
+            </div>
+            <div class="slds-col slds-size_1-of-5">
+                
+            </div>
+            <div class="slds-col slds-size_1-of-5"></div>
+            <div class="slds-col slds-size_1-of-5"></div>
+            <div class="slds-col slds-size_1-of-5"></div>
+        </div>
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="" scope="col" style="width:9%">
+                        <div class="slds-truncate" title="Select" style="float:left">
+                            Select &nbsp;
+                        </div>
+                        <div class="slds-truncate" title="Select" style="float:left">
+                            <lightning-input type="checkbox" name="selectAll" onchange={handleSelectAll}></lightning-input>
+                        </div>
+                    </th>
+                    <th class="thPadding" scope="col">
+                        <div class="slds-truncate" title="Booking Id">Booking Id</div>
+                    </th>
+                    <th class="thPadding" scope="col">
+                        <div class="slds-truncate" title="Unit No">Unit No</div>
+                    </th>
+                    <th class="thPadding" scope="col">
+                        <div class="slds-truncate" title="Sale Value">Sale Value</div>
+                    </th>
+                    <th class="thPadding" scope="col">
+                        <div class="slds-truncate" title="Overdue">Overdue</div>
+                    </th>
+                    <th class="thPadding" scope="col">
+                        <div class="slds-truncate" title="Ageing">Ageing</div>
+                    </th>
+                    <th class="thPadding" scope="col">
+                        <div class="slds-truncate" title="Last Paid Date">Last Paid Date</div>
+                    </th>
+                    <th class="thPadding" scope="col">
+                        <div class="slds-truncate" title="Warning Sent">Warning Sent</div>
+                    </th>
+                    <th class="thPadding" scope="col">
+                        <div class="slds-truncate" title="Action">Action</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={bookingData} for:item="b">
+                    <tr key={b.bookingId} class="slds-hint-parent">
+                        <td style="width:9%">
+                            <div class="slds-truncate">
+                                <lightning-input onchange={onSelectChange} value={b.bookingId} type="checkbox" name="selectBooking" checked={b.checked}></lightning-input>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <a class="anchor" href={b.bookingLink} target="_blank">{b.bookingName}</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <a class="anchor" href={b.unitLink} target="_blank">{b.unitName}</a>
+                            </div>
+                        </td>
+                        <td><div class="slds-truncate">{b.saleValue}</div></td>
+                        <td><div class="slds-truncate">{b.overdue}</div></td>
+                        <td><div class="slds-truncate">{b.ageing}</div></td>
+                        <td><div class="slds-truncate">{b.lastPaidDate}</div></td>
+                        <td><div class="slds-truncate">{b.warningSent}</div></td>
+                        <td>
+                            <div class="slds-truncate">
+                                <button id={b.bookingId} class="slds-button slds-button_brand" onclick={sendWarning} title="Send Warning Letter">Send Warning Letter</button>
+                            </div>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+        <div style="text-align:center;margin-top:20px">
+            <lightning-button variant="brand" label="Send Warning Letter To Selected Bookings" title="Send Warning Letter To Selected Bookings" onclick={handleSelectedBooking} class="slds-m-left_x-small"></lightning-button>
+        </div>
+    </div>
+</template>

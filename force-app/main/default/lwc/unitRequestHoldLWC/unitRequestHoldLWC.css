@@ -1,0 +1,36 @@
+.ulContainer { 
+    border: 0.05rem solid black;
+    padding: 0.15rem;
+    text-indent: 0.25rem;
+    border-radius: 0.2rem;
+    line-height: 2rem;
+    z-index: 4 !important;
+}
+.liBox:hover {
+    background-color: azure;
+    cursor: pointer;
+}
+.liBox  {
+    background-color:white;
+    cursor: pointer;
+}
+.formElement{
+    position: relative;
+    display: inline-flex;
+    margin-left: 2rem;
+    margin-top: 10px;
+    min-width:-webkit-fill-available;
+}
+.formlabel {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+    width: 11rem;
+    text-align: start;
+}
+.inputField { 
+    width: 20rem;
+}
+.lightning-input .slds-form-element .slds-form-element__label:empty {
+    display: none !important;
+}

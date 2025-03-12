@@ -1,0 +1,16 @@
+<template>
+  <div if:true={isLoading} class="slds-spinner_container">
+    <div class="slds-spinner slds-spinner_medium" role="status">
+      <span class="slds-assistive-text">Loading..</span>
+      <div class="slds-spinner__dot-a"></div>
+      <div class="slds-spinner__dot-b"></div>
+    </div>
+  </div>
+  <br/> <br/>
+  <div style="text-align:center"> <b>{msg}</b></div>
+  <br/>
+  <template if:true={urlShow}><div style="text-align:center"> <b>BI code is : <a onclick={openUrl}> {url.PropStrength__Broker_Code__c}</a></b></div>
+  
+  </template>
+  <br/> <br/>
+</template>

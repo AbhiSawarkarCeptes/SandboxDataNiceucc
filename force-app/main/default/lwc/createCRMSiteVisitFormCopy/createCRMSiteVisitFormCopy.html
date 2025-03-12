@@ -1,0 +1,165 @@
+<template>
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="xx-medium"></lightning-spinner>
+    </template>
+    <lightning-record-edit-form object-api-name="Customer_Registration__c" onerror={handleError}
+        onsuccess={handleSuccess} onsubmit={saveForm}  density="comfy">
+
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="4"
+                padding="around-small">
+                <lightning-card title="Personal Details">
+
+                    <lightning-layout multiple-rows>
+
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Application_Booking__c" value={Customer_Registration__c.Application_Booking__c}
+                                onchange={handleBookingChange}> </lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Property__c" value={Customer_Registration__c.Property__c}
+                                onchange={handleUnitChange}> </lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="First_Name__c"
+                                value={Customer_Registration__c.First_Name__c}></lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Last_Name__c"
+                                value={Customer_Registration__c.Last_Name__c}></lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Mobile_Number__c"
+                                value={Customer_Registration__c.Mobile_Number__c}></lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Email_Address__c"
+                                value={Customer_Registration__c.Email_Address__c}></lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Nationality__c"
+                                value={Customer_Registration__c.Nationality__c}></lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Residential_Status__c"
+                                value={Customer_Registration__c.Residential_Status__c}></lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="City__c"
+                                value={Customer_Registration__c.City__c}></lightning-input-field>
+                        </lightning-layout-item>
+
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Purpose_of_visit__c"
+                                value={Customer_Registration__c.Purpose_of_visit__c} required="true"> </lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="12"
+                            large-device-size="12" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Address__c"
+                                value={Customer_Registration__c.Address__c}></lightning-input-field>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-card>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="4"
+                padding="around-small">
+                <lightning-card title=" ">
+                    <lightning-layout multiple-rows>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="RecordTypeId"
+                                value={Customer_Registration__c.RecordTypeId} disabled>
+                            </lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Category__c"
+                                value={Customer_Registration__c.Category__c} required="true"> </lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Visitor_name__c"
+                                value={Customer_Registration__c.Visitor_name__c}> </lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Visitor_Mobile_number__c"
+                                value={Customer_Registration__c.Visitor_Mobile_number__c}> </lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Visitor_Email_address__c"
+                                value={Customer_Registration__c.Visitor_Email_address__c}> </lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Vertical__c"
+                                value={Customer_Registration__c.Vertical__c} required="true"> </lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Status__c" value={Customer_Registration__c.Status__c} disabled>
+                            </lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="CRM_Executive__c"
+                                value={Customer_Registration__c.CRM_Executive__c} > </lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Executive_attended__c"
+                                value={Customer_Registration__c.Executive_attended__c}  required="true"> </lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Property_Type__c"
+                                value={Customer_Registration__c.Property_Type__c}  required="true"> </lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="12"
+                            large-device-size="12" class="slds-p-horizontal_x-small">
+                            <lightning-input-field field-name="Remarks__c" value={Customer_Registration__c.Remarks__c}>
+                            </lightning-input-field>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-card>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="8">
+                <lightning-card title="">
+                    <lightning-messages></lightning-messages>
+                    <lightning-layout>
+                        <lightning-layout-item size="12" small-device-size="6" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <div class="slds-clearfix">
+                                <div class="slds-float_right">
+                                    <lightning-button type="button" class="slds-align_absolute-right" label="Reset Form"
+                                        variant="Neutral" onclick={handleReset}></lightning-button>
+                                </div>
+                            </div>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="6" medium-device-size="6"
+                            large-device-size="6" class="slds-p-horizontal_x-small">
+                            <div class="slds-clearfix">
+                                <div class="slds-float_left">
+                                    <lightning-button type="submit" class="slds-align_absolute-left"
+                                        label="Save Informations" variant="brand" onclick={saveForm}></lightning-button>
+                                </div>
+                            </div>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-card>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-record-edit-form>
+</template>

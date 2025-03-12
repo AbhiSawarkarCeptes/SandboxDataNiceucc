@@ -1,0 +1,83 @@
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.marqueeTitle {
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: marquee 5s linear infinite; 
+}
+
+.blink_me {
+    color: white;
+    border-radius: 15px;
+    margin-left: 2px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #173050!important;
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.titleStyling {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.general-instructions {
+  position: sticky;
+  top: 0;
+  max-height: 900px; 
+  overflow-y: auto;
+  background-color: #f2f2f2; 
+  padding: 10px;
+  border-left: 1px solid #ddd; 
+  margin-right: 10px !important;
+  margin-left: 10px;
+}
+
+.instruction{
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+/*.general-instructions {
+  position: Fixed;
+  top: Auto;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #f2f2f2; 
+  padding: 10px;
+  border-left: 1px solid #ddd; 
+  right: 0px;
+}
+*/
+
+.customeHeader {background: #B5AFC2;
+    padding: 11px 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.slds-box{background: #EBE9F0;
+    margin: 20px 20px;
+}
+.slds-box .slds-card__header{background: #B5AFC2;
+    padding: 10px 15px;}
+.slds-box lightning-icon{zoom: 0.8;}
+.innser{padding-bottom: 12px;}
+.datTxt{border-radius: 5px;
+    background: #ebe9f0;
+    padding: 5px 10px;}
+  .gnrWrap{position: fixed;}
+  .gnrInnrWrap{margin-right: 12px;}

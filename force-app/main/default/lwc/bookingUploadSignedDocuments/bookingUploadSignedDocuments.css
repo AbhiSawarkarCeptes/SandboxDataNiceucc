@@ -1,0 +1,10 @@
+.THIS .slds-tabs_default__item.slds-is-active {
+    background: white !important;
+}
+lightning-button.button {
+	--sds-c-button-brand-color-background: #0044ff;
+    --sds-c-button-text-color: #f4f7f9;
+}
+.toastMessage{
+    white-space: break-spaces !important;
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Sobha Realty- Commission Payout Structure- From 25th Jun’24 to 30th Sep’24</description>
+        <name>Sobha_Realty_Commission_Payout_Structure_From_25th_Jun_24_to_30th_Sep_24</name>
+        <label>Sobha Realty- Commission Payout Structure- From 25th Jun’24 to 30th Sep’24</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Broker_Registration__c.Broker_Registration_Emailer</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Broker_Registration__c.Broker_Registration_Emailer</nameSegment>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <description>Sobha Realty- Commission Payout Structure- From 25th Jun’24 to 30th Sep’24</description>
+    <environments>Default</environments>
+    <interviewLabel>Sobha Realty- Commission Payout Structure- From 25th Jun’24 to 30th Sep’24 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Sobha Realty- Commission Payout Structure- From 25th Jun’24 to 30th Sep’24</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Sobha_Realty_Commission_Payout_Structure_From_25th_Jun_24_to_30th_Sep_24</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Dataload_Identifier__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>260620241000PM</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Dataload_Identifier__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Broker_Registration__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

@@ -1,0 +1,92 @@
+<template>
+	<template if:true={isLoading}>
+		<lightning-spinner alternative-text="Loading" variant="brand" size="large">
+		</lightning-spinner>
+	</template>
+	<div class="slds-grid slds-wrap slds-card" style="width:100%">
+		<div class="slds-col slds-size_1-of-4 " style="padding:8px">
+			<div onkeyup={handleKeyUp}>
+				<lightning-input name="enter-search" label="Enter license number" type="search"></lightning-input>
+			</div>
+
+		</div>
+		<div class="slds-col slds-size_3-of-4 " style="padding:8px"></div>
+		<div class="slds-col slds-size_1-of-1 " style="padding:8px">
+
+			<div class="table-container">
+				<table class="slds-table slds-table_cell-buffer slds-table_bordered">
+					<thead>
+						<tr class="slds-text-title_caps">
+							<th scope="col">
+								<div class="slds-truncate" title="Name">Channel Partner Name</div>
+							</th>
+							<th scope="col">
+								<div class="slds-truncate" title="CHRM Manager">CHRM Manager</div>
+							</th>
+							<th scope="col">
+								<div class="slds-truncate" title="CHRM TL">CHRM TL</div>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<template if:true={showtableError}>
+							<template if:true={showtable}>
+								<template for:each={dataRecords.channelpartnerList} for:item="item">
+									<tr key={item.id}>
+										<td>
+											<div class="slds-truncate">{item.Name}</div>
+										</td>
+										<td>
+											<div class="slds-truncate">{item.Channel_Relationship_Manager_Name__c}</div>
+										</td>
+										<td>
+											<div class="slds-truncate"><template if:true={item.Channel_Relationship_Head__c}>
+												{item.Channel_Relationship_Head__r.Name} </template></div>
+										</td>
+
+									</tr>
+								</template>
+							</template>
+							<template if:true={sobhaShowtable}>
+								<template for:each={sobhaDataRecords.sobhaConnectList} for:item="item">
+									<tr key={item.id}>
+										<td>
+											<div class="slds-truncate">{item.Name}</div>
+										</td>
+										<td>
+											<div class="slds-truncate"><template if:true={item.Sales_Manager__c}>{item.Sales_Manager__r.Name}</template></div>
+										</td>
+										<td>
+											<div class="slds-truncate"><template if:true={item.Sales_Head__c}>{item.Sales_Head__r.Name}</template></div>
+										</td>
+
+									</tr>
+								</template>
+							</template>
+							<template if:true={brokerDataRecords}>
+								<template for:each={brokerDataRecords.brokerList} for:item="item">
+									<tr key={item.id}>
+										<td>
+											<div class="slds-truncate">{item.Name}</div>
+										</td>
+										<td>
+											<div class="slds-truncate"><template if:true={item.CHRM_Manager__c}> {item.CHRM_Manager__r.Name}</template></div>
+										</td>
+										<td>
+											<div class="slds-truncate"><template if:true={item.CHRM_ManagerHead__c}>{item.CHRM_ManagerHead__r.Name}</template></div>
+										</td>
+
+									</tr>
+								</template>
+							</template>
+						</template>
+					</tbody>
+				</table>
+				<template if:false={showtableError}>
+					<p style="text-align:center"><b>No Records Available</b></p>
+				</template>
+			</div>
+		</div>
+	</div>
+
+</template>

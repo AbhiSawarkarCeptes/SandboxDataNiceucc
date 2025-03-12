@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <decisions>
+        <name>check_lead_is_converted_or_not</name>
+        <label>check lead is converted or not</label>
+        <locationX>440</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>is_not_converted</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.IsConverted</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>lead_owner_update</targetReference>
+            </connector>
+            <label>is not converted</label>
+        </rules>
+    </decisions>
+    <description>Added change to remove time trigger when Vineet try to convert the lead on behalf of Promoter within 72 hours</description>
+    <environments>Default</environments>
+    <interviewLabel>Action on lead after 72 hrs {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Mall Stand Leads Reassignment Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Track_logs</name>
+        <label>Track logs</label>
+        <locationX>440</locationX>
+        <locationY>492</locationY>
+        <inputAssignments>
+            <field>Class__c</field>
+            <value>
+                <stringValue>Mall Stand Owner Assignment Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Error_Log__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>lead_owner_update</name>
+        <label>lead owner update</label>
+        <locationX>176</locationX>
+        <locationY>384</locationY>
+        <faultConnector>
+            <targetReference>Track_logs</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>Last_Call_Attempt_Status__c</field>
+            <value>
+                <stringValue>Not Actioned</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Label.Mall_Stand_Queue_Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Willing_to_meet_this_week__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Yes</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LeadSource</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Stand Leads</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Direct Visit</stringValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <name>After_72_Hrs_When_lead_is_created</name>
+            <connector>
+                <targetReference>check_lead_is_converted_or_not</targetReference>
+            </connector>
+            <label>After 72 Hrs When lead is created</label>
+            <offsetNumber>72</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>CreatedDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

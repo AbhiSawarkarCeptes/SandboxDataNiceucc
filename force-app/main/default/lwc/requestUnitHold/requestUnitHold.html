@@ -1,0 +1,49 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <lightning-card  title="Request Unit Hold" variant="narrow" icon-name="standard:account">
+        <lightning-record-edit-form 
+            object-api-name="Unit_Hold__c"
+            onsubmit={handleSubmit}
+            onsuccess={handleSuccess} onerror={handleError}
+            >
+            <div class="customWrap">
+                <div class="innerWrap">
+                    <lightning-messages> </lightning-messages>
+                    <lightning-input-field field-name="Unit__c"  required
+                    ></lightning-input-field>
+                    <lightning-input-field field-name="First_Name__c" required
+                    ></lightning-input-field>
+                    <lightning-input-field field-name="Middle_Name_if_applicable__c" 
+                    ></lightning-input-field>
+                    <lightning-input-field field-name="Last_Name__c" required
+                    ></lightning-input-field>
+                    <lightning-input-field field-name="Request_Time__c" required
+                    ></lightning-input-field>
+                    <lightning-file-upload required="true" 
+                    label="File upload (please upload clear client passport copy)" name="fileUploader" accept={acceptedFormats} record-id={recId} 
+                    onuploadfinished={handleUploadFinished} multiple></lightning-file-upload>
+                    <p style="color:red">Note : The details provided above should be as per original passport.</p>
+                    <lightning-input-field field-name="Unit_Hold_Requested__c" class="slds-hidden"
+                    ></lightning-input-field>
+                    <lightning-input-field field-name="Customer_Full_Name__c" class="slds-hidden"
+                    ></lightning-input-field>
+                    
+                    <div style="text-align: center;">
+                        <lightning-button
+                            class="slds-m-top_small slds-m-left_medium"
+                            variant="brand"
+                            type="submit"
+                            name="save"
+                            label="Save"
+                        ></lightning-button>
+                    </div>
+                </div>
+            </div>
+
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

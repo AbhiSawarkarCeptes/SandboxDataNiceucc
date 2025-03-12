@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="File Upload" icon-name="standard:file">
+        <div class="slds-p-horizontal_small">
+          <lightning-file-upload
+            label="Upload Passport"
+            record-id={recordId}
+            accept={acceptedFormats}
+            class="file-selector-large"
+            onuploadfinished={handlePassportUploadFinished}
+            multiple
+          >
+          </lightning-file-upload>
+          <lightning-file-upload
+            label="Upload Emirates ID"
+            record-id={recordId}
+            accept={acceptedFormats}
+            class="file-selector-large"
+            onuploadfinished={handleEmiratesUploadFinished}
+            multiple
+          >
+          </lightning-file-upload>
+          <lightning-file-upload
+            label="Upload Visa"
+            record-id={recordId}
+            accept={acceptedFormats}
+            class="file-selector-large"
+            onuploadfinished={handleVisaUploadFinished}
+            multiple
+          >
+          </lightning-file-upload>
+        </div>
+      </lightning-card>
+</template>

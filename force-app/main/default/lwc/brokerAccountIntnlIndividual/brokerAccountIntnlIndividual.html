@@ -1,0 +1,181 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <div class="card">
+        <p style="text-align: end; font-weight: bold;" class="slds-p-right_large slds-p-top--large">Date: <lightning-formatted-date-time value={today}></lightning-formatted-date-time></p>
+        <h1 class="slds-text-heading_medium slds-text-align_center slds-m-around_large">
+            {formType} Form – {showHeader}
+            <br>(to be filled in English only)
+        </h1>
+
+        <hr>
+
+        <lightning-layout multiple-rows class="slds-p-around_large">
+            <lightning-layout-item size="12" >
+                <p class="slds-text-heading_small slds-m-bottom_small">Individual Details</p>
+                <lightning-input type="text" required="true" variant="label-inline" value={record.Name_as_per_trade_license__c} name="Name_as_per_trade_license__c" label="Name" onchange={handleChange}  onkeyup={onKeyUpInputField}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" class="slds-m-top--medium" >
+                <p class="slds-text-heading_small slds-m-bottom_small">Authorized signatory details</p>
+                <lightning-input type="text" required="true" variant="label-inline" value={record.Name_as_per_passport__c} name="Name_as_per_passport__c" label="Name as per passport" onchange={handleChange}  onkeyup={onKeyUpInputField}></lightning-input>
+                <!-- <lightning-input type="text" required={isNationalityRequired} variant="label-inline" name="Nationality__c" label="Nationality" onchange={handleChange}></lightning-input> -->
+                <lightning-combobox required={isNationalityRequired} options={nationalityPicklistVal} variant="label-inline" value={record.Nationality__c} name="Nationality__c" label="Nationality" onchange={handleChange}></lightning-combobox>
+                <lightning-input type="text" variant="label-inline" value={record.Designation1__c} name="Designation1__c" label="Designation" onchange={handleChange}  onkeyup={onKeyUpInputField}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" class="slds-m-top--medium" >
+                <p class="slds-text-heading_small slds-m-bottom_small">Complete Mailing Address</p>
+                <lightning-input type="text" required="true" variant="label-inline" value={record.Office_Apartment_number__c} name="Office_Apartment_number__c" label="Office/Apartment number" onchange={handleChange}  onkeyup={onKeyUpInputField}></lightning-input>
+                <lightning-input type="text" required="true" variant="label-inline" value={record.Villa_Building_name__c} name="Villa_Building_name__c" label="Building name" onchange={handleChange}  onkeyup={onKeyUpInputField}></lightning-input>
+                <lightning-input type="text" variant="label-inline" value={record.Street_name__c} name="Street_name__c" label="Street name" onchange={handleChange}  onkeyup={onKeyUpInputField}></lightning-input>
+                <lightning-input type="text" required="true" variant="label-inline" value={record.BillingState} name="BillingState" label="Area/District" onchange={handleChange}  onkeyup={onKeyUpInputField}></lightning-input>
+                <lightning-input type="text" required="true" variant="label-inline" value={record.BillingCity} name="BillingCity" label="City/Province" onchange={handleChange}  onkeyup={onKeyUpInputField}></lightning-input>
+                <lightning-input type="text" required="true" variant="label-inline" value={record.BillingCountry} name="BillingCountry" label="Country" onchange={handleChange}  onkeyup={onKeyUpInputField}></lightning-input>
+                <!-- <lightning-combobox
+                    variant="label-inline"
+                    name="BillingCity"
+                    label="City/Province"
+                    value={record.BillingCity}
+                    placeholder="Select an option"
+                    options={options.city}
+                    onchange={handleChange}
+                    required >
+                </lightning-combobox>
+                <lightning-combobox
+                    variant="label-inline"
+                    name="Country__c"
+                    label="Country"
+                    value={record.Country__c}
+                    placeholder="Select an option"
+                    options={options.country}
+                    onchange={handleChange}
+                    required >
+                </lightning-combobox> -->
+                <lightning-input type="text" variant="label-inline" value={record.BillingPostalCode} name="BillingPostalCode" label="Postal Code" onchange={handleChange} pattern="[0-9]*"  onkeyup={onKeyUpInputField}></lightning-input>
+                <lightning-combobox options={companyRegPicklistVal} required="true" variant="label-inline" value={record.Company_Registered_In__c} name="Company_Registered_In__c" label="Company Registered In" onchange={handleChange} if:true={isCompanyRegVisible}></lightning-combobox>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" class="slds-m-top--medium" >
+                <p class="slds-text-heading_small slds-m-bottom_small">Contact details</p>
+                <lightning-input type="tel" variant="label-inline" value={record.Phone} name="Phone" label="Telephone Number" onchange={handleChange}></lightning-input>
+                <lightning-input type="text" variant="label-inline" value={record.Fax_correspondence__c} name="Fax_correspondence__c" label="Fax Number" onchange={handleChange}></lightning-input>
+                <lightning-input type="tel" required="true" variant="label-inline" value={record.Mobile_No__c} name="Mobile_No__c" label="Mobile Number" onchange={handleChange}  pattern="[0-9]*"></lightning-input>
+                <lightning-input type="email" required="true" variant="label-inline" value={record.Email_ID_1__c} name="Email_ID_1__c" label="Email Address" onchange={handleChange} ></lightning-input>
+                <lightning-input type="email" required="true" variant="label-inline" value={record.Email_ID_2__c} name="Email_ID_2__c" label="Owner's Email" onchange={handleChange} ></lightning-input>
+                <lightning-input type="email" variant="label-inline" value={record.Account_Owner_Email__c} name="Account_Owner_Email__c" label="Accounts/Finance Email" onchange={handleChange} ></lightning-input>
+            </lightning-layout-item>
+
+            <!-- <lightning-layout-item size="12" class="slds-m-top--medium">
+                <p class="slds-text-heading_small slds-m-bottom_small">Witness details</p>
+                <lightning-input type="text" variant="label-inline" name="Witness_Name__c" label="Witness Name" onchange={handleChange} ></lightning-input>
+                <lightning-input type="text" variant="label-inline" name="Witness_Email_1__c" label="Witness Email" onchange={handleChange} ></lightning-input>
+            </lightning-layout-item> -->
+
+        </lightning-layout>
+
+        <div class="slds-p-around_large" if:true={files}>
+            <p class="slds-text-heading_small slds-m-bottom_small">Attach below documents for registration</p>
+            <ol class="show-list-style">
+                <template for:each={files} for:item="file" for:index="index">
+                    <li class="slds-m-bottom_small show-list-item-style" key={file.label}>
+                        <label class="slds-form-element__label" if:true={file.required} style="font-weight: 600;">
+                            <!-- <abbr class="slds-required" title="required">* </abbr> -->
+                            {file.label}
+                        </label>
+                        <label class="slds-form-element__label" if:false={file.required}>{file.label}</label>
+                        <lightning-input name={file.label} data-index={index} type="file" onchange={handleFileUploaded} required={file.required} style="display: inline;" >
+                        </lightning-input>
+                         <!-- <lightning-file-upload
+                            file-field-name="Account_Record_Id_fileupload__c"
+                            file-field-value={record.Id}
+                            onuploadfinished={handleUploadFinished}
+                            data-index={index} accept={acceptedFormats}
+                            data-filen={file.label}
+                            required={file.required}
+                        ></lightning-file-upload> -->
+                        <p class="fileName" if:true={file.uploaded}>
+                            <lightning-icon icon-name="action:approval" alternative-text="Uploaded" title="Uploaded" size="x-small" class="slds-m-right--x-small"></lightning-icon>
+                            <template if:true={file.uploadedFiles} for:each={file.uploadedFiles} for:item="uploadedFile" for:index="fileIndex">
+                                <span key={uploadedFile.documentId}>
+                                    {uploadedFile.name}
+                                    <span data-id={index} data-file-index={fileIndex} onclick={removeReceiptImage} class="removeImage">x</span> &nbsp;
+                                </span>
+                            </template>
+                        </p>
+                    </li> 
+                </template>
+            </ol>
+        </div>
+
+        <!-- <div class="slds-p-around_large">
+            <p class="slds-text-heading_small slds-m-bottom_small">Attach below documents for registration</p>
+            <ol>
+                <li class="slds-m-bottom_small">
+                    <lightning-file-upload
+                        label="1. Self-attested passport copy of authorized signatory"
+                        name="passport"
+                        file-field-name="Related_Record_ID_fileupload__c"
+                        file-field-value={record.Id}
+                        onuploadfinished={handleUploadFinished}
+                    ></lightning-file-upload>
+                    <p class="fileName">{files.passport}</p>
+                </li>
+                <li class="slds-m-bottom_small">
+                    <lightning-file-upload
+                        label="2. Owner National ID (optional)"
+                        name="nationalId"
+                        file-field-name="Related_Record_ID_fileupload__c"
+                        file-field-value={record.Id}
+                        onuploadfinished={handleUploadFinished}
+                    ></lightning-file-upload>
+                    <p class="fileName">{files.nationalId}</p>
+                </li>
+                <li class="slds-m-bottom_small">
+                    <lightning-file-upload
+                        label="3. Bank Beneficiary form & Cancelled Cheque"
+                        name="bankBeneficiaryForm"
+                        file-field-name="Related_Record_ID_fileupload__c"
+                        file-field-value={record.Id}
+                        onuploadfinished={handleUploadFinished}
+                    ></lightning-file-upload>
+                    <p class="fileName">{files.bankBeneficiaryForm}</p>
+                </li>
+            </ol>
+        </div> -->
+
+        <div style="text-align: center;">
+            <lightning-button
+                class="slds-m-top_small slds-m-left_medium"
+                variant="brand"
+                name="submit"
+                label="Submit"
+                onclick={handleSubmit}
+            ></lightning-button>
+        </div>
+
+        <hr>
+
+        <!-- <lightning-layout class="slds-p-horizontal_large slds-p-bottom_large footer">
+            <lightning-layout-item size="4" >
+                <p>
+                    SOBHA HARTLAND SALES GALLERY<br>
+                    Sobha Hartland Mohammed Bin Rashid City Dubai,<br> 
+                    United Arab Emirates
+                </p>
+            </lightning-layout-item>
+            <lightning-layout-item size="4" >
+            </lightning-layout-item>
+            <lightning-layout-item size="4" >
+                <p style="float: right">
+                    +971 56 4189790<br>
+                    agents@sobha-me.com<br>
+                    Sobharealty.com
+                </p>
+            </lightning-layout-item>
+        </lightning-layout> -->
+    </div>    
+</template>

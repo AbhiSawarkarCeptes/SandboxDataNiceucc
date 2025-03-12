@@ -1,0 +1,51 @@
+<template>
+    <lightning-card title={title}>
+        <div class="slds-m-around_small">
+            <div class="slds-grid slds-gutters  slds-size_2-of-3 slds-gutters_medium">
+                <div class="slds-col slds-float_left">
+                    <lightning-button-icon icon-name="action:refresh" size="x-large" variant="success"
+                        alternative-text="Refresh" onclick={handleclickRefresh}></lightning-button-icon>
+                </div>
+            </div>
+            <template if:true={hasRecords}>
+                <template if:true={allowReassign}>
+                    <div class="slds-grid slds-gutters  slds-size_2-of-3 slds-gutters_medium">
+                        <div class="slds-col">
+                            <!-- Custom Lightning Input Select Field-->
+                            <div class="slds-form-element__control">
+                                <div class="slds-select_container">
+                                    <select class="slds-select" id="select-01" onchange={onValueSelection}>
+                                        <option value="">--Select an user--</option>
+                                        <!--iterate all picklist values from wrapper list using for:each loop-->
+                                        <template for:each={PresalesUsers} for:item="picklistItem">
+                                            <option key={picklistItem.sValue} value={picklistItem.sValue}>
+                                                {picklistItem.sLabel}
+                                            </option>
+                                        </template>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-col">
+                            <lightning-button onclick={handleclick} value="Reassign Leads" label="Reassign Leads">
+                            </lightning-button>
+                        </div>
+
+                    </div>
+                </template>
+
+
+                <lightning-datatable class="slds-table slds-table_cell-buffer slds-table_bordered myUniqueTable"
+                    dir="ltr" key-field="Id" data={records} columns={columns} hide-checkbox-column={hideSelect}
+                    onrowaction={handleRowActions}>
+                </lightning-datatable>
+            </template>
+            <template if:false={hasRecords}>
+                Calling list for this user is empty.
+            </template>
+            <template if:true={errors}>
+                There is an error in fetching data, please contact administrator
+            </template>
+        </div>
+    </lightning-card>
+</template>

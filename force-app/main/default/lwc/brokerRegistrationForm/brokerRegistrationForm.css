@@ -1,0 +1,5 @@
+.customCss{padding: 15px 0; border-top: 1px solid #ccc;}
+.fullWrap{width: 100%;}
+.fullWrap div{width: 50%; display: inline-block;}
+.fullWrap div lightning-input-field{padding: 0!important;}
+.rit_pad-10{padding-right: 10px;}

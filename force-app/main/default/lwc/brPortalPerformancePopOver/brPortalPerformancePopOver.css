@@ -1,0 +1,70 @@
+.moreInfo-popover-style {
+    position: absolute;
+    display: inline-block;
+    width: 215px;
+    height: auto;
+    right: 85px;
+    /* top:65px; */
+    /* bottom: 230px; */
+    background-color: #FFFFFF;
+    border-radius: 17px;
+    z-index: 999;
+    border: 0px;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.14);
+}
+
+.slds-nubbin_right::after {
+    top: 26px !important;
+    right: -.3rem !important;
+    box-shadow: none !important;
+}
+
+.slds-nubbin_right::before {
+    top: 26px !important;
+    right: -.3rem !important;
+    box-shadow: none !important;
+}
+
+.moreInfo-body {
+    padding: 5px 20px;
+}
+
+.moreInfo-body div span.title-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #1F55DE;
+    padding-bottom: 5px;
+}
+
+.moreInfo-body div span.title-value {
+    font-size: 14px;
+    font-weight: 400;
+    color: #061D3C;
+}
+
+.moreInfo-body>div:nth-child(2) {
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 20px;
+}
+
+.display-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 720px){
+    .moreInfo-popover-style {
+        right: 5px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .moreInfo-popover-style {
+        right: 5px;
+        width: 215px; /* Maintain the same width */
+        overflow-x: hidden;
+        /* left:90px; */
+    }
+}

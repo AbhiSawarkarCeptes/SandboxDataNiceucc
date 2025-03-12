@@ -1,0 +1,7 @@
+.customWrap{ padding: 12px 12px; border-radius: 4px;}
+.customWrap span{width: 100%; display: inline-block; border-bottom: 2px dotted #ccc; padding: 2px; margin-bottom: 10px; font-weight: 600;}
+.customMaring{margin-bottom: 10px;}
+.goBackWrap{display: inline-block; width: 100%; text-align: right;}
+.goBackWrap span{cursor: pointer; display: inline-block; color: #4958ea; background: #efefef;padding: 6px 10px;border-radius: 5px;}
+.goBackWrap span:hover{text-decoration: underline;}
+abbr[title]{display: none!important;}

@@ -1,0 +1,376 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <template if:true={isModalOpen}>
+        <!-- Modal/Popup Box LWC starts here -->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal/Popup Box LWC header here -->    
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" >
+                        </lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{selectedTower}</h2>
+                </header>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content" id="modal-content-id-1" style="padding:10px">
+                    <template if:true={showUnitData}>
+                        <div class="fixTableHeadTower">
+                            <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                                <thead>
+                                    <tr class="slds-line-height_reset">
+                                        <th class="" scope="col" width="20%">
+                                            <div class="slds-truncate" title="Ageing">Ageing</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Total Unit">Unit(s)</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Sale Value">Sale Value</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Milestone Due Till Date">Milestone Due Till Date</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Collected Amount">Collected Amount</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Due Amount">Due Amount</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <template for:each={allTabAgeingWiseData} for:item="ageingdata">
+                                        <tr key={ageingdata.towerId} class="slds-hint-parent">
+                                            <td width="20%">
+                                                <div>
+                                                    <label><input type="radio" id={ageingdata.towerId} onclick={onAgeingSelect} name="ageingradio">&nbsp;&nbsp;{ageingdata.towerName}</label>
+                                                </div>
+                                            </td>
+                                            <td><div class="slds-truncate">{ageingdata.totalUnit}</div></td>
+                                            <td><div class="slds-truncate">{ageingdata.totalPurchasePrice}</div></td>
+                                            <td><div class="slds-truncate">{ageingdata.totalMilestoneDueTillDate}</div></td>
+                                            <td><div class="slds-truncate">{ageingdata.totalCollectedAmount}</div></td>
+                                            <td><div class="slds-truncate">{ageingdata.totalDueAmount}</div></td>
+                                        </tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="fixTableHeadUnit">
+                            <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                                <thead>
+                                    <tr class="slds-line-height_reset">
+                                        <th class="" scope="col" width="20%">
+                                            <div class="slds-truncate" title="Unit">Unit</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Sale Value">Sale Value</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Milestone Due Till Date">Milestone Due Till Date</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Collected Amount">Collected Amount</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Due Amount">Due Amount</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <template for:each={allTabUnitWiseData} for:item="unitdata">
+                                        <tr key={unitdata.towerId} class="slds-hint-parent" style={unitdata.bucketColor}>
+                                            <td width="20%">
+                                                <div class="slds-truncate">
+                                                    <a class="anchor" href={unitdata.towerId} target="_blank">{unitdata.towerName}</a>
+                                                </div>
+                                            </td>
+                                            <td><div class="slds-truncate">{unitdata.totalPurchasePrice}</div></td>
+                                            <td><div class="slds-truncate">{unitdata.totalMilestoneDueTillDate}</div></td>
+                                            <td><div class="slds-truncate">{unitdata.totalCollectedAmount}</div></td>
+                                            <td><div class="slds-truncate">{unitdata.totalDueAmount}</div></td>
+                                        </tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </div>
+                    </template>
+                </div>
+                <!-- Modal/Popup Box LWC footer starts here -->
+                <footer class="slds-modal__footer">
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <div style="background-color:white;">
+        <template if:true={isAll}>
+            <div class="fixTableHeadAll">
+                <div class="fixTableHeadProject">
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th class="" scope="col" width="20%">
+                                    <div class="slds-truncate" title="Project">Project</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Total Unit">Unit(s)</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Sale Value">Sale Value</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Milestone Due Till Date">Milestone Due Till Date</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Collected Amount">Collected Amount</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Investor Units Value">Investor Units Value</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Due Amount">Due Amount</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Future Collections">Future Collections</div>
+                                </th>
+                                <template for:each={allFutureMilestoneYear} for:item="year">
+                                    <th key={year} class="" scope="col">
+                                        <div class="slds-truncate" title={year}>{year}</div>
+                                    </th>
+                                </template>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={allTabData} for:item="data">
+                                <tr key={data.projectId} class="slds-hint-parent">
+                                    <td width="20%">
+                                        <div>
+                                            <label><input type="radio" id={data.projectId} onclick={onProjectSelect} name="projectradio">&nbsp;&nbsp;{data.projectName}</label>
+                                        </div>
+                                    </td>
+                                    <td><div class="slds-truncate">{data.totalUnit}</div></td>
+                                    <td><div class="slds-truncate">{data.totalPurchasePrice}</div></td>
+                                    <td><div class="slds-truncate">{data.totalMilestoneDueTillDate}</div></td>
+                                    <td><div class="slds-truncate">{data.totalCollectedAmount}</div></td>
+                                    <td><div class="slds-truncate">{data.totalInvestorUnitValue}</div></td>
+                                    <td><div class="slds-truncate">{data.totalDueAmount}</div></td>
+                                    <td><div class="slds-truncate">{data.futureCollections}</div></td>
+                                    <template for:each={data.futureMilestoneDues} for:item="due">
+                                        <td key={due}><div class="slds-truncate">{due}</div></td>
+                                    </template>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+                <template if:true={showSubProjectData}>
+                    <div class="fixTableHeadSubProject">
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                            <thead>
+                                <tr class="slds-line-height_reset">
+                                    <th class="" scope="col" width="20%">
+                                        <div class="slds-truncate" title="Sub Project">Sub Project</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Total Unit">Unit(s)</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Sale Value">Sale Value</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Milestone Due Till Date">Milestone Due Till Date</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Collected Amount">Collected Amount</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Investor Units Value">Investor Units Value</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Due Amount">Due Amount</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Future Collections">Future Collections</div>
+                                    </th>
+                                    <template for:each={allFutureMilestoneYear} for:item="year">
+                                        <th key={year} class="" scope="col">
+                                            <div class="slds-truncate" title={year}>{year}</div>
+                                        </th>
+                                    </template>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={allTabSubProjectWiseDataSectionOne} for:item="subdataone">
+                                    <tr key={subdataone.subProjectId} class="slds-hint-parent" style="background-color:#FFF2CD">
+                                        <td width="20%">
+                                            <div>
+                                                <label><input type="radio" id={subdataone.subProjectId} onclick={onSubProjectSelect} name="subprojectradioone">&nbsp;&nbsp;{subdataone.subProjectName}</label>
+                                            </div>
+                                        </td>
+                                        <td><div class="slds-truncate">{subdataone.totalUnit}</div></td>
+                                        <td><div class="slds-truncate">{subdataone.totalPurchasePrice}</div></td>
+                                        <td><div class="slds-truncate">{subdataone.totalMilestoneDueTillDate}</div></td>
+                                        <td><div class="slds-truncate">{subdataone.totalCollectedAmount}</div></td>
+                                        <td><div class="slds-truncate">{subdataone.totalInvestorUnitValue}</div></td>
+                                        <td><div class="slds-truncate">{subdataone.totalDueAmount}</div></td>
+                                        <td><div class="slds-truncate">{subdataone.futureCollections}</div></td>
+                                        <template for:each={subdataone.futureMilestoneDues} for:item="due">
+                                            <td key={due}><div class="slds-truncate">{due}</div></td>
+                                        </template>
+                                    </tr>
+                                </template>
+                                <tr class="slds-hint-parent">
+                                    <td width="20%"><div><b>Total</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOneUnitCount}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOnePurchasePrice}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOneMilestoneDue}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOneCollected}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOneInvestor}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOneDue}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOneFuture}</b></div></td>
+                                    <template for:each={secOneFutureMilestoneDues} for:item="dOne">
+                                        <td key={dOne}><div class="slds-truncate"><b>{dOne}</b></div></td>
+                                    </template>
+                                </tr>
+                                <template for:each={allTabSubProjectWiseDataSectionTwo} for:item="subdatatwo">
+                                    <tr key={subdatatwo.subProjectId} class="slds-hint-parent" style="background-color:#FFF2CD">
+                                        <td width="20%">
+                                            <div>
+                                                <label><input type="radio" id={subdatatwo.subProjectId} onclick={onSubProjectSelect} name="subprojectradiotwo">&nbsp;&nbsp;{subdatatwo.subProjectName}</label>
+                                            </div>
+                                        </td>
+                                        <td><div class="slds-truncate">{subdatatwo.totalUnit}</div></td>
+                                        <td><div class="slds-truncate">{subdatatwo.totalPurchasePrice}</div></td>
+                                        <td><div class="slds-truncate">{subdatatwo.totalMilestoneDueTillDate}</div></td>
+                                        <td><div class="slds-truncate">{subdatatwo.totalCollectedAmount}</div></td>
+                                        <td><div class="slds-truncate">{subdatatwo.totalInvestorUnitValue}</div></td>
+                                        <td><div class="slds-truncate">{subdatatwo.totalDueAmount}</div></td>
+                                        <td><div class="slds-truncate">{subdatatwo.futureCollections}</div></td>
+                                        <template for:each={subdatatwo.futureMilestoneDues} for:item="due">
+                                            <td key={due}><div class="slds-truncate">{due}</div></td>
+                                        </template>
+                                    </tr>
+                                </template>
+                                <tr class="slds-hint-parent">
+                                    <td width="20%"><div><b>Total</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwoUnitCount}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwoPurchasePrice}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwoMilestoneDue}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwoCollected}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwoInvestor}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwoDue}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwoFuture}</b></div></td>
+                                    <template for:each={secTwoFutureMilestoneDues} for:item="dTwo">
+                                        <td key={dTwo}><div class="slds-truncate"><b>{dTwo}</b></div></td>
+                                    </template>
+                                </tr>
+                                <template for:each={allTabSubProjectWiseDataSectionThree} for:item="subdatathree">
+                                    <tr key={subdatathree.subProjectId} class="slds-hint-parent" style="background-color:#FFF2CD">
+                                        <td width="20%">
+                                            <div>
+                                                <label><input type="radio" id={subdatathree.subProjectId} onclick={onSubProjectSelect} name="subprojectradiothree">&nbsp;&nbsp;{subdatathree.subProjectName}</label>
+                                            </div>
+                                        </td>
+                                        <td><div class="slds-truncate">{subdatathree.totalUnit}</div></td>
+                                        <td><div class="slds-truncate">{subdatathree.totalPurchasePrice}</div></td>
+                                        <td><div class="slds-truncate">{subdatathree.totalMilestoneDueTillDate}</div></td>
+                                        <td><div class="slds-truncate">{subdatathree.totalCollectedAmount}</div></td>
+                                        <td><div class="slds-truncate">{subdatathree.totalInvestorUnitValue}</div></td>
+                                        <td><div class="slds-truncate">{subdatathree.totalDueAmount}</div></td>
+                                        <td><div class="slds-truncate">{subdatathree.futureCollections}</div></td>
+                                        <template for:each={subdatathree.futureMilestoneDues} for:item="due">
+                                            <td key={due}><div class="slds-truncate">{due}</div></td>
+                                        </template>
+                                    </tr>
+                                </template>
+                                <tr class="slds-hint-parent">
+                                    <td width="20%"><div><b>Total</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreeUnitCount}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreePurchasePrice}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreeMilestoneDue}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreeCollected}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreeInvestor}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreeDue}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreeFuture}</b></div></td>
+                                    <template for:each={secThreeFutureMilestoneDues} for:item="dThree">
+                                        <td key={dThree}><div class="slds-truncate"><b>{dThree}</b></div></td>
+                                    </template>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </template>
+                <template if:true={showTowerData}>
+                    <div class="fixTableHeadTower">
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                            <thead>
+                                <tr class="slds-line-height_reset">
+                                    <th class="" scope="col" width="20%">
+                                        <div class="slds-truncate" title="Tower">Tower</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Total Unit">Unit(s)</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Sale Value">Sale Value</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Milestone Due Till Date">Milestone Due Till Date</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Collected Amount">Collected Amount</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Investor Units Value">Investor Units Value</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Due Amount">Due Amount</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Future Collections">Future Collections</div>
+                                    </th>
+                                    <template for:each={allFutureMilestoneYear} for:item="year">
+                                        <th key={year} class="" scope="col">
+                                            <div class="slds-truncate" title={year}>{year}</div>
+                                        </th>
+                                    </template>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={allTabTowerWiseData} for:item="towerdata">
+                                    <tr key={towerdata.towerId} class="slds-hint-parent" style="background-color:#d1f3d1">
+                                        <td width="20%">
+                                            <div>
+                                                <label><input type="radio" id={towerdata.towerId} onclick={onTowerSelect} name="towerradio" value={towerdata.towerName}>&nbsp;&nbsp;{towerdata.towerName}</label>
+                                            </div>
+                                        </td>
+                                        <td><div class="slds-truncate">{towerdata.totalUnit}</div></td>
+                                        <td><div class="slds-truncate">{towerdata.totalPurchasePrice}</div></td>
+                                        <td><div class="slds-truncate">{towerdata.totalMilestoneDueTillDate}</div></td>
+                                        <td><div class="slds-truncate">{towerdata.totalCollectedAmount}</div></td>
+                                        <td><div class="slds-truncate">{towerdata.totalInvestorUnitValue}</div></td>
+                                        <td><div class="slds-truncate">{towerdata.totalDueAmount}</div></td>
+                                        <td><div class="slds-truncate">{towerdata.futureCollections}</div></td>
+                                        <template for:each={towerdata.futureMilestoneDues} for:item="due">
+                                            <td key={due}><div class="slds-truncate">{due}</div></td>
+                                        </template>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </template>
+            </div>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,777 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <div style="display:none">
+        {recordId}
+    </div>
+    <div style="padding-top: 15px; text-align: center; background-color: white; font-size: 20px;">
+        <h2>Payment Request Form</h2>
+    </div>
+    <template if:true={showForm}>
+        <lightning-record-edit-form object-api-name="Payment_Request__c" onsubmit={handleSubmit} onsuccess={handleSuccess}>
+            <div style="padding:10px;background-color:white">
+                <lightning-formatted-rich-text value={label.Payment_Request_Creation_Note}></lightning-formatted-rich-text>
+            </div>
+            <div style="padding:10px;background-color:white">
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field required="true" field-name="Name__c" value={customerName} disabled= {NewPaymentFormRequest}> </lightning-input-field>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field required="true" field-name="Email__c" value={customerEmail} disabled= {NewPaymentFormRequest}> </lightning-input-field>
+                    </div>
+                </div>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-2 slds-p-bottom_xx-small">
+                        <lightning-input-field required="true" field-name="Mobile_Number__c" value={customerPhone} disabled= {NewPaymentFormRequest}> </lightning-input-field>
+                        <p style="color:green">Please enter in the following format - 9715XXXXXXXX(Country code & Phone number)</p>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field required="true" field-name="Emirates_Id_Passport_Number__c" value={customerPassportOrEmiratesId} disabled= {NewPaymentFormRequest}> </lightning-input-field>
+                    </div>
+                </div>
+                <div class="slds-grid slds-gutters">
+                    <template if:true={makeLeadSourceRequired}>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required field-name="Lead_Source_Category__c" value={category} disabled= {NewPaymentFormRequest}></lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required field-name="Lead_Source_Sub_Category__c" value={subcategory} disabled= {NewPaymentFormRequest}></lightning-input-field>
+                        </div>
+                    </template>
+                    <template if:false={makeLeadSourceRequired}>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Lead_Source_Category__c" value={category} disabled= {NewPaymentFormRequest}></lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Lead_Source_Sub_Category__c" value={subcategory} disabled= {NewPaymentFormRequest}></lightning-input-field>
+                        </div>
+                    </template>
+                </div>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field field-name="POP_Comments__c"></lightning-input-field>
+                    </div>
+                </div>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-2">
+                        <div class="slds-grid slds-gutters">
+                            <template if:true={showUnitSelection}>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field required="true" field-name="Mode_Option__c" onchange={handleModeOptionChange}> </lightning-input-field>
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field required="true" field-name="Mode__c" onchange={handleModeChange}> </lightning-input-field>
+                                    <template if:true={isCash}>
+                                        <div style="margin-top: -8px; font-size: 16px; margin-left: 4px; font-style: italic; color:red">
+                                            <b>Note</b>: {label.PR_OTC_14_Percent_Validation_Msg}
+                                        </div>
+                                    </template>
+                                </div>
+                            </template>
+                            <template if:false={showUnitSelection}>
+                                <div class="slds-col slds-size_1-of-1">
+                                    <lightning-input-field required="true" field-name="Mode__c" onchange={handleModeChange}> </lightning-input-field>
+                                    <template if:true={isCash}>
+                                        <template if:true={fromBooking}>
+                                            <div style="margin-top: -8px; font-size: 16px; margin-left: 4px; font-style: italic; color:red">
+                                                <b>Note</b>: {label.PR_OTC_14_Percent_Validation_Msg}
+                                            </div>
+                                        </template>
+                                        <template if:false={fromBooking}>
+                                            <div style="margin-top: -8px; font-size: 16px; margin-left: 4px; font-style: italic; color:red">
+                                                <b>Note</b>: {label.PR_OTC_14_Percent_Validation_Msg}
+                                            </div>
+                                        </template>
+                                    </template>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <template if:true={isSecondaryMode}>
+                            <template if:true={isCheque}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-1">
+                                        <lightning-input-field required="true" field-name="Amount__c"></lightning-input-field>
+                                    </div>
+                                </div>
+                            </template>
+                            <template if:true={isCreditCard}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-1">
+                                        <lightning-input-field required="true" field-name="Amount__c"></lightning-input-field>
+                                    </div>
+                                </div>
+                            </template>
+                            <template if:true={isWebsite}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-1">
+                                        <lightning-input-field required="true" field-name="Amount__c"></lightning-input-field>
+                                    </div>
+                                </div>
+                            </template>
+                            <template if:true={isCDMCash}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-1">
+                                        <lightning-input-field required="true" field-name="Amount__c"></lightning-input-field>
+                                    </div>
+                                </div>
+                            </template>
+                            <template if:true={isCDMCheque}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-1">
+                                        <lightning-input-field required="true" field-name="Amount__c"></lightning-input-field>
+                                    </div>
+                                </div>
+                            </template>
+                            <template if:true={isIWT}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-1">
+                                        <lightning-input-field required="true" field-name="Amount__c"></lightning-input-field>
+                                    </div>
+                                </div>
+                            </template>
+                            <template if:true={isDWT}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-1">
+                                        <lightning-input-field required="true" field-name="Amount__c"></lightning-input-field>
+                                    </div>
+                                </div>
+                            </template>
+                            <template if:true={isCash}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-1">
+                                        <lightning-input-field required="true" field-name="Amount__c"></lightning-input-field>
+                                    </div>
+                                </div>
+                            </template>
+                        </template>
+                        <template if:false={showUnitSelection}>
+                            <template if:false={isSecondaryMode}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-1">
+                                        <lightning-input-field required="true" field-name="Amount__c" onchange={onAmountSelectBooking}> </lightning-input-field>
+                                    </div>
+                                </div>
+                            </template>
+                            <template if:true={isIWT}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-1">
+                                        <template if:false={isDWT}>
+                                            <lightning-input-field required="true" field-name="Currency__c" onchange={onCurrencySelectMulti} value={defaultCurrency}>
+                                            </lightning-input-field>
+                                        </template>
+                                    </div>
+                                </div>
+                            </template>
+                        </template>
+                    </div>
+                </div>
+                <template if:true={fromBooking}>
+                    <template if:true={modeSelected}>
+                        <template if:true={isCheque}>
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field field-name="Amount_Towards__c" onchange={onAmountTowardsChange}> </lightning-input-field>
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <template if:true={towardsUnit}>
+                                        <lightning-input-field onchange={handleUnitPrice} field-name="Towards_Unit_Price_Amount__c"> </lightning-input-field>
+                                    </template>
+                                    <template if:true={towardsPreReg}>
+                                        <lightning-input-field field-name="Towards_Pre_Registration_Amount__c"></lightning-input-field>
+                                    </template>
+                                    <template if:true={towardsOthers}>
+                                        <lightning-input-field field-name="Towards_Other_Charges_Amount__c" onchange={validateOtherCharges}> </lightning-input-field>
+                                    </template>
+                                    <template if:true={paymentCheck}>
+                                        <lightning-input-field field-name="Advance_Payment__c"> </lightning-input-field>
+                                    </template>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field field-name="Mortgage_Value__c"> </lightning-input-field>
+                                </div>
+
+                            </div>
+                            <template if:true={hasOtherCharges}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field required="true" field-name="Others__c"> </lightning-input-field>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">  &nbsp; </div>
+                                </div>
+                            </template>
+                        </template>
+                    </template>
+                    <template if:true={modeSelected}>
+                        <template if:false={isCheque}>
+                            <template if:false={isIWT}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field onchange={handleUnitPrice} field-name="Towards_Unit_Price_Amount__c"> </lightning-input-field>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field field-name="Towards_Pre_Registration_Amount__c"></lightning-input-field>
+                                    </div>
+                                </div>
+                                <template if:true={paymentCheck}>
+                                    <lightning-input-field field-name="Advance_Payment__c"> </lightning-input-field>
+                                </template>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field field-name="Towards_Other_Charges_Amount__c" onchange={validateOtherCharges}> </lightning-input-field>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <template if:true={hasOtherCharges}>
+                                            <lightning-input-field required="true" field-name="Others__c"> </lightning-input-field>
+                                        </template>
+                                    </div>
+                                </div>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field field-name="Mortgage_Value__c"></lightning-input-field>
+                                    </div>
+                                </div>
+                            </template>
+                        </template>
+                    </template>
+                </template>
+                <template if:true={isCheque}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Cheque_No__c"> </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Cheque_Date__c"> </lightning-input-field>
+                        </div>
+                    </div>
+                </template>
+                <template if:true={isIWT}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-1">
+                            <template if:true={fromBooking}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field required="true" field-name="Account_Type__c" onchange={onAccountTypeChangeMulti}> </lightning-input-field>
+                                    </div>
+                                    <template if:true={isCorporate}>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <lightning-input-field required="true" field-name="Account_Master__c"></lightning-input-field>
+                                        </div>
+                                    </template>
+                                    <template if:true={isESCROW}>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <div style="margin-top:30px;margin-left: 5px;">{escrowAccountName}</div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </template>
+                            <template if:true={isSecondaryMode}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field required="true" field-name="Account_Type__c" onchange={onAccountTypeChangeMulti}> </lightning-input-field>
+                                    </div>
+                                    <template if:true={isCorporate}>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <lightning-input-field required="true" field-name="Account_Master__c"> </lightning-input-field>
+                                        </div>
+                                    </template>
+                                    <template if:true={isESCROW}>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <div style="margin-top:30px;margin-left: 5px;">{escrowAccountName}</div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Instrument_Number__c"></lightning-input-field>
+                        </div>
+                        <!--//SOB-278 Aayushi show POP amount field for multi unit allocation-->
+                        <template if:true={multiAmountAllocationFeatureFlag}>
+                            <template if:false={fromBooking}>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field required="true" field-name="Pop_Amount__c" onchange={onPopAmountChange}> </lightning-input-field>
+                                </div>
+                            </template>
+                        </template>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Date_of_Initiation__c"></lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Country_of_Initiation__c"></lightning-input-field>
+                        </div>
+                    </div>
+                </template>
+                <!-- START ADDED BY FURKAN ON 26-APR-2024 -->
+                <template if:true={isDWT}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-1">
+                            <template if:true={fromBooking}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field required="true" field-name="Account_Type__c" onchange={onAccountTypeChangeMulti}> </lightning-input-field>
+                                    </div>
+                                    <template if:true={isCorporate}>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <lightning-input-field required="true" field-name="Account_Master__c"></lightning-input-field>
+                                        </div>
+                                    </template>
+                                    <template if:true={isESCROW}>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <div style="margin-top:30px;margin-left: 5px;">{escrowAccountName}</div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </template>
+                            <template if:true={isSecondaryMode}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field required="true" field-name="Account_Type__c" onchange={onAccountTypeChangeMulti}> </lightning-input-field>
+                                    </div>
+                                    <template if:true={isCorporate}>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <lightning-input-field required="true" field-name="Account_Master__c"> </lightning-input-field>
+                                        </div>
+                                    </template>
+                                    <template if:true={isESCROW}>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <div style="margin-top:30px;margin-left: 5px;">{escrowAccountName}</div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Instrument_Number__c"></lightning-input-field>
+                        </div>
+                        <!--//SOB-278 Aayushi show POP amount field for multi unit allocation-->
+                        <template if:true={multiAmountAllocationFeatureFlag}>
+                            <template if:false={fromBooking}>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field required="true" field-name="Pop_Amount__c" onchange={onPopAmountChange}> </lightning-input-field>
+                                </div>
+                            </template>
+                        </template>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Date_of_Initiation__c"></lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Country_of_Initiation__c"></lightning-input-field>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                        <p style="color:red;font-size:11px;">*&nbsp;</p>POP
+                    </div>
+                    <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinished} multiple></lightning-file-upload>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <lightning-input-field field-name="X3rd_Party_DWT__c" onchange={showThirdPartyFileUploadDWT}> </lightning-input-field>
+                        </div>
+                        <template if:true={thirdPartyPayment}> <!--Added By vipul -->
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="X3rd_Party_payment__c" required="true"> </lightning-input-field>
+                            </div>
+                        </template>
+                    </div>
+                    <template if:true={thirdPartyDWT}>
+                        <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                            <p style="color:red;font-size:11px;">* </p>Third Party Form
+                        </div>
+                        <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdPartyDWT} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+
+                            </div>
+                        </div>
+                    </template>
+                </template>
+                <!-- END ADDED BY FURKAN ON 26-APR-2024 -->
+                <template if:true={isCDMCash}>
+                    <!-- Aayushi : SOB-341  SOB-403 added ESCROW details for CDM Cash-->
+                    <template if:true={fromBooking}>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true" field-name="Account_Type__c" onchange={onAccountTypeChangeMulti}> </lightning-input-field>
+                            </div>
+                            <template if:true={isCorporate}>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field required="true" field-name="Account_Master__c"> </lightning-input-field>
+                                </div>
+                            </template>
+                            <template if:true={isESCROW}>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <div style="margin-top:30px;margin-left: 5px;">{escrowAccountName}</div>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+
+                    <template if:true={isSecondaryMode}>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true" field-name="Account_Type__c" onchange={onAccountTypeChangeMulti}> </lightning-input-field>
+                            </div>
+                            <template if:true={isCorporate}>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field required="true" field-name="Account_Master__c"></lightning-input-field>
+                                </div>
+                            </template>
+                            <template if:true={isESCROW}>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <div style="margin-top:30px;margin-left: 5px;">{escrowAccountName}</div>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                    <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                        <p style="color:red;font-size:11px;">*&nbsp;</p>POP
+                    </div>
+                    <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinished} multiple></lightning-file-upload>
+                        </div>
+                        <!--//SOB-278 Aayushi show POP amount field for multi unit allocation-->
+                        <template if:true={multiAmountAllocationFeatureFlag}>
+                            <template if:false={fromBooking}>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field required="true" field-name="Pop_Amount__c" onchange={onPopAmountChange}> </lightning-input-field>
+                                </div>
+                            </template>
+                        </template>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Instrument_Number__c"></lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Instrument_Date__c"> </lightning-input-field>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Date_of_Initiation__c"></lightning-input-field>
+                        </div>
+                    </div>
+                </template>
+                <template if:true={isCDMCheque}>
+                    <div class="slds-grid slds-gutters slds-wrap">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field required="true" field-name="Account_Type__c" onchange={onAccountTypeChangeMulti}> </lightning-input-field>
+                        </div>
+                        <template if:true={isCorporate}>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field required="true" field-name="Account_Master__c"> </lightning-input-field>
+                            </div>
+                        </template>
+                        <template if:true={isESCROW}>
+                            <div class="slds-col slds-size_1-of-2">
+                                <div style="margin-top:30px;margin-left: 5px;">{escrowAccountName}</div>
+                            </div>
+                        </template>
+                    </div>
+                    <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                        <p style="color:red;font-size:11px;">*&nbsp;</p>POP
+                    </div>
+                    <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinished} multiple></lightning-file-upload>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field required="true" field-name="Instrument_Number__c"></lightning-input-field>
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field required="true" field-name="Instrument_Date__c"></lightning-input-field>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <lightning-input-field field-name="X3rd_Party_CDM_Cheque__c" onchange={showThirdPartyFileUploadCDMCheque}> </lightning-input-field>
+                        </div>
+                        <template if:true={thirdPartyPayment}> <!--Added By vipul -->
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="X3rd_Party_payment__c" required="true"> </lightning-input-field>
+                            </div>
+                        </template>
+                    </div>
+                    <!--//SOB-278 Aayushi show POP amount field for multi unit allocation-->
+                    <template if:true={thirdPartyCDMCheque}>
+                        <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                            <p style="color:red;font-size:11px;">* </p>Third Party Form
+                        </div>
+                        <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdPartyCDMCheque} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+
+                            </div>
+                        </div>
+                    </template>
+
+                    <template if:true={multiAmountAllocationFeatureFlag}>
+                        <template if:false={fromBooking}>
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field required="true" field-name="Pop_Amount__c" onchange={onPopAmountChange}> </lightning-input-field>
+                                </div>
+                            </div>
+                        </template>
+                    </template>
+                </template>
+                <template if:true={isIWT}>
+                    <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                        <p style="color:red;font-size:11px;">*&nbsp;</p>POP
+                    </div>
+                    <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinished} multiple></lightning-file-upload>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <template if:true={showUnitSelection}>
+                                <lightning-input-field required="true" field-name="Currency__c" onchange={onCurrencySelectMultiIWT} value={popCurrency}></lightning-input-field>
+                            </template>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <lightning-input-field field-name="X3rd_Party_IWT__c" onchange={showThirdPartyFileUploadIWT}> </lightning-input-field>
+                        </div>
+                        <template if:true={thirdPartyPayment}> <!--Added By vipul -->
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="X3rd_Party_payment__c" required="true"> </lightning-input-field>
+                            </div>
+                        </template>
+                    </div>
+                    <template if:true={thirdPartyDWT}>
+                        <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                            <p style="color:red;font-size:11px;">* </p>Third Party Form
+                        </div>
+                        <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdPartyDWT} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+
+                            </div>
+                        </div>
+                    </template>
+                    <template if:true={thirdPartyIWT}>
+                        <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                            <p style="color:red;font-size:11px;">* </p>Third Party Form
+                        </div>
+                        <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdPartyIWT} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+
+                            </div>
+                        </div>
+                    </template>
+                </template>
+                <template if:true={isCheque}>
+                    <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                        <p style="color:red;font-size:11px;">*&nbsp;</p>POP(Cheque)
+                    </div>
+                    <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinished} multiple></lightning-file-upload>
+                        </div>
+                        <template if:true={multiAmountAllocationFeatureFlag}>
+                            <template if:false={fromBooking}>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field required="true" field-name="Pop_Amount__c" onchange={onPopAmountChange}> </lightning-input-field>
+                                </div>
+                            </template>
+                        </template>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <lightning-input-field field-name="X3rd_Party_Cheque__c"  onchange={showThirdPartyFileUpload}> </lightning-input-field>
+                        </div>
+                        <template if:true={thirdPartyPayment}> <!--Added By vipul -->
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="X3rd_Party_payment__c" required="true"> </lightning-input-field>
+                            </div>
+                        </template>
+                    </div>
+                    <template if:true={thirdPartyCheque}>
+                        <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                            <p style="color:red;font-size:11px;">*&nbsp;</p>Third Party Form
+                        </div>
+                        <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedThirdPartyCheque} multiple></lightning-file-upload>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                            </div>
+                        </div>
+                    </template>
+                </template>
+                <template if:true={isCreditCard}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <template if:true={isCreditCard}>
+                                <lightning-input-field field-name="Third_Party__c" onchange={handleThirdPartyChange}></lightning-input-field>
+                            </template>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <template if:true={thirdPartyPayment}> <!--Added By vipul -->
+                                <lightning-input-field field-name="X3rd_Party_payment__c" required="true"> </lightning-input-field>
+                            </template>
+                        </div>
+                        
+                        <template if:true={multiAmountAllocationFeatureFlag}>
+                            <template if:false={fromBooking}>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input-field required="true" field-name="Pop_Amount__c" onchange={onPopAmountChange}> </lightning-input-field>
+                                </div>
+                            </template>
+                        </template>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2" style="float:left">
+                            <div class="slds-grid slds-gutters"
+                                style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                                <p style="color:red;font-size:11px;">*&nbsp;</p>Credit Card Authorization Form
+                            </div>
+                            <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedAuthorizationForm} multiple></lightning-file-upload>
+                                </div>
+                            </div>
+                        </div>
+                        <template if:true={isThirdParty}>
+                            <div class="slds-col slds-size_1-of-2" style="float:left">
+                                <div class="slds-grid slds-gutters" style="padding-left:17px;color:#3B3B3B;font-size: 12.5px;">
+                                    <p style="color:red;font-size:11px;">*&nbsp;</p>Third Party Declaration Form
+                                </div>
+                                <div class="slds-grid slds-gutters" style="margin-top: -20px;">
+                                    <div class="slds-col slds-size_1-of-1">
+                                        <lightning-file-upload required="true" name="fileUploader" accept={acceptedFormats} onuploadfinished={handleUploadFinishedDeclarationForm} multiple></lightning-file-upload>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </template>
+                <template if:true={showUnitSelection}>
+                    <template for:each={units} for:item="u">
+                        <div key={u.row} class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2" style="width:25%">
+                                <lightning-input-field id={u.row} key={u.row} data-id={u.row} field-name="Unit__c" onchange={onUnitSelect} style="margin-bottom: 0px;"> </lightning-input-field>
+                                <span style="margin-left: 5px; font-style: italic; color: grey;">{u.details}</span>
+                                <template if:true={u.isRemoveVisible}><b>&nbsp;&#8226;&nbsp;</b> <a onclick={onRemove} id={u.row}>Remove</a></template>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="width:25%">
+                                <!--//SOB-278 Aayushi Enable amount field for each row in case of multi unit-->
+                                <lightning-input-field required="true" id={u.row} key={u.row} onchange={onAmountSelect}  field-name="Amount__c"> </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2" style="width:50%">
+                                <div class="slds-grid slds-gutters">
+                                    <template if:true={multiAccountTowerMappingFeatureFlag}>
+                                        <template if:true={isIWT}>
+                                            <div class="slds-col slds-size_9-of-12">
+                                                <div class="slds-grid slds-gutters">
+                                                    <div class="slds-col slds-size_4-of-12">
+                                                        <lightning-input-field required="true" value={u.accountType} field-name="Account_Type__c" id={u.row} key={u.row} onchange={onAccountTypeChange}> </lightning-input-field>
+                                                    </div>
+                                                    <div class="slds-col slds-size_8-of-12">
+                                                        <template if:true={u.isCorporate}>
+                                                            <lightning-input-field required="true" id={u.row} key={u.row} field-name="Account_Master__c" value={u.accountId} onchange={onAccountIdChange}> </lightning-input-field>
+                                                        </template>
+                                                        <template if:true={u.isESCROW}>
+                                                            <div style="margin-top:30px;margin-left: 5px;">{u.escrowAccount}</div>
+                                                        </template>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </template>
+                                        <template if:true={isDWT}>
+                                            <div class="slds-col slds-size_9-of-12">
+                                                <div class="slds-grid slds-gutters">
+                                                    <div class="slds-col slds-size_4-of-12">
+                                                        <lightning-input-field required="true" value={u.accountType} field-name="Account_Type__c" id={u.row} key={u.row} onchange={onAccountTypeChange}> </lightning-input-field>
+                                                    </div>
+                                                    <div class="slds-col slds-size_8-of-12">
+                                                        <template if:true={u.isCorporate}>
+                                                            <lightning-input-field required="true" id={u.row} key={u.row} field-name="Account_Master__c" value={u.accountId} onchange={onAccountIdChange}> </lightning-input-field>
+                                                        </template>
+                                                        <template if:true={u.isESCROW}>
+                                                            <div style="margin-top:30px;margin-left: 5px;">{u.escrowAccount}</div>
+                                                        </template>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </template>
+                                        <!-- Aayushi : SOB-341 SOB-403 added ESCROW details for CDM Cash-->
+                                        <template if:true={isCDMCash}>
+                                            <div class="slds-col slds-size_9-of-12">
+                                                <div class="slds-grid slds-gutters">
+                                                    <div class="slds-col slds-size_4-of-12">
+                                                        <lightning-input-field required="true" value={u.accountType} field-name="Account_Type__c" id={u.row} key={u.row} onchange={onAccountTypeChange}> </lightning-input-field>
+                                                    </div>
+                                                    <div class="slds-col slds-size_8-of-12">
+                                                        <template if:true={u.isCorporate}>
+                                                            <lightning-input-field required="true" id={u.row} key={u.row} field-name="Account_Master__c" value={u.accountId} onchange={onAccountIdChange}> </lightning-input-field>
+                                                        </template>
+                                                        <template if:true={u.isESCROW}>
+                                                            <div style="margin-top:30px;margin-left: 5px;"> {u.escrowAccount}</div>
+                                                        </template>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                    <div style="margin-top:10px">
+                        <lightning-button variant="brand" label="Add Unit" title="Add Unit" onclick={addUnits} class="slds-m-left_x-small"></lightning-button>
+                    </div>
+                </template>
+
+                <div style="text-align:center;padding-bottom:40px;padding-top: 20px;">
+                    <button type="submit" class="slds-button slds-button_brand" title="Save">Save</button>
+                    <button class="slds-button slds-button_brand" title="Cancel" onclick={handleCancel}>Cancel</button>
+                </div>
+            </div>
+        </lightning-record-edit-form>
+    </template>
+    <template if:false={showForm}>
+        <div style="padding-top: 15px; text-align: center; background-color: white; font-size: 20px;">
+            <template if:true={bookingTerminationError}>
+                <h2>Booking is under termination payment request cannot be created </h2>
+            </template>
+            <template if:true={tertiaryPrError}>
+                <h2>{tertiaryPrErrorMessage}</h2>
+            </template>
+        </div>
+    </template>
+</template>

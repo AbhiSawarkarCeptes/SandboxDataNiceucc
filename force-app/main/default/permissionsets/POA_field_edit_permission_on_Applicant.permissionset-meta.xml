@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission set provides editable access to For POA field on Applicant details object</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Applicant_Details__c.POA_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Applicant_Details__c.Power_of_Attorney_Details_Arabic__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Applicant_Details__c.Power_of_Attorney_Details__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>&quot;POA&quot; field edit permission on Applicant</label>
+</PermissionSet>

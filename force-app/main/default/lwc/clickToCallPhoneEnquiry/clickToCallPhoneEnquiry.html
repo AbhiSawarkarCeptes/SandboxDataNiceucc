@@ -1,0 +1,8 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <lightning-click-to-dial class="clickToDial" value={phonenum} style="visibility: hidden" record-id={recordId} data-id={recordId} phone-number={phonenum}></lightning-click-to-dial>
+</template>

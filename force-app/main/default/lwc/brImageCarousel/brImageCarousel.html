@@ -1,0 +1,29 @@
+<template>
+    <section role="dialog" tabindex="-1" aria-modal="true" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+            <div class="icon-group">
+                <lightning-button-icon icon-name="utility:close" variant="container" class="close-icon" size="large"
+                    alternative-text="Close" title="Close" onclick={handleCloseBtn}></lightning-button-icon>
+                <img src={downloadIcon} alt="Download Icon" class="download-icon" onclick={handleDownload} />
+            </div>
+            <div class="slds-modal__content slds-p-around_medium modal-body" id="modal-content-id-2">
+                <!-- carousel.html  onmouseover={handleMouseOver} onmouseleave={handleMouseLeave}-->
+                <div class="carousel">
+                    <div class="carousel-container" style={containerStyles}>
+                        <template for:each={getData} for:item="image">
+                            <div key={image} class="carousel-slide">
+                                <img src={image} alt="Image not found" />
+                            </div>
+                        </template>
+                    </div>
+                    <div class="navigation">
+                        <button class="prev" onclick={previousSlide}>&#10094;</button>
+                        <button class="next" onclick={nextSlide}>&#10095;</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+</template>

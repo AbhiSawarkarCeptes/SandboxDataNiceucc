@@ -1,0 +1,13 @@
+.table-container {
+    height: 300px; /* Adjust height as needed */
+    overflow-y: auto;
+    display: block;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    white-space: nowrap;
+}

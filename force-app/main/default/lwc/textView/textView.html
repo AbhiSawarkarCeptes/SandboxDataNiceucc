@@ -1,0 +1,13 @@
+<template>
+    <div class="text-container slds-grid slds-gutters">
+        <div class="slds-col">
+            <lightning-input type="text" name="textFld" value={remark} onchange={handleChange}></lightning-input>
+        </div>
+        <div class="slds-col">
+            <template if:true={showIcon}>
+            <lightning-icon icon-name="utility:success" alternative-text="Save" variant="success"
+                title="Save" size="xx-small" onclick={saveChange}></lightning-icon>
+            </template>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <div style="padding:20px">
+        <div style="display:none">{recordId}</div>
+        <template if:true={showSpinner}>
+            <div class="exampleHolder">
+                <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+            </div>
+        </template>
+        <lightning-record-edit-form onsubmit={handleSubmit} record-id={recordId} object-api-name="Payment_Request__c" onsuccess={handleSuccess} >
+            <lightning-input-field disabled="true" field-name="Status__c" value="Amount Confirmed by Accounts"> </lightning-input-field>
+            <lightning-input-field disabled="true" field-name="Original_Amount__c"> </lightning-input-field>
+            <lightning-input-field required="true" field-name="Amount__c"> </lightning-input-field>
+            <lightning-input-field required="true" field-name="Reference_Number__c"> </lightning-input-field>
+            <lightning-input-field required="true" field-name="Account_Received_Date__c"> </lightning-input-field>
+            <lightning-input-field field-name="Amount_Confirmed_By_Accounts__c" value="true" class="slds-hide"> </lightning-input-field>
+            <div style="text-align:center;padding-top: 20px;">
+                <button type="submit" class="slds-button slds-button_brand" title="Save">Save</button>
+            </div>
+        </lightning-record-edit-form>
+    </div>
+</template>

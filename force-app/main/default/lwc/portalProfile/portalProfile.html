@@ -1,0 +1,669 @@
+<template>
+  <div class={isEligible}>
+    <template if:true={showDocumentModule}>
+      <!-- <table class="view-doc">
+                      <thead>
+                        <tr>
+                          <th scope="col">File Name</th>
+                          <th scope="col">Expiry</th>
+                          <th scope="col">Actions</th>
+                         
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-label="filename"><b> Passport.pdf</b></td>
+                          <td data-label="expiry" class="expiry">
+                              <span><input type="date" placeholder="Expiry Date"></span>
+                              <span class="expiry-active">147 days to expire</span>
+                          </td>
+                          <td data-label="actions" class="actions">
+                              <span><img src={view_icon}></span>
+                              <span><img src={download_icon}></span>
+                              <span><img src={upload_doc_icon}></span>
+                          </td>
+                          
+                        </tr>
+                        
+                      </tbody>
+                    </table>  -->
+
+      <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+        class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+          <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+            onclick={docClickHandler}>
+            <lightning-icon icon-name="utility:close" size="small" alternative-text="Indicates close">
+            </lightning-icon>
+            <span class="slds-assistive-text">Cancel and close</span>
+          </button>
+          <div class="slds-modal__header">
+            <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">All Documents</h1>
+          </div>
+          <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+            <div class="request-form">
+              <table class="view-doc">
+                <thead>
+                  <tr>
+                    <th scope="col">File Name</th>
+                    <th scope="col">Expiry</th>
+                    <th scope="col">Actions</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <template for:each={brFilesInfo} for:item="eachFile">
+                    <tr key={eachFile.Id}>
+                      <td data-label="filename"><b>{eachFile.fileName}</b></td>
+                      <td data-label="expiry" class="expiry">
+                        <span><lightning-input type="date" placeholder="Expiry Date"></lightning-input></span>
+                        <span class="expiry-active">{eachFile.expiryDuration} days to expire </span>
+                      </td>
+                      <td data-label="actions" class="actions">
+                        <span onclick={viewIconClickHandler} data-id={eachFile.fileId}
+                          data-versionid={eachFile.latestVersionId} data-baseurl={eachFile.baseUrl}
+                          data-filraddress={eachFile.fileUrl}><img src={view_icon}></span>
+
+                        <a href={eachFile.fileUrl} download><img src={download_icon}></a>
+                        <span onclick={uploadIconClickHandler}><img src={upload_doc_icon}></span>
+                        <lightning-file-upload label="Attach receipt" name="fileUploader" accept={acceptedFormats}
+                          record-id={eachFile.Broker_Registration__c} onuploadfinished={handleUploadFinished} multiple>
+                        </lightning-file-upload>
+                      </td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+              <div><button onclick={saveButtonHandler}>Save</button>
+                <button onclick={discardButtonHandler}>Discard changes</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </template>
+
+    <div class="main-panel">
+
+      <div class="container">
+
+        <div class="inner-wrapper">
+
+
+
+          <div class="row profile-content-wrapper">
+            <div class="left-section col-3">
+              <div class="profile-img image-container">
+                <button class="icon-button" onclick={handleIconClick}>
+                  <img src={pencilIcon} alt="Edit Icon" />
+                </button>
+                <img src={photoUrl} class="w-100" />
+                <div if:true={showDropdown} class="dropdown-menu">
+                  <ul>
+                    <li onclick={triggerFileInput}>Change Image</li>
+                    <li onclick={handleDeleteImage}>Delete Image</li>
+                  </ul>
+                </div>
+              </div>
+              <input type="file" class="file-input" accept="image/png, image/jpeg" onchange={handleProfileChange} />
+              <!-- <lightning-input           
+                      type="file"
+                      onchange={handleFilesChange}
+                      label="Profile Photo"
+                      accept="image/png, image/jpeg"
+                      message-when-value-missing="Please select a file"
+                    ></lightning-input>  -->
+              <!-- <lightning-input name="file5" type="file" label="Profile Photo" multiple="false" accept="image/png, image/jpeg" onchange={handleFilesChange }></lightning-input> -->
+              <!-- <lightning-button variant="destructive" label="Delete Photo" title="Delete Photo" onclick={handleDeletePhoto }></lightning-button> -->
+            </div>
+            <div class="middle-section col-6">
+              <div class="profile-details">
+                <div class="profile-info">
+                  <div class="header-title">
+                    <h3>Profile Details</h3>
+                  </div>
+                </div>
+                <div class="profile-info-form">
+                  <form action="#">
+                    <div class="row">
+                      <div class="col-12">
+                        <!-- <label for="name">Name</label>
+                        <input type="text" name="name" value={firstName} readonly /> -->
+                        <label for="company-name">Company Name</label>
+                        <div class="common-text">
+                          {CompanyName}
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row mt-3">
+                      <!-- <div class="col-4">
+                        <label for="passport-numnber">Passport Number</label>
+                        <input type="text" name="passport-numnber" value={regNumber} readonly />
+                      </div> -->
+                      <div class="col-4">
+                        <label for="mobile-number">Mobile number</label>
+                        <input type="text" name="name" value={mobileNumber} readonly />
+                      </div>
+                      <div class="col-4">
+                        <!-- <label for="email-id">Email ID</label>
+                        <input type="text" name="email-id" class="email" value={email} readonly /> -->
+                        <label for="company-email-id">Company Email ID</label>
+                        <input type="text" name="company-email-id" class="email" value={email} readonly />
+                      </div>
+
+                    </div>
+
+                    <hr class="border-hr" />
+
+                    <div class="row mt-5">
+                      <div class="col-4">
+                        <!-- <label for="title">Title</label>
+                        <input type="text" name="title" value={Title} readonly /> -->
+                        <label for="channel-partner-id">Authorised Signatory</label>
+                        <input type="text" name="Authorised Signatory" value={authSignatoryPassportName} readonly />
+                      </div>
+                      <div class="col-4">
+                        <label for="channel-partner-id">{brokerType} ID</label>
+                        <input type="text" name="channel-partner-id" value={brokerId} readonly />
+                      </div>
+
+
+                    </div>
+
+
+                    <div class="row mt-3">
+                      <div class="col-4">
+                        <!-- <label for="company-name">Company Name</label>
+                        <div class="common-text">
+                          {CompanyName}
+                        </div> -->
+                        <!-- <input type="text" name="company-name" value={CompanyName} readonly /> -->
+                        <label for="accounts-email-id">Accounts/Finance Email ID</label>
+                        <input type="text" name="accounts-email-id" class="email" value={accountAndFinEmail} readonly />
+                      </div>
+                      <div class="col-4">
+                        <!-- <label for="channel-partner-id">Authorised Signatory</label>
+                        <input type="text" name="Authorised Signatory" value={AuthorisedSignatory} readonly /> -->
+                        <label for="owner-email-id">Owner's Email ID</label>
+                        <input type="text" name="owner-email-id" class="email" value={ownersEmail} readonly />
+                      </div>
+
+                    </div>
+
+
+                    <div class="row mt-3">
+                      <div class="col-4">
+                        <!-- <label for="owner-name">Owner Name</label>
+                        <input type="text" name="owner-name" value={firstName} readonly /> -->
+                        <label for="designation-signatory">Broker Category</label>
+                        <input type="text" name="designation-signatory" value={brokerCategory} readonly />
+                      </div>
+                      <div class="col-8">
+                        <label for="address">Address</label>
+                        <div class="common-text">
+                          {address}
+                        </div>
+                        <!-- <input type="text" name="channel-partner-id" value={address} readonly /> -->
+                      </div>
+
+
+                    </div>
+
+                    <div class="row mt-3">
+                      <!-- <div class="col-4">
+                        <label for="trade-number">Trade License Number</label>
+                        <input type="text" name="trade-number" value={tradeLicenceNum} readonly />
+                      </div> -->
+                      <div class="col-4">
+                        <label for="reg-no">Registration Number</label>
+                        <input type="text" name="reg-no" value={regNumber} readonly />
+                      </div>
+
+                      <div class="col-4">
+                        <label for="rera-number">RERA Number</label>
+                        <input type="text" name="rera-number" value={reraNumber} readonly />
+                      </div>
+
+                    </div>
+
+
+                  </form>
+                </div>
+
+              </div>
+            </div>
+            <div class="right-section  col-3">
+              <!-- <div class="users-list-col mb-2">
+                               
+                            <ul class="users-list-content">
+                              <template for:each={relatedCons} for:item="contact">
+                                <li class="user-list-item mb-3" key={contact.name}>
+                                   <div class="icon me-3"><img src={contact.imageUrl} /></div>
+                                   <div class="users-name">{contact.name}</div>
+                                </li>
+                                
+                              </template>
+                            </ul>
+                           
+                        
+                            
+                    </div> -->
+              <div class="renewal-col mb-2">
+                <div class="renewal-content">
+                  <div class="renewal-details">
+                    <div class="txt">Agreement Renewal </div>
+                    <div class="date-txt">{expiryDate}</div>
+                    <div class="left-days-txt">
+                      <template if:true={expiryDateDays}>
+                        {expiryDateDays} days left </template>
+                    </div>
+                  </div>
+                  <template if:true={downloadUrl}>
+                    <div class="renewal-download-icon"><a><img src={downloadIcon}
+                          onclick={sidebarDownloadIconClickHandler} /></a>
+                      <a href={downloadUrl} download="file1" class="hidden" ref="agreement" target="_blank"></a>
+                      <a href={downloadNOCUrl} download="file2" class="hidden" ref="noc" target="_blank"></a>
+                    </div>
+                  </template>
+                </div>
+                <template if:false={isNotUnderRenewalBefore30days}>
+                  <div>
+                    <button class="btnDisabled btn-renewal" disabled>Renewal Agreement</button>
+                  </div>
+                  <template if:true={isUnderRenewal}>
+                    <div>Note: Your Renewal agreement is Inprogress. Please connect with Channel Operations team.</div>
+                  </template>
+                </template>
+
+                <template if:true={isNotUnderRenewalBefore30days}>
+                  <div><button class="btn btn-renewal" onclick={renewalButtonHandler}>Renewal Agreement</button></div>
+                </template>
+              </div>
+
+              <!-- <div class="upload-doc-col mt-3 mb-3">
+                                <div class="upload-doc-content"> 
+                                    <ul>
+                                        <li>
+                                            <div class="upload-list mb-3">
+                                                <h6 class="filename">Filename3.pdf</h6>
+                                                <p class="content">expired</p>
+                                          </div>
+                                        </li>
+                                        <li>
+                                            <div class="upload-list mb-3">
+                                                <h6 class="filename">Filename4.pdf</h6>
+                                                <p class="content">expired</p>
+                                          </div>
+
+                                        </li>
+                                    </ul>
+                                    <div><button class="btn btn-upload modal-toggle" onclick={docClickHandler}>View all Documents</button></div>
+                                </div>
+                                    
+                            </div> -->
+
+              <div class="view-doc mt-4 mb-3">
+                <div><button onclick={docClickHandler} class="btn modal-toggle view-docs"
+                    data-element="view-docs-modal">View all Documents
+                    <template if:true={filesCount}>
+                      <div class="notification-badge" role="status">{filesCount}</div>
+                    </template>
+                  </button></div>
+              </div>
+              <div class="view-doc mt-4 mb-3">
+                <div><button onclick={uploadBalanceDocumentHandler} class="btn modal-toggle view-docs"
+                    data-element="view-docs-modal">Upload balance document
+                  </button></div>
+              </div>
+              <div class="view-doc mt-4 mb-3">
+                <div><button onclick={policiesButtonClickHandler} class="btn modal-toggle view-docs"
+                    data-element="view-docs-modal">Policies
+                  </button></div>
+              </div>
+
+
+
+              <template if:true={showUploadBalanceDocument}>
+
+                <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+                  class="slds-modal slds-fade-in-open upload-collateral">
+                  <div class="slds-modal__container">
+                    <div class="slds-modal__header header-style">
+                      <span>Upload Balanced Document</span>
+                      <lightning-button-icon icon-name="utility:close" variant="bare" size="large"
+                        alternative-text="Close" title="Close" onclick={uploadBalanceDocumentHandler}>
+                      </lightning-button-icon>
+                    </div>
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+                      <div class="file-upload-design" ondragover={handleDragOver} ondrop={handleDrop}>
+                        <img src={upload_icon} alt="Upload Icon" height="27px" />
+                        <div class="drag-text">Drag & Drop to upload</div>
+                        <div class="browse-button" onclick={handleBrowse}>or Browse</div>
+                        <input id="files" type="file" onchange={handleBalanceFilesChange} name="files" multiple>
+                        <!-- <lightning-input id="files" type="file" label="Attachment" variant="label-hidden" multiple
+                                  onchange={handleFilesChange} name="files"></lightning-input> -->
+                      </div>
+                      <div class="slds-grid slds-wrap slds-m-top_medium">
+                        <template if:true={filesData}>
+                          <template for:each={filesData} for:item="imgName" for:index="index">
+                            <div key={imgName.fileName} class="slds-col slds-size_6-of-12 selected-file-text">
+                              <div>
+                                <span class="file-name">{imgName.fileName}</span>
+                                <lightning-button-icon icon-name="utility:close" variant="bare" size="small"
+                                  alternative-text="Close" title="Close" ata-id={index} onclick={removeReceiptImage}>
+                                </lightning-button-icon>
+                              </div>
+                            </div>
+                          </template>
+                        </template>
+                      </div>
+                      <div class="upload-submit-btn">
+                        <button class="btn btn-submit" onclick={uploadBalanceFiles}>Submit </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+              </template>
+
+
+
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <template if:true={showImgFile}>
+      <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-02"
+        class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+          <div class="slds-modal__header">
+            <h1 id="modal-heading-02" class="slds-modal__title slds-hyphenate" tabindex="-1">{currentFileName}</h1>
+          </div>
+          <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-3">
+            <img src={fileUrlPreview} alt="Preview" width="100%" />
+          </div>
+          <div class="slds-modal__footer">
+            <button class="slds-button slds-button_brand" onclick={hidePreviewModal}>Close</button>
+          </div>
+        </div>
+      </section>
+      <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+    <template if:true={showPdfFile}>
+      <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-04"
+        class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+          <div class="slds-modal__header">
+            <h1 id="modal-heading-04" class="slds-modal__title slds-hyphenate" tabindex="-1">{currentFileName}</h1>
+          </div>
+          <div class="slds-modal__content slds-p-around_medium">
+            <iframe src={fileUrlPreview} title="PDF Viewer" width="100%" height="600px" frameborder="0"></iframe>
+          </div>
+          <div class="slds-modal__footer">
+            <button class="slds-button slds-button_brand" onclick={hidePreviewModal}>Close</button>
+          </div>
+        </div>
+      </section>
+      <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+    <!-- <div class="modal">
+    <div class="modal-overlay modal-toggle"></div>
+    <div class="modal-wrapper modal-transition">
+      <div class="modal-header">
+        <button class="modal-close modal-toggle"><span class="icon-close icon"><img src="assets/images/close.svg"></span></button>
+        <h2 class="modal-heading">Upload Documents</h2>
+      </div>
+      
+
+
+      
+    </div>
+  </div> -->
+
+
+    <template if:true={showDocumentUploadModule}>
+      <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-02" aria-modal="true"
+        aria-describedby="modal-content-id-5" class="slds-modal slds-fade-in-open view-all-documents">
+        <div class="slds-modal__container">
+          <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-5">
+            <div class="customHeaderSection">
+              <h2>View all Documents</h2>
+              <div class="customCloseIcon" onclick={docClickHandler}>X</div>
+            </div>
+            <div class="document-selection">
+              <!-- <select class="selectopt" id="documentSelect">
+              <option value="View Primary Documents">View Primary Documents</option>
+              <option value="View Secondary Documents">View Secondary Documents</option>
+          </select> -->
+              <lightning-combobox name="progress" label="Select File Type " value={UploadModuleSelectedText}
+                placeholder={UploadModuleSelectedText} options={SelectOptions} onchange={uploadModuleDropDownChange}>
+              </lightning-combobox>
+            </div>
+            <div class="customContentSection">
+
+              <div class="slds-grid slds-gutters">
+                <template if:true={onUploadStatus}>
+                  <div class="thank-you-msg mt-5">
+                    <div class="txt-msg">Thank You!</div>
+                    <div class="txt">filename3 has been uploaded successfully</div>
+                  </div>
+                </template>
+                <table class="view-doc">
+                  <thead>
+                    <template if:false={showBalanceFiles}>
+                      <tr>
+                        <th scope="col">File Name</th>
+                        <th scope="col">Expiry</th>
+                        <th scope="col">Actions</th>
+                      </tr>
+                    </template>
+                    <template if:true={showBalanceFiles}>
+                      <tr>
+                        <th scope="col">File Name</th>
+                        <th scope="col">Actions</th>
+                      </tr>
+                    </template>
+                  </thead>
+                  <tbody>
+                    <template for:each={brFilesInfo} for:item="eachFile">
+                      <tr key={eachFile.Id} class="BRRecord">
+                        <template if:false={showBalanceFiles}>
+                          <td data-label="filename"><b> {eachFile.filetype}</b></td>
+                          <td data-label="expiry" class="expiry">
+                            <template if:true={eachFile.bolflg}>
+                              <!-- <input type="text" disabled value={expiryDate} placeholder="Expiry Date" data-id={eachFile.recordId}
+                            class="BRExpiryDate"></span> -->
+                              <span class="expiry-date-txt">{expiryDate}</span>
+                            </template>
+                            <template if:false={eachFile.bolflg}>
+                              <template if:true={eachFile.isActiveExpiryClass}>
+                                <span><input type="date" placeholder="Expiry Date" data-id={eachFile.recordId}
+                                    value={eachFile.expiryDate} class="BRExpiryDate" disabled></span>
+                              </template>
+                              <template if:false={eachFile.isActiveExpiryClass}>
+                                <span><input type="date" placeholder="Expiry Date" data-id={eachFile.recordId}
+                                    class="BRExpiryDate dateUpdate" onchange={handleExpiryDate}></span>
+                              </template>
+
+                            </template>
+
+                            <!-- If days is less than 50 and grater than 15 calss name should be 'expiry-warning' -->
+                            <!-- If days is grater than 50 calss name should be 'expiry-active' -->
+                            <!-- If days is less than 15 calss name should be 'expiry-inactive' -->
+                            <template if:true={eachFile.expiryDuration}>
+                              <span class={eachFile.expiryClass}>
+
+                                <!--  {eachFile.expiryDuration} days to expire -->
+                                <template if:true={eachFile.isExpired}>
+                                  {eachFile.expiryDuration} days to expire
+                                </template>
+                                <template if:false={eachFile.isExpired}>
+                                  Expired
+                                </template>
+
+                              </span></template>
+                          </td>
+                          <td data-label="actions" class="actions ">
+                            <span onclick={viewIconClickHandler} data-versionid={eachFile.latestVersionId}
+                              data-baseurl={eachFile.baseUrl} data-filraddress={eachFile.fileUrl}
+                              data-fileextention={eachFile.fileExtention}><img src={view_icon}></span>
+                            <!-- <span><a href={eachFile.fileUrl} target="_blank" download><img
+                                  src={download_icon}></a></span> -->
+                            <span onclick={downloadIconClickHandler} data-versionid={eachFile.latestVersionId}
+                              data-baseurl={eachFile.baseUrl} data-filraddress={eachFile.fileUrl}
+                              data-fileextention={eachFile.fileExtention} data-filename={eachFile.fileName}><img
+                                src={download_icon}></span>
+
+                            <template if:false={eachFile.bolflg}>
+                              <span data-id={eachFile.Id} onclick={openfileUpload} class="uploadSpan">
+                                <img src={upload_doc_icon}>
+                                <input class="uplodInput" name="file1" data-filetype={eachFile.filetype}
+                                  data-recordid={eachFile.recordId} type="file" label="Attachment"
+                                  accept="image/png, .zip, .pdf" onchange={handleFilesChange} />
+                                <!-- <label class="uploadLabel" for="inputFile">
+                                  <div class="uploadDiv"><img src={upload_doc_icon}></div>
+                                  <lightning-input class="uplodInput" name="file1" data-filetype={eachFile.filetype}
+                                    data-recordid={eachFile.recordId} type="file" label="Attachment" multiple="false"
+                                    accept="image/png, .zip, .pdf" onchange={handleFilesChange}></lightning-input>
+                                </label> -->
+                              </span>
+                            </template>
+
+                          </td>
+                        </template>
+                        <template if:true={showBalanceFiles}>
+                          <td data-label="filename"><b> {eachFile.fileName}</b></td>
+
+
+                          <td data-label="actions" class="actions ">
+                            <span onclick={viewIconClickHandler} data-versionid={eachFile.latestVersionId}
+                              data-baseurl={eachFile.baseUrl} data-filraddress={eachFile.fileUrl}
+                              data-fileextention={eachFile.fileExtention}><img src={view_icon}></span>
+                            <!-- <span><a href={eachFile.fileUrl} target="_blank"><img src={download_icon}></a></span> -->
+                            <span onclick={downloadIconClickHandler} data-versionid={eachFile.latestVersionId}
+                              data-baseurl={eachFile.baseUrl} data-filraddress={eachFile.fileUrl}
+                              data-fileextention={eachFile.fileExtention} data-filename={eachFile.fileName}><img
+                                src={download_icon}></span>
+                            <template if:false={eachFile.bolflg}>
+                              <span data-id={eachFile.Id} onclick={openfileUpload} class="uploadSpan">
+                                <img src={upload_doc_icon}>
+                                <input class="uplodInput" name="file1" data-filetype={eachFile.filetype}
+                                  data-recordid={eachFile.recordId} type="file" label="Attachment"
+                                  accept="image/png, .zip, .pdf" onchange={handleFilesChange} />
+                                <!-- <label class="uploadLabel" for="inputFile">
+                                  <div class="uploadDiv"><img src={upload_doc_icon}></div>
+                                  <lightning-input class="uplodInput" name="file1" data-filetype={eachFile.filetype}
+                                    data-recordid={eachFile.recordId} type="file" label="Attachment" multiple="false"
+                                    accept="image/png, .zip, .pdf" onchange={handleFilesChange}></lightning-input>
+                                </label> -->
+                              </span>
+                            </template>
+
+                          </td>
+                        </template>
+
+                      </tr>
+
+                    </template>
+                    <!-- <tr>
+                                <td data-label="filename"><b> Passport.pdf</b></td>
+                                <td data-label="expiry" class="expiry">
+                                    <span><input type="date" placeholder="Expiry Date"></span>
+                                    <span class="expiry-active">147 days to expire</span>
+                                </td>
+                                <td data-label="actions" class="actions">
+                                    <span><img src={view_icon}></span>
+                                    <span><img src={download_icon}></span>
+                                    <span><img src={upload_doc_icon}></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td data-label="filename"><b>filename2.pdf</b></td>
+                                <td data-label="expiry" class="expiry">
+                                    <span><input type="date"  placeholder="Expiry Date"></span>
+                                    <span class="expiry-warning">47 days to expire</span>
+                                </td>
+                                <td data-label="actions" class="actions">
+                                    <span><img src={view_icon}></span>
+                                    <span><img src={download_icon}></span>
+                                    <span><img src={upload_doc_icon}></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td data-label="filename"><b>filename3.pdf</b></td>
+                                <td data-label="expiry" class="expiry">
+                                    <span><input type="date"  placeholder="Expiry Date"></span>
+                                    <span class="expiry-inactive">12 days to expire</span>
+                                </td>
+                                <td data-label="actions" class="actions">
+                                    <span><img src={view_icon}></span>
+                                    <span><img src={download_icon}></span>
+                                    <span><img src={upload_doc_icon}></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td data-label="filename"><b>filename4.pdf</b></td>
+                                <td data-label="expiry" class="expiry">
+                                    <span><input type="date" placeholder="Expiry Date"></span>
+                                    <span class="expiry-active">147 days to expire</span>
+                                </td>
+                                <td data-label="actions" class="actions">
+                                    <span><img src={view_icon}></span>
+                                    <span><img src={download_icon}></span>
+                                    <span><img src={upload_doc_icon}></span>
+                                </td>
+                              </tr> -->
+
+                  </tbody>
+                </table>
+              </div>
+
+            </div> <!-- EOF Popup Content Section -->
+            <div class="centered">
+              <template if:true={disableSubmitBtn}>
+                <button onclick={updateBRRecords} class="btnSubmit" disabled>Submit</button>
+              </template>
+              <template if:false={disableSubmitBtn}>
+                <button onclick={updateBRRecords} class="btnSubmit blueColor">Submit</button>
+              </template>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <template if:true={showPolicies}>
+      <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-02" aria-modal="true"
+        aria-describedby="modal-content-id-3" class="slds-modal slds-fade-in-open view-policies">
+        <div class="slds-modal__container">
+          <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-4">
+            <div class="customHeaderSection">
+              <h2>Policies</h2>
+              <div class="customCloseIcon" onclick={policiesButtonClickHandler}>X</div>
+            </div>
+
+            <c-broker-portal-show-p-d-f file-u-r-l={}></c-broker-portal-show-p-d-f>
+            <div>Note: Policies Terms and Conditions are subject to change</div>
+          </div>
+        </div>
+      </section>
+      <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
+    <!-- <script src="assets/js/jquery-min.js"></script>
+   <script src="assets/js/main.js"></script> -->
+  </div>
+</template>

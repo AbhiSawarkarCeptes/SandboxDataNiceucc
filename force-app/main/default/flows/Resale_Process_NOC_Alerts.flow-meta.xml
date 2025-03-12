@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Resale_NOC_Completed_by_Audit</name>
+        <label>Resale NOC Completed by Audit</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <actionName>Resale_Process__c.Resale_Proces_NOC_Audit_Completed_DocuSign_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.DocuSignEnvelope__r.Resale_Process__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Resale_Process__c.Resale_Proces_NOC_Audit_Completed_DocuSign_Alert</nameSegment>
+    </actionCalls>
+    <apiVersion>61.0</apiVersion>
+    <decisions>
+        <description>Resale NOC - Resale Audit DocuSign Completed</description>
+        <name>NOC_Recipient_Type_Resale_Audit_Completed</name>
+        <label>NOC Recipient Type - Resale Audit Completed</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_NOC_Recipient_Type_Resale_Audit</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Envelope_Recipient_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Resale Audit</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Resale_NOC_Completed_by_Audit</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Resale Process NOC Alerts</description>
+    <environments>Default</environments>
+    <interviewLabel>Resale Process NOC Alerts {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Resale Process NOC Alerts</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>NOC_Recipient_Type_Resale_Audit_Completed</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Envelope_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Resale NOC</stringValue>
+            </value>
+        </filters>
+        <object>Docusign_Recipient_Status_Sobha__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

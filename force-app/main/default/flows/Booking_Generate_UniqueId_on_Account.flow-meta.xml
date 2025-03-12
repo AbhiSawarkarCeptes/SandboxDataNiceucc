@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>generateUniqueIDonAccountBooking</name>
+        <label>generateUniqueIDonAccountBooking</label>
+        <locationX>683</locationX>
+        <locationY>491</locationY>
+        <actionName>generateUniqueIDonAccountBooking</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>Oppids</name>
+            <value>
+                <elementReference>$Record.Opportunity__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>generateUniqueIDonAccountBooking</nameSegment>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <description>Booking - Generate UniqueId on Account</description>
+    <environments>Default</environments>
+    <interviewLabel>Booking - Generate UniqueId on Account {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Booking - Generate UniqueId on Account</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>553</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>generateUniqueIDonAccountBooking</targetReference>
+        </connector>
+        <object>Booking__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

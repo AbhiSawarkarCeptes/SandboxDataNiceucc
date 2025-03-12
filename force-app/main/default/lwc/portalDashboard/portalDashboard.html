@@ -1,0 +1,396 @@
+<template>
+    <div class={mainDivStyle}>
+        <div class="row profile-content-wrapper">
+            <div class="left-section col-3">
+                <div class="performance-overview">
+                    <div class="row mb-2">
+                        <div class="heading-section">
+                            <h3>Performance Overview</h3>
+                            <a href={peformanceURL}><img src={arrow_icon} /></a>
+                        </div>
+
+                        <div class="overview-box">
+                            <div class="icon-txt">
+                                <div class="icon"><img src={siteVisitIconLeft} /></div>
+                                <template if:true={displayElement}>
+                                    <!-- <template if:true={chartFour}> <div class="txt">Yearly </div></template>
+                                    <template if:true={chartThree}> <div class="txt">Bi yearly </div></template>
+                                    <template if:true={chartTwo}> <div class="txt">Quarterly </div></template>
+                                    <template if:true={chartOne}> <div class="txt"> Monthly </div></template> -->
+                                    <div class="txt">
+                                        <div>Site Visits</div>
+                                        <div>{siteVisitsText}</div>
+                                    </div>
+                                </template>
+                               
+                            </div>
+                            <template if:true={displayElement}>
+                                <div class="total" if:true={chartFour}>{siteVisitsCount}</div>
+                                <div class="total" if:true={chartThree}>{siteVisitsCountsixmonth}</div>
+                                <div class="total" if:true={chartTwo}>{siteVisitsCountthreemonth}</div>
+                                <div class="total" if:true={chartOne}>{siteVisitsCountCurrentmonth}</div>
+                            </template>
+                        </div>
+
+                        <div class="overview-box">
+                            <div class="icon-txt">
+                                <div class="icon"><img src={salesIconleft} /></div>
+                                <div class="txt">
+                                    <div>Sales Value</div>
+                                    <div>{salesValueText}</div>
+                                    </div>
+                            </div>
+                            <div class="total">
+                                <template if:true={displayElement}>
+                                    <div class="super">AED</div>
+                                    <div if:true={chartOne} class="million-value">{totalBookingsinCurrentMonthtomillion}<span
+                                            class="million">Mn</span></div>
+                                    <div if:true={chartTwo} class="million-value">{totalBookingsinQuartYearMillion}<span class="million">Mn</span>
+                                    </div>
+                                    <div if:true={chartThree} class="million-value">{totalBookingsinHalfYear}<span class="million">Mn</span></div>
+                                    <div if:true={chartFour} class="million-value">{totalBookingsinYear}<span class="million">Mn</span></div>
+                                </template>
+                            </div>
+                        </div>
+                        <!--<div class="overview-box">
+                            <div class="icon-txt">
+                                <div class="icon"><img src="assets/images/commission-icon-left.svg" /></div>
+                                <div class="txt">Commission</div>
+                            </div>
+                            <div class="total">XMn</div>
+                        </div>-->
+
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="booking-section">
+                        <div class="heading-section">
+                            <h3>Total Number of Unit Bookings for the Year</h3>
+                        </div>
+                        <div class="overview-box">
+                            <div class="icon-txt">
+                                <div class="icon"><img src={appartmenticon} /></div>
+
+                            </div>
+                            <div class="total">
+                                <!--<div class="super">AED</div> -->
+                                <template if:true={displayElement}><div>{appartmentsBookingCount}</div></template>
+                                <div class="txt">Apartments</div>
+                            </div>
+                        </div>
+                        <div class="overview-box">
+                            <div class="icon-txt">
+                                <div class="icon"><img src={villaimageurl} /></div>
+
+                            </div>
+                            <div class="total">
+                                <!--<div class="super">AED</div> -->
+                                <template if:true={displayElement}><div>{villasBookingCount}</div></template>
+                                <div class="txt">Villas</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div> <!-- EOF LEft Section -->
+
+            <div class="middle-section  col-6 site-visit-graph">
+                <div class="top-heading">
+                    <div class="heading">
+                        <span class="icon"><img src={sitevisitUrl} /></span><span class="txt">Performance</span>
+                    </div>
+                    <div class="graph-tab-section">
+                        <ul class="graph-tab-area">
+                            <!-- <li class="graph-tab-link active"  data-graph-tab="1">Monthly</li>
+                            <li class="graph-tab-link"  data-graph-tab="2">Quarterly</li>
+                            <li class="graph-tab-link"  data-graph-tab="3">Bi-Yearly</li>
+                            <li class="graph-tab-link"  data-graph-tab="4">Yearly</li> -->
+
+                            <li class={buttonClass1} data-tab="1" onclick={handleTabClick}>Monthly</li>
+                            <li class={buttonClass2} data-tab="2" onclick={handleTabClick}>Quarterly</li>
+                            <li class={buttonClass3} data-tab="3" onclick={handleTabClick}>Bi-Yearly</li>
+                            <li class={buttonClass4} data-tab="4" onclick={handleTabClick}>Yearly</li>
+                        </ul>
+                    </div>
+                </div>
+                <template if:true={displayElement}>
+                    <div class="tab-content-wrapper">
+                        <template if:true={chartOne}>
+                            <div id="tab-graph-1" class="">
+                                <canvas id="graph" class="combined-chart" aria-label="chart" height="350"
+                                    width="580"></canvas>
+                            </div>
+                        </template>
+    
+                        <template if:true={chartTwo}>
+                            <div id="tab-graph-2" class="">
+                                <canvas id="quaterly-graph" class="combined-quarterchart" aria-label="chart" height="350"
+                                    width="580"></canvas>
+                            </div>
+                        </template>
+                        <template if:true={chartThree}>
+                            <div id="tab-graph-3" class="">
+                                <canvas id="bi-yearly-graph" class="combined-halfyearlychart" aria-label="chart"
+                                    height="350" width="580"></canvas>
+                            </div>
+                        </template>
+                        <template if:true={chartFour}>
+                            <div id="tab-graph-4" class="">
+                                <canvas id="yearly-graph" class="combined-yearlychart" aria-label="chart" height="350"
+                                    width="580"></canvas>
+                            </div>
+                        </template>
+    
+                    </div>
+                </template>
+            </div><!-- EOF Middle Section -->
+
+            <div class="right-section  col-3">
+                <div class="events-overview">
+                    <div class="row mt-2">
+                        <div class="heading-section">
+                            <h3>Events Overview</h3>
+                            <a href={eventsURL}><img src={arrow_icon} /></a>
+                        </div>
+                        <div class="events-content mt-5">
+                            <div class="event-content-details">
+                                <template if:true={displayElement}>
+                                    <div class="total-events" if:true={showSelectedEvents}>{eventsRecordCount}</div>
+                                    <div class="total-events" if:true={ShowAllEvents}>{allEventCount}</div>
+                                </template>
+                                <div class={upcomingEventsClass}><span onclick={handleClickEventtype}
+                                        data-event="All">Upcoming Events</span></div>
+                                <div class="events">
+                                    <!-- Openhouse | Roadshows | Business Trips | Video Shoots -->
+                                    <span onclick={handleClickEventtype} data-event="Openhouse"
+                                        class={isOpenhouseClickedClass}>Openhouse</span> |
+                                    <span onclick={handleClickEventtype} data-event="Roadshows"
+                                        class={isRoadshowsClickedClass}> Roadshows</span> |
+                                    <span onclick={handleClickEventtype} data-event="Business Trips"
+                                        class={isBusinessTripsClickedClass}> Business Trips</span> |
+                                    <span onclick={handleClickEventtype} data-event="Video Shoots"
+                                        class={isVideoShootsClickedClass}> Video Shoots</span>
+                                </div>
+                            </div>
+
+                            <div class="event-details-list">
+
+                                <template if:true={ShowAllEvents} for:each={Allevents} for:item="event">
+                                    <div key={event.Id} class="event-item">
+                                        <div class="event-details">
+                                            <div class="event-name">{event.Name}</div>
+                                            <div class="event-location"><span class="me-2"><img
+                                                        src={eventIconImageLeft} /></span>{event.City_Country__c}</div>
+                                        </div>
+                                        <div class="event-date">
+                                            <div class="date">{event.FormattedDay}</div>
+                                            <div class="month-year">
+                                                <div class="month">{event.FormattedMonth}</div>
+                                                <div class="year">{event.FormattedYear}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </template>
+                                <template for:each={events} for:item="event">
+                                    <div key={event.Id} class="event-item">
+                                        <div class="event-details">
+                                            <div class="event-name">{event.Name}</div>
+                                            <div class="event-location"><span class="me-2"><img
+                                                        src={eventIconImageLeft} /></span>{event.City_Country__c}</div>
+                                        </div>
+                                        <div class="event-date">
+                                            <div class="date">{event.FormattedDay}</div>
+                                            <div class="month-year">
+                                                <div class="month">{event.FormattedMonth}</div>
+                                                <div class="year">{event.FormattedYear}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </template>
+                                <!-- <template if:true={eventsRecordCount === 0}>
+                                    <p>This user doesn't have any events.</p>
+                                </template> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- EOF Right Section -->
+        </div>
+
+
+
+
+
+
+
+        <!-- <div class="">
+            <div class="inner-wrapper main-panel slds-grid slds-wrap">
+                <div class=" slds-col slds-size_3-of-12 left-section col-3">
+                    <div class="performance-overview"> 
+                        <div class="row mb-2">
+                            <div class="heading-section">
+                                <h3>Performanace Overview</h3>
+                            </div>
+                            <div class="overview-box">
+                               <div class="icon-txt">
+                                   <div class="icon">
+                                      <img src={siteVisitIconLeft} alt="Site Visit Icon" /> 
+                                   </div>
+                                   <div class="txt">Site visits</div>
+                                   
+                               </div>
+                               <div class="total" if:true={chartFour}>{siteVisitsCount}</div> 
+                                <div class="total" if:true={chartThree}>{siteVisitsCountsixmonth}</div>
+                                <div class="total" if:true={chartTwo}>{siteVisitsCountthreemonth}</div>
+                                <div class="total" if:true={chartOne}>{siteVisitsCountCurrentmonth}</div>
+                            </div>
+                            <div class="overview-box">
+                               <div class="icon-txt">
+                                   <div class="icon">
+                                      <img src={salesIconleft} alt="sales  Icon" /> 
+                                   </div>
+                                   <div class="txt">Sales</div>
+                                   
+                               </div>
+                               <div class="total"><div class="super"> AED
+                                   </div>
+                                   <div if:true={chartOne}>{totalBookingsinCurrentMonthtomillion}<span class="million">M</span></div>
+                                   <div if:true={chartTwo}>{totalBookingsinQuartYearMillion}<span class="million">M</span></div>
+                                      <div if:true={chartThree}>{totalBookingsinHalfYear}<span class="million">M</span></div>
+                                      <div if:true={chartFour}>{totalBookingsinYear}<span class="million">M</span></div>
+                                      
+                                   </div> 
+
+                            </div>
+
+                            </div> 
+                         </div>
+                          <div class="performance-overview2"> 
+                        <div class="row mb-2">
+                            <div class="heading-section2">
+                                <h3>Total Number of Bookings</h3>
+                            </div>
+                            <div class="overview-box">
+                               <div class="icon-txt">
+                                   <div class="icon-img">
+                                      <img src={appartmenticon} alt="Appart Icon" /> 
+                                   </div>
+                                   <div class="txt2">Appartments</div>
+                                   
+                               </div>
+                               <div class="total2">{appartmentsBookingCount}</div> 
+
+                            </div>
+                            <div class="overview-box">
+                               <div class="icon-txt">
+                                   <div class="icon-img">
+                                      <img src={villaimageurl} alt="Villa  Icon" /> 
+                                   </div>
+                                   <div class="txt2">Villas</div>
+                                   
+                               </div>
+                               <div class="total3">
+                                 {villasBookingCount}
+                                   </div> 
+
+                            </div>
+
+                            </div> 
+                         </div>
+                </div>
+
+                <div class="slds-col slds-size_6-of-12 middle-section col-6 site-visit-graph ">
+                    <div class="top-heading">
+                        <div class="heading">
+                            <span class="icon">
+                                <img src={sitevisitUrl} alt="Site Visit Icon" />
+                            </span>
+                            <span class="txt">Site Visit</span>
+                        </div>
+                        <div class="graph-tab-section active">
+                            <ul class="graph-tab-area">
+                                <li  class={buttonClass1} data-tab="1" onclick={handleTabClick} >Monthly</li>
+                                <li class={buttonClass2} data-tab="2" onclick={handleTabClick}  >Quarterly</li>
+                                <li class={buttonClass3} data-tab="3" onclick={handleTabClick} >Bi-Yearly</li>
+                                <li class={buttonClass4} data-tab="4" onclick={handleTabClick}>Yearly</li>
+                            </ul>
+                        </div>
+                    </div>
+                 <template if:true={chartOne}>
+                     <div style="width:550px;height:280px;margin:20px;margin-top:200px;">
+        <canvas class="combined-chart" ></canvas>
+    </div>
+                 </template>
+                   <template if:true={chartTwo}>
+                  <div style="width:580px;height:300px;margin:40px;margin-top:200px;">
+                   <canvas class="combined-quarterchart" width="100" height="50"></canvas>
+                   </div>
+                 </template>
+                 <template if:true={chartThree}>
+                      <div style="width:580px;height:300px;margin:40px;margin-top:200px;">
+                   <canvas class="combined-halfyearlychart" width="100" height="50"></canvas>
+                      </div>
+                 </template>
+                  <template if:true={chartFour}>
+                       <div style="width:580px;height:300px;margin:40px;margin-top:200px;">
+                   <canvas class="combined-yearlychart" width="100" height="50"></canvas>
+                       </div>
+                 </template>
+
+
+                </div>
+               
+                <div class=" slds-col slds-size_3-of-12 right-section col-3">
+                    <div class="events-overview"> 
+                        <div class="row mt-2"> 
+<div class="heading-section"> 
+    <h3>Events Overview</h3>
+
+</div>
+<div class="events-content mt-5">
+
+    <div class="event-content-details"> 
+        <div class="total-events">5</div>
+        <div class="upcoming-events">Upcoming Events</div>
+       <div class="events">
+        <span onclick={handleClickEventtype} data-event="Openhouse" class={isOpenhouseClickedClass}>Openhouse</span> |
+        <span onclick={handleClickEventtype} data-event="Roadshows" class={isRoadshowsClickedClass}>Roadshows</span> |
+        <span onclick={handleClickEventtype} data-event="Business Trips" class={isBusinessTripsClickedClass}>Business Trips</span> |
+        <span onclick={handleClickEventtype} data-event="Video Shoots" class={isVideoShootsClickedClass}>Video Shoots</span>
+    </div>
+
+    </div>
+    <div class="event-details-list">
+        <template for:each={events} for:item="event">
+            <div key={event.Id} class="event-item">
+                <div class="event-details">
+                    <div class="event-name">{event.Name}</div>
+                    <div class="event-location">
+                        <span class="me-2">
+                            <img src={eventIconImageLeft} alt="location Icon" />
+                        </span>
+                        {event.City_Country__c}
+                    </div>
+                </div>
+                 <div class="event-date">
+                    <div class="date">{event.FormattedDay}</div>
+                    <div class="month-year">
+                        <div class="month">{event.FormattedMonth}</div>
+                        <div class="year">{event.FormattedYear}</div>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+</div>
+                        </div>
+                    </div>
+                     </div>
+            </div>
+        </div> -->
+
+
+
+
+    </div> <!--- EOF Main Pannel -->
+</template>

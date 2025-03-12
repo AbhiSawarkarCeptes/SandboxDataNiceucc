@@ -1,0 +1,298 @@
+<template>
+    <template if:true={showOfferPopUp}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+            class="slds-modal slds-fade-in-open slds-modal_full">
+            <div class="slds-modal__container revise-modal">
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <div class="offer-header">
+                        <div><b>Latest Offer</b></div>
+                        <div>
+                            <lightning-icon icon-name="utility:close" alternative-text="Close" title="Close"
+                                size="x-small" onclick={handleOfferPopUp}></lightning-icon>
+                        </div>
+                    </div>
+                    <div class="slds-p-vertical_small">
+                        <!-- <div  class="offer-popover-card"> - POP UP For the special events
+                            <img src={diwaliWishes} alt="DiwaLI Wishes" style="height:450px; width:100%"/>
+                                <div class="channelHeader" style="text-align:center;">Sobha Realty Wishes You A Joyful Diwali</div>
+                            </div> -->
+                        <template for:each={getAllOffers.channelPartnerOffers} for:item="channelData" for:index="index">
+                            <div key={channelData.Id} class="offer-popover-card">
+                                <lightning-formatted-rich-text class="imgwidth" data-image={channelData.Offer_Image__c}
+                                    value={channelData.Offer_Image__c}>
+                                </lightning-formatted-rich-text>
+                                <div class="channelHeader">{channelData.Offer_Name__c}</div>
+                                <div class="channelDescription" title={channelData.Offer_Description__c}>
+                                    {channelData.Offer_Description__c}</div>
+                                <div class="channelDate">
+                                    <lightning-formatted-date-time value={channelData.CreatedDate} year="numeric"
+                                        month="numeric" day="numeric" hour="2-digit" minute="2-digit">
+                                    </lightning-formatted-date-time>
+                                </div>
+                            </div>
+                        </template>
+                        <template for:each={getAllOffers.customerOffers} for:item="channelData" for:index="index">
+                            <div key={channelData.Id} class="offer-popover-card">
+                                <lightning-formatted-rich-text class="imgwidth" data-image={channelData.Offer_Image__c}
+                                    value={channelData.Offer_Image__c}>
+                                </lightning-formatted-rich-text>
+                                <div class="channelHeader">{channelData.Offer_Name__c}</div>
+                                <div class="channelDescription">{channelData.Offer_Description__c}</div>
+                                <div class="channelDate">
+                                    <lightning-formatted-date-time value={channelData.CreatedDate} year="numeric"
+                                        month="numeric" day="numeric" hour="2-digit" minute="2-digit">
+                                    </lightning-formatted-date-time>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+    <template if:true={contentLoaded}>
+        <div class="lwcContentWrapper">
+            <div class="row">
+                <div class="left-panel-section">
+                    <lightning-layout multiple-rows>
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="12"
+                            large-device-size="7">
+                            <lightning-layout multiple-rows>
+                                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12"
+                                    large-device-size="6" padding="around-small">
+                                    <c-reusable-carousel get-data={content.channelPartnerOffer}
+                                        card-title="Channel Partner Offers" text-color="#FFFFFF"
+                                        background-color="#1F55DE"></c-reusable-carousel>
+                                </lightning-layout-item>
+                                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12"
+                                    large-device-size="6" padding="around-small">
+                                    <c-reusable-carousel get-data={content.customerOffer} card-title="Customer Offers"
+                                        text-color="#398E50" background-color="#BADFC5"></c-reusable-carousel>
+                                </lightning-layout-item>
+                                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12"
+                                    large-device-size="12" padding="around-small">
+                                    <div class="new-launch-card stretch-card">
+                                        <div class="card">
+                                            <div class="card-header d-flex align-items-center justify-content-between">
+                                                <div class="card-title m-2 me-2"><img src={new_launches_logo} />
+                                                    New Launches</div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="card-img">
+                                                    <lightning-formatted-rich-text
+                                                        value={latestProjects.Project_Image__c}>
+                                                    </lightning-formatted-rich-text>
+                                                </div>
+                                                <div class="card-content">
+                                                    <h4>{latestProjects.Name}</h4>
+                                                    <p>{latestProjects.Description__c}</p>
+                                                    <div class="facilities">
+                                                        <div class="icons-txt "><img src={location_image} />
+                                                            <span class="txt me-1">{latestProjects.Address__c}</span>
+                                                        </div>
+                                                        <div class="icons-txt"><img src={unit_image} />
+                                                            <span class="txt">{content.unitCount} units</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </lightning-layout-item>
+
+                        <lightning-layout-item size="12" small-device-size="12" medium-device-size="12"
+                            large-device-size="5">
+                            <lightning-layout multiple-rows>
+                                <template if:true={content.displayBirthdayCard}>
+                                    <lightning-layout-item size="12" small-device-size="12" medium-device-size="12"
+                                        large-device-size="12" padding="around-small">
+                                        <div class="stretch-card">
+                                            <div class="birthday-card" style={backgroundImg}>
+                                                <div class="card ">
+                                                    <div class="card-body">
+                                                        <h3><span>H</span><span>a</span><span>p</span><span>p</span><span>y</span>
+                                                            <br />Birthday
+                                                        </h3>
+                                                        <p>{content.userName}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </lightning-layout-item>
+                                </template>
+
+                                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12"
+                                    large-device-size="12" padding="around-small">
+                                    <div class="announcement-card stretch-card">
+                                        <div class="card">
+                                            <div class="card-header d-flex align-items-center justify-content-between">
+                                                <div class="card-title"><img src={announcement_icon} />
+                                                    Announcements</div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="card-content">
+                                                    <ul class="p-0 m-0">
+                                                        <template for:each={content.announcements}
+                                                            for:item="announcement" for:index="index">
+                                                            <li key={announcement.Id}
+                                                                class="d-flex mb-4 pb-1 border-bottom">
+                                                                <div
+                                                                    class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                                    <div class="me-2">
+                                                                        <h3 class="mb-0">
+                                                                            {announcement.Announcement_Title__c}</h3>
+                                                                        <template if:true={announcement.downloadUrl}>
+                                                                            <div data-downloadurl={announcement.downloadUrl}
+                                                                                onclick={handleDownload}
+                                                                                class="view-attachment-text">
+                                                                                View Attachment
+                                                                            </div>
+                                                                        </template>
+                                                                        <p class="announcement-descrp"
+                                                                            data-id={announcement.Id}>
+                                                                            {announcement.Announcement_Description__c}
+                                                                        </p>
+                                                                        <span onclick={handleLongText}
+                                                                            data-id={announcement.Id} data-index={index}
+                                                                            class="read-more-text">Read
+                                                                            more...</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </template>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </div> <!-- EOF Of Left Panel-->
+
+                <div class="right-panel-section gallery">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title"><img src={gallery_image} class="title-icon me-2" /> Gallery</div>
+                            <div class="sel">
+                                <select class="form-control" onchange={handleEventsChange}>
+                                    <template for:each={sobhaevents} for:item="option">
+                                        <option key={option.value} value={option.value}>{option.value}</option>
+                                    </template>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="body-header">
+                                <div class="gallery-count">{imageGalleryLength} Images, {videoGalleryLength} Videos
+                                </div>
+                                <div class="gallery-tab">
+                                    <ul class="tab-area">
+                                        <li class="tab-link active" data-tab="1" onclick={navigateTab}>All</li>
+                                        <li class="tab-link" data-tab="2" onclick={navigateTab}>Images</li>
+                                        <li class="tab-link" data-tab="3" onclick={navigateTab}>Videos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-content-wrapper">
+                                <div data-id="1" class="tab-content active">
+                                    <div class="row gallery-row">
+                                        <template for:each={imageEvenArray} for:item="imgURL">
+                                            <div key={imgURL} class="column gallery-item">
+                                                <img style="cursor: zoom-in;" src={imgURL} onclick={openFullImage} />
+                                            </div>
+                                        </template>
+                                        <template for:each={imageOddArray} for:item="imgURL">
+                                            <div key={imgURL} class="column gallery-item">
+                                                <img style="cursor: zoom-in;" src={imgURL} onclick={openFullImage} />
+                                            </div>
+                                        </template>
+                                    </div>
+                                    <div class="row gallery-row" style="margin-top:8px">
+                                        <template for:each={videoEvenArray} for:item="videoURL">
+                                            <div key={videoURL} class="column gallery-item">
+                                                <video width="242" controls>
+                                                    <source src={videoURL} type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </template>
+                                        <template for:each={videoOddArray} for:item="videoURL">
+                                            <div key={videoURL} class="column gallery-item">
+                                                <video width="242" controls>
+                                                    <source src={videoURL} type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
+                                <div data-id="2" class="tab-content">
+                                    <div class="row gallery-row">
+                                        <template for:each={imageEvenArray} for:item="imgURL">
+                                            <div key={imgURL} class="column gallery-item">
+                                                <img style="cursor: zoom-in;" src={imgURL} onclick={openFullImage} />
+                                            </div>
+                                        </template>
+                                        <template for:each={imageOddArray} for:item="imgURL">
+                                            <div key={imgURL} class="column gallery-item">
+                                                <img style="cursor: zoom-in;" src={imgURL} onclick={openFullImage} />
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
+                                <div data-id="3" class="tab-content">
+                                    <div class="row gallery-row">
+                                        <template for:each={videoEvenArray} for:item="videoURL">
+                                            <div key={videoURL} class="column gallery-item">
+                                                <video width="242" controls>
+                                                    <source src={videoURL} type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </template>
+                                        <template for:each={videoOddArray} for:item="videoURL">
+                                            <div key={videoURL} class="column gallery-item">
+                                                <video width="242" controls>
+                                                    <source src={videoURL} type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- EOF Of Right Panel-->
+            </div>
+        </div>
+
+        <template if:true={displayFullImage}>
+            <c-image-carousel get-data={getAllImages} selcted-data={selectedImageURL} image-index={imageIndex}
+                onclosemodal={closeImageModal} hide-download-icon="true"></c-image-carousel>
+            <!-- Modal/Popup Box LWC starts here 
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    Modal/Popup Box LWC header here 
+                    <header class="slds-modal__header" style="padding:0px">
+                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                            title="Close" onclick={closeImageModal}>
+                            <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                                size="small">
+                            </lightning-icon>
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                    </header>
+                     Modal/Popup Box LWC body starts here 
+                    <div class="slds-modal__content" id="modal-content-id-1"
+                        style="padding:10px;background-color:white;">
+                        <img src={selectedImageURL} />
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" style="background-color:grey; opacity: 0.5;"></div> -->
+        </template>
+    </template>
+</template>

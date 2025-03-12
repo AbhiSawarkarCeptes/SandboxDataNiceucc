@@ -1,0 +1,205 @@
+<template>
+    <div class="footer">
+        <div class="footer-content">
+            <template if:true={showFooterFlag}>
+                <div class="footer-link announcement">
+                    <a href="/newBrokerPortal/s/">
+                        <p>Announcements</p>
+                        <img src={announcement_icon} />
+                    </a>
+                </div>
+                <template if:true={channelFlag}>
+                    <section class="channel-popover-style slds-nubbin_bottom-left">
+                        <div class="channel-popover-body slds-p-around_medium">
+                            <div class="header-style slds-m-bottom_x-small slds-clearfix">
+                                {offerHeader}
+                                <lightning-button-icon icon-name="utility:close" variant="container" size="small"
+                                    class="slds-float_right" data-action="channel" onclick={handlePopOver}
+                                    alternative-text="Close"></lightning-button-icon>
+                            </div>
+                            <div class="popover-sub-body">
+                                <template if:true={offerDataLoaded}>
+                                    <template for:each={offerWrapList} for:item="offerData" for:index="index">
+                                        <template if:true={offerData.isOfferChannel}>
+                                            <div key={offerData.channelRecord.Id} class="channel-popover-card">
+                                                <lightning-formatted-rich-text onclick={handleImageClick} data-image={offerData.channelRecord.Offer_Image__c} value={offerData.channelRecord.Offer_Image__c}>
+                                                </lightning-formatted-rich-text>
+                                                <div class="channelHeader">
+                                                    {offerData.channelRecord.Offer_Name__c}
+                                                </div>
+                                                <div class="channelDescription" title={offerData.channelRecord.Offer_Description__c}>
+                                                    {offerData.channelRecord.Offer_Description__c}
+                                                </div>
+                                                <div class="channelDate">
+                                                    <lightning-formatted-date-time value={offerData.channelRecord.CreatedDate}
+                                                        year="numeric" month="numeric" day="numeric" hour="2-digit"
+                                                        minute="2-digit">
+                                                    </lightning-formatted-date-time>
+                                                </div>
+                                            </div>
+                                        </template>
+                                        <template if:true={offerData.isOfferCustomer}>
+                                            <div key={offerData.customerRecord.Id} class="channel-popover-card">
+                                                <lightning-formatted-rich-text onclick={handleImageClick} data-image={offerData.customerRecord.Offer_Image__c} value={offerData.customerRecord.Offer_Image__c}>
+                                                </lightning-formatted-rich-text>
+                                                <div class="channelHeader">
+                                                    {offerData.customerRecord.Offer_Name__c}
+                                                </div>
+                                                <div class="channelDescription" title={offerData.customerRecord.Offer_Description__c}>
+                                                    {offerData.customerRecord.Offer_Description__c}
+                                                </div>
+                                                <div class="channelDate">
+                                                    <lightning-formatted-date-time value={offerData.customerRecord.CreatedDate}
+                                                        year="numeric" month="numeric" day="numeric" hour="2-digit"
+                                                        minute="2-digit">
+                                                    </lightning-formatted-date-time>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </template>
+                                    <!--
+                                    <template for:each={offers.channelPartnerOffers} for:item="channelData" for:index="index">
+                                        <div key={channelData.channelRecord.Id} class="channel-popover-card">
+                                            <lightning-formatted-rich-text onclick={handleImageClick} data-image={channelData.channelRecord.Offer_Image__c} value={channelData.channelRecord.Offer_Image__c}>
+                                            </lightning-formatted-rich-text>
+                                            <div class="channelHeader">
+                                                {channelData.channelRecord.Offer_Name__c}
+                                            </div>
+                                            <div class="channelDescription" title={channelData.channelRecord.Offer_Description__c}>
+                                                {channelData.channelRecord.Offer_Description__c}
+                                            </div>
+                                            <div class="channelDate">
+                                                <lightning-formatted-date-time value={channelData.channelRecord.CreatedDate}
+													year="numeric" month="numeric" day="numeric" hour="2-digit"
+													minute="2-digit">
+												</lightning-formatted-date-time>
+                                            </div>
+                                        </div>
+                                    </template>
+                                    <template for:each={offers.customerOffers} for:item="channel_Data" for:index="intex">
+                                        <div key={channel_Data.customerRecord.Id} class="channel-popover-card">
+                                            <lightning-formatted-rich-text onclick={handleImageClick}
+												data-image={channel_Data.customerRecord.Offer_Image__c} value={channel_Data.customerRecord.Offer_Image__c}>
+                                            </lightning-formatted-rich-text>
+                                            <div class="channelHeader">
+                                                {channel_Data.customerRecord.Offer_Name__c}
+                                            </div>
+                                            <div class="channelDescription" title={channel_Data.customerRecord.Offer_Description__c}>
+                                                {channel_Data.customerRecord.Offer_Description__c}
+                                            </div>
+                                            <div class="channelDate">
+                                                <lightning-formatted-date-time value={channel_Data.customerRecord.CreatedDate}
+													year="numeric" month="numeric" day="numeric" hour="2-digit"
+													minute="2-digit">
+												</lightning-formatted-date-time>
+                                            </div>
+                                        </div>
+                                    </template>
+                                    -->
+                                </template>
+                            </div>
+                        </div>
+                    </section>
+                </template>
+                <div class="footer-link channel-offer" onclick={handlePopOver} data-action="channel">
+                    <h6>{offerHeader}</h6>
+                    <div class="scrolling-text-container">
+                        <div class="scrolling-text">
+                            <template if:true={offerDataLoaded}>
+                                <!--
+                                <template for:each={offers.channelPartnerOffers} for:item="channelData" for:index="index">
+                                    <h4 key={channelData.Id}>
+                                        {channelData.channelRecord.Offer_Name__c}
+                                    </h4>
+                                </template>
+                                <template for:each={offers.customerOffers} for:item="channelData" for:index="index">
+                                    <h4 key={channelData.customerRecord.Id}>
+                                        {channelData.customerRecord.Offer_Name__c}
+                                    </h4>
+                                </template>
+                                -->
+                                <template for:each={offerWrapList} for:item="offerData" for:index="index">
+                                    <template if:true={offerData.isOfferChannel}>
+                                        <h4 key={offerData.channelRecord.Id}>
+                                            {offerData.channelRecord.Offer_Name__c}
+                                        </h4>
+                                    </template>
+                                    <template if:true={offerData.isOfferCustomer}>
+                                        <h4 key={offerData.customerRecord.Id}>
+                                            {offerData.customerRecord.Offer_Name__c}
+                                        </h4>
+                                    </template>
+                                </template>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+                <template if:true={notificationFlag}>
+                    <section class="notifications-popover-style slds-nubbin_bottom-left">
+                        <div class="notifications-popover-body slds-p-around_x-small">
+                            <div class="header-style slds-p-bottom_small slds-p-top_xx-small slds-m-bottom_x-small slds-clearfix">
+                                Your Notifications ({totalNotifications})
+                                <lightning-button-icon icon-name="utility:close" variant="container" size="small" class="slds-float_right" data-action="notifications" onclick={handlePopOver} alternative-text="Close"></lightning-button-icon>
+                            </div>
+                            <div class="popover-sub-body">
+                                <template for:each={notificationsData} for:item="notificationData" for:index="index">
+                                    <div key={notificationData} class="slds-grid slds-wrap notifications-popover-card">
+                                        <template if:false={notificationData.isIcon}>
+                                            <div class={notificationData.className}>
+                                                {notificationData.status}
+                                            </div>
+                                        </template>
+                                        <template if:true={notificationData.isIcon}>
+                                            <div class="slds-col slds-size_3-of-12 status-style">
+                                                <lightning-icon icon-name={notificationData.iconName} size="xx-small" alternative-text={notificationData.iconText} title={notificationData.iconText}></lightning-icon>
+                                            </div>
+                                        </template>
+                                        <div class="slds-col slds-size_8-of-12 notification-middle-card-body">
+                                            <template if:true={notificationData.header}>
+                                                <div class="ntfn-header slds-p-bottom_xx-small">
+                                                    {notificationData.header}
+                                                </div>
+                                            </template>
+                                            <div class="ntfn-desc slds-p-bottom_xx-small" title={notificationData.description}>
+                                                {notificationData.description}
+                                            </div>
+                                            <div class="ntfn-date">
+                                                {notificationData.dateStr}
+                                            </div>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-12 ntfn-open">
+                                            <template if:false={notificationData.isOpened}>
+                                                <div></div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </section>
+                </template>
+                <div class="footer-link notification" onclick={handlePopOver} data-action="notifications">
+                    <p>Notification</p>
+                    <template if:true={showTotalNotificationCount}>
+                        <span class="total-count">
+                            {totalNotifications}
+                        </span>
+                    </template>
+                    <img src={notification_icon} />
+                </div>
+                <div class="footer-link calendar">
+                    <p>{dateMonth}</p>
+                    <h4>{dateDay}</h4>
+                </div>
+                <div class="footer-link arrow" onclick={handleFooterBar} data-action="down">
+                    <img src={footerDownArrow_icon} alt="Up Arrow" />
+                </div>
+            </template>
+            <template if:false={showFooterFlag}>
+                <div class="footer-link arrow" onclick={handleFooterBar} data-action="up">
+                    <img src={footerUpArrow_icon} alt="Down Arrow" />
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

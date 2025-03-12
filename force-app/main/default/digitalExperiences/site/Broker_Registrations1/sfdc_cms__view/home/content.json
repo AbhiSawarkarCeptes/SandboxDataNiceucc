@@ -1,0 +1,63 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "dxpStyle" : { },
+            "sectionConfig" : "{\"UUID\":\"4ea9d0a7-219d-4ff8-b5a5-820fb422a99a\",\"columns\":[{\"UUID\":\"5b9f29b1-6886-40c3-a716-a149d1a38faa\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { }
+              },
+              "definition" : "c:brokerRegistrationFormExternal",
+              "id" : "2e50d5a8-dd1f-43fd-98dd-5112a5ac50a6",
+              "type" : "component"
+            } ],
+            "id" : "5b9f29b1-6886-40c3-a716-a149d1a38faa",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "4ea9d0a7-219d-4ff8-b5a5-820fb422a99a",
+          "type" : "component"
+        } ],
+        "id" : "1dd91119-f6b3-4bce-9fe2-db44a44497df",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "Home",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "0f389a37-4848-47d6-9383-f5f373bef13f",
+          "type" : "component"
+        } ],
+        "id" : "226d6403-fde3-412e-89f7-b878916e576e",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "dbedad29-6e8e-467b-b143-7c8b0a5777c0",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "home"
+  },
+  "urlName" : "home"
+}

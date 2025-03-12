@@ -1,0 +1,231 @@
+<template>
+    <div class={mainDivStyle}>
+        <div class="container">
+            <div class="content-wrapper inner-wrapper">
+                <div class="row sobha-projects-wrapper">
+                    <div class="left-section col-3">
+                        <template if:true={showProject}>
+                            <p class="staticTxt">Discover a heaven of luxury and community at Sobha Properties, where
+                                meticulous design
+                                and lush greenery redefine urban living.</p>
+                        </template>
+                        <template if:false={showProject}>
+                            <div class="list-group community-tab" id="list-tab" role="tablist">
+                                <template for:each={subProjects} for:item="sp">
+                                    <div id={sp.Id} key={sp.Id} class={sp.className} onclick={onSubProjectClick}>
+                                        {sp.Name}
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
+                        <c-br-portal-sobha-project-filter projects={projectsFilter}></c-br-portal-sobha-project-filter>
+                    </div>
+                    <!-- EOF fo Left Section -->
+                    <div class="middle-section scroll-tab col-9">
+                        <div class="w-100">
+                            <div class="navigationWrapper">
+                                <div class="scroller scroller-left float-left mt-2">
+                                    <lightning-button-icon icon-name="utility:chevronleft" onclick={scrollLeft}
+                                        variant="bare" alternative-text="Previous" class="slds-m-left_xx-small"
+                                        title="Previous">
+                                    </lightning-button-icon>
+                                </div>
+                                <div class="wrapper-nav">
+                                    <div class="nav nav-tabs list mt-2" id="myTab" role="tablist">
+                                        <template for:each={projects} for:item="p">
+                                            <div style="text-align:center" id={p.Id} key={p.Id} class={p.className} onclick={onProjectClick}>
+                                                <img style="height:40px" id={p.Id} src={p.logoURL} onclick={onProjectClick}>
+                                                <!--<div id={p.Id} onclick={onProjectClick}>
+                                                    {p.Name}
+                                                </div>-->
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
+                                <div class="scroller scroller-right float-right mt-2">
+                                    <lightning-button-icon icon-name="utility:chevronright" onclick={scrollRight}
+                                        alternative-text="Next" variant="bare" title="Next"
+                                        class="slds-m-left_xx-small"></lightning-button-icon>
+                                </div>
+                            </div>
+                            <!-- EOF Navigation Wrapper -->
+                            <div class="tab-content grid-community" id="myTabContent">
+                                <template if:true={showProject}>
+                                    <div role="tabpanel" class="tab-pane fade active show mt-2" id="tab1"
+                                        aria-labelledby="public-tab" aria-expanded="true">
+                                        <div id="myCarousel" class="carousel slide myCarousel " data-ride="carousel">
+                                            <lightning-carousel interval="1000" arrow="false" thumbnaillimit="3">
+                                                <lightning-carousel-image src={sobhahortalnd11banner01}
+                                                    href="javascript:void(0);"></lightning-carousel-image>
+                                                <lightning-carousel-image src={sobhahortalnd11banner02}
+                                                    href="javascript:void(0);"></lightning-carousel-image>
+                                                <lightning-carousel-image src={sobhahortalnd11banner03}
+                                                    href="javascript:void(0);"></lightning-carousel-image>
+                                            </lightning-carousel>
+                                        </div>
+                                    </div>
+                                </template>
+                                <template if:false={showProject}>
+                                    <template if:true={showSubProject}>
+                                        <div class="subProjectSection tab-pane">
+                                            <div class="row">
+                                                <div class="subProjectImage">
+                                                    <!--
+                                                    <template for:each={subProjectImageLinks} for:item="imageData" for:index="index">
+                                                        <img src={imageData} class="img1" onclick={handleImages} data-action="open" key={imageData.index} data-index={index}/>
+                                                    </template>
+                                                    -->
+                                                    
+                                                    <template if:true={subProjectImageLinks.image1}>
+                                                        <img src={subProjectImageLinks.image1} class="img1"
+                                                            onclick={handleImages} data-action="open" data-index="0" />
+                                                    </template>
+                                                    <template if:true={subProjectImageLinks.image2}>
+                                                        <img src={subProjectImageLinks.image2} class="img2"
+                                                            onclick={handleImages} data-action="open" data-index="1" />
+                                                    </template>
+                                                    <div class="sub-group-images">
+                                                        <div>
+                                                            <!--
+                                                            <template for:each={getImageData} for:item="imageData" for:index="index">
+                                                                <img src={imageData} class="img1"
+                                                                    onclick={handleImages} data-action="open" key={imageData.index}/>
+                                                            </template>
+                                                            -->
+                                                            <template if:true={subProjectImageLinks.image3}>
+                                                                <img src={subProjectImageLinks.image3} class="img3"
+                                                                    onclick={handleImages} data-action="open"
+                                                                    data-index="2" />
+                                                            </template>
+                                                            <template if:true={subProjectImageLinks.image4}>
+                                                                <img src={subProjectImageLinks.image4} class="img4"
+                                                                    onclick={handleImages} data-action="open"
+                                                                    data-index="3" />
+                                                            </template>
+                                                        </div>
+                                                        <template if:true={subProjectImageLinks.image5}>
+                                                            <img src={subProjectImageLinks.image5} class="img5"
+                                                                onclick={handleImages} data-action="open"
+                                                                data-index="4" />
+                                                        </template>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <h4>{subProjectDetails.name}</h4>
+                                                    <p style="padding: 0px;">RERA Number: {subProjectDetails.reraNumber}</p>
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <p>{subProjectDetails.description}</p>
+                                                    <div class="typologyInfo">
+                                                        <div class="col icon-info">
+                                                            <div class="row">
+                                                                <div class="col left pr-0">
+                                                                    <img src={typologyImg}>
+                                                                </div>
+                                                                <div class="col right">
+                                                                    <h6>Typology</h6>
+                                                                    <ul>
+                                                                        <li>{subProjectDetails.typology}</li>
+                                                                    </ul>
+                                                                    <p>Apartments</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col icon-info">
+                                                            <div class="row">
+                                                                <div class="col left pr-0">
+                                                                    <img src={startingPriceImg}>
+                                                                </div>
+                                                                <div class="col right">
+                                                                    <h6>Starting Price</h6>
+                                                                    <ul>
+                                                                        <li>{subProjectDetails.startingPrice}</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col icon-info lastRow">
+                                                            <div class="row">
+                                                                <div class="col left pr-0">
+                                                                    <img src={locationImg}>
+                                                                </div>
+                                                                <div class="col right">
+                                                                    <h6>LOCATION</h6>
+                                                                    <p>{subProjectDetails.location}</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h5 class="amentTitle">Amenities</h5>
+                                                    <ul class="sobha-amenities">
+                                                        <template for:each={subProjectDetails.amenities} for:item="a">
+                                                            <li key={a.Id}>
+                                                                <img src={a.imgURL}>
+                                                                <p>{a.Amenity_Name__c}</p>
+                                                            </li>
+                                                        </template>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <button class="btn" data-element="general-enquiry"
+                                                        onclick={downloadbrochure}>
+                                                        Download Brochure
+                                                    </button>
+                                                    <button class="btn" data-element="general-enquiry"
+                                                        onclick={View3DTour}>
+                                                        Project Flythrough
+                                                    </button>
+                                                    <button class="btn" data-element="general-enquiry"
+                                                        onclick={MarketingCollaterals}>
+                                                        Marketing Collaterals
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- EOF of SUb project section -->
+                                    </template>
+                                </template>
+                            </div>
+                        </div>
+                    </div> <!-- EOF fo Right Section -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <template if:true={isFilterModalOpen}>
+        <c-br-portal-unit-filter-component selected-project-value={selectedProjectValue}
+            selected-bed-value={selectedBedValue} selected-area-value={selectedAreaValue}
+            selected-price-value={selectedPriceValue} selected-property-type-value={selectedPropertyTypeValue}
+            onfiltermodalclosure={handleFilterModalClose}></c-br-portal-unit-filter-component>
+    </template>
+    <template if:true={display3DView}>
+        <!-- Modal/Popup Box LWC starts here -->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal/Popup Box LWC header here -->
+                <header class="slds-modal__header" style="padding:0px">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={closeVideoModal}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small">
+                        </lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                </header>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content" id="modal-content-id-1" style="padding:10px;background-color:white;">
+                    <video width="100%" autoplay loop>
+                        <source src={selectedSubProject3DTourLink} type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" style="background-color:grey; opacity: 0.5;"></div>
+    </template>
+    <template if:true={showImageModal}>
+        <c-br-image-carousel get-data={getImageData} selcted-data={selectedImage} image-index={imageIndex} onclosemodal={handleImages}></c-br-image-carousel>
+    </template>
+</template>

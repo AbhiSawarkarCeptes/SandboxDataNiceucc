@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_SPA_to_Customer</name>
+        <label>Send SPA to Customer</label>
+        <locationX>207</locationX>
+        <locationY>363</locationY>
+        <actionName>SPADocusignBookingHandler1</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>DocuSign_Status_Check</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>bookingIds</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SPADocusignBookingHandler1</nameSegment>
+        <outputParameters>
+            <assignToReference>docuSignExists</assignToReference>
+            <name>output</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_to_Docusign</name>
+        <label>Send to Docusign</label>
+        <locationX>863</locationX>
+        <locationY>330</locationY>
+        <actionName>SPADocusignBookingHandler</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>SPA_Docusign_Flow</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>bookingIds</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SPADocusignBookingHandler</nameSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>DocuSign_Status_Check</name>
+        <label>DocuSign Status Check</label>
+        <locationX>568</locationX>
+        <locationY>332</locationY>
+        <defaultConnector>
+            <targetReference>Send_to_Docusign</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>DocuSign_Progress</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>docuSignExists</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Display_Message</targetReference>
+            </connector>
+            <label>DocuSign Progress</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>SPA Docusign Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SPA Docusign Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Display_Message</name>
+        <label>Display Message</label>
+        <locationX>579</locationX>
+        <locationY>615</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>ErrorMessage</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;DocuSign status is in progress, Please complete/Void the existing Envelop before sending&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>SPA Docusign Flow</description>
+        <name>SPA_Docusign_Flow</name>
+        <label>SPA Docusign Flow</label>
+        <locationX>1134</locationX>
+        <locationY>331</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Status</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;SPA successfully sent for signature(s)&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>36</locationX>
+        <locationY>44</locationY>
+        <connector>
+            <targetReference>Send_SPA_to_Customer</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>docuSignExists</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

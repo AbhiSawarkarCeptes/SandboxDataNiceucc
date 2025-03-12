@@ -1,0 +1,133 @@
+<template>
+    <div class="card">
+        <h1 class="slds-m-bottom--large slds-m-horizontal_large slds-p-top--large slds-text-align_center slds-text-heading_medium">Broker Registration Form</h1>
+
+        <hr>
+
+        <lightning-layout multiple-rows class="slds-p-around_large">
+            <lightning-layout-item size="12" >
+                <p class="slds-text-heading_small slds-m-bottom_small">Company Details</p>
+                <lightning-input type="text" variant="label-inline" name="Name_as_per_trade_license__c" label="Name as per trade license" onchange={handleChange}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" class="slds-m-top--medium" >
+                <p class="slds-text-heading_small slds-m-bottom_small">Authorized signatory details</p>
+                <lightning-input type="text" variant="label-inline" name="Name_as_per_passport__c" label="Name as per passport" onchange={handleChange}></lightning-input>
+                <lightning-input type="text" variant="label-inline" name="Nationality__c" label="Nationality" onchange={handleChange}></lightning-input>
+                <lightning-input type="text" variant="label-inline" name="Designation__c" label="Designation" onchange={handleChange}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" class="slds-m-top--medium" >
+                <p class="slds-text-heading_small slds-m-bottom_small">Mailing Address</p>
+                <lightning-input type="text" variant="label-inline" name="Office_Apartment_number__c" label="Office/Apartment number" onchange={handleChange}></lightning-input>
+                <lightning-input type="text" variant="label-inline" name="Villa_Building_name__c" label="Villa/Building name" onchange={handleChange}></lightning-input>
+                <lightning-input type="text" variant="label-inline" name="Street_name__c" label="Street name" onchange={handleChange}></lightning-input>
+                <lightning-input type="text" variant="label-inline" name="District_Area__c" label="District/Area" onchange={handleChange}></lightning-input>
+                <lightning-input type="text" variant="label-inline" name="City_Province__c" label="City/Province" onchange={handleChange}></lightning-input>
+                <lightning-input type="text" variant="label-inline" name="Country__c" label="Country" onchange={handleChange}></lightning-input>
+                <lightning-input type="text" variant="label-inline" name="ZIP_Postal_Code_PO_Box__c" label="ZIP/Postal Code/PO Box" onchange={handleChange}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" class="slds-m-top--medium" >
+                <p class="slds-text-heading_small slds-m-bottom_small">Contact details</p>
+                <lightning-input type="tel" variant="label-inline" name="Telephone__c" label="Telephone" onchange={handleChange}></lightning-input>
+                <lightning-input type="text" variant="label-inline" name="Fax__c" label="Fax" onchange={handleChange}></lightning-input>
+                <lightning-input type="tel" variant="label-inline" name="Mobile__c" value={record.Mobile__c} label="Mobile" onchange={handleChange} required></lightning-input>
+                <lightning-input type="email" variant="label-inline" name="Email__c" value={record.Email__c} label="Email" onchange={handleChange} required></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" class="slds-m-top--medium">
+                <p class="slds-text-heading_small slds-m-bottom_small">Witness details</p>
+                <lightning-input type="text" variant="label-inline" name="Witness_Name__c" label="Witness Name" onchange={handleChange} ></lightning-input>
+                <lightning-input type="text" variant="label-inline" name="Witness_Email_1__c" label="Witness Email" onchange={handleChange} ></lightning-input>
+            </lightning-layout-item>
+        </lightning-layout>
+
+        <div class="slds-p-around_large">
+            <p class="slds-text-heading_small slds-m-bottom_small">Attach below documents for registration</p>
+            <ol>
+                <li class="slds-m-bottom_small">
+                    <lightning-file-upload
+                        label="1. Valid trade license"
+                        name="validTradeLicense"
+                        file-field-name="Related_Record_ID_fileupload__c"
+                        file-field-value={record.Id}
+                        onuploadfinished={handleUploadFinished}
+                    ></lightning-file-upload>
+                    <p class="fileName">{files.validTradeLicense}</p>
+                </li>
+                <li class="slds-m-bottom_small">
+                    <lightning-file-upload
+                        label="2. Valid RERA certificate (if applicable)"
+                        name="reraCertificate"
+                        file-field-name="Related_Record_ID_fileupload__c"
+                        file-field-value={record.Id}
+                        onuploadfinished={handleUploadFinished}
+                    ></lightning-file-upload>
+                    <p class="fileName">{files.reraCertificate}</p>
+                </li>
+                <li class="slds-m-bottom_small">
+                    <lightning-file-upload
+                        label="3. Self-attested passport copy of authorized signatory"
+                        name="passport"
+                        file-field-name="Related_Record_ID_fileupload__c"
+                        file-field-value={record.Id}
+                        onuploadfinished={handleUploadFinished}
+                    ></lightning-file-upload>
+                    <p class="fileName">{files.passport}</p>
+                </li>
+                <li class="slds-m-bottom_small">
+                    <lightning-file-upload
+                        label="4. Valid RERA card of authorized signatory"
+                        name="reraCard"
+                        file-field-name="Related_Record_ID_fileupload__c"
+                        file-field-value={record.Id}
+                        onuploadfinished={handleUploadFinished}
+                    ></lightning-file-upload>
+                    <p class="fileName">{files.reraCard}</p>
+                </li>
+            </ol>
+        </div>
+
+        <div style="text-align: center;">
+            <lightning-button
+                class="slds-m-top_small slds-m-left_medium"
+                variant="brand"
+                name="submit"
+                label="Submit"
+                onclick={handleSubmit}
+            ></lightning-button>
+        </div>
+
+        <hr>
+
+        <lightning-layout class="slds-p-horizontal_large slds-p-bottom_large footer">
+            <lightning-layout-item size="3" >
+                <p>
+                    SOBHA HARTLAND SALES GALLERY<br>
+                    Sobha Hartland<br>
+                    Mohammed Bin Rashid City<br>
+                    Dubai, United Arab Emirates
+                </p>
+            </lightning-layout-item>
+            <lightning-layout-item size="3" >
+                <p>
+                    SOBHA BRAND STUDIO<br>
+                    Umm Al Sheif<br>
+                    Sheikh Zayed Road<br>
+                    Dubai, United Arab Emirates
+                </p>
+            </lightning-layout-item>
+            <lightning-layout-item size="3" >
+            </lightning-layout-item>
+            <lightning-layout-item size="3" >
+                <p style="float: right">
+                    CHANNEL RELATIONS<br>
+                    +971 50 650 3871<br>
+                    agents@sobha-me.com<br>
+                    sobharealty.com
+                </p>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>    
+</template>

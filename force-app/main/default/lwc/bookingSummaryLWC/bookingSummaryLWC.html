@@ -1,0 +1,383 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder" >
+            <lightning-spinner alternative-text="Loading" size="large" class="spinnerCls"></lightning-spinner>
+        </div>
+    </template>
+    <lightning-card title="Customer Journey Tracking Dashboard">
+        <div class="slds-m-around_medium">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_1-of-2 slds-medium-size_3-of-12 slds-large-size_3-of-12" >
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <label class="slds-form-element__label" for="lookupInput"><b>Booking</b></label>
+                            <lightning-input
+                                type="search"
+                                name="lookupInput"
+                                placeholder="Search Application Bookings..."
+                                value={searchKeyBooking}
+                                onchange={handleSearchKeyChangeBooking}
+                                onclick={showDialogBooking}
+                                class="topMargin">
+                            </lightning-input>
+                            <div if:true={showResultsBooking} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                                <div id="listbox-unique-id" role="listbox">
+                                    <lightning-icon icon-name="utility:close" size="xx-small" onclick={handleBookingClose} style="position: absolute;right:-20px;border:groove; text-wrap: nowrap;"></lightning-icon>
+                                    <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation">
+                                        <template for:each={searchResultsBooking} for:item="result">
+                                            <li key={result.Id} role="presentation" class="slds-listbox__item liBox" >
+                                                <span role="option" onclick={handleResultClickBooking} title={result.Id} data-id={result.Name} style="display: block !important;">
+                                                    <lightning-icon icon-name="custom:custom74" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result.Name}
+                                                </span>
+                                            </li>
+                                        </template>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-medium-size_3-of-12 slds-large-size_3-of-12" >
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <label class="slds-form-element__label" for="lookupInput"><b>Unit No</b></label>
+                            <lightning-input
+                                type="search"
+                                name="lookupInput"
+                                placeholder="Search Unit No..."
+                                value={searchKeyUnit}
+                                onchange={handleSearchKeyChangeUnit}
+                                onclick={showDialogUnit}
+                                class="topMargin">
+                            </lightning-input>
+                            <div if:true={showResultsUnit} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                                <div id="listbox-unique-id1" role="listbox">
+                                    <lightning-icon icon-name="utility:close" size="xx-small" onclick={handleUnitClose} style="position: absolute;right:-20px;border:groove; text-wrap: nowrap;"></lightning-icon>
+                                    <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation">
+                                        <template for:each={searchResultsUnit} for:item="result">
+                                            <li key={result} role="presentation" class="slds-listbox__item liBox" >
+                                                <span role="option" onclick={handleResultClickUnit} title={result} data-id={result} style="display: block !important;">
+                                                    <lightning-icon icon-name="custom:custom85" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result}
+                                                </span>
+                                            </li>
+                                        </template>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-medium-size_3-of-12 slds-large-size_3-of-12" >
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <label class="slds-form-element__label" for="lookupInput"><b>Customer Name</b></label>
+                            <lightning-input
+                                type="search"
+                                name="lookupInput"
+                                placeholder="Search Customer Name..."
+                                value={searchKeyCustomer}
+                                onchange={handleSearchKeyChangeCustomer}
+                                onclick={showDialogCustomer}
+                                class="topMargin">
+                            </lightning-input>
+                            <div if:true={showResultsCustomer} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                                <div id="listbox-unique-id3" role="listbox">
+                                    <lightning-icon icon-name="utility:close" size="xx-small" onclick={handleCustomerClose} style="position: absolute;right:-20px;border:groove; text-wrap: nowrap;"></lightning-icon>
+                                    <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation">
+                                        <template for:each={searchResultsCustomer} for:item="result">
+                                            <li key={result} role="presentation" class="slds-listbox__item liBox" >
+                                                <span role="option" onclick={handleResultClickCustomer} title={result} data-id={result} style="display: block !important;">
+                                                    <lightning-icon icon-name="custom:custom15" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result}
+                                                </span>
+                                            </li>
+                                        </template>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div><br/><br/>
+            <div if:true={showDataTable}>
+                <lightning-datatable
+                key-field="Id"
+                data={bookingList}
+                columns={columns}
+                onrowaction={handleRowAction}
+                hide-checkbox-column="true">
+            </lightning-datatable>
+            </div>
+        </div>
+    </lightning-card>
+    <template if:true={showRecordDetail}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container" style="max-width: 50rem !important; word-break: auto-phrase;">
+            <!-- modal header start -->
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hideModalBox}>
+                    <lightning-icon icon-name="utility:close"
+                    alternative-text="close"
+                    variant="inverse"
+                    size="small" ></lightning-icon>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Applications/ Bookings</h2>
+            </header>
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                <table class="slds-table">
+                    <tbody>
+                        <tr class="slds-hint-parent">
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c"
+                                    onload={handleLoad}>
+                                    <lightning-output-field field-name="Name"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="PropStrength__Project__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="PropStrength__Tower__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="Booking_Form_Executed__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="DSPA_Executed__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="House_Unit_No__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="PropStrength__Primary_Customer__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="PropStrength__Offer__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="PropStrength__Booking_Date__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="PropStrength__Property_Type_Code__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="PropStrength__Status__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="PropStrength__Super_Area__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="PropStrength__Total_Payment_Due__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="PropStrength__Total_Payment_Received__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="Oqood_Fees_Received__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="Oqood_Fees_Amount__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="Booking_Form_Signed_Date__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="Booking_Form_Executed__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="SPA_Execution_Date__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="MOU_Executed__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="MOU_Execution_Date__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="DSPA_Executed__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="PCC_Status__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="Pre_Registration_Completed__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="Termination_Process_Status__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="Handover_Completed__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="SPA_Status__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="Pre_Registration_Status__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="Unique_Customer_ID__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                            <td>
+                                <lightning-record-view-form record-id={bookingId}
+                                    object-api-name="PropStrength__Application_Booking__c">
+                                    <lightning-output-field field-name="Building_Completion_Notice_Sent_Date__c"
+                                    ></lightning-output-field>
+                                </lightning-record-view-form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>    
+            </div>
+            
+            <!-- modal footer start-->
+            <footer class="slds-modal__footer">
+                <button class="slds-button slds-button_neutral" onclick={hideModalBox}>Cancel</button>
+            </footer>
+        </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+</template>

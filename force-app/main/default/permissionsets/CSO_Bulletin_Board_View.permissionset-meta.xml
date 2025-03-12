@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>CSO_Bulletin_Board_View</name>
+    </customPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CSO Bulletin Board View</label>
+    <license>Salesforce</license>
+</PermissionSet>

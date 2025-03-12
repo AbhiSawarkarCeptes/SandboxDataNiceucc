@@ -1,0 +1,38 @@
+.lead-canvas {
+    overflow-y: auto;
+}
+
+.green-flag {
+    color: green;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.red-flag {
+    color: red;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.header-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 2px solid white;
+}
+
+.sub-heading {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.gray-border {
+    border-bottom: 2px solid white;
+}
+
+.sales-text {
+    color: white;
+    font-weight: 500;
+}

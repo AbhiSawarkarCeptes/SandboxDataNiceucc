@@ -1,0 +1,24 @@
+<template>
+    <section class="moreInfo-popover-style slds-nubbin_right">
+        <div class="slds-clearfix">
+            <lightning-button-icon icon-name="utility:close" variant="container" size="small" data-index={index}
+                onclick={handleClose} class="slds-float_right slds-m-top_small slds-m-right_small"
+                alternative-text="Close"></lightning-button-icon>
+        </div>
+        <div class="moreInfo-body">
+            <div class="display-flex">
+                <span class="title-label">Sales
+                    Manager</span>
+                <span class="title-value">{smname}</span>
+            </div>
+            <div class="display-flex">
+                <span class="title-label">Sales Director</span>
+                <span class="title-value">{sdname}</span>
+            </div>
+            <div class="display-flex">
+                <span class="title-label">Agent Name</span>
+                <span class="title-value">{cpname}</span>
+            </div>
+        </div>
+    </section>
+</template>

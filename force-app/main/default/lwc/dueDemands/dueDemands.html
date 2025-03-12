@@ -1,0 +1,53 @@
+<template>
+        <div>
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Booking Name">Booking Name</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Milestone Due Till Date">Milestone Due Till Date</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Collected Amount">Collected Amount</div>
+                        </th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                   <!-- <template for:each={demandData} for:item="demanddata" for:index="tableIndex">
+                        <table key={demanddata.Id} class="slds-hint-parent" data-table-id={tableIndex}>
+                            <template for:each={demanddata.data} for:item="row" for:index="rowIdx">
+                                <tr key={row.id} data-row-id={rowIdx}>
+                            <td><div class="slds-truncate">{row.Unit__c}</div></td>
+                            <td><div class="slds-truncate">{row.Date_for_Late_Payment_Calculation__c}</div></td>
+                            <td><div class="slds-truncate">{row.Total_Amount_Demanded__c}</div></td>
+                            <td><div class="slds-truncate">{row.Total_Amount_Paid__c}</div></td>
+                            <td><div class="slds-truncate">{row.Total_Amount_Balance__c}</div></td>
+                            <td>
+                                <div>
+                                  <lightning-button variant="brand" label="Email" title="Primary action" onclick={onDemandSelect} class="slds-m-left_x-small" data-index={index}></lightning-button> 
+                                </div>
+                              </td>
+                        </tr>                    
+                   </template>-->
+                   
+                   <template for:each={demandData} for:item="acc">
+                    <tr key={acc.Id}>
+                        <td>{acc.Name}</td>
+                        <td>{acc.Milestone_Due_Till_Date__c}</td>
+                        <td>{acc.Total_On_Account_Money_With_Registration__c}</td>
+                        <td>
+                            
+                              <lightning-button variant="brand" label="Email" title="Primary action" onclick={onDemandSelect} class="slds-m-left_x-small" id={acc.Id} ></lightning-button> 
+                            
+                          </td>
+                    </tr>
+                </template>
+                  <!--- </table>
+                   </template>-->
+                </tbody>
+            </table>
+    </div>
+</template>

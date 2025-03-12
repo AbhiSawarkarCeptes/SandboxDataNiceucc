@@ -1,0 +1,101 @@
+.fixTableHead {
+    overflow-y: auto;
+    height: 570px;
+    margin-top: 20px;
+}
+.fixTableHead thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.fixTableHeadAll {
+    overflow-y: auto;
+    height: 650px;
+    margin-top: 20px;
+}
+.fixTableHeadAll thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.fixTableHeadDue {
+    overflow-y: auto;
+    height: 260px;
+}
+.fixTableHeadDue thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.fixTableHeadAdv {
+    overflow-y: auto;
+    height: 260px;
+}
+.fixTableHeadAdv thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.fixTableHeadCategory {
+    overflow-y: auto;
+    margin-top: 20px;
+    /*height: 260px;*/
+}
+.fixTableHeadCategory thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.fixTableHeadAgeing {
+    overflow-y: auto;
+    margin-top: 20px;
+    /*height: 140px;*/
+}
+.fixTableHeadAgeing thead th { 
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+lightning-button.submitButton {
+	--sds-c-button-brand-color-background: #306ad5;
+    --slds-c-button-brand-color-background-active: #306ad5;
+    --slds-c-button-brand-color-background-hover: #2c62c7;;
+    --slds-c-button-shadow-focus: 0 0 15px #0d3f9a;;
+}
+lightning-button.greenbutton {
+	--sds-c-button-brand-color-background: #B1ffB1;
+    --slds-c-button-brand-color-background-active: #B1ffB1;
+    --slds-c-button-brand-color-background-hover: #B1ffB1;
+    --slds-c-button-shadow-focus: 0 0 15px #0176d3;
+}
+lightning-button.yellowbutton {
+	--sds-c-button-brand-color-background: #FCFF6F;
+    --slds-c-button-brand-color-background-active: #FCFF6F;
+    --slds-c-button-brand-color-background-hover: #FCFF6F;
+    --slds-c-button-brand-text-color: black;
+    --slds-c-button-brand-text-color-hover: black;
+    --slds-c-button-shadow-focus: 0 0 15px #0176d3;
+
+}
+lightning-button.amberbutton {
+	--sds-c-button-brand-color-background: #FFBF00;
+    --slds-c-button-brand-color-background-active: #FFBF00;
+    --slds-c-button-brand-color-background-hover: #FFBF00;
+    --slds-c-button-brand-text-color: black;
+    --slds-c-button-brand-text-color-hover: black;
+    --slds-c-button-shadow-focus: 0 0 15px #0176d3;
+}
+lightning-button.redbutton {
+	--sds-c-button-brand-color-background: #FF6F59;
+    --slds-c-button-brand-color-background-active: #FF6F59;
+    --slds-c-button-brand-color-background-hover: #FF6F59;
+    --slds-c-button-shadow-focus: 0 0 15px #0176d3;
+}
+
+.anchor {
+    color: black !important;
+}
+
+.anchor:hover a{
+    color: black !important;
+}

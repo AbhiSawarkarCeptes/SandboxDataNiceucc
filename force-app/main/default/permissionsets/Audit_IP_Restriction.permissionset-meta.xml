@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This restricts the Audit user to access Sapphire &amp; Hartland locations</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Audit IP Restriction</label>
+    <license>Salesforce</license>
+</PermissionSet>

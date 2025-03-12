@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Commission Payout Structure Email- Channel Partner</description>
+        <name>Commission_Payout_Structure_Email_Channel_Partner</name>
+        <label>Commission Payout Structure Email- Channel Partner</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Client_Information__c.Email_Only_Template_for_Channel_Ops</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Client_Information__c.Email_Only_Template_for_Channel_Ops</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <description>Commission Payout Structure Email- Channel Partner</description>
+    <environments>Default</environments>
+    <interviewLabel>Commission Payout Structure Email- Channel Partner {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Commission Payout Structure Email- Channel Partner</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Commission_Payout_Structure_Email_Channel_Partner</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Email_Sent__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Client_Information__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

@@ -1,0 +1,343 @@
+<template>
+    <div style="background-color:#fff;">
+        <div class="slds-grid slds-wrap">
+            <div
+                class="slds-p-around_xx-small slds-size_12-of-12 slds-small-size--12-of-12 slds-medium-size--12-of-12 slds-large-size_12-of-12">
+                <div class="slds-page-header"
+                    style="color:#fff;background-color: #97b73e;padding:0.5%;border-radius: 5px;">
+                    <div class="slds-page-header__row">
+                        <div class="slds-page-header__col-title">
+                            <div class="slds-media">
+                                <div class="slds-media__body" style="text-align:center;">
+                                    <div class="slds-page-header__name">
+                                        <div>
+                                            <h1>
+                                                <span class="slds-page-header__title slds-truncate"
+                                                    style="font-size: 100%;">Bank Loan/ Mortgage Document Upload</span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <lightning-messages></lightning-messages>
+        <div style="margin:3rem !important;">
+        <table class="slds-table" style="width:100%;margin-top:25px !important;">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="Application Booking"><span style="color:red;">*
+                                &nbsp;</span>Application Booking</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;"></th>
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="Project Name">Project Name</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="Property Name">Property Name</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="Status">Status</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="Applicant Name">Applicant Name</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="SPA Executed">SPA Executed</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="slds-hint-parent">
+                    <td data-label="Application Booking">
+                        <lightning-record-edit-form object-api-name="PropStrength__Received_Payment__c"
+                            id="bookingLookup">
+                            <lightning-input-field field-name="PropStrength__Application_Booking__c"
+                                variant="label-hidden" onchange={handleBookingSelection}
+                                class="slds-size_2-of-12 slds-m-right_small" required value={selectedBooking}></lightning-input-field>
+                        </lightning-record-edit-form>
+                    </td>
+                    <td data-label="Project Name"></td>
+                    <td data-label="Project Name">
+                        <lightning-record-view-form record-id={selectedBooking}
+                            object-api-name="PropStrength__Application_Booking__c">
+                            <lightning-output-field field-name="Project_Name__c"
+                                variant='label-hidden'></lightning-output-field>
+                        </lightning-record-view-form>
+                    </td>
+                    <td data-label="Property Name">
+                        <lightning-record-view-form record-id={selectedBooking}
+                            object-api-name="PropStrength__Application_Booking__c">
+                            <lightning-output-field field-name="PropStrength__Property_Name__c"
+                                variant='label-hidden'></lightning-output-field>
+                        </lightning-record-view-form>
+                    </td>
+                    <td data-label="Status">
+                        <lightning-record-view-form record-id={selectedBooking}
+                            object-api-name="PropStrength__Application_Booking__c">
+                            <lightning-output-field field-name="PropStrength__Status__c"
+                                variant='label-hidden'></lightning-output-field>
+                        </lightning-record-view-form>
+                    </td>
+                    <td data-label="Applicant Name">
+                        <lightning-record-view-form record-id={selectedBooking}
+                            object-api-name="PropStrength__Application_Booking__c">
+                            <lightning-output-field field-name="PropStrength__Primary_Applicant_Name__c"
+                                variant='label-hidden'></lightning-output-field>
+                        </lightning-record-view-form>
+                    </td>
+                    <td data-label="SPA Executed">
+                        <lightning-record-view-form record-id={selectedBooking}
+                            object-api-name="PropStrength__Application_Booking__c">
+                            <lightning-output-field field-name="SPA_Executed__c"
+                                variant='label-hidden'></lightning-output-field>
+                        </lightning-record-view-form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="slds-table" style="width:100%;margin-top:25px !important;">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col">
+                        <div class="slds-truncate" title="Pre-Approval Document">
+                            <b>Pre-Approval Document</b>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <table class="slds-table" style="width:100%;margin-top:10px !important;">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col" style="background-color:#fff;"> 
+                        <div class="slds-truncate" title="Attachment">Attachment</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="Receipt Date">Receipt Date</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="Expiry Date">Expiry Date</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="slds-hint-parent">
+                    <td data-label="Attachment">
+                        <lightning-input type="file" onchange={handleFileUploaded} multiple id="preApprove"></lightning-input>
+                        <div>{fileNames}</div>
+                        <template if:true={preApproved}>
+                            <p class="slds-text-color_error" style="margin-left: 20px;"><b>Attachment is required.</b></p>
+                        </template>
+                    </td>
+                    <td data-label="Receipt Date">
+                        <lightning-input type="date" name="date" value={PreApprovalDate}
+                            onchange={handlePreApprovalChange} style="width: 10rem !important;"></lightning-input>
+                    </td>
+                    <td data-label="Expiry Date">
+                        <lightning-input type="date" name="date" value={PreApprovalEXDate}
+                            onchange={handlePreEXApprovalChange} style="width: 10rem !important;"></lightning-input>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="slds-table" style="width:100%;margin-top:25px !important;">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col">
+                        <div class="slds-truncate" title="Final Offer Document">
+                            <b>Final Offer Document</b>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <table class="slds-table" style="width:100%;margin-top:10px !important;">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col" style="background-color:#fff;"> 
+                        <div class="slds-truncate" title="Attachment">Attachment</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="Receipt Date">Receipt Date</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="Expiry Date">Expiry Date</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="slds-hint-parent">
+                    <td data-label="Attachment">
+                        <lightning-input type="file" onchange={handleFileUploaded} multiple id="finalOffer"></lightning-input>
+                        <div>{fileNames1}</div>
+                        <template if:true={finalOffer}>
+                            <p class="slds-text-color_error" style="margin-left: 20px;"><b>Attachment is required.</b></p>
+                        </template>
+                    </td>
+                    <td data-label="Receipt Date">
+                        <lightning-input type="date" name="date" value={FinalOfferDate}
+                            onchange={handleFinalChange} style="width: 10rem !important;"></lightning-input>
+                    </td>
+                    <td data-label="Expiry Date">
+                        <lightning-input type="date" name="date" value={FinalOfferEXDate}
+                            onchange={handleFinalEXChange} style="width: 10rem !important;"></lightning-input>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="slds-table" style="width:100%;margin-top:25px !important;">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col">
+                        <div class="slds-truncate" title="Sign Mortgage Contract Document">
+                            <b>Sign Mortgage Contract Document</b>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <table class="slds-table" style="width:100%;margin-top:10px !important;">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col" style="background-color:#fff;"> 
+                        <div class="slds-truncate" title="Attachment">Attachment</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="Receipt Date">Receipt Date</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="Expiry Date">Expiry Date</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="slds-hint-parent">
+                    <td data-label="Attachment">
+                        <lightning-input type="file" onchange={handleFileUploaded} multiple id="signmor"></lightning-input>
+                        <div>{fileNames2}</div>
+                        <template if:true={signedMortgage}>
+                            <p class="slds-text-color_error" style="margin-left: 20px;"><b>Attachment is required.</b></p>
+                        </template>
+                    </td>
+                    <td data-label="Receipt Date">
+                        <lightning-input type="date" name="date" value={SignedMortgageDate}
+                            onchange={handleSignedMortgageDateChange} style="width: 10rem !important;"></lightning-input>
+                    </td>
+                    <td data-label="Expiry Date">
+                        <lightning-input type="date" name="date" value={SignedMortgageEXDate}
+                            onchange={handleSignedMortgageEXDateChange} style="width: 10rem !important;"></lightning-input>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="slds-table" style="width:100%;margin-top:25px !important;">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col">
+                        <div class="slds-truncate" title="NOC from Bank Document">
+                            <b>NOC from Bank Document</b>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <table class="slds-table" style="width:100%;margin-top:10px !important;">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col" style="background-color:#fff;"> 
+                        <div class="slds-truncate" title="Attachment">Attachment</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="Receipt Date">Receipt Date</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="Expiry Date">Expiry Date</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="slds-hint-parent">
+                    <td data-label="Attachment">
+                        <lightning-input type="file" onchange={handleFileUploaded} multiple id="nocFrmBank"></lightning-input>
+                        <div>{fileNames3}</div>
+                        <template if:true={NOC}>
+                            <p class="slds-text-color_error" style="margin-left: 20px;"><b>Attachment is required.</b></p>
+                        </template>
+                    </td>
+                    <td data-label="Receipt Date">
+                        <lightning-input type="date" name="date" value={NOCDate}
+                            onchange={handleDateChange} style="width: 10rem !important;"></lightning-input>
+                    </td>
+                    <td data-label="Expiry Date">
+                        <lightning-input type="date" name="date" value={NOCEXDate}
+                            onchange={handleEXDateChange} style="width: 10rem !important;"></lightning-input>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="slds-table" style="width:100%;margin-top:25px !important;">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col">
+                        <div class="slds-truncate" title="Copy of the Manager's Cheque Document">
+                            <b>Copy of the Manager's Cheque Document</b>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <table class="slds-table" style="width:100%;margin-top:10px !important;">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col" style="background-color:#fff;"> 
+                        <div class="slds-truncate" title="Attachment">Attachment</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="Receipt Date">Receipt Date</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;">
+                        <div class="slds-truncate" title="Expiry Date">Expiry Date</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="slds-hint-parent">
+                    <td data-label="Attachment">
+                        <lightning-input type="file" onchange={handleFileUploaded} multiple  id="copyOfMng"></lightning-input>
+                        <div>{fileNames4}</div>
+                        <template if:true={managersCheque}>
+                            <p class="slds-text-color_error" style="margin-left: 20px;"><b>Attachment is required.</b></p>
+                        </template>
+                    </td>
+                    <td data-label="Receipt Date">
+                        <lightning-input type="date" name="date" value={ManagersChequeDate}
+                            onchange={handleManagersChequeDateChange} style="width: 10rem !important;"></lightning-input>
+                    </td>
+                    <td data-label="Expiry Date">
+                        <lightning-input type="date" name="date" value={ManagersChequeEXDate}
+                            onchange={handleEXManagersChequeDateChange} style="width: 10rem !important;"></lightning-input>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="slds-form_horizontal slds-form slds-grid slds-wrap" style="margin-top:10px !important;">
+            <div class="slds-size_3-of-3">
+                <div class="slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                    <div>
+                        <button class="slds-button slds-button_brand" onclick={attachFiles}>Submit</button>
+                        <button class="slds-button slds-button_neutral" onclick={handleCancel}>Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <template if:true={showSpinner}>
+    <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+</template>
+</template>

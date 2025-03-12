@@ -1,0 +1,78 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <div if:true={displaySubmit}>
+        <div class="container">
+            <div class="slds-grid slds-gutters slds-m-top_large">
+                <div class="slds-col">
+                    <h1>1. Visa Copy for all owners.</h1>
+                    <lightning-input type="file" accept=".png, .doc, .docx, .pdf" title="Visa Copy"
+                        onchange={openfileUpload}></lightning-input>
+                    <p>{fileData1.filename}</p>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters slds-m-top_large">
+                <div class="slds-col ">
+                    <h1>2. Emirates ID for all owners.</h1>
+                    <lightning-input type="file" accept=".png, .doc, .docx, .pdf" title="Emirates ID"
+                        onchange={openfileUpload}></lightning-input>
+                    <p>{fileData2.filename}</p>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters slds-m-top_large">
+    
+                <div class="slds-col">
+                    <h1>3. Vat Certificate.</h1>
+                    <lightning-input type="file" accept=".png, .doc, .docx, .pdf" title="Vat Certificate"
+                        onchange={openfileUpload}></lightning-input>
+                    <p>{fileData3.filename}</p>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters slds-m-top_large">
+    
+                <div class="slds-col">
+                    <h1>4. POA/MOA - is case the authorized signature is different from the owner.</h1>
+                    <lightning-input type="file" accept=".png, .doc, .docx, .pdf" title="POA/MOA"
+                        onchange={openfileUpload}></lightning-input>
+                    <p>{fileData4.filename}</p>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters slds-m-top_large">
+    
+                <div class="slds-col">
+                    <h1>5. Witness ID.</h1>
+                    <lightning-input type="file" accept=".png, .doc, .docx, .pdf" title="Witness ID"
+                        onchange={openfileUpload}></lightning-input>
+                    <p>{fileData5.filename}</p>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters slds-m-top_large">
+    
+                <div class="slds-col">
+                    <h1>6. Other doument.</h1>
+                    <lightning-input type="file" accept=".png, .doc, .docx, .pdf" title="Other doument"
+                        onchange={openfileUpload}></lightning-input>
+                    <p>{fileData6.filename}</p>
+                </div>
+            </div>
+            <div class="slds-grid slds-gutters slds-m-top_large">
+                <div class="slds-col slds-size_3-of-7">
+                </div>
+                <div class="slds-col slds-size_4-of-7">
+                    <lightning-button variant="brand" label="Submit" onclick={handleSave}
+                        class="slds-m-top_small"></lightning-button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div if:true={displaySuccess}>
+        <div class="container">
+            <h1>File Upload Success</h1>
+            <p>Your file has been successfully uploaded.</p>
+        </div>
+    </div>
+</template>

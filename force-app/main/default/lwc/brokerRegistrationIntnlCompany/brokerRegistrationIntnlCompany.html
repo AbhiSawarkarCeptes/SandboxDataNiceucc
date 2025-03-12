@@ -1,0 +1,360 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+
+    <template if:true={showConfirmModal}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+            class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container modal-container">
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <div class="checkbox-body">
+                        <div>
+                            <lightning-input type="checkbox" label="Confirm" variant="label-hidden" name="confirm1"
+                                data-action="checked" onclick={handleModalPopup}></lightning-input>
+                        </div>
+                        <div>
+                            We hereby confirm that all information provided in this form is accurate to the best of our
+                            knowledge.
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-modal__footer modal-footer">
+                    <button class="slds-button slds-button_brand" data-action="confirm" onclick={handleSubmit}
+                        disabled={isDisabled}>Confirm</button>
+                    <button class="slds-button slds-button_neutral" aria-label="Cancel and close" data-action="close"
+                        onclick={handleModalPopup}>Cancel</button>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+
+    <div class="card">
+        <p style="text-align: end; font-weight: bold;" class="slds-p-right_large slds-p-top--large">Date:
+            <lightning-formatted-date-time value={today}></lightning-formatted-date-time>
+        </p>
+         <h1 class="slds-text-heading_medium slds-text-align_center slds-m-around_large">
+        <img src={sobhaRealityImageUrl} alt="Sobha Reality" class="sobha-reality-image">
+         </h1>
+        <h1 class="slds-text-heading_medium slds-text-align_center slds-m-around_large">
+            {formType} <!--Form – {record.Broker_Category__c}-->
+            <br>(to be filled in English only)
+        </h1>
+
+        <hr>
+
+        <lightning-layout multiple-rows class="slds-p-around_large">
+            <lightning-layout-item size="12">
+                <p class="slds-text-heading_small slds-m-bottom_small">Company Details</p>
+                <lightning-input type="text" required="true" variant="label-inline" name="Name_as_per_trade_license__c"
+                    label="Name as per Trade License/Incorporation Certificate"
+                    value={record.Name_as_per_trade_license__c} onchange={handleChange}
+                    onkeyup={onKeyUpInputField}></lightning-input>
+                <lightning-input type="text" required="true" variant="label-inline" name="Registration_Number__c"
+                    label="Registration Number" value={record.Registration_Number__c} onblur={handleBlur}
+                    onchange={handleChange} onkeyup={onKeyUpInputField}></lightning-input>
+               <!-- <div if:false={isRegistrationValid} class="error-message">{registrationError}</div>-->
+                <lightning-input type="text" required="true" variant="label-inline" value={record.RERA_Number__c}
+                    read-only={makeReraNumberReadonly} name="RERA_Number__c" label="RERA Number" onchange={handleChange}
+                    pattern="[0-9a-zA-Z]*" if:true={isBrokerRera} onkeyup={onKeyUpInputField}></lightning-input>
+                <!--<template if:true={isBrokerRera}>
+                    <lightning-input class="" type="checkbox" data-id="RERA_Number__c" label="Check If Company RERA Number is In Process" onchange={reraInprogressChange}></lightning-input>
+                </template>-->
+                <lightning-combobox options={companyRegPicklistVal} required="true" variant="label-inline"
+                    value={record.Company_Registered_In__c} name="Company_Registered_In__c"
+                    label="Company Registered In" onchange={handleChange}
+                    if:true={isCompanyRegVisible}></lightning-combobox>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" class="slds-m-top--medium">
+                <p class="slds-text-heading_small slds-m-bottom_small">Authorized signatory details</p>
+                <lightning-input type="text" required="true" variant="label-inline"
+                    value={record.Name_as_per_passport__c} name="Name_as_per_passport__c" label="Name as per passport"
+                    onchange={handleChange} onkeyup={onKeyUpInputField}></lightning-input>
+                <!-- <lightning-input type="text" variant="label-inline" name="Nationality__c" label="Nationality" onchange={handleChange}></lightning-input> -->
+                <lightning-combobox options={nationalityPicklistVal} variant="label-inline"
+                    value={record.Nationality__c} name="Nationality__c" label="Nationality"
+                    onchange={handleChange}></lightning-combobox>
+
+                <lightning-input type="text" variant="label-inline" value={record.Designation__c} name="Designation__c"
+                    label="Designation" onchange={handleChange} onkeyup={onKeyUpInputField}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" class="slds-m-top--medium">
+                <p class="slds-text-heading_small slds-m-bottom_small">Complete Mailing Address</p>
+                <lightning-input type="text" variant="label-inline" value={record.Office_Apartment_number__c}
+                    name="Office_Apartment_number__c" label="Office/Apartment number" onchange={handleChange}
+                    onkeyup={onKeyUpInputField}></lightning-input>
+                <lightning-input type="text" required={isBuildingRequired} variant="label-inline"
+                    value={record.Villa_Building_name__c} name="Villa_Building_name__c" label="Building name"
+                    onchange={handleChange} onkeyup={onKeyUpInputField}></lightning-input>
+                <lightning-input type="text" variant="label-inline" value={record.Street_name__c} name="Street_name__c"
+                    label="Street name" onchange={handleChange} onkeyup={onKeyUpInputField}></lightning-input>
+                <lightning-input type="text" required="true" variant="label-inline" value={record.District_Area__c}
+                    name="District_Area__c" label="District/Area" onchange={handleChange}
+                    onkeyup={onKeyUpInputField}></lightning-input>
+                <lightning-input type="text" required="true" variant="label-inline" value={record.City_Province__c}
+                    name="City_Province__c" label="City/Province" onchange={handleChange}
+                    onkeyup={onKeyUpInputField}></lightning-input>
+
+                <lightning-combobox options={picklistCompanyList} variant="label-inline" required
+                    value={record.Country__c} name="Country__c" label="Country"
+                    onchange={handleChange}></lightning-combobox>
+                <!-- <lightning-input type="text" required="true" variant="label-inline" value={record.Country__c} name="Country__c" label="Country" onchange={handleChange}  onkeyup={onKeyUpInputField}></lightning-input> -->
+                <!-- <lightning-combobox
+                    variant="label-inline"
+                    name="City_Province__c"
+                    label="City/Province"
+                    value={record.City_Province__c}
+                    placeholder="Select an option"
+                    options={options.city}
+                    onchange={handleChange}
+                    required >
+                </lightning-combobox>
+                <lightning-combobox
+                    variant="label-inline"
+                    name="Country__c"
+                    label="Country"
+                    value={record.Country__c}
+                    placeholder="Select an option"
+                    options={options.country}
+                    onchange={handleChange}
+                    required >
+                </lightning-combobox> -->
+                <lightning-input type="text" variant="label-inline" value={record.ZIP_Postal_Code_PO_Box__c}
+                    name="ZIP_Postal_Code_PO_Box__c" label="Postal Code" onchange={handleChange} pattern="[0-9]*"
+                    onkeyup={onKeyUpInputField}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" class="slds-m-top--medium">
+                <p class="slds-text-heading_small slds-m-bottom_small">Contact details</p>
+                <!-- <div class="slds-m-top_large slds-m-bottom_small">
+                        <c-combobox-autocomplete 
+                            required="true" 
+                            label="Mobile Country Code"
+                            name="countrycode"
+                            options={countryCodes.data.values}
+                            placeholder="Select a Country Code"
+                            onselectoption={handleChange}
+                            classes="slds-m-bottom_small"
+                         >
+                        </c-combobox-autocomplete>
+                    </div>-->
+                <lightning-combobox options={telephoneCountryPicklistVal} variant="label-inline"
+                    value={record.Telephone_Country_Code__c} name="Telephone_Country_Code__c"
+                    label="Telephone Country Code" onchange={handleChange}></lightning-combobox>
+                <!-- Validation message for missing country code -->
+                <template if:true={telephoneCountryCodeRequired}>
+                    <div class="red-flag">
+                        Please select a telephone country code.
+                    </div>
+                </template>
+                <lightning-input type="tel" variant="label-inline" value={record.Telephone__c} name="Telephone__c"
+                    label="Telephone Number" onchange={handleChange} onblur={handleBlurPhone} ></lightning-input><!--onblur={handleBlurPhone}-->
+                <div class="center-align">
+                    <template if:true={hasInteractedPhone}>
+                        <template if:true={validTelephone}>
+                            <div class="green-flag">✔ Phone Number is valid</div>
+                        </template>
+                        <template if:false={validTelephone}>
+                            <div class="red-flag">✘ Phone Number is invalid</div>
+                        </template>
+                    </template>
+                </div>
+                <lightning-input type="text" variant="label-inline" value={record.Fax__c} name="Fax__c"
+                    label="Fax Number" onchange={handleChange}></lightning-input>
+                <lightning-combobox options={mobileCountryPicklistVal} variant="label-inline"
+                    value={record.Mobile_Country_Code__c} name="Mobile_Country_Code__c" label="Mobile Country Code"
+                    onchange={handleChange} required="true"></lightning-combobox>
+                <lightning-input type="tel" required="true" variant="label-inline" name="Mobile__c"
+                    value={record.Mobile__c} label="Mobile Number" onchange={handleChange} pattern="[0-9]*"
+                    ></lightning-input> <!--onblur={handleBlurMobile} -->
+                <div class="center-align">
+                    <template if:true={hasInteractedMobile}>
+                        <template if:true={validMobile}>
+                            <div class="green-flag">✔ Mobile Number is valid</div>
+                        </template>
+                        <template if:false={validMobile}>
+                            <div class="red-flag">✘ Mobile Number is invalid</div>
+                        </template>
+                    </template>
+                </div>
+                <lightning-input type="email" required="true" variant="label-inline" value={record.Email__c}
+                    name="Email__c" label="Email Address" onchange={handleChange}
+                    onblur={handleEmailBlur}></lightning-input>
+                <template if:true={hasInteracted}>
+                    <template if:true={validEmail}>
+                        <div class="green-flag">✔ Email is valid</div>
+                    </template>
+                    <template if:false={validEmail}>
+                        <div class="red-flag">✘ Email is invalid</div>
+                    </template>
+                </template>
+                <lightning-input type="email" variant="label-inline" value={record.Account_Email__c}
+                    name="Account_Email__c" label="Account Email" onchange={handleChange}
+                    onblur={handleAccountEmailBlur}></lightning-input>
+                <template if:true={hasInteractedAccount}>
+                    <template if:true={validAccountEmail}>
+                        <div class="green-flag">✔ Account Email is valid</div>
+                    </template>
+                    <template if:false={validAccountEmail}>
+                        <div class="red-flag">✘ Account Email is invalid</div>
+                    </template>
+                </template>
+
+                <!-- <lightning-input type="email" variant="label-inline" value={record.Owner_Email__c} name="Owner_Email__c" label="Owner Email" onchange={handleChange} ></lightning-input> -->
+                <template if:true={showalternateemail}>
+                    <div>
+                        <lightning-input type="email" required="true" variant="label-inline"
+                            value={record.Alternate_Email__c} name="Alternate_Email__c" label="Owner's Email"
+                            onchange={handleChange} onblur={handleAlternateEmailBlur}></lightning-input>
+                        <p style="font-size: 0.75rem; color: #28a745; margin-top: 0.25rem;">
+                            *Please note that the owner's email address must be different from the one provided above*
+                        </p>
+                    </div>
+                    <template if:true={hasInteractedAlternate}>
+                        <template if:true={validAlternateEmail}>
+                            <div class="green-flag">✔ Owner's Email is valid</div>
+                        </template>
+                        <template if:false={validAlternateEmail}>
+                            <div class="red-flag">✘ Owner's Email is invalid</div>
+                        </template>
+                    </template>
+                </template>
+            </lightning-layout-item>
+            <!-- 
+            <lightning-layout-item size="12" class="slds-m-top--medium">
+                <p class="slds-text-heading_small slds-m-bottom_small">Witness details</p>
+                <lightning-input type="text" variant="label-inline" name="Witness_Name__c" label="Witness Name" onchange={handleChange} ></lightning-input>
+                <lightning-input type="text" variant="label-inline" name="Witness_Email_1__c" label="Witness Email" onchange={handleChange} ></lightning-input>
+            </lightning-layout-item> -->
+        </lightning-layout>
+
+        <div class="slds-p-around_large" if:true={files}>
+            <p class="slds-text-heading_small slds-m-bottom_small">Attach below documents for registration</p>
+            <ol class="show-list-style">
+                <template for:each={files} for:item="file" for:index="index">
+                    <li class="slds-m-bottom_small show-list-item-style" key={file.label}>
+                        <label class="slds-form-element__label" if:true={file.required} style="font-weight: 600;">
+                            <!-- <abbr class="slds-required" title="required">* </abbr> -->
+                            {file.label}
+                        </label>
+                        <label class="slds-form-element__label" if:false={file.required}>{file.label}</label>
+                        <p style="font-size: 0.75rem; color: #28a745; margin-top: 0.25rem;" if:true={file.showText}>
+                            *Kindly provide the VAT certificate. If not applicable, please submit a VAT exemption letter
+                            signed and stamped on the company’s letterhead (format attached in the email sent). *</p>
+                        <lightning-file-upload onuploadfinished={handleUploadFinished} data-index={index}
+                            accept={acceptedFormats} multiple></lightning-file-upload>
+                        <p class="fileName" if:true={file.uploaded}>
+                            <lightning-icon icon-name="action:approval" alternative-text="Uploaded" title="Uploaded"
+                                size="x-small" class="slds-m-right--x-small"></lightning-icon>
+
+                            <template if:true={file.uploadedFiles} for:each={file.uploadedFiles} for:item="uploadedFile"
+                                for:index="fileIndex">
+                                <span key={uploadedFile.documentId}>
+                                    {uploadedFile.name}
+                                    <span data-id={index} data-file-index={fileIndex} onclick={removeReceiptImage}
+                                        class="removeImage">x</span> &nbsp;
+                                </span>
+                            </template>
+                        </p>
+                    </li>
+                </template>
+            </ol>
+        </div>
+        <!-- <div class="slds-p-around_large">
+            <p class="slds-text-heading_small slds-m-bottom_small">Attach below documents for registration</p>
+            <ol>
+                <li class="slds-m-bottom_small">
+                    <lightning-file-upload
+                        label="1. Valid trade license or Company Registration Document or Real-estate regulatory Body license"
+                        name="validTradeLicense"
+                        file-field-name="Related_Record_ID_fileupload__c"
+                        file-field-value={record.Id}
+                        onuploadfinished={handleUploadFinished}
+                    ></lightning-file-upload>
+                    <p class="fileName" if:true={files.validTradeLicense}><lightning-icon icon-name="action:approval" alternative-text="Uploaded" title="Uploaded" size="x-small"></lightning-icon> {files.validTradeLicense}</p>
+                </li>
+                <li class="slds-m-bottom_small">
+                    <lightning-file-upload
+                        label="2. Memorandum of Articles & Association"
+                        name="memorandum"
+                        file-field-name="Related_Record_ID_fileupload__c"
+                        file-field-value={record.Id}
+                        onuploadfinished={handleUploadFinished}
+                    ></lightning-file-upload>
+                    <p class="fileName">{files.memorandum}</p>
+                </li>
+                <li class="slds-m-bottom_small">
+                    <lightning-file-upload
+                        label="3. Self-attested passport copy of authorized signatory"
+                        name="passport"
+                        file-field-name="Related_Record_ID_fileupload__c"
+                        file-field-value={record.Id}
+                        onuploadfinished={handleUploadFinished}
+                    ></lightning-file-upload>
+                    <p class="fileName">{files.passport}</p>
+                </li>
+                <li class="slds-m-bottom_small">
+                    <lightning-file-upload
+                        label="4. Owner National ID"
+                        name="nationalId"
+                        file-field-name="Related_Record_ID_fileupload__c"
+                        file-field-value={record.Id}
+                        onuploadfinished={handleUploadFinished}
+                    ></lightning-file-upload>
+                    <p class="fileName">{files.nationalId}</p>
+                </li>
+                <li class="slds-m-bottom_small">
+                    <lightning-file-upload
+                        label="5. Power of attorney/MOA/AOA from owner to authorize signatory (if applicable)"
+                        name="powerOfAttorney"
+                        file-field-name="Related_Record_ID_fileupload__c"
+                        file-field-value={record.Id}
+                        onuploadfinished={handleUploadFinished}
+                    ></lightning-file-upload>
+                    <p class="fileName">{files.powerOfAttorney}</p>
+                </li>
+                <li class="slds-m-bottom_small">
+                    <lightning-file-upload
+                        label="6. Bank Beneficiary form & Cancelled Cheque"
+                        name="bankBeneficiaryForm"
+                        file-field-name="Related_Record_ID_fileupload__c"
+                        file-field-value={record.Id}
+                        onuploadfinished={handleUploadFinished}
+                    ></lightning-file-upload>
+                    <p class="fileName">{files.bankBeneficiaryForm}</p>
+                </li>
+            </ol>
+        </div> -->
+
+        <div style="text-align: center;">
+            <lightning-button class="slds-m-top_small slds-m-left_medium" variant="brand" name="submit" label="Submit"
+                data-action="submit" onclick={handleModalPopup}></lightning-button>
+        </div>
+
+        <hr>
+
+        <!--  <lightning-layout class="slds-p-horizontal_large slds-p-bottom_large footer">
+            <lightning-layout-item size="4" >
+                <p>
+                    SOBHA HARTLAND SALES GALLERY<br>
+                    Sobha Hartland Mohammed Bin Rashid City Dubai,<br> 
+                    United Arab Emirates
+                </p>
+            </lightning-layout-item>
+            <lightning-layout-item size="4" >
+            </lightning-layout-item>
+            <lightning-layout-item size="4" >
+                <p style="float: right">
+                    +971 56 4189790<br>
+                    agents@sobha-me.com<br>
+                    Sobharealty.com
+                </p>
+            </lightning-layout-item>
+        </lightning-layout> -->
+    </div>
+</template>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Sobha Realty- EID-AL-ADHA – Bonus Earnings</description>
+        <name>Sobha_Realty_EID_AL_ADHA_Bonus_Earnings</name>
+        <label>Sobha Realty- EID-AL-ADHA – Bonus Earnings</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Broker_Registration__c.Email_alert_for_BR</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Broker_Registration__c.Email_alert_for_BR</nameSegment>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <description>Sobha Realty- EID-AL-ADHA – Bonus Earnings</description>
+    <environments>Default</environments>
+    <interviewLabel>Sobha Realty- EID-AL-ADHA – Bonus Earnings {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Sobha Realty- EID-AL-ADHA – Bonus Earnings</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Sobha_Realty_EID_AL_ADHA_Bonus_Earnings</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Dataload_Identifier__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>150620241130PM</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Dataload_Identifier__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Broker_Registration__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

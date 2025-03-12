@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Copy_1_of_Payment_request_Sumbitted_by_SM_for_approval</name>
+        <label>Copy 1 of Payment request Sumbitted by SM for approval</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <actionName>Payment_Request__c.Payment_request_Sumbitted_by_SM_for_approval</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Payment_Request__c.Payment_request_Sumbitted_by_SM_for_approval</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_2_of_Payment_request_Sumbitted_by_SM_for_approval</name>
+        <label>Copy 2 of Payment request Sumbitted by SM for approval</label>
+        <locationX>314</locationX>
+        <locationY>575</locationY>
+        <actionName>Payment_Request__c.Payment_request_Sumbitted_by_SM_for_approval</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Payment_Request__c.Payment_request_Sumbitted_by_SM_for_approval</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Payment_Request_Approval_Notification_to_SM</name>
+        <label>Payment Request Approval Notification to SM</label>
+        <locationX>578</locationX>
+        <locationY>695</locationY>
+        <actionName>Payment_Request__c.Payment_request_Approval_by_accounts_for_SM</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Payment_Request__c.Payment_request_Approval_by_accounts_for_SM</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>PR_Submitted_for_Accounts_Approval_Alert</name>
+        <label>PR Submitted for Accounts Approval Alert</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <actionName>Payment_Request__c.Payment_request_Sumbitted_to_accounts_for_approval</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Copy_1_of_Payment_request_Sumbitted_by_SM_for_approval</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Payment_Request__c.Payment_request_Sumbitted_to_accounts_for_approval</nameSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Copy_2_of_Payment_Request_notifications_from_Accounts_to_SM</name>
+        <label>Copy 2 of Payment Request notifications from Accounts to SM</label>
+        <locationX>512</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Payment_Request_notifications_from_Accounts_to_SM</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Payment_Request_notifications_from_Accounts_to_SM</name>
+            <conditionLogic>(1 OR 2 ) AND 3 AND 4</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending for Sales Ops Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Submitted to Accounts for Amount Confirmation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Booking__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Payment_request_Sumbitted_by_SM_for_approval</targetReference>
+            </connector>
+            <label>Copy 1 of Payment Request notifications from Accounts to SM</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Payment_request_Submitted_for_Accounts_for_Approval</name>
+        <label>If Payment request Submitted for Accounts for Approval?</label>
+        <locationX>281</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Copy_2_of_Payment_Request_notifications_from_Accounts_to_SM</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_Status_is_Pending_for_Accounts_Approval</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending for Accounts Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Booking__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PR_Submitted_for_Accounts_Approval_Alert</targetReference>
+            </connector>
+            <label>If Status is Pending for Accounts Approval</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Payment_Request_notifications_from_Accounts_to_SM</name>
+        <label>Payment Request notifications from Accounts to SM</label>
+        <locationX>710</locationX>
+        <locationY>575</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Payment_Request_notifications_from_Accounts_to_SMM</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Booking__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Payment_Request_Approval_Notification_to_SM</targetReference>
+            </connector>
+            <label>Payment Request notifications from Accounts to SM</label>
+        </rules>
+    </decisions>
+    <description>v4 This flow is used to send email notifications to accounts if PR is raised and pending for approval, SM after raising PR &amp; approval
+Mohan : Added Condition for Booking</description>
+    <environments>Default</environments>
+    <interviewLabel>Flow for Payment request email notifications {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Flow for Payment request email notifications</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>155</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>If_Payment_request_Submitted_for_Accounts_for_Approval</targetReference>
+        </connector>
+        <object>Payment_Request__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

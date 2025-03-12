@@ -1,0 +1,41 @@
+<template>
+    <div class="my-component-container">
+        <template if:true={showSpinner}>
+            <div class="exampleHolder">
+                <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+            </div>
+        </template>
+        <div class="slds-form-element">
+            <label class="slds-form-element__label" for="lookupInput">Select Payment Plan</label>
+            <div class="slds-form-element__control">
+                <lightning-input
+                    type="search"
+                    label="Search"
+                    name="lookupInput"
+                    value={searchKey}
+                    onchange={handleSearchKeyChange}
+                    onclick={showDialog}>
+                </lightning-input>
+                <div if:true={showResults} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                    <div id="listbox-unique-id" role="listbox">
+                        <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation">
+                            <template for:each={searchResults} for:item="result">
+                                <li key={result.Id} role="presentation" class="slds-listbox__item liBox">
+                                    <span role="option" onclick={handleResultClick} title={result.Id} data-id={result.Name}>
+                                        <lightning-icon icon-name="custom:custom47" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result.Name}
+                                    </span>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+        <div style="text-align:center;padding-bottom:40px;padding-top: 20px;">
+            <button type="submit" class="slds-button slds-button_brand" title="Save" onclick={handleSubmit}>Save</button>
+            <button class="slds-button slds-button_brand" title="Cancel" onclick={handleCancel}>Cancel</button>
+        </div>
+
+    </div>
+</template>

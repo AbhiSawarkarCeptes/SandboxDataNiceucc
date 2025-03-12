@@ -1,0 +1,19 @@
+<template>
+  <div class="outerWrap">
+    <div class="innerWrap">
+      <div class="customeHeader">General Instructions</div>
+      <lightning-card title="" >
+          <div class="contnetScroller">
+              <div class="instruction"></div>
+              <template for:each={generalInstructions} for:item="inst">
+                <div key={inst.Id} class="slds-m-left_large" >
+              <lightning-formatted-rich-text value={inst.Instruction__c} ></lightning-formatted-rich-text>
+              <div class="slds-m-top_large"></div>
+            </div>
+              </template>
+          </div>
+      </lightning-card>
+    </div>
+  </div>
+      
+</template>

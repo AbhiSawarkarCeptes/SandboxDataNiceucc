@@ -1,0 +1,21 @@
+<template>
+    <template if:true={isExecuted_Or_New}>
+    </template>
+    <template if:false={isExecuted_Or_New}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-label="Meaningful description of the modal content"
+            class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container renew-body">
+                <div class="slds-modal__content slds-modal__content_headless content-padding" id="modal-content-id-1">
+                    <div class="normal-text">Upon expiration of your agreement, access to your dashboard and data on this
+                        portal has been
+                        suspended.</div>
+                    <div class="bold-text">Please renew your agreement to resume operations.</div>
+                    <div>
+                        <button onclick={renewalButtonHandler}>Renew Agreement</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+</template>

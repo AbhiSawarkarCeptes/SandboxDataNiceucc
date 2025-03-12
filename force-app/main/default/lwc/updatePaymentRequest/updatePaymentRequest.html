@@ -1,0 +1,18 @@
+<template>
+    <div style="padding:20px">
+        <div style="display:none">{recordId}</div>
+        <template if:true={showSpinner}>
+            <div class="exampleHolder">
+                <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+            </div>
+        </template>
+        <lightning-record-edit-form onsubmit={handleSubmit} record-id={recordId} object-api-name="Payment_Request__c" onsuccess={handleSuccess} >
+            <lightning-input-field field-name="Instrument_Number__c"> </lightning-input-field>
+            <lightning-input-field field-name="Instrument_Date__c"> </lightning-input-field>
+            <lightning-input-field field-name="Reference_Number__c"> </lightning-input-field>
+            <div style="text-align:center;padding-top: 20px;">
+                <button type="submit" class="slds-button slds-button_brand" title="Save">Save</button>
+            </div>
+        </lightning-record-edit-form>
+    </div>
+</template>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Send Mandate for Signing</description>
+        <name>Send_Mandate_for_Signing</name>
+        <label>Send Mandate for Signing</label>
+        <locationX>681</locationX>
+        <locationY>300</locationY>
+        <actionName>sendMandateDocuSignHandler</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Send_Mandate</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>brokerIds</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>sendMandateDocuSignHandler</nameSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <description>Send Mandate for DocuSign</description>
+    <environments>Default</environments>
+    <interviewLabel>Send Mandate for DocuSign {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Send Mandate for DocuSign</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Send_Mandate</name>
+        <label>Send Mandate</label>
+        <locationX>1063</locationX>
+        <locationY>451</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Mandatemessage</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Mandate successfully sent for signature(s)&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>554</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Send_Mandate_for_Signing</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

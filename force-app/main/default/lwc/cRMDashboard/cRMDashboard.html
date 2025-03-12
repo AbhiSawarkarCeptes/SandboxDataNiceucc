@@ -1,0 +1,156 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 08-07-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    
+    <div style="background-color:white;min-height:100%;padding:20px">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_2-of-12" style="margin-top:-15px;font-size:12px;">
+                <template if:true={showSearch}>
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+                            <lightning-icon style="margin-top: 10px" size="x-small" class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" icon-name="utility:search"></lightning-icon>
+                            <lightning-input data-id="searchInput" style="height:33px;" type="text" placeholder="Unit / Booking / Customer" onchange={search}></lightning-input>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div class="slds-col slds-size_10-of-12" style="text-align:center;font-size: 12px;">
+                <lightning-radio-group 
+                    name="radioGroup"
+                    label=""
+                    onchange={handleTypeChange}
+                    options={options}
+                    value={value}
+                    type="button">
+                </lightning-radio-group>
+            </div>
+        </div>
+        <template if:true={showSection}>
+            
+            <div style="margin-top:20px; z-index: 2; position: relative;">
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-5">
+                        <lightning-combobox
+                            name="project"
+                            label="Project"
+                            placeholder="Select Project"
+                            options={projectoptions}
+                            onchange={handleProjectChange}>
+                        </lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_1-of-5">
+                        <lightning-combobox
+                            value={selectedTower}
+                            name="Building"
+                            label="Building"
+                            placeholder="Select Building"
+                            options={toweroptions}
+                            onchange={handleTowerChange}>
+                        </lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_1-of-5">
+                        <lightning-combobox
+                            value={selectedSPAstatus}
+                            name="SPA Signed"
+                            label="SPA Signed"
+                            placeholder="Select Option"
+                            options={spaStatusOptions}
+                            onchange={handleSpaStatusChange}>
+                        </lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_1-of-5">
+                        <lightning-combobox
+                            value={selectDLDamountStatus}
+                            name="DLD Amount Paid"
+                            label="DLD Amount Paid "
+                            placeholder="Select Building"
+                            options={dldAmountStatusOptions}
+                            onchange={handleDLDAmountChange}>
+                        </lightning-combobox>
+                    </div>
+                </div>
+            </div>
+                <div class="fixTableHead">
+                    <template if:true={isDashboard1}>
+                            <c-custom-data-table
+                            data={bookingData}
+                            columns={columns1}
+                            key-field="bookingId"
+                            onrowaction={handleRowAction}
+                            onsave={handleSave}
+                            draft-values={draftValues}
+                            onpicklistchanged={picklistChanged}
+                            hide-checkbox-column
+
+                        >
+                        </c-custom-data-table>
+                    </template>
+                    
+                    <template if:true={isDashboard2}>
+                        <c-custom-data-table
+                            data={bookingData}
+                            columns={columns2}
+                            key-field="bookingId"
+                            onrowaction={handleRowAction}
+                            onsave={handleSave}
+                            hide-checkbox-column
+                        >
+                        </c-custom-data-table>
+                    </template>
+
+                    <template if:true={isDashboard3}>
+                        <c-custom-data-table
+                            data={bookingData}
+                            columns={columns3}
+                            key-field="bookingId"
+                            onrowaction={handleRowAction}
+                            hide-checkbox-column
+                            onsave={handleSave}
+                            draft-values={draftValues}
+                            onpicklistchanged={picklistChanged}
+                        >
+                        </c-custom-data-table>
+                    </template>
+                </div>
+        </template>
+    </div>
+    <template if:true={isCancelTheProcessOpen}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-02" aria-modal="true" aria-describedby="modal-content-id-2" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeCancelTheProcessPopup}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" ></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-02" class="slds-text-heading_medium slds-hyphenate">* Provide Cancellation comments</h2>
+                </header>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+                    
+                    <div class="slds-p-around_medium lgc-bg">
+                        <lightning-input class='cancelcomments' type="text" label="Provide Cancellation Comments" placeholder="why is it getting cancelled..." required></lightning-input>
+                    </div>
+                </div>
+                <!-- Modal/Popup Box LWC footer starts here -->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={closeCancelTheProcessPopup} title="Cancel">Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick={handleCancellationAfterComments} title="OK">Proceed Cancellation</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

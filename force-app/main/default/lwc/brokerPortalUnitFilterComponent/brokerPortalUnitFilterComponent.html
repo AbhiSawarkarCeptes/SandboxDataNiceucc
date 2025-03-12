@@ -1,0 +1,285 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <!-- Modal/Popup Box LWC starts here -->
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+        aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open customPopup">
+        <div class="slds-modal__container">
+            <!-- Modal/Popup Box LWC header here -->
+            <header class="slds-modal__header">
+
+                <div class="headerSection">
+                    <template if:true={projectLoaded}>
+
+                        <div class="title">Available Units in</div>
+
+                        <c-multi-pick-list show-input-box="true" comboplaceholder="Select Project" options={projects}
+                            showclearbutton='true' showfilterinput='true' showrefreshbutton='true'
+                            onitemselected={handleProjectChange} ></c-multi-pick-list>
+
+                        <c-multi-pick-list show-input-box="true" comboplaceholder="Select Bed" options={beds}
+                            showclearbutton='true' showfilterinput='true' showrefreshbutton='true'
+                            onitemselected={handleBedChange}></c-multi-pick-list>
+                       
+                        <c-multi-pick-list show-input-box="true" comboplaceholder="Select Area" options={areas}
+                            showclearbutton='true' showfilterinput='true' showrefreshbutton='true'
+                            onitemselected={handleAreaChange}></c-multi-pick-list>
+                       
+                        <c-multi-pick-list show-input-box="true" comboplaceholder="Select Price" options={price}
+                            showclearbutton='true' showfilterinput='true' showrefreshbutton='true'
+                            onitemselected={handlePriceChange}></c-multi-pick-list>
+                    
+                        <c-multi-pick-list show-input-box="true" comboplaceholder="Select Property Type"
+                            options={propertytypes} showclearbutton='true' showfilterinput='true'
+                            showrefreshbutton='true' onitemselected={handlepropertyTypeChange}></c-multi-pick-list>
+                        <!-- <lightning-combobox
+                            name="currency"
+                            variant="label-hidden"
+                            value={selectedCurrency}
+                            options={currencyList}
+                            onchange={handleCurrencyChange} ></lightning-combobox> -->
+
+                    </template>
+                    <img class="customCloseIcon" src={closeIcon} onclick={closeFilterModal} />
+                </div>
+
+                <div class="pill-container">
+                    <div class="slds-grid slds-gutters filterPill">
+                        <template for:each={selectedProjectMain} for:item="filterVal">
+                            <lightning-pill key={filterVal} label={filterVal} name={filterVal}
+                                onremove={handleProjectRemove}></lightning-pill>
+                        </template>
+                        <template for:each={selectedBedMain} for:item="filterVal">
+                            <lightning-pill key={filterVal} label={filterVal} name={filterVal}
+                                onremove={handleBedRemove}></lightning-pill>
+                        </template>
+                        <template for:each={selectedAreaMain} for:item="filterVal">
+                            <lightning-pill key={filterVal} label={filterVal} name={filterVal}
+                                onremove={handleAreaRemove}></lightning-pill>
+                        </template>
+                        <template for:each={selectedPriceMain} for:item="filterVal">
+                            <lightning-pill key={filterVal} label={filterVal} name={filterVal}
+                                onremove={handlePriceRemove}></lightning-pill>
+                        </template>
+                        <template for:each={selectedPropertyTypeMain} for:item="filterVal">
+                            <lightning-pill key={filterVal} label={filterVal} name={filterVal}
+                                onremove={handlePropertyTypeRemove}></lightning-pill>
+                        </template>
+
+                        <template for:each={selectedSubProjects} for:item="filterVal">
+                            <lightning-pill key={filterVal} label={filterVal} name={filterVal}
+                                onremove={handleSubProjectRemove}></lightning-pill>
+                        </template>
+                        <template for:each={selectedUnitTypes} for:item="filterVal">
+                            <lightning-pill key={filterVal} label={filterVal} name={filterVal}
+                                onremove={handleUnitTypeRemove}></lightning-pill>
+                        </template>
+                        <template for:each={selectedVariantesDisplay} for:item="filterVal">
+                            <lightning-pill key={filterVal} label={filterVal} name={filterVal}
+                                onremove={handleVarientRemove}></lightning-pill>
+                        </template>
+                        <template for:each={selectedFloorsDisplay} for:item="filterVal">
+                            <lightning-pill key={filterVal} label={filterVal} name={filterVal}
+                                onremove={handleFloorRemove}></lightning-pill>
+                        </template>
+                        <template for:each={selectedUnitNames} for:item="filterVal">
+                            <lightning-pill key={filterVal} label={filterVal} name={filterVal}
+                                onremove={handleUnitNameRemove}></lightning-pill>
+                        </template>
+                        <template for:each={selectedAreas} for:item="filterVal">
+                            <lightning-pill key={filterVal} label={filterVal} name={filterVal}
+                                onremove={handleSubAreaRemove}></lightning-pill>
+                        </template>
+                        <template for:each={selectedPrices} for:item="filterVal">
+                            <lightning-pill key={filterVal} label={filterVal} name={filterVal}
+                                onremove={handleSubPriceRemove}></lightning-pill>
+                        </template>
+                    </div>
+                </div>
+            </header>
+            <!-- Modal/Popup Box LWC body starts here -->
+            <div class="slds-modal__content customModelContent" id="modal-content-id-1"
+                style="padding:0 35px 0 35px;background-color:white;max-height:385px">
+                <div class="tableScroller">
+                    <table
+                        class="customFilterTable slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped"
+                        aria-label="Example table of Opportunities with striped rows">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th class="" scope="col">
+                                    <div class="displayFlex" onclick={projectFilterClicked}>
+                                        <div class="slds-truncate" title="Project">Project
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="displayFlex" onclick={projectFilterClicked}>
+                                        <div class="slds-truncate" title="Sub Project">Sub Project
+                                        </div>
+                                        <lightning-icon icon-name="utility:down" size="x-small"></lightning-icon>
+                                    </div>
+                                    <template if:true={displayProjectFilter}>
+                                        <c-multi-pick-list comboplaceholder="Choose..." options={subProjects}
+                                            showclearbutton=false showfilterinput=false showrefreshbutton=false
+                                            onitemselected={onProjectSelect}></c-multi-pick-list>
+                                    </template>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="displayFlex" onclick={unitTypeFilterClicked}>
+                                        <div class="slds-truncate" title="Unit Type">Unit Type
+                                        </div>
+                                        <lightning-icon icon-name="utility:down" size="x-small"></lightning-icon>
+                                    </div>
+                                    <template if:true={displayUnitTypeFilter}>
+
+                                        <c-multi-pick-list comboplaceholder="Choose..." options={unitTypes}
+                                            showclearbutton='false' showfilterinput='false' showrefreshbutton='false'
+                                            onitemselected={onUnitTypeSelect}></c-multi-pick-list>
+                                    </template>
+                                </th>
+
+                                <th class="" scope="col">
+                                    <div class="displayFlex" onclick={floorFilterClicked}>
+                                        <div class="slds-truncate" title="Floor">Floor
+                                        </div>
+                                        <lightning-icon icon-name="utility:down" size="x-small"></lightning-icon>
+                                    </div>
+                                    <template if:true={displayFloorFilter}>
+
+                                        <c-multi-pick-list comboplaceholder="Choose..." options={floors}
+                                            showclearbutton='false' showfilterinput='false' showrefreshbutton='false'
+                                            onitemselected={onFloorSelect}></c-multi-pick-list>
+                                    </template>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="displayFlex" onclick={unitFilterClicked}>
+                                        <div class="slds-truncate" title="Unit No.">Unit No.
+                                        </div>
+                                        <lightning-icon icon-name="utility:down" size="x-small"></lightning-icon>
+                                    </div>
+                                    <template if:true={displayUnitFilter}>
+
+                                        <c-multi-pick-list comboplaceholder="Choose..." options={unitNames}
+                                            showclearbutton='false' showfilterinput='false' showrefreshbutton='false'
+                                            onitemselected={onUnitSelect}></c-multi-pick-list>
+                                    </template>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="displayFlex" onclick={areaFilterClicked}>
+                                        <div class="slds-truncate" title="Total Unit Area">Total Unit Area (sq. ft.)
+                                        </div>
+                                        <lightning-icon icon-name="utility:down" size="x-small"></lightning-icon>
+                                    </div>
+                                    <template if:true={displayAreaFilter}>
+
+                                        <c-multi-pick-list comboplaceholder="Choose..." options={areascolumn}
+                                            showclearbutton='false' showfilterinput='false' showrefreshbutton='false'
+                                            onitemselected={onAreaSelect}></c-multi-pick-list>
+                                    </template>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="displayFlex" onclick={priceFilterClicked}>
+                                        <div class="slds-truncate" title="Starting Price (AED)">Starting Price (AED)
+                                        </div>
+                                        <lightning-icon icon-name="utility:down" size="x-small"></lightning-icon>
+                                    </div>
+                                    <template if:true={displayPriceFilter}>
+
+                                        <c-multi-pick-list comboplaceholder="Choose..." options={pricecolumn}
+                                            showclearbutton='false' showfilterinput='false' showrefreshbutton='false'
+                                            onitemselected={onPriceSelect}></c-multi-pick-list>
+                                    </template>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Actions"></div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={unitList} for:item="unit">
+                                <tr key={unit.Id} class="slds-hint-parent">
+                                    <td data-label="Project">
+                                        <div class="slds-truncate" title={unit.Tower__r.Project__r.Name}>
+                                            {unit.Tower__r.Project__r.Name}</div>
+                                    </td>
+                                    <td data-label="Project">
+                                        <div class="slds-truncate" title={unit.Tower__r.Cluster__r.Name}>
+                                            {unit.Tower__r.Cluster__r.Name}</div>
+                                    </td>
+                                    <td data-label="Unit Type">
+                                        <div class="slds-truncate" title={unit.Unit_Type__c}>{unit.Unit_Type__c}</div>
+                                    </td>
+
+                                    <td data-label="Floor">
+                                        <div class="slds-truncate" title={unit.Floor_No_to_print__c}>
+                                            {unit.Floor_No_to_print__c}</div>
+                                    </td>
+                                    <td data-label="Unit No.">
+                                        <div class="slds-truncate" title={unit.Name}>{unit.Name}</div>
+                                    </td>
+                                    <td data-label="Total Unit Area">
+                                        <div class="slds-truncate" title={unit.Total_Area__c}>{unit.Total_Area__c}</div>
+                                    </td>
+                                    <td data-label="Starting Price">
+                                        <div class="slds-truncate" title={unit.displayPrice}>
+                                            {unit.displayPrice}
+                                        </div>
+                                    </td>
+                                    <td data-label="Action">
+                                        <lightning-button name={unit.Id} onclick={downloadQuotationConfirm}
+                                            variant="brand" label="Download Quotation/Floorplan"
+                                            title="Download Quotation/Floorplan"
+                                            class="slds-m-left_x-small custombtn slds-truncate"></lightning-button>
+                                    </td>
+                                </tr>
+
+
+                            </template>
+                        </tbody>
+                    </table>
+                    <template if:true={showDownloadQuotationConfirmation}>
+                        <div>
+                            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                                aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open customPopup1">
+                                <div class="slds-modal__container1">
+                                    <!-- Modal/Popup Box LWC header here -->
+                                    <header class="slds-modal__header1">
+                                        <div class="headerSection1">
+                                            <h1>Download Quotation/Floorplan</h1>
+                                            <img class="customCloseIcon1" src={closeIcon} onclick={closeDownloadQuotationConfirmation} />
+                                        </div>
+                                    </header>
+                                    <!-- Modal/Popup Box LWC body starts here -->
+                                    <div class="slds-modal__content customModelContentDownload1"
+                                        id="modal-content-id-2">
+                                        <lightning-input onchange={handleCustomerNameChange} class="custom-input"
+                                            type="text" label="Customer Name" required="true"></lightning-input>
+                                        <lightning-input onchange={handleCustomerEmailChange} class="custom-input"
+                                            type="text" label="Customer Email" required="true"></lightning-input>
+                                    </div>
+                                    <footer class="slds-modal__footer customFooter1">
+                                        <lightning-button onclick={downloadQuotation} variant="brand" label="Download"
+                                            title="Download Quotation/Floorplan" class="custombtn1 slds-truncate1"
+                                            style="width:100%"></lightning-button>
+                                    </footer>
+                                </div>
+                            </section>
+                            <div class="slds-backdrop slds-backdrop_open1"></div>
+                        </div>
+                    </template>
+                    <template if:true={noUnitsFound}>
+                        <div class="notify">No units found.</div>
+                    </template>
+                </div>
+            </div>
+            <footer class="slds-modal__footer customFooter">
+                <!--<button class="slds-button slds-button_neutral" onclick={exportUnitData} style="cursor:pointer">Download
+                    Inventory</button>-->
+            </footer>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open" style="background-color:grey; opacity: 0.5;"></div>
+</template>

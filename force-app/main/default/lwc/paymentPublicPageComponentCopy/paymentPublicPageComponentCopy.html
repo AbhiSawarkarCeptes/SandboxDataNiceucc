@@ -1,0 +1,154 @@
+<template>
+    <template if:true={showSpinner}>
+        <div style="height:6rem;position:fixed;left: 45%;top: 30%;z-index: 9999;">
+            <div role="status" class="slds-spinner_medium">
+                <!--lightning-spinner alternative-text="Loading" size="large"></lightning-spinner-->
+                <c-real-estate-loader></c-real-estate-loader>
+            </div>
+        </div>
+    </template>
+    <template if:true={paymentComplete}>
+        <lightning-card class="paymentcard slds-p-left_x-large slds-p-right_x-large slds-p-top_x-large slds-p-bottom_x-large">
+
+            <template if:false={retryPayment}>
+                <div class="slds-align_absolute-center slds-p-top_x-large slds-p-bottom_large"><lightning-icon icon-name="action:approval" alternative-text="Approved" title="Approved"></lightning-icon></div>
+                <div class="slds-text-heading_large slds-align_absolute-center slds-p-top_large">Payment Successful</div>
+            </template>
+            <template if:true={retryPayment}>
+                <div slot="footer">
+                                <!--lightning-button class="slds-p-around_x-small" variant="destructive" label="Decline" slot="actions"></lightning-button-->
+                                <lightning-button class="slds-p-around_x-small" variant="brand" label="Retry Payment" slot="actions" onclick={checkValidation}></lightning-button>
+                </div>
+                <div class="slds-align_absolute-center slds-p-top_x-large slds-p-bottom_large"><lightning-icon icon-name="action:remove" alternative-text="Approved" title="Approved"></lightning-icon></div>
+                <div class="slds-text-heading_large slds-align_absolute-center slds-p-top_large">Payment Unsuccessful</div>
+            </template>
+            
+            <div class="slds-grid slds-gutters slds-wrap">
+                <div class="shift slds-col slds-size_1-of-2 slds-p-left_x-large slds-p-top_x-large">
+                  <span><div class="slds-text-heading_small">Payment Status</div></span>
+                </div>
+                <div class="shiftless slds-col slds-size_1-of-2 slds-p-top_x-large">
+                    <span>
+                        <div class="slds-text-heading_small">{paymentRequestWrapper.Payment_Status__c}</div>
+                    </span>
+                  </div>
+                  <div class="shift slds-col slds-size_1-of-2 slds-p-top-small slds-p-left_x-large">
+                    <span><div class="slds-text-heading_small">Bank Reference Number</div></span>
+                  </div>
+                  <div class="shiftless slds-col slds-size_1-of-2 slds-p-top-small">
+                    <span>
+                        <div class="slds-text-heading_small">{paymentRequestWrapper.Payment_Bank_Reference_No__c}</div>
+                    </span>
+                  </div>
+                  <div class="shift slds-col slds-size_1-of-2 slds-p-top-small slds-p-left_x-large">
+                    <span><div class=" slds-text-heading_small">Order Number</div></span>
+                  </div>
+                  <div class="shiftless slds-col slds-size_1-of-2 slds-p-top-small">
+                    <span>
+                        <div class="slds-text-heading_small">{paymentRequestWrapper.Payment_Order_Number__c}</div>
+                    </span>
+                  </div>
+                  <div class="shift slds-col slds-size_1-of-2 slds-p-top-small slds-p-left_x-large">
+                    <span><div class="slds-text-heading_small">Transaction Number</div></span>
+                  </div>
+                  <div class="shiftless slds-col slds-size_1-of-2 slds-p-top-small">
+                    <span>
+                        <div class="slds-text-heading_small">{paymentRequestWrapper.Payment_Transaction_Tracking_Id__c}</div>
+                    </span>
+                  </div>
+                  <div class="shift slds-col slds-size_1-of-2 slds-p-top-small slds-p-left_x-large">
+                    <span><div class="slds-text-heading_small">Phone Number</div></span>
+                  </div>
+                  <div class="shiftless slds-col slds-size_1-of-2 slds-p-top-small">
+                    <span>
+                        <div class="slds-text-heading_small">{customerPhone}</div>
+                    </span>
+                  </div>
+                  <div class="shift slds-col slds-size_1-of-2 slds-p-top-small slds-p-left_x-large">
+                    <span><div class="slds-text-heading_small">Email</div></span>
+                  </div>
+                  <div class="shiftless slds-col slds-size_1-of-2 slds-p-top-small">
+                    <span><div class="slds-text-heading_small">{customerEmail}</div></span>
+                  </div>
+              </div>
+        </lightning-card>
+    </template>
+    <template if:false={paymentComplete}>
+        <template if:false={showExpired}>
+            <template if:false={nounits}>
+                <template if:false={showAPIException}>
+                    <lightning-card>
+                        <h3 slot="title">
+                            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+                            Request for Payment
+                        </h3>
+                        <div slot="footer">
+                                <!--lightning-button class="slds-p-around_x-small" variant="destructive" label="Decline" slot="actions"></lightning-button-->
+                                <lightning-button class="slds-p-around_x-small" variant="brand" label="Make Payment" slot="actions" onclick={checkValidation}></lightning-button>
+                        </div>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-col slds-size_1-of-2">
+                                <span>
+                                    <div class="slds-p-around_medium lgc-bg">
+                                        <lightning-input disabled type="text" label="Full Name" value={customerName}></lightning-input>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="slds-col slds-col slds-size_1-of-2">
+                                <span>
+                                    <div class="slds-p-around_medium lgc-bg">
+                                        <lightning-input disabled type="text" label="Your Email" value={customerEmail}></lightning-input>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="slds-col slds-col slds-size_1-of-2">
+                                <span>
+                                    <div class="slds-p-around_medium lgc-bg">
+                                        <lightning-input disabled type="text" label="Phone Number" value={customerPhone}></lightning-input>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="slds-col slds-col slds-size_1-of-2">
+                                <span>
+                                    <div class="slds-p-around_medium lgc-bg">
+                                        <lightning-input disabled type="text" label="Currency" value={paymentCurrency}></lightning-input>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="slds-col slds-col slds-size_1-of-2">
+                                <span>
+                                    <div class="slds-p-around_medium lgc-bg">
+                                        <lightning-input disabled type="text" label="Amount" value={amount}></lightning-input>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="slds-col slds-col slds-size_1-of-2">
+                                <span>
+                                    <div class="slds-p-around_medium lgc-bg">
+                                        <lightning-input disabled type="text" label="Unit(s)" value={unitsPRW}></lightning-input>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </lightning-card>
+                </template>
+            </template>
+        </template>
+
+        <template if:true={showExpired}>
+            <lightning-card>
+                <c-not-found-illutration expired=true></c-not-found-illutration>
+            </lightning-card>
+        </template>
+        <template if:true={nounits}>
+            <lightning-card>
+                <c-not-found-illutration nounits=true message={unitValidationMsg}></c-not-found-illutration>
+            </lightning-card>
+        </template>
+        <template if:true={showAPIException}>
+            <lightning-card>
+                <c-not-found-illutration nounits=true message={unitValidationMsg}></c-not-found-illutration>
+            </lightning-card>
+        </template>
+    </template>
+</template>

@@ -1,0 +1,62 @@
+<template>
+
+    <div class="slds-page-header">
+        <div class="slds-page-header__row" style="padding:5px 0;">
+            <div class="slds-page-header__col-title">
+            <div class="slds-media">
+                <div class="slds-media__figure">
+                <span class="slds-icon_container slds-icon-standard-opportunity" title="opportunity">
+                    <svg class="slds-icon slds-page-header__icon" aria-hidden="true">
+                    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#opportunity"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Broker Registration Ageing Report</span>
+                </span>
+                </div>
+                <div class="slds-media__body">
+                <div class="slds-page-header__name">
+                    <div class="slds-page-header__name-title">
+                    <h1>
+                        <span class="slds-page-header__title slds-truncate" title="Rohde Corp - 80,000 Widgets">Broker Registration Report</span>
+                    </h1>
+                    </div>
+                </div>
+                <p class="slds-page-header__name-meta">Broker: Ageing Report</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <lightning-card  title="">
+        <lightning-spinner alternative-text="Loading" size="large" if:true={showSpinner}></lightning-spinner>
+        <div class="slds-p-horizontal_small">
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered customTblCss">
+                <thead>
+                    <tr>
+                        <th>Status Value</th>
+                        <th>Ownership</th>
+                        <!-- <th>No. of Days</th> -->
+                        <th>0-2 Days</th>
+                        <th>3-5 Days</th>
+                        <th>6-10 Days</th>
+                        <th>More than 10 Days</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={ageingData} for:item="data">
+                        <tr key={data.Status__c}>
+                            <td>{data.Staus}</td>
+                            <td>{data.ownerShip}</td>
+                            <!-- <td>{data.noOfDays}</td> -->
+                            <td>{data.days_0_2}</td>
+                            <td>{data.days_3_5}</td>
+                            <td>{data.days_6_10}</td>
+                            <td>{data.moreThan10}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </lightning-card>
+
+</template>

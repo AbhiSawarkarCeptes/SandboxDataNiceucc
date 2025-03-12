@@ -1,0 +1,541 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <template if:true={isModalOpen}>
+        <!-- Modal/Popup Box LWC starts here -->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal/Popup Box LWC header here -->
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" >
+                        </lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{selectedTower}</h2>
+                </header>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content" id="modal-content-id-1" style="padding:10px">
+                    <template if:true={showUnitData}>
+                        <div class="fixTableHeadTower">
+                            <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                                <thead>
+                                    <tr class="slds-line-height_reset">
+                                        <th class="" scope="col" width="20%">
+                                            <div class="slds-truncate" title="Ageing">Ageing</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Total Unit">Unit(s)</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Sale Value">Sale Value</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Milestone Due Till Date">Milestone Due Till Date</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Collected Amount">Collected Amount</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Due Amount">Due Amount</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Due Amount">Furture Collection</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <template for:each={allTabAgeingWiseData} for:item="ageingdata">
+                                        <tr key={ageingdata.towerId} class="slds-hint-parent">
+                                            <td width="20%">
+                                                <div>
+                                                    <label><input type="radio" id={ageingdata.towerId} onclick={onAgeingSelect} name="ageingradio">&nbsp;&nbsp;{ageingdata.towerName}</label>
+                                                </div>
+                                            </td>
+                                            <td><div class="slds-truncate">{ageingdata.totalUnit}</div></td>
+                                            <td><div class="slds-truncate">{ageingdata.totalPurchasePrice}</div></td>
+                                            <td><div class="slds-truncate">{ageingdata.totalMilestoneDueTillDate}</div></td>
+                                            <td><div class="slds-truncate">{ageingdata.totalCollectedAmount}</div></td>
+                                            <td><div class="slds-truncate">{ageingdata.totalDueAmount}</div></td>
+                                            <td><div class="slds-truncate">{ageingdata.futureCollections}</div></td>
+                                        </tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="fixTableHeadUnit">
+                            <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                                <thead>
+                                    <tr class="slds-line-height_reset">
+                                        <th class="" scope="col" width="20%">
+                                            <div class="slds-truncate" title="Unit">Unit</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Sale Value">Sale Value</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Milestone Due Till Date">Milestone Due Till Date</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Collected Amount">Collected Amount</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Due Amount">Due Amount
+                                                <lightning-input data-id="toggle2" type="toggle" onchange={showAgeing} label="detail" checked={isAgeing} message-toggle-active="show" message-toggle-inactive="hide"></lightning-input>
+                                            </div>
+                                        </th>
+                                        <th if:true={isAgeing} scope="col" style="font-weight: bold !important;background-color: aliceblue; !important; font-size:11px !important">
+                                            <div class="slds-truncate" title="B1">0 - 30 Days</div>
+                                        </th>
+                                        <th if:true={isAgeing} scope="col" style="font-weight: bold;background-color: aliceblue; !important; font-size:11px !important">
+                                            <div class="slds-truncate" title="B2">31 - 60 Days</div>
+                                        </th>
+                                        <th if:true={isAgeing} scope="col" style="font-weight: bold;background-color: aliceblue; !important; font-size:11px !important">
+                                            <div class="slds-truncate" title="B3">61 - 90 Days</div>
+                                        </th>
+                                        <th if:true={isAgeing} scope="col" style="font-weight: bold;background-color: aliceblue; !important; font-size:11px !important">
+                                            <div class="slds-truncate" title="B4">91 - 120 Days</div>
+                                        </th>
+                                        <th if:true={isAgeing} scope="col" style="font-weight: bold;background-color: aliceblue; !important; font-size:11px !important">
+                                            <div class="slds-truncate" title="B5">121 - 180 Days</div>
+                                        </th>
+                                        <th if:true={isAgeing} scope="col" style="font-weight: bold;background-color: aliceblue; !important; font-size:11px !important">
+                                            <div class="slds-truncate" title="B6">181 - 360 Dasy</div>
+                                        </th>
+                                        <th if:true={isAgeing} scope="col" style="font-weight: bold;background-color: aliceblue; !important; font-size:11px !important">
+                                            <div class="slds-truncate" title="B7">> 360 Dasy</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Due Amount">Future Collection</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <template for:each={allTabUnitWiseData} for:item="unitdata">
+                                        <tr key={unitdata.towerId} class="slds-hint-parent" style={unitdata.bucketColor}>
+                                            <td width="20%">
+                                                <div class="slds-truncate">
+                                                    <a class="anchor" href={unitdata.towerId} target="_blank">{unitdata.towerName}</a>
+                                                </div>
+                                            </td>
+                                            <td><div class="slds-truncate">{unitdata.totalPurchasePrice}</div></td>
+                                            <td><div class="slds-truncate">{unitdata.totalMilestoneDueTillDate}</div></td>
+                                            <td><div class="slds-truncate">{unitdata.totalCollectedAmount}</div></td>
+                                            <td><div class="slds-truncate">{unitdata.overallDueAmount}</div></td>
+                                            <td if:true={isAgeing} style="background-color: aliceblue !important;"><div class="slds-truncate">{unitdata.B1_0_30_Days}</div></td>
+                                            <td if:true={isAgeing} style="background-color: aliceblue !important;"><div class="slds-truncate">{unitdata.B2_31_60_Days}</div></td>
+                                            <td if:true={isAgeing} style="background-color: aliceblue !important;"><div class="slds-truncate">{unitdata.B3_61_90_Days}</div></td>
+                                            <td if:true={isAgeing} style="background-color: aliceblue !important;"><div class="slds-truncate">{unitdata.B4_91_120_Days}</div></td>
+                                            <td if:true={isAgeing} style="background-color: aliceblue !important;"><div class="slds-truncate">{unitdata.B5_121_180_Days}</div></td>
+                                            <td if:true={isAgeing} style="background-color: aliceblue !important;"><div class="slds-truncate">{unitdata.B6_181_360_Days}</div></td>
+                                            <td if:true={isAgeing} style="background-color: aliceblue !important;"><div class="slds-truncate">{unitdata.B7_361_Days}</div></td>
+                                            <td><div class="slds-truncate">{unitdata.futureCollections}</div></td>
+                                        </tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </div>
+                    </template>
+                </div>
+                <!-- Modal/Popup Box LWC footer starts here -->
+                <footer class="slds-modal__footer">
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <div style="background-color:white;">
+        <template if:true={isAll}>
+            <div class="fixTableHeadAll">
+                <div class="fixTableHeadProject">
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th class="" scope="col" width="20%">
+                                    <div class="slds-truncate" title="Project">Project</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Total Unit">Unit(s)</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Sale Value">Sale Value</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Milestone Due Till Date">Milestone Due Till Date</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Collected Amount">Collected Amount</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Due Amount">Due Amount
+                                        <lightning-input data-id="toggle2" type="toggle" onchange={showAgeing} label="detail" checked={isAgeing} message-toggle-active="show" message-toggle-inactive="hide"></lightning-input>
+                                    </div>
+                                </th>
+                                <th if:true={isAgeing} scope="col" style="font-weight: bold !important;background-color: aliceblue; !important; font-size:11px !important">
+                                    <div class="slds-truncate" title="B1">0 - 30 Days</div>
+                                </th>
+                                <th if:true={isAgeing} scope="col" style="font-weight: bold;background-color: aliceblue; !important; font-size:11px !important">
+                                    <div class="slds-truncate" title="B2">31 - 60 Days</div>
+                                </th>
+                                <th if:true={isAgeing} scope="col" style="font-weight: bold;background-color: aliceblue; !important; font-size:11px !important">
+                                    <div class="slds-truncate" title="B3">61 - 90 Days</div>
+                                </th>
+                                <th if:true={isAgeing} scope="col" style="font-weight: bold;background-color: aliceblue; !important; font-size:11px !important">
+                                    <div class="slds-truncate" title="B4">91 - 120 Days</div>
+                                </th>
+                                <th if:true={isAgeing} scope="col" style="font-weight: bold;background-color: aliceblue; !important; font-size:11px !important">
+                                    <div class="slds-truncate" title="B5">121 - 180 Days</div>
+                                </th>
+                                <th if:true={isAgeing} scope="col" style="font-weight: bold;background-color: aliceblue; !important; font-size:11px !important">
+                                    <div class="slds-truncate" title="B6">181 - 360 Dasy</div>
+                                </th>
+                                <th if:true={isAgeing} scope="col" style="font-weight: bold;background-color: aliceblue; !important; font-size:11px !important">
+                                    <div class="slds-truncate" title="B7">> 360 Dasy</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Advance Amount">Advance Amount</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Future Collections">Future Collections</div>
+                                </th>
+                                <template for:each={allFutureMilestoneYear} for:item="year">
+                                    <th key={year} class="" scope="col">
+                                        <div class="slds-truncate" title={year}>{year}</div>
+                                    </th>
+                                </template>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={allTabData} for:item="data">
+                                <tr key={data.projectId} class="slds-hint-parent">
+                                    <td width="20%">
+                                        <div>
+                                            <label><input type="radio" id={data.projectId} onclick={onProjectSelect} name="projectradio">&nbsp;&nbsp;{data.projectName}</label>
+                                        </div>
+                                    </td>
+                                    <td><div class="slds-truncate">{data.totalUnit}</div></td>
+                                    <td><div class="slds-truncate">{data.totalPurchasePrice}</div></td>
+                                    <td><div class="slds-truncate">{data.totalMilestoneDueTillDate}</div></td>
+                                    <td><div class="slds-truncate">{data.totalCollectedAmount}</div></td>
+                                    <td><div class="slds-truncate">{data.overallDueAmount}</div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{data.B1_0_30_Days}</div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{data.B2_31_60_Days}</div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{data.B3_61_90_Days}</div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{data.B4_91_120_Days}</div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{data.B5_121_180_Days}</div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{data.B6_181_360_Days}</div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{data.B7_361_Days}</div></td>
+                                    <td><div class="slds-truncate">{data.totalAdvanceAmount}</div></td>
+                                    <td><div class="slds-truncate">{data.futureCollections}</div></td>
+                                    <td><div class="slds-truncate">{data.YearOne}</div></td>
+                                    <td><div class="slds-truncate">{data.YearTwo}</div></td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+                <template if:true={showSubProjectData}>
+                    <div class="fixTableHeadSubProject">
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                            <thead>
+                                <tr class="slds-line-height_reset">
+                                    <th class="" scope="col" width="20%">
+                                        <div class="slds-truncate" title="Sub Project">Sub Project</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Total Unit">Unit(s)</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Sale Value">Sale Value</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Milestone Due Till Date">Milestone Due Till Date</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Collected Amount">Collected Amount</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Due Amount">Due Amount
+                                            <lightning-input data-id="toggle2" type="toggle" onchange={showAgeing} label="detail" checked={isAgeing} message-toggle-active="show" message-toggle-inactive="hide"></lightning-input>
+                                        </div>
+                                    </th>
+                                    <th if:true={isAgeing} scope="col" style="font-weight: bold; background-color: aliceblue; !important; font-size:11px !important">
+                                        <div class="slds-truncate" title="B1">0 - 30 Days</div>
+                                    </th>
+                                    <th if:true={isAgeing} scope="col" style="font-weight: bold; background-color: aliceblue; !important; font-size:11px !important">
+                                        <div class="slds-truncate" title="B2">31 - 60 Days</div>
+                                    </th>
+                                    <th if:true={isAgeing} scope="col" style="font-weight: bold; background-color: aliceblue; !important; font-size:11px !important">
+                                        <div class="slds-truncate" title="B3">61 - 90 Days</div>
+                                    </th>
+                                    <th if:true={isAgeing} scope="col" style="font-weight: bold; background-color: aliceblue; !important; font-size:11px !important">
+                                        <div class="slds-truncate" title="B4">91 - 120 Days</div>
+                                    </th>
+                                    <th if:true={isAgeing} scope="col" style="font-weight: bold; background-color: aliceblue; !important; font-size:11px !important">
+                                        <div class="slds-truncate" title="B5">121 - 180 Days</div>
+                                    </th>
+                                    <th if:true={isAgeing} scope="col" style="font-weight: bold; background-color: aliceblue; !important; font-size:11px !important">
+                                        <div class="slds-truncate" title="B6">181 - 360 Dasy</div>
+                                    </th>
+                                    <th if:true={isAgeing} scope="col" style="font-weight: bold; background-color: aliceblue; !important; font-size:11px !important">
+                                        <div class="slds-truncate" title="B7">> 360 Dasy</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Advance Amount">Advance Amount</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Future Collections">Future Collections</div>
+                                    </th>
+                                    <template for:each={allFutureMilestoneYear} for:item="year">
+                                        <th key={year} class="" scope="col">
+                                            <div class="slds-truncate" title={year}>{year}</div>
+                                        </th>
+                                    </template>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={allTabSubProjectWiseDataSectionOne} for:item="subdataone">
+                                    <tr key={subdataone.subProjectId} class="slds-hint-parent" style="background-color:#FFF2CD">
+                                        <td width="20%">
+                                            <div>
+                                                <label><input type="radio" id={subdataone.subProjectId} onclick={onSubProjectSelect} name="subprojectradioone">&nbsp;&nbsp;{subdataone.subProjectName}</label>
+                                            </div>
+                                        </td>
+                                        <td><div class="slds-truncate">{subdataone.totalUnit}</div></td>
+                                        <td><div class="slds-truncate">{subdataone.totalPurchasePrice}</div></td>
+                                        <td><div class="slds-truncate">{subdataone.totalMilestoneDueTillDate}</div></td>
+                                        <td><div class="slds-truncate">{subdataone.totalCollectedAmount}</div></td>
+                                        <td><div class="slds-truncate">{subdataone.overallDueAmount}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate">{subdataone.B1_0_30_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate">{subdataone.B2_31_60_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate">{subdataone.B3_61_90_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate">{subdataone.B4_91_120_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate">{subdataone.B5_121_180_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate">{subdataone.B6_181_360_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate">{subdataone.B7_361_Days}</div></td>
+                                        <td><div class="slds-truncate">{subdataone.totalAdvanceAmount}</div></td>
+                                        <td><div class="slds-truncate">{subdataone.futureCollections}</div></td>
+                                        <td><div class="slds-truncate">{subdataone.YearOne}</div></td>
+                                        <td><div class="slds-truncate">{subdataone.YearTwo}</div></td>
+                                        <!-- <template for:each={subdataone.futureMilestoneDues} for:item="due">
+                                            <td key={due}><div class="slds-truncate">{due}</div></td>
+                                        </template> -->
+                                    </tr>
+                                </template>
+                                <tr class="slds-hint-parent">
+                                    <td width="20%"><div><b>Total</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOneUnitCount}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOnePurchasePrice}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOneMilestoneDue}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOneCollected}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOneDue}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate"><b>{secOneDue_B1}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate"><b>{secOneDue_B2}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate"><b>{secOneDue_B3}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate"><b>{secOneDue_B4}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate"><b>{secOneDue_B5}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate"><b>{secOneDue_B6}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate"><b>{secOneDue_B7}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOnetotalAdvanceAmount}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOneFuture}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOneFutureOneYear}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secOneFutureTowYear}</b></div></td>
+                                    
+                                </tr>
+                                <template for:each={allTabSubProjectWiseDataSectionTwo} for:item="subdatatwo">
+                                    <tr key={subdatatwo.subProjectId} class="slds-hint-parent" style="background-color:#FFF2CD">
+                                        <td width="20%">
+                                            <div>
+                                                <label><input type="radio" id={subdatatwo.subProjectId} onclick={onSubProjectSelect} name="subprojectradiotwo">&nbsp;&nbsp;{subdatatwo.subProjectName}</label>
+                                            </div>
+                                        </td>
+                                        <td><div class="slds-truncate">{subdatatwo.totalUnit}</div></td>
+                                        <td><div class="slds-truncate">{subdatatwo.totalPurchasePrice}</div></td>
+                                        <td><div class="slds-truncate">{subdatatwo.totalMilestoneDueTillDate}</div></td>
+                                        <td><div class="slds-truncate">{subdatatwo.totalCollectedAmount}</div></td>
+                                        <td><div class="slds-truncate">{subdatatwo.overallDueAmount}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{subdatatwo.B1_0_30_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{subdatatwo.B2_31_60_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{subdatatwo.B3_61_90_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{subdatatwo.B4_91_120_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{subdatatwo.B5_121_180_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{subdatatwo.B6_181_360_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{subdatatwo.B7_361_Days}</div></td>
+                                        <td><div class="slds-truncate">{subdatatwo.totalAdvanceAmount}</div></td>
+                                        <td><div class="slds-truncate">{subdatatwo.futureCollections}</div></td>
+                                        <td><div class="slds-truncate">{subdatatwo.YearOne}</div></td>
+                                        <td><div class="slds-truncate">{subdatatwo.YearTwo}</div></td>
+                                        <!-- <template for:each={subdatatwo.futureMilestoneDues} for:item="due">
+                                            <td key={due}><div class="slds-truncate">{due}</div></td>
+                                        </template> -->
+                                    </tr>
+                                </template>
+                                <tr class="slds-hint-parent">
+                                    <td width="20%"><div><b>Total</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwoUnitCount}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwoPurchasePrice}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwoMilestoneDue}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwoCollected}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwoDue}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate"><b>{secTwoDue_B1}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate"><b>{secTwoDue_B2}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate"><b>{secTwoDue_B3}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate"><b>{secTwoDue_B4}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate"><b>{secTwoDue_B5}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate"><b>{secTwoDue_B6}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate"><b>{secTwoDue_B7}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwototalAdvanceAmount}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwoFuture}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwoFutureOneYear}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secTwoFutureTwoYear}</b></div></td>
+                                </tr>
+                                <template for:each={allTabSubProjectWiseDataSectionThree} for:item="subdatathree">
+                                    <tr key={subdatathree.subProjectId} class="slds-hint-parent" style="background-color:#FFF2CD">
+                                        <td width="20%">
+                                            <div>
+                                                <label><input type="radio" id={subdatathree.subProjectId} onclick={onSubProjectSelect} name="subprojectradiothree">&nbsp;&nbsp;{subdatathree.subProjectName}</label>
+                                            </div>
+                                        </td>
+                                        <td><div class="slds-truncate">{subdatathree.totalUnit}</div></td>
+                                        <td><div class="slds-truncate">{subdatathree.totalPurchasePrice}</div></td>
+                                        <td><div class="slds-truncate">{subdatathree.totalMilestoneDueTillDate}</div></td>
+                                        <td><div class="slds-truncate">{subdatathree.totalCollectedAmount}</div></td>
+                                        <td><div class="slds-truncate">{subdatathree.overallDueAmount}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate">{subdatathree.B1_0_30_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate">{subdatathree.B2_31_60_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate">{subdatathree.B3_61_90_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate">{subdatathree.B4_91_120_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate">{subdatathree.B5_121_180_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate">{subdatathree.B6_181_360_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;" ><div class="slds-truncate">{subdatathree.B7_361_Days}</div></td>
+                                        <td><div class="slds-truncate">{subdatathree.totalAdvanceAmount}</div></td>
+                                        <td><div class="slds-truncate">{subdatathree.futureCollections}</div></td>
+                                        <td><div class="slds-truncate">{subdatathree.YearOne}</div></td>
+                                        <td><div class="slds-truncate">{subdatathree.YearTwo}</div></td>
+                                    </tr>
+                                </template>
+                                <tr class="slds-hint-parent">
+                                    <td width="20%"><div><b>Total</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreeUnitCount}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreePurchasePrice}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreeMilestoneDue}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreeCollected}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreeDue}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate"><b>{secThreeDue_B1}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate"><b>{secThreeDue_B2}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate"><b>{secThreeDue_B3}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate"><b>{secThreeDue_B4}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate"><b>{secThreeDue_B5}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate"><b>{secThreeDue_B6}</b></div></td>
+                                    <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate"><b>{secThreeDue_B7}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreetotalAdvanceAmount}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreeFuture}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreeFutureOneYear}</b></div></td>
+                                    <td><div class="slds-truncate"><b>{secThreeFutureTwoYear}</b></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </template>
+                <template if:true={showTowerData}>
+                    <div class="fixTableHeadTower">
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                            <thead>
+                                <tr class="slds-line-height_reset">
+                                    <th class="" scope="col" width="20%">
+                                        <div class="slds-truncate" title="Tower">Tower</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Total Unit">Unit(s)</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Sale Value">Sale Value</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Milestone Due Till Date">Milestone Due Till Date</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Collected Amount">Collected Amount</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Due Amount">Due Amount
+                                            <lightning-input data-id="toggle2" type="toggle" onchange={showAgeing} label="detail" checked={isAgeing} message-toggle-active="show" message-toggle-inactive="hide"></lightning-input>
+                                        </div>
+                                    </th>
+                                    <th if:true={isAgeing} scope="col" style="font-weight: bold; background-color: aliceblue; !important; font-size:11px !important">
+                                        <div class="slds-truncate" title="B1">0 - 30 Days</div>
+                                    </th>
+                                    <th if:true={isAgeing} scope="col" style="font-weight: bold; background-color: aliceblue; !important; font-size:11px !important">
+                                        <div class="slds-truncate" title="B2">31 - 60 Days</div>
+                                    </th>
+                                    <th if:true={isAgeing} scope="col" style="font-weight: bold; background-color: aliceblue; !important; font-size:11px !important">
+                                        <div class="slds-truncate" title="B3">61 - 90 Days</div>
+                                    </th>
+                                    <th if:true={isAgeing} scope="col" style="font-weight: bold; background-color: aliceblue; !important; font-size:11px !important">
+                                        <div class="slds-truncate" title="B4">91 - 120 Days</div>
+                                    </th>
+                                    <th if:true={isAgeing} scope="col" style="font-weight: bold; background-color: aliceblue; !important; font-size:11px !important">
+                                        <div class="slds-truncate" title="B5">121 - 180 Days</div>
+                                    </th>
+                                    <th if:true={isAgeing} scope="col" style="font-weight: bold; background-color: aliceblue; !important; font-size:11px !important">
+                                        <div class="slds-truncate" title="B6">181 - 360 Dasy</div>
+                                    </th>
+                                    <th if:true={isAgeing} scope="col" style="font-weight: bold; background-color: aliceblue; !important; font-size:11px !important">
+                                        <div class="slds-truncate" title="B7">> 360 Dasy</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Advance Amount">Advance Amount</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Future Collections">Future Collections</div>
+                                    </th>
+                                    <template for:each={allFutureMilestoneYear} for:item="year">
+                                        <th key={year} class="" scope="col">
+                                            <div class="slds-truncate" title={year}>{year}</div>
+                                        </th>
+                                    </template>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={allTabTowerWiseData} for:item="towerdata">
+                                    <tr key={towerdata.towerId} class="slds-hint-parent" style="background-color:#d1f3d1">
+                                        <td width="20%">
+                                            <div>
+                                                <label><input type="radio" id={towerdata.towerId} onclick={onTowerSelect} name="towerradio" value={towerdata.towerName}>&nbsp;&nbsp;{towerdata.towerName}</label>
+                                            </div>
+                                        </td>
+                                        <td><div class="slds-truncate">{towerdata.totalUnit}</div></td>
+                                        <td><div class="slds-truncate">{towerdata.totalPurchasePrice}</div></td>
+                                        <td><div class="slds-truncate">{towerdata.totalMilestoneDueTillDate}</div></td>
+                                        <td><div class="slds-truncate">{towerdata.totalCollectedAmount}</div></td>
+                                        <td><div class="slds-truncate">{towerdata.overallDueAmount}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{towerdata.B1_0_30_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{towerdata.B2_31_60_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{towerdata.B3_61_90_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{towerdata.B4_91_120_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{towerdata.B5_121_180_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{towerdata.B6_181_360_Days}</div></td>
+                                        <td if:true={isAgeing} style="background-color: aliceblue !important;"  ><div class="slds-truncate">{towerdata.B7_361_Days}</div></td>    
+                                        <td><div class="slds-truncate">{towerdata.totalAdvanceAmount}</div></td>
+                                        <td><div class="slds-truncate">{towerdata.futureCollections}</div></td>
+                                        <td><div class="slds-truncate">{towerdata.YearOne}</div></td>
+                                        <td><div class="slds-truncate">{towerdata.YearTwo}</div></td>
+                                        <!-- <template for:each={towerdata.futureMilestoneDues} for:item="due">
+                                            <td key={due}><div class="slds-truncate">{due}</div></td>
+                                        </template> -->
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </template>
+            </div>
+        </template>
+    </div>
+</template>

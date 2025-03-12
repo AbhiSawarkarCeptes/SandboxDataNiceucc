@@ -1,0 +1,31 @@
+<template>
+  <lightning-quick-action-panel header="Create Task">
+    <lightning-record-edit-form record-id={newTaskId} object-api-name="Task__c" onsuccess={handleSuccess}>
+      <lightning-input-field field-name="Booking__c" value={recordId} disabled="true"></lightning-input-field>
+      <lightning-input-field required="true" field-name="Communication_Mode__c" value={communicationVal} onchange={getCommunicationMode}> </lightning-input-field>
+      <lightning-input-field required="true" field-name="Purpose__c"> </lightning-input-field>
+      <lightning-input-field required="true" field-name="Communication_Status__c"> </lightning-input-field>
+      <lightning-input-field required="true" field-name="Notes__c" value={notesVal} onchange={getNotes}> </lightning-input-field>
+      <div class="slds-grid slds-gutters" style="margin-top: 15px">
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-button variant="neutral" label="Cancel" onclick={navigateToBooking}></lightning-button>
+          <lightning-button variant="brand" class="slds-m-left_x-small" label="Save" type="submit"></lightning-button>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <div data-id={recordId}>
+            <a id={recordId} data-id={recordId} phone-number={mobileNumber} onclick={CallOption} class="click-to-dial">
+              <div class={recordId}>
+                <lightning-click-to-dial class="clickToDial" value={mobileNumber} record-id={recordId} data-id={recordId}
+                  style="visibility: hidden" phone-number={mobileNumber}></lightning-click-to-dial>
+                <lightning-icon icon-name="standard:voice_call" alternative-text="Call" title="Call" size="medium"
+                  phone-number={mobileNumber} data-id={recordId}>
+                </lightning-icon>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </lightning-record-edit-form>
+  </lightning-quick-action-panel>
+
+</template>

@@ -1,0 +1,139 @@
+<template>
+	<lightning-quick-action-panel title="Welcome to Proforma Invoice Generation Process">
+		<slot name="body">								
+            <template if:true={unitexist}>
+				<template if:false={bookingExist}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                            <div class="slds-p-left_x-large">
+                                <span>
+                                    <lightning-combobox
+                                    name="OptionsForUnitPriceOrDLDAmount"
+                                    dropdown-alignment="auto"
+                                    label="Type"
+                                    value={value1}
+                                    placeholder="Select a type"
+                                    options={options1}
+                                    onchange={handleChange1}
+                                    required
+                                    ></lightning-combobox>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </template>            
+            </template>
+
+        <template if:true={unitPriceOption}>
+            <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                        <div class="slds-p-left_x-large">
+                            <span>
+                            <lightning-combobox
+                                name="calculationType"
+                                label="Type"
+                                value={value}
+                                placeholder="Select a type"
+                                options={options}
+                                onchange={handleChange}
+                                required
+                                ></lightning-combobox>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="slds-col">
+                        <span>
+                            <lightning-input type="number" name="input4" disabled value={purchaseprice} label="Purchase Price (AED)" ></lightning-input>
+                        </span>
+                    </div>
+                    <div class="slds-col">
+                        <span>
+							<template if:true={isPercentage}>
+								<lightning-input type="number" label={value} value={inputValue} min="1" max="100" step="any" onchange={inputvalueChange}></lightning-input>
+							</template>
+							<template if:false={isPercentage}>
+								<lightning-input type="number" label={value} value={inputValue} onchange={inputvalueChange}></lightning-input>
+							</template>
+                        </span>
+                    </div>
+                </div>
+				
+                <div class="slds-m-vertical_medium">
+					<div class="slds-p-left_x-large">
+						<p><strong>Calculated Value : <span class="slds-text-heading_small">{totalAmount}</span></strong></p>
+						<lightning-button variant="success" label="Calculate" slot="actions" onclick={handleClick} style="margin-top:20px"></lightning-button>
+						<lightning-button variant="success" label="Submit for Sales Approval" slot="actions" disabled={disableCreation} onclick={createAndSubmitRFP} style="margin-left: 10px;margin-top:10px"></lightning-button>
+					</div>
+				</div>
+            </template>
+			
+            <template if:false={fromBooking}>
+				<template if:false={unitexist}>
+					<div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                            <div class="slds-p-left_x-large">
+                                <div class="slds-p-right_small">
+                                    <div class="slds-p-top_medium">									 
+                                    <div class="slds-text-color_error"> Warning !! Please tag a 'Unit' and check the 'Closed Date' if its already expired
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</template>
+            </template>
+			
+            <template if:true={fromBooking}>
+				<template if:false={unitexist}>
+					<div class="slds-grid slds-gutters">
+						<div class="slds-col">
+                            <div class="slds-p-left_x-large">
+                                <div class="slds-p-right_small">
+                                    <div class="slds-p-top_medium">									 
+                                    <div class="slds-text-color_error"> Warning !! Please tag a 'Unit'.
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</template>
+            </template>
+	
+			<template if:true={bookingExist}>
+                <template if:true={unitexist}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                            <div class="slds-p-left_x-large">
+                                <div class="slds-p-right_small">
+                                    <div class="slds-p-top_medium">									 
+                                    <div class="slds-text-color_success"> Heads Up !! Please generate the Request for payment at Booking level.
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+			</template>
+
+
+            <template if:false={unitPriceOption}>
+                <template if:true={DLDAmountOption}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                            <div class="slds-p-left_x-large">
+                                <div class="slds-p-right_small">
+                                    <div class="slds-p-top_medium">
+                                        <lightning-button variant="success" label="Submit for Approval" onclick={createAndSubmitRFP}></lightning-button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </template>			 
+        </slot>	
+    </lightning-quick-action-panel>	 
+</template>

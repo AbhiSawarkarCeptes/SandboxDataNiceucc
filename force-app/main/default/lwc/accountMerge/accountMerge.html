@@ -1,0 +1,48 @@
+<template>
+  <div class="spinner">
+    <template if:true={isLoading}>
+      <lightning-spinner
+        alternative-text="Loading"
+        variant="brand"
+        size="large"
+      >
+      </lightning-spinner>
+    </template>
+  </div>
+
+  <template if:true={showCmp}>
+    <template if:true={dupsPage}>
+      <lightning-card
+        variant="Narrow"
+        title="Potential Duplicates"
+        icon-name="standard:account"
+        if:true={showDups}
+      >
+        <lightning-datatable
+          key-field="Id"
+          data={accounts}
+          columns={columns}
+          onrowselection={handleRowSelection}
+        ></lightning-datatable>
+        <div slot="footer">
+          <!-- <lightning-button variant="brand" label="Next" title="Next" onclick={handleNext} disabled={disableNext}></lightning-button> -->
+          <lightning-button
+            variant="brand"
+            label="Next"
+            title="Next"
+            onclick={handleNext}
+            disabled={disableNext}
+          ></lightning-button>
+        </div>
+      </lightning-card>
+    </template>
+    <template if:true={showMergePopup}>
+      <c-merge-account-modal
+        onrecordselected={handleMergeRecords}
+        show={showMergePopup}
+        selected-data={selectedData}
+        onmodalclose={handleClose}
+      ></c-merge-account-modal>
+    </template>
+  </template>
+</template>

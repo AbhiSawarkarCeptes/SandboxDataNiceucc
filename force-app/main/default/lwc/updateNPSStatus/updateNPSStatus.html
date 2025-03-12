@@ -1,0 +1,20 @@
+<template>
+    <div style="display:none">{recordId}</div>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <div style="padding:20px">
+        <template if:true={isDataLoaded}>
+                <lightning-combobox
+                label="NPS Survey Status"
+                value={statusValue}
+                placeholder="--Select--"
+                options={options}
+                onchange={handleChange} ></lightning-combobox>
+                <br/>
+                <button class="slds-button slds-button_brand" title="Update" onclick={updateNPSSurveyStatus}>Update</button>
+        </template>
+    </div>
+</template>

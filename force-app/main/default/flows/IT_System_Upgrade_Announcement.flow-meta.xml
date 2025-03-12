@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>IT_System_Upgrade_Announcement</name>
+        <label>IT System Upgrade Announcement</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Applicant_Details__c.IT_System_Upgrade_Announcement</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Applicant_Details__c.IT_System_Upgrade_Announcement</nameSegment>
+    </actionCalls>
+    <apiVersion>61.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>IT System Upgrade Announcement {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>IT System Upgrade Announcement</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>IT_System_Upgrade_Announcement</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Dataload_Identifier__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>4102024</stringValue>
+            </value>
+        </filters>
+        <object>Applicant_Details__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,115 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+
+    <lightning-card title="Broker Registration Form" variant="narrow" icon-name="standard:account">
+        <div class="customCss">
+            <lightning-layout multiple-rows horizontal-align="space"
+                class="slds-p-around_medium slds-m-top_none slds-p-top_none">
+                <lightning-layout-item size="6">
+                    <div class="custom-box slds-m-right--small">
+                        <lightning-input type="text" name="First_Name__c" value={record.First_Name__c}
+                            label="Company/Individual Name" required onchange={handleChange}
+                            onkeyup={onKeyUpInputField}></lightning-input>
+                    </div>
+                </lightning-layout-item>
+                <!-- <lightning-layout-item size="6" >
+                    <div class="custom-box">
+                        <lightning-input type="text" name="Last_Name__c" value={record.Last_Name__c} label="Last Name" onchange={handleChange} required pattern="[a-zA-Z ]*" onkeyup={onKeyUpInputField}></lightning-input>
+                    </div>
+                </lightning-layout-item> -->
+                <lightning-layout-item size="6">
+                    <div class="custom-box">
+                        <lightning-input type="email" name="Email__c" value={record.Email__c} read-only="readonly"
+                            label="Email" onchange={handleChange} pattern="[A-Za-z0-9._-]+@[a-z0-9-]+.[a-z]{2,}$"
+                            message-when-pattern-mismatch="Please enter a valid email"></lightning-input>
+                    </div>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="2">
+                    <div class="custom-box slds-m-right--small">
+                        <lightning-combobox name="Mobile_Country_Code__c" value={record.Mobile_Country_Code__c}
+                            label="Country Code" placeholder="Select an option" options={mobileCountryCodeOptions}
+                            onchange={handleChange} required>
+                        </lightning-combobox>
+                    </div>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="4">
+                    <div class="custom-box slds-m-right--small">
+                        <lightning-input type="tel" name="Mobile__c" value={record.Mobile__c} label="Mobile"
+                            onchange={handleChange} pattern="[0-9]{6,}$"
+                            message-when-pattern-mismatch="Please enter a valid phone number" required
+                            onkeyup={onKeyUpInputField}></lightning-input>
+                    </div>
+                </lightning-layout-item>
+                
+                <lightning-layout-item size="6">
+                    <div class="custom-box">
+                        <lightning-input type="text" name="CHRM_Manager_Email__c" value={record.CHRM_Manager_Email__c}
+                            label="CHRM's Email" read-only=true></lightning-input>
+                    </div>
+                </lightning-layout-item>
+                
+                <lightning-layout-item size="6">
+                    <div class="custom-box slds-m-right--small" hidden = "isTrue"></div>
+                </lightning-layout-item>
+
+                <div class="fullWrap">
+                    <lightning-record-edit-form record-id={tempId} object-api-name="Broker_Registration__c"
+                        onload={formOnLoaded}>
+                        <div class="slds-size_6-of-12 rit_pad-10">
+                            <lightning-input-field required="true" field-name="Sales_Manager__c" name="Sales_Manager__c"
+                                value={record.Sales_Manager__c} onchange={handleChange}> </lightning-input-field>
+                        </div>
+                        <div class="slds-size_6-of-12">
+                            <lightning-input-field required="true" name="Reporting_manager__c"
+                                value={record.Reporting_manager__c} field-name="Reporting_manager__c"
+                                onchange={handleChange}> </lightning-input-field>
+                        </div>
+                    </lightning-record-edit-form>
+                </div>
+                <lightning-layout-item size="6">
+                    <div class="custom-box slds-m-right--small">
+                        <lightning-combobox name="Broker_Category__c" value={record.Broker_Category__c}
+                            label="Broker Category" placeholder="Select an option" options={brokerCategoryOptions}
+                            onchange={handleChange} required>
+                        </lightning-combobox>
+                    </div>
+
+                </lightning-layout-item>
+                <template if:true={isSubCategoryVisibile}>
+                    <lightning-layout-item size="6">
+                        <div class="custom-box slds-m-right--small">
+                            <lightning-combobox name="Sub_Category__c" value={record.Sub_Category__c}
+                                label="Broker Sub Category" placeholder="Select an option"
+                                options={brokerSubCategoryOptions} onchange={handleChange} required>
+                            </lightning-combobox>
+                        </div>
+
+                    </lightning-layout-item>
+                </template>
+
+
+
+                <!--<lightning-layout-item size="6">
+                        <template if:true={showLicenseRegSection}>
+                        <div class="custom-box">
+                            <lightning-input type="text" variant="standard" name="Registration_Number__c" label={regPassportLabel} onchange={handleChange} required value={record.Registration_Number__c} onkeyup={onKeyUpInputField}></lightning-input>
+                        </div>
+                        </template>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="6"></lightning-layout-item>-->
+
+            </lightning-layout>
+            <div style="text-align: center;">
+                <lightning-button class="slds-m-top_small slds-m-left_medium" variant="brand" name="save" label="Save"
+                    onclick={handleSubmit}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+
+</template>

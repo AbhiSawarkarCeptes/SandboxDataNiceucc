@@ -1,0 +1,107 @@
+<template>
+    <template if:true={showSpinner}>
+            <div class="exampleHolder">
+                <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+            </div>
+        </template>
+    <lightning-card>
+        <center>
+            <h4 class="slds-text-heading_medium" style="color:black;">New Offer</h4>
+        </center>
+        <hr width="100%"/>
+        <lightning-record-edit-form object-api-name="PropStrength__Offer__c" onsuccess={handleSuccess} onerror={handleError}>
+            <p style="text-align:right;" class="slds-m-around_medium">
+                <span style="color:red;">*</span> = Required Information
+            </p>
+
+            <div class="slds-m-top_medium">
+                <center>
+                    <lightning-button variant="brand" type="submit" label="Save" onclick={handleShowSpinner}></lightning-button>&nbsp;&nbsp;
+                    <lightning-button label="Cancel" onclick={handleCancel}></lightning-button>
+                </center>
+            </div><br/>
+
+            <div class="slds-m-around_medium">
+                <h4 class="slds-text-heading_small" style="background: #f3f3f3; color: black; padding: 0.3rem 0rem 0.3rem 0.1rem;">Information</h4><br/>
+                <div class="slds-grid slds-gutters slds-wrap">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field field-name="PropStrength__Status__c"></lightning-input-field>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field field-name="PropStrength__Offer_Through__c"></lightning-input-field>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field field-name="PropStrength__Offer_Source__c"></lightning-input-field>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field field-name="PropStrength__Primary_Contact__c"></lightning-input-field>
+                    </div>
+                </div><br/><br/>
+
+                <h4 class="slds-text-heading_small" style="background: #f3f3f3; color: black; padding: 0.3rem 0rem 0.3rem 0.1rem;">Property Details</h4><br/>
+                <div class="slds-grid slds-gutters slds-wrap">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field field-name="PropStrength__Project__c" value={projectId} disabled="true"></lightning-input-field>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field field-name="PropStrength__Property_Type__c" value={propertyTypeId} disabled="true"></lightning-input-field>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field field-name="PropStrength__Property__c" value={propertyId} disabled="true"></lightning-input-field>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <span class="slds-grid slds-gutters slds-wrap">
+                            <div class="slds-col slds-size_1-of-3 slds-medium-size_1-of-3 slds-large-size_1-of-3" style="padding: 0.5rem 0rem 0rem 0.9rem; color: #818181;">
+                                Payment Plan
+                            </div>
+                            <div class="slds-col slds-size_2-of-3 slds-medium-size_2-of-3 slds-large-size_2-of-3" style="padding: 0rem 1rem 0rem 0rem;">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <lightning-input
+                                            type="search"
+                                            name="lookupInput"
+                                            placeholder="Search Payment Plans..."
+                                            value={searchKey}
+                                            onchange={handleSearchKeyChange}
+                                            onclick={showDialog}>
+                                        </lightning-input>
+                                        <div if:true={showResults} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                                            <div id="listbox-unique-id" role="listbox">
+                                                <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation">
+                                                    <template for:each={searchResults} for:item="result">
+                                                        <li key={result.Id} role="presentation" class="slds-listbox__item liBox">
+                                                            <span role="option" onclick={handleResultClick} title={result.Id} data-id={result.Name}>
+                                                                <lightning-icon icon-name="custom:custom47" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result.Name}
+                                                            </span>
+                                                        </li>
+                                                    </template>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </span>
+                    </div>
+                </div><br/><br/>
+
+                <h4 class="slds-text-heading_small" style="background: #f3f3f3; color: black; padding: 0.3rem 0rem 0.3rem 0.1rem;">Broker Details</h4><br/>
+                <div class="slds-grid slds-gutters slds-wrap">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field field-name="PropStrength__Broker_Account__c"></lightning-input-field>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field field-name="PropStrength__Broker_Contact__c"></lightning-input-field>
+                    </div>
+                </div><br/>
+                
+                <div class="slds-m-top_medium">
+                    <center>
+                        <lightning-button variant="brand" type="submit" label="Save" onclick={handleShowSpinner}></lightning-button>&nbsp;&nbsp;
+                        <lightning-button label="Cancel" onclick={handleCancel}></lightning-button>
+                    </center>
+                </div>
+            </div>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

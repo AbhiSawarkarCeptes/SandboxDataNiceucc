@@ -1,0 +1,81 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <template if:true={showForm}>
+        <lightning-accordion allow-multiple-sections-open
+                            onsectiontoggle={handleToggleSection}
+                            active-section-name={activeSections}>
+            <lightning-accordion-section name="ResaleProcess" label="RESALE PROCESS">
+                <div class="slds-grid slds-gutters slds-wrap">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-combobox
+                        name="ResaleType"
+                        label="Resale Type"
+                        value={selectedResaleType}
+                        placeholder="Select Resale Type"
+                        options={resaleTypeOptions}
+                        onchange={handleResaleTypeChange} 
+                        required="true"></lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" label="Type of Buyer" required="true"></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" label="Property Status" required="true"></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" label="Initial Contract Dated" required="true"></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" label="Transferrer Date" required="true"></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" label="Initial Contract of Sale No" required="true"></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" label="Seller1 Emirated Id" required="true"></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" label="Seller1 Unit Share Transfer" required="true"></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" label="Mortgage" required="true"></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" label="Title Deed No"></lightning-input>
+                    </div>
+                </div>
+            </lightning-accordion-section>
+
+            <lightning-accordion-section name="SellerInformation" label="SELLER INFORMATION">
+                <div class="slds-grid slds-gutters slds-wrap">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" label="Name" disabled="true" value={sellerName}></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" label="Email Address" disabled="true" value={sellerEmail}></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" label="Mobile Number" disabled="true" value={sellerPhone}></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" label="Mailing Address" disabled="true" value={sellerAddress}></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" label="Passport No" disabled="true" value={sellerPassportNo}></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" label="Nationality" disabled="true" value={sellerNationality}></lightning-input>
+                    </div>
+                </div>
+            </lightning-accordion-section>
+
+            <lightning-accordion-section name="BuyerInformation" label="BUYER INFORMATION">
+                
+            </lightning-accordion-section>
+        </lightning-accordion>
+    </template>
+</template>

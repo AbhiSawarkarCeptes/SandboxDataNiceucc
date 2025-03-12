@@ -1,0 +1,263 @@
+<template>
+    <div class={mainDivStyle}>
+        <div class="row profile-content-wrapper">
+            <div class="left-section col-3">
+                <div class="performance-overview">
+                    <div class="row mb-2">
+                        <div class="heading-section">
+                            <h3>Performance Overview</h3>
+                            <a href="/newBrokerPortal/s/performance">
+                                <img src={arrow_icon}/>
+                            </a>
+                        </div>
+                        <div class="overview-box">
+                            <div class="icon-txt">
+                                <div class="icon">
+                                    <img src={siteVisitIconLeft}/>
+                                </div>
+                                <template if:true={displayElement}>
+                                    <div class="txt">
+                                        <div>Site Visits</div>
+                                        <div>{siteVisitsText}</div>
+                                    </div>
+                                </template>    
+                            </div>
+                            <template if:true={displayElement}>
+                                <div class="total" if:true={chartOne}>
+                                    {siteVisitsCountCurrentmonth}
+                                </div>
+                                <div class="total" if:true={chartTwo}>
+                                    {siteVisitsCountthreemonth}
+                                </div>
+                                <div class="total" if:true={chartThree}>
+                                    {siteVisitsCountsixmonth}
+                                </div>
+                                <div class="total" if:true={chartFour}>
+                                    {siteVisitsCount}
+                                </div>
+                            </template>
+                        </div>
+                        <div class="overview-box">
+                            <div class="icon-txt">
+                                <div class="icon">
+                                    <img src={salesIconleft}/>
+                                </div>
+                                <template if:true={displayElement}>
+                                    <div class="txt">
+                                        <div>Sales Value</div>
+                                        <div>{salesValueText}</div>
+                                    </div>
+                                </template>
+                            </div>
+                            <div class="total">
+                                <template if:true={displayElement}>
+                                    <div class="super">AED</div>
+                                    <div if:true={chartOne} class="million-value">
+                                        {totalBookingsinCurrentMonthtomillion}
+                                        <span class="million">Mn</span>
+                                    </div>
+                                    <div if:true={chartTwo} class="million-value">
+                                        {totalBookingsinQuartYearMillion}
+                                        <span class="million">Mn</span>
+                                    </div>
+                                    <div if:true={chartThree} class="million-value">
+                                        {totalBookingsinHalfYear}
+                                        <span class="million">Mn</span>
+                                    </div>
+                                    <div if:true={chartFour} class="million-value">
+                                        {totalBookingsinYear}
+                                        <span class="million">Mn</span>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="booking-section">
+                        <div class="heading-section">
+                            <h3>
+                                Total Number of Unit Bookings for the Year
+                            </h3>
+                        </div>
+                        <div class="overview-box">
+                            <div class="icon-txt">
+                                <div class="icon">
+                                    <img src={appartmenticon}/>
+                                </div>
+                            </div>
+                            <div class="total">
+                                <template if:true={displayElement}>
+                                    <div>
+                                        {appartmentsBookingCount}
+                                    </div>
+                                </template>
+                                <div class="txt">
+                                    Apartments
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overview-box">
+                            <div class="icon-txt">
+                                <div class="icon">
+                                    <img src={villaimageurl}/>
+                                </div>
+                            </div>
+                            <div class="total">
+                                <template if:true={displayElement}>
+                                    <div>
+                                        {villasBookingCount}
+                                    </div>
+                                </template>
+                                <div class="txt">
+                                    Villas
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-section  col-6 site-visit-graph">
+                <div class="top-heading">
+                    <div class="heading">
+                        <span class="icon">
+                            <img src={sitevisitUrl}/>
+                        </span>
+                        <span class="txt">
+                            Performance
+                        </span>
+                    </div>
+                    <div class="graph-tab-section">
+                        <ul class="graph-tab-area">
+                            <li class={buttonClass1} data-tab="1" onclick={handleTabClick}>
+                                Monthly
+                            </li>
+                            <li class={buttonClass2} data-tab="2" onclick={handleTabClick}>
+                                Quarterly
+                            </li>
+                            <li class={buttonClass3} data-tab="3" onclick={handleTabClick}>
+                                Bi-Yearly
+                            </li>
+                            <li class={buttonClass4} data-tab="4" onclick={handleTabClick}>
+                                Yearly
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <template if:true={displayElement}>
+                    <div class="tab-content-wrapper">
+                        <template if:true={chartOne}>
+                            <div id="tab-graph-1" class="">
+                                <canvas id="graph" class="combined-chart" aria-label="chart" height="350" width="580"></canvas>
+                            </div>
+                        </template>
+                        <template if:true={chartTwo}>
+                            <div id="tab-graph-2" class="">
+                                <canvas id="quaterly-graph" class="combined-quarterchart" aria-label="chart" height="350" width="580"></canvas>
+                            </div>
+                        </template>
+                        <template if:true={chartThree}>
+                            <div id="tab-graph-3" class="">
+                                <canvas id="bi-yearly-graph" class="combined-halfyearlychart" aria-label="chart" height="350" width="580"></canvas>
+                            </div>
+                        </template>
+                        <template if:true={chartFour}>
+                            <div id="tab-graph-4" class="">
+                                <canvas id="yearly-graph" class="combined-yearlychart" aria-label="chart" height="350" width="580"></canvas>
+                            </div>
+                        </template>
+                    </div>
+                </template>
+            </div>
+            <div class="right-section  col-3">
+                <div class="events-overview">
+                    <div class="row mt-2">
+                        <div class="heading-section">
+                            <h3>Events Overview</h3>
+                            <a href="/newBrokerPortal/s/broker-event">
+                                <img src={arrow_icon} />
+                            </a>
+                        </div>
+                        <div class="events-content mt-5">
+                            <div class="event-content-details">
+                                <template if:true={displayElement}>
+                                    <div class="total-events" if:true={showSelectedEvents}>
+                                        {eventsRecordCount}
+                                    </div>
+                                    <div class="total-events" if:true={ShowAllEvents}>
+                                        {allEventCount}
+                                    </div>
+                                </template>
+                                <div class={upcomingEventsClass}>
+                                    <span onclick={handleClickEventtype} data-event="All">
+                                        Upcoming Events
+                                    </span>
+                                </div>
+                                <div class="events">
+                                    <span onclick={handleClickEventtype} data-event="Openhouse" class={isOpenhouseClickedClass}>Openhouse</span> |
+                                    <span onclick={handleClickEventtype} data-event="Roadshows" class={isRoadshowsClickedClass}> Roadshows</span> |
+                                    <span onclick={handleClickEventtype} data-event="Business Trips" class={isBusinessTripsClickedClass}> Business Trips</span> |
+                                    <span onclick={handleClickEventtype} data-event="Video Shoots" class={isVideoShootsClickedClass}> Video Shoots</span>
+                                </div>
+                            </div>
+                            <div class="event-details-list">
+                                <template if:true={ShowAllEvents} for:each={Allevents} for:item="event">
+                                    <div key={event.Id} class="event-item">
+                                        <div class="event-details">
+                                            <div class="event-name">
+                                                {event.Name}
+                                            </div>
+                                            <div class="event-location">
+                                                <span class="me-2">
+                                                    <img src={eventIconImageLeft}/>
+                                                </span>
+                                                {event.City_Country__c}
+                                            </div>
+                                        </div>
+                                        <div class="event-date">
+                                            <div class="date">
+                                                {event.FormattedDay}
+                                            </div>
+                                            <div class="month-year">
+                                                <div class="month">
+                                                    {event.FormattedMonth}
+                                                </div>
+                                                <div class="year">
+                                                    {event.FormattedYear}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </template>
+                                <template for:each={events} for:item="event">
+                                    <div key={event.Id} class="event-item">
+                                        <div class="event-details">
+                                            <div class="event-name">{event.Name}</div>
+                                            <div class="event-location">
+                                                <span class="me-2">
+                                                    <img src={eventIconImageLeft} />
+                                                </span>
+                                                {event.City_Country__c}
+                                            </div>
+                                        </div>
+                                        <div class="event-date">
+                                            <div class="date">{event.FormattedDay}</div>
+                                            <div class="month-year">
+                                                <div class="month">
+                                                    {event.FormattedMonth}
+                                                </div>
+                                                <div class="year">
+                                                    {event.FormattedYear}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Payment API Call">
+        <div class="slds-p-around_medium">
+            <lightning-button label="Make Payment" onclick={handlePayment} variant="brand"></lightning-button>
+        </div>
+        <template if:true={responseMessage}>
+            <p class="slds-p-around_medium">Response: {responseMessage}</p>
+        </template>
+    </lightning-card>
+</template>

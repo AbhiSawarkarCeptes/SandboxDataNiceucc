@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Sobha Construction Updates - Verde by Sobha</description>
+        <name>Sobha_Construction_Updates_Verde_by_Sobha</name>
+        <label>Sobha Construction Updates - Verde by Sobha</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Applicant_Details__c.Sobha_Construction_Updates_Verde_by_Sobha</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Applicant_Details__c.Sobha_Construction_Updates_Verde_by_Sobha</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <description>Sobha Construction Updates - Verde by Sobha Aug 24</description>
+    <environments>Default</environments>
+    <interviewLabel>Sobha Construction Updates - Verde by Sobha May 24 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Sobha Construction Updates - Verde by Sobha Aug 24</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Sobha_Construction_Updates_Verde_by_Sobha</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Dataload_Identifier__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>281020240315PM</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Dataload_Identifier__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Applicant_Details__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

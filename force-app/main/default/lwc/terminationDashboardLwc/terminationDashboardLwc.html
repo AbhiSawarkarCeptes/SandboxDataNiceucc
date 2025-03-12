@@ -1,0 +1,69 @@
+<template>
+	<div class="slds-page-header slds-page-header_record-home">
+				<div class="slds-media slds-align_absolute-center">
+					<div class="slds-media__figure">
+						<lightning-icon icon-name="standard:work_forecast"
+							alternative-text="Termination for Collection Dashboard"></lightning-icon>
+					</div> 
+					<div class="slds-media__body">
+						<div class="slds-page-header__name">
+							<div class="slds-page-header__name-title">
+								<h1>
+                                    <span class="slds-page-header__title slds-truncate"> <slot name="headerName"></slot> </span>
+								</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="slds-page-header__col-actions slds-align_absolute-center">
+				<div class="slds-page-header__controls">
+					<div class="slds-page-header__control">
+                        <slot name="buttonGroup"></slot>
+					</div>
+				</div>
+			</div>
+		
+	</div>
+
+	<div class="slds-grid slds-gutters slds-m-top_small" if:true={getVisibilityOfFilterSelection}>
+
+		<div class="slds-col slds-size_5-of-12">
+			<div class="slds-grid">
+				<lightning-combobox name="project" label="Project" placeholder="Select Project"
+					class="slds-col slds-size_2-of-5 slds-m-left_small" value={selectedProject} options={projectoptions}
+					onchange={handleProjectChange}>
+				</lightning-combobox>
+				
+				<lightning-combobox name="Building" label="Building" class="slds-col slds-size_2-of-5 slds-m-left_small"
+					placeholder="Select building" options={toweroptions} value={selectedTower} disabled={isTowerDisable} onchange={handleTowerChange}>
+				</lightning-combobox>
+			</div>
+		</div>
+		<div class="slds-col slds-size_7-of-12">
+			<div class="slds-grid">
+			<lightning-input name="enter-search" if:true={getVisibilityOfTable} class="slds-m-around_small slds-col" type="search" variant="label-hidden"
+				placeholder="Unit/Booking/Customer" onchange={handleSearch}>
+			</lightning-input>
+			<template if:true={isApproveVisible}>
+			<lightning-button label={getApproveButtonLabel} if:true={getVisibilityOfTable}  variant="brand" class="slds-m-around_small slds-col" name="Approve Selected Rows" onclick={handleSelectedRecords}></lightning-button>
+			</template>
+            <template if:true={isRejectedVisible}>
+				<lightning-button label="Reject Selected Rows" if:true={getVisibilityOfTable}  variant="destructive" class="slds-m-around_small slds-col" name="Reject Selected Rows" onclick={handleSelectedRecords}></lightning-button>
+			</template>
+			<template if:true={isResubmitVisible}>
+				<lightning-button label="Resubmit Selected Rows" if:true={getVisibilityOfTable}  variant="success" class="slds-m-around_small slds-col" name="Resubmit Selected Rows" onclick={handleSelectedRecords}></lightning-button>
+			</template>
+			</div>
+
+		</div>
+	</div>
+    <div class="slds-m-top_small heightClass" if:true={getVisibilityOfTable}>
+     <lightning-datatable key-field="bookingId"  
+                                         data={result}  
+                                         columns={columns}  
+                                         onrowaction={callRowAction}
+										 wrap-text-max-lines="6">  
+                 </lightning-datatable>  
+    </div>
+
+</template>

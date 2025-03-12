@@ -1,0 +1,55 @@
+<template>
+    <div style="padding:20px">
+        <div style="display:none">{recordId}</div>
+        <template if:true={showSpinner}>
+            <div class="exampleHolder">
+                <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+            </div>
+        </template>
+        <template if:true={loadComponent}>
+            <div>
+                <div style="text-align:center;margin-bottom:20px;font-size:20px">
+                    <b>Select Ezetap Device</b>
+                </div>
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th class="" scope="col" style="width:9%">
+                                <div class="slds-truncate" title="Select" style="float:left">
+                                    Select
+                                </div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Device Name">Device Name</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Username">Username</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Location">Location</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={devices} for:item="d">
+                            <tr key={d.Id} class="slds-hint-parent">
+                                <td style="width:9%">
+                                    <div class="slds-truncate">
+                                        <input type="radio" name="radioName" value={d.Id} onchange={onDeviceChange}/>
+                                    </div>
+                                </td>
+                                <td><div class="slds-truncate">{d.MasterLabel}</div></td>
+                                <td><div class="slds-truncate">{d.Username__c}</div></td>
+                                <td><div class="slds-truncate">{d.Location__c}</div></td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+                <div style="text-align:right;margin-top:10px">
+                    <lightning-button label="Cancel" title="Cancel" onclick={handleCancel}></lightning-button>
+                    <lightning-button variant="brand" label="Proceed" title="Proceed" onclick={handleProceed}></lightning-button>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

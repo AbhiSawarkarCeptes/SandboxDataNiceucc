@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_for_Seller_Information</name>
+        <label>Send for Seller Information</label>
+        <locationX>545</locationX>
+        <locationY>217</locationY>
+        <actionName>SPADocusignSellerSignature</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>SPA_Docusign_Seller_Status</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>bookingIds</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SPADocusignSellerSignature</nameSegment>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>SPA Docusign Seller Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SPA Docusign Seller Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>SPA_Docusign_Seller_Status</name>
+        <label>SPA Docusign Seller Status</label>
+        <locationX>687</locationX>
+        <locationY>423</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Message</name>
+            <fieldText>&lt;p&gt;SPA successfully sent for Seller signature and stamp.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>490</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Send_for_Seller_Information</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

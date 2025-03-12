@@ -1,0 +1,124 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <div style="margin: 0!important; padding: 0.3rem !important; background:white !important; height: 39rem !important;">
+        <div style="margin: auto; width:35rem !important; margin-top: 5rem;">
+        <lightning-card >
+            <h3 slot="title">
+                <lightning-icon icon-name="standard:account" size="small"></lightning-icon>
+                <span>&nbsp;&nbsp; <span style="font-size: larger;font-weight: bold;">Request Unit Hold</span> </span>
+            </h3>
+            <div class="slds-form-element formElement">
+                <label class="slds-form-element__label formlabel" for="form-element-01">Project</label>
+                <div class="slds-form-element__control inputField" >
+                    <span>
+                        <lightning-input
+                                    type="search"
+                                    name="lookupInput"
+                                    placeholder="Search Project"
+                                    value={searchKeyProj}
+                                    onchange={handleSearchKeyChangePC}
+                                    onclick={showDialogPC}>
+                                </lightning-input>
+                                <div if:true={showResultsPC} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                                    <div id="listbox-unique-idPC" role="listbox">
+                                        <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation" style="max-height: 6rem;overflow: auto; position: absolute;
+                                        z-index: 1; background: white; width: -webkit-fill-available;">
+                                            <template for:each={searchResultsPC} for:item="result">
+                                                <li key={result.Id} role="presentation" class="slds-listbox__item liBox">
+                                                    <span role="option" onclick={handleResultClickPC} title={result.Id} data-id={result.Name} style="display: block !important;"> 
+                                                        <lightning-icon icon-name="custom:custom24" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result.Name}
+                                                    </span>
+                                                </li>
+                                            </template>
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+                    </span>
+                </div>
+            </div>
+            <div class="slds-form-element formElement">
+                <label class="slds-form-element__label formlabel" for="form-element-02">Unit</label>
+                <br/>
+                <div class="slds-form-element__control inputField">
+                    <span>                           
+                        <lightning-input
+                                    type="search"
+                                    name="lookupInput"
+                                    placeholder="Search Unit"
+                                    value={searchKeyUnit}
+                                    disabled={showUnitLookUp}
+                                    onchange={handleSearchKeyChangeUnit}
+                                    onclick={showDialogUnit}>
+                                </lightning-input>
+                                <div if:true={showResultsUnit} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                                    <div id="listbox-unique-id" role="listbox">
+                                        <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation" style="max-height: 6rem;overflow: auto; position: absolute;
+                                        z-index: 1; background: white; width: -webkit-fill-available;">
+                                            <template for:each={searchResultsUnit} for:item="result">
+                                                <li key={result.Id} role="presentation" class="slds-listbox__item liBox">
+                                                    <span role="option" onclick={handleResultUnit} title={result.Id} data-id={result.PropStrength__House_Unit_No__c} style="display: block !important;">
+                                                        <lightning-icon icon-name="custom:custom85" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result.PropStrength__House_Unit_No__c}
+                                                    </span>
+                                                </li>
+                                            </template>
+                                        </ul>
+                                    </div>
+                                </div>
+                    </span>
+                </div>
+            </div>
+            <div class="slds-form-element formElement">
+                <label class="slds-form-element__label formlabel" for="form-element-03">First Name</label>
+                <br/>
+                <div class="slds-form-element__control inputField">
+                    <lightning-input type="text" value={customerFirstName} title="first" onchange={handleInputChange}></lightning-input>
+                </div>
+            </div>
+            <div class="slds-form-element formElement">
+                <label class="slds-form-element__label formlabel" for="form-element-03">Middle Name</label>
+                <br/>
+                <div class="slds-form-element__control inputField">
+                    <lightning-input type="text" value={customerMiddleName}  title="middle" onchange={handleInputChange}></lightning-input>
+                </div>
+            </div>
+            <div class="slds-form-element formElement">
+                <label class="slds-form-element__label formlabel" for="form-element-03">Last Name</label>
+                <br/>
+                <div class="slds-form-element__control inputField">
+                    <lightning-input type="text" value={customerlastName} title="last" onchange={handleInputChange}></lightning-input>
+                </div>
+            </div>
+            <div class="slds-form-element formElement">
+                <label class="slds-form-element__label formlabel" for="form-element-03">Requested Time(Hrs)</label>
+                <br/>
+                <div class="slds-form-element__control inputField">
+                    <lightning-combobox
+                        name="progress"
+                        value={timeHrs}
+                        placeholder="Select Hours"
+                        options={options}
+                        onchange={handleChange} ></lightning-combobox>
+                </div>
+            </div>
+            <div class="slds-form-element formElement">
+                <label class="slds-form-element__label" for="form-element-04">File Upload(Please upload clear client passport copy)</label>
+                <div class="slds-form-element__control">
+                    <lightning-input type="file" 
+                    accept=".png, .doc, .docx, .pdf"
+                    onchange={openfileUpload} disabled={showUploadButtom}></lightning-input>
+                    <label for="">{fileData.filename}</label>
+                </div>
+              </div>
+              <div style="margin-left: 14rem;">
+                <lightning-button variant="brand" label="Save" title="Save Record" onclick={handleSave} class="slds-m-top_small" disabled={disableSaveButton}></lightning-button>
+            </div>
+        </lightning-card>
+    </div>
+    </div>
+        
+</template>

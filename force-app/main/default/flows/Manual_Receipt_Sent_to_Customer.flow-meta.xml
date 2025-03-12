@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Send Manual Receipt to Client</description>
+        <name>Send_Manual_Receipt_to_Client</name>
+        <label>Send Manual Receipt to Client</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Applicant_Details__c.Manual_Receipt_Sent</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Applicant_Details__c.Manual_Receipt_Sent</nameSegment>
+    </actionCalls>
+    <apiVersion>61.0</apiVersion>
+    <description>Manual Receipt Sent to Customer</description>
+    <environments>Default</environments>
+    <interviewLabel>Manual Receipt Sent to Customer {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Manual Receipt Sent to Customer</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_Manual_Receipt_to_Client</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Dataload_Identifier__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>EmailSent</stringValue>
+            </value>
+        </filters>
+        <object>Applicant_Details__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

@@ -1,0 +1,34 @@
+.ulContainer { 
+    border: 0.05rem solid black;
+    margin: 0.25rem;
+    text-indent: 0.25rem;
+    border-radius: 0.2rem;
+    line-height: 2rem;
+}
+.liBox:hover {
+    background-color: azure;
+    cursor: pointer;
+}
+.heading {
+    font-size: 2.5rem;
+    font-family: Garamond;
+    font-weight: 600;
+    background-image: conic-gradient(#0e70a5, #1b3a78, #0e70a5);
+    color: white;
+}
+.subHeading {
+    font-size: 0.9rem;
+    color: #1b3a78;
+    font-weight: bold;
+}
+.subHeading2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1b3a78;
+}
+.tableBrd { 
+    font-size: 0.9rem;
+}
+.tablePadding { 
+    padding-left: 1rem;
+}

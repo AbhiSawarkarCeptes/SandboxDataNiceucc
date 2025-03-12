@@ -1,0 +1,62 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <template if:false={showSpinner}>
+        <template if:true={showError}>
+            <template if:true={showMissingNSAError}>
+                <div class="exampleHolder">
+                    Please create New Sale Approval first to update dp and dld amount.
+                  </div>
+            </template>
+            
+            <template if:true={showAmountConfirmError}>
+                <div class="exampleHolder">
+                   Please confirm amount on both Payment Request to update dp and dld amount.
+                  </div>
+            </template>
+        </template>
+        <template if:false={showError}>
+        <lightning-card title="Update DP And DLD Amount">
+            <lightning-record-edit-form
+            object-api-name="unit_hold_request__c"
+            record-id={saleApproval.Id}
+            onsubmit={handleSubmit}
+            onsuccess={handleSuccess}
+            onerror={handleError}
+        >
+        <lightning-input-field field-name="Blocking_Amount_Paid__c"
+        class="slds-hidden"></lightning-input-field>
+        <lightning-output-field field-name="Sales_Value__c"></lightning-output-field>
+      
+        <template if:true ={showBothDpAndDldField}>
+            <lightning-input-field disabled = {dldDisabled} field-name="DLD_Amount__c"></lightning-input-field>
+            <lightning-input-field field-name="DP_Amount__c"></lightning-input-field>
+            <lightning-input-field disabled = {dldDisabled2} field-name="DLD_Amount_2__c"></lightning-input-field>
+            <lightning-input-field field-name="DP_Amount_2__c"></lightning-input-field>
+           
+           
+        </template>
+        <template if:false ={showBothDpAndDldField}>
+            <template if:true ={isPrimaryPR}>
+                <lightning-input-field disabled = {dldDisabled} field-name="DLD_Amount__c"></lightning-input-field>
+                <lightning-input-field field-name="DP_Amount__c"></lightning-input-field>
+            </template>
+            <template if:false ={isPrimaryPR}>
+                <lightning-input-field disabled = {dldDisabled2} field-name="DLD_Amount_2__c"></lightning-input-field>
+                <lightning-input-field field-name="DP_Amount_2__c"></lightning-input-field>
+            </template>
+           
+        </template>
+            <div class="slds-var-m-top_medium">
+                <lightning-button variant="brand" type="submit" label="Save">
+                </lightning-button>
+            </div>
+        </lightning-record-edit-form>
+        </lightning-card>
+        </template>
+    </template>
+   
+</template>

@@ -1,0 +1,10 @@
+<template>
+    <!--lightning-card variant="narrow"-->
+        <lightning-file-upload name="fileUploader" record-id={recordId}
+            onuploadfinished={handleActionFinished} multiple>
+        </lightning-file-upload>
+        <template if:true={files.data}>
+            <c-files-list files={files.data} onfiledelete={handleActionFinished}></c-files-list>
+        </template>
+    <!--/lightning-card-->
+</template>

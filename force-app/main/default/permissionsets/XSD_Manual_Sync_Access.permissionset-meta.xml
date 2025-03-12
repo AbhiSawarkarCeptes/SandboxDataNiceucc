@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Manual_XSD_Sync</name>
+    </customPermissions>
+    <description>Allows assigned users to Manually trigger SF to XP Data sync</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>XSD - Manual Sync Access</label>
+</PermissionSet>

@@ -1,0 +1,30 @@
+<template>
+    <div class="slds-grid slds-grid_vertical slds-form-element formElement">
+        <label class="slds-col slds-form-element__label" for="form-element-01">Home orientation Executive</label>
+        <span class="slds-col slds-form-element__control inputField">
+            <lightning-input
+                        type="search"
+                        name="lookupInput"
+                        placeholder="Search Home orientation Executive"
+                        value={searchKeyHomeOrientation}
+                        onchange={handleSearchKeyChangeHO}
+                        disabled={showHomeOrientationLookup}
+                        onclick={showDialogHO}>
+                    </lightning-input>
+            <div if:true={showResultsHO} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                <div id="listbox-unique-idHO" role="listbox">
+                    <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation" style="max-height: 6rem;overflow: auto; position: absolute;
+                    z-index: 1; background: white; width: -webkit-fill-available;">
+                        <template for:each={searchResultsHO} for:item="result">
+                            <li key={result.Id} role="presentation" class="slds-listbox__item liBox">
+                                <span role="option" onclick={handleResultClickHO} title={result.Id} data-id={result.Name} style="display: block !important;"> 
+                                    <lightning-icon icon-name="custom:custom24" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result.Name}
+                                </span>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+            </div>
+        </span>
+    </div>
+</template>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Update total instalment to quotation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update total instalment to quotation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Payment_Milestones</name>
+        <label>Get Payment Milestones</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_quotation</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Quotation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Quotation__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Installment__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>First Installment</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Payment_Milestones__c</object>
+        <sortField>Milestone_Due_Date__c</sortField>
+        <sortOrder>Asc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_quotation</name>
+        <label>Update quotation</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Quotation__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>First_Milestone_Total_Instalment__c</field>
+            <value>
+                <elementReference>Get_Payment_Milestones.Total_Installment_New__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Quotation__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Payment_Milestones</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Installment__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>First Installment</stringValue>
+            </value>
+        </filters>
+        <object>Payment_Milestones__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

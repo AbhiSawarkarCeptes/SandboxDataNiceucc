@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Unveiling Soon - Your Next Home Amidst Nature - Creative 1</description>
+        <name>Unveiling_Soon_Your_Next_Home_Amidst_Nature_C1</name>
+        <label>Unveiling Soon - Your Next Home Amidst Nature - C1</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Applicant_Details__c.Loyalty_Emailer_with_Link</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Applicant_Details__c.Loyalty_Emailer_with_Link</nameSegment>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <description>Unveiling Soon - Your Next Home Amidst Nature - C1</description>
+    <environments>Default</environments>
+    <interviewLabel>Unveiling Soon - Your Next Home Amidst Nature - C1 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Unveiling Soon - Your Next Home Amidst Nature - C1</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Unveiling_Soon_Your_Next_Home_Amidst_Nature_C1</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Dataload_Identifier__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>020820241030PM</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Dataload_Identifier__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Applicant_Details__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

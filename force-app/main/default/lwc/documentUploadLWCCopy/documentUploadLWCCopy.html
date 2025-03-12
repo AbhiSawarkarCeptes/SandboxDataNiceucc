@@ -1,0 +1,256 @@
+<template>
+    <div style="background-color:#fff;">
+        <div class="slds-grid slds-wrap">
+            <div
+                class="slds-p-around_xx-small slds-size_12-of-12 slds-small-size--12-of-12 slds-medium-size--12-of-12 slds-large-size_12-of-12">
+                <div class="slds-page-header"
+                    style="color:#fff;background-color: #97b73e;padding:0.5%;border-radius: 5px;">
+                    <div class="slds-page-header__row">
+                        <div class="slds-page-header__col-title">
+                            <div class="slds-media">
+                                <div class="slds-media__body" style="text-align:center;">
+                                    <div class="slds-page-header__name">
+                                        <div>
+                                            <h1>
+                                                <span class="slds-page-header__title slds-truncate"
+                                                    style="font-size: 100%;">KYC Documents Checklist Document Upload</span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <lightning-messages></lightning-messages>
+        <div style="margin:3rem !important;">
+        <table class="slds-table" style="width:100%;margin-top:25px !important;">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col" style="background-color:#fff;" width="25">
+                        <div class="slds-truncate" title="Offer"><span style="color:red;">*
+                                &nbsp;</span>Offer</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;" width="37">
+                        <div class="slds-truncate" title="Project Name">Project Name</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;" width="38">
+                        <div class="slds-truncate" title="Property Name">Property Name</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="slds-hint-parent">
+                    <td data-label="Offer">
+                        <template if:false={offerPresent}>
+                        <lightning-record-edit-form object-api-name="KYC_Documents__c"
+                            id="offerLookup">
+                            <lightning-input-field field-name="Offer__c"
+                                variant="label-hidden" onchange={handleOfferSelection}
+                                class="slds-size_2-of-12 slds-m-right_small" required value={selectedOffer}></lightning-input-field>
+                        </lightning-record-edit-form>
+                        </template>
+                        <template if:true={offerPresent}>
+                        <lightning-record-edit-form object-api-name="KYC_Documents__c"
+                            id="offerLookupReadOnly">
+                            <lightning-input-field field-name="Offer__c"
+                                variant="label-hidden" onchange={handleOfferSelection}
+                                class="slds-size_2-of-12 slds-m-right_small" required value={selectedOffer} disabled="true"></lightning-input-field>
+                        </lightning-record-edit-form>
+                        </template>
+                    </td>
+                    <td data-label="Project Name">
+                        <lightning-record-view-form record-id={selectedOffer}
+                            object-api-name="PropStrength__Offer__c">
+                            <lightning-output-field field-name="PropStrength__Project__c"
+                                variant='label-hidden'></lightning-output-field>
+                        </lightning-record-view-form>
+                    </td>
+                    <td data-label="Property Name">
+                        <lightning-record-view-form record-id={selectedOffer}
+                            object-api-name="PropStrength__Offer__c">
+                            <lightning-output-field field-name="PropStrength__Property__c"
+                                variant='label-hidden'></lightning-output-field>
+                        </lightning-record-view-form>
+                    </td>
+                </tr>
+                </tbody>
+                <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col" style="background-color:#fff;" width="25">
+                        <div class="slds-truncate" title="Offer"><span style="color:red;">*
+                                &nbsp;</span>Applicant Type</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;" width="37">
+                        <div class="slds-truncate" title="Project Name"><span style="color:red;">*
+                                &nbsp;</span>Residential Status</div>
+                    </th>
+                    <th scope="col" style="background-color:#fff;" width="38">
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Offer">
+                        <lightning-record-edit-form object-api-name="KYC_Documents__c"
+                            id="applicantType">
+                            <lightning-input-field field-name="Applicant_Type__c"
+                                variant="label-hidden" onchange={handleApplicantTypeSelection}
+                                class="slds-size_2-of-12 slds-m-right_small" required value={applicantType}></lightning-input-field>
+                        </lightning-record-edit-form>
+                    </td>
+                    <td data-label="Project Name">
+                        <lightning-record-edit-form object-api-name="KYC_Documents__c"
+                            id="residentialStatus">
+                            <lightning-input-field field-name="Residential_Status__c"
+                                variant="label-hidden" onchange={handleresidentialStatusSelection}
+                                class="slds-size_2-of-12 slds-m-right_small" required value={residentialStatus}></lightning-input-field>
+                        </lightning-record-edit-form>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <template if:true={showPassport}>
+            <table class="slds-table" style="width:100%;margin-top:25px !important;">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col">
+                            <div class="slds-truncate" title="Passport Document">
+                                <b>Passport Document</b>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            <table class="slds-table" style="width:100%;margin-top:10px !important;">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" style="background-color:#fff;"> 
+                            <div class="slds-truncate" title="Attachment">Attachment</div>
+                        </th>
+                        <th scope="col" style="background-color:#fff;">
+                            
+                        </th>
+                        <th scope="col" style="background-color:#fff;">
+                            
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="slds-hint-parent">
+                        <td data-label="Attachment">
+                            <lightning-input type="file" onchange={handleFileUploaded} multiple id="passport"></lightning-input>
+                            <div>{fileNames}</div>
+                            <template if:true={passport}>
+                                <p class="slds-text-color_error" style="margin-left: 20px;"><b>Attachment is required.</b></p>
+                            </template>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </template>
+        <template if:true={showNational}>
+            <table class="slds-table" style="width:100%;margin-top:25px !important;">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col">
+                            <div class="slds-truncate" title="National ID (Non-Residents) Document">
+                                <b>National ID (Non-Residents) Document</b>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            <table class="slds-table" style="width:100%;margin-top:10px !important;">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" style="background-color:#fff;"> 
+                            <div class="slds-truncate" title="Attachment">Attachment</div>
+                        </th>
+                        <th scope="col" style="background-color:#fff;">
+                        </th>
+                        <th scope="col" style="background-color:#fff;">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="slds-hint-parent">
+                        <td data-label="Attachment">
+                            <lightning-input type="file" onchange={handleFileUploaded} multiple id="nationalID"></lightning-input>
+                            <div>{fileNames1}</div>
+                            <template if:true={nationalID}>
+                                <p class="slds-text-color_error" style="margin-left: 20px;"><b>Attachment is required.</b></p>
+                            </template>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </template>
+        <template if:true={showEmirate}>
+            <table class="slds-table" style="width:100%;margin-top:25px !important;">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col">
+                            <div class="slds-truncate" title="Emirates ID Document">
+                                <b>Emirates ID Document</b>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            <table class="slds-table" style="width:100%;margin-top:10px !important;">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" style="background-color:#fff;"> 
+                            <div class="slds-truncate" title="Attachment">Attachment</div>
+                        </th>
+                        <th scope="col" style="background-color:#fff;">
+                        </th>
+                        <th scope="col" style="background-color:#fff;">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="slds-hint-parent">
+                        <td data-label="Attachment">
+                            <lightning-input type="file" onchange={handleFileUploaded} multiple id="emiratedId"></lightning-input>
+                            <div>{fileNames2}</div>
+                            <template if:true={emiratedId}>
+                                <p class="slds-text-color_error" style="margin-left: 20px;"><b>Attachment is required.</b></p>
+                            </template>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </template>
+        <div class="slds-form_horizontal slds-form slds-grid slds-wrap" style="margin-top:10px !important;">
+            <div class="slds-size_3-of-3">
+                <div class="slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                    <div>
+                        <button class="slds-button slds-button_brand" onclick={attachFiles}>Submit</button>
+                        <button class="slds-button slds-button_neutral" onclick={handleCancel}>Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <template if:true={showSpinner}>
+    <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+</template>
+</template>

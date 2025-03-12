@@ -1,0 +1,97 @@
+<template>
+    <!-- Lookup code  start -->
+    <template if:false={selectedValue}>
+
+        <div data-key="searchdiv"
+            class="slds-col slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+
+            <input type="text" onfocusout={onLeave} value={searchKey} onkeyup={handleKeyChange}
+                onchange={handleKeyChange} class="slds-input slds-combobox__input slds-has-focus" id={fieldapi}
+                aria-autocomplete="list" aria-controls="listbox-id-2" role="textbox" placeholder="Search..." />
+
+            <span class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_right">
+
+                <lightning-icon icon-name="utility:search" size="xx-Small"
+                    class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
+                    aria-hidden="true"></lightning-icon>
+
+            </span>
+
+            <template if:true={recordPresent}>
+
+                <div id="listbox-id-2-venu" data-key="dropdownresult"
+                    class="slds-show slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid" role="listbox">
+
+                    <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+
+                        <template if:true={message}>
+
+                            <li> {message}
+                            </li>
+
+                        </template>
+
+                        <template for:each={recordsList} for:item="record">
+
+                            <li id={record.Id} key={record.Id} onclick={onRecordSelection} role="presentation"
+                                class="slds-listbox__item">
+
+                                <div data-key={record.Id} data-name={record.Name}
+                                    class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta"
+                                    role="option">
+
+
+
+                                    <span class="slds-media__body">
+
+                                        <span data-key={record.Id} data-name={record.completeName}
+                                            class="slds-listbox__option-text slds-listbox__option-text_entity">{record.completeName}
+                                        </span>
+
+                                    </span>
+
+                                </div>
+
+                            </li>
+
+                        </template>
+
+                    </ul>
+
+                </div>
+
+            </template>
+        </div>
+
+
+    </template>
+    <template if:true={selectedValue}>
+
+        <div data-key="pilldiv" class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_left-right"
+            role="none">
+
+
+            <input type="text" class="slds-input slds-combobox__input" id={fieldapi}
+                aria-controls="listbox-id-5" role="textbox" placeholder="Select an Option" readonly
+                value={selectedValue} onchange={handleFieldChange} />
+
+            <button class="slds-button slds-button_icon slds-input__icon slds-input__icon_right"
+                onclick={removeRecordOnLookup} title="Remove selected option">
+
+                <span class="slds-button__icon" aria-hidden="true">
+
+                    <lightning-icon icon-name="utility:close" size="xx-Small"
+                        class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
+                        aria-hidden="true"></lightning-icon>
+
+                </span>
+
+                <span class="slds-assistive-text">Remove
+                    selected option</span>
+
+            </button>
+
+        </div>
+
+    </template>
+</template>

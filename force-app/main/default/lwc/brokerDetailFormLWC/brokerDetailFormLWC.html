@@ -1,0 +1,285 @@
+<template>
+    <div class="slds-scope" style="background-color: white !important;">
+        <div
+            class="slds-p-around_xx-small slds-size_12-of-12 slds-small-size--12-of-12 slds-medium-size--12-of-12 slds-large-size_12-of-12">
+            <div class="slds-page-header" style="color:#fff;background-color: #F28C28;padding:0.5%;border-radius: 5px;">
+                <div class="slds-page-header__row">
+                    <div class="slds-page-header__col-title">
+                        <div class="slds-media">
+                            <div class="slds-media__body" style="text-align:center;">
+                                <div class="slds-page-header__name">
+                                    <div>
+                                        <h1>
+                                            <span class="slds-page-header__title slds-truncate"
+                                                style="font-size: 150%;">Broker Empanelment Form</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div style="padding:0rem 2rem 0rem 2rem;">
+            <span style="color:#F28C28; font-size: 120%; font-weight: bold;">Agency Details</span><br/><br/>
+            <lightning-record-edit-form object-api-name="Account">
+                <lightning-messages></lightning-messages>
+                <div data-id="sldsGrid" class="slds-grid slds-gutters slds-wrap" style="padding:0.5rem;">
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <span>
+                            <lightning-input-field field-name="Name" value={name} onchange={handleNameChange} required="true"></lightning-input-field>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <span>
+                            <lightning-input-field data-id="labels" field-name="PropStrength__Broker_Type__c" required="true" onchange={handleBrokerTypeChange}></lightning-input-field>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <span>
+                            <lightning-input-field data-id="labels" field-name="Broker_Sub_Type__c" required="true" onchange={handleBrokerSubTypeChange}></lightning-input-field>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <span>
+                            <lightning-input-field data-id="labels" disabled={CategoryFlag} value={brokerCategory} field-name="Broker_Category__c" required="true" onchange={handleBrokerCategoryChange}></lightning-input-field>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <span>
+                            <lightning-input-field data-id="labels" required="true" field-name="Country__c" onchange={handleCountryChange}></lightning-input-field>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <span>
+                            <lightning-input-field data-id="labels" required="true" field-name="Country_Code__c" onchange={handleCountryCodeChange}></lightning-input-field>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <span>
+                            <lightning-input-field field-name="Phone" required="true" value={phone} onchange={handlePhoneChange}></lightning-input-field>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <span>
+                            <lightning-input-field data-id="labels" required="true" field-name="Email_ID_1__c" onchange={handleAgencyEmailchange}></lightning-input-field>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <label for="fieldid" class="slds-form-element__label" style="display: inline-table;width: 33%"><span class="required">*</span>Trade License /Registration Number</label>
+                        <lightning-input style="display: inline-block; width: 66%;" required="true" disabled={TRNFlag} label="Trade License Registration Number"  field-name="TRN_Number__c" onchange={handleTrnNumberChange} variant="label-hidden" onblur={handlecheckRegValidation} ></lightning-input>
+                    
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                    <span>
+                        <label for="fieldid" class="slds-form-element__label" style="display: inline-table;width: 33%"><span class="required">*</span>Passport Number</label>
+                        <lightning-input field-name="Registration_Passport_Number__c" style="display: inline-block; width: 66%;" required="true" disabled={PassportFlag} label = "Passport Number" variant="label-hidden" onchange={handleRegistrationNumberchange}  onblur={handlecheckRegValidation}></lightning-input>
+                    </span>
+                </div>
+                    <!-- <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <span>
+                            <lightning-input-field field-name="RERA_Registration_No__c" onchange={handleReraRegistrationchange}></lightning-input-field>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <span>
+                            <lightning-input-field field-name="Registration_Date__c" onchange={handleREGchange}></lightning-input-field>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <span>
+                            <lightning-input-field field-name="Expiry_Date__c" onchange={handleBrokerTerminationchange}></lightning-input-field>
+                        </span>
+                    </div> -->
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <span>
+                            <div class="slds-form-element">
+                                <table>
+                                    <tr>
+                                        <td class="slds-form-element__label" for="lookupInput"><span class="required">*</span>Sales Manager</td>
+                                        <td class="slds-form-element__control">
+                                            <lightning-input
+                                                type="search"
+                                                name="lookupInput"
+                                                value={searchKey}
+                                                onchange={handleSearchKeyChange}
+                                                onclick={showDialog}>
+                                            </lightning-input>
+                                            <div if:true={showResults} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                                                <div id="listbox-unique-id" role="listbox">
+                                                    <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation">
+                                                        <template for:each={searchResults} for:item="result">
+                                                            <li key={result.Id} role="presentation" class="slds-listbox__item liBox" >
+                                                                <span role="option" onclick={handleResultClick} title={result.Id} data-id={result.Name} style="display: block !important;" >
+                                                                    <lightning-icon icon-name="custom:custom47" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result.Name}
+                                                                </span>
+                                                            </li>
+                                                        </template>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div> 
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <span>
+                            <div class="slds-form-element">
+                                <table>
+                                    <tr>
+                                        <td class="slds-form-element__label" for="lookupInput"><span class="required">*</span>Channel Relationship Manager</td>
+                                        <td class="slds-form-element__control">
+                                            <template if:true={isChrmUser}>
+                                                <lightning-input
+                                                    type="text"
+                                                    name="lookupInput"
+                                                    value={searchKey1}
+                                                    onchange={handleSearchKeyChange1}
+                                                    onclick={showDialog1}
+                                                    disabled="true" 
+                                                    >
+                                                </lightning-input>
+                                            </template>
+                                            <template if:false={isChrmUser}>
+                                                <lightning-input
+                                                    type="search"
+                                                    name="lookupInput"
+                                                    value={searchKey1}
+                                                    onchange={handleSearchKeyChange1}
+                                                    onclick={showDialog1}
+                                                    >
+                                                </lightning-input>
+                                                <div if:true={showResults1} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                                                    <div id="listbox-unique-id1" role="listbox">
+                                                        <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation">
+                                                            <template for:each={searchResults1} for:item="result">
+                                                                <li key={result.Id} role="presentation" class="slds-listbox__item liBox">
+                                                                    <span role="option" onclick={handleResultClick1} title={result.Id} data-id={result.Name} style="display: block !important;">
+                                                                        <lightning-icon icon-name="custom:custom47" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result.Name}
+                                                                    </span>
+                                                                </li>
+                                                            </template>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </template>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div> 
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <span>
+                            <lightning-input-field data-id="labels" required="true" field-name="CHRM_s_Email__c"  disabled="true" value={chrmEmail} onchange={handleCHRMEmailChange} ></lightning-input-field>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_3-of-12">
+                        <span>
+                            <lightning-input-field data-id="labels" field-name="Al_Siniya_Partner__c" value={aiSiniyaCB} onchange={handleAlSiniyaPartner} ></lightning-input-field>
+                        </span>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+        <br/>
+
+        <div style="padding:0rem 2rem 0rem 2rem;">
+            <span style="color:#F28C28; font-size: 120%; font-weight: bold;">
+                Agent Details
+            </span><br/><br/>
+            <div class="slds-grid slds-wrap" data-id="sldsGrid1">
+                <div class="slds-size_1-of-12 slds-p-bottom_small">
+                    <button class="slds-button" style="background-color:#F28C28; color:black; font-size:0.7rem; font-weight:bold; padding:0.1rem 2.3rem; width: 6rem;" onclick={addContactRow}>Add</button>
+                </div>
+                <div class="slds-size_1-of-12 slds-p-bottom_small">
+                    <button class="slds-button disabled" data-id="removeBtnId"  style="background-color:#F28C28; color:black; font-size:0.7rem; font-weight:bold; padding:0.1rem 2.3rem; width: 7rem;" onclick={removeContactRow} disabled={disableRemove}>Remove</button>
+                </div>
+            </div><br/><br/>
+            <div class="slds-grid slds-gutters slds-wrap" data-id="sldsGrid2">
+                <template for:each={numbers} for:item="num">
+                    <div class="slds-col slds-p-bottom_small slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2" key={num}>
+                        <article class="slds-card highlitghted-card highlitghted-card-bg" data-id={num}>
+                            <div class="slds-card__header slds-grid">
+                                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                <div class="slds-media__figure">
+                                    <span class="slds-assistive-text">
+                                        Agent {num}
+                                    </span>
+                                </div>
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title">
+                                    <a href="#" class="slds-card__header-link slds-truncate" title="Accounts">
+                                        <span style="font-size: 100%; font-weight: bold;">
+                                            Agent {num}
+                                        </span>
+                                    </a>
+                                    </h2>
+                                </div>
+                                </header>
+                            </div>
+                            <div class="slds-card__body">
+
+                            <div class="slds-p-horizontal_small">
+                                <br/><br/>
+                                <div class="slds-grid slds-gutters slds-wrap" data-id="sldsGrid3">
+                                    <div class="slds-col slds-p-bottom_small slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                        <lightning-input type="text" onchange={handleFirstName} required="true" name={num}  label="First Name"></lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-p-bottom_small slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                        <lightning-input type="text" onchange={handleLastName} name={num} label="Last Name" required="true"></lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-p-bottom_small slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                        <lightning-input type="email" onchange={handleContactEmail} name={num} label="Email"></lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-p-bottom_small slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                        <lightning-input type="text" onchange={handleContryCode} name={num} label="Country Code"></lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-p-bottom_small slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                        <lightning-input type="counter" onchange={handleContactPhone} name={num} pattern="[0-9]{10}" label="Phone"></lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-p-bottom_small slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                        <lightning-input type="text" onchange={handleNationality} name={num}  label="Nationality"></lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-p-bottom_small slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                        <lightning-input type="text" onchange={handlePassportNo} name={num} label="Passport No"></lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-p-bottom_small slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                        <lightning-input type="text" onchange={handlePassportNationality} name={num} label="Passport Nationality"></lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-p-bottom_small slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                        <lightning-input type="date" onchange={handlePassportIssueDate} name={num} label="Passport Issue Date"></lightning-input>
+                                    </div>
+
+                                    <div class="slds-col slds-p-bottom_small slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                        <lightning-input type="date" onchange={handlePassportExpiryDate} name={num}  label="Passport Expiry Date"></lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-p-bottom_small slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                        <lightning-input type="text" onchange={handleEmiratesId} name={num} label="Emirates ID"></lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-p-bottom_small slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                        <lightning-input type="date" onchange={handleEmiratesIdIssueDate} name={num} label="Emirates ID Issue Date"></lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-p-bottom_small slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-3">
+                                        <lightning-input type="date" onchange={handleEmiratesIdExpDate} name={num} label="Emirates ID Expiry Date"></lightning-input>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            </article>
+                    </div>
+                </template>
+            </div>
+        </div>
+        <br/><br/>
+        <center>
+            <button class="slds-button" style="background-color:white; color:#F28C28; border:0.2rem solid #F28C28; font-size:1rem; font-weight:bold; padding:0.2rem 1.6rem;" onclick={cancelBtn}>Cancel</button>&emsp;
+            <button class="slds-button" style="background-color:#F28C28; color:white; font-size:1rem; font-weight:bold; padding:0.3rem 2rem;" onclick={createAccRec}>Save</button>
+        </center>
+        <br/>
+    </div>
+</template>

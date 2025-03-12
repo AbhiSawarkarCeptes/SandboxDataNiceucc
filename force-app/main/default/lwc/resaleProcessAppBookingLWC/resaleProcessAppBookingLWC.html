@@ -1,0 +1,480 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </div>
+    </template>
+    <template if:true={activeresale}>
+    <template if:true={sellerInformation}>
+        <div class="slds-grid slds-wrap slds-p-around--medium ">
+            <div class="slds-col slds-size_12-of-12 slds-p-around_medium">
+                <h1 class="slds-section-title--divider">Resale Process</h1>
+            </div>  
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-combobox name="Customer Transfer Type" field-name='PropStrength__Customer_Transfer_Type__c' class="validate" label="Customer Transfer Type" value={PropStrength__Customer_Transfer_Type__c} placeholder="Select Resale Type" data-fieldname="PropStrength__Customer_Transfer_Type__c" options={resaletypeOptions} onchange={handlePicklistFieldChange1} required="true"></lightning-combobox>
+            </div>  
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-combobox name="Noc Type" field-name='NOC_Type__c' class="validate" label="Noc Type" value={NOC_Type__c} placeholder="Select NOC Type" data-fieldname="NOC_Type__c" options={resaleNoctypeOptions} onchange={handlePicklistFieldChange1} required="true"></lightning-combobox>
+            </div>  
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-combobox name="Type of Buyer" field-name='Type_of_Buyer__c' class="validate" label="Type of Buyer" value={Type_of_Buyer__c} placeholder="Select Buyer Type" data-fieldname="Type_of_Buyer__c" options={typeOfBuyerOptions} onchange={handlePicklistFieldChange1} required="true"></lightning-combobox>
+            </div>         
+            
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-combobox name="Buyer Residence Status" field-name='Buyer_Residence_Status__c' class="validate" label="Buyer Residence Status" value={Buyer_Residence_Status__c} placeholder="Select Status" data-fieldname="Buyer_Residence_Status__c" options={ResidenceStatus} onchange={handlePicklistFieldChange1} required="true"></lightning-combobox>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Initial Contract Dated" type="date" field-name='Initial_Contract_Dated__c' class="validate" data-fieldname="Initial_Contract_Dated__c" onchange={handleFieldChange1} required="true"> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Transferrer Date" type="date" field-name='Transferrer_Date__c' class="validate" data-fieldname="Transferrer_Date__c" onchange={handleFieldChange1} required="true"> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Initial Contract of Sale No" field-name='Initial_Contract_of_Sale_No__c' class="validate" data-fieldname="Initial_Contract_of_Sale_No__c" onchange={handleFieldChange1} required="true"> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-combobox label="Mortgage" class="validate" value={Mortgage__c} placeholder="Select Mortgage" data-bindex={Bindex} data-fieldname="Mortgage__c" options={mortagageOptions} onchange={handleFieldChange1} required="true"> </lightning-combobox>
+            </div> 
+            
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Title Deed No" field-name='Title_Deed_No__c' class="validate" data-fieldname="Title_Deed_No__c" onchange={handleFieldChange1}> </lightning-input>
+            </div>               
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Plot No" field-name='Plot_No__c' class="validate" data-fieldname="Plot_No__c" onchange={handleFieldChange1}> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Plot Name" field-name='Plot_Name__c' class="validate" data-fieldname="Plot_Name__c" onchange={handleFieldChange1}> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="DM No" field-name='DM_No__c' class="validate" data-fieldname="DM_No__c" onchange={handleFieldChange1}> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Reason For Assignment" type="text" field-name='PropStrength__Reason_For_Assignment__c' class="validate" data-fieldname="PropStrength__Reason_For_Assignment__c" onchange={handleFieldChange1} required="true"> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_12-of-12 slds-p-around_medium">
+                <h3 class="slds-section-title--divider">Seller Information</h3>
+            </div>
+            <div class="slds-col slds-size_12-of-12 slds-p-around_medium">
+                <h6 class="slds-section-title--divider">Primary Applicant</h6>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Name" field-name='Name' value={sellerInformation.PropStrength__Applicant_Acc__r.Name} disabled="true"> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Email Address" field-name='Email_Address__c' value={sellerInformation.PropStrength__Applicant_Email__c} disabled="true">
+                </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Mobile Number" field-name='Mobile_Number__c' value={sellerInformation.PropStrength__Applicant_Acc__r.MobilePhone} disabled="true">
+                </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Mailing Address" field-name='Seller1_Address__c' value={sellerInformation.PropStrength__Applicant_Address__c} disabled="true">
+                </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Passport No" field-name='Passport_Copy_Details__c' value={sellerInformation.Passport_No_Doc__c}
+                    disabled="true"> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Nationality" field-name='Nationality' value={sellerInformation.PropStrength__Applicant_Acc__r.PropStrength__Nationality__c}
+                    disabled="true"> </lightning-input>
+            </div>   
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Seller1 Emirates Id" field-name='Seller1_Emirates_Id__c' class="validate" data-fieldname="Seller1_Emirates_Id__c" onchange={handleFieldChange1} required="true"> </lightning-input>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input label="Seller1 Unit Share Transfer" field-name='Seller1_Unit_Share_Transfer__c' class="validate" data-fieldname="Seller1_Unit_Share_Transfer__c" onchange={handleFieldChange1} required="true"> </lightning-input>
+            </div>
+            <template if:true={sellerInformation_2}>         
+                <div class="slds-col slds-size_12-of-12 slds-p-around_medium">
+                    <h6 class="slds-section-title--divider">Secondary Applicant</h6>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Name" field-name='Name' value={sellerInformation_2.PropStrength__Applicant_Acc__r.Name} disabled="true"> </lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Email Address" field-name='Email_Address__c' value={sellerInformation_2.PropStrength__Applicant_Email__c} disabled="true">
+                    </lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Mobile Number" field-name='Mobile_Number__c' value={sellerInformation_2.PropStrength__Applicant_Acc__r.MobilePhone} disabled="true">
+                    </lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Mailing Address" field-name='Seller1_Address__c' value={sellerInformation_2.PropStrength__Applicant_Address__c} disabled="true">
+                    </lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Passport No" field-name='Passport_Copy_Details__c' value={sellerInformation_2.Passport_No_Doc__c}
+                        disabled="true"> </lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Nationality" field-name='Nationality' value={sellerInformation_2.PropStrength__Applicant_Acc__r.PropStrength__Nationality__c}
+                        disabled="true"> </lightning-input>
+                </div> 
+            </template>           
+            <template if:true={sellerInformation_3}>         
+                <div class="slds-col slds-size_12-of-12 slds-p-around_medium">
+                    <h6 class="slds-section-title--divider">Third Applicant</h6>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Name" field-name='Name' value={sellerInformation_3.PropStrength__Applicant_Acc__r.Name} disabled="true"> </lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Email Address" field-name='Email_Address__c' value={sellerInformation_3.PropStrength__Applicant_Email__c} disabled="true">
+                    </lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Mobile Number" field-name='Mobile_Number__c' value={sellerInformation_3.PropStrength__Applicant_Acc__r.MobilePhone} disabled="true">
+                    </lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Mailing Address" field-name='Seller1_Address__c' value={sellerInformation_3.PropStrength__Applicant_Address__c} disabled="true">
+                    </lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Passport No" field-name='Passport_Copy_Details__c' value={sellerInformation_3.Passport_No_Doc__c}
+                        disabled="true"> </lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Nationality" field-name='Nationality' value={sellerInformation_3.PropStrength__Applicant_Acc__r.PropStrength__Nationality__c}
+                        disabled="true"> </lightning-input>
+                </div> 
+            </template>           
+            <template if:true={sellerInformation_4}>         
+                <div class="slds-col slds-size_12-of-12 slds-p-around_medium">
+                    <h6 class="slds-section-title--divider">Fourth Applicant</h6>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Name" field-name='Name' value={sellerInformation_4.PropStrength__Applicant_Acc__r.Name} disabled="true"> </lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Email Address" field-name='Email_Address__c' value={sellerInformation_4.PropStrength__Applicant_Email__c} disabled="true">
+                    </lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Mobile Number" field-name='Mobile_Number__c' value={sellerInformation_4.PropStrength__Applicant_Acc__r.MobilePhone} disabled="true">
+                    </lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Mailing Address" field-name='Seller1_Address__c' value={sellerInformation_4.PropStrength__Applicant_Address__c} disabled="true">
+                    </lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Passport No" field-name='Passport_Copy_Details__c' value={sellerInformation_4.Passport_No_Doc__c}
+                        disabled="true"> </lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Nationality" field-name='Nationality' value={sellerInformation_4.PropStrength__Applicant_Acc__r.PropStrength__Nationality__c}
+                        disabled="true"> </lightning-input>
+                </div> 
+            </template>           
+        </div>
+
+        <div class="slds-grid slds-wrap slds-p-around--medium">
+            <div class="slds-col slds-size_12-of-12 slds-p-around_medium">
+                <h3 class="slds-section-title--divider">Buyer Information <lightning-icon icon-name="utility:adduser" alternative-text="Approved" title="Approved" onclick={addBuyer} size="x-small" ></lightning-icon> </h3>
+            </div>
+            <template for:each={buyerInformation} for:item="bI" for:index="Bindex">
+                <div key={bI} class="slds-col slds-size_12-of-12 slds-p-around_medium">
+                    <h3 class="slds-section-title--divider">{bI.buyerNum} Buyer - <lightning-icon icon-name="utility:delete" alternative-text="Approved" title="Approved" onclick={removedBuyer} data-bindex={Bindex} size="x-small" ></lightning-icon> </h3>
+                </div>
+                <div key={bI} class="slds-col slds-size_2-of-12 slds-p-horizontal_medium">
+                    <lightning-combobox name="Salutation" field-name='Salutation' class="validate" label="Salutation" value={bI.Salutation} placeholder="Select Salutation" data-bindex={Bindex} data-fieldname="Salutation" options={salutationOptions} onchange={handlePicklistFieldChange} required="true"></lightning-combobox>
+                </div>
+                <div key={bI} class="slds-col slds-size_4-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="First name" field-name='First_name' onchange={handleFieldChange} class="validate" data-bindex={Bindex} data-fieldname="First_name" value={bI.First_name} required="true">
+                    </lightning-input>
+                </div>
+                <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Last name" field-name='Last_name' onchange={handleFieldChange} class="validate" data-bindex={Bindex} data-fieldname="Last_name" value={bI.Last_name} required="true">
+                    </lightning-input>
+                </div>
+                <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Email" field-name='Email' onchange={handleFieldChange} class="validate" data-bindex={Bindex} data-fieldname="Email" value={bI.Email} required="true" >
+                    </lightning-input>
+                </div>
+                <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Phone Number" field-name='Phone_Number' class="validate" onchange={handleFieldChange} data-bindex={Bindex} data-fieldname="Phone_Number" value={bI.Phone_Number} required="true" > </lightning-input>
+                </div>
+                <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-combobox name="Nationality" field-name='Nationality' class="validate" label="Nationality" value={bI.Nationality} placeholder="Select Nationality" data-bindex={Bindex} data-fieldname="Nationality" options={nationalityOptions} onchange={handlePicklistFieldChange} required="true"></lightning-combobox>
+                </div> 
+                
+                <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Passport Number" field-name='Passport_Number' class="validate" onchange={handleFieldChange} data-bindex={Bindex} data-fieldname="Passport_Number" value={bI.Passport_Number} required="true" > </lightning-input>
+                </div>
+                <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-combobox name="Buyer_Type" field-name='Buyer_Type' class="validate" label="Buyer Type" value={bI.Buyer_Type} placeholder="Select Buyer Type" data-bindex={Bindex} data-fieldname="Buyer_Type" options={buyerTypeOptions} onchange={handlePicklistFieldChange} required="true"></lightning-combobox>
+                </div>
+                <!-- <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Address" field-name='Address' onchange={handleFieldChange} data-bindex={Bindex} data-fieldname="Address" value={bI.Address} class="validate" required="true"> </lightning-input>
+                </div> buyerNum-->
+                <template if:true={bI.flag}>
+                    <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                        <lightning-input label="New Sale Value" field-name='New_Sale_Value' onchange={handleFieldChange} data-bindex={Bindex} data-fieldname="New_Sale_Value" value={bI.New_Sale_Value} class="validate" required="true"> </lightning-input>
+                    </div>
+                </template>
+                <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-combobox label="Residence Status" field-name='Residence_Status' class="validate" value={bI.Residence_Status} placeholder="Select Residence Status" data-bindex={Bindex} data-fieldname="Residence_Status" options={residencestatusOptions} onchange={handlePicklistFieldChange} required="true"  > </lightning-combobox>
+                </div>
+                <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Emirates Id" field-name='Emirates_ID' onchange={handleFieldChange} data-bindex={Bindex} data-fieldname="Emirates_Id" value={bI.Emirates_Id} class="validate"> </lightning-input>
+                </div>
+                <!-- <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Buyer1 Unit Share Transfer" field-name='Buyer1_Unit_Share_Transfer__c' onchange={handleFieldChange} data-bindex={Bindex} data-fieldname="Buyer1_Unit_Share_Transfer__c" value={bI.Buyer1_Unit_Share_Transfer__c} class="validate" required="true"> </lightning-input>
+                </div> -->
+                
+                <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Street" field-name='Street' class="validate" placeholder="Enter Street" onchange={handleFieldChange} data-bindex={Bindex} data-fieldname="Street" value={bI.Street}  required="true"> </lightning-input>
+                </div>
+                <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="State" field-name='State' class="validate" placeholder="Enter State" onchange={handleFieldChange} data-bindex={Bindex} data-fieldname="State" value={bI.State}  required="true"> </lightning-input>
+                </div>
+                <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="City" field-name='City' class="validate" placeholder="Enter City" onchange={handleFieldChange} data-bindex={Bindex} data-fieldname="City" value={bI.City}  required="true"> </lightning-input>
+                </div>
+                <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="Country" field-name='Country' class="validate" placeholder="Enter Country" onchange={handleFieldChange} data-bindex={Bindex} data-fieldname="Country" value={bI.Country}  required="true"> </lightning-input>
+                </div>
+                <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                    <lightning-input label="PostalCode" field-name='PostalCode' class="validate" placeholder="Enter PostalCode" onchange={handleFieldChange} data-bindex={Bindex} data-fieldname="PostalCode" value={bI.PostalCode}  required="true"> </lightning-input>
+                </div> 
+                
+                    <div key={bI} class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                        <lightning-input label="Unit Share Transfer" field-name='Buyer1_Unit_Share_Transfer' class="validate" placeholder="Enter Unit Share" onchange={handleFieldChange} data-bindex={Bindex} data-fieldname="Buyer1_Unit_Share_Transfer" value={bI.Buyer1_Unit_Share_Transfer}  required="true"> </lightning-input>
+                    </div>
+            </template>
+        </div>
+    </template>
+    <template if:true={resindidual}>
+        <div class="slds-grid slds-wrap slds-p-around--medium ">
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="passportcopy" type="file" label="Passport copy" onchange={passportcopyupload} required>
+        </lightning-input>
+        
+            <p>{passportscopy}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="visacopyfile" type="file" label="Visa Copy" onchange={visacopyUploaded} required>
+        </lightning-input>
+        
+            <p>{visacopyfile}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="emiratesIdcopy" type="file" label="Emirates ID copy" onchange={emiratescopyUploaded} required>
+        </lightning-input>
+        
+            <p>{emiratesIdcopy}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="contractFMOU" type="file" label="Contract F (MOU)" onchange={contractfloaded} required>
+        </lightning-input>
+        
+            <p>{contractFMOU}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="titledeed_oqood" type="file" label="Title deed / Oqood" onchange={handleFileUploaded}>
+        </lightning-input>
+        
+            <p>{titledeed_oqood}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="poadetails" type="file" label="POA details (If applicable)" onchange={handleFileUploaded}>
+        </lightning-input>
+        
+            <p>{poadetails}</p>
+        
+        </div>
+    </div>
+    </template>
+
+        <template if:true={nonresindidual}>
+        <div class="slds-grid slds-wrap slds-p-around--medium ">
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="passportcopy1" type="file" label="Passport copy" onchange={passportcopyupload} required>
+        </lightning-input>
+        
+            <p>{passportcopy1}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="nationalcopy" type="file"
+                         label="National ID copy"
+                         onchange={nationalcopyUploaded}
+                         required>
+        </lightning-input>
+        
+            <p>{nationalcopy}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="contractFMOU1" type="file"
+                         label="Contract F (MOU)"
+                         onchange={contractfloaded}
+                         required>
+        </lightning-input>
+        
+            <p>{contractFMOU1}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="titledeed_oqood1" type="file"
+                         label="Title deed / Oqood"
+                         onchange={handleFileUploaded}>
+        </lightning-input>
+        
+            <p>{titledeed_oqood1}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="poadetails1" type="file" label="POA details (If applicable)" onchange={handleFileUploaded}>
+        </lightning-input>
+        
+            <p>{poadetails1}</p>
+        
+        </div>
+
+        </div>
+    </template> 
+
+    <template if:true={companytyperesident}>
+        <div class="slds-grid slds-wrap slds-p-around--medium ">
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input name="emiratescopy1" type="file" label="Emirates ID copy" onchange={emiratescopyUploaded} required>
+                </lightning-input>
+                
+                    <p>{emiratescopy1}</p>
+                
+            </div>
+        </div>
+    </template>  
+
+    <template if:true={companytype}>
+        <div class="slds-grid slds-wrap slds-p-around--medium ">
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="tradelicencecopy1" type="file" label="Trade License copy or Certificate of Incorporation" onchange={tradelicenceUploaded} required>
+        </lightning-input>
+        
+            <p>{tradelicencecopy1}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="memorandumcopy" type="file" label="Memorandum and Articles of Association" onchange={handleFileUploaded}>
+        </lightning-input>
+        
+            <p>{memorandumcopy}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="goodstandingcopy" type="file"  label="Certificate of Good Standing" onchange={handleFileUploaded}>
+        </lightning-input>
+        
+            <p>{goodstandingcopy}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="incumbencycopy" type="file" label="Certificate of Incumbency" onchange={handleFileUploaded}>
+        </lightning-input>
+        
+            <p>{incumbencycopy}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="authorizedsignatorycopy" type="file" label="Passport copy of Authorized signatory" onchange={passportcopyupload} required>
+        </lightning-input>
+        
+            <p>{authorizedsignatorycopy}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="contractFMOU2" type="file" label="Contract F (MOU)" onchange={contractfloaded} required>
+        </lightning-input>
+        
+            <p>{contractFMOU2}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="titledeed_oqood2" type="file" label="Title deed / Oqood" onchange={handleFileUploaded}>
+        </lightning-input>
+        
+            <p>{titledeed_oqood2}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="poadetals2" type="file" label="POA details (If applicable)" onchange={handleFileUploaded}>
+        </lightning-input>
+        
+            <p>{poadetals2}</p>
+        
+        </div>
+
+        
+        </div>
+    </template>  
+
+    <div class="slds-grid slds-wrap slds-p-around--medium ">
+        <lightning-input name="otherdocumentscopy" type="file" label="Other Documents" onchange={handleFileUploaded}>
+        </lightning-input>
+    
+            <p>{otherdocumentscopy}</p>
+    
+    </div>
+    <template if:true={resaletype}>
+    <div class="slds-grid slds-wrap slds-p-around--medium ">
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="mortagagecopy" type="file" label="Mortgage contract" onchange={mortgageUploaded} required>
+        </lightning-input>
+        
+            <p>{mortagagecopy}</p>
+        
+        </div>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+        <lightning-input name="managerschequecopy" type="file" label="Manager’s cheque copy" onchange={chequeUploaded} required>
+        </lightning-input>
+        
+            <p>{managerschequecopy}</p>
+        
+        </div> 
+    </div>
+    </template>
+   <!-- <template if:true={filesData}>
+    <div>
+        <template for:each={filesData} for:item="imgName" for:index="index">
+            {imgName.fileName}
+            <span key={imgName.fileName} data-id={index} onclick={removeFile} >x</span> &nbsp;
+        </template>
+    </div>
+    </template> -->
+    <div class="slds-grid slds-wrap slds-p-around--medium">
+        <div  class="slds-col slds-size_12-of-12 slds-p-horizontal_medium">
+            <lightning-button class="slds-m-top_small" type="button" variant="brand" label="Initiate Resale" onclick={submitForm} ></lightning-button>
+        </div>
+    </div>
+</template>
+</template>

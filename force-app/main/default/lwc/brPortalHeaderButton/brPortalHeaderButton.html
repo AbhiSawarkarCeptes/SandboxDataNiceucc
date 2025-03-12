@@ -1,0 +1,108 @@
+<template>
+	<template if:true={show_Spinner}>
+		<div class="exampleHolder">
+			<lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+		</div>
+	</template>
+	<div class="top-btn-container">
+		<img src={sobhaRealityImageUrl} alt="Sobha Reality" class="sobha-reality-image">
+		<div>
+			<div class="enquiry">
+				<button class="btn btn-request modal-toggle" onclick={toggleForm} disabled={disableGeneralEnquiry}>
+					General Enquiry
+				</button>
+			</div>
+			<div class="logout slds-m-left_medium">
+				<button class="btn-secondary btn-logout" style={logout_icon} onclick={logoutCommunity}>
+					Logout
+				</button>
+			</div>
+		</div>
+	</div>
+	<template if:true={isEnquiryFormVisible}>
+		<div class={thankYouMessageClass} if:true={showThankYouMessage}>
+			Thank you for submitting an Enquiry!
+		</div>
+		<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+			<div class="slds-modal__container">
+				<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+					<div class="customHeaderSection">
+                        <h2>New Enquiry</h2>
+                        <div class="customCloseIcon" onclick={hideModalBox}>X</div>
+                    </div>
+					<div class="customContentSection">
+						<div class="modal-form-content">
+							<div class="row">
+								<div class="col-4 agent-form">
+									<lightning-input class="no-border" label="Contact Number" name="phone" placeholder="Enter phone number" type="tel" value={phone} onchange={handleInputChange} required>
+									</lightning-input>
+									<lightning-input class="no-border" label="Email ID" type="email" name="email" placeholder="name@example.com" value={email} onchange={handleInputChange} required>
+									</lightning-input>
+									<lightning-input class="no-border" label="Subject" type="text" name="subject" placeholder="Description" value={subject} onchange={handleInputChange} required>
+									</lightning-input>
+									<lightning-textarea class="no-border" label="Query" name="Remarks" value={Remarks} onchange={handleInputChange} required></lightning-textarea>
+									<button class="btn" onclick={handleSubmit}>Submit Enquiry</button>
+								</div>
+								<div class="col-8 tbl-general-enquiry">
+									<table>
+										<thead>
+											<tr>
+												<th class="grey-text slds-truncate" title="Enquiry No.">Enquiry No.</th>
+												<th class="grey-text slds-truncate" title="Subject">Subject</th>
+												<th class="grey-text slds-truncate" title="Email ID">Email ID</th>
+												<th class="grey-text slds-truncate" title="Created">Created</th>
+												<th class="grey-text slds-truncate" title="Closure">Closure</th>
+												<th class="grey-text slds-truncate" title="Status">Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<template for:each={paginatedCaseDetails} for:item="caseDetailsPage">
+												<tr key={caseDetailsPage.Id}>
+													<td class="slds-truncate" title={caseDetailsPage.Name}>
+														<b>
+															{caseDetailsPage.srRecord.Name}
+														</b>
+													</td>
+													<td class="slds-truncate" title={caseDetailsPage.srRecord.PropStrength__Subject__c}>
+														{caseDetailsPage.srRecord.PropStrength__Subject__c}
+													</td>
+													<td class="slds-truncate" title={caseDetailsPage.srRecord.PropStrength__Email_Address__c}>
+														{caseDetailsPage.srRecord.PropStrength__Email_Address__c}
+													</td>
+													<td class="slds-truncate" title={caseDetailsPage.createDate}>
+														{caseDetailsPage.createDate}
+													</td>
+													<td class="slds-truncate" title={caseDetailsPage.closeDate}>
+														{caseDetailsPage.closeDate}
+													</td>
+													<!-- If status completed change the class to 'approved' -->
+													<!-- If New change class to 'new' -->
+													<!-- If Inprogress change class to 'pending' -->
+													<td class="slds-truncate" title={caseDetailsPage.srRecord.PropStrength__Status__c}>
+														<span class={caseDetailsPage.className}>
+															{caseDetailsPage.srRecord.PropStrength__Status__c}
+														</span>
+													</td>
+												</tr>
+											</template>
+										</tbody>
+									</table>
+									<div class="slds-grid slds-align_absolute-center navigator">
+										<lightning-button-icon icon-name="utility:chevronleft" onclick={previousPage} disabled={isFirstPage}></lightning-button-icon>
+										<span class="pageNo">{currentPage} of {totalPages}</span>
+										<lightning-button-icon icon-name="utility:chevronright" onclick={nextPage} disabled={isLastPage}></lightning-button-icon>
+									</div>
+								</div>
+								<div class="footerText">
+									To reach out for any other queries, please write to
+									<a>channeloperations@sobharealty.com</a><!-- href="mailto:agents@sobharealty.com" -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+	</template>
+</template>

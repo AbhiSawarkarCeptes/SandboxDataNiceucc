@@ -1,0 +1,26 @@
+.ulContainer { 
+    border: 0.05rem solid black;
+    text-indent: 0.25rem;
+    border-radius: 0.2rem;
+    line-height: 2rem;
+    max-height: 7rem;
+    overflow-y: auto;
+    position: absolute;
+    width: -webkit-fill-available;
+    z-index: 100 !important;
+    background: white;
+    margin-right: 3rem;
+}
+.liBox:hover {
+    background-color: azure;
+    cursor: pointer;
+}
+.exampleHolder{
+    position: fixed  !important;
+    display: inline-block  !important;
+    height: 100vh  !important;
+    width: 100vw  !important;
+    z-index: 1000 !important;
+    margin-top: -7vh  !important;
+    margin-left: -2vw  !important;
+}

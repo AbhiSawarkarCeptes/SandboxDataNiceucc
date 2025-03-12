@@ -1,0 +1,97 @@
+<template>
+	<div class="spinner">
+		<template if:true={showSpinner}>
+			<lightning-spinner alternative-text="Loading" variant="brand" size="large">
+			</lightning-spinner>
+		</template>
+	</div>
+	<div class="slds-card slds-grid slds-wrap">
+		<div class="slds-col slds-size_1-of-1 slds-p-around_x-small">
+			<h1 slot="title"><b>Add Customer Detail</b></h1>
+		</div>
+		<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+			<div onkeyup={handleSearchUnitNumber}>
+				<lightning-input name="Enter Unit Number" label="Search Unit Number" type="search"></lightning-input>
+			</div>
+
+		</div>
+		<div class="slds-col slds-size_1-of-2 " style="padding-top:10px;padding-left:9px">
+			<p>Add 2nd,3rd,4th Applicant</p>
+			<lightning-input type="checkbox" label="Add 2nd,3rd,4th Applicant" variant="label-hidden"
+				onchange={onApplicantChange}> </lightning-input>
+		</div>
+		<template if:true={checkUnitAvailableorNot}>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+				<lightning-input type="text" label="Applicant Name" required="true" onchange={onNameChange}>
+				</lightning-input>
+			</div>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+				<lightning-input type="text" label="Nationality" required="true" onchange={onNationalityChange}>
+				</lightning-input>
+			</div>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+				<lightning-combobox name="Type Of Applicant" label="Type Of Applicant" value={value}
+					onchange={handleChangeApplicant} options={applicantOptions}>
+				</lightning-combobox>
+			</div>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+				<lightning-input type="text" label="Mailing City" onchange={onMailingCityChange}>
+				</lightning-input>
+			</div>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+				<lightning-input type="text" label="Mailing State" onchange={onMailingStateChange}>
+				</lightning-input>
+			</div>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+				<lightning-input type="text" label="Mailing Country" onchange={onMailingCountryChange}>
+				</lightning-input>
+			</div>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small"></div>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+				<lightning-input type="text" label="City" onchange={onCityChange}></lightning-input>
+			</div>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+				<lightning-input type="text" label="State" onchange={onStateChange}></lightning-input>
+			</div>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+				<lightning-input type="text" label="Country" onchange={onCountryChange}>
+				</lightning-input>
+			</div>
+            <div class="slds-col slds-size_1-of-2 slds-p-around_x-small"></div>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+				<lightning-input type="text" label="Address" required="true" onchange={onAddressChange}>
+				</lightning-input>
+			</div>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+				<lightning-input type="email" label="Email" required="true" onchange={onEmailChange}></lightning-input>
+
+			</div>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+				<lightning-input type="text" label="Phone Number" required="true" onchange={onNumberhange}>
+				</lightning-input>
+			</div>
+			 <div class="slds-col slds-size_1-of-2 slds-p-around_x-small"></div>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+				<lightning-input type="text" label="Passport Number" onchange={onPassportNumberChange}>
+				</lightning-input>
+
+			</div>
+			<template if:true={checkPassportValueIsFill}>
+				<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+					<lightning-input type="date" name="Passport expire date" label="Passport expire date" onchange={onPassportexpireDateChange}>
+					</lightning-input>
+				</div>
+			</template>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+				<lightning-input type="text" label="Emirates ID Details" onchange={onEmiratesChange}></lightning-input>
+
+			</div>
+			<div class="slds-col slds-size_1-of-2 slds-p-around_x-small"></div>
+			<div class="slds-col slds-size_1-of-1 slds-p-around_x-small" style="  text-align: center;">
+				<lightning-button variant="brand" label="Save" title="Save" onclick={handleClickSaveData}
+					class="slds-m-left_x-small"></lightning-button>
+
+			</div>
+		</template>
+	</div>
+</template>

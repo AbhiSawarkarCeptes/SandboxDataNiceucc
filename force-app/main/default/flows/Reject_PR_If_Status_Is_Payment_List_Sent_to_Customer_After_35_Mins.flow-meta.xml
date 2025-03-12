@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Reject PR If Status Is Payment List Sent to Customer After 35 Mins {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Reject PR If Status Is Payment List Sent to Customer After 35 Mins</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Reject_PR</name>
+        <label>Reject PR</label>
+        <locationX>314</locationX>
+        <locationY>276</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Payment Link sent to Customer</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Payment_Link_Sent_Date_and_Time__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>
+                <stringValue>Rejected by System</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Payment_link_sent_date_and_time</name>
+        <label>Update Payment link sent date and time</label>
+        <locationX>50</locationX>
+        <locationY>276</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Payment_Link_Sent_Date_and_Time__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Payment_Link_Sent_Date_and_Time__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Payment_link_sent_date_and_time</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Payment Link sent to Customer</stringValue>
+            </value>
+        </filters>
+        <object>Payment_Request__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>Cancel_Status</name>
+            <connector>
+                <targetReference>Reject_PR</targetReference>
+            </connector>
+            <label>Cancel Status</label>
+            <offsetNumber>35</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
+            <recordField>Payment_Link_Sent_Date_and_Time__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

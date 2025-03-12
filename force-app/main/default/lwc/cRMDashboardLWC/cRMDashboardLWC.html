@@ -1,0 +1,384 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+
+    <template if:true={openModal}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+            <!-- modal header start -->
+                <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hideModalBox}>
+                    <lightning-icon icon-name="utility:close"
+                        alternative-text="close"
+                        variant="inverse"
+                        size="small" ></lightning-icon>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Reason</h2>
+                </header>
+            
+                <!-- modal body start -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <lightning-textarea label="Reason" name="Reason" required=true onchange={handleReasonChange}> </lightning-textarea>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                <lightning-button label="Cancel" name="Cancel" onclick={hideModalBox}> </lightning-button>
+                <lightning-button label="Submit" class="slds-m-left_x-small" name="Submit" variant="brand" onclick={handleSubmitModal}> </lightning-button>
+                </footer>
+            
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    
+    <div style="background-color:white;min-height:100%;padding:20px">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_2-of-12" style="margin-top:-15px;font-size:12px;">
+                <template if:true={showSearch}>
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+                            <lightning-icon style="margin-top: 10px" size="x-small" class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" icon-name="utility:search"></lightning-icon>
+                            <lightning-input data-id="searchInput" style="height:33px;" type="text" placeholder="Unit / Booking / Customer" onchange={search}></lightning-input>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div class="slds-col slds-size_10-of-12" style="text-align:center;font-size: 12px;">
+                <lightning-radio-group 
+                    name="radioGroup"
+                    label=""
+                    onchange={handleTypeChange}
+                    options={options}
+                    value={value}
+                    type="button">
+                </lightning-radio-group>
+            </div>
+        </div>
+        <template if:true={showSection}>
+            
+            <div style="margin-top:20px; z-index: 2; position: relative;">
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-5">
+                        <lightning-combobox
+                            name="project"
+                            label="Project"
+                            placeholder="Select Project"
+                            options={projectoptions}
+                            onchange={handleProjectChange}>
+                        </lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_1-of-5">
+                        <lightning-combobox
+                            value={selectedTower}
+                            name="building"
+                            label="Building"
+                            placeholder="Select Building"
+                            options={toweroptions}
+                            onchange={handleTowerChange}>
+                        </lightning-combobox>
+                    </div>
+                </div>
+            </div>
+                <div class="fixTableHead">
+                    <template if:true={isDashboard1}>
+                            <c-custom-data-table
+                            data={bookingData}
+                            columns={columns1}
+                            key-field="bookingId"
+                            onrowaction={handleRowAction}
+                            onsave={handleSave}
+                            draft-values={draftValues}
+                            onpicklistchanged={picklistChanged}
+                            hide-checkbox-column
+
+                        >
+                        </c-custom-data-table>
+                    </template>
+                    
+                    <template if:true={isDashboard2}>
+                        <c-custom-data-table
+                            data={bookingData}
+                            columns={columns2}
+                            key-field="bookingId"
+                            onrowaction={handleRowAction}
+                            onsave={handleSave}
+                            hide-checkbox-column
+                        >
+                        </c-custom-data-table>
+                    </template>
+
+                    <template if:true={isDashboard3}>
+                        <c-custom-data-table
+                            data={bookingData}
+                            columns={columns3}
+                            key-field="bookingId"
+                            onrowaction={handleRowAction}
+                            hide-checkbox-column
+                            onsave={handleSave}
+                            draft-values={draftValues}
+                            onpicklistchanged={picklistChanged}
+                        >
+                        </c-custom-data-table>
+                    </template>
+                    <!--table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th class="" scope="col" style="width:4%;">
+                                    <div style="padding-top:5px;padding-bottom:5px" class="slds-truncate" title="Unit Number">Unit Number</div>
+                                </th>
+                                <th class="" scope="col" style="width:4%">
+                                    <div class="slds-truncate" title="Booking Id">Booking Id</div>
+                                </th>
+                                <th class="" style="width:17%">
+                                    <div class="slds-truncate" title="Customer Name">Customer Name</div>
+                                </th>
+                                <th class="" scope="col" style="width:6%">
+                                    <div class="slds-truncate" title="Sale Value">Sale Value</div>
+                                </th>
+                                <template if:true={isDue}>
+                                    <th class="" scope="col" style="width:6%">
+                                        <div class="slds-truncate" title="Demand Raised">Collected(Excluding any other charges)                                            
+                                        </div>
+                                    </th>
+                                </template>
+                                <th class="slds-cell-wrap" scope="col" style="width:12%">
+                                    <div class="slds-line-clamp" title="Collected(Excluding any other charges)">Collected Amount (As per the salesforce Collection Report)</div>
+                                </th>
+                                <th class="slds-cell-wrap" scope="col" style="width:12%">
+                                    <div class="slds-line-clamp" title="Collected %">Collected %</div>
+                                </th>
+                                
+                                <th class="slds-cell-wrap" scope="col" style="width:12%">
+                                    <div class="slds-line-clamp" title="Due Amount(Excluding any other charges)">Due Amount(Excluding any other charges) </div>
+                                </th>
+                                
+                                <template if:true={isGrossAll}>
+                                    <th class="" scope="col" style="width:6%">
+                                        <div class="slds-truncate" title="Due %">Due %</div>
+                                    </th>
+                                </template>
+                                <th class="" scope="col" style="width:2%">
+                                    <div class="slds-truncate" title="SPA Status">SPA Status</div>
+                                </th>
+                               
+                                <th class="" scope="col" style="width:2%">
+                                    <div class="slds-truncate" title="Audit Approved Date">Audit Approved Date</div>
+                                </th>
+                                
+                                
+                                    <th class="" scope="col" style="width:4%">
+                                        <div class="slds-truncate" title="Cancel the Process">Cancel the Process</div>
+                                    </th>
+                                
+                                <th class="" style="width:13%">
+                                    <div class="slds-truncate" title="Comments/Remarks">Comments/Remarks</div>
+                                </th>
+                                
+                                <th class="" style="width:2%">
+                                    <div class="slds-truncate" title="Allocation">Allocation</div>
+                                </th>
+                                
+                                <template if:true={isDashboard2}>
+                                    <th class="" style="width:16%">
+                                    <div class="slds-truncate" title="Action">Action</div>
+                                </th>
+                                </template>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="slds-line-height_reset" style="font-size: 14px;">
+                                <th class="" scope="col" style="width:4%;">
+                                    <div style="padding-top:5px;padding-bottom:5px" class="slds-truncate" title="Unit Number"><b>{totalUnits}</b></div>
+                                </th>
+                                <th class="" scope="col" style="width:4%">
+                                    <div class="slds-truncate" title="Booking Id"></div>
+                                </th>
+                                <th class="" style="width:17%">
+                                    <div class="slds-truncate" title="Customer Name"></div>
+                                </th>
+                                <th class="" scope="col" style="width:6%">
+                                    <div class="slds-truncate" title="Sale Value"><b>{totalSalValue}</b></div>
+                                </th>
+                                <template if:true={isDue}>
+                                    <th class="" scope="col" style="width:6%">
+                                        <div class="slds-truncate" title="Demand Raised"><b>{totalDemandRaised}</b></div>
+                                    </th>
+                                </template>
+                                <th class="slds-cell-wrap" scope="col" style="width:12%">
+                                    <div class="slds-line-clamp" title="Collected (Excluding any other charges) "><b>{totalCollectionAmount}</b></div>
+                                </th>
+                                <template if:true={isDue}>
+                                    <th class="" scope="col" style="width:6%">
+                                        <div class="slds-truncate" title="Overdue Amount"><b>{totalOverdueAmount}</b></div>
+                                    </th>
+                                </template>
+                                <template if:true={isGrossAll}>
+                                    <th class="" scope="col" style="width:6%">
+                                        <div class="slds-truncate" title="Overdue Amount"><b>{totalOverdueAmount}</b></div>
+                                    </th>
+                                </template>
+                                <template if:true={isAdvance}>
+                                    <th class="" scope="col" style="width:2%">
+                                        <div class="slds-truncate" title="Balance"><b>{totalBalance}</b></div>
+                                    </th>
+                                </template>
+                                <template if:true={isGrossAll}>
+                                    <th class="" scope="col" style="width:2%">
+                                        <div class="slds-truncate" title="SPA Status"><b></b></div>
+                                    </th>
+                                </template>
+                                
+                                    <th class="" scope="col" style="width:4%">
+                                        <div class="slds-truncate" title="Audit Approved Date"></div>
+                                    </th>
+                                
+                                
+                                <template if:true={isGrossAll}>
+                                    <th class="" scope="col" style="width:2%">
+                                        <div class="slds-truncate" title="Age"></div>
+                                    </th>
+                                </template>
+                                <th class="" style="width:2%">
+                                    <div class="slds-truncate" title="Comments/ Remarks"></div>
+                                </th>
+                                <th class="" style="width:2%">
+                                    <div class="slds-truncate" title="Allocation"></div>
+                                </th>
+                                <template if:true={isDashboard2}>
+                                    <th class="" style="width:16%">
+                                        <div class="slds-truncate" title="Action"></div>
+                                    </th>
+                                </template>
+                                
+                            </tr>
+                            <template for:each={bookingData} for:item="b">
+                                <tr key={b.bookingId} class="slds-hint-parent">
+                                    <th scope="row" style="width:4%">
+                                        <div class="slds-truncate">
+                                            <a class="anchor" href={b.unitId} target="_blank">{b.unitName}</a>
+                                        </div>
+                                    </th>
+                                    <td style="width:4%">
+                                        <div class="slds-truncate">
+                                            <a class="anchor" href={b.bookingId} target="_blank">{b.bookingName}</a>
+                                        </div>
+                                    </td>
+                                    <td style="width:17%" class="slds-cell-wrap" title={b.customerName}>
+                                        <div class="slds-line-clamp">{b.customerName}</div>
+                                    </td>
+                                    
+                                    <td style="width:6%">
+                                        <div class="slds-truncate">
+                                            {b.saleValue}
+                                        </div>
+                                    </td>
+                                    
+                                    <td style="width:12%">
+                                        <div class="slds-truncate">
+                                            {b.collected}
+                                        </div>
+                                    </td>
+                                    
+                                    <td style="width:6%">
+                                        <div class="slds-truncate">
+                                            {b.collectedpercentage}
+                                        </div>
+                                    </td>
+                                    
+                                    <template if:true={isGrossAll}>
+                                        <td style="width:6%">
+                                            <div class="slds-truncate">
+                                                {b.due}
+                                            </div>
+                                        </td>
+                                    </template>
+                                    <td style="width:6%">
+                                        <div class="slds-truncate">
+                                            {b.duepercentage}
+                                        </div>
+                                    </td>
+                                    
+                                    <td style="width:2%">
+                                        <div class="slds-truncate">
+                                            {b.spaexecuted}
+                                        </div>
+                                    </td>
+                                    <td style="width:2%">
+                                        <div class="slds-truncate">
+                                            {b.auditapproveddate}
+                                        </div>
+                                    </td>
+                                    
+                                    <td style="width:16%">
+                                        <lightning-button-stateful
+                                            label-when-off="Cancel the Process"
+                                            label-when-on="Cancel the Process"
+                                            label-when-hover="Cancel the Process"
+                                            selected={isSelected}
+                                            onclick={handleClick}>
+                                        </lightning-button-stateful>
+                                    </td>
+                                    <td style="width:11%" class="slds-cell-wrap" title={b.commentsHistory}>
+                                        <lightning-input type="text"></lightning-input>
+                                    </td>
+                                    
+                                    <td style="width:2%" class="slds-cell-wrap" title="Bank Email">
+                                        <lightning-combobox
+                                            id={b.bookingId}
+                                            value={b.cancellationAllocation}
+                                            placeholder="Select Allocation"
+                                            options={optionsdropdown}
+                                            onchange={handleAllocationChange}></lightning-combobox>
+                                    </td>
+                                    <template if:true={isDashboard2}>
+                                        <td style="width:16%" class="slds-cell-wrap" title="Bank Email">
+                                        <span>
+                                            <lightning-button variant="Neutral" label="Final Notice Draft" title="Final Notice Draft" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+                                       </span> 
+                                       <span>
+                                        <lightning-button variant="Neutral" label="Send Final Notice" title="Send Final Notice" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+                                    </span> </td>
+                                    </template>
+                                    
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table-->
+                </div>
+        </template>
+    </div>
+    <template if:true={isCancelTheProcessOpen}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-02" aria-modal="true" aria-describedby="modal-content-id-2" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeCancelTheProcessPopup}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" ></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-02" class="slds-text-heading_medium slds-hyphenate">* Provide Cancellation comments</h2>
+                </header>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+                    
+                    <div class="slds-p-around_medium lgc-bg">
+                        <lightning-input class='cancelcomments' type="text" onchange={handleCancelCommentsChange} label="Provide Cancellation Comments" placeholder="why is it getting cancelled..." required></lightning-input>
+                    </div>
+                </div>
+                <!-- Modal/Popup Box LWC footer starts here -->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={closeCancelTheProcessPopup} title="Cancel">Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick={handleCancellationAfterComments} title="OK">Proceed Cancellation</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

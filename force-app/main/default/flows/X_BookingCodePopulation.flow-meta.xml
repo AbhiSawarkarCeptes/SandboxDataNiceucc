@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <decisions>
+        <name>Verify_relatedValues</name>
+        <label>Verify relatedValues</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Outcome_1_of_Verify_relatedValues</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Unit__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Opportunity__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Opportunity__r.AccountId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Opportunity__r.Account.Code__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Records_1</targetReference>
+            </connector>
+            <label>Outcome 1 of Verify relatedValues</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>CodeValue</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Name} +&apos;-&apos;+{!$Record.Opportunity__r.Account.Code__c}+&apos;-&apos;+{!UnitCode}</expression>
+    </formulas>
+    <formulas>
+        <name>UnitCode</name>
+        <dataType>String</dataType>
+        <expression>IF(NOT(ISBLANK({!$Record.Unit__r.Xpedeon_Unit_Code__c})), {!$Record.Unit__r.Xpedeon_Unit_Code__c}, {!$Record.Unit__r.Unit_No__c})</expression>
+    </formulas>
+    <interviewLabel>X_BookingCodePopulation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>X_BookingCodePopulation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Records_1</name>
+        <label>Update Records 1</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>SF_Xp_Composite_Code__c</field>
+            <value>
+                <elementReference>CodeValue</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Verify_relatedValues</targetReference>
+        </connector>
+        <filterFormula>OR(AND({!$Record.SF_Xp_Composite_Code__c} == null,{!$Record.Unit__c} != null, {!$Record.Opportunity__c} != null),AND({!$Record.Unit__c} !=null,ISCHANGED({!$Record.Unit__c})),AND({!$Record.Opportunity__c} !=null,ISCHANGED({!$Record.Opportunity__c})))</filterFormula>
+        <object>Booking__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

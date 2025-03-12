@@ -1,0 +1,92 @@
+<template>
+    <!-- Dropdown for Broker Registration Selection -->
+    <lightning-card>
+        <div class="slds-m-horizontal_x-large">
+
+            <lightning-combobox label="Select Broker Registration" placeholder="Choose Broker" options={brokerOptions}
+                value={selectedBroker} onchange={handleBrokerChange}>
+            </lightning-combobox>
+            <br />
+            <div>
+
+                <!-- Action Buttons for Approve and Reject at the top -->
+                <button class="slds-button slds-button_success" onclick={approveOrRejectButtonClickHandler}
+                    data-action="Approved">Approve Selected</button>
+                <button class="slds-button slds-button_destructive" onclick={approveOrRejectButtonClickHandler}
+                    data-action="Rejected">Reject Selected</button>
+            </div>
+        </div>
+    </lightning-card>
+
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered"
+        aria-labelledby="element-with-table-label other-element-with-table-label">
+        <thead>
+            <tr class="slds-line-height_reset">
+                <!-- Checkbox Header for Selecting All -->
+                <th scope="col">
+                    <!-- <lightning-input type="checkbox" onchange={selectAllRows} class="checkbox-class"></lightning-input> -->
+                </th>
+                <!-- <th scope="col">
+                    <div class="slds-truncate" title="File Name">File Name</div>
+                </th> -->
+                <th scope="col">
+                    <div class="slds-truncate" title="File Type">File Type</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Broker Registration">Broker Name</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Date">Date</div>
+                </th>
+
+
+                <th scope="col">
+                    <div class="slds-truncate" title="View">Actions</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Comment">Comment</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <template if:true={dataLoaded}>
+                <template for:each={filteredValidatorData} for:item="item">
+                    <tr key={item.Id}>
+                        <!-- Checkbox for each row -->
+                        <td>
+                            <lightning-input type="checkbox" data-id={item.Id} class="checkbox-class"
+                                onchange={handleRowSelection}></lightning-input>
+                        </td>
+                        <!-- <th data-label="File Name" scope="row">
+                            <div class="slds-truncate" title="File Name">
+                                {item.File_name__c}
+                            </div>
+                        </th> -->
+                        <td data-label="File Type">
+                            <div class="slds-truncate" title="File Type">{item.File_type__c}</div>
+                        </td>
+                        <td data-label="Broker Registration">
+                            <div class="slds-truncate" title="Broker Registration">{item.brokerName}</div>
+                        </td>
+                        <td data-label="Date">
+                            <div class="slds-truncate" title="Date">{item.CreatedDate}</div>
+                        </td>
+
+
+                        <td data-label="Actions">
+                            <button class="slds-button slds-button_brand" onclick={viewButtonClickHandler}
+                                data-recid={item.Id}>View</button>
+                        </td>
+                        <td data-label="Comment">
+                            <lightning-input type="text" placeholder="Add a comment" class="text-input"
+                                data-id={item.Id} onchange={handleCommentChange}></lightning-input>
+                            <template if:true={item.errorMessage}>
+                                <div class="slds-text-color_error">{item.errorMessage}</div>
+                            </template>
+                        </td>
+                    </tr>
+                </template>
+            </template>
+        </tbody>
+    </table>
+</template>

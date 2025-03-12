@@ -1,0 +1,39 @@
+.renew-body {
+    max-width: 400px !important;
+}
+
+.content-padding {
+    padding: 50px 30px !important;
+}
+
+.normal-text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20.57px;
+    text-align: center;
+    color: #061D3C;
+    padding: 0px 20px;
+    margin: 10px 0px;
+}
+
+.bold-text {
+    padding: 0px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20.57px;
+    text-align: center;
+    color: #061D3C;
+    margin: 10px 0px;
+}
+
+div button {
+    width: 100%;
+    background: #1F55DE;
+    color: white;
+    font-size: 14px;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 15px;
+    margin-top: 30px;
+}

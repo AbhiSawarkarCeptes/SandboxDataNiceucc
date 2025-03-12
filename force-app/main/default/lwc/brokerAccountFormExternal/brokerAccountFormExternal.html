@@ -1,0 +1,80 @@
+<template>
+    <lightning-spinner alternative-text="Loading" size="large" if:true={showSpinner}></lightning-spinner>
+    <template if:true={showCmp}>
+        <!-- <c-broker-registration-rera 
+            if:true={showBrokerRera}
+            record={record} 
+            onsubmit={handleSubmit}
+        ></c-broker-registration-rera> -->
+
+        <c-broker-account-intnl-company 
+            if:true={showIntnlCompany}
+            record={record} 
+            onsubmit={handleSubmit}
+            today={today}
+            options={options}
+        ></c-broker-account-intnl-company>
+
+        <c-broker-account-intnl-individual 
+            if:true={showIntnlIndividual}
+            record={record} 
+            onsubmit={handleSubmit}
+            today={today}
+            options={options}
+        ></c-broker-account-intnl-individual>
+    </template>
+    <template if:true={showSuccess}>
+        <div class="card">
+         
+            <p style="text-align: end; font-weight: bold;" class="slds-p-right_large slds-p-top--large">Date: <lightning-formatted-date-time value={today}></lightning-formatted-date-time></p>
+            <h1 class="slds-text-heading_medium slds-text-align_center slds-m-around_large">
+               Registration Successful!!
+            </h1>
+            
+   
+    <div class="slds-grid slds-wrap slds-align_absolute-center" >
+        <lightning-layout multiple-rows="true">
+            <lightning-layout-item size="6" class="slds-m-top--medium">
+                Name
+            </lightning-layout-item>
+            <lightning-layout-item size="6" class="slds-m-top--medium">
+                <lightning-formatted-text variant="label-inline" label="Name" value={recordForUI.Name} >{recordForUI.Name} </lightning-formatted-text>
+
+            </lightning-layout-item>
+            <template if:true={recordForUI.RegistrationNumber}>
+                <lightning-layout-item size="6" class="slds-m-top--medium">
+                    Registration Number
+                </lightning-layout-item>
+                <lightning-layout-item size="6" class="slds-m-top--medium">
+                    <lightning-formatted-text variant="label-inline" label="Registration Number" value={recordForUI.RegistrationNumber} >{recordForUI.RegistrationNumber} </lightning-formatted-text>
+                </lightning-layout-item>
+            </template>
+            <template if:true={recordForUI.BrokerCode}>
+                <lightning-layout-item size="6" class="slds-m-top--medium">
+                    Broker Code
+                </lightning-layout-item>
+                <lightning-layout-item size="6" class="slds-m-top--medium">
+                    <lightning-formatted-text variant="label-inline" label="Broker Code" value={recordForUI.BrokerCode} >{recordForUI.BrokerCode} </lightning-formatted-text>
+                </lightning-layout-item>
+            </template>
+            <lightning-layout-item size="6" class="slds-m-top--medium">
+                Broker Created Date
+            </lightning-layout-item>
+            <lightning-layout-item size="6" class="slds-m-top--medium">
+                <lightning-formatted-date-time variant="label-inline" label="Broker Created Date" value={recordForUI.BrokerCreatedDate} year="numeric" month="short" day="2-digit" hour="numeric" minute="2-digit"
+                                       >{recordForUI.BrokerCreatedDate}</lightning-formatted-date-time>
+
+            </lightning-layout-item>
+            <lightning-layout-item size="6" class="slds-m-top--medium">
+              &nbsp;
+            </lightning-layout-item>
+            <lightning-layout-item size="6" class="slds-m-top--medium">
+                &nbsp;
+            </lightning-layout-item>
+        </lightning-layout>
+       &nbsp;
+    </div>
+    </div>
+    </template>
+
+</template>

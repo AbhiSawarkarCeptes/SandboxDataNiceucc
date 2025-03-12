@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Sobha Elwood Bonus Bonanza Emailer to Brokers</description>
+        <name>Sobha_Elwood_Bonus_Bonanza_Emailer_to_Brokers</name>
+        <label>Sobha Elwood Bonus Bonanza Emailer to Brokers</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Client_Information__c.Email_Only_Template_for_Channel_Ops</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Client_Information__c.Email_Only_Template_for_Channel_Ops</nameSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <description>Sobha Elwood Bonus Bonanza Emailer to Brokers</description>
+    <environments>Default</environments>
+    <interviewLabel>Sobha Elwood Bonus Bonanza Emailer to Brokers {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Sobha Elwood Bonus Bonanza Emailer to Brokers</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Sobha_Elwood_Bonus_Bonanza_Emailer_to_Brokers</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Email_Sent__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Client_Information__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

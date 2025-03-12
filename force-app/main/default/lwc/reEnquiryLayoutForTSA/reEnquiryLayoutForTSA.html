@@ -1,0 +1,81 @@
+<template>
+    <ul class="slds-timeline">
+        <li>
+            
+            <template for:each={reEnquiryValues} for:item="enq" for:index="index">
+                <div key={enq.Id}>
+                    <div class="slds-timeline__item_expandable slds-timeline__item_task slds-is-open">
+                    <span class="slds-assistive-text">task</span>
+            <div class="slds-media">
+                <div class="slds-media__figure">
+                    <button class="slds-button slds-button_icon" aria-controls="task-item-expanded-69"  aria-expanded="true"> 
+                            <svg class="slds-button__icon slds-timeline__details-action-icon" aria-hidden="true">
+                            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                            </svg>
+                            <span class="slds-assistive-text">Toggle details for Re-Enquiry {index}</span>
+                    </button>
+                    <div class="slds-icon_container slds-icon-standard-task slds-timeline__icon" title="task">
+                        <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#task"></use>
+                        </svg>
+                      </div>
+                </div>
+
+                <div class="slds-media__body">
+                    <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                        <div class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space" >
+
+                            <h3 class="slds-truncate" title = "Re-Enquiry" >
+                                <a href="#">
+                                    <strong>Re-Enquiry {index}</strong>
+                                </a>
+                            </h3>
+                            <div class="slds-no-flex">
+                                <span class="slds-icon_container slds-icon-utility-rotate">
+                                    <svg class="slds-icon slds-icon_xx-small slds-icon-text-default slds-m-left_x-small"
+                                        aria-hidden="true">
+                                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#rotate"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <article
+                        class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium"
+                        id="task-item-expanded-65" aria-hidden="false">
+                        <ul class="slds-list_horizontal slds-wrap">
+                            <li class="slds-grid slds-grid_vertical slds-size_1-of-2 slds-p-bottom_small">
+                                
+                                <lightning-input type="text" label = "Budget" value={enq.Budget__c} read-only = true ></lightning-input>
+                                <lightning-input type="Date" label = "Re-Enquiry Created Date" value={enq.CreatedDate} read-only = true ></lightning-input>
+                                <lightning-input type="text" label = "Looking for" value={enq.Are_you_looking_for__c} read-only = true title = {enq.Are_you_looking_for__c}></lightning-input>            
+                                <lightning-input type="text" label = "UTM Source" value={enq.UTM_Source__c} read-only = true title ={enq.UTM_Source__c}></lightning-input>                              
+                                <lightning-input type="text" label = "UTM Campaign" value={enq.UTM_Campaign__c} read-only = true title = {enq.UTM_Campaign__c}></lightning-input>
+                                <lightning-input type="text" label = "UTM Medium" value={enq.UTM_Medium__c} read-only = true title ={enq.UTM_Medium__c}></lightning-input>
+                                <lightning-input type="text" label = "Web Source" value={enq.Lead_Lookup__r.Web_Source__c} read-only = true ></lightning-input>
+                                <lightning-input type="text" label = "Keyword" value={enq.Keyword__c} read-only = true ></lightning-input>
+                                <lightning-input type="text" label = "Placement" value={enq.Placement__c} read-only = true title ={enq.Placement__c} ></lightning-input>
+                                <lightning-input type="text" label = "UTM Content" value={enq.UTM_Content__c} read-only = true title ={enq.UTM_Content__c}></lightning-input>
+                            </li>
+                            <li class="slds-grid slds-grid_vertical slds-size_1-of-2 slds-p-bottom_small">
+                                <lightning-input type="text" label = "Lead Source" value={enq.Lead_Source__c} read-only = true></lightning-input>
+                                <lightning-input type="text" label = "Digital Source" value={enq.Digital_Source__c} read-only = true></lightning-input>
+                                <lightning-input type="text" label = "Goal" value={enq.Goal__c} read-only = true></lightning-input>
+                                <lightning-input type="text" label = "Campaign Name" value={enq.Lead_Lookup__r.Campaign_Name__c} title = {enq.Lead_Lookup__r.Campaign_Name__c} read-only = true></lightning-input>
+                                <lightning-input type="text" label = "Project Name" value={enq.Lead_Lookup__r.Project_Name__c} read-only = true title={enq.Lead_Lookup__r.Project_Name__c}></lightning-input>
+                                <lightning-input type="text" label = "Landing Page URL" value={enq.Landing_Page_URL__c} read-only = true title ={enq.Landing_Page_URL__c}></lightning-input>
+                                <lightning-input type="text" label = "Last Mile Conversion" value={enq.Last_Mile_Conversion__c} read-only = true title = {enq.Last_Mile_Conversion__c}></lightning-input>
+                                <lightning-input type="text" label = "GCLID" value={enq.GCLID__c} read-only = true></lightning-input>
+                                <lightning-input type="text" label = "Match Type" value={enq.Match_Type__c} read-only = true></lightning-input>
+                                <lightning-input type="text" label = "Ad Group" value={enq.Adgroup__c} read-only = true></lightning-input>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+            </div>
+            </div>
+            </template>
+        </li>
+    </ul>
+</template>

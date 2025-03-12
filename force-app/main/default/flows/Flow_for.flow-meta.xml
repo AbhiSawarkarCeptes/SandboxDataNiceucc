@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>NSA_Approveddd</name>
+        <label>NSA Approved</label>
+        <locationX>314</locationX>
+        <locationY>575</locationY>
+        <actionName>unit_hold_request__c.NewSale_Approved_to_SM</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>unit_hold_request__c.NewSale_Approved_to_SM</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>NSA_for_Approval</name>
+        <label>NSA for Approval</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <actionName>unit_hold_request__c.NewSale_Submitted_for_Approval</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>unit_hold_request__c.NewSale_Submitted_for_Approval</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>NSA_Rejecteddd</name>
+        <label>NSA Rejected</label>
+        <locationX>578</locationX>
+        <locationY>695</locationY>
+        <actionName>unit_hold_request__c.NewSale_rejected_to_SM</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>unit_hold_request__c.NewSale_rejected_to_SM</nameSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>NSA_Approved</name>
+        <label>NSA Approved</label>
+        <locationX>512</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>NSA_Rejected</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NSA_Approvedd</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Approval_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NSA_Approveddd</targetReference>
+            </connector>
+            <label>NSA Approved</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>NSA_Rejected</name>
+        <label>NSA Rejected</label>
+        <locationX>710</locationX>
+        <locationY>575</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NSA_Rejectedd</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Approval_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NSA_Rejecteddd</targetReference>
+            </connector>
+            <label>NSA Rejected</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>NSA_Submitted_for_approval</name>
+        <label>NSA Submitted for approval</label>
+        <locationX>281</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>NSA_Approved</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NSA_Submitted_for_approvall</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Approval_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NSA_for_Approval</targetReference>
+            </connector>
+            <label>NSA Submitted for approval</label>
+        </rules>
+    </decisions>
+    <description>v2 This flow is used to send email alerts to Sales Managers Once NSA is submitted and also once if Approved or Rejected.</description>
+    <environments>Default</environments>
+    <interviewLabel>Flow for {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Flow for New Sale Approval Email Notifications</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>155</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>NSA_Submitted_for_approval</targetReference>
+        </connector>
+        <object>unit_hold_request__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

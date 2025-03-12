@@ -1,0 +1,56 @@
+<template>
+  <div class="customeHeader">CSO Announcement Board</div>
+    <lightning-card title="" >
+       
+    <template for:each={data} for:item="row">
+    <div key={row.Id} class="slds-box slds-m-around_xx-small">
+    <article class="slds-card slds-m-around_xx-small" >
+        <div class="slds-card__header slds-grid">
+          <header class="slds-media slds-media_center slds-has-flexi-truncate">
+            <div class="slds-media__figure">
+              <span class="slds-icon_container" title="CSO announcement">
+                <lightning-icon icon-name="action:announcement" alternative-text="Announcement" ></lightning-icon>
+                <!-- <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                  <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#announcement"></use>
+                </svg> -->
+                <span class="slds-assistive-text">Announcement</span>
+              </span>
+            </div>
+            <div class="slds-media__body titleStyling">
+              <h1 class="slds-card__header-title">
+                
+                  <span class="blink_me" style={row.titleColor}> {row.Title__c}</span>
+               
+              </h1>
+            </div>
+            <div class="slds-no-flex datTxt">
+                {row.CreatedDate}
+              </div>
+          </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner innser">
+            <template if:true={row.showFullText}>
+                <lightning-formatted-rich-text value={row.Notification__c}></lightning-formatted-rich-text>
+                <button class="slds-button slds-button_reset slds-text-link" onclick={handleViewLessClick} data-id={row.Id}>View Less</button>
+            </template>
+            <!-- notification2line Truncated Text -->
+            <template if:false={row.showFullText}>
+                <lightning-formatted-rich-text value={row.notification2line}></lightning-formatted-rich-text>
+                <button class="slds-button slds-button_reset slds-text-link" onclick={handleViewMoreClick} data-id={row.Id}>View More</button>
+            </template>
+        </div>
+        <!-- <footer class="slds-card__footer">
+          <a class="slds-card__footer-action" href="#">click here
+            <span class="slds-assistive-text">Read more</span>
+          </a>
+        </footer> -->
+      </article>
+    </div>
+    </template>
+    <template if:true={hasMoreData}>
+        <div class="slds-align_absolute-center slds-m-top_large load-more">
+          <!-- <lightning-button label="Load More" onclick={handleLoadMore} class="" data-id="load-more"></lightning-button> -->
+        </div>
+    </template>
+</lightning-card>
+</template>

@@ -1,0 +1,41 @@
+<template>  
+
+    
+
+    <lightning-quick-action-panel header="Update Status">
+
+        <div if:true={showSpinner} class="slds-is-relative">
+            <lightning-spinner
+                alternative-text="Loading..." variant="brand">
+            </lightning-spinner>
+        </div>
+
+        <template if:true={isHeader}>
+            <div class="slds-align_absolute-center">Are you sure want to update the status?</div>
+        </template>
+        
+        <template if:true={isSuccess}>
+            <div class="slds-align_absolute-center slds-text-color_success">Status updated successfully</div>
+        </template>
+
+        <template if:true={isError}>
+            <div class="slds-align_absolute-center slds-text-color_destructive">Failed to updated the status. Please contact your system administrator.</div>
+        </template>
+
+        <div slot="footer">
+            <template if:true={isHeader}>
+                <lightning-button
+                variant="neutral"
+                label="Cancel"
+                onclick={closeModal}></lightning-button>
+            <lightning-button
+                variant="brand"
+                label="Update"
+                class="slds-m-left_x-small"
+                onclick={updateStatus}></lightning-button>
+            </template>
+            
+        </div>
+    </lightning-quick-action-panel>
+
+</template>

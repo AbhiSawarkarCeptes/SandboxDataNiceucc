@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Unit_Hold_Request_Rejected_by_SVP</name>
+        <label>Unit Hold Request Rejected by SVP</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <actionName>Unit_Hold__c.Unit_Hold_Request_Rejected_By_SVP</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Unit_Hold__c.Unit_Hold_Request_Rejected_By_SVP</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Unit_Hold_Request_Rejected_by_VP</name>
+        <label>Unit Hold Request Rejected by VP</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <actionName>Unit_Hold__c.Unit_Hold_Request_Rejected_By_VP</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Unit_Hold__c.Unit_Hold_Request_Rejected_By_VP</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Unit_HoldUnitHoldRequestRejectedbyCSO_Request_Rejected_by_CSO</name>
+        <label>Unit Hold Request Rejected by CSO</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <actionName>Unit_Hold__c.Unit_Hold_Request_Rejected_By_CSO</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Unit_Hold__c.Unit_Hold_Request_Rejected_By_CSO</nameSegment>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <name>check_if_rejected_by_whom</name>
+        <label>check if rejected by whom</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Unit_HoldUnitHoldRequestRejectedbyCSO_Request_Rejected_by_CSO</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Rejected by CSO</defaultConnectorLabel>
+        <rules>
+            <name>Rejected_by_Sales_VP</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Unit_Hold_Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected by VP</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Unit_Hold_Request_Rejected_by_VP</targetReference>
+            </connector>
+            <label>Rejected by Sales VP</label>
+        </rules>
+        <rules>
+            <name>Rejected_by_SVP</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Unit_Hold_Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected by SVP</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Unit_Hold_Request_Rejected_by_SVP</targetReference>
+            </connector>
+            <label>Rejected by SVP</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Send rejection emails on unit hold {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Send rejection emails on unit hold</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>check_if_rejected_by_whom</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4)</filterLogic>
+        <filters>
+            <field>Rejection_Reason__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Unit_Hold_Approval_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Rejected by VP</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Unit_Hold_Approval_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Rejected by CSO</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Unit_Hold_Approval_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Rejected by SVP</stringValue>
+            </value>
+        </filters>
+        <object>Unit_Hold__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <description>Applicant Status</description>
+        <name>Applicant_Status</name>
+        <label>Applicant Status Check</label>
+        <locationX>811</locationX>
+        <locationY>116</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Applicant_Status_Sent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sent</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_booking_Status1</targetReference>
+            </connector>
+            <label>Applicant Status Sent</label>
+        </rules>
+        <rules>
+            <name>Applicant_Status_Completed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Last_Applicant__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Booking_Status2_and_Sent_to_Audit</targetReference>
+            </connector>
+            <label>Applicant Status Completed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Audit_Team_Updates</name>
+        <label>Audit Team Check</label>
+        <locationX>814</locationX>
+        <locationY>391</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Audit_Team_Rejected</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Declined</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Declined</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Booking_Status3</targetReference>
+            </connector>
+            <label>Audit Team Rejected</label>
+        </rules>
+        <rules>
+            <name>Audit_team_Completed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_SPA_Status</targetReference>
+            </connector>
+            <label>Audit team Completed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Update booking Record Conditionally</description>
+        <name>Update_booking_Record_Conditionally</name>
+        <label>Update booking Record Conditionally</label>
+        <locationX>538</locationX>
+        <locationY>202</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SPA_Recipient_Audit</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Envelope_Recipient_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Audit Team</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Audit_Team_Updates</targetReference>
+            </connector>
+            <label>SPA Recipient Audit</label>
+        </rules>
+        <rules>
+            <name>SPA_Recipient_Document_Controller</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Envelope_Recipient_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Document Controller</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_SPA_Executed_Date</targetReference>
+            </connector>
+            <label>SPA Recipient Document Controller</label>
+        </rules>
+        <rules>
+            <name>SPA_Recipient_is_Applicant</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Envelope_Recipient_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Applicant</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Applicant_Status</targetReference>
+            </connector>
+            <label>SPA Recipient is Applicant</label>
+        </rules>
+        <rules>
+            <name>SPA_Recipient_CRM_Seller</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Envelope_Recipient_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seller Representative</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_SPA_Status4</targetReference>
+            </connector>
+            <label>SPA Recipient CRM Seller</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Booking Addendum Status to be automated {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Booking Addendum Status to be automated</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Update booking Status1</description>
+        <name>Update_booking_Status1</name>
+        <label>SPA Sent through Docusign</label>
+        <locationX>1128</locationX>
+        <locationY>60</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.DocuSignEnvelope__r.Booking__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>SPA_Addendum_Sent_Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SPA_Addendum_Status__c</field>
+            <value>
+                <stringValue>Addendum Sent through docusign</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Booking__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Booking Status2</description>
+        <name>Update_Booking_Status2_and_Sent_to_Audit</name>
+        <label>SPA Received and sent to Audit for Review</label>
+        <locationX>1134</locationX>
+        <locationY>221</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.DocuSignEnvelope__r.Booking__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>SPA_Addendum_Sent_to_Audit_Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SPA_Addendum_Status__c</field>
+            <value>
+                <stringValue>Addendum signed and sent to audit review</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Booking__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Booking Status3</description>
+        <name>Update_Booking_Status3</name>
+        <label>Audit Rejected</label>
+        <locationX>1143</locationX>
+        <locationY>508</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.DocuSignEnvelope__r.Booking__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>SPA_Addendum_Status__c</field>
+            <value>
+                <stringValue>Addendum audit review rejected</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Booking__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>SPA Executed Date</description>
+        <name>Update_SPA_Executed_Date</name>
+        <label>Executed Copy Sent through Docusign</label>
+        <locationX>378</locationX>
+        <locationY>622</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.DocuSignEnvelope__r.Booking__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>SPA_Addendum_Executed_Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SPA_Addendum_Status__c</field>
+            <value>
+                <stringValue>Addendum executed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Booking__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_SPA_Status</name>
+        <label>Audit Review completed</label>
+        <locationX>1142</locationX>
+        <locationY>366</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.DocuSignEnvelope__r.Booking__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>SPA_Addendum_Status__c</field>
+            <value>
+                <stringValue>Addendum audit review completed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Booking__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update SPA Status4</description>
+        <name>Update_SPA_Status4</name>
+        <label>SPA Signed by Seller</label>
+        <locationX>695</locationX>
+        <locationY>634</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.DocuSignEnvelope__r.Booking__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>SPA_Addendum_Status__c</field>
+            <value>
+                <stringValue>Addendum – seller signature completed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Booking__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>111</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Update_booking_Record_Conditionally</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Envelope_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SPA Addendum</stringValue>
+            </value>
+        </filters>
+        <object>Docusign_Recipient_Status_Sobha__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

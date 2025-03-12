@@ -1,0 +1,141 @@
+<template >
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <template if:true={openBulkDataModal}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse">
+                <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+                    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+                </svg>
+                <span class="slds-assistive-text">Cancel and close</span>
+                </button>
+                <div class="slds-modal__header">
+                <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Bulk Payout</h1>
+                </div>
+                <div class="slds-modal__content slds-p-vertical_medium slds-p-horizontal_xx-large" id="modal-content-id-1">
+                    <div class="slds-grid slds-grid_vertical">
+                        <div class="slds-col">
+                            <lightning-input required="true" type="any" label="Paid Amount" onchange={handlePaidAmount} value={paidAmount}></lightning-input>
+                        </div>
+                        <div class="slds-col">
+                            <lightning-input required="true" type="date" name="Date" label="Date" onchange={handleDateFld} value={dateFld}></lightning-input>
+                        </div>
+                        <div class="slds-col">
+                            <lightning-input required="true" type="number" label="Instrument Number" onchange={handleInstNumber} value={instrumentNumber}></lightning-input>
+                        </div>
+                        <div class="slds-col">
+                            <lightning-combobox required="true" name="PaymentMode" label="Payment Mode" value={selectedPaymentMode} placeholder="Select Payment Mode" options={pickListOptions} onchange={handlePaymentModeChange} ></lightning-combobox>
+                        </div>
+                        <div class="slds-col">
+                            <lightning-input required="true" type="text" label="Remarks" onchange={handleRemarks} value={remarks}></lightning-input>
+                        </div>
+                        <div class="slds-col">
+                            <lightning-combobox required="true" name="Status" label="Status" value={selectedStatus} placeholder="Select Status" options={pickListStatusOptions} onchange={handleStatus} ></lightning-combobox>
+                        </div>
+                    </div>
+                    <div class="slds-col">
+                        <lightning-textarea name="PaymentMode" disabled="true" label="Broker Payment Milestone" value={selectedMilestoneName} placeholder="Select Payment Mode"  ></lightning-textarea>
+                    </div>
+                    <div class="slds-col">
+                        <lightning-input type="number" step=".01" name="PaymentMode" disabled="true" label="Outstanding Balance" value={selectedMilestoneAmount} placeholder="Select Payment Mode"  ></lightning-input>
+                    </div>
+                    <!-- <div class="slds-grid slds-gutters slds-m-top_small slds-border_top">
+                        <div class="slds-col">
+                          <span>{selectedMilestoneName}</span>
+                        </div>
+                        <div class="slds-col">
+                          <span>{selectedMilestoneAmount}</span>
+                        </div>                    
+                      </div> -->
+                </div>
+                
+                <div class="slds-modal__footer">
+                <lightning-button label="Cancel" title="Cancel" onclick={handleCloseModal} class="slds-m-left_x-small"></lightning-button>
+                <lightning-button variant="brand" label="Proceed" title="Proceed" onclick={handleProceedBulkData} class={disableProceedClass} disabled={disableProceed}></lightning-button>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+    <div class="slds-theme_default" style="margin: 0 !important; padding: 0.3rem !important;">
+        <span>
+            <center class="heading">Broker Payouts</center>
+        </span><br/>
+        <span class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_1-of-3" style="width: 9%; padding: 1.4rem 0rem 1rem 1.5rem;">
+                <span class="subHeading">
+                    Broker Account
+                </span>
+            </div>
+            <div class="slds-col slds-size_1-of-3" style="width: 15%;">
+                <span>
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <lightning-input
+                                type="search"
+                                name="lookupInput"
+                                placeholder="Search Broker Accounts"
+                                value={searchKeyPC}
+                                onchange={handleSearchKeyChangePC}
+                                onclick={showDialogPC}>
+                            </lightning-input>
+                            <div if:true={showResultsPC} class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                                <div id="listbox-unique-idPC" role="listbox">
+                                    <ul class="slds-listbox slds-listbox_vertical ulContainer" role="presentation" style="max-height: 6rem;overflow: auto;">
+                                        <template for:each={searchResultsPC} for:item="result">
+                                            <li key={result.recId} role="presentation" class="slds-listbox__item liBox">
+                                                <span role="option" onclick={handleResultClickPC} title={result.recId} data-id={result.recName}>
+                                                    <lightning-icon icon-name="standard:account" size="small"></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;{result.recName}
+                                                </span>
+                                            </li>
+                                        </template>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="slds-col slds-size_1-of-3 slds-text-align_right" style="width: 70%; padding: 1.4rem 0rem 1rem 1.5rem;">
+                <lightning-button variant="brand" label="Bulk Payout" title="Bulk Payout" onclick={handleBulkLedgerCreation} class={disableBulkClass} disabled={disableBulk}></lightning-button>
+            </div>
+        </span>
+        <br/><br/>
+    
+        <template if:true={areAccountDetailVisible}>
+            <span class="tableBrd">
+                <center class="subHeading2">Broker Account Details</center>
+                <div class="tablePadding">
+                    <lightning-datatable
+                            key-field="id"
+                            hide-checkbox-column="true"
+                            data={accountData}
+                            columns={columns}>
+                    </lightning-datatable>
+                </div>
+            </span><br/><br/><br/>
+        </template>
+        <template if:true={arebrokeLadgersVisible}>
+            <span class="tableBrd">
+                <center class="subHeading2">Broker Ledger Details</center>
+                <div class="tablePadding slds-scrollable_y hideFirstColTable" style="max-height:12rem;">
+                    <c-picklist-column
+                            key-field="id"                            
+                            show-row-number-column="false"
+                            data={brokeLadgersData} 
+                            columns={brokerColumns}
+                            oncellchange={handleCellChange}
+                            onsave={handleSave}
+                            onrowselection={getSelectedRow}
+                            draft-values={draftValues}
+                            oncancel={handleCancel}>
+                    </c-picklist-column>
+                </div>
+            </span>
+        </template>
+    </div>
+</template>

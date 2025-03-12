@@ -1,0 +1,27 @@
+<template>
+    <div class="catogory-box">
+        <lightning-combobox variant="label-hidden" label="Beds" class="customPicklists" name="beds"
+            placeholder="Select Bed" value={selectedBedValue} options={beds} onchange={handleBedChange}>
+        </lightning-combobox>
+        <lightning-combobox variant="label-hidden" label="Area" class="customPicklists" name="area"
+            placeholder="Select Area (SQ. FT.)" value={selectedAreaValue} options={areas}
+            onchange={handleAreaChange}></lightning-combobox>
+        <lightning-combobox variant="label-hidden" label="Price" class="customPicklists" name="price"
+            placeholder="Select Price (AED)" value={selectedPriceValue} options={price}
+            onchange={handlePriceChange}></lightning-combobox>
+        <lightning-combobox variant="label-hidden" label="Property Type" class="customPicklists" name="propertytype"
+            placeholder="Select Property Type" value={selectedPropertyTypeValue} options={propertytypes}
+            onchange={handlepropertyTypeChange}></lightning-combobox>
+        <lightning-combobox variant="label-hidden" label="Project" class="customPicklists" name="project"
+            placeholder="Select Project" value={selectedProjectValue} options={projects}
+            onchange={handleProjectChange}></lightning-combobox>
+        <a onclick={openFilterModal} class="btn mt-4" data-element="general-enquiry">Filter Properties</a>
+    </div>
+
+    <template if:true={isFilterModalOpen}>
+        <c-broker-portal-unit-filter-component selected-project-value={selectedProjectValue}
+            selected-bed-value={selectedBedValue} selected-area-value={selectedAreaValue}
+            selected-price-value={selectedPriceValue} selected-property-type-value={selectedPropertyTypeValue} selected-tracker-id={downloadTrackerId} 
+            onfiltermodalclosure={handleFilterModalClose}></c-broker-portal-unit-filter-component>
+    </template>
+    </template>

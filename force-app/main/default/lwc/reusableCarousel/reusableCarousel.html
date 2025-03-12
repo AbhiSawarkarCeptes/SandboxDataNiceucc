@@ -1,0 +1,31 @@
+<template>
+    <div class="carousel-card-body" onmouseenter={stopAutoSlide} onmouseleave={startAutoSlide}>
+        <p class="title slds-m-bottom_medium">{cardTitle}</p>
+        <div class="carousel">
+            <div class="slides">
+                <template for:each={getData} for:item="data">
+                    <div key={data} class="slide">
+                        <p class=" mb-2 sub-title" title={data.Offer_Name__c}>
+                            {data.Offer_Name__c}</p>
+                        <p class="description" title={data.Offer_Description__c}>
+                            {data.Offer_Description__c}
+                        </p>
+                    </div>
+                </template>
+                <template if:true={showNoOfferMsg}>
+                    <div class="slide">
+                        <p class="description">
+                            No active offers available.
+                        </p>
+                    </div>
+                </template>
+            </div>
+        </div>
+        <span class="lr-arrow">
+            <lightning-icon icon-name="utility:chevronleft" class="prev" onclick={prevSlide} alternative-text="Left!"
+                title="Left" size="x-small"></lightning-icon>
+            <lightning-icon icon-name="utility:chevronright" class="next" onclick={nextSlide} alternative-text="Right!"
+                title="Right" size="x-small"></lightning-icon>
+        </span>
+    </div>
+</template>

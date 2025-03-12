@@ -1,0 +1,456 @@
+<template>
+    <!--template if:true={renderComp}-->
+    <div class="slds-card slds-p-around_medium" style={backgroundImageStyle}>
+
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </template>
+
+        <div class="header-body slds-p-around_medium">
+            <lightning-button icon-name="utility:save" label="Save Information" variant="brand" disabled={saveDisabled}
+                onclick={createStandLead}></lightning-button>
+            <!--<lightning-button onclick={openModal} aria-haspopup="dialog" label="Update Location" class="slds-m-right_x-small"></lightning-button>-->
+            <lightning-button icon-name="utility:location" label="Update Location" variant="brand-outline"
+                slot="actions" onclick={openModal}></lightning-button>
+        </div>
+
+        <template if:true={ShowModal}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <!-- modal header start -->
+                    <header class="slds-modal__header">
+                        <button class="slds-button slds-button_icon slds-modal__close 
+                              slds-button_icon-inverse" title="Close" onclick={closeModal}>
+                            <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                                size="small"></lightning-icon>
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">
+                            Update Location
+                        </h2>
+                    </header>
+                    <!-- modal body start -->
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <!--<lightning-flow flow-api-name='UpdateMallStandLeadLocation'
+                         onstatuschange={handleStatusChange}>
+                    </lightning-flow>-->
+                        <lightning-record-edit-form onsubmit={handleLocationSubmit}
+                            object-api-name="Mall_Stand_Roaster__c">
+                            <lightning-input-field required="true" field-name="Mall_Name__c" value={mallName}
+                                onchange={handleChange}> </lightning-input-field>
+                            <lightning-input-field disabled="true" field-name="Start_Date__c"> </lightning-input-field>
+                            <lightning-input-field disabled="true" field-name="End_Date__c"> </lightning-input-field>
+                            <lightning-input-field disabled="true" field-name="Promoter_Name__c" value={currentUserId}>
+                            </lightning-input-field>
+                            <div style="text-align:center;padding-top: 20px;">
+                                <button type="submit" class="slds-button slds-button_brand" title="Save">Save</button>
+                            </div>
+                        </lightning-record-edit-form>
+                    </div>
+
+                    <!-- modal footer start-->
+                    <!--<footer class="slds-modal__footer">
+                    <lightning-button label="Cancel" title="Non-primary action" onclick={closeModal}
+                        class="slds-m-left_x-small">
+                    </lightning-button>
+                </footer>-->
+
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </template>
+
+        <div class="lead-form-body">
+            <div class="slds-p-top_xx-small gray-border">
+                <div class="sub-heading slds-p-left_small">Personal Details</div>
+                <div class="slds-grid slds-wrap">
+                    <!--First Name-->
+                    <div
+                        class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                        <lightning-input type="text" name='firstName' label="First Name" value={firstname}
+                            onchange={handleChange}></lightning-input>
+                    </div>
+
+                    <!--Last Name-->
+                    <div
+                        class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                        <lightning-input required="true" type="text" label="Last Name" name="lastName" value={lastName}
+                            onchange={handleChange}></lightning-input>
+                    </div>
+
+
+                    <div
+                        class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                        <lightning-input required="true" type="email" label="Email" name="email" value={email}
+                            onchange={handleChange} onblur={handleEmailBlur}></lightning-input>
+                        <template if:true={hasInteracted}>
+                            <template if:true={validEmail}>
+                                <div class="green-flag">✔ Email is valid</div>
+                            </template>
+                            <template if:false={validEmail}>
+                                <div class="red-flag">✘ Email is invalid</div>
+                            </template>
+                        </template>
+                    </div>
+
+
+                    <!--Gender-->
+                    <template if:true={gendervalues.data}>
+                        <div
+                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                            <lightning-radio-group name="gender" label="Gender" options={gendervalues.data.values}
+                                value={gender} onchange={handleChange} type="button">
+                            </lightning-radio-group>
+                        </div>
+                    </template>
+
+                    <template if:true={ageRanges.data}>
+                        <div
+                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                            <c-combobox-autocomplete label="Age" name="ageRange" options={ageRanges.data.values}
+                                placeholder="Select an Age Range" onselectoption={handleChange}
+                                classes="slds-m-bottom_small">
+                            </c-combobox-autocomplete>
+                        </div>
+                    </template>
+
+                    <template if:true={countryCodes.data}>
+                        <div
+                            class="slds-grid slds-wrap slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+                            <div
+                                class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                                <c-combobox-autocomplete required="true" label="Mobile Country Code" name="countrycode"
+                                    options={countryCodes.data.values} placeholder="Select a Country Code"
+                                    onselectoption={handleChange} classes="slds-m-bottom_small">
+                                </c-combobox-autocomplete>
+                            </div>
+                            <div
+                                class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                                <lightning-input required="true" type="tel" data-id="contactnumber"
+                                    label="Contact Number" onchange={handleChangeContact} onblur={handleBlur}
+                                    disabled={isContactNumberDisabled}></lightning-input>
+                                <template if:true={hasInteractedPhone}>
+                                    <template if:true={valid}>
+                                        <div class="green-flag">✔ Phone Number is valid</div>
+                                    </template>
+                                    <template if:false={valid}>
+                                        <div class="red-flag">✘ Phone Number is invalid</div>
+                                    </template>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+
+                    <template if:true={residenttypevalues.data}>
+                        <div
+                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                            <c-combobox-autocomplete label="Resident Type" name="residenttype"
+                                options={residenttypevalues.data.values} placeholder="Select Resident Type"
+                                onselectoption={handleChange} classes="slds-m-bottom_small">
+                            </c-combobox-autocomplete>
+                        </div>
+                    </template>
+
+                    <template if:true={countries.data}>
+                        <div
+                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                            <c-combobox-autocomplete label="Country of Residence" name="country"
+                                options={countries.data.values} placeholder="Select a Country"
+                                onselectoption={handleChange} classes="slds-m-bottom_small">
+                            </c-combobox-autocomplete>
+                        </div>
+                    </template>
+
+                    <!-- <template if:true={cities.data}>
+                        <div
+                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_6-of-12 slds-p-horizontal_small">
+                            <c-combobox-autocomplete label="City" name="city" options={cities.data.values}
+                                placeholder="Select a City" onselectoption={handleChange} classes="slds-m-bottom_small">
+                            </c-combobox-autocomplete>
+                        </div>
+                    </template> -->
+
+                    <template if:true={nationalities.data}>
+                        <div
+                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                            <c-combobox-autocomplete label="Nationality" name="nationality"
+                                options={nationalities.data.values} placeholder="Select Nationality"
+                                onselectoption={handleChange} classes="slds-m-bottom_small">
+                            </c-combobox-autocomplete>
+                        </div>
+                    </template>
+
+                    <template if:true={languages.data}>
+                        <div
+                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                            <c-combobox-autocomplete label="Preferred Language" name="language"
+                                options={languages.data.values} placeholder="Select Language"
+                                onselectoption={handleChange} classes="slds-m-bottom_small">
+                            </c-combobox-autocomplete>
+                        </div>
+                    </template>
+
+                    <template if:true={isOtherLanguageSelected}> <!-- Conditional rendering -->
+                        <div
+                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                            <lightning-input label="Other Language" name="otherlanguage" placeholder="Enter Language"
+                                onchange={handleChange} class="slds-m-bottom_small">
+                            </lightning-input>
+                        </div>
+                    </template>
+
+                    <template if:true={professions.data}>
+                        <div
+                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                            <c-combobox-autocomplete label="Profession" name="profession"
+                                options={professions.data.values} placeholder="Select Profession"
+                                onselectoption={handleChange} classes="slds-m-bottom_small">
+                            </c-combobox-autocomplete>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <div class="slds-p-top_xx-small slds-p-bottom_medium gray-border">
+                <div class="sub-heading slds-p-left_small">Property Preference</div>
+                <div class="slds-grid slds-wrap">
+                    <!-- <template if:true={preferredcities.data}>
+                            <div class="slds-p-top_medium slds-p-bottom_small">
+                                <c-combobox-autocomplete 
+                                        label="City of Interest"
+                                        name="Preferred City of Interest"
+                                        options={preferredcities.data.values}
+                                        placeholder="Select Preferred City"
+                                        onselectoption={handleChange}
+                                        classes="slds-m-bottom_small"
+                                    >
+                                    </c-combobox-autocomplete>
+                            </div>
+                        </template>
+                        <template if:true={specificLocationvalues.data}>
+                            <div class="slds-p-top_medium slds-p-bottom_small">
+                                <c-combobox-autocomplete 
+                                        label="Specific Location in the City"
+                                        name="specificlocationcity"
+                                        options={specificLocationvalues.data.values}
+                                        placeholder="Select preferred loction"
+                                        onselectoption={handleChange}
+                                        classes="slds-m-bottom_small"
+                                    >
+                                    </c-combobox-autocomplete>
+                            </div>
+                        </template>-->
+
+                    <!-- <template if:true={alreadypurchasedstatuses.data}>
+                            <h2 class="slds-m-top_medium slds-m-bottom_small">
+                                Any existing Property in Dubai
+                            </h2>
+                            
+                            <lightning-radio-group name="alreadypurchased"
+                                label=""
+                                options={alreadypurchasedstatuses.data.values}
+                                value={alreadypurchased}
+                                onchange={handleChange}
+                                type="button">
+                            </lightning-radio-group>
+                        </template>
+                        
+                        <h2 class="slds-m-top_medium">
+                            Interested Property Type
+                        </h2>
+                       
+                        <template if:true={propertytypes.data}>
+                            <c-combobox-autocomplete 
+                                    label=""
+                                    name="propertytype"
+                                    options={propertytypes.data.values}
+                                    placeholder="Select Preferred Type"
+                                    onselectoption={handleChange}
+                                    classes="slds-m-bottom_small"
+                                >
+                                </c-combobox-autocomplete>
+                        </template>-->
+
+
+                    <template if:true={budgetvalues.data}>
+                        <div
+                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                            <c-combobox-autocomplete label="Budget" name="budget" options={budgetvalues.data.values}
+                                placeholder="Select Budget" onselectoption={handleChange} classes="slds-m-bottom_small">
+                            </c-combobox-autocomplete>
+                        </div>
+                    </template>
+
+                    <!--Property status-->
+                    <!-- <template if:true={propertystatuses.data}>
+                            <h2 class="slds-m-top_medium slds-m-bottom_small">
+                                Preferred Property Status
+                            </h2>
+                            <lightning-radio-group name="propertystatus"
+                                label=""
+                                options={propertystatuses.data.values}
+                                value={propertystatus}
+                                onchange={handleChange}
+                                type="button">
+                            </lightning-radio-group>
+                        </template>
+
+                        
+                        <template if:true={expectedusagevalues.data}>
+                            <h2 class="slds-m-top_medium slds-m-bottom_small">
+                                Expected Usage
+                            </h2>
+                           
+                            <lightning-radio-group name="expectedusage"
+                                    label=""
+                                    options={expectedusagevalues.data.values}
+                                    value={expectedusage}
+                                    onchange={handleChange}
+                                    type="button">
+                                </lightning-radio-group>
+                        </template>  -->
+
+                    <template if:true={projectvalues.data}>
+                        <div
+                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                            <c-combobox-autocomplete label="Interested Project" name="projectvalue"
+                                options={projectvalues.data.values} placeholder="Please select value"
+                                onselectoption={handleChange} classes="slds-m-bottom_small">
+                            </c-combobox-autocomplete>
+                        </div>
+                    </template>
+
+                    <!--  <template if:true={mortgagevalues.data}>
+                            <h2 class="slds-m-top_medium slds-m-bottom_small">
+                                Mortgage Required
+                            </h2>
+                            
+                            <lightning-radio-group name="mortgagevalue"
+                                    label=""
+                                    options={mortgagevalues.data.values}
+                                    value={mortgagevalue}
+                                    onchange={handleChange}
+                                    type="button">
+                                </lightning-radio-group>
+                        </template>
+
+                        <template if:true={bedroomvalues.data}>
+                            <h2 class="slds-m-top_medium slds-m-bottom_small">
+                                Number of Bedrooms
+                            </h2>
+                          
+                            <lightning-radio-group name="bedroomvalue"
+                                    label=""
+                                    options={bedroomvalues.data.values}
+                                    value={bedroomvalue}
+                                    onchange={handleChange}
+                                    type="button">
+                                </lightning-radio-group>
+                        </template>
+
+                        <template if:true={rentcurrentvalues.data}>
+                            <h2 class="slds-m-top_medium">
+                                Current Residence Status
+                            </h2>
+                            <c-combobox-autocomplete 
+                                label=""
+                                name="rentcurrentvalue"
+                                options={rentcurrentvalues.data.values}
+                                placeholder="Please select value"
+                                onselectoption={handleChange}
+                                classes="slds-m-bottom_small"
+                            >
+                            </c-combobox-autocomplete>
+                        </template> -->
+                    <div
+                        class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                        <lightning-input type="text" name="promotorsRemark" label="Promotor's Remark"
+                            onchange={handleChange} classes="slds-m-bottom_small"></lightning-input>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slds-p-top_xx-small">
+                <div class="sub-heading slds-p-left_small">Appointment Details</div>
+                <div class="slds-grid slds-wrap">
+                    <!--Property status-->
+                    <template if:true={willingtomeetvalues.data}>
+                        <!-- <h2 class="slds-m-top_medium slds-m-bottom_small">
+                                Willing to meet
+                            </h2>-->
+                        <div
+                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                            <lightning-radio-group name="willingtomeet" required="true" label="Willing to meet"
+                                options={willingtomeetvalues.data.values} value={willingtomeetvalue}
+                                onchange={handleChange} type="button">
+                            </lightning-radio-group>
+                        </div>
+                    </template>
+
+                    <template if:true={meetnow}>
+                        <template if:true={accompaniedbyvalues.data}>
+                            <div
+                                class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                                <c-combobox-autocomplete label="Accompanied By" name="accomaniedby"
+                                    options={accompaniedbyvalues.data.values} placeholder="Select value"
+                                    onselectoption={handleChange} classes="slds-m-bottom_small">
+                                </c-combobox-autocomplete>
+                            </div>
+                        </template>
+
+                        <template if:true={meetingtypevalues.data}>
+                            <div
+                                class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                                <lightning-radio-group name="meetingtypevalue" label="Meeting Type"
+                                    options={meetingtypevalues.data.values} value={meetingtypevalue}
+                                    onchange={handleChange} type="button">
+                                </lightning-radio-group>
+                            </div>
+                        </template>
+                    </template>
+
+                    <template if:true={meetlater}>
+                        <div
+                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                            <lightning-input type="datetime" name="meetingdatetime" onchange={handleChange}
+                                label="Tour Date and Time"></lightning-input>
+                        </div>
+
+                        <template if:true={needpickupvalues.data}>
+                            <div
+                                class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                                <lightning-radio-group name="needpickup" label="Needs Pickup"
+                                    options={needpickupvalues.data.values} value={needpickup} onchange={handleChange}
+                                    type="button">
+                                </lightning-radio-group>
+                            </div>
+                        </template>
+                    </template>
+
+                    <template if:false={mallNameVal}>
+                        <div
+                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                            <h2 class="sales-text">
+                                Assign to Sales manager
+                            </h2>
+                            <c-generic-lookup-lwc objname="User" iconname="standard:user"
+                                onlookupselected={handleUserSelection}></c-generic-lookup-lwc>
+                        </div>
+                    </template>
+                    <template if:true={mallNameVal}>
+                        <div
+                            class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_6-of-12 slds-p-horizontal_small">
+                            <c-combobox-autocomplete label="Assign to Sales manager" name="salesManager"
+                                options={salesmanagerValues.data.values} placeholder="Please select value"
+                                onselectoption={handleChange} classes="slds-m-bottom_small">
+                            </c-combobox-autocomplete>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+        <!--/template-->
+    </div>
+
+</template>

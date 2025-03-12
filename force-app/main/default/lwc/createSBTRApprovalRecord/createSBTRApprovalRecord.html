@@ -1,0 +1,61 @@
+<template>
+    <lightning-quick-action-panel header="Edit SBTR"></lightning-quick-action-panel>
+    <lightning-record-edit-form  object-api-name="SBTR_Approval__c"
+            onsuccess={handleSuccess} onsubmit ={handleSubmit}>
+        <lightning-messages>
+        </lightning-messages>
+        <div class="slds-grid slds-wrap slds-p-around--medium" style="background:#eee; border:1px #ddd solid;">
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input-field field-name='Booked_Date__c'  name='Booked_Date__c' onchange={handlevalue}> </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input-field field-name='Deal_Type__c' name='Deal_Type__c' onchange={handlevalue}> </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input-field field-name='Declared_Date__c' name='Declared_Date__c' onchange={handlevalue}> </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input-field field-name='Sales_Manager__c' name='Sales_Manager__c' onchange={handlevalue}> </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input-field field-name='Secondary_Sales_Manager__c' name='Secondary_Sales_Manager__c' onchange={handlevalue}> </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input-field field-name='Channel_Partner__c' name='Channel_Partner__c' onchange={handlevalue}> </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input-field field-name='Source_Classification_1__c' name='Source_Classification_1__c' onchange={handlevalue}> </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input-field field-name='Source_Classification_2__c' name='Source_Classification_2__c' onchange={handlevalue}> </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input-field field-name='Team_Head__c' name='Team_Head__c' onchange={handlevalue}> </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input-field field-name='Team_Head_2__c' name='Team_Head_2__c' onchange={handlevalue}> </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input-field field-name='SBTR__c' name='SBTR__c' value={recordId} disabled="true"> </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input-field field-name='Sale_Value__c' name='Sale_Value__c' onchange={handlevalue}> </lightning-input-field>
+
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input-field field-name='Total_Booking_Amount_Received__c' name='Total_Booking_Amount_Received__c' onchange={handlevalue}> </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal_medium">
+                <lightning-input-field field-name='Send_For_Approval__c' name='Send_For_Approval__c' required > </lightning-input-field>
+
+            </div>
+            <div class="slds-align_absolute-center">
+                <lightning-button class="slds-m-top_small" variant="brand" type="submit" name="update" label="Update">
+                </lightning-button>
+                <lightning-button class="slds-m-top_small"  type="submit" name="cancel " label="cancel " onclick={closeAction}>
+                </lightning-button>
+            </div>
+         
+        </div>
+    </lightning-record-edit-form>
+</template>

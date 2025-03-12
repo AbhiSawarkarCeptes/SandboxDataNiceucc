@@ -1,0 +1,22 @@
+.my-component-container {
+    height: 10rem;
+    margin: 0.5rem 1rem;
+}
+
+.slds-modal__container{
+    width: 100%;
+    max-width: none;
+    /* max-width: 120rem !important;
+    width:120rem !important; */
+   }
+.ulContainer { 
+    border: 0.05rem solid black;
+    margin: 0.25rem;
+    text-indent: 0.25rem;
+    border-radius: 0.2rem;
+    line-height: 2rem;
+}
+.liBox:hover {
+    background-color: azure;
+    cursor: pointer;
+}

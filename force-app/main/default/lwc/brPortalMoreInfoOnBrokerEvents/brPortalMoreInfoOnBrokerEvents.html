@@ -1,0 +1,125 @@
+<template>
+    <section class="moreInfo-popover-style slds-nubbin_left-top">
+        <div class="slds-clearfix">
+            <lightning-button-icon icon-name="utility:close" variant="container" size="small"
+                class="slds-float_right slds-m-top_small slds-m-right_small" onclick={handleClose}
+                alternative-text="Close">
+            </lightning-button-icon>
+        </div>
+        <div class="slds-p-around_medium moreInfo-body" lwc:ref="beforeEdit">
+            <div class="slds-p-bottom_large display-flex">
+                <span class="title-label">Sales Manager</span>
+                <span class="title-value">{salesManager}</span>
+            </div>
+            <div class="slds-p-bottom_large display-flex">
+                <span class="title-label">Sales Director</span>
+                <span class="title-value">{salesDirector}</span>
+            </div>
+            <div>
+                <div class="editIcon">
+                    <img src={editIcon} alt="Edit Icon" onclick={editIconClickHandler} />
+                </div>
+                <template if:false={isEditMode}>
+                    <div class="nonEditHTML" lwc:dom="manual"></div>
+                </template>
+                <template if:true={isEditMode}>
+                    <template if:false={isPageBusinessTrip}>
+                        <div class="slds-grid slds-wrap slds-p-bottom_large request-field">
+                            <div class="slds-col slds-size_6-of-12 display-flex">
+                                <span class="title-one">Campaign Leads</span>
+                                <span class="title-two">15 Days Before Event</span>
+                                <input type="number" id="Campaign_Leads__c" placeholder={campaignLead15Days} onchange={handleFieldChange}>
+                            </div>
+                            <div class="slds-col slds-size_6-of-12 display-flex">
+                                <span class="title-one">Campaign Leads</span>
+                                <span class="title-two">7 Days Before Event</span>
+                                <input type="number" id="Campaign_Lead_7_days_before_event__c" placeholder={campaignLead7Days} onchange={handleFieldChange}>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap request-field">
+                            <div class="slds-col slds-size_6-of-12 display-flex">
+                                <span class="title-one">Walk-ins</span>
+                                <input type="number" id="Expected_number_of_Visitors__c" placeholder={walkins} onchange={handleFieldChange}>
+                            </div>
+                            <div class="slds-col slds-size_6-of-12 display-flex">
+                                <span class="title-one">Confirmed Meetings</span>
+                                <input type="number" id="Confirmed_No_of_Meeting__c" placeholder={confirmedMeetingCount} onchange={handleFieldChange}>
+                            </div>
+                        </div>
+                    </template>
+                    <template if:true={isPageBusinessTrip}>
+                        <div class="slds-grid slds-wrap slds-p-bottom_large request-field">
+                            <div class="slds-col slds-size_6-of-12 display-flex">
+                                <span class="title-one">Walk-ins</span>
+                                <input type="number" id="Expected_number_of_Visitors__c-20" placeholder={walkins} onchange={handleFieldChange}>
+                            </div>
+                        </div>
+                    </template>
+                    <div class="slds-p-top_large">
+                        <button class="save-btn" onclick={saveButtonClickHandler}>Save</button>
+                    </div>
+                </template>
+            </div>
+            <div class="slds-p-top_large">
+                <button class="view-collateral-btn" onclick={showModalHandler}>View Collaterals</button>
+            </div>
+        </div>
+    </section>
+    <template if:true={showModal}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+            class="slds-modal slds-fade-in-open collaterals-section">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header header-style">
+                    <span>View Collaterals</span>
+                    <lightning-button-icon icon-name="utility:close" variant="bare" size="medium"
+                        alternative-text="Close" title="Close" onclick={showModalHandler}>
+                    </lightning-button-icon>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium modal-body" id="modal-content-id-1">
+                    <div class="sub-body-title">
+                        <div class="sub-title">
+                            {parsedMessage.eventName}
+                        </div>
+                        <div class="date">
+                            {parsedMessage.dateOfEvent}
+                        </div>
+                    </div>
+                    <div class="sub-body-file">
+                        <template if:false={isDataAvailable}>
+                            <div class="no-records">No Records</div>
+                        </template>
+                        <template if:true={isDataAvailable}>
+                            <template for:each={collateralList} for:item="colateral">
+                                <template if:true={colateral.isPdf}>
+                                    <div key={colateral} class="file-body">
+                                        <a href={colateral.downloadURL} target="_blank">
+                                            <img src={pdfIcon} alt="Pdf File" />
+                                        </a>
+                                        <span>{colateral.Title}</span>
+                                    </div>
+                                </template>
+                                <template if:true={colateral.isPng}>
+                                    <div key={colateral} class="file-body">
+                                        <a href={colateral.downloadURL} target="_blank">
+                                            <img src={pngIcon} alt="Png File" />
+                                        </a>
+                                        <span>{colateral.Title}</span>
+                                    </div>
+                                </template>
+                                <template if:true={colateral.isJpg}>
+                                    <div key={colateral} class="file-body">
+                                        <a href={colateral.downloadURL} target="_blank">
+                                            <img src={jpgIcon} alt="Jpg File" />
+                                        </a>
+                                        <span>{colateral.Title}</span>
+                                    </div>
+                                </template>
+                            </template>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+</template>

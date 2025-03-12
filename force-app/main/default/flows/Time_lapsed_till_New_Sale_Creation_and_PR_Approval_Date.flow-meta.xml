@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Verify_approval_date</name>
+        <label>Verify approval date</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Approval_date_exist</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Payment_Request__r.Approved_Date_and_Time__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UpdatePaymentRequest</targetReference>
+            </connector>
+            <label>Approval date exist</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>TimeLapse</name>
+        <dataType>String</dataType>
+        <expression>TEXT(
+FLOOR({!$Record.CreatedDate} - {!$Record.Payment_Request__r.Approved_Date_and_Time__c})
+) &amp; &quot; Day(s) &quot; &amp;
+TEXT(
+ROUND(MOD(({!$Record.CreatedDate} - {!$Record.Payment_Request__r.Approved_Date_and_Time__c})*24,24),0)
+) &amp;&quot; Hour(s) &quot; &amp;
+TEXT(
+ROUND(MOD(({!$Record.CreatedDate} - {!$Record.Payment_Request__r.Approved_Date_and_Time__c})*1440,60),0)
+) &amp;&quot; Minute(s) &quot;</expression>
+    </formulas>
+    <interviewLabel>Time lapsed till New Sale Creation and PR Approval Date {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Time lapsed till New Sale Creation and PR Approval Date</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>UpdatePaymentRequest</name>
+        <label>UpdatePaymentReques</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Payment_Request__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Time_lapsed_till_New_Sale_Creation__c</field>
+            <value>
+                <elementReference>TimeLapse</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Payment_Request__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Verify_approval_date</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Payment_Request__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>unit_hold_request__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

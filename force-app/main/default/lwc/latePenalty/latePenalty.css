@@ -1,0 +1,10 @@
+.fixTableHeadAll {
+    overflow-y: auto;
+    max-height: 560px;
+    min-height: 560px;
+}
+.fixTableHeadAll thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}

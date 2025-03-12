@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_SM_SD_Signing_Notification</name>
+        <label>Send SM SD Signing Notification</label>
+        <locationX>1154</locationX>
+        <locationY>607</locationY>
+        <actionName>Booking__c.DocuSignSMSDCompletionEmailAlert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Booking__r.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Booking__c.DocuSignSMSDCompletionEmailAlert</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Update_SBF_Queue_User</name>
+        <label>Update SBF Queue User</label>
+        <locationX>806</locationX>
+        <locationY>497</locationY>
+        <actionName>BookingUploadSignedDocumentsController</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Send_SM_SD_Signing_Notification</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>bookingIds</name>
+            <value>
+                <elementReference>$Record.Booking__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>BookingUploadSignedDocumentsController</nameSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Verify_Previously_Rejected_by_Sales_Ops</name>
+        <label>Verify Previously Rejected by Sales Ops</label>
+        <locationX>742</locationX>
+        <locationY>178</locationY>
+        <defaultConnector>
+            <targetReference>update_booking_record_signed_status</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>previously_not_rejected</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Booking__r.Document_Verification_Remarks__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Booking_Record</targetReference>
+            </connector>
+            <label>previously not rejected</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Verify_Sales_Head</name>
+        <label>Verify Sales Head</label>
+        <locationX>567</locationX>
+        <locationY>35</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sales_Head</name>
+            <conditionLogic>(1 AND 2) OR (3 AND 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Booking__r.Secondary_Sales_Head__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Envelope_Recipient_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sales Head</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Booking__r.Secondary_Sales_Head__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Envelope_Recipient_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Secondary Sales Head</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Verify_Previously_Rejected_by_Sales_Ops</targetReference>
+            </connector>
+            <label>Sales Head</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Docusign Booking Form {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Docusign Booking Form Complete by SM SD</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Booking_Record</name>
+        <label>Update Booking Record</label>
+        <locationX>526</locationX>
+        <locationY>347</locationY>
+        <connector>
+            <targetReference>Update_SBF_Queue_User</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Booking__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Current_Status__c</field>
+            <value>
+                <stringValue>Submitted to Sales Ops</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Booking__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>update_booking_record_signed_status</name>
+        <label>update booking record signed status</label>
+        <locationX>1062</locationX>
+        <locationY>288</locationY>
+        <connector>
+            <targetReference>Update_SBF_Queue_User</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Booking__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Signed_Status__c</field>
+            <value>
+                <stringValue>Resubmitted for Document Verification</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Booking__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>93</locationX>
+        <locationY>49</locationY>
+        <connector>
+            <targetReference>Verify_Sales_Head</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>1 AND 2 AND (3 OR 4)</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Envelope_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Booking Form</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Envelope_Recipient_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sales Head</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Envelope_Recipient_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Secondary Sales Head</stringValue>
+            </value>
+        </filters>
+        <object>Docusign_Recipient_Status_Sobha__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

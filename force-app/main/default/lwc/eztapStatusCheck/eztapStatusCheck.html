@@ -1,0 +1,18 @@
+<template>
+    <div style="padding:20px">
+        <div style="display:none">{recordId}</div>
+        <template if:true={showSpinner}>
+            <div class="exampleHolder">
+                <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+            </div>
+        </template>
+        <div style="text-align:center;margin-bottom:20px;font-size:20px">
+            <b>Ezetap Status</b>
+        </div>
+        <div>
+            <b>Status:</b> {status} <br></br>
+            <b>Message Code:</b> {msgCode} <br></br>
+            <b>Error Message (if any):</b> {errorMessage} <br></br>
+        </div>
+    </div>
+</template>
