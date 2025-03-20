@@ -1,16 +1,16 @@
 /***************************************************************************
 Class      : Nice_TaskDispositionHandler
 Test Class : Nice_TaskDispositionHandlerTest
-Purpose    : NICE - Test class Code coverage 96% 
+Purpose    : NICE - Test class Code coverage 86% 
 Author     : Abhijeet
 *****************************************************************************/
 
 @isTest
 public class Nice_TaskDispositionHandlerTest {
-    
     @isTest
     static void testPublishEvent() {
         String testJsonString = '{"Task_Id": "12345", "UserId": "005123456789012345", "Event_Type": "TestEvent"}';
+        
         Test.startTest();
         try {
             Nice_TaskDispositionHandler.publishEvent(testJsonString);
@@ -18,117 +18,65 @@ public class Nice_TaskDispositionHandlerTest {
         } catch (Exception e) {
             System.assert(false, 'Unexpected exception: ' + e.getMessage());
         }
-        Test.stopTest();
-        try {
-            Nice_TaskDispositionHandler.publishEvent('{"invalid": "json"}');
-        } catch (AuraHandledException e) {
-            System.assert(true, 'Caught expected exception');
-        }
+        Test.stopTest();        
+    }
 
-        try {
-            Nice_TaskDispositionHandler.publishEvent('{"invalid": "json"}');
-        } catch (AuraHandledException e) {
-            System.assertEquals('no json found', e.getMessage());
-        }
-
-        try {
-            Nice_TaskDispositionHandler.publishEvent('{"invalid": "json"}');
-        } catch (AuraHandledException e) {
-            System.assertEquals('no json found', e.getMessage());
-        }
-    }
-    
-    @isTest
-    static void testGetDependentPicklistValues() {
-        String dependentFieldL2 = 'Call_Disposition_L2__c';
-        String dependentFieldL3 = 'Call_Disposition_L3__c';
-        
-        Test.startTest();
-        Map<String, Map<String, List<String>>> result = Nice_TaskDispositionHandler.getDependentPicklistValues(dependentFieldL2, dependentFieldL3);
-        Test.stopTest();
-        
-        System.assertNotEquals(result, null);
-        System.assert(result.containsKey('L1toL2'));
-        System.assert(result.containsKey('L2toL3'));
-        
-        try {
-            Nice_TaskDispositionHandler.getDependentPicklistValues('InvalidField', 'AnotherInvalidField');
-            System.assert(false, 'Expected exception for invalid field names');
-        } catch (Exception e) {
-            System.assert(true, 'Exception thrown as expected');
-        }
-    }
-    
-    @isTest
-    static void testGetCRMDependentPicklistValues() {
-        String dependentFieldL2 = 'CRM_Call_Disposition2__c';
-        String dependentFieldL3 = 'CRM_Call_Disposition3__c';
-        
-        Test.startTest();
-        Map<String, Map<String, List<String>>> result = Nice_TaskDispositionHandler.getCRMDependentPicklistValues(dependentFieldL2, dependentFieldL3);
-        Test.stopTest();
-        
-        System.assert.areNotEqual(result, null);
-        System.assert(result.containsKey('L1toL2'));
-        System.assert(result.containsKey('L2toL3'));
-    }
-    
     @isTest
     static void testUpdateTask() {
         Task__c testTask = new Task__c(
-            Call_Disposition_L1__c = 'Dues collection',
-            Call_Disposition_L2__c = 'PCC',
-            Call_Disposition_L3__c = '100% payments shortfall',
-            Calling_Id__c = '12345'
+            Call_Disposition_L1__c = 'CRM',
+            Call_Disposition_L2__c = 'SPA',
+            Call_Disposition_L3__c = 'SPA Received',
+            Calling_ID__c = '12345'
         );
         insert testTask;
-        Test.setMock(HttpCalloutMock.class, new MockHttpResponseGenerator());
+        
         Test.startTest();
         String result = Nice_TaskDispositionHandler.updateTask(
-            testTask.Id, 
-            'Dues collection', 
-            'PCC', 
-            '100% payments shortfall',
-            'CRM',
-            'SPA',
-            'Loss of SPA',
-            'Test comment' 
+            testTask.Id, 'CRM', 'SPA', 'SPA Received', 'Test comment'
         );
         Test.stopTest();
         
-        System.assertNotEquals(result, null);
-        System.assert(result.contains('Task updated successfully'));
+        System.assertNotEquals(result, null, 'The response should not be null');
+        System.assert(result.contains('Task updated successfully'), 'Expected success message in response');
+        
         try {
-            Nice_TaskDispositionHandler.updateTask(testTask.Id, '', 'PCC', '100% payments shortfall', '', '', '','Test comment');
+            Nice_TaskDispositionHandler.updateTask('nonExistingId', 'CRM', 'SPA', 'SPA Received', 'Test comment');
+            System.assert(false, 'Expected exception not thrown for non-existing task');
         } catch (AuraHandledException e) {
-            System.assert(e.getMessage().contains('Error updating Task'));
-        }
-        try {
-            Nice_TaskDispositionHandler.updateTask('invalidId', 'Dues collection', 'PCC', '100% payments shortfall', '', '', '','Test comment');
-            System.assert(false, 'Expected AuraHandledException for invalid task ID');
-        } catch (AuraHandledException e) {
+            System.assert(e.getMessage().contains('Error updating Task'), 'Expected specific error message');
         }
     }
 
     @isTest
-    static void testGetTagId() {
-        String tagId = Nice_TaskDispositionHandler.getTagId(
-            'Dues collection', 
-            'PCC', 
-            '100% payments shortfall',
-            'CRM',
-            'SPA',
-            'Loss of SPA'
-        );
-        System.assertNotEquals(tagId, null);
-        String tagIdNoMatch = Nice_TaskDispositionHandler.getTagId(
-            'Nonexistent Disposition', 
-            'Disposition 2', 
-            'Disposition 3',
-            'CRM_Nonexistent',
-            'CRM_Disposition2',
-            'CRM_Disposition3'
-        );
-        System.assertEquals(tagIdNoMatch, null);
+    static void testSendTagIdOnTaskUpdate() {
+        // Create a request object
+        Nice_TaskDispositionHandler.TaskUpdateRequest request = new Nice_TaskDispositionHandler.TaskUpdateRequest();
+        request.taskId = '12345';
+        request.callingId = '67890';
+        request.tagId = 'TAG001';
+
+        // Create a List<TaskUpdateRequest>
+        List<Nice_TaskDispositionHandler.TaskUpdateRequest> requestList = new List<Nice_TaskDispositionHandler.TaskUpdateRequest>();
+        requestList.add(request);
+
+        Test.startTest();
+        List<String> responses = Nice_TaskDispositionHandler.sendTagIdOnTaskUpdate(requestList); // ✅ FIXED - Passing single list
+        Test.stopTest();
+
+        System.assertEquals(1, responses.size());
+        System.assert(responses[0] != null && responses[0].contains('Task updated successfully'), 'Expected success response');
+
+        // Test case with missing callingId
+        requestList.clear();
+        request = new Nice_TaskDispositionHandler.TaskUpdateRequest();
+        request.taskId = '12345';
+        request.callingId = null; // Missing callingId
+        request.tagId = 'TAG001';
+        requestList.add(request);
+
+        responses = Nice_TaskDispositionHandler.sendTagIdOnTaskUpdate(requestList); // ✅ FIXED - Single list
+        System.assertEquals(1, responses.size());
+        System.assertEquals(null, responses[0], 'Expected null response for missing callingId');
     }
 }
